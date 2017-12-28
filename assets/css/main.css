@@ -14,9 +14,7 @@ body {
   padding: 1rem 0 0 0;
 }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
 hr {
   border: 0;
@@ -69,37 +67,21 @@ li.list-group-item a:active {
   border-bottom: 1px solid #ff4a11;
 }
 
-footer {
-  color: #888;
-}
+footer { color: #888; }
 
 footer i.fa {
   color: #343436;
   transition: color 0.2s;
 }
 
-footer i.fa:hover {
-  color: #ff4a11;
-}
+footer i.fa:hover { color: #ff4a11; }
 
-.code {
-  color: inherit;
-}
+.code { color: inherit; }
 
-.author {
-  font-weight: bold;
-}
+.author { font-weight: bold; }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  html {
-    font-size:20px;
-  }
-}
+@media (min-width: 768px) { html { font-size:20px; } }
 
 /* Extra-small devices (iPhone SE) */
-@media (max-width: 320px) {
-  ul.navbar-nav {
-    font-size:12px;
-  }
-}
+@media (max-width: 320px) { ul.navbar-nav { font-size:12px; } }
