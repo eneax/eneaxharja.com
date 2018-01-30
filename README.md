@@ -2,6 +2,6 @@
 
 My personal portfolio website.
 
-- Coded with Atom. 
+- Coded with Sublime Text. 
 - Built on Bootstrap. 
 - Hosted on Github Pages.
