@@ -1,6 +1,6 @@
 # eneaxharja[dot]com
 
-My personal portfolio website.
+My personal website.
 
 - Coded with Sublime Text. 
 - Built on Bootstrap. 

@@ -44,14 +44,15 @@ li.list-group-item a:active {
 }
 
 .section-about,
-.section-portfolio {
+.section-projects,
+.section-library {
   text-align: justify;
 }
 
 .section-about a:link,
 .section-about a:visited,
-.portfolio-project a:link,
-.portfolio-project a:visited {
+.project a:link,
+.project a:visited {
   color: #000106;
   text-decoration: none;
   padding-bottom: 1px;
@@ -61,8 +62,8 @@ li.list-group-item a:active {
 
 .section-about a:hover,
 .section-about a:active,
-.portfolio-project a:hover,
-.portfolio-project a:active {
+.project a:hover,
+.project a:active {
   color: #ff4a11;
   border-bottom: 1px solid #ff4a11;
 }
