@@ -70,14 +70,12 @@ li.list-group-item a:active {
 
 footer { color: #888; }
 
-footer i.fab,
-footer i.fas {
+footer svg {
   color: #343436;
   transition: color 0.2s;
 }
 
-footer i.fab:hover,
-footer i.fas:hover { color: #ff4a11; }
+footer svg:hover { color: #ff4a11; }
 
 .code { color: inherit; }
 
