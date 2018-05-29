@@ -27,6 +27,31 @@ export default [
     )
   },
   {
+    name: 'thriving-cities',
+    render: (
+      <div className="fl w-100 w-50-m w-third-ns pa2">
+        <div className="bg-washed-blue br3 grow shadow-5">
+          <div className="center mw6 br3 hidden mv3 tc">
+            <h1 className="f5 bg-washed-green br3 br--top black-70 mv0 pv2 ph3 courier">
+              thriving-cities
+            </h1>
+            <div className="pa3 bt b--black-10 black-70 georgia">
+              <p className="f6 f5-ns lh-copy measure">
+                Single page company website built with React and Bootstrap
+              </p>
+            </div>
+            <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" target="_blank" rel="noopener noreferrer" href="https://github.com/eneax/thriving-cities">
+              <i className="fab fa-github fa-2x"></i>
+            </a>
+            <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" target="_blank" rel="noopener noreferrer" href="https://tranquil-shore-37678.herokuapp.com/">
+              <i className="fas fa-globe fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  },
+  {
     name: 'recognizer',
     render: (
       <div className="fl w-100 w-50-m w-third-ns pa2">
@@ -69,31 +94,6 @@ export default [
               <i className="fab fa-github fa-2x"></i>
             </a>
             <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" target="_blank" rel="noopener noreferrer" href="https://recognizer-x.herokuapp.com/">
-              <i className="fas fa-globe fa-2x"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    )
-  },
-  {
-    name: 'restaurant-theme',
-    render: (
-      <div className="fl w-100 w-50-m w-third-ns pa2">
-        <div className="bg-washed-blue br3 grow shadow-5">
-          <div className="center mw6 br3 hidden mv3 tc">
-            <h1 className="f5 bg-washed-green br3 br--top black-70 mv0 pv2 ph3 courier">
-              restaurant-theme
-            </h1>
-            <div className="pa3 bt b--black-10 black-70 georgia">
-              <p className="f6 f5-ns lh-copy measure">
-                A single page Bootstrap theme for small businesses
-              </p>
-            </div>
-            <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" target="_blank" rel="noopener noreferrer" href="https://github.com/eneax/restaurant-theme">
-              <i className="fab fa-github fa-2x"></i>
-            </a>
-            <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" target="_blank" rel="noopener noreferrer" href="https://eneax.github.io/restaurant-theme">
               <i className="fas fa-globe fa-2x"></i>
             </a>
           </div>
