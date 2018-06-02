@@ -1,36 +1,44 @@
-import React from 'react';
-import projectsList from './projectsList';
-import ProjectItem from './ProjectItem';
-import Footer from '../Footer/Footer';
-
-const Projects = () => {
-	return (
-		<div>
-			<main className="pt1">
-		  	<div className="ph2 ph5-m ph6-l">
-					<div className="pv3 f5 f2-ns measure center">
-						<h1 className="fw6 f2 fl w-100 black-70 mt0 mb2 courier">Projects</h1>
-					</div>
-					<div className="f3 center mt3 mb0 black-70 tj">
-						<div className="mw9 center ph3-ns">
-						  <div className="cf ph2-ns">
-								{
-									projectsList.map((item, i) => (
-				          	<ProjectItem render={item.render} key={i} />
-				        	))
-				        }
-						  </div>
-						</div>
-					</div>
-				</div>
-			</main>
-			
-			<Footer />
-		</div>
-	)
-}
-
-export default Projects;
-
-
- 
+export default [
+  {
+    title: 'me[dot]com',
+    descOne: 'My Own Little Corner ',
+    descTwo: ' of the Web',
+    repo: 'https://github.com/eneax/eneax.github.io',
+    link: '/projects#'
+  },
+  {
+    title: 'thriving-cities',
+    descOne: 'Single page company website built ',
+    descTwo: ' with React and Bootstrap',
+    repo: 'https://github.com/eneax/thriving-cities',
+    link: 'https://tranquil-shore-37678.herokuapp.com'
+  },
+  {
+    title: 'github-battle',
+    descOne: 'Discover popular repos and battle ',
+    descTwo: ' your Github friends',
+    repo: 'https://github.com/eneax/github-battle',
+    link: 'https://github-battle-x.firebaseapp.com'
+  },
+  {
+    title: 'resume-theme',
+    descOne: 'A fully responsive resume theme ',
+    descTwo: ' built with Bootstrap',
+    repo: 'https://github.com/eneax/resume-theme',
+    link: 'https://eneax.github.io/resume-theme'
+  },
+  {
+    title: 'recognizer',
+    descOne: 'Face Recognition App ',
+    descTwo: ' (front-end code)',
+    repo: 'https://github.com/eneax/recognizer',
+    link: 'https://recognizer-x.herokuapp.com'
+  },
+  {
+    title: 'recognizer-api',
+    descOne: 'Face Recognition App ',
+    descTwo: ' (back-end code)',
+    repo: 'https://github.com/eneax/recognizer-api',
+    link: 'https://recognizer-x.herokuapp.com'
+  }
+];
