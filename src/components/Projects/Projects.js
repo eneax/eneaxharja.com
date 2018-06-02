@@ -21,11 +21,11 @@ export default [
     link: 'https://github-battle-x.firebaseapp.com'
   },
   {
-    title: 'resume-theme',
-    descOne: 'A fully responsive resume theme ',
-    descTwo: ' built with Bootstrap',
-    repo: 'https://github.com/eneax/resume-theme',
-    link: 'https://eneax.github.io/resume-theme'
+    title: 'weather-app',
+    descOne: 'Weather app built with React ',
+    descTwo: ' and Open Weather API',
+    repo: 'https://github.com/eneax/weather-app',
+    link: 'https://weather-app-x.firebaseapp.com'
   },
   {
     title: 'recognizer',
