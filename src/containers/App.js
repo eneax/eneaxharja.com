@@ -11,8 +11,8 @@ import particlesConfig from '../libs/particlesConfig';
 import Navbar from '../components/Navbar/Navbar';
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
+import BookList from '../components/Books/BookList';
 import Projects from '../components/Projects/Projects';
-import Books from '../components/Books/Books';
 import NoMatch from '../components/NoMatch/NoMatch';
 
 
@@ -30,7 +30,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/projects' component={Projects} />
-            <Route path='/books' component={Books} />
+            <Route path='/books' component={BookList} />
             <Route component={NoMatch} />
           </Switch>
         </div>
@@ -40,4 +40,3 @@ class App extends Component {
 }
 
 export default App;
-
