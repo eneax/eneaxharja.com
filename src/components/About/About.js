@@ -12,7 +12,7 @@ const About = () => {
           </div>
 
           <div className="measure f3 center mv5 black-70 tj">
-            <p className="lh-copy mt0 mb0 f4 f3-ns black-70 georgia">
+            <p className="lh-copy pt3 mt0 mb0 f4 f3-ns black-70 georgia">
               I’m currently living in Chiusi (Tuscany), Italy and working as a Freelance Web Developer.
             </p>
             <p className="lh-copy indent f4 f3-ns black-70 georgia">
