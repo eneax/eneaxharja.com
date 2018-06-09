@@ -23,7 +23,7 @@ const About = () => {
               just walk around in nature.
             </p>
             <p className="lh-copy indent f4 f3-ns black-70 georgia">
-              I'm open to new opportunities and always looking for new projects where I can contribute. Feel free to take a look at my complete resume over <a className='link underline dark-gray hover-bg-washed-blue bg-animate' href='https://drive.google.com/open?id=1qAl3ja8cgLe74zdvyIqlDOuLKMLOksgF' target='_blank' rel='noopener noreferrer'>here</a>.
+              I'm open to new opportunities and always looking for new projects where I can contribute. Feel free to take a look at my complete resume over <a className='link underline dark-gray hover-bg-washed-blue bg-animate' href='https://drive.google.com/open?id=1Py99S_kY1L_nF8nDguv9Rcu3nGnVuHO9' target='_blank' rel='noopener noreferrer'>here</a>.
             </p>
           </div>
         </div>
