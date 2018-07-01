@@ -400,6 +400,11 @@ export default [
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51KdkCxZ2oL.jpg'
   },
   {
+    title: 'Zero To One by Peter Thiel',
+    link: 'http://a.co/hX0z2dn',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/510emnxYL9L._SX312_BO1,204,203,200_.jpg'
+  },
+  {
     title: 'The Art of Peace by Morihei Ueshiba',
     link: 'http://a.co/fN2IKIb',
     img: 'https://images-na.ssl-images-amazon.com/images/I/4152qjZf10L.jpg'
