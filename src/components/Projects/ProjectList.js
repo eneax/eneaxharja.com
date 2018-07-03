@@ -2,7 +2,7 @@ import React from 'react';
 import projects from './projects';
 import Footer from '../Footer/Footer';
 
-const ProjectItem = ({ title, descOne, descTwo, repo, link }) => {
+const ProjectItem = ({ title, desc, repo, link }) => {
 	return (
 		<div className="fl w-100 w-50-m w-third-ns pa2">
 			<div className="bg-washed-blue br3 grow shadow-5">
@@ -10,9 +10,7 @@ const ProjectItem = ({ title, descOne, descTwo, repo, link }) => {
 					<h1 className="f5 bg-washed-green br3 br--top black-70 mv0 pv2 ph3 courier">{title}</h1>
 					<div className="pa3 bt b--black-10 black-70 georgia">
 						<p className="f6 f5-ns lh-copy measure">
-							{descOne} 
-							<br/> 
-							{descTwo}
+							{desc}
 						</p>
 						<a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" href={`${repo}`} target="_blank" rel="noopener noreferrer">
 							<i className="fab fa-github fa-2x"></i>	
@@ -44,8 +42,7 @@ const Projects = () => {
 										<ProjectItem 
 											key={i}
 											title={projects[i].title}
-											descOne={projects[i].descOne}
-											descTwo={projects[i].descTwo}
+											desc={projects[i].desc}
 											repo={projects[i].repo}
 											link={projects[i].link}
 										/>
