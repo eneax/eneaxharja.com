@@ -1,5 +1,5 @@
 import React from 'react';
-import books from './books';
+import books from '../../libs/books';
 import Footer from '../Footer/Footer';
 
 const BookItem = ({ title, link, img }) => {

@@ -6,6 +6,12 @@ export default [
     link: '/projects#'
   },
   {
+    title: 'globetrotter',
+    desc: 'Responsive travel agency website built with React',
+    repo: 'https://github.com/eneax/globetrotter',
+    link: 'https://aqueous-badlands-68133.herokuapp.com'
+  },
+  {
     title: 'krix-portfolio',
     desc: 'Clean and minimal portfolio website built with React',
     repo: 'https://github.com/eneax/krix-portfolio',
@@ -28,11 +34,5 @@ export default [
     desc: 'Discover popular repos and battle your Github friends',
     repo: 'https://github.com/eneax/github-battle',
     link: 'https://github-battle-x.firebaseapp.com'
-  },
-  {
-    title: 'recognizer',
-    desc: 'Face Recognition App (front-end code)',
-    repo: 'https://github.com/eneax/recognizer',
-    link: 'https://recognizer-x.herokuapp.com'
   }
 ];

@@ -1,5 +1,5 @@
 import React from 'react';
-import projects from './projects';
+import projects from '../../libs/projects';
 import Footer from '../Footer/Footer';
 
 const ProjectItem = ({ title, desc, repo, link }) => {
