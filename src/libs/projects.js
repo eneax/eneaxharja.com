@@ -6,6 +6,12 @@ export default [
     link: '/projects#'
   },
   {
+    title: 'minimal-blog',
+    desc: 'A minimal blog built with Gatsby, Netlify CMS and GraphQL',
+    repo: 'https://github.com/eneax/minimal-blog',
+    link: 'https://minimal-blog-x.netlify.com'
+  },
+  {
     title: 'globetrotter',
     desc: 'Responsive travel agency website built with React',
     repo: 'https://github.com/eneax/globetrotter',
@@ -28,11 +34,5 @@ export default [
     desc: 'Weather app built with React and Open Weather API',
     repo: 'https://github.com/eneax/weather-app',
     link: 'https://weather-app-x.firebaseapp.com'
-  },
-  {
-    title: 'github-battle',
-    desc: 'Discover popular repos and battle your Github friends',
-    repo: 'https://github.com/eneax/github-battle',
-    link: 'https://github-battle-x.firebaseapp.com'
   }
 ];
