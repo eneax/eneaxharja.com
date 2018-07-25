@@ -340,6 +340,11 @@ export default [
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51%2B0BsQpAEL.jpg'
   },
   {
+    title: 'The Lean Startup by Eric Ries',
+    link: 'http://a.co/gvDImQl',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51N-u8AsmdL.jpg'
+  },
+  {
     title: 'So You\'ve Been Publicly Shamed by Jon Ronson',
     link: 'http://a.co/a66oG0K',
     img: 'https://images-na.ssl-images-amazon.com/images/I/51Jn%2BA323VL.jpg'
