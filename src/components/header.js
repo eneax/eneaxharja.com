@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
 	<div
 		style={{
 			background: 'rebeccapurple',
@@ -23,17 +23,17 @@ const Header = ({ siteTitle }) => (
 						textDecoration: 'none',
 					}}
 				>
-					{siteTitle}
+					Home
 				</Link>
 			</h1>
 		</div>
 		<nav>
 			<ul>
 				<li>
-					<Link to='/'>Home</Link>
+					<Link to='/about'>About</Link>
 				</li>
 				<li>
-					<Link to='/about'>About</Link>
+					<Link to='/projects'>Projects</Link>
 				</li>
 			</ul>
 		</nav>
