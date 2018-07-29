@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import '../libs/fontawesome/fontawesome-all.min'
+import Particles from 'react-particles-js'
+import particlesConfig from '../libs/particlesConfig'
 import './index.css'
 import Header from '../components/Header'
 
@@ -14,6 +16,18 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
+    />
+
+    <Particles
+      style={{
+        position: 'fixed',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        zIndex: -1
+      }}
+      params={particlesConfig}
     />
 
     <Header />

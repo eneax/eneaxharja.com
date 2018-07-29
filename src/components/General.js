@@ -113,7 +113,6 @@ const SocialLink = styled.a`
 	color: #333;
 `
 
-
 export {
   Navbar,
 	NavLinkWrapper,
