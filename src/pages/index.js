@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import { HeaderWrapper, Header, SubHeader, SocialLink } from '../components/General'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-  </div>
-)
-
-export default IndexPage
+export default class Index extends Component {
+  render() {
+    return (
+      <HeaderWrapper>
+        <Header>Hi, I'm Enea!</Header>
+        <SubHeader>Web Developer</SubHeader>
+        <SocialLink href="https://github.com/eneax" target="_blank" rel="noopener noreferrer" >
+          <i className="fab fa-github fa-2x"></i>
+        </SocialLink>
+        <SocialLink href="mailto:eneaxharja@gmail.com" target="_blank" rel="noopener noreferrer" >
+          <i className="fas fa-envelope fa-2x"></i>
+        </SocialLink>
+      </HeaderWrapper>
+    )
+  }
+}

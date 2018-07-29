@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { 
 	Navbar, 
 	NavLinkWrapper
-} from './Headings'
+} from './General'
 import logo from '../images/logo.png'
 
 

@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import '../libs/fontawesome/fontawesome-all.min'
 import './index.css'
-import Header from '../components/header'
+import Header from '../components/Header'
 
 
 const Layout = ({ children, data }) => (
