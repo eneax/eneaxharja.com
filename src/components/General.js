@@ -173,7 +173,34 @@ const MainTextWrapper = styled.div`
 		line-height: 1.5;
 		text-indent: 1em;
   	margin-top: 0;
-  	margin-bottom: 0;
+		margin-bottom: 0;
+		a {
+			color: #000;
+			text-decoration: underline;
+			transition: color .15s ease-in;
+			transition: background-color .15s ease-in-out;
+			&:link,
+			&:visited {
+				transition: color .15s ease-in;
+			}
+			&:hover {
+				transition: color .15s ease-in;
+				transition: background-color .15s ease-in-out;
+				background-color: #000000;
+				color: #fff;
+			}
+			&:active {
+				transition: color .15s ease-in;
+			}
+			&:focus {
+				transition: color .15s ease-in;
+				transition: background-color .15s ease-in-out;
+				outline: 1px dotted #000000;
+				background-color: #000000;
+				color: #fff;
+			}
+
+		}
 	}
 `
 
