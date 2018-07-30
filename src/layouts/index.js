@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import '../libs/fontawesome/fontawesome-all.min'
-import Particles from 'react-particles-js'
-import particlesConfig from '../libs/particlesConfig'
 import './index.css'
+import '../libs/fontawesome/fontawesome-all.min'
+import particlesConfig from '../libs/particlesConfig'
+import Particles from 'react-particles-js'
 import Header from '../components/Header'
 
 

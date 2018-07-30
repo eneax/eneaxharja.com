@@ -113,11 +113,80 @@ const SocialLink = styled.a`
 	color: #333;
 `
 
+const Main = styled.main`
+	background-color: #fff;
+`
+
+const MainWrapper = styled.div`
+	padding-left: .5rem;
+	padding-right: .5rem;
+	@media screen and (min-width: 48em) and (max-width: 64em) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	@media screen and (min-width: 64em)  {
+		padding-left: 8rem;
+  	padding-right: 8rem;
+	}
+`
+
+const TitleWrapper = styled.div`
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+	@media screen and (min-width: 48em) {
+		font-size: 2.25rem;
+	}
+	max-width: 30em;
+	margin-right: auto;
+	margin-left: auto;
+	h1 {
+		font-weight: 600;
+		font-size: 2.25rem;
+		text-align: center;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-family: Courier Next,courier,monospace;
+	}
+`
+
+const MainTextWrapper = styled.div`
+	max-width: 30em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4rem;
+	margin-top: 0;
+	font-size: 1.5rem;
+	text-align: justify;
+	p:first-of-type{
+    text-indent: 0;
+  	margin-top: 0;
+  	margin-bottom: 0;
+	}
+	p {
+		font-family: georgia,serif;
+		font-size: 1.25rem;
+		@media screen and (min-width: 48em) {
+			font-size: 1.5rem;
+		}
+		line-height: 1.5;
+		text-indent: 1em;
+  	margin-top: 0;
+  	margin-bottom: 0;
+	}
+`
+
+
 export {
   Navbar,
 	NavLinkWrapper,
 	HeaderWrapper,
 	Header,
 	SubHeader,
-	SocialLink
+	SocialLink,
+	Main,
+	MainWrapper,
+	TitleWrapper,
+	MainTextWrapper
 }
