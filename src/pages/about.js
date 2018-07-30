@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Main, MainWrapper, TitleWrapper, MainTextWrapper} from '../components/General'
+import Footer from '../components/Footer'
 
 export default class About extends Component {
   render() {
@@ -31,6 +32,8 @@ export default class About extends Component {
             </MainTextWrapper>
           </MainWrapper>
         </Main>
+
+        <Footer/>
       </div>
     )
   }

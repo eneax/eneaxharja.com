@@ -204,6 +204,26 @@ const MainTextWrapper = styled.div`
 	}
 `
 
+const FooterWrapper = styled.footer`
+	font-family: Courier Next,courier,monospace;
+	color: #555;
+	@media screen and (min-width: 48em) and (max-width: 64em) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	@media screen and (min-width: 64em)  {
+		padding-left: 8rem;
+  	padding-right: 8rem;
+	}
+	small {
+		display: block;
+		font-size: .75rem;
+		text-align: center;
+		b {
+			text-transform: uppercase;
+		}
+	}
+`
 
 export {
   Navbar,
@@ -215,5 +235,6 @@ export {
 	Main,
 	MainWrapper,
 	TitleWrapper,
-	MainTextWrapper
+	MainTextWrapper,
+	FooterWrapper
 }
