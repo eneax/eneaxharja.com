@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 
 const Navbar = styled.nav`
 	display: table;
@@ -114,23 +113,6 @@ const SocialLink = styled.a`
 	color: #333;
 `
 
-const Main = styled.main`
-	background-color: #fff;
-`
-
-const MainWrapper = styled.div`
-	padding-left: .5rem;
-	padding-right: .5rem;
-	@media screen and (min-width: 48em) and (max-width: 64em) {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-	@media screen and (min-width: 64em)  {
-		padding-left: 8rem;
-  	padding-right: 8rem;
-	}
-`
-
 const FooterWrapper = styled.footer`
 	font-family: avenir,sans-serif;
 	color: #555;
@@ -209,7 +191,7 @@ const Thumbnail = styled.div`
 	height: auto;
 	text-align: center;
 	img {
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 		margin-bottom: 0;
 	}
@@ -243,7 +225,6 @@ const MainTextWrapper = styled.div`
 	background-color: #fff;
 	p {
 		font-family: avenir,sans-serif;
-		font-size: 1.2rem;
 		@media screen and (min-width: 48em) {
 			font-size: 1.5rem;
 		}
@@ -275,7 +256,6 @@ const MainTextWrapper = styled.div`
 				background-color: #000000;
 				color: #fff;
 			}
-
 		}
 	}
 `
@@ -288,13 +268,11 @@ export {
 	Header,
 	SubHeader,
 	SocialLink,
-	Main,
-	MainWrapper,
-	TitleWrapper,
-	MainTextWrapper,
 	FooterWrapper,
 	Container, 
 	Row, 
 	Col6Medium4, 
 	Thumbnail,
+	TitleWrapper,
+	MainTextWrapper,
 }

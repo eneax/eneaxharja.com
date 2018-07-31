@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import { Main, MainWrapper, TitleWrapper, MainTextWrapper, Container} from '../components/General'
+import { Container, TitleWrapper, MainTextWrapper } from '../components/General'
 import Footer from '../components/Footer'
 
 export default class About extends Component {
