@@ -5,7 +5,8 @@ const Navbar = styled.nav`
 	display: table;
 	width: 100%;
 	box-sizing: border-box;
-  padding: 1rem;
+	padding: 1rem;
+	font-family: avenir,sans-serif;
 	@media screen and (min-width: 30em) {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -77,7 +78,7 @@ const Header = styled.h1`
     font-size: 1.5rem;
 	}
 	font-weight: 600;
-	font-family: Courier Next,courier,monospace;
+	font-family: avenir,sans-serif;
 `
 
 const SubHeader = styled.h2`
@@ -85,7 +86,7 @@ const SubHeader = styled.h2`
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-family: georgia,serif;
+	font-family: avenir,sans-serif;
 	margin-top: -.5rem;
   margin-bottom: 1rem;
 `
@@ -130,24 +131,104 @@ const MainWrapper = styled.div`
 	}
 `
 
-const TitleWrapper = styled.div`
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	font-size: 1rem;
-	@media screen and (min-width: 48em) {
-		font-size: 2.25rem;
+const FooterWrapper = styled.footer`
+	font-family: avenir,sans-serif;
+	color: #555;
+	@media screen and (min-width: 48em) and (max-width: 64em) {
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
-	max-width: 30em;
-	margin-right: auto;
-	margin-left: auto;
-	h1 {
-		font-weight: 600;
-		font-size: 2.25rem;
+	@media screen and (min-width: 64em)  {
+		padding-left: 8rem;
+  	padding-right: 8rem;
+	}
+	small {
+		display: block;
+		font-size: .75rem;
 		text-align: center;
-		width: 100%;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: Courier Next,courier,monospace;
+		b {
+			text-transform: uppercase;
+		}
+	}
+`
+
+const Container = styled.div`
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+	@media (min-width: 576px) {
+    max-width: 540px;
+	}
+	@media (min-width: 768px) {
+    max-width: 720px;
+	}
+	@media (min-width: 992px) {
+    max-width: 960px;
+	}
+	@media (min-width: 1200px) {
+    max-width: 1140px;
+	}
+`
+
+const Row = styled.div`
+	display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+`
+
+const Col6Medium4 = styled.div`
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 1rem;
+
+	-ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+	max-width: 50%;
+	
+	@media (min-width: 768px) {
+		-ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+	}
+`
+
+const Thumbnail = styled.div`
+	padding: 0.25rem;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	border-radius: 0.25rem;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	img {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 0;
+	}
+	h5 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 0;
+	}
+`
+
+const TitleWrapper = styled.div`
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+	border-radius: 0.3rem;
+	h1 {
+		font-family: avenir,sans-serif;
+		text-align: center;
+		margin-bottom: 0;
 	}
 `
 
@@ -157,21 +238,16 @@ const MainTextWrapper = styled.div`
 	margin-left: auto;
 	margin-bottom: 4rem;
 	margin-top: 0;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-align: justify;
-	p:first-of-type{
-    text-indent: 0;
-  	margin-top: 0;
-  	margin-bottom: 0;
-	}
+	background-color: #fff;
 	p {
-		font-family: georgia,serif;
-		font-size: 1.25rem;
+		font-family: avenir,sans-serif;
+		font-size: 1.2rem;
 		@media screen and (min-width: 48em) {
 			font-size: 1.5rem;
 		}
-		line-height: 1.5;
-		text-indent: 1em;
+		line-height: 1.2;
   	margin-top: 0;
 		margin-bottom: 0;
 		a {
@@ -204,26 +280,6 @@ const MainTextWrapper = styled.div`
 	}
 `
 
-const FooterWrapper = styled.footer`
-	font-family: Courier Next,courier,monospace;
-	color: #555;
-	@media screen and (min-width: 48em) and (max-width: 64em) {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-	@media screen and (min-width: 64em)  {
-		padding-left: 8rem;
-  	padding-right: 8rem;
-	}
-	small {
-		display: block;
-		font-size: .75rem;
-		text-align: center;
-		b {
-			text-transform: uppercase;
-		}
-	}
-`
 
 export {
   Navbar,
@@ -236,5 +292,9 @@ export {
 	MainWrapper,
 	TitleWrapper,
 	MainTextWrapper,
-	FooterWrapper
+	FooterWrapper,
+	Container, 
+	Row, 
+	Col6Medium4, 
+	Thumbnail,
 }
