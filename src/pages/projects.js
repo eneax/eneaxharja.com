@@ -5,11 +5,11 @@ import Footer from '../components/Footer'
 import projects from '../libs/projects-data'
 
 
-const ProjectItem = ({ link, title, img, desc, repo }) => {
+const ProjectItem = ({ repo, title, link, img, desc }) => {
   return (
     <Col>
       <SubTitleWrapper>
-        <a href={`${link}`} target="_blank" rel="noopener noreferrer">
+        <a href={`${repo}`} target="_blank" rel="noopener noreferrer">
           <h2>{title}</h2>
         </a>
       </SubTitleWrapper>

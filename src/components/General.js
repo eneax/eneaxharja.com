@@ -172,6 +172,7 @@ const Col = styled.div`
 	padding-left: 15px;
 	> p {
 		margin-bottom: 2rem;
+		color: #555;
 	}
 `
 
