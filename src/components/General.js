@@ -164,6 +164,17 @@ const Row = styled.div`
   margin-left: -15px;
 `
 
+const Col = styled.div`
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	> p {
+		margin-bottom: 2rem;
+	}
+`
+
 const Col6Medium4 = styled.div`
 	position: relative;
 	width: 100%;
@@ -234,6 +245,26 @@ const TitleWrapper = styled.div`
 	}
 `
 
+const SubTitleWrapper = styled.div`
+	font-family: avenir,sans-serif;
+	text-align: left;
+	margin-top: 1rem;
+	a {
+		text-decoration: none;
+		color: #000;
+		&:hover,
+		&:focus {
+			h2 {
+				transition: color .15s ease-in;
+				color: #663399;
+			}
+		}
+	}
+	h2 {
+		margin-bottom: .5rem;
+	}
+`
+
 const MainTextWrapper = styled.div`
 	max-width: 30em;
 	margin-right: auto;
@@ -243,7 +274,7 @@ const MainTextWrapper = styled.div`
 	font-size: 1.2rem;
 	text-align: justify;
 	background-color: #fff;
-	p {
+	> p {
 		font-family: avenir,sans-serif;
 		@media screen and (min-width: 48em) {
 			font-size: 1.5rem;
@@ -280,6 +311,17 @@ const MainTextWrapper = styled.div`
 	}
 `
 
+const ImageWrapper = styled.div`
+	width: 100%;
+	height: auto;
+	margin-bottom: 0;
+	img {
+		margin-bottom: .75rem;
+		border: 1px solid #e7e7e7;
+		border-radius: 0.25rem !important;
+	}
+`
+
 
 export {
   Navbar,
@@ -290,9 +332,12 @@ export {
 	SocialLink,
 	FooterWrapper,
 	Container, 
-	Row, 
+	Row,
+	Col,
 	Col6Medium4, 
 	Thumbnail,
 	TitleWrapper,
+	SubTitleWrapper,
 	MainTextWrapper,
+	ImageWrapper
 }
