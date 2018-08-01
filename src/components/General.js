@@ -114,27 +114,6 @@ const SocialLink = styled.a`
 	color: #333;
 `
 
-const FooterWrapper = styled.footer`
-	font-family: avenir,sans-serif;
-	color: #555;
-	@media screen and (min-width: 48em) and (max-width: 64em) {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-	@media screen and (min-width: 64em)  {
-		padding-left: 8rem;
-  	padding-right: 8rem;
-	}
-	small {
-		display: block;
-		font-size: .75rem;
-		text-align: center;
-		b {
-			text-transform: uppercase;
-		}
-	}
-`
-
 const Container = styled.div`
   width: 100%;
   padding-right: 15px;
@@ -323,6 +302,24 @@ const ImageWrapper = styled.div`
 	}
 `
 
+const FooterWrapper = styled.footer`
+	font-family: avenir,sans-serif;
+	color: #555;
+	@media screen and (min-width: 48em) and (max-width: 64em) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	@media screen and (min-width: 64em)  {
+		padding-left: 8rem;
+  	padding-right: 8rem;
+	}
+	small {
+		display: block;
+		font-size: .75rem;
+		text-align: center;
+	}
+`
+
 
 export {
   Navbar,
@@ -331,7 +328,6 @@ export {
 	Header,
 	SubHeader,
 	SocialLink,
-	FooterWrapper,
 	Container, 
 	Row,
 	Col,
@@ -340,5 +336,6 @@ export {
 	TitleWrapper,
 	SubTitleWrapper,
 	MainTextWrapper,
-	ImageWrapper
+	ImageWrapper,
+	FooterWrapper
 }

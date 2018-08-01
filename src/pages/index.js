@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
 import { HeaderWrapper, Header, SubHeader, SocialLink } from '../components/General'
 
 export default class Index extends Component {
