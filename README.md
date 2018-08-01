@@ -1,8 +1,4 @@
-# Work in Progress 
-
-`¯\_(ツ)_/¯`
-
-## eneaxharja[dot]com
+# eneaxharja[dot]com
 
 My Own Little Corner of the Web!
 
