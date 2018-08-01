@@ -1,452 +1,542 @@
 export default [
   {
-    title: 'Foundation by Isaac Asimov',
     link: 'http://a.co/crR213V',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/410ysFH-yQL._SX295_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/410ysFH-yQL._SX295_BO1,204,203,200_.jpg',
+    title: 'Foundation',
+    author: 'Isaac Asimov'
   },
   {
-    title: 'Foundation and Empire by Isaac Asimov',
     link: 'http://a.co/j9mDO9x',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51gSFqVMV1L._SX302_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51gSFqVMV1L._SX302_BO1,204,203,200_.jpg',
+    title: 'Foundation and Empire',
+    author: 'Isaac Asimov'
   },
   {
-    title: 'Second Foundation by Isaac Asimov',
     link: 'http://a.co/94b6dG7',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51uwLsLdaNL._SX303_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51uwLsLdaNL._SX303_BO1,204,203,200_.jpg',
+    title: 'Second Foundation',
+    author: 'Isaac Asimov'
   },
   {
-    title: 'L\'arte di conoscere se stessi. Pensieri by Marco Aurelio',
     link: 'http://amzn.eu/97k3sXU',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41DG0FndxZL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41DG0FndxZL.jpg',
+    title: 'L\'arte di conoscere se stessi. Pensieri',
+    author: 'Marco Aurelio'
   },
   {
-    title: 'Our Final Invention by James Barrat',
     link: 'http://a.co/47JrnMD',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41ozMLdzJHL._SX334_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41ozMLdzJHL._SX334_BO1,204,203,200_.jpg',
+    title: 'Our Final Invention',
+    author: 'James Barrat'
   },
   {
-    title: 'Manifesto per la felicità by Stefano Bartolini',
     link: 'http://amzn.eu/5H7RzAg',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51%2BEQi8rqiL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51%2BEQi8rqiL.jpg',
+    title: 'Manifesto per la felicità',
+    author: 'Stefano Bartolini'
   },
   {
-    title: 'The New One Minute Manager by Ken Blanchard',
     link: 'http://a.co/fhRk6X7',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/513RrFGNeiL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/513RrFGNeiL.jpg',
+    title: 'The New One Minute Manager',
+    author: 'Ken Blanchard'
   },
   {
-    title: 'Superintelligence by Nick Bostrom',
     link: 'http://a.co/dtsfk2l',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51xiCuJ7VML._SX326_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51xiCuJ7VML._SX326_BO1,204,203,200_.jpg',
+    title: 'Superintelligence',
+    author: 'Nick Bostrom'
   },
   {
-    title: 'Angeli e demoni by Dan Brown',
     link: 'http://amzn.eu/coeNrsm',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51F3efIjSIL._SX320_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51F3efIjSIL._SX320_BO1,204,203,200_.jpg',
+    title: 'Angeli e demoni',
+    author: 'Dan Brown'
   },
   {
-    title: 'Crypto by Dan Brown',
     link: 'http://amzn.eu/57IKDlw',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51jCZZnMuML.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51jCZZnMuML.jpg',
+    title: 'Crypto',
+    author: 'Dan Brown'
   },
   {
-    title: 'Il codice da Vinci by Dan Brown',
     link: 'http://amzn.eu/am6oOMn',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51jpVkdGv6L._SX320_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51jpVkdGv6L._SX320_BO1,204,203,200_.jpg',
+    title: 'Il codice da Vinci',
+    author: 'Dan Brown'
   },
   {
-    title: 'Il simbolo perduto by Dan Brown',
     link: 'http://amzn.eu/59LH1hE',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51G1e7Dov4L._SX320_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51G1e7Dov4L._SX320_BO1,204,203,200_.jpg',
+    title: 'Il simbolo perduto',
+    author: 'Dan Brown'
   },
   {
-    title: 'La verità del ghiaccio by Dan Brown',
     link: 'http://amzn.eu/ijqPfP2',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/5163CNcsMML.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/5163CNcsMML.jpg',
+    title: 'La verità del ghiaccio',
+    author: 'Dan Brown'
   },
   {
-    title: 'Il deserto dei Tartari by Dino Buzzati',
     link: 'http://amzn.eu/aMqWIcU',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51OW1OoalYL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51OW1OoalYL.jpg',
+    title: 'Il deserto dei Tartari',
+    author: 'Dino Buzzati'
   },
   {
-    title: 'La democrazia: Storia di un\'ideologia by Luciano Canfora',
     link: 'http://amzn.eu/gk9s6IN',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41fABtaKzYL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41fABtaKzYL.jpg',
+    title: 'La democrazia: Storia di un\'ideologia',
+    author: 'Luciano Canfora'
   },
   {
-    title: 'L\'alchimista by Paulo Coelho',
     link: 'http://amzn.eu/bADv43Q',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51NxsvVEITL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51NxsvVEITL.jpg',
+    title: 'L\'alchimista',
+    author: 'Paulo Coelho'
   },
   {
-    title: 'Testa, cuore e gambe by Antonio Conte',
     link: 'http://amzn.eu/gKuM8xQ',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51pPvC6kPRL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51pPvC6kPRL.jpg',
+    title: 'Testa, cuore e gambe',
+    author: 'Antonio Conte'
   },
   {
-    title: 'L\'origine delle specie by Charles Darwin',
     link: 'http://amzn.eu/eJPqgTn',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41qWvJ4U00L.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41qWvJ4U00L.jpg',
+    title: 'L\'origine delle specie',
+    author: 'Charles Darwin'
   },
   {
-    title: 'Il Piccolo Principe by Antoine de Saint-Exupéry',
     link: 'http://amzn.eu/4ebwdU2',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41M6Vvg6AlL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41M6Vvg6AlL.jpg',
+    title: 'Il Piccolo Principe',
+    author: 'Antoine de Saint-Exupéry'
   },
   {
-    title: 'Giochiamo ancora by Alessandro Del Piero',
     link: 'http://amzn.eu/2WoijXR',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41JGVE9LraL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41JGVE9LraL.jpg',
+    title: 'Giochiamo ancora',
+    author: 'Alessandro Del Piero'
   },
   {
-    title: 'Discourse on the Method by René Descartes',
     link: 'http://amzn.eu/4stWIOx',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51uezB0qwcL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51uezB0qwcL.jpg',
+    title: 'Discourse on the Method',
+    author: 'René Descartes'
   },
   {
-    title: 'Lettera sulla felicità by Epicuro',
     link: 'http://amzn.eu/gXjb246',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41JRQSBjeUL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41JRQSBjeUL.jpg',
+    title: 'Lettera sulla felicità',
+    author: 'Epicuro'
   },
   {
-    title: 'The 4-Hour Work Week by Timothy Ferriss',
     link: 'http://amzn.eu/eazkkDO',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51iGkLC6jhL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51iGkLC6jhL.jpg',
+    title: 'The 4-Hour Work Week',
+    author: 'Timothy Ferriss'
   },
   {
-    title: 'The Great Gatsby by F. Scott Fitzgerald',
     link: 'http://a.co/8V0TIqt',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51tmGgkv3iL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51tmGgkv3iL.jpg',
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
   },
   {
-    title: 'La cruna dell\'ago by Ken Follett',
     link: 'http://amzn.eu/6zauuUl',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51Wd1bs4nKL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51Wd1bs4nKL.jpg',
+    title: 'La cruna dell\'ago',
+    author: 'Ken Follett',
   },
   {
-    title: 'Il codice Rebecca by Ken Follett',
     link: 'http://amzn.eu/7NODdkE',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/5122cOU4bzL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/5122cOU4bzL.jpg',
+    title: 'Il codice Rebecca',
+    author: 'Ken Follett',
   },
   {
-    title: 'L\'inverno del mondo by Ken Follett',
     link: 'http://amzn.eu/8opgynO',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51x4ujQXfkL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51x4ujQXfkL.jpg',
+    title: 'L\'inverno del mondo',
+    author: 'Ken Follett',
   },
   {
-    title: 'La caduta dei giganti by Ken Follett',
     link: 'http://amzn.eu/dAJtQtL',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51zJSTA%2B6cL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51zJSTA%2B6cL.jpg',
+    title: 'La caduta dei giganti',
+    author: 'Ken Follett',
   },
   {
-    title: 'I giorni dell\'eternità by Ken Follett',
     link: 'http://amzn.eu/gyTM98M',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51QUlHfSldL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51QUlHfSldL.jpg',
+    title: 'I giorni dell\'eternità',
+    author: 'Ken Follett',
   },
   {
-    title: 'The Machine Stops by E. M. Forster',
     link: 'http://amzn.eu/iVe8PWJ',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51wyk%2BbUskL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51wyk%2BbUskL.jpg',
+    title: 'The Machine Stops',
+    author: 'E. M. Forster',
   },
   {
-    title: 'L\'interpretazione dei sogni by Sigmund Freud',
     link: 'http://amzn.eu/17kfUnl',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41EYBJgBWtL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41EYBJgBWtL.jpg',
+    title: 'L\'interpretazione dei sogni',
+    author: 'Sigmund Freud',
   },
   {
-    title: 'Blink by Malcolm Gladwell',
     link: 'http://a.co/8x8PEgr',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41U5DccwNoL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41U5DccwNoL.jpg',
+    title: 'Blink',
+    author: 'Malcolm Gladwell',
   },
   {
-    title: 'Outliers by Malcolm Gladwell',
     link: 'http://a.co/9TbJE1a',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41kXEQoH9rL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41kXEQoH9rL.jpg',
+    title: 'Outliers',
+    author: 'Malcolm Gladwell',
   },
   {
-    title: 'The Tipping Point by Malcolm Gladwell',
     link: 'http://a.co/bQVfDQf',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41usQnvp5iL._SX331_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41usQnvp5iL._SX331_BO1,204,203,200_.jpg',
+    title: 'The Tipping Point',
+    author: 'Malcolm Gladwell',
   },
   {
-    title: 'Faust by Johann Wolfgang Goethe',
     link: 'http://amzn.eu/g12CsRU',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/412fOgIUs4L.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/412fOgIUs4L.jpg',
+    title: 'Faust',
+    author: 'J.W. Goethe',
   },
   {
-    title: 'Il signore delle mosche by William Golding',
     link: 'http://amzn.eu/i5yfUqr',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51mTIsQAx5L._SX332_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51mTIsQAx5L._SX332_BO1,204,203,200_.jpg',
+    title: 'Il signore delle mosche',
+    author: 'William Golding',
   },
   {
-    title: 'The Assault on Reason by Al Gore',
     link: 'http://a.co/dsZVIsE',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41SF5-ZJ6qL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41SF5-ZJ6qL.jpg',
+    title: 'The Assault on Reason',
+    author: 'Al Gore',
   },
   {
-    title: 'Originals by Adam Grant',
     link: 'http://a.co/5ugr6Gq',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51ASVW6i0gL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51ASVW6i0gL.jpg',
+    title: 'Originals',
+    author: 'Adam Grant',
   },
   {
-    title: 'Sapiens: A Brief History of Humankind by Y. N. Harari',
     link: 'http://a.co/dvwiPY7',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41oEGC8oHgL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41oEGC8oHgL.jpg',
+    title: 'Sapiens: A Brief History of Humankind',
+    author: 'Y. N. Harari',
   },
   {
-    title: 'Homo Deus: A Brief History of Tomorrow by Y. N. Harari',
     link: 'http://a.co/44cOIpG',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/414JWlgTXGL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/414JWlgTXGL.jpg',
+    title: 'Homo Deus: A Brief History of Tomorrow',
+    author: 'Y. N. Harari',
   },
   {
-    title: 'A Brief History Of Time by Stephen Hawking',
     link: 'http://a.co/aw0Wf29',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51P8miZZ6OL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51P8miZZ6OL.jpg',
+    title: 'A Brief History Of Time',
+    author: 'Stephen Hawking',
   },
   {
-    title: 'The Moon is a Harsh Mistress by Robert A. Heinlein',
     link: 'http://a.co/cR2hXcE',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51dTK%2BnmB2L.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51dTK%2BnmB2L.jpg',
+    title: 'The Moon is a Harsh Mistress',
+    author: 'Robert A. Heinlein',
   },
   {
-    title: 'Brave New World by Aldous Huxley',
     link: 'http://a.co/46wd7IX',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51IikE1TS1L._SX323_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51IikE1TS1L._SX323_BO1,204,203,200_.jpg',
+    title: 'Brave New World',
+    author: 'Aldous Huxley',
   },
   {
-    title: 'Steve Jobs by Walter Isaacson',
     link: 'http://amzn.eu/6EDnAHt',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/414v%2B5wV2CL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/414v%2B5wV2CL.jpg',
+    title: 'Steve Jobs',
+    author: 'Walter Isaacson',
   },
   {
-    title: 'The Remains of the Day by Kazuo Ishiguro',
     link: 'http://amzn.eu/2Xtl9Wu',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51ojP8wzuOL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51ojP8wzuOL.jpg',
+    title: 'The Remains of the Day',
+    author: 'Kazuo Ishiguro',
   },
   {
-    title: 'Peaks and Valleys by Spencer Johnson',
     link: 'http://a.co/eOjTz5N',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51JKT%2BpZzuL._SX310_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51JKT%2BpZzuL._SX310_BO1,204,203,200_.jpg',
+    title: 'Peaks and Valleys',
+    author: 'Spencer Johnson',
   },
   {
-    title: 'The Present by Spencer Johnson',
     link: 'http://a.co/iowkCaM',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51SKa-ga48L.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51SKa-ga48L.jpg',
+    title: 'The Present',
+    author: 'Spencer Johnson',
   },
   {
-    title: 'Who Moved My Cheese by Spencer Johnson',
     link: 'http://a.co/5568wQD',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51B7XojAOJL._SY346_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51B7XojAOJL._SY346_.jpg',
+    title: 'Who Moved My Cheese',
+    author: 'Spencer Johnson',
   },
   {
-    title: 'La metamorfosi by Franz Kafka',
     link: 'http://amzn.eu/brS51fx',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41fFmzoPaeL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41fFmzoPaeL.jpg',
+    title: 'La metamorfosi',
+    author: 'Franz Kafka',
   },
   {
-    title: 'Thinking, Fast and Slow by Daniel Kahneman',
     link: 'http://a.co/53Zwzm6',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41shZGS-G%2BL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41shZGS-G%2BL.jpg',
+    title: 'Thinking, Fast and Slow',
+    author: 'Daniel Kahneman',
   },
   {
-    title: 'Pietro e la città d\'oro by Ilse Kleberger',
     link: 'http://amzn.eu/ds6IdsH',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/31nTLPLSuwL._BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/31nTLPLSuwL._BO1,204,203,200_.jpg',
+    title: 'Pietro e la città d\'oro',
+    author: 'Ilse Kleberger',
   },
   {
-    title: 'Don\'t Make Me Think by Steve Krug',
     link: 'http://a.co/fUo5BEm',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51pnouuPO5L._SX387_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51pnouuPO5L._SX387_BO1,204,203,200_.jpg',
+    title: 'Don\'t Make Me Think',
+    author: 'Steve Krug',
   },
   {
-    title: 'Rivoluzione Google by Steven Levy',
     link: 'http://amzn.eu/eL6mEcZ',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51zEulgpKrL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51zEulgpKrL.jpg',
+    title: 'Rivoluzione Google',
+    author: 'Steven Levy',
   },
   {
-    title: 'Vacanze all\'isola dei gabbiani by Astrid Lindgren',
     link: 'http://amzn.eu/6vThSsm',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51O-e3ffv2L._SX309_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51O-e3ffv2L._SX309_BO1,204,203,200_.jpg',
+    title: 'Vacanze all\'isola dei gabbiani',
+    author: 'Astrid Lindgren',
   },
   {
-    title: 'The Prince by Nicolò Machiavelli',
     link: 'http://a.co/8yozzl9',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51ea00ukx-L._SY346_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51ea00ukx-L._SY346_.jpg',
+    title: 'The Prince',
+    author: 'Nicolò Machiavelli',
   },
   {
-    title: 'Idi di Marzo by V. M. Manfredi',
     link: 'http://amzn.eu/6EPybtM',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51%2BKjOQxXvL._SX320_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51%2BKjOQxXvL._SX320_BO1,204,203,200_.jpg',
+    title: 'Idi di Marzo',
+    author: 'V. M. Manfredi',
   },
   {
-    title: 'Lo scudo di Talos by V. M. Manfredi',
     link: 'http://amzn.eu/4SXVmmv',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41XP3cvlHwL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41XP3cvlHwL.jpg',
+    title: 'Lo scudo di Talos',
+    author: 'V. M. Manfredi',
   },
   {
-    title: 'Manifesto del partito comunista by K. Marx and F. Engels',
     link: 'http://amzn.eu/5YAouCR',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51svIqMhz5L.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51svIqMhz5L.jpg',
+    title: 'Manifesto del partito comunista',
+    author: 'K. Marx and F. Engels',
   },
   {
-    title: 'Moby Dick by Herman Melville',
     link: 'http://amzn.eu/g0cuEtb',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51ED%2B%2BDCA0L.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51ED%2B%2BDCA0L.jpg',
+    title: 'Moby Dick',
+    author: 'Herman Melville',
   },
   {
-    title: 'La nuova geografia del lavoro by Enrico Moretti',
     link: 'http://amzn.eu/aEyugsS',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51w6Z7TxzZL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51w6Z7TxzZL.jpg',
+    title: 'La nuova geografia del lavoro',
+    author: 'Enrico Moretti',
   },
   {
-    title: 'Deep Work by Cal Newport',
     link: 'http://a.co/5RVoazx',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/417yjF%2BZ5zL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/417yjF%2BZ5zL.jpg',
+    title: 'Deep Work',
+    author: 'Cal Newport',
   },
   {
-    title: 'Odissea by Omero',
     link: 'http://amzn.eu/6nBSDQd',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/514iyD0aZwL._SY346_.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/514iyD0aZwL._SY346_.jpg',
+    title: 'Odissea',
+    author: 'Omero',
   },
   {
-    title: 'Iliade by Omero',
     link: 'http://amzn.eu/4uY6ikv',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51Pkl6J-WxL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51Pkl6J-WxL.jpg',
+    title: 'Iliade',
+    author: 'Omero',
   },
   {
-    title: 'Merchants of Doubt by Naomi Oreskes et al.',
     link: 'http://a.co/4my5FfW',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/512zlqYX2OL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/512zlqYX2OL.jpg',
+    title: 'Merchants of Doubt',
+    author: 'Naomi Oreskes et al.',
   },
   {
-    title: '1984 by George Orwell',
     link: 'http://amzn.eu/iFE1T6v',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51A3yiV5OHL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51A3yiV5OHL.jpg',
+    title: '1984',
+    author: 'George Orwell',
   },
   {
-    title: 'Animal Farm by George Orwell',
     link: 'http://amzn.eu/ekJgR7a',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/61NM3P2LnhL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/61NM3P2LnhL.jpg',
+    title: 'Animal Farm',
+    author: 'George Orwell',
   },
   {
-    title: 'Uno, nessuno e centomila by Luigi Pirandello',
     link: 'http://amzn.eu/icQzjZz',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51zSYEOR4NL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51zSYEOR4NL.jpg',
+    title: 'Uno, nessuno e centomila',
+    author: 'Luigi Pirandello',
   },
   {
-    title: 'Niente di nuovo sul fronte occidentale by E. M. Remarque',
     link: 'http://amzn.eu/ifWvGGk',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51%2B0BsQpAEL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51%2B0BsQpAEL.jpg',
+    title: 'Niente di nuovo sul fronte occidentale',
+    author: 'E. M. Remarque',
   },
   {
-    title: 'The Lean Startup by Eric Ries',
     link: 'http://a.co/gvDImQl',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51N-u8AsmdL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51N-u8AsmdL.jpg',
+    title: 'The Lean Startup',
+    author: 'Eric Ries',
   },
   {
-    title: 'So You\'ve Been Publicly Shamed by Jon Ronson',
     link: 'http://a.co/a66oG0K',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51Jn%2BA323VL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51Jn%2BA323VL.jpg',
+    title: 'So You\'ve Been Publicly Shamed',
+    author: 'Jon Ronson',
   },
   {
-    title: 'The Psychopath Test by Jon Ronson',
     link: 'http://a.co/5Q5hXJi',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51rtk9Bq6SL._SY346_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51rtk9Bq6SL._SY346_.jpg',
+    title: 'The Psychopath Test',
+    author: 'Jon Ronson',
   },
   {
-    title: 'Frankenstein by Mary Shelley',
     link: 'http://amzn.eu/gh2xTiA',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41KYsqVDB8L.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41KYsqVDB8L.jpg',
+    title: 'Frankenstein',
+    author: 'Mary Shelley',
   },
   {
-    title: 'The Strange Case of Dr. Jekyll and Mr. Hyde by R. L. Stevenson',
     link: 'http://a.co/esmta92',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51lpFzEtkFL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51lpFzEtkFL.jpg',
+    title: 'The Strange Case of Dr. Jekyll and Mr. Hyde',
+    author: 'R. L. Stevenson',
   },
   {
-    title: 'Treasure Island by R. L. Stevenson',
     link: 'http://a.co/dh0bGxu',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51LqsEjsB-L._SX312_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51LqsEjsB-L._SX312_BO1,204,203,200_.jpg',
+    title: 'Treasure Island',
+    author: 'R. L. Stevenson',
   },
   {
-    title: 'The Everything Store by Brad Stone',
     link: 'http://a.co/j6DkFqU',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51ok98SDF9L.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51ok98SDF9L.jpg',
+    title: 'The Everything Store',
+    author: 'Brad Stone',
   },
   {
-    title: 'The Art of War by Sun Tzu',
     link: 'http://a.co/5F9KYXU',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/512MKJYTV5L.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/512MKJYTV5L.jpg',
+    title: 'The Art of War',
+    author: 'Sun Tzu',
   },
   {
-    title: 'Gulliver\'s Travels by Jonathan Swift',
     link: 'http://amzn.eu/cNDNQMM',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51e5xCYxDyL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51e5xCYxDyL.jpg',
+    title: 'Gulliver\'s Travels',
+    author: 'Jonathan Swift',
   },
   {
-    title: 'Antifragile: Prosperare nel disordine by N. N. Taleb',
     link: 'http://amzn.eu/97RNfKi',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41sobCcjhjL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41sobCcjhjL.jpg',
+    title: 'Antifragile: Prosperare nel disordine',
+    author: 'N. N. Taleb',
   },
   {
-    title: 'Giocati dal caso by N. N. Taleb',
     link: 'http://amzn.eu/1aFCngp',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51PSvZdKiOL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51PSvZdKiOL.jpg',
+    title: 'Giocati dal caso',
+    author: 'N. N. Taleb',
   },
   {
-    title: 'Il Cigno nero by N. N. Taleb',
     link: 'http://amzn.eu/fO0ORKK',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41xujr17smL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41xujr17smL.jpg',
+    title: 'Il Cigno nero',
+    author: 'N. N. Taleb',
   },
   {
-    title: 'My Inventions by Nikola Tesla',
     link: 'http://amzn.eu/9Nww2Qn',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/51KdkCxZ2oL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51KdkCxZ2oL.jpg',
+    title: 'My Inventions',
+    author: 'Nikola Tesla',
   },
   {
-    title: 'Zero To One by Peter Thiel',
     link: 'http://a.co/hX0z2dn',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/510emnxYL9L._SX312_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/510emnxYL9L._SX312_BO1,204,203,200_.jpg',
+    title: 'Zero To One',
+    author: 'Peter Thiel',
   },
   {
-    title: 'The Art of Peace by Morihei Ueshiba',
     link: 'http://a.co/fN2IKIb',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/4152qjZf10L.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/4152qjZf10L.jpg',
+    title: 'The Art of Peace',
+    author: 'Morihei Ueshiba',
   },
   {
-    title: 'Elon Musk by Ashlee Vance',
     link: 'http://a.co/9KSy4VR',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51tw6UjHpDL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51tw6UjHpDL.jpg',
+    title: 'Elon Musk',
+    author: 'Ashlee Vance',
   },
   {
-    title: 'Eneide by Virgilio',
     link: 'http://amzn.eu/5YIJkoO',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/517-P-M9qyL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/517-P-M9qyL.jpg',
+    title: 'Eneide',
+    author: 'Virgilio',
   },
   {
-    title: 'WHERE IS EVERYBODY? by Stephen Webb',
     link: 'http://a.co/9kULI2q',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51w%2BNxJeAVL._SX328_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51w%2BNxJeAVL._SX328_BO1,204,203,200_.jpg',
+    title: 'WHERE IS EVERYBODY?',
+    author: 'Stephen Webb',
   },
   {
-    title: 'The Martian by Andy Weir',
     link: 'http://a.co/0Ts8t0h',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51Rad1zFU3L.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51Rad1zFU3L.jpg',
+    title: 'The Martian',
+    author: 'Andy Weir',
   },
   {
-    title: 'Night by Elie Wiesel',
     link: 'http://amzn.eu/1G6hiOE',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41o5wHWimmL.jpg'
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/41o5wHWimmL.jpg',
+    title: 'Night',
+    author: 'Elie Wiesel',
   },
   {
-    title: 'The Picture of Dorian Gray by Oscar Wilde',
     link: 'http://a.co/aooTvfh',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/61RF6gkjt-L._SX319_BO1,204,203,200_.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/61RF6gkjt-L._SX319_BO1,204,203,200_.jpg',
+    title: 'The Picture of Dorian Gray',
+    author: 'Oscar Wilde',
   },
   {
-    title: 'I Am Malala by Malala Yousafzai',
     link: 'http://a.co/4miXwTR',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/514ryP7EmiL.jpg'
+    img: 'https://images-na.ssl-images-amazon.com/images/I/514ryP7EmiL.jpg',
+    title: 'I Am Malala',
+    author: 'Malala Yousafzai',
   }
 ];

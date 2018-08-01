@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import books from '../libs/books'
 
 
-const BookItem = ({ title, link, img }) => {
+const BookItem = ({ link, img, title, author }) => {
   return (
     <Col6Medium4>
       <Thumbnail>
@@ -14,7 +14,7 @@ const BookItem = ({ title, link, img }) => {
             <span>{title}</span>
           </h6>
           <p>
-            <small>Author</small>
+            <small>{author}</small>
           </p>
         </a>
       </Thumbnail>
@@ -47,9 +47,10 @@ export default class BookList extends Component {
                 books.map((book, i) => (
                   <BookItem
                     key={i}
-                    title={books[i].title}
                     link={books[i].link}
                     img={books[i].img}
+                    title={books[i].title}
+                    author={books[i].author}
                   />
                 ))
               }
