@@ -11,7 +11,8 @@ const Navbar = styled.nav`
     padding-right: 4rem;
 	}
 	a {
-    color: #000;
+		color: #000;
+		font-weight: 600;
 		display: table-cell;
 		vertical-align: middle;
 		text-decoration: none;
