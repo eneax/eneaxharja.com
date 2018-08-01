@@ -5,7 +5,7 @@ import './index.css'
 import '../libs/fontawesome/fontawesome-all.min'
 import particlesConfig from '../libs/particlesConfig'
 import Particles from 'react-particles-js'
-import Header from '../components/Header'
+import Header from '../components/header'
 
 
 const Layout = ({ children, data }) => (
