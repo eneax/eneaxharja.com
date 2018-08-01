@@ -152,6 +152,7 @@ const Col = styled.div`
 	> p {
 		margin-bottom: 2rem;
 		color: #555;
+		font-family: avenir,sans-serif;
 	}
 `
 
@@ -203,6 +204,7 @@ const Thumbnail = styled.div`
 		span {
 			font-size: .875rem;
 			font-weight: 500;
+			font-family: avenir,sans-serif;
 		}
 	}
 	p {
@@ -210,6 +212,8 @@ const Thumbnail = styled.div`
 		small {
 			font-size: .875rem;
 			font-weight: 100;
+			font-family: avenir,sans-serif;
+			font-style: italic;
 		}
 	}
 `
