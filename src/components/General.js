@@ -190,16 +190,35 @@ const Thumbnail = styled.div`
 	max-width: 100%;
 	height: auto;
 	text-align: center;
+	a {
+		color: #000;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			h6 {
+				transition: color .15s ease-in;
+				color: #663399;
+			}
+		}
+	}
 	img {
 		width: 100%;
 		height: auto;
 		margin-bottom: 0;
 	}
-	h5 {
+	h6 {
 		margin-bottom: 0;
+		span {
+			font-size: .875rem;
+			font-weight: 500;
+		}
 	}
 	p {
 		margin-bottom: 0;
+		small {
+			font-size: .875rem;
+			font-weight: 100;
+		}
 	}
 `
 

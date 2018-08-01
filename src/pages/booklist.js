@@ -1,8 +1,26 @@
 import React, { Component } from 'react'
 import { Container, Row, Col6Medium4, Thumbnail, TitleWrapper, MainTextWrapper } from '../components/General'
 import Footer from '../components/Footer'
-import pic from '../images/relax-and-read.jpg'
-import logo from '../images/logo.png'
+import books from '../libs/books'
+
+
+const BookItem = ({ title, link, img }) => {
+  return (
+    <Col6Medium4>
+      <Thumbnail>
+        <a href={`${link}`} target="_blank" rel="noopener noreferrer">
+          <img src={img} alt='pic' />
+          <h6>
+            <span>{title}</span>
+          </h6>
+          <p>
+            <small>Author</small>
+          </p>
+        </a>
+      </Thumbnail>
+    </Col6Medium4>
+  )
+}
 
 export default class BookList extends Component {
   render() {
@@ -25,41 +43,16 @@ export default class BookList extends Component {
             </p>
 
             <Row>
-              <Col6Medium4>
-                <Thumbnail>
-                  <img src={logo} alt='pic' />
-                  <h5>Title</h5>
-                  <p>Author</p>
-                </Thumbnail>
-              </Col6Medium4>
-              <Col6Medium4>
-                <Thumbnail>
-                  <img src={logo} alt='pic' />
-                  <h5>Title</h5>
-                  <p>Author</p>
-                </Thumbnail>
-              </Col6Medium4>
-              <Col6Medium4>
-                <Thumbnail>
-                  <img src={logo} alt='pic' />
-                  <h5>Title</h5>
-                  <p>Author</p>
-                </Thumbnail>
-              </Col6Medium4>
-              <Col6Medium4>
-                <Thumbnail>
-                  <img src={logo} alt='pic' />
-                  <h5>Title</h5>
-                  <p>Author</p>
-                </Thumbnail>
-              </Col6Medium4>
-              <Col6Medium4>
-                <Thumbnail>
-                  <img src={logo} alt='pic' />
-                  <h5>Title</h5>
-                  <p>Author</p>
-                </Thumbnail>
-              </Col6Medium4>
+              {
+                books.map((book, i) => (
+                  <BookItem
+                    key={i}
+                    title={books[i].title}
+                    link={books[i].link}
+                    img={books[i].img}
+                  />
+                ))
+              }
             </Row>
           </MainTextWrapper>
         </Container>
@@ -69,4 +62,3 @@ export default class BookList extends Component {
     )
   }
 }
-
