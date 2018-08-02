@@ -246,6 +246,7 @@ const SubTitleWrapper = styled.div`
 	}
 	h2 {
 		margin-bottom: .5rem;
+		font-weight: 500;
 	}
 `
 
@@ -258,6 +259,7 @@ const MainTextWrapper = styled.div`
 	font-size: 1.2rem;
 	text-align: justify;
 	background-color: #fff;
+	font-weight: 100;
 	> p {
 		font-family: avenir,sans-serif;
 		@media screen and (min-width: 48em) {
