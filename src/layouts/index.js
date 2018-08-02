@@ -5,6 +5,7 @@ import './index.css'
 import '../utils/fontawesome-all.min'
 import Particles from 'react-particles-js'
 import Header from '../components/header'
+import favicon from '../images/favicon.ico'
 
 
 const particlesConfig = {
@@ -124,8 +125,11 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Self-taught web developer with proven ability to build for the modern web while using cutting-edge technologies' },
+        { name: 'keywords', content: 'web developer, webdev, gatsbyjs, reactjs, frontend, library, books' },
+      ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]}
     />
 
