@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Row, Col6Medium4, Thumbnail, TitleWrapper, MainTextWrapper } from '../components/General'
 import Footer from '../components/Footer'
-import books from '../libs/books-data'
+import books from '../utils/books-data'
 
 
 const BookItem = ({ link, img, title, author }) => {

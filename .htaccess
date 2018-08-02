@@ -1,3 +1,0 @@
-RewriteCond %{HTTP_HOST} eneaxharja\.com [NC]
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://eneaxharja.com/$1 [R,L]
