@@ -132,6 +132,12 @@ export default [
     author: 'Epicuro'
   },
   {
+    link: 'http://a.co/7PegxJR',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41lvEdt3KmL.jpg',
+    title: 'Hooked: How to Build Habit-Forming Products',
+    author: 'Nir Eyal'
+  },
+  {
     link: 'http://amzn.eu/eazkkDO',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51iGkLC6jhL.jpg',
     title: 'The 4-Hour Work Week',
