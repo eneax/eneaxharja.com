@@ -22,7 +22,7 @@ export default class About extends Component {
                 code</a> for the web. I create websites for small businesses and portfolio pages that are responsive and can adapt the layout to a variety of devices and screen sizes.
             </p>
             <p>
-              When I’m not coding, I read <Link to='/library'>books</Link>, procastinate on <a href='https://waitbutwhy.com/' target='_blank' rel='noopener noreferrer'>Wait But Why</a> and <a href='http://www.ynharari.com/' target='_blank' rel='noopener noreferrer'>Y. N. Harari</a> or just walk around in nature.
+              When I’m not coding, I read <Link to='/library'>books</Link>, procrastinate on <a href='https://waitbutwhy.com/' target='_blank' rel='noopener noreferrer'>Wait But Why</a> and <a href='http://www.ynharari.com/' target='_blank' rel='noopener noreferrer'>Y. N. Harari</a> or just walk around in nature.
             </p>
             <p>
               I'm open to new opportunities and always looking for new
