@@ -67,7 +67,7 @@ const ProjectItem = ({ repo, title, link, img, desc }) => {
 
       <ImageWrapper>
         <a href={`${link}`} target="_blank" rel="noopener noreferrer">
-          <img src={img} alt="pic" />
+          <img src={img} alt={`${title} Pic`} />
         </a>
       </ImageWrapper>
 
