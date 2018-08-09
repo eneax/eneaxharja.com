@@ -294,6 +294,12 @@ export default [
     author: 'Spencer Johnson',
   },
   {
+    link: 'http://a.co/gRlWmPi',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51XkhEWwABL.jpg',
+    title: 'Tribe: On Homecoming and Belonging',
+    author: 'Sebastian Junger',
+  },
+  {
     link: 'http://amzn.eu/brS51fx',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41fFmzoPaeL.jpg',
     title: 'La metamorfosi',
