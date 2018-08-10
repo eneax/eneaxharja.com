@@ -132,7 +132,7 @@ const Layout = ({ children, data }) => (
         { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]}
     >
-      <html lang="en" />
+      <html lang="en"/>
     </Helmet>
 
     <Particles
