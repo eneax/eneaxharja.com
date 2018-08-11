@@ -183,9 +183,6 @@ const Thumbnail = styled.div`
 	max-width: 100%;
 	height: auto;
 	text-align: center;
-	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 
-							0 6px 30px 5px rgba(0, 0, 0, .12), 
-							0 8px 10px -5px rgba(0, 0, 0, .2);
 	a {
 		color: #000;
 		text-decoration: none;
@@ -332,6 +329,42 @@ const FooterWrapper = styled.footer`
 	}
 `
 
+const SearchInput = styled.input`
+	margin: 1rem auto;
+  padding: 0.375rem 0.75rem;
+	font-family: avenir,sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	
+	&:focus {
+		color: #495057;
+		background-color: #fff;
+		border-color: #663399;
+		outline: 0;
+		box-shadow: 0 0 0 0.2rem rgba(102, 51, 153, 0.25);
+	}
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&:-ms-input-placeholder,
+	&::-ms-input-placeholder,
+	&::placeholder {
+		color: #6c757d;
+		opacity: 1;
+	}
+	&:disabled, 
+	&[readonly] {
+		background-color: #e9ecef;
+		opacity: 1;
+	}
+}
+`
+
+
 
 export {
   Navbar,
@@ -349,5 +382,6 @@ export {
 	SubTitleWrapper,
 	MainTextWrapper,
 	ImageWrapper,
-	FooterWrapper
+	FooterWrapper,
+	SearchInput
 }

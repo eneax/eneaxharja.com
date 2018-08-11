@@ -1,18 +1,19 @@
 import React from 'react'
+import { SearchInput } from '../components/General'
 
-const SearchBox = ({ searchField, searchChange }) => {
+const SearchBox = ({ searchChange }) => {
 	
 	return (
-		<div>
-			<input
-				style={{outline: 'none'}}
-				className='pa3 mb2 ba b--light-yellow light-yellow br4 bw1 bg-purple' 
-				type='search' 
-				placeholder='search books'
-				onChange={searchChange}
-			/>
+		<div style={{display: 'flex'}}>
+      <SearchInput
+        type='search' 
+        placeholder='Search books...'
+        aria-label="Search books"
+        onChange={searchChange}
+      >
+      </SearchInput>
 		</div>
 	);
 }
 
-export default SearchBox;
+export default SearchBox
