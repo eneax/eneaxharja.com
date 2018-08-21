@@ -438,6 +438,12 @@ export default [
     author: 'Jon Ronson',
   },
   {
+    link: 'http://a.co/fzphrx6',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51GgyFfR6uL.jpg',
+    title: 'Factfulness',
+    author: 'Hans Rosling et al.',
+  },
+  {
     link: 'http://amzn.eu/gh2xTiA',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41KYsqVDB8L.jpg',
     title: 'Frankenstein',
