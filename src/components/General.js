@@ -163,11 +163,9 @@ const Col6Medium4 = styled.div`
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-top: 1rem;
-
 	-ms-flex: 0 0 50%;
   flex: 0 0 50%;
 	max-width: 50%;
-	
 	@media (min-width: 768px) {
 		-ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
