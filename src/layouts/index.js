@@ -2,10 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import './index.css'
-import '../utils/fontawesome-all.min'
 import Particles from 'react-particles-js'
 import Header from '../components/header'
 import favicon from '../images/favicon.ico'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faEnvelope, faCodeBranch)
 
 
 const particlesConfig = {

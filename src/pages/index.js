@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { HeaderWrapper, Header, SubHeader, SocialLink } from '../components/General'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class Index extends Component {
   render() {
@@ -8,10 +9,10 @@ export default class Index extends Component {
         <Header>Hi, I'm Enea!</Header>
         <SubHeader>Web Developer</SubHeader>
         <SocialLink href="https://github.com/eneax" aria-label="github" target="_blank" rel="noopener noreferrer" >
-          <i className="fab fa-github fa-2x"></i>
+          <FontAwesomeIcon icon="code-branch" />
         </SocialLink>
         <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" target="_blank" rel="noopener noreferrer" >
-          <i className="fas fa-envelope fa-2x"></i>
+          <FontAwesomeIcon icon="envelope" />
         </SocialLink>
       </HeaderWrapper>
     )

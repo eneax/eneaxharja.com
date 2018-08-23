@@ -112,6 +112,9 @@ const SocialLink = styled.a`
 	padding-bottom: .5rem;
 	margin-bottom: 1rem;
 	color: #333;
+	svg {
+		font-size: 2em;
+	}
 `
 
 const Container = styled.div`
