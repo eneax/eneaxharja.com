@@ -4,9 +4,9 @@ import Footer from '../components/Footer'
 
 import projectOne from '../images/projects/project1.png'
 import projectTwo from '../images/projects/project2.png'
-import projectThree from '../images/projects/project3.jpg'
-import projectFour from '../images/projects/project4.jpg'
-import projectFive from '../images/projects/project5.jpg'
+import projectThree from '../images/projects/project3.png'
+import projectFour from '../images/projects/project4.png'
+import projectFive from '../images/projects/project5.png'
 import projectSix from '../images/projects/project6.png'
 
 
