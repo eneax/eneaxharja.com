@@ -439,7 +439,7 @@ export default [
   },
   {
     link: 'http://a.co/fzphrx6',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51GgyFfR6uL.jpg',
+    img: '',
     title: 'Factfulness',
     author: 'Hans Rosling et al.',
   },

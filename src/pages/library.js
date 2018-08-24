@@ -10,7 +10,7 @@ const BookItem = ({ link, img, title, author }) => {
     <Col6Medium4>
       <Thumbnail>
         <a href={`${link}`} target="_blank" rel="noopener noreferrer">
-          <img src={img} alt='pic' />
+          <img src={img} alt={`${title} Pic`} />
           <h6>
             <span>{title}</span>
           </h6>
