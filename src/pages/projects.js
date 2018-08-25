@@ -15,7 +15,7 @@ const projects = [
     repo: 'https://github.com/eneax/eneax.github.io',
     title: 'eneaxharja[dot]com',
     link: 'https://github.com/eneax/eneax.github.io',
-    img: projectOne,
+    img: 'https://drive.google.com/open?id=17KNaDTaZrk1MUPmvvO-NGJOdA1LtvNl8',
     desc: 'My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code.',
   },
   {
