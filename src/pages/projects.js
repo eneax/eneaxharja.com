@@ -16,7 +16,7 @@ const Projects = ({ data }) => {
           <p>
             Explore some of my favorite projects I've worked on over the
             last few months.
-        </p>
+          </p>
 
           <Row>
 
@@ -118,7 +118,7 @@ export default Projects
 
 export const query = graphql`
   query imageGallery {
-    image1: imageSharp(id: {regex: "/projectOne.png/"}) {
+    image1: imageSharp(id: {regex: "/project1.png/"}) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
       }
