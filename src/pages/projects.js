@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/General'
 import Footer from '../components/Footer'
 
-// import projectOne from '../images/projects/project1.png'
+import projectOne from '../images/projects/project1.png'
 // import projectTwo from '../images/projects/project2.png'
 // import projectThree from '../images/projects/project3.png'
 // import projectFour from '../images/projects/project4.png'
@@ -15,7 +15,7 @@ const projects = [
     repo: 'https://github.com/eneax/eneax.github.io',
     title: 'eneaxharja[dot]com',
     link: 'https://github.com/eneax/eneax.github.io',
-    img: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1650&q=80',
+    img: projectOne,
     desc: 'My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code.',
   },
   {
