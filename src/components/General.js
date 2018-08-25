@@ -301,7 +301,7 @@ const MainTextWrapper = styled.div`
 const ImageWrapper = styled.div`
 	width: 100%;
 	height: auto;
-	margin-bottom: 0;
+	margin-bottom: .75rem;
 	img {
 		margin-bottom: .75rem;
 		border: 1px solid #e7e7e7;
