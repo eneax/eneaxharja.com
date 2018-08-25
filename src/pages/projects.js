@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/General'
 import Footer from '../components/Footer'
 
-import projectOne from '../images/projects/project1.png'
+import projectOne from '../images/projects/projectOne.png'
 // import projectTwo from '../images/projects/project2.png'
 // import projectThree from '../images/projects/project3.png'
 // import projectFour from '../images/projects/project4.png'
