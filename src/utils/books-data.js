@@ -90,6 +90,12 @@ export default [
     author: 'Luciano Canfora'
   },
   {
+    link: 'http://a.co/d/e0hqkHu',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/517jbkbYjQL.jpg',
+    title: 'Origin Story: A Big History of Everything',
+    author: 'David Christian'
+  },
+  {
     link: 'http://amzn.eu/bADv43Q',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51NxsvVEITL.jpg',
     title: 'L\'alchimista',
