@@ -252,6 +252,12 @@ export default [
     author: 'Y. N. Harari',
   },
   {
+    link: 'http://a.co/d/6rDeQnQ',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/415-qH52nPL.jpg',
+    title: '21 Lessons for the 21st Century',
+    author: 'Y. N. Harari',
+  },
+  {
     link: 'http://a.co/aw0Wf29',
     img: 'https://images-na.ssl-images-amazon.com/images/I/51P8miZZ6OL.jpg',
     title: 'A Brief History Of Time',
