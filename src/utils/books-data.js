@@ -120,6 +120,12 @@ export default [
     author: 'Antoine de Saint-Exupéry'
   },
   {
+    link: 'http://a.co/d/7hE69Nh',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51DEPRRJ7ML.jpg',
+    title: 'Primates and Philosophers: How Morality Evolved',
+    author: 'Frans de Waal et al.'
+  },
+  {
     link: 'http://amzn.eu/2WoijXR',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41JGVE9LraL.jpg',
     title: 'Giochiamo ancora',
