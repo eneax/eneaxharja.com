@@ -48,6 +48,12 @@ export default [
     author: 'Nick Bostrom'
   },
   {
+    link: 'http://a.co/d/buBUXyf',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51ZrY79YPdL.jpg',
+    title: 'Everything Happens for a Reason: And Other Lies I\'ve Loved',
+    author: 'Kate Bowler'
+  },
+  {
     link: 'http://amzn.eu/coeNrsm',
     img: 'https://images-na.ssl-images-amazon.com/images/I/51F3efIjSIL._SX320_BO1,204,203,200_.jpg',
     title: 'Angeli e demoni',
