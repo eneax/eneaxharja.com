@@ -252,6 +252,12 @@ export default [
     author: 'Adam Grant',
   },
   {
+    link: 'http://a.co/d/2bMyK8P',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51Y4NLB4P0L.jpg',
+    title: 'Turtles All the Way Down',
+    author: 'John Green',
+  },
+  {
     link: 'http://a.co/dvwiPY7',
     img: 'https://images-na.ssl-images-amazon.com/images/I/41oEGC8oHgL.jpg',
     title: 'Sapiens: A Brief History of Humankind',
