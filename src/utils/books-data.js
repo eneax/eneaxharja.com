@@ -144,6 +144,12 @@ export default [
     author: 'René Descartes'
   },
   {
+    link: 'http://a.co/d/akU6UH3',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51dw0Uce%2BXL._SX330_BO1,204,203,200_.jpg',
+    title: 'The Third Chimpanzee',
+    author: 'Jared M. Diamond'
+  },
+  {
     link: 'http://amzn.eu/gXjb246',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41JRQSBjeUL.jpg',
     title: 'Lettera sulla felicità',
