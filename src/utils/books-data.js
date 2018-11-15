@@ -150,6 +150,12 @@ export default [
     author: 'Jared M. Diamond'
   },
   {
+    link: 'http://amzn.eu/d/0VVbi4A',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/5101H2lhtXL._SX329_BO1,204,203,200_.jpg',
+    title: 'Guns, Germs, and Steel',
+    author: 'Jared M. Diamond'
+  },
+  {
     link: 'http://amzn.eu/gXjb246',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41JRQSBjeUL.jpg',
     title: 'Lettera sulla felicità',
