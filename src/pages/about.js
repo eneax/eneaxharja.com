@@ -27,7 +27,7 @@ export default class About extends Component {
             <p>
               I'm open to new opportunities and always looking for new
               projects where I can contribute. Feel free to take a look at
-                  my complete resume over <a href='https://drive.google.com/open?id=1I6wUFBqoy-sPHMTYVew96mJ4biUsnBiG' target='_blank' rel='noopener noreferrer'>here</a>.
+                  my complete resume over <a href='https://www.dropbox.com/s/wg209kj8vwc0za8/eneaxharja-resume.pdf?dl=0' target='_blank' rel='noopener noreferrer'>here</a>.
             </p>
           </MainTextWrapper>
         </Container>
