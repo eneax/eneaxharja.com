@@ -24,6 +24,12 @@ export default [
     author: 'Marco Aurelio'
   },
   {
+    link: 'http://a.co/d/9YaOnjj',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51V6kzn39rL.jpg',
+    title: 'Barking Up the Wrong Tree',
+    author: 'Eric Barker'
+  },
+  {
     link: 'http://a.co/47JrnMD',
     img: 'https://images-na.ssl-images-amazon.com/images/I/41ozMLdzJHL._SX334_BO1,204,203,200_.jpg',
     title: 'Our Final Invention',
