@@ -14,14 +14,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      // makes posts available
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts`,
-      }
-    },
     // parses Markdown files using Remark
     `gatsby-transformer-remark`,
     // creates ImageSharp nodes from image types 

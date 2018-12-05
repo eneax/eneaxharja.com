@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
+import { graphql } from 'gatsby'
 
 import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/general'
 import Footer from '../components/footer'
