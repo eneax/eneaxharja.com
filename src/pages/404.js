@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, TitleWrapper, MainTextWrapper } from '../components/General'
+import { Container, TitleWrapper, MainTextWrapper } from '../components/general'
 
 const NotFoundPage = () => (
   <div>

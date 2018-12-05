@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import { Navbar, NavLinkWrapper } from './General'
+import { Link } from 'gatsby'
+
+import { Navbar, NavLinkWrapper } from './general'
 import logo from '../images/logo.png'
 
-
 const Header = () => (
-	<Navbar>
+  <Navbar>
 		<Link to='/' title='Home'>
 			<img src={logo} alt='Enea Xharja Logo'/>
 		</Link>

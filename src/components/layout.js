@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import './index.css'
-import Particles from 'react-particles-js'
-import Header from '../components/header'
-import favicon from '../images/favicon.ico'
+import { StaticQuery, graphql } from 'gatsby'
 
+import Header from './header'
+import './layout.css'
+
+import Particles from 'react-particles-js';
+import favicon from '../images/favicon.ico'
 import { library } from '@fortawesome/fontawesome-svg-core'
+// eslint-disable-next-line
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
-
 library.add(faEnvelope, faCodeBranch)
 
 
@@ -124,61 +126,63 @@ const particlesConfig = {
   "retina_detect": true
 }
 
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: 'Self-taught web developer with proven ability to build for the modern web while using cutting-edge technologies' },
+            { name: 'keywords', content: 'web developer, webdev, gatsbyjs, reactjs, frontend, library, books' },
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Self-taught web developer with proven ability to build for the modern web while using cutting-edge technologies' },
-        { name: 'keywords', content: 'web developer, webdev, gatsbyjs, reactjs, frontend, library, books' },
-      ]}
-      link={[
-        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
-      ]}
-    >
-      <html lang="en"/>
-    </Helmet>
+        <Particles
+          style={{
+            position: 'fixed',
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            zIndex: -1
+          }}
+          params={particlesConfig}
+        />
 
-    <Particles
-      style={{
-        position: 'fixed',
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0,
-        zIndex: -1
-      }}
-      params={particlesConfig}
-    />
-
-    <Header />
-    
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
+        <Header />
+        
+        <div
+          style={{
+            margin: '0 auto',
+            maxWidth: 960,
+            padding: '0px 1.0875rem 1.45rem',
+            paddingTop: 0,
+          }}
+        >
+          {children}
+        </div>
+      </>
+    )}
+  />
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

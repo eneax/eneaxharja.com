@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
-import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/General'
-import Footer from '../components/Footer'
+import React from 'react'
 import Img from 'gatsby-image'
+import Layout from '../components/layout'
+
+import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/general'
+import Footer from '../components/footer'
 
 
 const Projects = ({ data }) => {
   return (
-    <div>
+    <Layout>
       <Container>
         <TitleWrapper>
           <h1>Projects</h1>
@@ -28,11 +30,12 @@ const Projects = ({ data }) => {
               </SubTitleWrapper>
               <ImageWrapper>
                 <a href='https://github.com/eneax/eneax.github.io' target="_blank" rel="noopener noreferrer">
-                  <Img sizes={data.image1.sizes} alt='eneaxharja[dot]com Pic' />
+                  <Img fluid={data.image1.childImageSharp.fluid} alt='eneaxharja[dot]com Pic' />
                 </a>
               </ImageWrapper>
               <p>My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code.</p>
             </Col>
+
 
             <Col>
               <SubTitleWrapper>
@@ -42,7 +45,7 @@ const Projects = ({ data }) => {
               </SubTitleWrapper>
               <ImageWrapper>
                 <a href='https://minimal-blog-x.netlify.com' target="_blank" rel="noopener noreferrer">
-                  <Img sizes={data.image2.sizes} alt='Minimal Blog Pic' />
+                  <Img fluid={data.image2.childImageSharp.fluid} alt='Minimal Blog Pic' />
                 </a>
               </ImageWrapper>
               <p>A minimal blog built with Gatsby, Netlify CMS, GraphQL and Web Animations API.</p>
@@ -56,7 +59,7 @@ const Projects = ({ data }) => {
               </SubTitleWrapper>
               <ImageWrapper>
                 <a href='https://aqueous-badlands-68133.herokuapp.com' target="_blank" rel="noopener noreferrer">
-                  <Img sizes={data.image3.sizes} alt='Globetrotter Pic' />
+                  <Img fluid={data.image3.childImageSharp.fluid} alt='Globetrotter Pic' />
                 </a>
               </ImageWrapper>
               <p>Responsive travel agency website made using React and React Router v4.</p>
@@ -70,7 +73,7 @@ const Projects = ({ data }) => {
               </SubTitleWrapper>
               <ImageWrapper>
                 <a href='https://gentle-bastion-82801.herokuapp.com' target="_blank" rel="noopener noreferrer">
-                  <Img sizes={data.image4.sizes} alt='Portfolio Website Pic' />
+                  <Img fluid={data.image4.childImageSharp.fluid} alt='Portfolio Website Pic' />
                 </a>
               </ImageWrapper>
               <p>Clean and minimal portfolio website built with React and React Router v4.</p>
@@ -84,7 +87,7 @@ const Projects = ({ data }) => {
               </SubTitleWrapper>
               <ImageWrapper>
                 <a href='https://tranquil-shore-37678.herokuapp.com' target="_blank" rel="noopener noreferrer">
-                  <Img sizes={data.image5.sizes} alt='Thriving Cities Pic' />
+                  <Img fluid={data.image5.childImageSharp.fluid} alt='Thriving Cities Pic' />
                 </a>
               </ImageWrapper>
               <p>This project represents a responsive single page company website built with React and Bootstrap.</p>
@@ -98,7 +101,7 @@ const Projects = ({ data }) => {
               </SubTitleWrapper>
               <ImageWrapper>
                 <a href='https://weather-app-x.firebaseapp.com' target="_blank" rel="noopener noreferrer">
-                  <Img sizes={data.image6.sizes} alt='Weather App Pic' />
+                  <Img fluid={data.image6.childImageSharp.fluid} alt='Weather App Pic' />
                 </a>
               </ImageWrapper>
               <p>A functioning Weather app built with React and Open Weather API.</p>
@@ -109,44 +112,42 @@ const Projects = ({ data }) => {
       </Container>
 
       <Footer />
-    </div>
+    </Layout>
   )
 }
 
 export default Projects
 
 
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1240) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
 export const query = graphql`
   query imageGallery {
-    image1: imageSharp(id: {regex: "/project1.png/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    },
-    image2: imageSharp(id: {regex: "/project2.png/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    },
-    image3: imageSharp(id: {regex: "/project3.png/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    },
-    image4: imageSharp(id: {regex: "/project4.png/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    },
-    image5: imageSharp(id: {regex: "/project5.png/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    },
-    image6: imageSharp(id: {regex: "/project6.png/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    },
+    image1: file(relativePath: { regex: "/project1.png/" }) {
+      ...fluidImage
+    }
+    image2: file(relativePath: { regex: "/project2.png/" }) {
+      ...fluidImage
+    }
+    image3: file(relativePath: { regex: "/project3.png/" }) {
+      ...fluidImage
+    }
+    image4: file(relativePath: { regex: "/project4.png/" }) {
+      ...fluidImage
+    }
+    image5: file(relativePath: { regex: "/project5.png/" }) {
+      ...fluidImage
+    }
+    image6: file(relativePath: { regex: "/project6.png/" }) {
+      ...fluidImage
+    }
   }
 `

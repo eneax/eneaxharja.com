@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import { Container, Row, Col6Medium4, Thumbnail, TitleWrapper, MainTextWrapper } from '../components/General'
-import Footer from '../components/Footer'
+import Layout from '../components/layout'
+
+import { Container, Row, Col6Medium4, Thumbnail, TitleWrapper, MainTextWrapper } from '../components/general'
+import Footer from '../components/footer'
 import books from '../utils/books-data'
-import SearchBox from '../components/SearchBox'
+import SearchBox from '../components/searchBox'
 
 
 const BookItem = ({ link, img, title, author }) => {
@@ -42,7 +44,7 @@ export default class Library extends Component {
     })
     
     return (
-      <div>
+      <Layout>
         <Container>
           <TitleWrapper>
             <h1>Library</h1>
@@ -78,7 +80,7 @@ export default class Library extends Component {
         </Container>
 
         <Footer />
-      </div>
+      </Layout>
     )
   }
 }
