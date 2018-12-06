@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import './Layout.css'
+import './layout.css'
 
 import Particles from 'react-particles-js';
 import favicon from '../images/favicon.ico'
