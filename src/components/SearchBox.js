@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const SearchInput = styled.input`
 	margin: 1rem auto;
   padding: 0.375rem 0.75rem;

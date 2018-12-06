@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const FooterWrapper = styled.footer`
 	font-family: avenir,sans-serif;
 	color: #555;

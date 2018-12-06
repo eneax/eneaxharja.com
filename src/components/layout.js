@@ -15,8 +15,6 @@ import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 library.add(faEnvelope, faCodeBranch)
 
 
-
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 const HeaderWrapper = styled.header`
 	text-align: center;
 	padding-top: 2rem;
