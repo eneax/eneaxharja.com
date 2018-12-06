@@ -1,10 +1,10 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
-import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/general'
-import Footer from '../components/footer'
+import { Container, Row, Col, TitleWrapper, SubTitleWrapper, MainTextWrapper, ImageWrapper } from '../components/General'
+import Footer from '../components/Footer'
 
 
 const Projects = ({ data }) => {

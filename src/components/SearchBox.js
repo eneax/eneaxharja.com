@@ -1,5 +1,5 @@
 import React from 'react'
-import { SearchInput } from './general'
+import { SearchInput } from './General'
 
 const SearchBox = ({ searchChange }) => {
 	

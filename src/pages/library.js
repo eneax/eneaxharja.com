@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
-import { Container, Row, Col6Medium4, Thumbnail, TitleWrapper, MainTextWrapper } from '../components/general'
-import Footer from '../components/footer'
+import { Container, Row, Col6Medium4, Thumbnail, TitleWrapper, MainTextWrapper } from '../components/General'
+import Footer from '../components/Footer'
 import books from '../utils/books-data'
-import SearchBox from '../components/searchBox'
+import SearchBox from '../components/SearchBox'
 
 
 const BookItem = ({ link, img, title, author }) => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Navbar, NavLinkWrapper } from './general'
+import { Navbar, NavLinkWrapper } from './General'
 import logo from '../images/logo.png'
 
 const Header = () => (

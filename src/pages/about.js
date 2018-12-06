@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
-import { Container, TitleWrapper, MainTextWrapper } from '../components/general'
-import Footer from '../components/footer'
+import { Container, TitleWrapper, MainTextWrapper } from '../components/General'
+import Footer from '../components/Footer'
 
 const About = () => (
   <Layout>
