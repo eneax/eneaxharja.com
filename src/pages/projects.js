@@ -1,9 +1,9 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 
 const Container = styled.div`
   width: 100%;

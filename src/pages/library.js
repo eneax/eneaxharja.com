@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import styled from 'styled-components'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 import books from '../utils/books-data'
-import SearchBox from '../components/SearchBox'
+import SearchBox from '../components/searchBox'
 
 
 const Container = styled.div`

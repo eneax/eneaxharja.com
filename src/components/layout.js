@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './Header'
+import Header from './header'
 import './Layout.css'
 
 import Particles from 'react-particles-js';
