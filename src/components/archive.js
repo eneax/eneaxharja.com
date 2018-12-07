@@ -3,8 +3,11 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 
 const POST_ARCHIVE_QUERY = graphql`
-  query BlogPostArchive {
-    allMarkdownRemark {
+  query BlogPostArchive { 
+    allMarkdownRemark(sort: {
+      order: DESC
+      fields:[frontmatter___date]
+    }) {
       edges {
         node {
           excerpt
