@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import Archive from './archive'
 
 import Particles from 'react-particles-js';
 import favicon from '../images/favicon.ico'
@@ -65,6 +66,8 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
+
+        <Archive />
       </>
     )}
   />
