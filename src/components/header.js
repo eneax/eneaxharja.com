@@ -59,7 +59,8 @@ const NavLinkWrapper = styled.div`
       font-size: 1rem;
     }
   }
-  a:nth-child(1) {
+  a:nth-child(2) {
+		margin-left: 1rem;
     margin-right: 1rem;
   }
 `
@@ -72,6 +73,7 @@ const Header = () => (
 		</Link>
 		<NavLinkWrapper>
 			<Link to='/about' title='About'>About</Link>
+			<Link to='/posts' title='Blog'>Blog</Link>
 			<Link to='/projects' title='Projects'>Projects</Link>
 		</NavLinkWrapper>
 	</Navbar>	
