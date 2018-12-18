@@ -408,6 +408,12 @@ export default [
     author: 'K. Marx and F. Engels',
   },
   {
+    link: 'http://amzn.eu/d/fzx6pQ0',
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/51G70KBZyLL.jpg',
+    title: 'You Are Not So Smart',
+    author: 'David McRaney',
+  },
+  {
     link: 'http://amzn.eu/g0cuEtb',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51ED%2B%2BDCA0L.jpg',
     title: 'Moby Dick',
