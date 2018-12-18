@@ -69,7 +69,7 @@ const IndexPage = () => (
       <SocialLink href="https://github.com/eneax" aria-label="github" target="_blank" rel="noopener noreferrer" >
         <FontAwesomeIcon icon="code-branch" />
       </SocialLink>
-      <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" target="_blank" rel="noopener noreferrer" >
+      <SocialLink href="mailto:enea.xharja@icloud.com" aria-label="mail" target="_blank" rel="noopener noreferrer" >
         <FontAwesomeIcon icon="envelope" />
       </SocialLink>
     </HeaderWrapper>

@@ -106,7 +106,7 @@ const About = () => (
         <p>
           I'm open to new opportunities and always looking for new
           projects where I can contribute. Feel free to take a look at
-                  my complete resume over <a href='https://drive.google.com/open?id=1gIy-WY6fBajdjO8fNMPUQJw1KUrxbR1T' target='_blank' rel='noopener noreferrer'>here</a>.
+                  my complete resume over <a href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0' target='_blank' rel='noopener noreferrer'>here</a>.
             </p>
       </MainTextWrapper>
     </Container>
