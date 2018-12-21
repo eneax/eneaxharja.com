@@ -7,13 +7,13 @@ import logo from '../images/logo.png'
 const Navbar = styled.nav`
 	display: table;
 	width: 100%;
+	max-width: 42rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.625rem 1.3125rem .625rem 1.3125rem;
 	box-sizing: border-box;
-	padding: 1rem;
 	font-family: avenir,sans-serif;
-	@media screen and (min-width: 30em) {
-    padding-left: 4rem;
-    padding-right: 4rem;
-	}
+
 	a {
 		color: #000;
 		font-weight: 600;

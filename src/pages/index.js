@@ -12,7 +12,7 @@ const HeaderWrapper = styled.header`
     padding-top: 4rem;
     padding-bottom: 4rem;
 	}
-	margin: 4rem auto;
+	margin: 6rem auto 2rem auto;
 `
 
 const Header = styled.h1`
