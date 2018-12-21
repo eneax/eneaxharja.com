@@ -60,35 +60,33 @@ const MainTextWrapper = styled.div`
 
 
 const About = () => (
-  <Layout>
-    <Container>
-      <TitleWrapper>
-        <h1>About</h1>
-      </TitleWrapper>
+	<Layout>
+		<TitleWrapper>
+			<h1>About</h1>
+		</TitleWrapper>
 
-      <MainTextWrapper>
-        <p>
-          I’m currently living in Chiusi (Tuscany), Italy and working
-          as a Freelance Web Developer.
+		<MainTextWrapper>
+			<p>
+				I’m currently living in Chiusi (Tuscany), Italy and working
+				as a Freelance Web Developer.
         </p>
-        <p>
-          Most of my time is spent writing <a href='https://github.com/eneax' target='_blank' rel='noopener noreferrer'>
-            code</a> for the web. I create websites for businesses and portfolio pages that are responsive and can adapt the layout to a variety of devices and screen sizes.
+			<p>
+				Most of my time is spent writing <a href='https://github.com/eneax' target='_blank' rel='noopener noreferrer'>
+					code</a> for the web. I create websites for businesses and portfolio pages that are responsive and can adapt the layout to a variety of devices and screen sizes.
         </p>
-        <p>
-          When I’m not coding, I read <Link to='/library'>books</Link>, procrastinate <Link to='/library'>online</Link> (reading blogs or listening to podcasts) or just <Link to='/library'>travel</Link> and walk around in nature.
+			<p>
+				When I’m not coding, I read <Link to='/library'>books</Link>, procrastinate <Link to='/library'>online</Link> (reading blogs or listening to podcasts) or just <Link to='/library'>travel</Link> and walk around in nature.
 				</p>
-				<p>For those of you who have been asking me about the software or hardware I use, here is my <Link to='/library'>list</Link>.</p>
-        <p>
-          I'm open to new opportunities and always looking for new
-          projects where I can contribute. Feel free to take a look at
+			<p>For those of you who have been asking me about the software or hardware I use, here is my <Link to='/library'>list</Link>.</p>
+			<p>
+				I'm open to new opportunities and always looking for new
+				projects where I can contribute. Feel free to take a look at
           my complete <a href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0' target='_blank' rel='noopener noreferrer'>resume</a>.
         </p>
-      </MainTextWrapper>
-    </Container>
+		</MainTextWrapper>
 
-    <Footer />
-  </Layout>
+		<Footer />
+	</Layout>
 )
 
 export default About
