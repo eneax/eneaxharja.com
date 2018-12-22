@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
@@ -7,12 +7,6 @@ import { TitleWrapper, MainTextWrapper } from '../components/xStyles'
 import Footer from '../components/footer'
 import projects from '../utils/projects-data'
 
-
-const Col = styled.div`
-	> p {
-		color: #555;
-	}
-`
 
 const SubTitleWrapper = styled.div`
 	font-family: avenir,sans-serif;
@@ -60,13 +54,8 @@ const Projects = ({ data }) => {
       </TitleWrapper>
 
       <MainTextWrapper>
-        <p>
-          Explore some of my favorite projects I've worked on over the
-          last few months.
-          </p>
-
-        <Col>
-
+        <p>Explore some of my favorite projects I've worked on over the last few months.</p>
+        <Fragment>
           {
             projects.map((project, i) => (
 
@@ -85,14 +74,12 @@ const Projects = ({ data }) => {
                   </a>
                 </ImageWrapper>
 
-                <p>{projects[i].desc}</p>
+                <p style={{color: '#555'}}>{projects[i].desc}</p>
               </div>
 
             ))
           }
-
-        </Col>
-
+        </Fragment>
       </MainTextWrapper>
 
       <Footer />
