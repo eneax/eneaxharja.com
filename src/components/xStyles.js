@@ -7,6 +7,26 @@ const TitleWrapper = styled.div`
 	}
 `
 
+const SubTitleWrapper = styled.div`
+	font-family: avenir,sans-serif;
+	margin-top: 2rem;
+	a {
+		text-decoration: none;
+		color: #000;
+		&:hover,
+		&:focus {
+			h2 {
+				transition: color .15s ease-in;
+				color: #663399;
+			}
+		}
+	}
+	h2 {
+		margin-bottom: .5rem;
+		font-weight: 500;
+	}
+`
+
 const MainTextWrapper = styled.div`
   margin-bottom: 4rem;
   font-size: 1.2rem;
@@ -57,5 +77,6 @@ const MainTextWrapper = styled.div`
 
 export {
   TitleWrapper,
+  SubTitleWrapper,
   MainTextWrapper
 }

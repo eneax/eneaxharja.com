@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-
+import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/xStyles'
 
 // graphql query
 const POST_LIST_QUERY = graphql`
@@ -25,78 +25,12 @@ const POST_LIST_QUERY = graphql`
 `
 
 
-// styles
-const Container = styled.div`
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-	@media (min-width: 576px) {
-    max-width: 540px;
-	}
-	@media (min-width: 768px) {
-    max-width: 720px;
-	}
-	@media (min-width: 992px) {
-    max-width: 960px;
-	}
-	@media (min-width: 1200px) {
-    max-width: 1140px;
-	}
-`
-
-const TitleWrapper = styled.div`
-  padding: 1rem 1rem;
-  margin-bottom: 2rem;
-	border-radius: 0.3rem;
-	h1 {
-		font-family: avenir,sans-serif;
-		text-align: center;
-		margin-bottom: 0;
-	}
-`
-
-const MainTextWrapper = styled.div`
-  max-width: 30em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 4rem;
-  margin-top: 0;
-  font-size: 1.2rem;
-  text-align: justify;
-  background-color: #fff;
-  font-weight: 100;
-  a {
-    color: #000;
-    text-decoration: none;
-    &:focus,
-    &:hover {
-      text-decoration: none;
-      color: #663399;
-    }
-    h2 {
-      margin-bottom: .5rem;
-		  font-weight: 500;
-    }
-    h3 {
-      font-weight: 300;
-      margin: 0 0 10px;
-    }
-  }
-  p {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 0;
-    color: #868e96;
-  }
-  @media only screen and (min-width: 768px) {
-    a {
-      h2 {
-        font-size: 36px;
-      }
-    }
-  }
+const PostDate = styled.h3`
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: .25rem;
+  color: #868e96;
 `
 
 
@@ -110,17 +44,23 @@ const PostList = () => (
       query={POST_LIST_QUERY}
       render={({ allMarkdownRemark }) => (
         allMarkdownRemark.edges.map(({ node }) => (
-          <Container key={node.frontmatter.slug}>
+          <Fragment key={node.frontmatter.slug}>
 
             <MainTextWrapper>
-              <Link to={`/posts${node.frontmatter.slug}`} >
-                <h2>{node.frontmatter.title}</h2>
-                <h3>{node.excerpt}</h3>
-              </Link>
-              <p>{node.frontmatter.date}</p>
+
+              <SubTitleWrapper>
+                <Link to={`/posts${node.frontmatter.slug}`} >
+                  <h2>{node.frontmatter.title}</h2>
+                </Link>
+              </SubTitleWrapper>
+
+              <p>{node.excerpt}</p>
+              
+              <PostDate>{node.frontmatter.date}</PostDate>
+            
             </MainTextWrapper>
 
-          </Container>
+          </Fragment>
         ))
       )}
     />

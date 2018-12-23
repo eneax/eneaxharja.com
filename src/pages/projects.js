@@ -3,30 +3,10 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, MainTextWrapper } from '../components/xStyles'
+import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/xStyles'
 import Footer from '../components/footer'
 import projects from '../utils/projects-data'
 
-
-const SubTitleWrapper = styled.div`
-	font-family: avenir,sans-serif;
-	margin-top: 2rem;
-	a {
-		text-decoration: none;
-		color: #000;
-		&:hover,
-		&:focus {
-			h2 {
-				transition: color .15s ease-in;
-				color: #663399;
-			}
-		}
-	}
-	h2 {
-		margin-bottom: .5rem;
-		font-weight: 500;
-	}
-`
 
 const ImageWrapper = styled.div`
 	margin-bottom: .75rem;
