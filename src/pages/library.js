@@ -1,30 +1,11 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import { TitleWrapper, MainTextWrapper } from '../components/xStyles'
 import Footer from '../components/footer'
 import books from '../utils/books-data'
 import SearchBox from '../components/searchBox'
 
-
-const Container = styled.div`
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-	@media (min-width: 576px) {
-    max-width: 540px;
-	}
-	@media (min-width: 768px) {
-    max-width: 720px;
-	}
-	@media (min-width: 992px) {
-    max-width: 960px;
-	}
-	@media (min-width: 1200px) {
-    max-width: 1140px;
-	}
-`
 
 const Row = styled.div`
 	display: -ms-flexbox;
@@ -95,64 +76,6 @@ const Thumbnail = styled.div`
 	}
 `
 
-const TitleWrapper = styled.div`
-  padding: 1rem 1rem;
-  margin-bottom: 2rem;
-	border-radius: 0.3rem;
-	h1 {
-		font-family: avenir,sans-serif;
-		text-align: center;
-		margin-bottom: 0;
-	}
-`
-
-const MainTextWrapper = styled.div`
-	max-width: 30em;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 4rem;
-	margin-top: 0;
-	font-size: 1.2rem;
-	text-align: justify;
-	background-color: #fff;
-	font-weight: 100;
-	> p {
-		font-family: avenir,sans-serif;
-		@media screen and (min-width: 48em) {
-			font-size: 1.5rem;
-		}
-		line-height: 1.2;
-  	margin-top: 0;
-		margin-bottom: 0;
-		a {
-			color: #000;
-			text-decoration: underline;
-			transition: color .15s ease-in;
-			transition: background-color .15s ease-in-out;
-			&:link,
-			&:visited {
-				transition: color .15s ease-in;
-			}
-			&:hover {
-				transition: color .15s ease-in;
-				transition: background-color .15s ease-in-out;
-				background-color: #000000;
-				color: #fff;
-			}
-			&:active {
-				transition: color .15s ease-in;
-			}
-			&:focus {
-				transition: color .15s ease-in;
-				transition: background-color .15s ease-in-out;
-				outline: 1px dotted #000000;
-				background-color: #000000;
-				color: #fff;
-			}
-		}
-	}
-`
-
 
 const BookItem = ({ link, img, title, author }) => {
   return (
@@ -191,43 +114,41 @@ export default class Library extends Component {
     })
     
     return (
-      <Layout>
-        <Container>
-          <TitleWrapper>
-            <h1>Library</h1>
-          </TitleWrapper>
+			<Layout>
+				<TitleWrapper>
+					<h1>Library</h1>
+				</TitleWrapper>
 
-          <MainTextWrapper>
-            <p>
-              The reading list below contains the books (at least the ones
-              it is worth mentioning) I've read over the years.
+				<MainTextWrapper>
+					<p>
+						The reading list below contains the books (at least the ones
+						it is worth mentioning) I've read over the years.
             </p>
-            <p>
-              Some of these taught me important life lessons and
-              completely changed the way I think and live my life today.
-              Check it out and maybe you will find your next book!
+					<p>
+						Some of these taught me important life lessons and
+						completely changed the way I think and live my life today.
+						Check it out and maybe you will find your next book!
             </p>
 
-            <SearchBox searchChange={this.onSearchChange}/>
+					<SearchBox searchChange={this.onSearchChange} />
 
-            <Row>
-              {
-                filteredBooks.map((filteredBook, i) => (
-                  <BookItem
-                    key={i}
-                    link={filteredBooks[i].link}
-                    img={filteredBooks[i].img}
-                    title={filteredBooks[i].title}
-                    author={filteredBooks[i].author}
-                  />
-                ))
-              }
-            </Row>
-          </MainTextWrapper>
-        </Container>
+					<Row>
+						{
+							filteredBooks.map((filteredBook, i) => (
+								<BookItem
+									key={i}
+									link={filteredBooks[i].link}
+									img={filteredBooks[i].img}
+									title={filteredBooks[i].title}
+									author={filteredBooks[i].author}
+								/>
+							))
+						}
+					</Row>
+				</MainTextWrapper>
 
-        <Footer />
-      </Layout>
+				<Footer />
+			</Layout>
     )
   }
 }
