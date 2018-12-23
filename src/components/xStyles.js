@@ -11,12 +11,15 @@ const SubTitleWrapper = styled.div`
 	font-family: avenir,sans-serif;
 	margin-top: 2rem;
 	a {
-		text-decoration: none;
+		text-decoration: underline;
 		color: #000;
+    &:hover {
+      text-decoration: none; 
+    }
 		&:hover,
 		&:focus {
 			h2 {
-				transition: color .15s ease-in;
+				transition: color .05s ease-in;
 				color: #663399;
 			}
 		}
