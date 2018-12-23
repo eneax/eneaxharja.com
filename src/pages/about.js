@@ -21,9 +21,9 @@ const About = () => (
 					code</a> for the web. I create websites for businesses and portfolio pages that are responsive and can adapt the layout to a variety of devices and screen sizes.
         </p>
 			<p>
-				When I’m not coding, I read <Link to='/library'>books</Link>, procrastinate <Link to='/library'>online</Link> (reading blogs or listening to podcasts) or just <Link to='/library'>travel</Link> and walk around in nature.
+				When I’m not coding, I read <Link to='/library'>books</Link>, procrastinate <Link to='/comingSoon'>online</Link> (reading blogs or listening to podcasts) or just <Link to='/comingSoon'>travel</Link> and walk around in nature.
 			</p>
-			<p>For those of you who have been asking me about the software or hardware I use, here is my <Link to='/library'>list</Link>.</p>
+			<p>For those of you who have been asking me about the software or hardware I use, here is my <Link to='/comingSoon'>list</Link>.</p>
 			<p>
 				I'm open to new opportunities and always looking for new
 				projects where I can contribute. Feel free to take a look at
