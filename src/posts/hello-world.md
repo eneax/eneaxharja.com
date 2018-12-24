@@ -4,7 +4,6 @@ date: "2018-12-24"
 title: "Hello World!"
 ---
 
-<!-- ##Coming Soon! -->
 I’ve been reading blogs for quite some time now, and thought about starting one many times. But who starts a blog in the Age of Social Media?
 
 Do you have something quick to say, maybe less or equal to 280 characters? Twitter is the place for you. Do you feel like you have so much to say that you would probably write a whole manifesto? Then Facebook is your place. Or maybe you don't like writing and instead, prefer to talk and enjoy being in front of a camera. YouTube or Instagram are yours to conquer.
