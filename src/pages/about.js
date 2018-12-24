@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 
 const theme = {
   marginBottom: 0
-};
+}
 
 const About = () => (
 	<Layout>

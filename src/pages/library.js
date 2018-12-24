@@ -7,6 +7,7 @@ import books from '../utils/books-data'
 import SearchBox from '../components/searchBox'
 
 
+// styles
 const Row = styled.div`
 	display: -ms-flexbox;
   display: flex;
@@ -76,6 +77,10 @@ const Thumbnail = styled.div`
 	}
 `
 
+const theme = {
+  marginBottom: 0
+}
+
 
 const BookItem = ({ link, img, title, author }) => {
   return (
@@ -119,7 +124,7 @@ export default class Library extends Component {
 					<h1>Library</h1>
 				</TitleWrapper>
 
-				<MainTextWrapper>
+				<MainTextWrapper theme={theme}>
 					<p>
 						The reading list below contains the books (at least the ones
 						it is worth mentioning) I've read over the years.
