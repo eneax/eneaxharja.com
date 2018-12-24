@@ -33,7 +33,6 @@ const SubTitleWrapper = styled.div`
 const MainTextWrapper = styled.div`
   margin-bottom: 4rem;
   font-size: 1.2rem;
-  text-align: justify;
   background-color: #fff;
   font-weight: 100;
   p {
@@ -43,7 +42,7 @@ const MainTextWrapper = styled.div`
     }
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: ${props => props.theme.marginBottom};
     a {
       color: #000;
       text-decoration: underline;

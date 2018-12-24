@@ -5,13 +5,17 @@ import { TitleWrapper, MainTextWrapper } from '../components/xStyles'
 import Footer from '../components/footer'
 
 
+const theme = {
+  marginBottom: 0
+};
+
 const About = () => (
 	<Layout>
 		<TitleWrapper>
 			<h1>About</h1>
 		</TitleWrapper>
 
-		<MainTextWrapper>
+		<MainTextWrapper theme={theme}>
 			<p>
 				I’m currently living in Chiusi (Tuscany), Italy and working
 				as a Freelance Web Developer.
