@@ -24,7 +24,7 @@ const POST_LIST_QUERY = graphql`
   }
 `
 
-
+// styles
 const PostDate = styled.h3`
   font-size: 1rem;
   font-style: italic;
@@ -33,6 +33,9 @@ const PostDate = styled.h3`
   color: #868e96;
 `
 
+const theme = {
+  marginBottom: 0
+}
 
 const PostList = () => (
   <div>
@@ -46,7 +49,7 @@ const PostList = () => (
         allMarkdownRemark.edges.map(({ node }) => (
           <Fragment key={node.frontmatter.slug}>
 
-            <MainTextWrapper>
+            <MainTextWrapper theme={theme}>
 
               <SubTitleWrapper>
                 <Link to={`/posts${node.frontmatter.slug}`} >
