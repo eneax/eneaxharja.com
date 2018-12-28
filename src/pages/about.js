@@ -31,7 +31,7 @@ const About = () => (
 			<p>
 				I'm open to new opportunities and always looking for new
 				projects where I can contribute. Feel free to take a look at
-          my complete <a href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0' target='_blank' rel='noopener noreferrer'>resume</a>.
+          my complete <Link to='/resume'>resume</Link>.
       </p>
 		</MainTextWrapper>
 

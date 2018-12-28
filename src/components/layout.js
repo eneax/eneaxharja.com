@@ -11,8 +11,8 @@ import favicon from '../images/favicon.ico'
 import { library } from '@fortawesome/fontawesome-svg-core'
 // eslint-disable-next-line
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
-library.add(faEnvelope, faCodeBranch)
+import { faEnvelope, faCodeBranch, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
+library.add(faEnvelope, faCodeBranch, faCloudDownloadAlt)
 
 
 const Layout = ({ children }) => (
