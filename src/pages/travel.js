@@ -79,6 +79,81 @@ export const fluidsImages = graphql`
 
 export const query = graphql`
   query travelGallery {
+    image59: file(relativePath: { regex: "/59.jpeg/" }) {
+      ...fluidsImages
+    }
+    image58: file(relativePath: { regex: "/58.jpeg/" }) {
+      ...fluidsImages
+    }
+    image57: file(relativePath: { regex: "/57.jpeg/" }) {
+      ...fluidsImages
+    }
+    image56: file(relativePath: { regex: "/56.jpeg/" }) {
+      ...fluidsImages
+    }
+    image55: file(relativePath: { regex: "/55.jpeg/" }) {
+      ...fluidsImages
+    }
+    image54: file(relativePath: { regex: "/54.jpeg/" }) {
+      ...fluidsImages
+    }
+    image53: file(relativePath: { regex: "/53.jpeg/" }) {
+      ...fluidsImages
+    }
+    image52: file(relativePath: { regex: "/52.jpeg/" }) {
+      ...fluidsImages
+    }
+    image51: file(relativePath: { regex: "/51.jpeg/" }) {
+      ...fluidsImages
+    }
+    image50: file(relativePath: { regex: "/50.jpeg/" }) {
+      ...fluidsImages
+    }
+    image49: file(relativePath: { regex: "/49.jpeg/" }) {
+      ...fluidsImages
+    }
+    image48: file(relativePath: { regex: "/48.jpeg/" }) {
+      ...fluidsImages
+    }
+    image47: file(relativePath: { regex: "/47.jpeg/" }) {
+      ...fluidsImages
+    }
+    image46: file(relativePath: { regex: "/46.jpeg/" }) {
+      ...fluidsImages
+    }
+    image45: file(relativePath: { regex: "/45.jpeg/" }) {
+      ...fluidsImages
+    }
+    image44: file(relativePath: { regex: "/44.jpeg/" }) {
+      ...fluidsImages
+    }
+    image43: file(relativePath: { regex: "/43.jpeg/" }) {
+      ...fluidsImages
+    }
+    image42: file(relativePath: { regex: "/42.jpeg/" }) {
+      ...fluidsImages
+    }
+    image41: file(relativePath: { regex: "/41.jpeg/" }) {
+      ...fluidsImages
+    }
+    image40: file(relativePath: { regex: "/40.jpeg/" }) {
+      ...fluidsImages
+    }
+    image39: file(relativePath: { regex: "/39.jpeg/" }) {
+      ...fluidsImages
+    }
+    image38: file(relativePath: { regex: "/38.jpeg/" }) {
+      ...fluidsImages
+    }
+    image37: file(relativePath: { regex: "/37.jpeg/" }) {
+      ...fluidsImages
+    }
+    image36: file(relativePath: { regex: "/36.jpeg/" }) {
+      ...fluidsImages
+    }
+    image35: file(relativePath: { regex: "/35.jpeg/" }) {
+      ...fluidsImages
+    }
     image34: file(relativePath: { regex: "/34.jpeg/" }) {
       ...fluidsImages
     }
