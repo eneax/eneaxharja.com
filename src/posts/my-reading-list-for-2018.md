@@ -1,6 +1,6 @@
 ---
 slug: "/my-reading-list-for-2018"
-date: "2018-12-30"
+date: "2018-12-29"
 title: "My Reading List for 2018"
 ---
 
