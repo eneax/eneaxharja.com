@@ -33,5 +33,10 @@ export default [
     link: 'https://github.com/eneax/github-battle',
     title: 'Github Battle',
     desc: 'Discover popular repos and battle your Github friends.'
-  }
+  },
+  {
+    link: 'https://github.com/eneax/resume-theme',
+    title: 'Resume Theme',
+    desc: 'Clean and simple resume theme built with Bootstrap 4.'
+  },
 ]
