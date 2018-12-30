@@ -89,4 +89,9 @@ export default [
     title: 'Pig (dice game)',
     desc: 'Pig is a simple game you can play with a single 6-sided die.'
   },
+  {
+    link: 'https://github.com/eneax/scoreKeeper',
+    title: 'scoreKeeper',
+    desc: 'Clean and Minimal Score Keeping App.'
+  },
 ]
