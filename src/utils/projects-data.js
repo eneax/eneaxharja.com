@@ -119,4 +119,9 @@ export default [
     title: '3D Menu Gallery',
     desc: '3D Menu Gallery with CSS Transition and Transform.'
   },
+  {
+    link: 'https://github.com/eneax/Menu_Gallery',
+    title: 'Menu Gallery',
+    desc: 'Menu Gallery with CSS Transition and Transform.'
+  },
 ]
