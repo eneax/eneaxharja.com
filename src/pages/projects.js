@@ -82,28 +82,28 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query imageGallery {
-    image1: file(relativePath: { regex: "/project1.png/" }) {
+    image1: file(relativePath: { regex: "/1.png/" }) {
       ...fluidImage
     }
-    image2: file(relativePath: { regex: "/project2.png/" }) {
+    image2: file(relativePath: { regex: "/2.png/" }) {
       ...fluidImage
     }
-    image3: file(relativePath: { regex: "/project3.png/" }) {
+    image3: file(relativePath: { regex: "/3.png/" }) {
       ...fluidImage
     }
-    image4: file(relativePath: { regex: "/project4.png/" }) {
+    image4: file(relativePath: { regex: "/4.png/" }) {
       ...fluidImage
     }
-    image5: file(relativePath: { regex: "/project5.png/" }) {
+    image5: file(relativePath: { regex: "/5.png/" }) {
       ...fluidImage
     }
-    image6: file(relativePath: { regex: "/project6.png/" }) {
+    image6: file(relativePath: { regex: "/6.png/" }) {
       ...fluidImage
     }
-    image7: file(relativePath: { regex: "/project7.png/" }) {
+    image7: file(relativePath: { regex: "/7.png/" }) {
       ...fluidImage
     }
-    image8: file(relativePath: { regex: "/project8.png/" }) {
+    image8: file(relativePath: { regex: "/8.png/" }) {
       ...fluidImage
     }
   }
