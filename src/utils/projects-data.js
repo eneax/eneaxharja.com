@@ -114,4 +114,9 @@ export default [
     title: '3D Rotating Cube',
     desc: 'Rotating Cube with CSS 3D Transforms - Star Wars Theme.'
   },
+  {
+    link: 'https://github.com/eneax/3D_Menu_Gallery',
+    title: '3D Menu Gallery',
+    desc: '3D Menu Gallery with CSS Transition and Transform.'
+  },
 ]
