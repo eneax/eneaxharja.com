@@ -4,12 +4,12 @@ const TitleWrapper = styled.div`
   margin-bottom: 2rem;
 	h1 {
     font-weight: 900;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: avenir,sans-serif;
 	}
 `
 
 const SubTitleWrapper = styled.div`
-  font-family: 'Maven Pro', sans-serif;
+  font-family: avenir,sans-serif;
 	margin-top: 2rem;
 	a {
 		text-decoration: underline;
@@ -27,7 +27,7 @@ const SubTitleWrapper = styled.div`
 	}
 	h2 {
 		margin-bottom: .5rem;
-		font-weight: 400;
+		font-weight: 500;
 	}
 `
 
@@ -35,7 +35,7 @@ const MainTextWrapper = styled.div`
   margin-bottom: 4rem;
   font-size: 1.2rem;
   background-color: #fff;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: avenir,sans-serif;
   @media screen and (min-width: 48em) {
     font-size: 1.5rem;
   }

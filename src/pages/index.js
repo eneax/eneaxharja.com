@@ -21,7 +21,7 @@ const Header = styled.h1`
     font-size: 1.5rem;
 	}
 	font-weight: 900;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: avenir,sans-serif;
 `
 
 const SubHeader = styled.h2`
@@ -29,7 +29,7 @@ const SubHeader = styled.h2`
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: avenir,sans-serif;
 	margin-top: -.5rem;
   margin-bottom: 1rem;
 `

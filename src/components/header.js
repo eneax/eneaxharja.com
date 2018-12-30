@@ -12,7 +12,7 @@ const Navbar = styled.nav`
   margin-left: auto;
   padding: 2.625rem 1.3125rem .625rem 1.3125rem;
 	box-sizing: border-box;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: avenir,sans-serif;
 
 	a {
 		color: #000;

@@ -62,8 +62,8 @@ const Thumbnail = styled.div`
 		margin-bottom: 0;
 		span {
 			font-size: .875rem;
-			font-weight: 900;
-			font-family: 'Maven Pro', sans-serif;
+			font-weight: 700;
+			font-family: avenir,sans-serif;
 		}
 	}
 	p {
@@ -71,7 +71,7 @@ const Thumbnail = styled.div`
 		small {
 			font-size: .875rem;
 			font-weight: 400;
-			font-family: 'Maven Pro', sans-serif;
+			font-family: avenir,sans-serif;
 			font-style: italic;
 		}
 	}
