@@ -97,6 +97,11 @@ export default [
   {
     link: 'https://github.com/eneax/doosan-baseball',
     title: 'Doosan Baseball',
-    desc: 'Responsive website built on Bootstrap 4 - Doosan Baseball.'
+    desc: 'Responsive website built with Bootstrap 4 - Doosan Baseball.'
+  },
+  {
+    link: 'https://github.com/eneax/Bootstrap_Landing_Page_Slider',
+    title: 'Landing Page Slider',
+    desc: 'Landing Page Slider built with Bootstrap.'
   },
 ]
