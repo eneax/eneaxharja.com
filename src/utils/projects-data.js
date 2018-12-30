@@ -107,6 +107,11 @@ export default [
   {
     link: 'https://github.com/eneax/Bootstrap_Image_Gallery',
     title: 'Bootstrap Image Gallery',
-    desc: 'Responsive Image Gallery built with Bootstrap .'
+    desc: 'Responsive Image Gallery built with Bootstrap.'
+  },
+  {
+    link: 'https://github.com/eneax/3D_Rotating_Cube',
+    title: '3D Rotating Cube',
+    desc: 'Rotating Cube with CSS 3D Transforms - Star Wars Theme.'
   },
 ]
