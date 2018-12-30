@@ -124,4 +124,9 @@ export default [
     title: 'Menu Gallery',
     desc: 'Menu Gallery with CSS Transition and Transform.'
   },
+  {
+    link: 'https://github.com/eneax/Wild_And_Beautiful',
+    title: 'Wild And Beautiful',
+    desc: 'Creating an SVG Animated Line Drawing.'
+  }
 ]
