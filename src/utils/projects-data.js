@@ -104,4 +104,9 @@ export default [
     title: 'Landing Page Slider',
     desc: 'Landing Page Slider built with Bootstrap.'
   },
+  {
+    link: 'https://github.com/eneax/Bootstrap_Image_Gallery',
+    title: 'Bootstrap Image Gallery',
+    desc: 'Responsive Image Gallery built with Bootstrap .'
+  },
 ]
