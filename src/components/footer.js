@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 const FooterWrapper = styled.footer`
-	font-family: avenir,sans-serif;
+	font-family: 'Maven Pro', sans-serif;
 	color: #555;
 	@media screen and (min-width: 48em) and (max-width: 64em) {
 		padding-left: 4rem;

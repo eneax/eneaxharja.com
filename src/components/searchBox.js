@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const SearchInput = styled.input`
 	margin: 1rem auto;
   padding: 0.375rem 0.75rem;
-	font-family: avenir,sans-serif;
+	font-family: 'Maven Pro', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   background-color: #fff;

@@ -20,16 +20,16 @@ const Header = styled.h1`
 	@media screen and (min-width: 30em) {
     font-size: 1.5rem;
 	}
-	font-weight: 600;
-	font-family: avenir,sans-serif;
+	font-weight: 900;
+	font-family: 'Maven Pro', sans-serif;
 `
 
 const SubHeader = styled.h2`
 	font-size: .875rem;
-	font-weight: 200;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-family: avenir,sans-serif;
+	font-family: 'Maven Pro', sans-serif;
 	margin-top: -.5rem;
   margin-bottom: 1rem;
 `

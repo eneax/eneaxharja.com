@@ -62,16 +62,16 @@ const Thumbnail = styled.div`
 		margin-bottom: 0;
 		span {
 			font-size: .875rem;
-			font-weight: 500;
-			font-family: avenir,sans-serif;
+			font-weight: 900;
+			font-family: 'Maven Pro', sans-serif;
 		}
 	}
 	p {
 		margin-bottom: 0;
 		small {
 			font-size: .875rem;
-			font-weight: 100;
-			font-family: avenir,sans-serif;
+			font-weight: 400;
+			font-family: 'Maven Pro', sans-serif;
 			font-style: italic;
 		}
 	}

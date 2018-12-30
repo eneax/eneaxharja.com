@@ -3,12 +3,13 @@ import styled from 'styled-components'
 const TitleWrapper = styled.div`
   margin-bottom: 2rem;
 	h1 {
-		font-family: avenir,sans-serif;
+    font-weight: 900;
+    font-family: 'Maven Pro', sans-serif;
 	}
 `
 
 const SubTitleWrapper = styled.div`
-	font-family: avenir,sans-serif;
+  font-family: 'Maven Pro', sans-serif;
 	margin-top: 2rem;
 	a {
 		text-decoration: underline;
@@ -26,7 +27,7 @@ const SubTitleWrapper = styled.div`
 	}
 	h2 {
 		margin-bottom: .5rem;
-		font-weight: 500;
+		font-weight: 400;
 	}
 `
 
@@ -34,8 +35,7 @@ const MainTextWrapper = styled.div`
   margin-bottom: 4rem;
   font-size: 1.2rem;
   background-color: #fff;
-  font-weight: 100;
-  font-family: avenir, sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   @media screen and (min-width: 48em) {
     font-size: 1.5rem;
   }
@@ -61,7 +61,7 @@ const MainTextWrapper = styled.div`
     li::before {
       content: '\\2022';
       color: #663399;
-      font-weight: bold;
+      font-weight: 900;
       display: inline-block;
       width: 1em;
       margin-left: -1em;
