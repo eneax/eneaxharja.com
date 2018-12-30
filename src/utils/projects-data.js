@@ -39,4 +39,9 @@ export default [
     title: 'Resume Theme',
     desc: 'Clean and simple resume theme built with Bootstrap 4.'
   },
+  {
+    link: 'https://github.com/eneax/roboheads',
+    title: 'RoboHeads',
+    desc: 'A fast and responsive React app where you can search robots by name or email.'
+  },
 ]
