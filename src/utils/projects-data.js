@@ -73,5 +73,10 @@ export default [
     link: 'https://github.com/eneax/rgbGame',
     title: 'rgbGame',
     desc: 'Guess the RGB - A JavaScript Color Guessing Game.'
-  }
+  },
+  {
+    link: 'https://github.com/eneax/Trattoria_Porsenna_v3',
+    title: 'Trattoria Porsenna v3',
+    desc: 'Responsive website of Trattoria Porsenna - Version 3.'
+  },
 ]
