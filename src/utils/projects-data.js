@@ -79,4 +79,9 @@ export default [
     title: 'Trattoria Porsenna v3',
     desc: 'Responsive website of Trattoria Porsenna - Version 3.'
   },
+  {
+    link: 'https://github.com/eneax/CheckList',
+    title: 'CheckList',
+    desc: 'A basic checklist built with CSS and Javascript.'
+  },
 ]
