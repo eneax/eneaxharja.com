@@ -28,5 +28,10 @@ export default [
     link: 'https://github.com/eneax/weather-app',
     title: 'Weather App',
     desc: 'A functioning Weather app built with React and Open Weather API.'
+  },
+  {
+    link: 'https://github.com/eneax/github-battle',
+    title: 'Github Battle',
+    desc: 'Discover popular repos and battle your Github friends.'
   }
 ]
