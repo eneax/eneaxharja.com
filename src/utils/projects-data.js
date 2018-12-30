@@ -84,4 +84,9 @@ export default [
     title: 'CheckList',
     desc: 'A basic checklist built with CSS and Javascript.'
   },
+  {
+    link: 'https://github.com/eneax/Pig_Game',
+    title: 'Pig (dice game)',
+    desc: 'Pig is a simple game you can play with a single 6-sided die.'
+  },
 ]
