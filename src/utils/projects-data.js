@@ -54,4 +54,9 @@ export default [
     title: 'Restaurant Theme',
     desc: 'A responsive restaurant theme built with Bootstrap 4.'
   },
+  {
+    link: 'https://github.com/eneax/budgetApp',
+    title: 'Budget App',
+    desc: 'Responsive Budget App built with Bootstrap 4 and Javascript.'
+  },
 ]
