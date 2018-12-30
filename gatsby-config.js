@@ -43,15 +43,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
-    'gatsby-plugin-styled-components',
-    // custom fonts
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Maven Pro'] // 400, 500, 700, 900
-        }
-      }
-    }
+    'gatsby-plugin-styled-components'
   ],
 }
