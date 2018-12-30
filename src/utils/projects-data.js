@@ -44,4 +44,9 @@ export default [
     title: 'RoboHeads',
     desc: 'A fast and responsive React app where you can search robots by name or email.'
   },
+  {
+    link: 'https://github.com/eneax/portfolio-theme',
+    title: 'Portfolio Theme',
+    desc: 'Bootstrap portfolio theme with smooth scrolling and off-canvas navigation.'
+  },
 ]
