@@ -59,4 +59,9 @@ export default [
     title: 'Budget App',
     desc: 'Responsive Budget App built with Bootstrap 4 and Javascript.'
   },
+  {
+    link: 'https://github.com/eneax/confettiDJ',
+    title: 'confettiDJ',
+    desc: 'Animation and Sound Game with Paper.js and howler.js.'
+  },
 ]
