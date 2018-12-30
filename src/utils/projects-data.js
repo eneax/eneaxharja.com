@@ -69,4 +69,9 @@ export default [
     title: 'ToDo List',
     desc: 'Simple jQuery ToDo List.'
   },
+  {
+    link: 'https://github.com/eneax/rgbGame',
+    title: 'rgbGame',
+    desc: 'Guess the RGB - A JavaScript Color Guessing Game.'
+  }
 ]

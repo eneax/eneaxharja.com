@@ -82,31 +82,31 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query imageGallery {
-    image1: file(relativePath: { regex: "/1.png/" }) {
+    image1: file(relativePath: { regex: "/01.png/" }) {
       ...fluidImage
     }
-    image2: file(relativePath: { regex: "/2.png/" }) {
+    image2: file(relativePath: { regex: "/02.png/" }) {
       ...fluidImage
     }
-    image3: file(relativePath: { regex: "/3.png/" }) {
+    image3: file(relativePath: { regex: "/03.png/" }) {
       ...fluidImage
     }
-    image4: file(relativePath: { regex: "/4.png/" }) {
+    image4: file(relativePath: { regex: "/04.png/" }) {
       ...fluidImage
     }
-    image5: file(relativePath: { regex: "/5.png/" }) {
+    image5: file(relativePath: { regex: "/05.png/" }) {
       ...fluidImage
     }
-    image6: file(relativePath: { regex: "/6.png/" }) {
+    image6: file(relativePath: { regex: "/06.png/" }) {
       ...fluidImage
     }
-    image7: file(relativePath: { regex: "/7.png/" }) {
+    image7: file(relativePath: { regex: "/07.png/" }) {
       ...fluidImage
     }
-    image8: file(relativePath: { regex: "/8.png/" }) {
+    image8: file(relativePath: { regex: "/08.png/" }) {
       ...fluidImage
     }
-    image9: file(relativePath: { regex: "/9.png/" }) {
+    image9: file(relativePath: { regex: "/09.png/" }) {
       ...fluidImage
     }
     image10: file(relativePath: { regex: "/10.png/" }) {
@@ -122,6 +122,9 @@ export const query = graphql`
       ...fluidImage
     }
     image14: file(relativePath: { regex: "/14.png/" }) {
+      ...fluidImage
+    }
+    image15: file(relativePath: { regex: "/15.png/" }) {
       ...fluidImage
     }
   }
