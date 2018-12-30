@@ -49,4 +49,9 @@ export default [
     title: 'Portfolio Theme',
     desc: 'Bootstrap portfolio theme with smooth scrolling and off-canvas navigation.'
   },
+  {
+    link: 'https://github.com/eneax/restaurant-theme',
+    title: 'Restaurant Theme',
+    desc: 'A responsive restaurant theme built with Bootstrap 4.'
+  },
 ]
