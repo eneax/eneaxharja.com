@@ -64,4 +64,9 @@ export default [
     title: 'confettiDJ',
     desc: 'Animation and Sound Game with Paper.js and howler.js.'
   },
+  {
+    link: 'https://github.com/eneax/toDoList',
+    title: 'ToDo List',
+    desc: 'Simple jQuery ToDo List.'
+  },
 ]
