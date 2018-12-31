@@ -33,7 +33,7 @@ const About = () => (
         <li>I use Chrome for the Dev Tools and Safari as a daily driver.</li>
         <li>I code using <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a> as a text editor.</li>
         <li>My terminal is <a href="https://hyper.is/" target="_blank" rel="noopener noreferrer">Hyper.js</a> with "<a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer">Oh My ZSH!</a>".</li>
-        <li>Dot Files repo coming soon!</li>
+        <li>You can see my config files over at my <a href="https://github.com/eneax/dotfiles" target="_blank" rel="noopener noreferrer">Dot Files</a> repo.</li>
       </ul>
 
       <SubTitleWrapper>
