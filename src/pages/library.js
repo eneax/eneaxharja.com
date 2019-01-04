@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import { TitleWrapper, MainTextWrapper } from '../components/xStyles'
 import Footer from '../components/footer'
-import books from '../utils/books-data'
+import { books } from '../data'
 import SearchBox from '../components/searchBox'
 
 

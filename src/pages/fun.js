@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/xStyles'
 import Footer from '../components/footer'
-import funResources from '../utils/funResources-data'
+import { funResources } from '../data'
 
 
 const ImageWrapper = styled.div`
