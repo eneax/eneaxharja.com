@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/xStyles'
-import Footer from '../components/footer'
+import Layout from '../components/Layout'
+import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/Global'
+import Footer from '../components/Footer'
 
 
 const theme = {

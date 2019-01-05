@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/xStyles'
-import Footer from '../components/footer'
+import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/Global'
+import Footer from '../components/Footer'
 import { funResources } from '../data'
 
 

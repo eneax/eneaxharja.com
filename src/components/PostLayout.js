@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
-import { TitleWrapper, MainTextWrapper } from '../components/xStyles'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
+import { TitleWrapper, MainTextWrapper } from './Global'
+import Layout from './Layout'
+import Footer from './Footer'
 
 
-export default class postLayout extends Component {
+export default class PostLayout extends Component {
   render() {
     const { markdownRemark } = this.props.data
 
