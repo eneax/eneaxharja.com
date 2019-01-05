@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/Layout'
-import { TitleWrapper, MainTextWrapper } from '../components/Global'
-import Footer from '../components/Footer'
+import Layout from '../components/layout'
+import { TitleWrapper, MainTextWrapper } from '../components/global'
+import Footer from '../components/footer'
 
 
 const theme = {

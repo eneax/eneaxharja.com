@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from './Global'
+import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from './global'
 
 // graphql query
 const POST_LIST_QUERY = graphql`

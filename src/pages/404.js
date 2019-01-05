@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import { TitleWrapper, MainTextWrapper } from '../components/Global'
+import Layout from '../components/layout'
+import { TitleWrapper, MainTextWrapper } from '../components/global'
 
 
 const NotFoundPage = () => (

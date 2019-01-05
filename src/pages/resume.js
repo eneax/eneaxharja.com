@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Layout from '../components/Layout'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/Global'
+import Layout from '../components/layout'
+import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/global'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 
 
 const theme = {

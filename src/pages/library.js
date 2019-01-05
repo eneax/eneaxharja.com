@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import styled from 'styled-components'
-import { TitleWrapper, MainTextWrapper } from '../components/Global'
-import Footer from '../components/Footer'
+import { TitleWrapper, MainTextWrapper } from '../components/global'
+import Footer from '../components/footer'
 import { books } from '../data'
-import SearchBox from '../components/SearchBox'
+import SearchBox from '../components/searchBox'
 
 
 // styles
