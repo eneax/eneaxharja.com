@@ -1,6 +1,6 @@
-import books from './BooksData'
-import funResources from './FunResourcesData'
-import projects from './ProjectsData'
-import travels from './TravelsData'
+import books from './booksData'
+import funResources from './funResourcesData'
+import projects from './projectsData'
+import travels from './travelsData'
 
 export { books, funResources, projects, travels }
