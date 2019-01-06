@@ -43,6 +43,8 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    // The plugin will add HTTP/2 assets to server push the critical Gatsby scripts
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }
