@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { TitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
+import { Title } from '../elements'
 
 
 const NotFoundPage = () => (
 	<Layout>
-		<TitleWrapper>
-			<h1>NOT FOUND</h1>
-		</TitleWrapper>
+		<Title>NOT FOUND</Title>
 
 		<MainTextWrapper>
 			<p>You just hit a route that doesn&#39;t exist... the sadness.</p>

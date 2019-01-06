@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
-import { TitleWrapper, MainTextWrapper } from './global'
+import { MainTextWrapper } from './global'
 import Layout from './layout'
 import Footer from './footer'
+import { Title } from '../elements'
 
 
 export default class PostLayout extends Component {
@@ -11,9 +12,9 @@ export default class PostLayout extends Component {
 
     return (
 			<Layout>
-				<TitleWrapper>
-					<h1>{markdownRemark.frontmatter.title}</h1>
-				</TitleWrapper>
+				<Title>
+					{markdownRemark.frontmatter.title}
+        </Title>
 
 				<MainTextWrapper>
 					<div dangerouslySetInnerHTML={{

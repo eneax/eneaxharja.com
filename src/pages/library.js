@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import { TitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
 import Footer from '../components/footer'
 import { books } from '../data'
 import SearchBox from '../components/searchBox'
+import { Title } from '../elements'
+import { avenir } from '../utils'
 
 
 // styles
@@ -63,7 +65,7 @@ const Thumbnail = styled.div`
 		span {
 			font-size: .875rem;
 			font-weight: 700;
-			font-family: avenir,sans-serif;
+			${avenir};
 		}
 	}
 	p {
@@ -71,7 +73,7 @@ const Thumbnail = styled.div`
 		small {
 			font-size: .875rem;
 			font-weight: 400;
-			font-family: avenir,sans-serif;
+			${avenir};
 			font-style: italic;
 		}
 	}
@@ -120,9 +122,7 @@ export default class Library extends Component {
     
     return (
 			<Layout>
-				<TitleWrapper>
-					<h1>Library</h1>
-				</TitleWrapper>
+				<Title>Library</Title>
 
 				<MainTextWrapper theme={theme}>
 					<p>

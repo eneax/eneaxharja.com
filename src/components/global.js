@@ -1,44 +1,15 @@
 import styled from 'styled-components'
+import { above, avenir, purple } from '../utils'
 
-const TitleWrapper = styled.div`
-  margin-bottom: 2rem;
-	h1 {
-    font-weight: 900;
-    font-family: avenir,sans-serif;
-	}
-`
-
-const SubTitleWrapper = styled.div`
-  font-family: avenir,sans-serif;
-	margin-top: 2rem;
-	a {
-		text-decoration: underline;
-		color: #000;
-    &:hover {
-      text-decoration: none; 
-    }
-		&:hover,
-		&:focus {
-			h2 {
-				transition: color .05s ease-in;
-				color: #663399;
-			}
-		}
-	}
-	h2 {
-		margin-bottom: .5rem;
-		font-weight: 500;
-	}
-`
 
 const MainTextWrapper = styled.div`
   margin-bottom: 4rem;
   font-size: 1.2rem;
   background-color: #fff;
-  font-family: avenir,sans-serif;
-  @media screen and (min-width: 48em) {
-    font-size: 1.5rem;
-  }
+  ${avenir};
+  ${above.tablet`
+		font-size: 1.5rem;
+	`}
   line-height: 1.2;
   a {
     text-decoration: underline;
@@ -46,7 +17,7 @@ const MainTextWrapper = styled.div`
     &:hover,
     &:focus {
       text-decoration: none;
-      color: #663399;
+      color: ${purple};
     }
   }
   p {
@@ -60,7 +31,7 @@ const MainTextWrapper = styled.div`
     list-style: none;
     li::before {
       content: '\\2022';
-      color: #663399;
+      color: ${purple};
       font-weight: 900;
       display: inline-block;
       width: 1em;
@@ -78,7 +49,5 @@ const MainTextWrapper = styled.div`
 `
 
 export {
-  TitleWrapper,
-  SubTitleWrapper,
   MainTextWrapper
 }

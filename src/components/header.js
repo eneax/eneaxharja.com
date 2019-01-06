@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import logo from '../images/logo.png'
+import { avenir } from '../utils'
 
 
 const Navbar = styled.nav`
@@ -12,7 +13,7 @@ const Navbar = styled.nav`
   margin-left: auto;
   padding: 2.625rem 1.3125rem .625rem 1.3125rem;
 	box-sizing: border-box;
-	font-family: avenir,sans-serif;
+	${avenir};
 
 	a {
 		color: #000;

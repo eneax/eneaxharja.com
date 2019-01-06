@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from '../components/footer'
+import { Title, SubTitle } from '../elements'
 
 
 const theme = {
@@ -54,33 +55,32 @@ const SocialLink = styled.a`
 
 const Resume = () => (
 	<Layout>
-		<TitleWrapper>
-      <h1>
-        Resume 
-        <SocialLink 
-          href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0' 
-          target='_blank' rel='noopener noreferrer'
-        >
-          <FontAwesomeIcon icon="cloud-download-alt" />
-        </SocialLink>
-      </h1>
-		</TitleWrapper>
+    <Title>
+      Resume
+        <SocialLink
+        href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0'
+        target='_blank' rel='noopener noreferrer'
+      >
+        <FontAwesomeIcon icon="cloud-download-alt" />
+      </SocialLink>
+    </Title>
 
 		<MainTextWrapper theme={theme}>
-      
-      <SubTitleWrapper style={{marginTop: '4rem'}}>
-        <h2>SUMMARY OF QUALIFICATIONS</h2>
-        <hr/>
-      </SubTitleWrapper>
+
+      <SubTitle style={{marginTop: '4rem'}}>
+        SUMMARY OF QUALIFICATIONS
+      </SubTitle>
+      <hr/>
+
       <ul style={{marginTop: '3rem'}}>
         <li>Self-taught web developer</li>
         <li>Master of Science with Summa Cum Laude in Accounting and Management at the University of Siena</li>
       </ul>
 
-      <SubTitleWrapper style={{marginTop: '5rem'}}>
-        <h2>WORK EXPERIENCE</h2>
-        <hr/>
-      </SubTitleWrapper>
+      <SubTitle style={{marginTop: '5rem'}}>
+        WORK EXPERIENCE
+      </SubTitle>
+      <hr/>
 
       <Heading3>Web Developer, Freelance</Heading3>
       <Time>10/2017 – Present</Time>
@@ -101,10 +101,10 @@ const Resume = () => (
         <li>Analyzed market, competitors and customer perception of the brand Trattoria Porsenna</li>
       </ul>
 
-      <SubTitleWrapper style={{marginTop: '5rem'}}>
-        <h2>EDUCATION</h2>
-        <hr/>
-      </SubTitleWrapper>
+      <SubTitle style={{marginTop: '5rem'}}>
+        EDUCATION
+      </SubTitle>
+      <hr/>
       
       <Heading3>
         Self-Education on Online Coding Schools <br/>

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { TitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
 import Footer from '../components/footer'
+import { Title } from '../elements'
 
 
 const theme = {
@@ -11,9 +12,7 @@ const theme = {
 
 const About = () => (
 	<Layout>
-		<TitleWrapper>
-			<h1>About</h1>
-		</TitleWrapper>
+		<Title>About</Title>
 
 		<MainTextWrapper theme={theme}>
 			<p>

@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { avenir } from '../utils'
 
 
 const HeaderWrapper = styled.header`
@@ -21,7 +22,7 @@ const Header = styled.h1`
     font-size: 1.5rem;
 	}
 	font-weight: 900;
-	font-family: avenir,sans-serif;
+	${avenir};
 `
 
 const SubHeader = styled.h2`
@@ -29,7 +30,7 @@ const SubHeader = styled.h2`
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-family: avenir,sans-serif;
+	${avenir};
 	margin-top: -.5rem;
   margin-bottom: 1rem;
 `

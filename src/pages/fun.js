@@ -4,9 +4,10 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
 import Footer from '../components/footer'
 import { funResources } from '../data'
+import { Title, SubTitle, ExternalLink } from '../elements'
 
 
 const ImageWrapper = styled.div`
@@ -30,9 +31,7 @@ const Fun = ({ data }) => {
   return (
     <Layout>
 
-      <TitleWrapper>
-        <h1>Fun</h1>
-      </TitleWrapper>
+      <Title>Fun</Title>
 
       <MainTextWrapper>
         <p>This page contains podcasts, blogs and newsletters that I like to listen to and read, in addition to <Link to='/library'>books</Link>, during my free time.</p>
@@ -41,11 +40,11 @@ const Fun = ({ data }) => {
             funResources.map((funResource, i) => (
 
               <div key={i}>
-                <SubTitleWrapper>
-                  <a href={`${funResources[i].link}`} target="_blank" rel="noopener noreferrer">
-                    <h2>{funResources[i].title}</h2>
-                  </a>
-                </SubTitleWrapper>
+                <ExternalLink href={`${funResources[i].link}`}>
+                  <SubTitle>
+                    {funResources[i].title}
+                  </SubTitle>
+                </ExternalLink>
 
                 <ImageWrapper>
                   <a href={`${funResources[i].link}`} target="_blank" rel="noopener noreferrer">

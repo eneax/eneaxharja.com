@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from './global'
+import { MainTextWrapper } from './global'
+import { Title, SubTitle, InternalLink } from '../elements'
+
 
 // graphql query
 const POST_LIST_QUERY = graphql`
@@ -39,9 +41,7 @@ const theme = {
 
 const PostList = () => (
   <div>
-    <TitleWrapper>
-      <h1>Blog</h1>
-    </TitleWrapper>
+    <Title>Blog</Title>
 
     <StaticQuery
       query={POST_LIST_QUERY}
@@ -51,11 +51,17 @@ const PostList = () => (
 
             <MainTextWrapper theme={theme}>
 
-              <SubTitleWrapper>
+              {/* <SubTitleWrapper>
                 <Link to={`/posts${node.frontmatter.slug}`} >
                   <h2>{node.frontmatter.title}</h2>
                 </Link>
-              </SubTitleWrapper>
+              </SubTitleWrapper> */}
+
+              <InternalLink to={`/posts${node.frontmatter.slug}`}>
+                <SubTitle>
+                  {node.frontmatter.title}
+                </SubTitle>
+              </InternalLink>
 
               <p>{node.excerpt}</p>
               

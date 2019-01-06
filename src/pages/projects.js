@@ -3,9 +3,10 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, SubTitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
 import Footer from '../components/footer'
 import { projects } from '../data'
+import { Title, SubTitle, ExternalLink } from '../elements'
 
 
 const ImageWrapper = styled.div`
@@ -29,9 +30,7 @@ const Projects = ({ data }) => {
   return (
     <Layout>
 
-      <TitleWrapper>
-        <h1>Projects</h1>
-      </TitleWrapper>
+      <Title>Projects</Title>
 
       <MainTextWrapper>
         <p>Explore some of my favorite projects I've worked on over the last few months.</p>
@@ -40,11 +39,9 @@ const Projects = ({ data }) => {
             projects.map((project, i) => (
 
               <div key={i}>
-                <SubTitleWrapper>
-                  <a href={`${projects[i].link}`} target="_blank" rel="noopener noreferrer">
-                    <h2>{projects[i].title}</h2>
-                  </a>
-                </SubTitleWrapper>
+                <ExternalLink href={`${projects[i].link}`}>
+                  <SubTitle>{projects[i].title}</SubTitle>
+                </ExternalLink>
 
                 <ImageWrapper>
                   <a href={`${projects[i].link}`} target="_blank" rel="noopener noreferrer">

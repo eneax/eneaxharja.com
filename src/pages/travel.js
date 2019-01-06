@@ -3,9 +3,10 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { TitleWrapper, MainTextWrapper } from '../components/global'
+import { MainTextWrapper } from '../components/global'
 import Footer from '../components/footer'
 import { travels } from '../data'
+import { Title } from '../elements'
 
 
 const ImageWrapper = styled.div`
@@ -37,9 +38,7 @@ const Travel = ({ data }) => {
   return (
     <Layout>
 
-      <TitleWrapper>
-        <h1>Travel</h1>
-      </TitleWrapper>
+      <Title>Travel</Title>
 
       <MainTextWrapper>
         <p style={{marginBottom: '3rem'}}>This page contains some of the photos I took during my trips over the years.</p>

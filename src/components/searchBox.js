@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { avenir } from '../utils';
 
 
 const SearchInput = styled.input`
 	margin: 1rem auto;
   padding: 0.375rem 0.75rem;
-	font-family: avenir,sans-serif;
+	${avenir};
   font-size: 1rem;
   line-height: 1.5;
   background-color: #fff;
