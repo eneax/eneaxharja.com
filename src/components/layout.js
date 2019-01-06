@@ -40,6 +40,11 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+
+          {/* noscript elements */}
+          <noscript>{`
+            <p>This site works better with JavaScript enabled.</p>
+          `}</noscript>
         </Helmet>
 
         <Particles
