@@ -5,8 +5,9 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { Container } from '../components/global'
 import Footer from '../components/footer'
-import { travels } from '../data'
 import { Title } from '../elements'
+import { travels } from '../data'
+import { DateTime } from '../utils'
 
 
 const ImageWrapper = styled.div`
@@ -15,14 +16,6 @@ const ImageWrapper = styled.div`
 		border: 1px solid #e7e7e7;
 		border-radius: .25rem !important;
 	}
-`
-
-const PostDate = styled.h3`
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: normal;
-  margin-top: .25rem;
-  color: #868e96;
 `
 
 
@@ -51,7 +44,7 @@ const Travel = ({ data }) => {
                     images[i]
                   }
                 </ImageWrapper>
-                <PostDate style={{marginBottom: '3rem'}}>{travel.title}</PostDate>
+                <DateTime style={{marginBottom: '3rem'}}>{travel.title}</DateTime>
               </div>
             ))
           }

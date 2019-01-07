@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
 import { Container } from './global'
 import { Title, SubTitle, InternalLink } from '../elements'
+import { DateTime } from '../utils'
 
 
 // graphql query
@@ -26,14 +26,6 @@ const POST_LIST_QUERY = graphql`
   }
 `
 
-// styles
-const PostDate = styled.h3`
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: normal;
-  margin-top: .25rem;
-  color: #868e96;
-`
 
 const PostList = () => (
   <div>
@@ -44,9 +36,8 @@ const PostList = () => (
       render={({ allMarkdownRemark }) => (
         allMarkdownRemark.edges.map(({ node }) => (
           <Fragment key={node.frontmatter.slug}>
-
             <Container>
-
+              
               <InternalLink to={`/posts${node.frontmatter.slug}`}>
                 <SubTitle>
                   {node.frontmatter.title}
@@ -55,10 +46,9 @@ const PostList = () => (
 
               <p>{node.excerpt}</p>
               
-              <PostDate>{node.frontmatter.date}</PostDate>
+              <DateTime>{node.frontmatter.date}</DateTime>
             
             </Container>
-
           </Fragment>
         ))
       )}
