@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import Footer from '../components/footer'
 import { books } from '../data'
 import SearchBox from '../components/searchBox'
@@ -120,7 +120,7 @@ export default class Library extends Component {
 			<Layout>
 				<Title>Library</Title>
 
-				<MainTextWrapper>
+				<Container>
 					<p>
 						The reading list below contains the books (at least the ones
 						it is worth mentioning) I've read over the years.
@@ -146,7 +146,7 @@ export default class Library extends Component {
 							))
 						}
 					</Row>
-				</MainTextWrapper>
+				</Container>
 
 				<Footer />
 			</Layout>

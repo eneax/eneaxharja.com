@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { MainTextWrapper } from './global'
+import { Container } from './global'
 import { Title, SubTitle, InternalLink } from '../elements'
 
 
@@ -45,7 +45,7 @@ const PostList = () => (
         allMarkdownRemark.edges.map(({ node }) => (
           <Fragment key={node.frontmatter.slug}>
 
-            <MainTextWrapper>
+            <Container>
 
               <InternalLink to={`/posts${node.frontmatter.slug}`}>
                 <SubTitle>
@@ -57,7 +57,7 @@ const PostList = () => (
               
               <PostDate>{node.frontmatter.date}</PostDate>
             
-            </MainTextWrapper>
+            </Container>
 
           </Fragment>
         ))

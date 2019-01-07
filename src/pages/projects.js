@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import Footer from '../components/footer'
 import { projects } from '../data'
 import { Title, SubTitle, ExternalLink } from '../elements'
@@ -32,7 +32,7 @@ const Projects = ({ data }) => {
 
       <Title>Projects</Title>
 
-      <MainTextWrapper>
+      <Container>
         <p>Explore some of my favorite projects I've worked on over the last few months.</p>
         <Fragment>
           {
@@ -57,7 +57,7 @@ const Projects = ({ data }) => {
             ))
           }
         </Fragment>
-      </MainTextWrapper>
+      </Container>
 
       <Footer />
     </Layout>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import Footer from '../components/footer'
 import { Title, SubTitle, UnOrderdList, ExternalLink } from '../elements'
 
@@ -9,7 +9,7 @@ const About = () => (
 	<Layout>
 		<Title>My Gear</Title>
 
-		<MainTextWrapper>
+		<Container>
 			<p>Ever wonder about what gear I use? Here is my complete list.</p>
       
       <SubTitle>Hardware</SubTitle>
@@ -31,7 +31,7 @@ const About = () => (
       <UnOrderdList>
         <li>I like reading printed books. I tried with ebooks and audiobooks, but after spending an entire day coding, the last thing I need is another screen!</li>
       </UnOrderdList>
-		</MainTextWrapper>
+		</Container>
 
 		<Footer />
 	</Layout>

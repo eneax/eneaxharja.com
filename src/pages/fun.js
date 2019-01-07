@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import Footer from '../components/footer'
 import { funResources } from '../data'
 import { Title, SubTitle, ExternalLink } from '../elements'
@@ -33,7 +33,7 @@ const Fun = ({ data }) => {
 
       <Title>Fun</Title>
 
-      <MainTextWrapper>
+      <Container>
         <p>This page contains podcasts, blogs and newsletters that I like to listen to and read, in addition to <Link to='/library'>books</Link>, during my free time.</p>
         <Fragment>
           {
@@ -60,7 +60,7 @@ const Fun = ({ data }) => {
             ))
           }
         </Fragment>
-      </MainTextWrapper>
+      </Container>
 
       <Footer />
     </Layout>

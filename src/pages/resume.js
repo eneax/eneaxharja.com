@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from '../components/footer'
 import { Title, SubTitle, ExternalLink, UnOrderdList, HR } from '../elements'
@@ -61,7 +61,7 @@ const Resume = () => (
       </SocialLink>
     </Title>
 
-		<MainTextWrapper>
+		<Container>
 
       <SubTitle style={{marginTop: '4rem'}}>
         SUMMARY OF QUALIFICATIONS
@@ -125,7 +125,7 @@ const Resume = () => (
         <li>Statistics for Business Decision Making</li>
         <li>Consumer Behavior</li>
       </UnOrderdList>
-		</MainTextWrapper>
+		</Container>
 
 		<Footer />
 	</Layout>

@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import Footer from '../components/footer'
 import { travels } from '../data'
 import { Title } from '../elements'
@@ -40,7 +40,7 @@ const Travel = ({ data }) => {
 
       <Title>Travel</Title>
 
-      <MainTextWrapper>
+      <Container>
         <p style={{marginBottom: '3rem'}}>This page contains some of the photos I took during my trips over the years.</p>
         <Fragment>
           {
@@ -56,7 +56,7 @@ const Travel = ({ data }) => {
             ))
           }
         </Fragment>
-      </MainTextWrapper>
+      </Container>
 
       <Footer />
     </Layout>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { above, avenir, purple } from '../utils'
 
 
-const MainTextWrapper = styled.div`
+const Container = styled.div`
   background-color: #fff;
   ${avenir};
   font-size: 1.2rem;
@@ -52,5 +52,5 @@ const MainTextWrapper = styled.div`
 `
 
 export {
-  MainTextWrapper
+  Container
 }

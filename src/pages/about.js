@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { MainTextWrapper } from '../components/global'
+import { Container } from '../components/global'
 import Footer from '../components/footer'
 import { Title, ExternalLink, InternalLink } from '../elements'
 
@@ -9,7 +9,7 @@ const About = () => (
 	<Layout>
 		<Title>About</Title>
 
-		<MainTextWrapper>
+		<Container>
 			<p>
 				I’m currently living in Chiusi (Tuscany), Italy and working
 				as a Freelance Web Developer.
@@ -26,7 +26,7 @@ const About = () => (
 				projects where I can contribute. Feel free to take a look at
           my complete <InternalLink to='/resume'>resume</InternalLink>.
       </p>
-		</MainTextWrapper>
+		</Container>
 
 		<Footer />
 	</Layout>
