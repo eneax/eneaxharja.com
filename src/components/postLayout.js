@@ -17,7 +17,9 @@ export default class PostLayout extends Component {
         </Title>
 
 				<MainTextWrapper>
-					<div dangerouslySetInnerHTML={{
+          <div 
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{
 						__html: markdownRemark.html
 					}} />
 				</MainTextWrapper>

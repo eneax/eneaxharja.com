@@ -7,7 +7,8 @@ import Header from './header'
 import './layout.css'
 
 import Particles from 'react-particles-js';
-import { particlesConfig } from '../utils';
+import { particlesStyles, particlesConfig } from '../utils';
+
 import favicon from '../images/favicon.ico'
 import { library } from '@fortawesome/fontawesome-svg-core'
 // eslint-disable-next-line
@@ -43,14 +44,7 @@ const Layout = ({ children }) => (
         </Helmet>
 
         <Particles
-          style={{
-            position: 'fixed',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            zIndex: -1
-          }}
+          style={particlesStyles}
           params={particlesConfig}
         />
 

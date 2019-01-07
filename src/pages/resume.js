@@ -4,12 +4,8 @@ import Layout from '../components/layout'
 import { MainTextWrapper } from '../components/global'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from '../components/footer'
-import { Title, SubTitle } from '../elements'
+import { Title, SubTitle, ExternalLink, UnOrderdList, HR } from '../elements'
 
-
-const theme = {
-  marginBottom: 0
-}
 
 const Heading3 = styled.h3`
   margin-top: 3rem;
@@ -65,53 +61,53 @@ const Resume = () => (
       </SocialLink>
     </Title>
 
-		<MainTextWrapper theme={theme}>
+		<MainTextWrapper>
 
       <SubTitle style={{marginTop: '4rem'}}>
         SUMMARY OF QUALIFICATIONS
       </SubTitle>
-      <hr/>
+      <HR />
 
-      <ul style={{marginTop: '3rem'}}>
+      <UnOrderdList style={{marginTop: '3rem'}}>
         <li>Self-taught web developer</li>
         <li>Master of Science with Summa Cum Laude in Accounting and Management at the University of Siena</li>
-      </ul>
+      </UnOrderdList>
 
       <SubTitle style={{marginTop: '5rem'}}>
         WORK EXPERIENCE
       </SubTitle>
-      <hr/>
+      <HR />
 
       <Heading3>Web Developer, Freelance</Heading3>
       <Time>10/2017 – Present</Time>
-      <ul>
-        <li>Used the static site generator Gatsby.js, Netlify CMS, GraphQL and Styled Components to build a blazing-fast and <a href='https://minimal-blog-x.netlify.com' target='_blank' rel='noopener noreferrer'>minimal blog</a></li>
-        <li>Designed and implemented a responsive <a href='https://aqueous-badlands-68133.herokuapp.com' target='_blank' rel='noopener noreferrer'>travel agency</a> website using React, React Router v4 and nested routes</li>
-        <li>Created a clean and minimal <a href='https://gentle-bastion-82801.herokuapp.com' target='_blank' rel='noopener noreferrer'>portfolio</a> website using React, React Router v4, nested routes and Tachyons</li>
-        <li>Built a React and Bootstrap single page <a href='https://tranquil-shore-37678.herokuapp.com' target='_blank' rel='noopener noreferrer'>company</a> website with events image grid and modal window popup previews</li>
-        <li>Designed and developed a functioning and responsive <a href='https://weather-app-x.firebaseapp.com' target='_blank' rel='noopener noreferrer'>weather app</a> using React, Bootstrap and Open Weather API</li>
-        <li>Created open-source side projects listed on my <a href='https://github.com/eneax' target='_blank' rel='noopener noreferrer'>Github</a> profile</li>
-      </ul>
+      <UnOrderdList>
+        <li>Used the static site generator Gatsby.js, Netlify CMS, GraphQL and Styled Components to build a blazing-fast and <ExternalLink href='https://minimal-blog-x.netlify.com'>minimal blog</ExternalLink></li>
+        <li>Designed and implemented a responsive <ExternalLink href='https://aqueous-badlands-68133.herokuapp.com'>travel agency</ExternalLink> website using React, React Router v4 and nested routes</li>
+        <li>Created a clean and minimal <ExternalLink href='https://gentle-bastion-82801.herokuapp.com'>portfolio</ExternalLink> website using React, React Router v4, nested routes and Tachyons</li>
+        <li>Built a React and Bootstrap single page <ExternalLink href='https://tranquil-shore-37678.herokuapp.com'>company</ExternalLink> website with events image grid and modal window popup previews</li>
+        <li>Designed and developed a functioning and responsive <ExternalLink href='https://weather-app-x.firebaseapp.com'>weather app</ExternalLink> using React, Bootstrap and Open Weather API</li>
+        <li>Created open-source side projects listed on my <ExternalLink href='https://github.com/eneax'>Github</ExternalLink> profile</li>
+      </UnOrderdList>
 
       <Heading3>Social Media Marketing, Trattoria Porsenna Srl - Chiusi (Italy)</Heading3>
       <Time>06/2013 – 09/2017</Time>
-      <ul>
+      <UnOrderdList>
         <li>Planned, supervised, and implemented the online and offline marketing activities of the company for the next 3 years</li>
         <li>Successfully built and boosted the company's social media presence on 4 different mediums: Facebook, Instagram, Tripadvisor and Google Maps</li>
         <li>Analyzed market, competitors and customer perception of the brand Trattoria Porsenna</li>
-      </ul>
+      </UnOrderdList>
 
       <SubTitle style={{marginTop: '5rem'}}>
         EDUCATION
       </SubTitle>
-      <hr/>
+      <HR />
       
       <Heading3>
         Self-Education on Online Coding Schools <br/>
-        (<a href='https://www.udemy.com/' target='_blank' rel='noopener noreferrer'>Udemy</a>, <a href='https://tylermcginnis.com/' target='_blank' rel='noopener noreferrer'>tylermcginnis</a>, <a href='https://wesbos.com/' target='_blank' rel='noopener noreferrer'>wesbos</a>, <a href='https://www.leveluptutorials.com/' target='_blank' rel='noopener noreferrer'>leveluptutorials</a>)
+        (<ExternalLink href='https://www.udemy.com/'>Udemy</ExternalLink>, <ExternalLink href='https://tylermcginnis.com/'>tylermcginnis</ExternalLink>, <ExternalLink href='https://wesbos.com/'>wesbos</ExternalLink>, <ExternalLink href='https://www.leveluptutorials.com/'>leveluptutorials</ExternalLink>)
       </Heading3>
       <Time>05/2017 – Present</Time>
-      <ul>
+      <UnOrderdList>
         <li>HTML - CSS</li>
         <li>Bootstrap</li>
         <li>JavaScript</li>
@@ -119,16 +115,16 @@ const Resume = () => (
         <li>Gatsby.js</li>
         <li>Git</li>
         <li>Node (work-in-progress)</li>
-      </ul>
+      </UnOrderdList>
 
       <Heading3>MSc in Accounting and Management - Siena (Italy)</Heading3>
       <Time>11/2014 – 02/2017</Time>
-      <ul>
+      <UnOrderdList>
         <li>International Management</li>
         <li>Corporate Valuation</li>
         <li>Statistics for Business Decision Making</li>
         <li>Consumer Behavior</li>
-      </ul>
+      </UnOrderdList>
 		</MainTextWrapper>
 
 		<Footer />

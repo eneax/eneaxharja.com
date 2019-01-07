@@ -79,10 +79,6 @@ const Thumbnail = styled.div`
 	}
 `
 
-const theme = {
-  marginBottom: 0
-}
-
 
 const BookItem = ({ link, img, title, author }) => {
   return (
@@ -124,7 +120,7 @@ export default class Library extends Component {
 			<Layout>
 				<Title>Library</Title>
 
-				<MainTextWrapper theme={theme}>
+				<MainTextWrapper>
 					<p>
 						The reading list below contains the books (at least the ones
 						it is worth mentioning) I've read over the years.
