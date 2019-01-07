@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { avenir } from '../utils';
+import { avenir, purple } from '../utils'
 
 
 const SearchInput = styled.input`
@@ -13,12 +13,13 @@ const SearchInput = styled.input`
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, 
+							box-shadow 0.15s ease-in-out;
 	
 	&:focus {
 		color: #495057;
 		background-color: #fff;
-		border-color: #663399;
+		border-color: ${purple};
 		outline: 0;
 		box-shadow: 0 0 0 0.2rem rgba(102, 51, 153, 0.25);
 	}
@@ -38,7 +39,6 @@ const SearchInput = styled.input`
 `
 
 const SearchBox = ({ searchChange }) => {
-	
 	return (
 		<div style={{display: 'flex'}}>
       <SearchInput
@@ -49,7 +49,7 @@ const SearchBox = ({ searchChange }) => {
       >
       </SearchInput>
 		</div>
-	);
+	)
 }
 
 export default SearchBox
