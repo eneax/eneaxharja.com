@@ -14,3 +14,10 @@ export const SubTitle = styled.h2`
 	margin-top: 2rem;
   margin-bottom: .5rem;
 `
+
+export const HeadingSix = styled.h6`
+  margin-bottom: 0;
+	${avenir};
+	font-size: .875rem;
+	font-weight: 700;
+`

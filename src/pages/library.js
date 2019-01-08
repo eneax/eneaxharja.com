@@ -1,20 +1,16 @@
 import React, { Component } from 'react'
-import Layout from '../components/layout'
 import styled from 'styled-components'
 
+import Layout from '../components/layout'
 import Footer from '../components/footer'
 import SearchBox from '../components/searchBox'
-import { Title, Container } from '../elements'
-import { avenir } from '../utils'
-
+import { Title, Container, ExternalLink, HeadingSix } from '../elements'
+import { above } from '../utils'
 import { books } from '../data'
 
 
-// styles
 const Row = styled.div`
-	display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -22,61 +18,39 @@ const Row = styled.div`
 
 const Col6Medium4 = styled.div`
 	position: relative;
-	width: 100%;
-	min-height: 1px;
+	margin-top: 1rem;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-top: 1rem;
-	-ms-flex: 0 0 50%;
   flex: 0 0 50%;
 	max-width: 50%;
-	@media (min-width: 768px) {
-		-ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
+	width: 100%;
+	min-height: 1px;
+	${above.tablet`
+		flex: 0 0 33.333333%;
     max-width: 33.333333%;
-	}
+	`}
 `
 
 const Thumbnail = styled.div`
-	padding: 0.25rem;
 	background-color: #fff;
+	padding: 0.25rem;
 	border: 1px solid #dee2e6;
 	border-radius: 0.25rem;
 	max-width: 100%;
 	height: auto;
 	text-align: center;
-	a {
-		color: #000;
-		text-decoration: none;
-		&:hover,
-		&:focus {
-			h6 {
-				transition: color .15s ease-in;
-				color: #663399;
-			}
-		}
-	}
+
 	img {
 		width: 100%;
 		height: auto;
 		margin-bottom: 0;
 	}
-	h6 {
-		margin-bottom: 0;
-		span {
-			font-size: .875rem;
-			font-weight: 700;
-			${avenir};
-		}
-	}
+	
 	p {
-		margin-bottom: 0;
-		small {
-			font-size: .875rem;
-			font-weight: 400;
-			${avenir};
-			font-style: italic;
-		}
+		font-size: .875rem;
+		font-weight: 400;
+		font-style: italic;
+		margin-top: .5rem;
 	}
 `
 
@@ -85,15 +59,11 @@ const BookItem = ({ link, img, title, author }) => {
   return (
     <Col6Medium4>
       <Thumbnail>
-        <a href={`${link}`} target="_blank" rel="noopener noreferrer">
+        <ExternalLink href={`${link}`} style={{textDecoration: 'none'}} >
           <img src={img} alt={`${title} Pic`} />
-          <h6>
-            <span>{title}</span>
-          </h6>
-          <p>
-            <small>{author}</small>
-          </p>
-        </a>
+          <HeadingSix>{title}</HeadingSix>
+          <p>{author}</p>
+        </ExternalLink>
       </Thumbnail>
     </Col6Medium4>
   )
