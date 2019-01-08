@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import { Container } from '../components/global'
+
 import Footer from '../components/footer'
-import { books } from '../data'
 import SearchBox from '../components/searchBox'
-import { Title } from '../elements'
+import { Title, Container } from '../elements'
 import { avenir } from '../utils'
+
+import { books } from '../data'
 
 
 // styles

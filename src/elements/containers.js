@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { above, avenir, purple } from '../utils'
 
 
-const Container = styled.div`
+export const Container = styled.div`
   background-color: #fff;
   ${avenir};
   font-size: 1.2rem;
@@ -15,14 +15,14 @@ const Container = styled.div`
   p {
     margin-bottom: 0;
   }
+`
 
-
-  /* Blog Post Styles */
-  .blog-post-content p {
+export const BlogPostContent = styled(Container)`
+  p {
     margin-bottom: 1.45rem;
   }
 
-  .blog-post-content a {
+  a {
     margin-bottom: 1.45rem;
     text-decoration: underline;
     color: #000;
@@ -36,7 +36,7 @@ const Container = styled.div`
     }
   }
 
-  .blog-post-content hr {
+  hr {
     margin-top: 1.45rem;
     border: 0; 
     height: 1px; 
@@ -46,7 +46,3 @@ const Container = styled.div`
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
   }
 `
-
-export {
-  Container
-}

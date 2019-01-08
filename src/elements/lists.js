@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { purple } from '../utils'
 
-export const UnOrderdList = styled.ul`
+export const UnOrderedList = styled.ul`
   list-style: none;
   li::before {
     content: '\\2022';

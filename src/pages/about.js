@@ -1,8 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Container } from '../components/global'
 import Footer from '../components/footer'
-import { Title, ExternalLink, InternalLink } from '../elements'
+import { Title, Container, ExternalLink, InternalLink } from '../elements'
 
 
 const About = () => (

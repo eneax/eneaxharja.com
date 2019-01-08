@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Container } from '../components/global'
-import { Title } from '../elements'
+import { Title, Container } from '../elements'
 
 
 const ComingSoon = () => (

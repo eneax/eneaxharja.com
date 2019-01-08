@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
-import { Container } from './global'
+
 import Layout from './layout'
 import Footer from './footer'
-import { Title } from '../elements'
+import { Title, BlogPostContent } from '../elements'
 
 
 export default class PostLayout extends Component {
@@ -16,13 +16,12 @@ export default class PostLayout extends Component {
 					{markdownRemark.frontmatter.title}
         </Title>
 
-				<Container>
+				<BlogPostContent>
           <div 
-            className="blog-post-content"
             dangerouslySetInnerHTML={{
 						__html: markdownRemark.html
 					}} />
-				</Container>
+				</BlogPostContent>
 				<Footer />
 			</Layout>
     )

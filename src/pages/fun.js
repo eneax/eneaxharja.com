@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Layout from '../components/layout'
-import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Container } from '../components/global'
+
+import Layout from '../components/layout'
 import Footer from '../components/footer'
+import { Title, Container, SubTitle, ExternalLink } from '../elements'
+
 import { funResources } from '../data'
-import { Title, SubTitle, ExternalLink } from '../elements'
 
 
 const ImageWrapper = styled.div`

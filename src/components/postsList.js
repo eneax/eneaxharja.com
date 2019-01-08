@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container } from './global'
-import { Title, SubTitle, InternalLink } from '../elements'
+
+import { Title, Container, SubTitle, InternalLink } from '../elements'
 import { DateTime } from '../utils'
 
 
