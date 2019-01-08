@@ -6,7 +6,6 @@ import Layout from '../components/layout'
 import Footer from '../components/footer'
 import { Title, Container, ImageWrapper } from '../elements'
 import { DateTime } from '../utils'
-
 import { travels } from '../data'
 
 
@@ -21,7 +20,6 @@ const Travel = ({ data }) => {
 
   return (
     <Layout>
-
       <Title>Travel</Title>
 
       <Container>

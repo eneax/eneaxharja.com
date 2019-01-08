@@ -8,12 +8,15 @@ import { above, avenir } from '../utils'
 
 const HeaderWrapper = styled.header`
 	text-align: center;
-	margin: 5rem auto 2rem auto;
+	margin: 6rem auto 2rem auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
   ${above.mobileL`
 		padding-top: 4rem;
     padding-bottom: 4rem;
+	`}
+  ${above.mobileS`
+		margin-top: 4rem;
 	`}
 `
 
