@@ -5,7 +5,7 @@ import { osloGrey } from '../utils'
 export const DateTime = styled.p`
   font-size: 1rem;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: .25rem;
   color: ${osloGrey};
 `

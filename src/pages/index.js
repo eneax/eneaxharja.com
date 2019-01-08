@@ -7,6 +7,7 @@ import { above, avenir } from '../utils'
 
 
 const HeaderWrapper = styled.header`
+  background-color: #fff;
 	text-align: center;
 	margin: 6rem auto 2rem auto;
   padding-top: 2rem;
@@ -16,7 +17,7 @@ const HeaderWrapper = styled.header`
     padding-bottom: 4rem;
 	`}
   ${above.mobileS`
-		margin-top: 4rem;
+		margin-top: 3rem;
 	`}
 `
 

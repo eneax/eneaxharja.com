@@ -48,8 +48,8 @@ const PostList = () => (
               <p>{node.excerpt}</p>
               
               <DateTime>
-              {node.frontmatter.date}
-                {` • ${formatReadingTime(node.timeToRead)}`}
+                {node.frontmatter.date}
+                  {` • ${formatReadingTime(node.timeToRead)}`}
               </DateTime>
             
             </Container>

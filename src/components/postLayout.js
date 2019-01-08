@@ -20,7 +20,7 @@ export default class PostLayout extends Component {
 				<BlogPostContent>
           <DateTime>
             {markdownRemark.frontmatter.date}
-            {` • ${formatReadingTime(markdownRemark.timeToRead)}`}
+              {` • ${formatReadingTime(markdownRemark.timeToRead)}`}
           </DateTime>
           <div 
             dangerouslySetInnerHTML={{
