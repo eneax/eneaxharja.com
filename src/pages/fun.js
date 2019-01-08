@@ -5,12 +5,11 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import { Title, Container, ImageWrapper, SubTitle, ExternalLink, InternalLink } from '../elements'
-
+import { grey } from '../utils'
 import { funResources } from '../data'
 
 
 const Fun = ({ data }) => {
-
   const imageGallery = Object.values(data)
   const images = []
 
@@ -36,14 +35,14 @@ const Fun = ({ data }) => {
                 </ExternalLink>
 
                 <ImageWrapper>
-                  <a href={`${funResources[i].link}`} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink href={`${funResources[i].link}`}>
                     {
                       images[i]
                     }
-                  </a>
+                  </ExternalLink>
                 </ImageWrapper>
 
-                <p style={{color: '#555'}}>{funResources[i].desc}</p>
+                <p style={{color: `${grey}`}}>{funResources[i].desc}</p>
               </div>
 
             ))
