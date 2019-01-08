@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import { Title, Container, ImageWrapper, SubTitle, ExternalLink } from '../elements'
-
+import { grey } from '../utils'
 import { projects } from '../data'
 
 
@@ -20,7 +20,6 @@ const Projects = ({ data }) => {
 
   return (
     <Layout>
-
       <Title>Projects</Title>
 
       <Container>
@@ -35,14 +34,14 @@ const Projects = ({ data }) => {
                 </ExternalLink>
 
                 <ImageWrapper>
-                  <a href={`${projects[i].link}`} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink href={`${projects[i].link}`}>
                     {
                       images[i]
                     }
-                  </a>
+                  </ExternalLink>
                 </ImageWrapper>
 
-                <p style={{color: '#555'}}>{projects[i].desc}</p>
+                <p style={{color: `${grey}`}}>{projects[i].desc}</p>
               </div>
 
             ))
