@@ -1,23 +1,13 @@
 import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Footer from '../components/footer'
-import { Title, Container } from '../elements'
+import { Title, Container, ImageWrapper } from '../elements'
 import { DateTime } from '../utils'
 
 import { travels } from '../data'
-
-
-const ImageWrapper = styled.div`
-	margin-bottom: .75rem;
-	img {
-		border: 1px solid #e7e7e7;
-		border-radius: .25rem !important;
-	}
-`
 
 
 const Travel = ({ data }) => {

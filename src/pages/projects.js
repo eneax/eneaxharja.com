@@ -1,22 +1,12 @@
 import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Footer from '../components/footer'
-import { Title, Container, SubTitle, ExternalLink } from '../elements'
+import { Title, Container, ImageWrapper, SubTitle, ExternalLink } from '../elements'
 
 import { projects } from '../data'
-
-
-const ImageWrapper = styled.div`
-	margin-bottom: .75rem;
-	img {
-		border: 1px solid #e7e7e7;
-		border-radius: .25rem !important;
-	}
-`
 
 
 const Projects = ({ data }) => {

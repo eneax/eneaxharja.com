@@ -46,3 +46,11 @@ export const BlogPostContent = styled(Container)`
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
   }
 `
+
+export const ImageWrapper = styled.div`
+	margin-bottom: .75rem;
+	img {
+		border: 1px solid #e7e7e7;
+		border-radius: .25rem !important;
+	}
+`

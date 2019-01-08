@@ -1,22 +1,12 @@
 import React, { Fragment } from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Footer from '../components/footer'
-import { Title, Container, SubTitle, ExternalLink } from '../elements'
+import { Title, Container, ImageWrapper, SubTitle, ExternalLink, InternalLink } from '../elements'
 
 import { funResources } from '../data'
-
-
-const ImageWrapper = styled.div`
-	margin-bottom: .75rem;
-	img {
-		border: 1px solid #e7e7e7;
-		border-radius: .25rem !important;
-	}
-`
 
 
 const Fun = ({ data }) => {
@@ -30,11 +20,10 @@ const Fun = ({ data }) => {
 
   return (
     <Layout>
-
       <Title>Fun</Title>
 
       <Container>
-        <p>This page contains podcasts, blogs and newsletters that I like to listen to and read, in addition to <Link to='/library'>books</Link>, during my free time.</p>
+        <p>This page contains podcasts, blogs and newsletters that I like to listen to and read, in addition to <InternalLink to='/library'>books</InternalLink>, during my free time.</p>
         <Fragment>
           {
             funResources.map((funResource, i) => (
