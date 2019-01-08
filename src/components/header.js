@@ -13,7 +13,8 @@ const Navbar = styled.nav`
   margin-left: auto;
   padding: 2.625rem 1.3125rem .625rem 1.3125rem;
   box-sizing: border-box;
-  ${avenir};
+	${avenir};
+	background-color: #fff;
 
   a {
 		color: #000;
