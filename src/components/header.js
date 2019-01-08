@@ -1,50 +1,46 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import logo from '../images/logo.png'
-import { avenir } from '../utils'
+import logo from '../images/logo.svg'
+import { above, avenir, purple } from '../utils'
 
 
 const Navbar = styled.nav`
-	display: table;
-	width: 100%;
-	max-width: 42rem;
+  display: table;
+  width: 100%;
+  max-width: 42rem;
   margin-right: auto;
   margin-left: auto;
   padding: 2.625rem 1.3125rem .625rem 1.3125rem;
-	box-sizing: border-box;
-	${avenir};
+  box-sizing: border-box;
+  ${avenir};
 
-	a {
+  a {
 		color: #000;
 		font-weight: 900;
 		display: table-cell;
 		vertical-align: middle;
 		text-decoration: none;
-		transition: all .15s ease-in;
-		opacity: 1;
-		&:link,
-		&:visited {
-			transition: color .15s ease-in;
-		}
 		&:hover {
-			transition: all .15s ease-in;
-			opacity: .5;
+			text-decoration: none;
+			transition: color .03s ease-in;
 		}
-		&:active {
-			transition: color .15s ease-in;
-			transition: opacity .15s ease-out;
-			opacity: .8;
-		}
+		&:hover,
 		&:focus {
-			transition: all .15s ease-in;
-			opacity: .5;
+			color: ${purple};
 		}
+
 		img {
 			display: inline-block;
 			width: 2rem;
 			height: 2rem;
 			border-radius: 100%;
+			border: 1px solid black;
+			margin-top: -0.2rem;
+			transition: transform .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			&:hover { 
+				transform: rotate(-5deg) scale(1.1);
+			}
 		}
 	}
 `
@@ -56,9 +52,9 @@ const NavLinkWrapper = styled.div`
   a {
     font-size: 0.875rem;
     display: inline-block;
-    @media screen and (min-width: 30em) {
-      font-size: 1rem;
-    }
+		${above.mobileL`
+			font-size: 1rem;
+		`}
   }
   a:nth-child(2) {
 		margin-left: 1rem;
@@ -69,7 +65,7 @@ const NavLinkWrapper = styled.div`
 
 const Header = () => (
   <Navbar>
-		<Link to='/' title='Home'>
+		<Link className="logo" to='/' title='Home'>
 			<img src={logo} alt='Enea Xharja Logo'/>
 		</Link>
 		<NavLinkWrapper>
