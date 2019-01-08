@@ -1,52 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from '../components/layout'
 import Footer from '../components/footer'
-import { Title, Container, SubTitle, ExternalLink, UnOrderedList, HR } from '../elements'
-
-
-const Heading3 = styled.h3`
-  margin-top: 3rem;
-  margin-bottom: .25rem;
-	font-weight: 500;
-`
-
-const Time = styled.h4`
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: normal;
-  margin-top: .25rem;
-  color: #868e96;
-`
-
-const SocialLink = styled.a`
-	font-size: .875rem;
-	-moz-osx-font-smoothing: grayscale;
-	backface-visibility: hidden;
-	transform: translateZ(0);
-	transition: transform .25s ease-out;
-	&:hover,
-	&:focus {
-		transform: scale(1.05);
-	}
-	&:active {
-		transform: scale(.9);
-	}
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: .5rem;
-	padding-right: .5rem;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
-	margin-bottom: 1rem;
-	color: #333;
-	svg {
-		font-size: 1.5em;
-    margin-top: 1rem;
-	}
-`
+import { Title, SubTitle, HeadingThree, Container, ExternalLink, UnOrderedList, SocialLink, HR } from '../elements'
+import { DateTime } from '../utils'
 
 
 const Resume = () => (
@@ -54,15 +12,14 @@ const Resume = () => (
     <Title>
       Resume
         <SocialLink
-        href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0'
-        target='_blank' rel='noopener noreferrer'
-      >
+          style={{marginTop: '.5rem'}}
+          href='https://www.dropbox.com/s/hog3x7xo5l7pmpo/eneaxharja-resume.pdf?dl=0'
+        >
         <FontAwesomeIcon icon="cloud-download-alt" />
       </SocialLink>
     </Title>
 
 		<Container>
-
       <SubTitle style={{marginTop: '4rem'}}>
         SUMMARY OF QUALIFICATIONS
       </SubTitle>
@@ -78,8 +35,12 @@ const Resume = () => (
       </SubTitle>
       <HR />
 
-      <Heading3>Web Developer, Freelance</Heading3>
-      <Time>10/2017 – Present</Time>
+      <HeadingThree>
+        Web Developer, Freelance
+      </HeadingThree>
+      <DateTime style={{marginBottom: '1.45rem'}}>
+        10/2017 – Present
+      </DateTime>
       <UnOrderedList>
         <li>Used the static site generator Gatsby.js, Netlify CMS, GraphQL and Styled Components to build a blazing-fast and <ExternalLink href='https://minimal-blog-x.netlify.com'>minimal blog</ExternalLink></li>
         <li>Designed and implemented a responsive <ExternalLink href='https://aqueous-badlands-68133.herokuapp.com'>travel agency</ExternalLink> website using React, React Router v4 and nested routes</li>
@@ -89,12 +50,16 @@ const Resume = () => (
         <li>Created open-source side projects listed on my <ExternalLink href='https://github.com/eneax'>Github</ExternalLink> profile</li>
       </UnOrderedList>
 
-      <Heading3>Social Media Marketing, Trattoria Porsenna Srl - Chiusi (Italy)</Heading3>
-      <Time>06/2013 – 09/2017</Time>
+      <HeadingThree>
+        Social Media Marketing, Trattoria Porsenna Srl - Chiusi (Italy)
+      </HeadingThree>
+      <DateTime style={{marginBottom: '1.45rem'}}>
+        06/2013 – 09/2017
+      </DateTime>
       <UnOrderedList>
+        <li>Analyzed market, competitors and customer perception of the brand Trattoria Porsenna</li>
         <li>Planned, supervised, and implemented the online and offline marketing activities of the company for the next 3 years</li>
         <li>Successfully built and boosted the company's social media presence on 4 different mediums: Facebook, Instagram, Tripadvisor and Google Maps</li>
-        <li>Analyzed market, competitors and customer perception of the brand Trattoria Porsenna</li>
       </UnOrderedList>
 
       <SubTitle style={{marginTop: '5rem'}}>
@@ -102,11 +67,13 @@ const Resume = () => (
       </SubTitle>
       <HR />
       
-      <Heading3>
+      <HeadingThree>
         Self-Education on Online Coding Schools <br/>
         (<ExternalLink href='https://www.udemy.com/'>Udemy</ExternalLink>, <ExternalLink href='https://tylermcginnis.com/'>tylermcginnis</ExternalLink>, <ExternalLink href='https://wesbos.com/'>wesbos</ExternalLink>, <ExternalLink href='https://www.leveluptutorials.com/'>leveluptutorials</ExternalLink>)
-      </Heading3>
-      <Time>05/2017 – Present</Time>
+      </HeadingThree>
+      <DateTime style={{marginBottom: '1.45rem'}}>
+        05/2017 – Present
+      </DateTime>
       <UnOrderedList>
         <li>HTML - CSS</li>
         <li>Bootstrap</li>
@@ -117,8 +84,12 @@ const Resume = () => (
         <li>Node (work-in-progress)</li>
       </UnOrderedList>
 
-      <Heading3>MSc in Accounting and Management - Siena (Italy)</Heading3>
-      <Time>11/2014 – 02/2017</Time>
+      <HeadingThree>
+        MSc in Accounting and Management - Siena (Italy)
+      </HeadingThree>
+      <DateTime style={{marginBottom: '1.45rem'}}>
+        11/2014 – 02/2017
+      </DateTime>
       <UnOrderedList>
         <li>International Management</li>
         <li>Corporate Valuation</li>

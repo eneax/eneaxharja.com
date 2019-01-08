@@ -15,6 +15,12 @@ export const SubTitle = styled.h2`
   margin-bottom: .5rem;
 `
 
+export const HeadingThree = styled.h3`
+  margin-top: 3rem;
+  margin-bottom: .25rem;
+	font-weight: 500;
+`
+
 export const HeadingSix = styled.h6`
   margin-bottom: 0;
 	${avenir};
