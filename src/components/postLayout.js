@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from './layout'
 import Footer from './footer'
 import { Title, BlogPostContent } from '../elements'
+import { DateTime, formatReadingTime } from '../utils'
 
 
 export default class PostLayout extends Component {
@@ -12,11 +13,15 @@ export default class PostLayout extends Component {
 
     return (
 			<Layout>
-				<Title>
+				<Title style={{marginBottom: '0'}}>
 					{markdownRemark.frontmatter.title}
         </Title>
 
 				<BlogPostContent>
+          <DateTime>
+            {markdownRemark.frontmatter.date}
+            {` • ${formatReadingTime(markdownRemark.timeToRead)}`}
+          </DateTime>
           <div 
             dangerouslySetInnerHTML={{
 						__html: markdownRemark.html
@@ -36,9 +41,10 @@ export const query = graphql`
       }
     }) {
       html
+      timeToRead
       frontmatter {
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
         slug
       }
     }

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
 import { Title, Container, SubTitle, InternalLink } from '../elements'
-import { DateTime } from '../utils'
+import { DateTime, formatReadingTime } from '../utils'
 
 
 // graphql query
@@ -15,6 +15,7 @@ const POST_LIST_QUERY = graphql`
       edges {
         node {
           excerpt
+          timeToRead
           frontmatter {
             title
             slug
@@ -46,7 +47,10 @@ const PostList = () => (
 
               <p>{node.excerpt}</p>
               
-              <DateTime>{node.frontmatter.date}</DateTime>
+              <DateTime>
+              {node.frontmatter.date}
+                {` • ${formatReadingTime(node.timeToRead)}`}
+              </DateTime>
             
             </Container>
           </Fragment>
