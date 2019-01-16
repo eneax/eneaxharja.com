@@ -17,7 +17,7 @@ export default [
   {
     link: 'https://github.com/eneax/krix-portfolio',
     title: 'Portfolio Website',
-    desc: 'Clean and minimal portfolio website built with React and React Router v4.'
+    desc: 'Clean and minimal portfolio website built with Gatsby.'
   },
   {
     link: 'https://github.com/eneax/thriving-cities',
