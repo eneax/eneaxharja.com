@@ -13,7 +13,7 @@ const Resume = () => (
       Resume
         <SocialLink
           style={{marginTop: '.5rem'}}
-          href='https://www.dropbox.com/s/sqp5wr2icwsciso/eneaxharja-resume.pdf?dl=0'
+          href='https://www.dropbox.com/s/oxdeayvjqxe0ugq/eneaxharja-resume.pdf?dl=0'
         >
         <FontAwesomeIcon icon="cloud-download-alt" />
       </SocialLink>
@@ -42,11 +42,11 @@ const Resume = () => (
         10/2017 – Present
       </DateTime>
       <UnOrderedList>
-        <li>Used the static site generator Gatsby.js, Netlify CMS, GraphQL and Styled Components to build a blazing-fast and <ExternalLink href='https://minimal-blog-x.netlify.com'>minimal blog</ExternalLink></li>
-        <li>Designed and implemented a responsive <ExternalLink href='https://aqueous-badlands-68133.herokuapp.com'>travel agency</ExternalLink> website using React, React Router v4 and nested routes</li>
-        <li>Created a clean and minimal <ExternalLink href='https://gentle-bastion-82801.herokuapp.com'>portfolio</ExternalLink> website using React, React Router v4, nested routes and Tachyons</li>
+        <li>Designed and developed a responsive <ExternalLink href='https://globetrotter.netlify.com'>travel agency</ExternalLink> website using Gatsby, Markdown, GraphQL and styled-components</li>
+        <li>Created a clean and minimal <ExternalLink href='https://kristjanaxharja.netlify.com'>portfolio</ExternalLink> website using Gatsby and GraphQL and styled it with styled-components</li>
+        <li>Used the static site generator Gatsby, Netlify CMS, GraphQL and Web Animations API to build a blazing-fast and <ExternalLink href='https://minimal-blog-x.netlify.com'>minimal blog</ExternalLink></li>
         <li>Built a React and Bootstrap single page <ExternalLink href='https://tranquil-shore-37678.herokuapp.com'>company</ExternalLink> website with events image grid and modal window popup previews</li>
-        <li>Designed and developed a functioning and responsive <ExternalLink href='https://weather-app-x.firebaseapp.com'>weather app</ExternalLink> using React, Bootstrap and Open Weather API</li>
+        <li>Designed and implemented a functioning and responsive <ExternalLink href='https://weather-app-x.firebaseapp.com'>weather app</ExternalLink> using React, Bootstrap and Open Weather API</li>
         <li>Created open-source side projects listed on my <ExternalLink href='https://github.com/eneax'>Github</ExternalLink> profile</li>
       </UnOrderedList>
 
