@@ -1,23 +1,23 @@
 export default [
   {
-    link: 'https://github.com/eneax/eneax.github.io',
-    title: 'eneaxharja[dot]com',
-    desc: 'My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code.'
+    link: 'https://github.com/eneax/globetrotter',
+    title: 'Globetrotter',
+    desc: 'Responsive travel agency website built using Gatsby, Markdown, GraphQL and styled-components.'
   },
+  {
+    link: 'https://github.com/eneax/krix-portfolio',
+    title: 'Portfolio Website',
+    desc: 'Clean and minimal portfolio website built with Gatsby and styled with styled-components.'
+  },  
   {
     link: 'https://github.com/eneax/minimal-blog',
     title: 'Minimal Blog',
     desc: 'A minimal blog built with Gatsby, Netlify CMS, GraphQL and Web Animations API.'
   },
   {
-    link: 'https://github.com/eneax/globetrotter',
-    title: 'Globetrotter',
-    desc: 'Responsive travel agency website made using React and React Router v4.'
-  },
-  {
-    link: 'https://github.com/eneax/krix-portfolio',
-    title: 'Portfolio Website',
-    desc: 'Clean and minimal portfolio website built with Gatsby.'
+    link: 'https://github.com/eneax/eneax.github.io',
+    title: 'eneaxharja[dot]com',
+    desc: 'My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code.'
   },
   {
     link: 'https://github.com/eneax/thriving-cities',
