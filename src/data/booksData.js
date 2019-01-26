@@ -594,6 +594,12 @@ export default [
     author: 'Andy Weir',
   },
   {
+    link: 'https://www.goodreads.com/book/show/35133922-educated',
+    img: 'https://images.gr-assets.com/books/1506026635l/35133922.jpg',
+    title: 'Educated',
+    author: 'Tara Westover',
+  },
+  {
     link: 'http://amzn.eu/1G6hiOE',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41o5wHWimmL.jpg',
     title: 'Night',
