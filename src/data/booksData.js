@@ -468,6 +468,12 @@ export default [
     author: 'Luigi Pirandello',
   },
   {
+    link: 'http://amzn.eu/2lkVeX1',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41iY%2BPICwtL.jpg',
+    title: 'Mindfulness & Meditation',
+    author: 'Puddicombe Andy',
+  },
+  {
     link: 'http://amzn.eu/ifWvGGk',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51%2B0BsQpAEL.jpg',
     title: 'Niente di nuovo sul fronte occidentale',
