@@ -4,7 +4,7 @@ import { purple, mineShaft } from '../utils'
 
 export const ExternalLink = styled.a.attrs({
   target: '_blank',
-  rel: 'nofollow'
+  rel: 'noopener'
 })`
   text-decoration: underline;
   color: #000;
@@ -33,7 +33,7 @@ export const InternalLink = styled(Link)`
 
 export const SocialLink = styled.a.attrs({
   target: '_blank',
-  rel: 'nofollow'
+  rel: 'noopener'
 })`
 	font-size: .875rem;
 	-moz-osx-font-smoothing: grayscale;
