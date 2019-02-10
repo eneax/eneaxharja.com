@@ -13,7 +13,7 @@ const Resume = () => (
       Resume
         <SocialLink
           style={{marginTop: '.5rem'}}
-          href='https://www.dropbox.com/s/uigsy0pjbglpvxg/eneaxharja-resume.pdf?dl=0'
+          href='https://drive.google.com/open?id=1PdWchG-BIvHC06Z5zjk7iI-c71-8eR9v'
         >
         <FontAwesomeIcon icon="cloud-download-alt" />
       </SocialLink>
