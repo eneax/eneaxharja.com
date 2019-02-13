@@ -432,6 +432,12 @@ export default [
     author: 'Cal Newport',
   },
   {
+    link: 'http://amzn.eu/2Ikpbn1',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51JIFuURUZL._SX329_BO1,204,203,200_.jpg',
+    title: 'Digital Minimalism',
+    author: 'Cal Newport',
+  },
+  {
     link: 'http://amzn.eu/6nBSDQd',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/514iyD0aZwL._SY346_.jpg',
     title: 'Odissea',
