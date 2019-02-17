@@ -42,11 +42,13 @@ const Resume = () => (
         10/2017 – Present
       </DateTime>
       <UnOrderedList>
+        <li>Designed and implemented a responsive <ExternalLink href='https://delicious-x.netlify.com'>restaurant</ExternalLink> website using Gatsby, Contentful, GraphQL and styled-components</li>
         <li>Designed and developed a responsive <ExternalLink href='https://globetrotter.netlify.com'>travel agency</ExternalLink> website using Gatsby, Markdown, GraphQL and styled-components</li>
         <li>Created a clean and minimal <ExternalLink href='https://kristjanaxharja.netlify.com'>portfolio</ExternalLink> website using Gatsby and GraphQL and styled it with styled-components</li>
         <li>Used the static site generator Gatsby, Netlify CMS, GraphQL and Web Animations API to build a blazing-fast and <ExternalLink href='https://minimal-blog-x.netlify.com'>minimal blog</ExternalLink></li>
         <li>Built a React and Bootstrap single page <ExternalLink href='https://tranquil-shore-37678.herokuapp.com'>company</ExternalLink> website with events image grid and modal window popup previews</li>
         <li>Designed and implemented a functioning and responsive <ExternalLink href='https://weather-app-x.firebaseapp.com'>weather app</ExternalLink> using React, Bootstrap and Open Weather API</li>
+        <li>Built <ExternalLink href='https://github-battle-x.firebaseapp.com'>Github Battle</ExternalLink>, a React project where you can discover popular repos and battle your Github friends</li>
         <li>Created open-source side projects listed on my <ExternalLink href='https://github.com/eneax'>Github</ExternalLink> profile</li>
       </UnOrderedList>
 
@@ -80,6 +82,7 @@ const Resume = () => (
         <li>JavaScript</li>
         <li>React.js</li>
         <li>Gatsby.js</li>
+        <li>GraphQL</li>
         <li>Git</li>
         <li>Node (work-in-progress)</li>
       </UnOrderedList>
