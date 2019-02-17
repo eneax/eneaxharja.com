@@ -1,5 +1,10 @@
 export default [
   {
+    link: 'https://github.com/eneax/gatsby-restaurant',
+    title: 'Delicious',
+    desc: 'Responsive restaurant website built with Gatsby, Contentful, GraphQL and styled-components.'
+  },
+  {
     link: 'https://github.com/eneax/globetrotter',
     title: 'Globetrotter',
     desc: 'Responsive travel agency website built using Gatsby, Markdown, GraphQL and styled-components.'
