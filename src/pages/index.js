@@ -49,7 +49,7 @@ const IndexPage = () => (
       <SocialLink href="https://github.com/eneax" aria-label="github" >
         <FontAwesomeIcon icon="code-branch" />
       </SocialLink>
-      <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
+      <SocialLink href="mailto:enea.xharja@icloud.com" aria-label="mail" >
         <FontAwesomeIcon icon="envelope" />
       </SocialLink>
     </HeaderWrapper>
