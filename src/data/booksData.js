@@ -366,6 +366,12 @@ export default [
     author: 'Ilse Kleberger',
   },
   {
+    link: 'http://amzn.eu/aD5BecR',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51eHhjPTXIL._SX327_BO1,204,203,200_.jpg',
+    title: 'A Universe from Nothing',
+    author: 'Lawrence M. Krauss',
+  },
+  {
     link: 'http://a.co/fUo5BEm',
     img: 'https://images-na.ssl-images-amazon.com/images/I/51pnouuPO5L._SX387_BO1,204,203,200_.jpg',
     title: 'Don\'t Make Me Think',
