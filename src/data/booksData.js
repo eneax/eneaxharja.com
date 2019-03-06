@@ -1,5 +1,11 @@
 export default [
   {
+    link: 'http://amzn.eu/iRZVsSc',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/414GQDRWPQL.jpg',
+    title: 'Drunk Tank Pink',
+    author: 'Adam Alter'
+  },
+  {
     link: 'http://a.co/crR213V',
     img: 'https://images-na.ssl-images-amazon.com/images/I/410ysFH-yQL._SX295_BO1,204,203,200_.jpg',
     title: 'Foundation',
