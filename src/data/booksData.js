@@ -450,6 +450,12 @@ export default [
     author: 'Cal Newport',
   },
   {
+    link: 'http://amzn.eu/faFZS8h',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51V3piRZY4L.jpg',
+    title: 'Weapons of Math Destruction',
+    author: "Cathy O'Neil",
+  },
+  {
     link: 'http://amzn.eu/6nBSDQd',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/514iyD0aZwL._SY346_.jpg',
     title: 'Odissea',
