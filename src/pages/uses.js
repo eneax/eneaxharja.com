@@ -6,7 +6,7 @@ import { Title, Container, SubTitle, UnOrderedList, ExternalLink } from '../elem
 
 const About = () => (
 	<Layout>
-		<Title>My Gear</Title>
+		<Title>Uses</Title>
 
 		<Container>
 			<p>Ever wonder about what gear I use? Here is my complete list.</p>
