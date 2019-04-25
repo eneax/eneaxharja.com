@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaCodeBranch, FaEnvelope } from 'react-icons/fa'
 import { SocialLink } from '../elements'
 import { above, avenir } from '../utils'
 
@@ -47,10 +47,10 @@ const IndexPage = () => (
       <Header>Hi, I'm Enea!</Header>
       <SubHeader>Web Developer</SubHeader>
       <SocialLink href="https://github.com/eneax" aria-label="github" >
-        <FontAwesomeIcon icon="code-branch" />
+        <FaCodeBranch />
       </SocialLink>
       <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
-        <FontAwesomeIcon icon="envelope" />
+        <FaEnvelope />
       </SocialLink>
     </HeaderWrapper>
   </Layout>

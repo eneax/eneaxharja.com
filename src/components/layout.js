@@ -10,11 +10,6 @@ import Particles from 'react-particles-js';
 import { particlesStyles, particlesConfig } from '../utils';
 
 import favicon from '../images/favicon.ico'
-import { library } from '@fortawesome/fontawesome-svg-core'
-// eslint-disable-next-line
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCodeBranch, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
-library.add(faEnvelope, faCodeBranch, faCloudDownloadAlt)
 
 
 const Layout = ({ children }) => (

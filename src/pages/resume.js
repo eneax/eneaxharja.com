@@ -1,5 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaCloudDownloadAlt } from 'react-icons/fa'
 
 import Layout from '../components/layout'
 import Footer from '../components/footer'
@@ -12,10 +12,10 @@ const Resume = () => (
     <Title>
       Resume
         <SocialLink
-          style={{marginTop: '.5rem'}}
+          style={{marginTop: '1rem'}}
           href='https://drive.google.com/open?id=1dsPki7UvqX_RGvxyPYB9k6-1zc6dU-SZ'
         >
-        <FontAwesomeIcon icon="cloud-download-alt" />
+          <FaCloudDownloadAlt />
       </SocialLink>
     </Title>
 
