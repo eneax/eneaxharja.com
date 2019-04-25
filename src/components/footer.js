@@ -22,7 +22,7 @@ const FooterWrapper = styled.footer`
 
 const Footer = () => (
 	<FooterWrapper>
-		<small>© 2019 <b>Enea Xharja</b>, All Rights Reserved</small>
+		<small>© {new Date().getFullYear()} <b>Enea Xharja</b>, All Rights Reserved</small>
 	</FooterWrapper>
 )
 
