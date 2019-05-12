@@ -216,16 +216,16 @@ export const query = graphql`
     image8: file(relativePath: { regex: "/8.jpeg/" }) {
       ...fluidsImages
     }
-    image7: file(relativePath: { regex: "/7.jpeg/" }) {
+    image7: file(relativePath: { regex: "/7.jpg/" }) {
       ...fluidsImages
     }
-    image6: file(relativePath: { regex: "/6.jpeg/" }) {
+    image6: file(relativePath: { regex: "/6.jpg/" }) {
       ...fluidsImages
     }
-    image5: file(relativePath: { regex: "/5.jpeg/" }) {
+    image5: file(relativePath: { regex: "/5.jpg/" }) {
       ...fluidsImages
     }
-    image4: file(relativePath: { regex: "/4.jpeg/" }) {
+    image4: file(relativePath: { regex: "/4.jpg/" }) {
       ...fluidsImages
     }
     image3: file(relativePath: { regex: "/3.jpeg/" }) {
