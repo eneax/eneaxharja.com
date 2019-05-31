@@ -108,6 +108,12 @@ export default [
     author: 'Luciano Canfora'
   },
   {
+    link: 'http://amzn.eu/8ZVkS8p',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41dPThoPwEL._SX331_BO1,204,203,200_.jpg',
+    title: 'Algorithms to Live By',
+    author: 'Christian Brian and Griffiths Tom'
+  },
+  {
     link: 'http://a.co/d/e0hqkHu',
     img: 'https://images-na.ssl-images-amazon.com/images/I/517jbkbYjQL.jpg',
     title: 'Origin Story: A Big History of Everything',
