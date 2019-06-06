@@ -652,5 +652,11 @@ export default [
     img: 'https://images-na.ssl-images-amazon.com/images/I/514ryP7EmiL.jpg',
     title: 'I Am Malala',
     author: 'Malala Yousafzai',
+  },
+  {
+    link: 'http://amzn.eu/9flYFcf',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41yyGbRkr9L.jpg',
+    title: 'The Age of Surveillance Capitalism',
+    author: 'Shoshana Zuboff',
   }
 ];
