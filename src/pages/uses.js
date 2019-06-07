@@ -18,9 +18,9 @@ const About = () => (
         <li>My headphones of choice are the AirPods.</li>
       </UnOrderedList>
 
-      <SubTitle>Software</SubTitle>
+      <SubTitle>Desktop Apps</SubTitle>
       <UnOrderedList>
-        <li>I use Chrome for the Dev Tools and Safari as a daily driver.</li>
+        <li>I use Chrome for its Dev Tools and as my daily driver.</li>
         <li>I code using <ExternalLink href="https://code.visualstudio.com/">VSCode</ExternalLink> as a text editor.</li>
         <li>My terminal is <ExternalLink href="https://hyper.is/">Hyper.js</ExternalLink> with "<ExternalLink href="https://ohmyz.sh/">Oh My ZSH!</ExternalLink>".</li>
         <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo.</li>
