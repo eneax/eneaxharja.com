@@ -13,17 +13,23 @@ const About = () => (
       
       <SubTitle>Hardware</SubTitle>
       <UnOrderedList>
-        <li>I code everyday on a 15" MacBook Pro.</li>
-        <li>My phone is an iPhone SE.</li>
-        <li>My headphones of choice are the AirPods.</li>
+        <li>MacBook Pro (15-inch, 2016)</li>
+        <li>iPhone SE</li>
+        <li>AirPods</li>
       </UnOrderedList>
 
       <SubTitle>Desktop Apps</SubTitle>
       <UnOrderedList>
-        <li>I use Chrome for its Dev Tools and as my daily driver.</li>
-        <li>I code using <ExternalLink href="https://code.visualstudio.com/">VSCode</ExternalLink> as a text editor.</li>
-        <li>My terminal is <ExternalLink href="https://hyper.is/">Hyper.js</ExternalLink> with "<ExternalLink href="https://ohmyz.sh/">Oh My ZSH!</ExternalLink>".</li>
-        <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo.</li>
+        <li><ExternalLink href="https://www.google.com/chrome/">Google Chrome</ExternalLink></li>
+        <li><ExternalLink href="https://code.visualstudio.com/">Visual Studio Code</ExternalLink></li>
+        <li><ExternalLink href="https://hyper.is/">Hyper.js</ExternalLink> with "<ExternalLink href="https://ohmyz.sh/">Oh My ZSH!</ExternalLink>"</li>
+        <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo</li>
+        <li><ExternalLink href="https://www.alfredapp.com/" >Alfred App</ExternalLink></li>
+        <li><ExternalLink href="https://www.macbartender.com/">Bartender</ExternalLink></li>
+        <li><ExternalLink href="https://matthewpalmer.net/rocket/">Rocket</ExternalLink></li>
+        <li><ExternalLink href="https://www.notion.so/">Notion</ExternalLink></li>
+        <li><ExternalLink href="https://www.spotify.com/">Spotify</ExternalLink></li>
+        <li><ExternalLink href="https://www.lastpass.com/">LastPass</ExternalLink></li>
       </UnOrderedList>
 
       <SubTitle>Extra</SubTitle>
