@@ -32,6 +32,18 @@ const About = () => (
         <li><ExternalLink href="https://www.lastpass.com/">LastPass</ExternalLink></li>
       </UnOrderedList>
 
+      <SubTitle>Chrome Extensions</SubTitle>
+      <UnOrderedList>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk?utm_source=chrome-ntp-icon">Notion Web Clipper</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?utm_source=chrome-ntp-icon">ColorZilla</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?utm_source=chrome-ntp-icon">Lighthouse</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?utm_source=chrome-ntp-icon">React Developer Tools</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon">Redux DevTools</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?utm_source=chrome-ntp-icon">JSONView</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?utm_source=chrome-ntp-icon">uBlock Origin</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?utm_source=chrome-ntp-icon">LastPass: Free Password Manager</ExternalLink></li>
+      </UnOrderedList>
+
       <SubTitle>Extra</SubTitle>
       <UnOrderedList>
         <li>I like reading printed books. I tried with ebooks and audiobooks, but after spending an entire day coding, the last thing I need is another screen!</li>
