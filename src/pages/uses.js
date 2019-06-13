@@ -25,8 +25,8 @@ const About = () => (
         <li><ExternalLink href="https://hyper.is/">Hyper.js</ExternalLink> with "<ExternalLink href="https://ohmyz.sh/">Oh My ZSH!</ExternalLink>"</li>
         <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo</li>
         <li><ExternalLink href="https://www.alfredapp.com/" >Alfred App</ExternalLink></li>
-        <li><ExternalLink href="https://www.macbartender.com/">Bartender</ExternalLink></li>
         <li><ExternalLink href="https://matthewpalmer.net/rocket/">Rocket</ExternalLink></li>
+        <li><ExternalLink href="https://matthewpalmer.net/vanilla/">Vanilla</ExternalLink></li>
         <li><ExternalLink href="https://www.notion.so/">Notion</ExternalLink></li>
         <li><ExternalLink href="https://www.spotify.com/">Spotify</ExternalLink></li>
         <li><ExternalLink href="https://www.lastpass.com/">LastPass</ExternalLink></li>
@@ -35,7 +35,6 @@ const About = () => (
       <SubTitle>Chrome Extensions</SubTitle>
       <UnOrderedList>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk?utm_source=chrome-ntp-icon">Notion Web Clipper</ExternalLink></li>
-        <li><ExternalLink href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?utm_source=chrome-ntp-icon">ColorZilla</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?utm_source=chrome-ntp-icon">Lighthouse</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?utm_source=chrome-ntp-icon">React Developer Tools</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon">Redux DevTools</ExternalLink></li>
