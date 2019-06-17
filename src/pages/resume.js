@@ -13,7 +13,7 @@ const Resume = () => (
       Resume
         <SocialLink
           style={{marginTop: '1rem'}}
-          href='https://www.dropbox.com/s/meifiiejjzu9evx/eneaxharja-resume.pdf?dl=0'
+          href='https://drive.google.com/open?id=1ra3I0jDjOdwT4NSXHxubMsW2UwChZsDd'
         >
           <FaCloudDownloadAlt />
       </SocialLink>
@@ -36,10 +36,22 @@ const Resume = () => (
       <HR />
 
       <HeadingThree>
+        Front-End Developer, Fornace Studio Srl - San Pietro in Cariano (Italy)
+      </HeadingThree>
+      <DateTime style={{marginBottom: '1.45rem'}}>
+        03/2019 – Present
+      </DateTime>
+      <UnOrderedList>
+        <li>Used React Native, while working on a team of developers, to build an iOS and Android app for an Italian large-scale retailer with over 100 directly managed supermarkets</li>
+        <li>Utilised the latest HTML5 and CSS3 technologies to build a responsive landing page with smooth scrolling and visually interesting animations</li>
+        <li>Built responsive websites from the ground up using Wordpress and company's custom Content Management System</li>
+      </UnOrderedList>
+
+      <HeadingThree>
         Web Developer, Freelance
       </HeadingThree>
       <DateTime style={{marginBottom: '1.45rem'}}>
-        10/2017 – Present
+        10/2017 – 02/2019
       </DateTime>
       <UnOrderedList>
         <li>Designed and implemented a responsive <ExternalLink href='https://delicious-x.netlify.com'>restaurant</ExternalLink> website using Gatsby, Contentful, GraphQL and styled-components</li>
@@ -81,6 +93,7 @@ const Resume = () => (
         <li>Bootstrap</li>
         <li>JavaScript</li>
         <li>React.js</li>
+        <li>React Native</li>
         <li>Gatsby.js</li>
         <li>GraphQL</li>
         <li>Git</li>
