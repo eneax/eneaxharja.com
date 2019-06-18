@@ -36,7 +36,7 @@ const Resume = () => (
       <HR />
 
       <HeadingThree>
-        Front-End Developer, Fornace Srl - San Pietro in Cariano (Italy)
+        Front-End Developer, Fornace - San Pietro in Cariano (Italy)
       </HeadingThree>
       <DateTime style={{marginBottom: '1.45rem'}}>
         03/2019 – Present
@@ -65,7 +65,7 @@ const Resume = () => (
       </UnOrderedList>
 
       <HeadingThree>
-        Social Media Marketing, Trattoria Porsenna Srl - Chiusi (Italy)
+        Social Media Marketing, Trattoria Porsenna - Chiusi (Italy)
       </HeadingThree>
       <DateTime style={{marginBottom: '1.45rem'}}>
         06/2013 – 09/2017
