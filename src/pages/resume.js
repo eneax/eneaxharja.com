@@ -36,7 +36,7 @@ const Resume = () => (
       <HR />
 
       <HeadingThree>
-        Front-End Developer, Fornace Studio Srl - San Pietro in Cariano (Italy)
+        Front-End Developer, Fornace Srl - San Pietro in Cariano (Italy)
       </HeadingThree>
       <DateTime style={{marginBottom: '1.45rem'}}>
         03/2019 – Present
