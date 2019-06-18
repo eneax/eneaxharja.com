@@ -10,12 +10,12 @@ const About = () => (
 
 		<Container>
 			<p>
-				I’m currently living in Chiusi (Tuscany), Italy and working
-				as a Freelance Web Developer.
-        </p>
+				I’m currently living in San Pietro in Cariano (Verona), Italy and working
+				as a Front-End Developer.
+      </p>
 			<p>
 				Most of my time is spent writing <ExternalLink href='https://github.com/eneax'>code</ExternalLink> for the web. I create websites for businesses and portfolio pages that are responsive and can adapt the layout to a variety of devices and screen sizes.
-        </p>
+      </p>
 			<p>
 				When I’m not coding, I read <InternalLink to='/library'>books</InternalLink>, procrastinate <InternalLink to='/fun'>online</InternalLink> (reading blogs or listening to podcasts) or just <InternalLink to='/travel'>travel</InternalLink> and walk around in nature.
 			</p>
