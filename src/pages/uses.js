@@ -15,7 +15,7 @@ const About = () => (
       <UnOrderedList>
         <li>MacBook Pro (15-inch, 2016)</li>
         <li>iPhone SE</li>
-        <li>AirPods</li>
+        <li>Kindle (7th Generation)</li>
       </UnOrderedList>
 
       <SubTitle>Desktop Apps</SubTitle>
@@ -39,11 +39,6 @@ const About = () => (
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?utm_source=chrome-ntp-icon">JSONView</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?utm_source=chrome-ntp-icon">uBlock Origin</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?utm_source=chrome-ntp-icon">LastPass: Free Password Manager</ExternalLink></li>
-      </UnOrderedList>
-
-      <SubTitle>Extra</SubTitle>
-      <UnOrderedList>
-        <li>I like reading printed books. I tried with ebooks and audiobooks, but after spending an entire day coding, the last thing I need is another screen!</li>
       </UnOrderedList>
 		</Container>
 
