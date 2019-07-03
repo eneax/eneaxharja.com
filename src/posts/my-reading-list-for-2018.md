@@ -1,7 +1,7 @@
 ---
 slug: "/my-reading-list-for-2018"
 date: "2018-12-29"
-title: "My Reading List for 2018"
+title: "📚 My Reading List for 2018"
 ---
 
 A year ago I promised to myself that I would have spent my free time reading paper books instead of wasting it browsing the internet and reading online news.
