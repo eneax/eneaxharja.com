@@ -1,7 +1,7 @@
 ---
 slug: "/hello-world"
 date: "2018-12-24"
-title: "Hello World!"
+title: "🙋🏻‍♂️ Hello World!"
 ---
 
 I’ve been reading blogs for quite some time now, and thought about starting one many times. But who starts a blog in the Age of Social Media?
