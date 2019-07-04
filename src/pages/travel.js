@@ -20,7 +20,7 @@ const Travel = ({ data }) => {
 
   return (
     <Layout>
-      <Title>Travel</Title>
+      <Title>🏞️ Travel</Title>
 
       <Container>
         <p style={{marginBottom: '3rem'}}>This page contains some of the photos I took during my trips over the years.</p>
