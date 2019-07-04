@@ -89,7 +89,7 @@ export default class Library extends Component {
     
     return (
 			<Layout>
-				<Title>Library</Title>
+				<Title>📚 Library</Title>
 
 				<Container>
 					<p>
