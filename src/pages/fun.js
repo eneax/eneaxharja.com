@@ -19,7 +19,7 @@ const Fun = ({ data }) => {
 
   return (
     <Layout>
-      <Title>Fun</Title>
+      <Title>🥳 Fun</Title>
 
       <Container>
         <p>This page contains podcasts, blogs and newsletters that I like to listen to and read, in addition to <InternalLink to='/library'>books</InternalLink>, during my free time.</p>
