@@ -14,7 +14,7 @@ const About = () => (
       <SubTitle>Hardware</SubTitle>
       <UnOrderedList>
         <li>MacBook Pro (15-inch, 2016)</li>
-        <li>iPhone SE</li>
+        <li>Google Pixel 3a</li>
         <li>Kindle (7th Generation)</li>
       </UnOrderedList>
 
