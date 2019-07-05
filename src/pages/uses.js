@@ -6,7 +6,10 @@ import { Title, Container, SubTitle, UnOrderedList, ExternalLink } from '../elem
 
 const About = () => (
 	<Layout>
-		<Title>⚙️ Uses</Title>
+		<Title>
+      <span role="img" aria-label="gears emoji">⚙️ </span>
+      Uses
+    </Title>
 
 		<Container>
 			<p>Ever wonder about what gear I use? Here is my complete list.</p>
