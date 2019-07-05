@@ -89,7 +89,10 @@ export default class Library extends Component {
     
     return (
 			<Layout>
-				<Title>📚 Library</Title>
+				<Title>
+					<span role="img" aria-label="books emoji">📚 </span>
+					Library
+				</Title>
 
 				<Container>
 					<p>
