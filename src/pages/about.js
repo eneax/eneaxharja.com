@@ -20,11 +20,9 @@ const About = () => (
 				When I’m not coding, I read <InternalLink to='/library'>books</InternalLink>, procrastinate <InternalLink to='/fun'>online</InternalLink> (reading blogs or listening to podcasts) or just <InternalLink to='/travel'>travel</InternalLink> and walk around in nature.
 			</p>
 			<p>For those of you who have been asking me about the software or hardware I use, here is my <InternalLink to='/uses'>list</InternalLink>.</p>
-			<p>
-				I'm open to new opportunities and always looking for new
-				projects where I can contribute. Feel free to take a look at
-          my complete <InternalLink to='/resume'>resume</InternalLink>.
-      </p>
+			<p>I'm open to new opportunities and always looking for new projects where I can contribute.</p>
+			<p>At the moment, I am focusing exclusively on clients open to the JAMstack, and I will not be considering projects that use a traditional CMS or a server side monolith.</p>
+			<p>Feel free to take a look at my complete <InternalLink to='/resume'>resume</InternalLink>.</p>
 		</Container>
 
 		<Footer />
