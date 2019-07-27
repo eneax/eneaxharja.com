@@ -12,7 +12,7 @@ There are plenty of choices, many services to choose from and each of them with 
 
 I believe the most important resource I have at disposal is time, which is directly related to the people and things I pay attention to. The way I use my time determines who I am and who I will become.
 
-So instead of spending my time on activities like social media grooming, I decided to teach myself to code and I was finally able to build this website.
+So instead of spending my time mindlessly browsing the Internet, I decided to teach myself to code and I was finally able to build this website.
 
 I want to use this place to share not only my thoughts, my favorite books and travel photos, but also my learnings in web development and some code snippets I consider to be useful to others.
 
