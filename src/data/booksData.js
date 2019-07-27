@@ -390,6 +390,12 @@ export default [
     author: 'Steve Krug',
   },
   {
+    link: 'http://amzn.eu/0DYproF',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51Y3Sy9EvPL.jpg',
+    title: 'Untethered',
+    author: 'Jason Lengstorf',
+  },
+  {
     link: 'http://amzn.eu/eL6mEcZ',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/51zEulgpKrL.jpg',
     title: 'Rivoluzione Google',
