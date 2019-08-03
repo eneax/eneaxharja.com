@@ -36,6 +36,7 @@ const About = () => (
 
       <SubTitle>Chrome Extensions</SubTitle>
       <UnOrderedList>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?utm_source=chrome-ntp-icon">ColorZilla</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?utm_source=chrome-ntp-icon">Lighthouse</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?utm_source=chrome-ntp-icon">React Developer Tools</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon">Redux DevTools</ExternalLink></li>
