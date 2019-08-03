@@ -29,7 +29,7 @@ const About = () => (
         <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo</li>
         <li><ExternalLink href="https://www.alfredapp.com/">Alfred App</ExternalLink></li>
         <li><ExternalLink href="https://matthewpalmer.net/rocket/">Rocket</ExternalLink></li>
-        <li><ExternalLink href="https://matthewpalmer.net/vanilla/">Vanilla</ExternalLink></li>
+        <li><ExternalLink href="https://www.getcloudapp.com/">CloudApp</ExternalLink></li>
         <li><ExternalLink href="https://www.spotify.com/">Spotify</ExternalLink></li>
         <li><ExternalLink href="https://www.lastpass.com/">LastPass</ExternalLink></li>
       </UnOrderedList>
