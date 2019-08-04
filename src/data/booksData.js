@@ -24,9 +24,9 @@ export default [
     author: 'Isaac Asimov'
   },
   {
-    link: 'http://amzn.eu/97k3sXU',
-    img: 'https://images-eu.ssl-images-amazon.com/images/I/41DG0FndxZL.jpg',
-    title: 'L\'arte di conoscere se stessi. Pensieri',
+    link: 'http://amzn.eu/cjeJV0z',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51lIl3FP9gL.jpg',
+    title: 'The Meditations',
     author: 'Marco Aurelio'
   },
   {
