@@ -174,6 +174,12 @@ export default [
     author: 'Jared M. Diamond'
   },
   {
+    link: 'http://amzn.eu/gMCvuIa',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51EuP5wZlbL.jpg',
+    title: 'The Manual',
+    author: 'Epictetus'
+  },
+  {
     link: 'http://amzn.eu/gXjb246',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41JRQSBjeUL.jpg',
     title: 'Lettera sulla felicità',
