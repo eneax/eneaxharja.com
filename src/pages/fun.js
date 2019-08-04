@@ -97,5 +97,8 @@ export const query = graphql`
     image8: file(relativePath: { regex: "/reactjs.png/" }) {
       ...fluidsImage
     }
+    image9: file(relativePath: { regex: "/gatsby.png/" }) {
+      ...fluidsImage
+    }
   }
 `

@@ -38,5 +38,10 @@ export default [
     link: 'http://reactjsnewsletter.com',
     title: 'React.js Newsletter',
     desc: 'The free, weekly newsletter of the best React news, articles, projects, and more - brought to you by Tyler McGinnis.'
+  },
+  {
+    link: 'https://www.gatsbyjs.org/newsletter/',
+    title: 'Gatsby Newsletter',
+    desc: 'Keep up with the latest from the Gatsby community! Hear about new features, tips & tricks, and what people are building.'
   }
 ]
