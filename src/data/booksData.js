@@ -546,6 +546,12 @@ export default [
     author: 'Hans Rosling et al.',
   },
   {
+    link: 'http://amzn.eu/8CWUFjA',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51Il8TGXWnL.jpg',
+    title: 'On the Shortness of Life',
+    author: 'Lucius Annaeus Seneca',
+  },
+  {
     link: 'http://amzn.eu/gh2xTiA',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/41KYsqVDB8L.jpg',
     title: 'Frankenstein',
