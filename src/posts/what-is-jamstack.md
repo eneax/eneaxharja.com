@@ -10,7 +10,7 @@ Initially, I considered using WordPress, due to its widespread usage, support of
 However, while reading blogs online and watching some talks on YouTube, I stumbled across the static site generators and I was impressed by their speed.
 
 I configured my first blog using Jekyll, and I was quite happy with it, but at the same time I was diving into React and I decided that I wanted to focus my career on JavaScript as a main language and React as my framework of choice.
-This decision led my straight into the arms of Gatsby and that was the moment when I fell in love with the JAMstack.
+This decision led me straight into the arms of Gatsby and that was the moment when I fell in love with the JAMstack.
 
 
 ## What is a stack?
