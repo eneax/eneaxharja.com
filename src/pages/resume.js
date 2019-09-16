@@ -21,14 +21,16 @@ const Resume = () => (
 
 		<Container>
       <SubTitle style={{marginTop: '4rem'}}>
-        SUMMARY OF QUALIFICATIONS
+        SUMMARY
       </SubTitle>
       <HR />
 
-      <UnOrderedList style={{marginTop: '3rem'}}>
-        <li>Self-taught web developer</li>
-        <li>Master of Science with Summa Cum Laude in Accounting and Management at the University of Siena</li>
-      </UnOrderedList>
+      <p style={{marginTop: '3rem'}}>
+        Self-taught web developer with proven ability to build for the modern web while using cutting-edge technologies.
+      </p>
+      <p>
+        I use the <ExternalLink href='https://jamstack.org'>JAMstack</ExternalLink> to create fast, highly performing and accessible websites that are responsive and can adapt the layout to a variety of devices and screen sizes.
+      </p>
 
       <SubTitle style={{marginTop: '5rem'}}>
         WORK EXPERIENCE
@@ -44,7 +46,7 @@ const Resume = () => (
       <UnOrderedList>
         <li>Used React Native, while working on a team of developers, to build an iOS and Android app for an Italian large-scale retailer with over 100 directly managed supermarkets</li>
         <li>Utilised the latest HTML5 and CSS3 technologies to build a responsive landing page with smooth scrolling and visually interesting animations</li>
-        <li>Built responsive websites from the ground up using Wordpress and company's custom Content Management System</li>
+        <li>Maintained existing websites and built new ones from the ground up using Wordpress and company's custom Content Management System</li>
       </UnOrderedList>
 
       <HeadingThree>
@@ -97,11 +99,10 @@ const Resume = () => (
         <li>Gatsby.js</li>
         <li>GraphQL</li>
         <li>Git</li>
-        <li>Node (work-in-progress)</li>
       </UnOrderedList>
 
       <HeadingThree>
-        MSc in Accounting and Management - Siena (Italy)
+        MSc with Summa Cum Laude in Accounting and Management - Siena (Italy)
       </HeadingThree>
       <DateTime style={{marginBottom: '1.45rem'}}>
         11/2014 – 02/2017
