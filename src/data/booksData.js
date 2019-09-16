@@ -378,6 +378,12 @@ export default [
     author: 'Daniel Kahneman',
   },
   {
+    link: 'http://amzn.eu/1qVYVNh',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51gPhgsArmL._SX330_BO1,204,203,200_.jpg',
+    title: 'Blue Ocean Strategy',
+    author: 'Kim W. Chan',
+  },
+  {
     link: 'http://amzn.eu/ds6IdsH',
     img: 'https://images-na.ssl-images-amazon.com/images/I/31nTLPLSuwL._BO1,204,203,200_.jpg',
     title: 'Pietro e la città d\'oro',
