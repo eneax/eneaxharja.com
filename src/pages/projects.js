@@ -69,6 +69,9 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query imageGallery {
+    image28: file(relativePath: { regex: "/28.png/" }) {
+      ...fluidImage
+    }
     image27: file(relativePath: { regex: "/27.png/" }) {
       ...fluidImage
     }

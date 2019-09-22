@@ -1,5 +1,10 @@
 export default [
   {
+    link: 'https://github.com/eneax/gatsby-landing-page-arty',
+    title: '🖼 Arty',
+    desc: 'Landing Page built with Gatsby, CSS Grid, styled-components, GraphQL and Contentful.'
+  },
+  {
     link: 'https://github.com/eneax/gatsby-restaurant',
     title: '🍔 Delicious',
     desc: 'Responsive restaurant website built with Gatsby, Contentful, GraphQL and styled-components.'
