@@ -17,7 +17,7 @@ const About = () => (
       <SubTitle>Hardware</SubTitle>
       <UnOrderedList>
         <li>MacBook Pro (15-inch, 2016)</li>
-        <li>Samsung Galaxy S10</li>
+        <li>Google Pixel 3a</li>
         <li>Kindle (7th Generation)</li>
       </UnOrderedList>
 
@@ -28,9 +28,6 @@ const About = () => (
         <li><ExternalLink href="https://hyper.is/">Hyper.js</ExternalLink> with "<ExternalLink href="https://ohmyz.sh/">Oh My ZSH!</ExternalLink>"</li>
         <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo</li>
         <li><ExternalLink href="https://www.alfredapp.com/">Alfred App</ExternalLink></li>
-        <li><ExternalLink href="https://1password.com/">1password</ExternalLink></li>
-        <li><ExternalLink href="https://www.getcloudapp.com/">CloudApp</ExternalLink></li>
-        <li><ExternalLink href="https://www.spotify.com/">Spotify</ExternalLink></li>
       </UnOrderedList>
 
       <SubTitle>Chrome Extensions</SubTitle>
