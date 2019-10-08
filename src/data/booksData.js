@@ -672,6 +672,12 @@ export default [
     author: 'Oscar Wilde',
   },
   {
+    link: 'http://amzn.eu/8GDybRK',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/517FJdmUl3L.jpg',
+    title: 'The Attention Merchants',
+    author: 'Tim Wu',
+  },
+  {
     link: 'http://a.co/4miXwTR',
     img: 'https://images-na.ssl-images-amazon.com/images/I/514ryP7EmiL.jpg',
     title: 'I Am Malala',
