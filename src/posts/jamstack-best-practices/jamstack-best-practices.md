@@ -79,11 +79,11 @@ When you make a change to your site, you are telling the CDN to invalidate its c
 Basically, when a deploy goes live, it really goes live!
 
 
-<!-- ## Typical JAMstack workflow
+## Typical JAMstack workflow
 
 Here is an ideal JAMstack workflow following all the best practices described above.
 
-![jamstack-best-practices](jamstack-best-practices.png) -->
+![jamstack-best-practices](./images/jamstack-best-practices.png)
 
 
 ## Conclusion

@@ -23,11 +23,27 @@ module.exports = {
       },
     },
     // parses Markdown files using Remark
-    `gatsby-transformer-remark`,
+    // `gatsby-transformer-remark`,
     // creates ImageSharp nodes from image types 
     'gatsby-transformer-sharp',
     // exposes several image processing functions built on the Sharp image processing library
     'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
