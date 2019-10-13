@@ -1,7 +1,7 @@
 {
   "name": "eneax",
   "description": "Enea Xharja Personal Website",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": "Enea Xharja <eneaxharja@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
@@ -16,8 +16,6 @@
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-remark": "^2.6.27",
     "gatsby-transformer-sharp": "^2.2.20",
-    "i": "^0.3.6",
-    "npm": "^6.11.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.0",
