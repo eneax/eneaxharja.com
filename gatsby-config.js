@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Enea Xharja - Web Developer',
-    description: 'My Own Little Corner of the Web!'
+    description: 'My Own Little Corner of the Web!',
+    siteUrl: `https://eneaxharja.com`,
   },
   plugins: [
     // custom metadata for each page
@@ -23,9 +24,9 @@ module.exports = {
       },
     },
     // creates ImageSharp nodes from image types 
-    'gatsby-transformer-sharp',
+    `gatsby-transformer-sharp`,
     // exposes several image processing functions built on the Sharp image processing library
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-sharp`,
     {
       // parses Markdown files using Remark
       resolve: `gatsby-transformer-remark`,
@@ -44,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Enea Xharja | Web Developer',
+        name: 'Enea Xharja - Web Developer',
         short_name: 'Enea Xharja',
         start_url: '/',
         background_color: '#663399',
@@ -54,7 +55,8 @@ module.exports = {
       },
     },
     // Enables Progressive Web App + Offline functionality
-    'gatsby-plugin-offline',
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
   ],
 }
