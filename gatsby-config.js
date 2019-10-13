@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Enea Xharja | Web Developer',
+    title: 'Enea Xharja - Web Developer',
     description: 'My Own Little Corner of the Web!'
   },
   plugins: [
@@ -22,22 +22,19 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    // parses Markdown files using Remark
-    // `gatsby-transformer-remark`,
     // creates ImageSharp nodes from image types 
     'gatsby-transformer-sharp',
     // exposes several image processing functions built on the Sharp image processing library
     'gatsby-plugin-sharp',
     {
+      // parses Markdown files using Remark
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
+            // parses Markdown images using Remark
             resolve: `gatsby-remark-images`,
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
               maxWidth: 1200,
             },
           },
@@ -56,10 +53,8 @@ module.exports = {
         icon: 'src/images/logo.svg', // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
+    // Enables Progressive Web App + Offline functionality
     'gatsby-plugin-offline',
     'gatsby-plugin-styled-components',
-    // The plugin will add HTTP/2 assets to server push the critical Gatsby scripts
   ],
 }
