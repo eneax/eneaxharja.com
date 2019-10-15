@@ -1,21 +1,16 @@
-import React, { Fragment } from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
 import Footer from '../components/footer'
-import { Title, Container, ImageWrapper, SubTitle, ExternalLink, InternalLink } from '../elements'
-import { grey } from '../utils'
-import { funResources } from '../data'
+import FunList from '../components/funList'
+
+import { Title, Container, InternalLink } from '../elements'
 
 
-const Fun = ({ data }) => {
-  const imageGallery = Object.values(data)
-  const images = []
-
-  imageGallery.map((img, i) => (
-    images.push(<Img key={i} fluid={img.childImageSharp.fluid} alt={`Image of '${funResources[i].title}' project`} />)
-  ))
+const Fun = () => {
+  const response = useStaticQuery(getFunData)
+  const funResources = response.allFunResourcesDataJson.edges
 
   return (
     <Layout>
@@ -26,31 +21,7 @@ const Fun = ({ data }) => {
 
       <Container>
         <p>This page contains podcasts, blogs and newsletters that I like to listen to and read, in addition to <InternalLink to='/library'>books</InternalLink>, during my free time.</p>
-        <Fragment>
-          {
-            funResources.map((funResource, i) => (
-
-              <div key={i}>
-                <ExternalLink href={`${funResources[i].link}`}>
-                  <SubTitle>
-                    {funResources[i].title}
-                  </SubTitle>
-                </ExternalLink>
-
-                <ImageWrapper>
-                  <ExternalLink href={`${funResources[i].link}`}>
-                    {
-                      images[i]
-                    }
-                  </ExternalLink>
-                </ImageWrapper>
-
-                <p style={{color: `${grey}`}}>{funResources[i].desc}</p>
-              </div>
-
-            ))
-          }
-        </Fragment>
+        <FunList funResources={funResources} />
       </Container>
 
       <Footer />
@@ -61,44 +32,24 @@ const Fun = ({ data }) => {
 export default Fun
 
 
-export const fluidsImage = graphql`
-  fragment fluidsImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1240) {
-        ...GatsbyImageSharpFluid
+// query
+const getFunData = graphql`
+  {
+    allFunResourcesDataJson {
+      edges {
+        node {
+          link
+          title
+          img {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          desc
+        }
       }
-    }
-  }
-`
-
-export const query = graphql`
-  query gallery {
-    image1: file(relativePath: { regex: "/syntax.png/" }) {
-      ...fluidsImage
-    }
-    image2: file(relativePath: { regex: "/danCarlin.jpg/" }) {
-      ...fluidsImage
-    }
-    image3: file(relativePath: { regex: "/cgpGrey.png/" }) {
-      ...fluidsImage
-    }
-    image4: file(relativePath: { regex: "/harari.jpeg/" }) {
-      ...fluidsImage
-    }
-    image5: file(relativePath: { regex: "/newport.jpg/" }) {
-      ...fluidsImage
-    }
-    image6: file(relativePath: { regex: "/wbw.png/" }) {
-      ...fluidsImage
-    }
-    image7: file(relativePath: { regex: "/jsWeekly.png/" }) {
-      ...fluidsImage
-    }
-    image8: file(relativePath: { regex: "/reactjs.png/" }) {
-      ...fluidsImage
-    }
-    image9: file(relativePath: { regex: "/gatsby.png/" }) {
-      ...fluidsImage
     }
   }
 `
