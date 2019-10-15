@@ -1,0 +1,692 @@
+[
+  {
+    "link": "http://amzn.eu/iRZVsSc",
+    "img": "./images/drunk-tank-pink.jpg",
+    "title": "Drunk Tank Pink",
+    "author": "Adam Alter"
+  },
+  {
+    "link": "http://a.co/crR213V",
+    "img": "./images/foundation.jpg",
+    "title": "Foundation",
+    "author": "Isaac Asimov"
+  },
+  {
+    "link": "http://a.co/j9mDO9x",
+    "img": "./images/foundation-and-empire.jpg",
+    "title": "Foundation and Empire",
+    "author": "Isaac Asimov"
+  },
+  {
+    "link": "http://a.co/94b6dG7",
+    "img": "./images/second-foundation.jpg",
+    "title": "Second Foundation",
+    "author": "Isaac Asimov"
+  },
+  {
+    "link": "http://amzn.eu/cjeJV0z",
+    "img": "./images/the-meditations.jpg",
+    "title": "The Meditations",
+    "author": "Marco Aurelio"
+  },
+  {
+    "link": "http://a.co/d/9YaOnjj",
+    "img": "./images/barking.jpg",
+    "title": "Barking Up the Wrong Tree",
+    "author": "Eric Barker"
+  },
+  {
+    "link": "http://a.co/47JrnMD",
+    "img": "./images/final-invention.jpg",
+    "title": "Our Final Invention",
+    "author": "James Barrat"
+  },
+  {
+    "link": "http://amzn.eu/5H7RzAg",
+    "img": "./images/bartolini.jpg",
+    "title": "Manifesto per la felicità",
+    "author": "Stefano Bartolini"
+  },
+  {
+    "link": "http://a.co/fhRk6X7",
+    "img": "./images/one-min-manager.jpg",
+    "title": "The New One Minute Manager",
+    "author": "Ken Blanchard"
+  },
+  {
+    "link": "http://a.co/dtsfk2l",
+    "img": "./images/superintelligence.jpg",
+    "title": "Superintelligence",
+    "author": "Nick Bostrom"
+  },
+  {
+    "link": "http://a.co/d/buBUXyf",
+    "img": "./images/everything-reason.jpg",
+    "title": "Everything Happens for a Reason: And Other Lies I've Loved",
+    "author": "Kate Bowler"
+  },
+  {
+    "link": "http://amzn.eu/coeNrsm",
+    "img": "./images/angeli-demoni.jpg",
+    "title": "Angeli e demoni",
+    "author": "Dan Brown"
+  },
+  {
+    "link": "http://amzn.eu/57IKDlw",
+    "img": "./images/crypto.jpg",
+    "title": "Crypto",
+    "author": "Dan Brown"
+  },
+  {
+    "link": "http://amzn.eu/am6oOMn",
+    "img": "./images/codice-da-vinci.jpg",
+    "title": "Il codice da Vinci",
+    "author": "Dan Brown"
+  },
+  {
+    "link": "http://amzn.eu/59LH1hE",
+    "img": "./images/simbolo-perduto.jpg",
+    "title": "Il simbolo perduto",
+    "author": "Dan Brown"
+  },
+  {
+    "link": "http://amzn.eu/ijqPfP2",
+    "img": "./images/verita-ghiaccio.jpg",
+    "title": "La verità del ghiaccio",
+    "author": "Dan Brown"
+  },
+  {
+    "link": "http://amzn.eu/aMqWIcU",
+    "img": "./images/deserto-tartari.jpg",
+    "title": "Il deserto dei Tartari",
+    "author": "Dino Buzzati"
+  },
+  {
+    "link": "http://amzn.eu/gk9s6IN",
+    "img": "./images/democrazia-ideologia.jpg",
+    "title": "La democrazia: Storia di un'ideologia",
+    "author": "Luciano Canfora"
+  },
+  {
+    "link": "http://amzn.eu/8ZVkS8p",
+    "img": "./images/algorithms.jpg",
+    "title": "Algorithms to Live By",
+    "author": "Christian Brian and Griffiths Tom"
+  },
+  {
+    "link": "http://a.co/d/e0hqkHu",
+    "img": "./images/origin-story.jpg",
+    "title": "Origin Story: A Big History of Everything",
+    "author": "David Christian"
+  },
+  {
+    "link": "http://amzn.eu/bADv43Q",
+    "img": "./images/alchimista.jpg",
+    "title": "L'alchimista",
+    "author": "Paulo Coelho"
+  },
+  {
+    "link": "http://amzn.eu/gKuM8xQ",
+    "img": "./images/conte.jpg",
+    "title": "Testa, cuore e gambe",
+    "author": "Antonio Conte"
+  },
+  {
+    "link": "http://amzn.eu/eJPqgTn",
+    "img": "./images/origine-specie.jpg",
+    "title": "L'origine delle specie",
+    "author": "Charles Darwin"
+  },
+  {
+    "link": "http://amzn.eu/4ebwdU2",
+    "img": "./images/piccolo-principe.jpg",
+    "title": "Il Piccolo Principe",
+    "author": "Antoine de Saint-Exupéry"
+  },
+  {
+    "link": "http://a.co/d/7hE69Nh",
+    "img": "./images/primates-and-philosophers.jpg",
+    "title": "Primates and Philosophers: How Morality Evolved",
+    "author": "Frans de Waal et al."
+  },
+  {
+    "link": "http://amzn.eu/2WoijXR",
+    "img": "./images/del-piero.jpg",
+    "title": "Giochiamo ancora",
+    "author": "Alessandro Del Piero"
+  },
+  {
+    "link": "http://amzn.eu/4stWIOx",
+    "img": "./images/discourse-on-the-method.jpg",
+    "title": "Discourse on the Method",
+    "author": "René Descartes"
+  },
+  {
+    "link": "http://a.co/d/akU6UH3",
+    "img": "./images/third-chimp.jpg",
+    "title": "The Third Chimpanzee",
+    "author": "Jared M. Diamond"
+  },
+  {
+    "link": "http://amzn.eu/d/0VVbi4A",
+    "img": "./images/guns-germs-steel.jpg",
+    "title": "Guns, Germs, and Steel",
+    "author": "Jared M. Diamond"
+  },
+  {
+    "link": "http://amzn.eu/gMCvuIa",
+    "img": "./images/the-manual.jpg",
+    "title": "The Manual",
+    "author": "Epictetus"
+  },
+  {
+    "link": "http://amzn.eu/gXjb246",
+    "img": "./images/epicuro.jpg",
+    "title": "Lettera sulla felicità",
+    "author": "Epicuro"
+  },
+  {
+    "link": "http://a.co/7PegxJR",
+    "img": "./images/hooked.jpg",
+    "title": "Hooked: How to Build Habit-Forming Products",
+    "author": "Nir Eyal"
+  },
+  {
+    "link": "http://amzn.eu/eazkkDO",
+    "img": "./images/4-hour-work-week.jpg",
+    "title": "The 4-Hour Work Week",
+    "author": "Timothy Ferriss"
+  },
+  {
+    "link": "http://a.co/8V0TIqt",
+    "img": "./images/gatsby.jpg",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald"
+  },
+  {
+    "link": "http://amzn.eu/6zauuUl",
+    "img": "./images/ago.jpg",
+    "title": "La cruna dell'ago",
+    "author": "Ken Follett"
+  },
+  {
+    "link": "http://amzn.eu/7NODdkE",
+    "img": "./images/codice-rebecca.jpg",
+    "title": "Il codice Rebecca",
+    "author": "Ken Follett"
+  },
+  {
+    "link": "http://amzn.eu/8opgynO",
+    "img": "./images/inverno-del-mondo.jpg",
+    "title": "L'inverno del mondo",
+    "author": "Ken Follett"
+  },
+  {
+    "link": "http://amzn.eu/dAJtQtL",
+    "img": "./images/caduta-dei-giganti.jpg",
+    "title": "La caduta dei giganti",
+    "author": "Ken Follett"
+  },
+  {
+    "link": "http://amzn.eu/gyTM98M",
+    "img": "./images/giorni-eternita.jpg",
+    "title": "I giorni dell'eternità",
+    "author": "Ken Follett"
+  },
+  {
+    "link": "http://amzn.eu/eBDTBcW",
+    "img": "./images/machine-stops.jpeg",
+    "title": "The Machine Stops",
+    "author": "E. M. Forster"
+  },
+  {
+    "link": "http://amzn.eu/17kfUnl",
+    "img": "./images/interpretazione-sogni.jpg",
+    "title": "L'interpretazione dei sogni",
+    "author": "Sigmund Freud"
+  },
+  {
+    "link": "http://a.co/8x8PEgr",
+    "img": "./images/blink.jpg",
+    "title": "Blink",
+    "author": "Malcolm Gladwell"
+  },
+  {
+    "link": "http://a.co/9TbJE1a",
+    "img": "./images/outliers.jpg",
+    "title": "Outliers",
+    "author": "Malcolm Gladwell"
+  },
+  {
+    "link": "http://a.co/bQVfDQf",
+    "img": "./images/tipping-point.jpg",
+    "title": "The Tipping Point",
+    "author": "Malcolm Gladwell"
+  },
+  {
+    "link": "http://amzn.eu/g12CsRU",
+    "img": "./images/faust.jpg",
+    "title": "Faust",
+    "author": "J.W. Goethe"
+  },
+  {
+    "link": "http://amzn.eu/i5yfUqr",
+    "img": "./images/signore-mosche.jpg",
+    "title": "Il signore delle mosche",
+    "author": "William Golding"
+  },
+  {
+    "link": "http://a.co/dsZVIsE",
+    "img": "./images/assault-on-reason.jpg",
+    "title": "The Assault on Reason",
+    "author": "Al Gore"
+  },
+  {
+    "link": "http://a.co/5ugr6Gq",
+    "img": "./images/originals.jpg",
+    "title": "Originals",
+    "author": "Adam Grant"
+  },
+  {
+    "link": "http://a.co/d/2bMyK8P",
+    "img": "./images/turtles.jpg",
+    "title": "Turtles All the Way Down",
+    "author": "John Green"
+  },
+  {
+    "link": "http://a.co/dvwiPY7",
+    "img": "./images/sapiens.jpg",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Y. N. Harari"
+  },
+  {
+    "link": "http://a.co/44cOIpG",
+    "img": "./images/homo-deus.jpg",
+    "title": "Homo Deus: A Brief History of Tomorrow",
+    "author": "Y. N. Harari"
+  },
+  {
+    "link": "http://a.co/d/6rDeQnQ",
+    "img": "./images/21lessons.jpg",
+    "title": "21 Lessons for the 21st Century",
+    "author": "Y. N. Harari"
+  },
+  {
+    "link": "http://a.co/aw0Wf29",
+    "img": "./images/history-of-time.jpg",
+    "title": "A Brief History Of Time",
+    "author": "Stephen Hawking"
+  },
+  {
+    "link": "http://a.co/cR2hXcE",
+    "img": "./images/moon-mistress.jpg",
+    "title": "The Moon is a Harsh Mistress",
+    "author": "Robert A. Heinlein"
+  },
+  {
+    "link": "http://a.co/46wd7IX",
+    "img": "./images/brave-new-world.jpg",
+    "title": "Brave New World",
+    "author": "Aldous Huxley"
+  },
+  {
+    "link": "http://amzn.eu/6EDnAHt",
+    "img": "./images/steve-jobs.jpg",
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson"
+  },
+  {
+    "link": "http://amzn.eu/2Xtl9Wu",
+    "img": "./images/remains-of-the-day.jpg",
+    "title": "The Remains of the Day",
+    "author": "Kazuo Ishiguro"
+  },
+  {
+    "link": "http://a.co/eOjTz5N",
+    "img": "./images/peaks-valleys.jpg",
+    "title": "Peaks and Valleys",
+    "author": "Spencer Johnson"
+  },
+  {
+    "link": "http://a.co/iowkCaM",
+    "img": "./images/present.jpg",
+    "title": "The Present",
+    "author": "Spencer Johnson"
+  },
+  {
+    "link": "http://a.co/5568wQD",
+    "img": "./images/cheese.jpg",
+    "title": "Who Moved My Cheese",
+    "author": "Spencer Johnson"
+  },
+  {
+    "link": "http://a.co/gRlWmPi",
+    "img": "./images/tribe.jpg",
+    "title": "Tribe: On Homecoming and Belonging",
+    "author": "Sebastian Junger"
+  },
+  {
+    "link": "http://amzn.eu/brS51fx",
+    "img": "./images/metamorfosi.jpg",
+    "title": "La metamorfosi",
+    "author": "Franz Kafka"
+  },
+  {
+    "link": "http://a.co/53Zwzm6",
+    "img": "./images/thinking-fast-slow.jpg",
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman"
+  },
+  {
+    "link": "http://amzn.eu/1qVYVNh",
+    "img": "./images/blue-ocean.jpg",
+    "title": "Blue Ocean Strategy",
+    "author": "Kim W. Chan"
+  },
+  {
+    "link": "http://amzn.eu/ds6IdsH",
+    "img": "./images/pietro.jpg",
+    "title": "Pietro e la città d'oro",
+    "author": "Ilse Kleberger"
+  },
+  {
+    "link": "http://amzn.eu/aD5BecR",
+    "img": "./images/universe-from-nothing.jpg",
+    "title": "A Universe from Nothing",
+    "author": "Lawrence M. Krauss"
+  },
+  {
+    "link": "http://a.co/fUo5BEm",
+    "img": "./images/dont-think.jpg",
+    "title": "Don't Make Me Think",
+    "author": "Steve Krug"
+  },
+  {
+    "link": "http://amzn.eu/0DYproF",
+    "img": "./images/untethered.jpg",
+    "title": "Untethered",
+    "author": "Jason Lengstorf"
+  },
+  {
+    "link": "http://amzn.eu/eL6mEcZ",
+    "img": "./images/rivoluzione-googl.jpg",
+    "title": "Rivoluzione Google",
+    "author": "Steven Levy"
+  },
+  {
+    "link": "http://amzn.eu/6vThSsm",
+    "img": "./images/gabbiani.jpg",
+    "title": "Vacanze all'isola dei gabbiani",
+    "author": "Astrid Lindgren"
+  },
+  {
+    "link": "http://a.co/8yozzl9",
+    "img": "./images/the-prince.jpg",
+    "title": "The Prince",
+    "author": "Nicolò Machiavelli"
+  },
+  {
+    "link": "http://amzn.eu/6EPybtM",
+    "img": "./images/idi-marzo.jpg",
+    "title": "Idi di Marzo",
+    "author": "V. M. Manfredi"
+  },
+  {
+    "link": "http://amzn.eu/4SXVmmv",
+    "img": "./images/talos.jpg",
+    "title": "Lo scudo di Talos",
+    "author": "V. M. Manfredi"
+  },
+  {
+    "link": "http://amzn.eu/5YAouCR",
+    "img": "./images/partito-comunista.jpg",
+    "title": "Manifesto del partito comunista",
+    "author": "K. Marx and F. Engels"
+  },
+  {
+    "link": "http://amzn.eu/d/fzx6pQ0",
+    "img": "./images/not-smart.jpg",
+    "title": "You Are Not So Smart",
+    "author": "David McRaney"
+  },
+  {
+    "link": "http://amzn.eu/g0cuEtb",
+    "img": "./images/moby-dick.jpg",
+    "title": "Moby Dick",
+    "author": "Herman Melville"
+  },
+  {
+    "link": "http://amzn.eu/aEyugsS",
+    "img": "./images/geografia-lavoro.jpg",
+    "title": "La nuova geografia del lavoro",
+    "author": "Enrico Moretti"
+  },
+  {
+    "link": "http://a.co/5RVoazx",
+    "img": "./images/deep-work.jpg",
+    "title": "Deep Work",
+    "author": "Cal Newport"
+  },
+  {
+    "link": "http://amzn.eu/2Ikpbn1",
+    "img": "./images/digital-minimalism.jpg",
+    "title": "Digital Minimalism",
+    "author": "Cal Newport"
+  },
+  {
+    "link": "http://amzn.eu/faFZS8h",
+    "img": "./images/math-destruction.jpg",
+    "title": "Weapons of Math Destruction",
+    "author": "Cathy O'Neil"
+  },
+  {
+    "link": "http://amzn.eu/6nBSDQd",
+    "img": "./images/odissea.jpg",
+    "title": "Odissea",
+    "author": "Omero"
+  },
+  {
+    "link": "http://amzn.eu/4uY6ikv",
+    "img": "./images/iliade.jpg",
+    "title": "Iliade",
+    "author": "Omero"
+  },
+  {
+    "link": "http://a.co/4my5FfW",
+    "img": "./images/merchants-of-doubt.jpg",
+    "title": "Merchants of Doubt",
+    "author": "Naomi Oreskes et al."
+  },
+  {
+    "link": "http://amzn.eu/iFE1T6v",
+    "img": "./images/1984.jpg",
+    "title": "1984",
+    "author": "George Orwell"
+  },
+  {
+    "link": "http://amzn.eu/ekJgR7a",
+    "img": "./images/animal-farm.jpg",
+    "title": "Animal Farm",
+    "author": "George Orwell"
+  },
+  {
+    "link": "http://amzn.eu/icQzjZz",
+    "img": "./images/uno-nessuno.jpg",
+    "title": "Uno, nessuno e centomila",
+    "author": "Luigi Pirandello"
+  },
+  {
+    "link": "http://amzn.eu/2lkVeX1",
+    "img": "./images/headspace.jpg",
+    "title": "Mindfulness & Meditation",
+    "author": "Puddicombe Andy"
+  },
+  {
+    "link": "http://amzn.eu/ifWvGGk",
+    "img": "./images/fronte-occ.jpg",
+    "title": "Niente di nuovo sul fronte occidentale",
+    "author": "E. M. Remarque"
+  },
+  {
+    "link": "http://a.co/gvDImQl",
+    "img": "./images/lean-startup.jpg",
+    "title": "The Lean Startup",
+    "author": "Eric Ries"
+  },
+  {
+    "link": "http://a.co/a66oG0K",
+    "img": "./images/publicly-shamed.jpg",
+    "title": "So You've Been Publicly Shamed",
+    "author": "Jon Ronson"
+  },
+  {
+    "link": "http://a.co/5Q5hXJi",
+    "img": "./images/psychopath-test.jpg",
+    "title": "The Psychopath Test",
+    "author": "Jon Ronson"
+  },
+  {
+    "link": "http://a.co/fzphrx6",
+    "img": "./images/factfulness.jpg",
+    "title": "Factfulness",
+    "author": "Hans Rosling et al."
+  },
+  {
+    "link": "http://amzn.eu/8CWUFjA",
+    "img": "./images/shortness-life.jpg",
+    "title": "On the Shortness of Life",
+    "author": "Lucius Annaeus Seneca"
+  },
+  {
+    "link": "http://amzn.eu/gh2xTiA",
+    "img": "./images/frankenstein.jpg",
+    "title": "Frankenstein",
+    "author": "Mary Shelley"
+  },
+  {
+    "link": "http://amzn.eu/cMm9IVh",
+    "img": "./images/jekyll-hyde.jpg",
+    "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    "author": "R. L. Stevenson"
+  },
+  {
+    "link": "http://a.co/dh0bGxu",
+    "img": "./images/treasure-island.jpg",
+    "title": "Treasure Island",
+    "author": "R. L. Stevenson"
+  },
+  {
+    "link": "http://a.co/j6DkFqU",
+    "img": "./images/everything-store.jpg",
+    "title": "The Everything Store",
+    "author": "Brad Stone"
+  },
+  {
+    "link": "http://a.co/5F9KYXU",
+    "img": "./images/sun-tzu.jpg",
+    "title": "The Art of War",
+    "author": "Sun Tzu"
+  },
+  {
+    "link": "http://amzn.eu/cNDNQMM",
+    "img": "./images/gulliver.jpg",
+    "title": "Gulliver's Travels",
+    "author": "Jonathan Swift"
+  },
+  {
+    "link": "http://amzn.eu/97RNfKi",
+    "img": "./images/antifragile.jpg",
+    "title": "Antifragile: Prosperare nel disordine",
+    "author": "N. N. Taleb"
+  },
+  {
+    "link": "http://amzn.eu/1aFCngp",
+    "img": "./images/caso.jpg",
+    "title": "Giocati dal caso",
+    "author": "N. N. Taleb"
+  },
+  {
+    "link": "http://amzn.eu/fO0ORKK",
+    "img": "./images/cigno-nero.jpg",
+    "title": "Il Cigno nero",
+    "author": "N. N. Taleb"
+  },
+  {
+    "link": "http://amzn.eu/9Nww2Qn",
+    "img": "./images/tesla.jpg",
+    "title": "My Inventions",
+    "author": "Nikola Tesla"
+  },
+  {
+    "link": "http://a.co/hX0z2dn",
+    "img": "./images/zero-one.jpg",
+    "title": "Zero To One",
+    "author": "Peter Thiel"
+  },
+  {
+    "link": "http://a.co/fN2IKIb",
+    "img": "./images/art-peace.jpg",
+    "title": "The Art of Peace",
+    "author": "Morihei Ueshiba"
+  },
+  {
+    "link": "http://a.co/9KSy4VR",
+    "img": "./images/elon-musk.jpg",
+    "title": "Elon Musk",
+    "author": "Ashlee Vance"
+  },
+  {
+    "link": "http://amzn.eu/5YIJkoO",
+    "img": "./images/eneide.jpg",
+    "title": "Eneide",
+    "author": "Virgilio"
+  },
+  {
+    "link": "http://a.co/9kULI2q",
+    "img": "./images/where-is-everybody.jpg",
+    "title": "WHERE IS EVERYBODY?",
+    "author": "Stephen Webb"
+  },
+  {
+    "link": "http://a.co/0Ts8t0h",
+    "img": "./images/martian.jpg",
+    "title": "The Martian",
+    "author": "Andy Weir"
+  },
+  {
+    "link": "http://amzn.eu/0eQksEG",
+    "img": "./images/educated.jpg",
+    "title": "Educated",
+    "author": "Tara Westover"
+  },
+  {
+    "link": "http://amzn.eu/1G6hiOE",
+    "img": "./images/night.jpg",
+    "title": "Night",
+    "author": "Elie Wiesel"
+  },
+  {
+    "link": "http://a.co/aooTvfh",
+    "img": "./images/dorian-gray.jpg",
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde"
+  },
+  {
+    "link": "http://amzn.eu/8GDybRK",
+    "img": "./images/attention-merchants.jpg",
+    "title": "The Attention Merchants",
+    "author": "Tim Wu"
+  },
+  {
+    "link": "http://a.co/4miXwTR",
+    "img": "./images/malala.jpg",
+    "title": "I Am Malala",
+    "author": "Malala Yousafzai"
+  },
+  {
+    "link": "http://amzn.eu/9flYFcf",
+    "img": "./images/surveillance-capitalism.jpg",
+    "title": "The Age of Surveillance Capitalism",
+    "author": "Shoshana Zuboff"
+  }
+]
