@@ -2,13 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Particles from 'react-particles-js'
 
 import Header from './header'
-import './layout.css'
 
-import Particles from 'react-particles-js';
-import { particlesStyles, particlesConfig } from '../utils';
-
+import GlobalStyles from '../utils/globalStyles'
+import { particlesStyles, particlesConfig } from '../utils'
 import favicon from '../images/favicon.ico'
 
 
@@ -37,6 +36,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+
+        <GlobalStyles />
 
         <Particles
           style={particlesStyles}
