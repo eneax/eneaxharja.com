@@ -1,11 +1,32 @@
 import React from 'react'
-import Layout from '../components/layout'
 import styled from 'styled-components'
 import { FaCodeBranch, FaEnvelope } from 'react-icons/fa'
+
+import Layout from '../components/layout'
+
 import { SocialLink } from '../elements'
 import { above, avenir } from '../utils'
 
 
+const IndexPage = () => (
+  <Layout>
+    <HeaderWrapper>
+      <Header>Hi, I'm Enea!</Header>
+      <SubHeader>Web Developer</SubHeader>
+      <SocialLink href="https://github.com/eneax" aria-label="github" >
+        <FaCodeBranch />
+      </SocialLink>
+      <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
+        <FaEnvelope />
+      </SocialLink>
+    </HeaderWrapper>
+  </Layout>
+)
+
+export default IndexPage
+
+
+// styles
 const HeaderWrapper = styled.header`
   background-color: #fff;
 	text-align: center;
@@ -39,21 +60,3 @@ const SubHeader = styled.h2`
 	margin-top: -.5rem;
   margin-bottom: 1rem;
 `
-
-
-const IndexPage = () => (
-  <Layout>
-    <HeaderWrapper>
-      <Header>Hi, I'm Enea!</Header>
-      <SubHeader>Web Developer</SubHeader>
-      <SocialLink href="https://github.com/eneax" aria-label="github" >
-        <FaCodeBranch />
-      </SocialLink>
-      <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
-        <FaEnvelope />
-      </SocialLink>
-    </HeaderWrapper>
-  </Layout>
-)
-
-export default IndexPage
