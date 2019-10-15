@@ -8,6 +8,19 @@ module.exports = {
     // custom metadata for each page
     'gatsby-plugin-react-helmet',
     {
+      // parses Json files
+      resolve: `gatsby-transformer-json`,
+      option: {
+        typeName: `Json`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
+    {
       // makes images available
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,10 +36,10 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    // creates ImageSharp nodes from image types 
-    `gatsby-transformer-sharp`,
     // exposes several image processing functions built on the Sharp image processing library
     `gatsby-plugin-sharp`,
+    // creates ImageSharp nodes from image types 
+    `gatsby-transformer-sharp`,
     {
       // parses Markdown files using Remark
       resolve: `gatsby-transformer-remark`,
