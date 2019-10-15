@@ -1,10 +1,12 @@
 import React from 'react'
+
 import Layout from '../components/layout'
 import Footer from '../components/footer'
+
 import { Title, Container, SubTitle, UnOrderedList, ExternalLink } from '../elements'
 
 
-const About = () => (
+const Uses = () => (
 	<Layout>
 		<Title>
       <span role="img" aria-label="gears emoji">⚙️ </span>
@@ -45,4 +47,4 @@ const About = () => (
 	</Layout>
 )
 
-export default About
+export default Uses
