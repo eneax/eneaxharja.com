@@ -22,6 +22,7 @@ export const HeadingThree = styled.h3`
 `
 
 export const HeadingSix = styled.h6`
+  margin-top: .5rem;
   margin-bottom: 0;
 	${avenir};
 	font-size: .875rem;
