@@ -8,7 +8,7 @@ import ProjectsList from '../components/projectsList'
 import { Title, Container } from '../elements'
 
 
-const Projects = ({ data }) => {
+const Projects = () => {
   const response = useStaticQuery(getProjectsData)
   const projects = response.allProjectsDataJson.edges
 
