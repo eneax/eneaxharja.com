@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 
 import { ImageWrapper, SubTitle, ExternalLink } from '../elements'
 import { grey } from '../utils'
+import FadeInSection from '../utils/fadeInSection'
 
 
 const FunCard = ({ item }) => {
@@ -11,6 +12,7 @@ const FunCard = ({ item }) => {
 
   return (
     <Fragment>
+      <FadeInSection>
       <ExternalLink href={link}>
         <SubTitle>
           {title}
@@ -27,6 +29,7 @@ const FunCard = ({ item }) => {
       </ImageWrapper>
 
       <p style={{color: `${grey}`}}>{desc}</p>
+      </FadeInSection>
     </Fragment>
   )
 }
