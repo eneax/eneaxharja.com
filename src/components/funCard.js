@@ -13,22 +13,22 @@ const FunCard = ({ item }) => {
   return (
     <Fragment>
       <FadeInSection>
-      <ExternalLink href={link}>
-        <SubTitle>
-          {title}
-        </SubTitle>
-      </ExternalLink>
-
-      <ImageWrapper>
         <ExternalLink href={link}>
-          <Img 
-            fluid={img}
-            alt={`Image of '${title}' project`}
-          />
+          <SubTitle>
+            {title}
+          </SubTitle>
         </ExternalLink>
-      </ImageWrapper>
 
-      <p style={{color: `${grey}`}}>{desc}</p>
+        <ImageWrapper>
+          <ExternalLink href={link}>
+            <Img 
+              fluid={img}
+              alt={`Image of '${title}' project`}
+            />
+          </ExternalLink>
+        </ImageWrapper>
+
+        <p style={{color: `${grey}`}}>{desc}</p>
       </FadeInSection>
     </Fragment>
   )
