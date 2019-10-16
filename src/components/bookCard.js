@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 
 import { ExternalLink, HeadingSix } from '../elements'
 import { above } from '../utils'
+import FadeInSection from '../utils/fadeInSection'
 
 
 const BookCard = ({ book }) => {
@@ -12,6 +13,7 @@ const BookCard = ({ book }) => {
 
   return (
     <Col6Medium4>
+			<FadeInSection>
       <Thumbnail>
         <ExternalLink 
           href={`${link}`} 
@@ -25,6 +27,7 @@ const BookCard = ({ book }) => {
           <p>{author}</p>
         </ExternalLink>
       </Thumbnail>
+			</FadeInSection>
     </Col6Medium4>
   )
 }
