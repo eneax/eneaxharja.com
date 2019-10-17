@@ -2,6 +2,13 @@ import styled from 'styled-components'
 import { above, avenir, purple } from '../utils'
 
 
+export const MainWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 42rem;
+  padding: 2.625rem 1.3125rem;
+`
+
 export const Container = styled.div`
   background-color: #fff;
   ${avenir};
