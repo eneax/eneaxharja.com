@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Enea Xharja - Web Developer',
     description: 'My Own Little Corner of the Web!',
+    author: `@eneax`,
     siteUrl: `https://eneaxharja.com`,
   },
   plugins: [
