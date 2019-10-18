@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 import ProjectsList from '../components/projectsList'
 
@@ -14,6 +15,8 @@ const Projects = () => {
 
   return (
     <Layout>
+      <SEO title='Projects' />
+
       <Title>Projects</Title>
 
       <Container>
