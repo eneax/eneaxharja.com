@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 import FunList from '../components/funList'
 
@@ -14,6 +15,8 @@ const Fun = () => {
 
   return (
     <Layout>
+      <SEO title='Fun' />
+
       <Title>
         <span role="img" aria-label="party emoji">🥳 </span>
         Fun
