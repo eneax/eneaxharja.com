@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FaCodeBranch, FaEnvelope } from 'react-icons/fa'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 import { SocialLink } from '../elements'
 import { above, avenir } from '../utils'
@@ -10,6 +11,8 @@ import { above, avenir } from '../utils'
 
 const IndexPage = () => (
   <Layout>
+    <SEO title='Home' />
+
     <HeaderWrapper>
       <Header>Hi, I'm Enea!</Header>
       <SubHeader>Web Developer</SubHeader>
