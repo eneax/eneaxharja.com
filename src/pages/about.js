@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 
 import { Title, Container, ExternalLink, InternalLink } from '../elements'
@@ -8,6 +9,8 @@ import { Title, Container, ExternalLink, InternalLink } from '../elements'
 
 const About = () => (
 	<Layout>
+		<SEO title='About' />
+
 		<Title>About</Title>
 
 		<Container>
