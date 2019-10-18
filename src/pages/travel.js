@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 import TravelsList from '../components/travelsList'
 
@@ -14,6 +15,8 @@ const Travel = () => {
 
   return (
     <Layout>
+      <SEO title='️Travel' />
+
       <Title>
         <span role="img" aria-label="landscape emoji">🏞 </span>
         ️Travel
