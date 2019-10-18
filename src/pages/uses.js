@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 
 import { Title, Container, SubTitle, UnOrderedList, ExternalLink } from '../elements'
@@ -8,6 +9,8 @@ import { Title, Container, SubTitle, UnOrderedList, ExternalLink } from '../elem
 
 const Uses = () => (
 	<Layout>
+    <SEO title='Uses' />
+
 		<Title>
       <span role="img" aria-label="gears emoji">⚙️ </span>
       Uses
