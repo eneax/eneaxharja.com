@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 import BookList from '../components/bookList'
 
@@ -14,6 +15,8 @@ const Library = () => {
 
   return (
     <Layout>
+      <SEO title='Library' />
+
       <Title>
 				<span role="img" aria-label="books emoji">📚 </span>
 				Library
