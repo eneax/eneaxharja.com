@@ -2,6 +2,7 @@ import React from 'react'
 import { FaCloudDownloadAlt } from 'react-icons/fa'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 
 import { Title, SubTitle, HeadingThree, Container, ExternalLink, UnOrderedList, SocialLink, HR } from '../elements'
@@ -10,6 +11,8 @@ import { DateTime } from '../utils'
 
 const Resume = () => (
 	<Layout>
+    <SEO title='Resume' />
+
     <Title>
       Resume
         <SocialLink
