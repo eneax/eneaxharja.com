@@ -33,6 +33,7 @@ const Uses = () => (
         <li><ExternalLink href="https://hyper.is/">Hyper.js</ExternalLink> with "<ExternalLink href="https://ohmyz.sh/">Oh My ZSH!</ExternalLink>"</li>
         <li>You can see my config files over at my <ExternalLink href="https://github.com/eneax/dotfiles">Dot Files</ExternalLink> repo</li>
         <li><ExternalLink href="https://www.alfredapp.com/">Alfred App</ExternalLink></li>
+        <li><ExternalLink href="https://www.lastpass.com/">LastPass</ExternalLink></li>
       </UnOrderedList>
 
       <SubTitle>Chrome Extensions</SubTitle>
@@ -43,6 +44,7 @@ const Uses = () => (
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon">Redux DevTools</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?utm_source=chrome-ntp-icon">JSONView</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?utm_source=chrome-ntp-icon">uBlock Origin</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?utm_source=chrome-ntp-icon">LastPass</ExternalLink></li>
       </UnOrderedList>
 		</Container>
 
