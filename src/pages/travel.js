@@ -18,8 +18,7 @@ const Travel = () => {
       <SEO title='️Travel' />
 
       <Title>
-        <span role="img" aria-label="landscape emoji">🏞 </span>
-        ️Travel
+        <span role="img" aria-label="landscape emoji">🏞 </span>Travel
       </Title>
 
       <Container>
