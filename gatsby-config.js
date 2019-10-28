@@ -79,6 +79,7 @@ module.exports = {
         sitemap: 'https://eneaxharja.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    `gatsby-plugin-page-progress`,
   ],
 }
