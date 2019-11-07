@@ -30,10 +30,20 @@ const Resume = () => (
       <HR />
 
       <HeadingThree>
+        Junior JavaScript Engineer, blogfoster - Berlin (Germany)
+      </HeadingThree>
+      <DateTime style={{marginBottom: '1.45rem'}}>
+        11/2019 – Present
+      </DateTime>
+      <UnOrderedList>
+        <li>Using JavaScript and the React ecosystem to build technology that helps professional bloggers and social media influencers analyse, manage and effectively monetize their reach.</li>
+      </UnOrderedList>
+
+      <HeadingThree>
         Web Developer, Freelance
       </HeadingThree>
       <DateTime style={{marginBottom: '1.45rem'}}>
-        10/2017 – Present
+        10/2017 – 10/2019
       </DateTime>
       <UnOrderedList>
         <li>Designed and developed a responsive <ExternalLink href='https://gatsby-landing-page-arty.netlify.com'>landing page</ExternalLink> built with Gatsby, CSS Grid, styled-components, GraphQL and Contentful</li>
