@@ -4,7 +4,7 @@ date: "2018-12-29"
 title: "📚 My Reading List for 2018"
 ---
 
-A year ago I promised to myself that I would have spent my free time reading paper books instead of wasting it browsing the internet and reading online news.
+A year ago I promised to myself that I would have spent my free time reading books instead of wasting it browsing the internet and reading online news.
 
 If you are looking for a book to read for next year or you just like giving or receiving gifts that do not require batteries, in this list you will find a large category of books and my favorite quotes from each of them.
 
