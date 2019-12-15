@@ -15,17 +15,17 @@
     "link": "https://www.youtube.com/user/CGPGrey/videos",
     "title": "CGP Grey",
     "img": "./images/cgpGrey.png",
-    "desc": "Grey\"s YouTube channel is characterized by short explanatory videos on different subjects, from politics to geography, economics, history, and culture."
+    "desc": "Grey's YouTube channel is characterized by short explanatory videos on different subjects, from politics to geography, economics, history, and culture."
   },
   {
     "link": "https://www.ynharari.com",
-    "title": "Yuval Noah Harari\"s Blog",
+    "title": "Yuval Noah Harari's Blog",
     "img": "./images/harari.jpeg",
     "desc": "Prof. Yuval Noah Harari is the bestselling author of Sapiens: A Brief History of Humankind, Homo Deus: A Brief History of Tomorrow, and 21 Lessons for the 21st Century."
   },
   {
     "link": "http://calnewport.com",
-    "title": "Cal Newport\"s Blog",
+    "title": "Cal Newport's Blog",
     "img": "./images/newport.jpg",
     "desc": "Cal writes about the intersection of technology and society. He focuses on the impact of new technologies on our ability to perform productive work, as well as on our ability to lead interesting and satisfying lives."
   },
@@ -46,11 +46,5 @@
     "title": "React.js Newsletter",
     "img": "./images/reactjs.png",
     "desc": "The free, weekly newsletter of the best React news, articles, projects, and more - brought to you by Tyler McGinnis."
-  },
-  {
-    "link": "https://www.gatsbyjs.org/newsletter/",
-    "title": "Gatsby Newsletter",
-    "img": "./images/gatsby.png",
-    "desc": "Keep up with the latest from the Gatsby community! Hear about new features, tips & tricks, and what people are building."
   }
 ]
