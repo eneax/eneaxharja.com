@@ -46,5 +46,11 @@
     "title": "React Status Newsletter",
     "img": "./images/reactStatuscode.png",
     "desc": "A weekly roundup of the latest React and React Native links and tutorials."
+  },
+  {
+    "link": "https://css-tricks.com/newsletters",
+    "title": "CSS Tricks Newsletter",
+    "img": "./images/cssTricks.png",
+    "desc": "A weekly newsletter with the most interesting and relevant news in web design and development."
   }
 ]
