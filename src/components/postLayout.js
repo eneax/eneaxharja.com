@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from './layout'
 import Footer from './footer'
@@ -9,23 +10,21 @@ import { DateTime, formatReadingTime } from '../utils'
 
 export default class PostLayout extends Component {
   render() {
-    const { markdownRemark } = this.props.data
+    const { mdx } = this.props.data
 
     return (
 			<Layout>
 				<Title style={{marginBottom: '0'}}>
-					{markdownRemark.frontmatter.title}
+					{mdx.frontmatter.title}
         </Title>
 
 				<BlogPostContent>
           <DateTime>
-            {markdownRemark.frontmatter.date}
-              {` • ${formatReadingTime(markdownRemark.timeToRead)}`}
+            {mdx.frontmatter.date}
+              {` • ${formatReadingTime(mdx.timeToRead)}`}
           </DateTime>
-          <div 
-            dangerouslySetInnerHTML={{
-						__html: markdownRemark.html
-					}} />
+
+          <MDXRenderer>{mdx.body}</MDXRenderer>
 				</BlogPostContent>
 				<Footer />
 			</Layout>
@@ -35,12 +34,12 @@ export default class PostLayout extends Component {
 
 export const query = graphql`
   query PostQuery($slug: String!) {
-    markdownRemark(frontmatter: {
+    mdx(frontmatter: {
       slug: {
         eq: $slug
       }
     }) {
-      html
+      body
       timeToRead
       frontmatter {
         title

@@ -12,8 +12,8 @@ const PostList = () => (
 
     <StaticQuery
       query={POST_LIST_QUERY}
-      render={({ allMarkdownRemark }) => (
-        allMarkdownRemark.edges.map(({ node }) => (
+      render={({ allMdx }) => (
+        allMdx.edges.map(({ node }) => (
           <Fragment key={node.frontmatter.slug}>
             <Container>
               <FadeInSection>
@@ -44,7 +44,7 @@ export default PostList
 // graphql query
 const POST_LIST_QUERY = graphql`
   query BlogPostListing { 
-    allMarkdownRemark(sort: {
+    allMdx(sort: {
       order: DESC
       fields:[frontmatter___date]
     }) {

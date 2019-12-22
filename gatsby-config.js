@@ -43,9 +43,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       // parses Markdown files using Remark
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        gatsbyRemarkPlugins: [
           {
             // parses Markdown images using Remark
             resolve: `gatsby-remark-images`,
