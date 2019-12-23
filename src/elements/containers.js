@@ -67,6 +67,14 @@ export const BlogPostContent = styled(Container)`
   blockquote {
     margin-bottom: 3.5rem;
   }
+
+  .gatsby-resp-image-wrapper {
+    a.gatsby-resp-image-link {
+      span.gatsby-resp-image-background-image {
+        display: none !important;
+      }
+    }
+  }
 `
 
 export const ImageWrapper = styled.div`
