@@ -25,6 +25,16 @@ export const Container = styled.div`
 `
 
 export const BlogPostContent = styled(Container)`
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
   p {
     margin-bottom: 1.45rem;
   }
@@ -44,13 +54,18 @@ export const BlogPostContent = styled(Container)`
   }
 
   hr {
-    margin-top: 1.45rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     border: 0; 
     height: 1px; 
     background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  }
+
+  blockquote {
+    margin-bottom: 3.5rem;
   }
 `
 
