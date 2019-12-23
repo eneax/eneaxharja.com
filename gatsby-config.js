@@ -42,7 +42,7 @@ module.exports = {
     // creates ImageSharp nodes from image types 
     `gatsby-transformer-sharp`,
     {
-      // parses Markdown files using Remark
+      // parses Markdown files using MDX
       resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
