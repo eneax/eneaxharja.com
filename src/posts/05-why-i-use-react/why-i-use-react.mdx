@@ -1,17 +1,15 @@
 ---
-slug: "/why-i-use-react"
-date: "2019-10-11"
-title: "⚛️ Why I use React"
+slug: '/why-i-use-react'
+date: '2019-10-11'
+title: '⚛️ Why I use React'
 ---
 
 React is my tool of choice for building modern web apps.
 Before exploring a couple of reasons why to use React, let's talk about what actually is React.
 
-
 ## What is React?
 
 React is a library for building user interfaces. There are also other JavaScript libraries out there, but in my opinion, what makes React special are the following features: composition, unidirectional dataflow, declarative UI, 'just JavaScript' and the entire ecosystem behind the library.
-
 
 ## Component Composition
 
@@ -42,9 +40,9 @@ In React, we can use the same approach, but instead of getting a value in return
 
 ```
 function ProfilePic (props) {
- return (
-   <img src={`https://pic.github.com/ + ${props.username}`} />
- )
+  return (
+    <img src={`https://pic.github.com/ + ${props.username}`} />
+  )
 }
 
 function ProfileUrl (props) {
@@ -67,7 +65,6 @@ function Avatar(props) {
 
 With a given set of inputs, the output (how the component looks on the page) will always be the same.
 
-
 ## Unidirectional Dataflow
 
 React was built with the idea of **one-way data flow**, which means that data changes come from the **top** of the app and are propagated **downwards** through its various components.
@@ -78,7 +75,6 @@ Instead of the source of truth of the state of your app living inside of the DOM
 So we can decide when the state should change and how to the UI should change when the state changes.
 
 Basically, the UI updates only if the state updates, according to what is called one-way dataflow.
-
 
 ## Declarative UI
 
@@ -104,13 +100,12 @@ function double (arr) {
 }
 ```
 
-
 ## Just JavaScript
 
-Although this is a debatable topic for developers, if one looks at the React API, it is obvious that there isn't much API to remember. 
+Although this is a debatable topic for developers, if one looks at the React API, it is obvious that there isn't much API to remember.
 Plus, the React team doesn't want to recreate functionalities that you can already do in JavaScript. If you remember, this is something that jQuery does: for instance when selecting a DOM element in order to modify it.
 
-For instance, if you want to loop over an array of cars, with React, you’d use JavaScript’s `.map()` method: 
+For instance, if you want to loop over an array of cars, with React, you’d use JavaScript’s `.map()` method:
 
 ```
 const cars = ['Mercedes', 'BMW', 'Tesla']
@@ -131,15 +126,13 @@ Then, you have to consider how to style your app, use or not to use css-in-js an
 
 Let's now have a look on how all these pieces fit together.
 
-
 ### JSX
 
 The idea behind JSX (**JavaScript Syntax Extension**) is to represent our React component tree using markup, like we would normally do in HTML.
 JSX produces React “elements” and we use it to describe what the UI should look like.
 
-When using JSX, there is one thing that we need to keep in mind: *browsers don't know how to read JSX*.
-For this reason, we must pass our code through a compiler (like Babel), which will transform our code into JavaScript (*transpiled code*).
-
+When using JSX, there is one thing that we need to keep in mind: _browsers don't know how to read JSX_.
+For this reason, we must pass our code through a compiler (like Babel), which will transform our code into JavaScript (_transpiled code_).
 
 ### Babel
 
@@ -148,11 +141,9 @@ It allows developers to use the latest features of JavaScript, while making sure
 
 A great feature of Babel is that it understands JSX. We need to instruct the browser that we want to use Babel to compile and run our Javascript code and Babel will compile our JSX into vanilla ES5 that our browser can interpret and execute.
 
-
 ### Webpack
 
 Webpack is a module bundler. Instead of importing the scripts in the index.html, it bundles together all our modules in order to create a single file that the browser can read.
-
 
 ### Routing
 
@@ -178,7 +169,6 @@ The job of a router is to render specific components based on the current Url.
 ```
 
 If the user is in the home page ('/'), the router will render the Home component. When the user visits the '/about', the router will render the About component.
-
 
 ### Styling
 
@@ -223,7 +213,6 @@ While the idea behind React is to build small individual components that manage 
 Despite being created with different philosophies in mind, React and Redux have been used frequently together in the last 2-3 years.
 More recently, with the new features added to React (i.e. Hooks), developers are starting to realize that Redux is not always necessary in a React application and you may never need Redux, unless working on some big application with several moving parts.
 
-
 ## Conclusion
 
 Many applications and tools have been built using React or on top of React. For instance, we have my favorite open source framework Gatsby.js, based on React that allows developers to build blazing fast websites and apps and Styled Components, which helps developers to style apps, while using the best of ES6 and CSS.
@@ -233,7 +222,7 @@ Moreover, the React community is always welcoming newcomers and ready to help. I
 
 If you are interested in getting started with React or simply want to keep up with the ecosystem, check the following links:
 
-* [React.js Official Documentation](https://reactjs.org)
-* [React.js Newsletter](http://reactjsnewsletter.com)
-* [React.js Subreddit](https://www.reddit.com/r/reactjs)
-* [React.js Spectrum Community](https://spectrum.chat/react?tab=posts)
+- <a href='https://reactjs.org' target='_blank'>React.js Official Documentation</a>
+- <a href='http://reactjsnewsletter.com' target='_blank'>React.js Newsletter</a>
+- <a href='https://www.reddit.com/r/reactjs' target='_blank'>React.js Subreddit</a>
+- <a href='https://spectrum.chat/react?tab=posts' target='_blank'>React.js Spectrum Community</a>
