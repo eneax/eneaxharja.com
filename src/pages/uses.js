@@ -23,7 +23,7 @@ const Uses = () => (
       <UnOrderedList>
         <li>MacBook Pro (15-inch, 2016)</li>
         <li>Google Pixel 3a</li>
-        <li>Kindle (7th Generation)</li>
+        <li>Kindle (10th Generation)</li>
       </UnOrderedList>
 
       <SubTitle>Desktop Apps</SubTitle>
