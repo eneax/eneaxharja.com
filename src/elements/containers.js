@@ -75,6 +75,11 @@ export const BlogPostContent = styled(Container)`
       }
     }
   }
+
+  /* Specific Post styles */
+  .fundamentals-quote {
+    margin-top: 3rem;
+  }
 `
 
 export const ImageWrapper = styled.div`
