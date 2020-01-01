@@ -20,7 +20,7 @@ const Projects = () => {
       <Title>Projects</Title>
 
       <Container>
-        <p>Explore some of my favorite projects I've worked on over the last few months.</p>
+        <p>Explore some of my favorite open-source projects I've worked on over the last few months.</p>
         <ProjectsList projects={projects} />
       </Container>
 

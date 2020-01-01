@@ -22,7 +22,7 @@
     "title": "🏛 Portfolio Website",
     "img": "./images/kri-portfolio-website.png",
     "desc": "Clean and minimal portfolio website built with Gatsby and styled with styled-components."
-  },  
+  },
   {
     "link": "https://github.com/eneax/minimal-blog",
     "title": "🖋 Minimal Blog",
@@ -46,12 +46,6 @@
     "title": "🌞 Weather App",
     "img": "./images/weatherApp.png",
     "desc": "A functioning Weather app built with React and Open Weather API."
-  },
-  {
-    "link": "https://github.com/eneax/github-battle",
-    "title": "⚔️ Github Battle",
-    "img": "./images/github-battle.png",
-    "desc": "Discover popular repos and battle your Github friends."
   },
   {
     "link": "https://github.com/eneax/resume-theme",
