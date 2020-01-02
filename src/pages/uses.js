@@ -41,7 +41,7 @@ const Uses = () => (
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon">Redux DevTools</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?utm_source=chrome-ntp-icon">JSONView</ExternalLink></li>
         <li><ExternalLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?utm_source=chrome-ntp-icon">uBlock Origin</ExternalLink></li>
-        <li><ExternalLink href="https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?utm_source=chrome-ntp-icon">LastPass</ExternalLink></li>
+        <li><ExternalLink href="https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?utm_source=chrome-ntp-icon">1Password X</ExternalLink></li>
       </UnOrderedList>
 		</Container>
 
