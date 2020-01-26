@@ -1,8 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
-import { above, avenir, grey } from '../utils';
+import { FaCodeBranch, FaEnvelope } from 'react-icons/fa'
 
+import { above, avenir, grey } from '../utils'
+import { SocialLink } from '../elements'
+
+
+const Footer = () => (
+	<FooterWrapper>
+		<FooterTextWrapper>
+			<small>© {new Date().getFullYear()} <b>Enea Xharja</b>, All Rights Reserved</small>
+		</FooterTextWrapper>
+
+		<FooterLinksWrapper>
+			<SocialLink href="https://github.com/eneax" aria-label="github">
+				<FaCodeBranch />
+			</SocialLink>
+			<SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
+				<FaEnvelope />
+			</SocialLink>
+		</FooterLinksWrapper>
+	</FooterWrapper>
+)
+
+export default Footer
+
+
+// styles
 const FooterWrapper = styled.footer`
+	margin: 1rem auto 0;
+`
+
+const FooterTextWrapper = styled.div`
+	display: flex;
+	justify-content: center;
 	${avenir};
 	color: ${grey};
 	${above.tablet`
@@ -14,16 +45,16 @@ const FooterWrapper = styled.footer`
   	padding-right: 8rem;
 	`}
 	small {
-		display: block;
 		font-size: .75rem;
-		text-align: center;
 	}
 `
 
-const Footer = () => (
-	<FooterWrapper>
-		<small>© {new Date().getFullYear()} <b>Enea Xharja</b>, All Rights Reserved</small>
-	</FooterWrapper>
-)
+const FooterLinksWrapper = styled.div`
+	margin: 0 auto;
+	text-align: center;
 
-export default Footer
+	a {
+		font-size: .5rem;
+		margin-bottom: 0;
+	}
+`

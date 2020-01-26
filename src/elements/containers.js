@@ -6,7 +6,7 @@ export const MainWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 42rem;
-  padding: 2.625rem 1.3125rem;
+  padding: 1rem 1.3125rem;
 `
 
 export const Container = styled.div`
