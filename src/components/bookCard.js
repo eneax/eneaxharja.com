@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import { ExternalLink, HeadingSix } from '../elements'
+import { ExternalLink } from '../elements'
 import { above } from '../utils'
 import FadeInSection from '../utils/fadeInSection'
 
 
 const BookCard = ({ book }) => {
-  const { link, title, author } = book
+  const { link, title } = book
   const img = book.img.childImageSharp.fluid
 
   return (
@@ -17,14 +17,11 @@ const BookCard = ({ book }) => {
       <Thumbnail>
         <ExternalLink 
           href={`${link}`} 
-          style={{textDecoration: 'none'}} 
         >
           <Img 
             fluid={img}
             alt={`${title} Pic`}
           />
-          <HeadingSix>{title}</HeadingSix>
-          <p>{author}</p>
         </ExternalLink>
       </Thumbnail>
 			</FadeInSection>
