@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaCodeBranch, FaEnvelope } from 'react-icons/fa'
+import { MdCode, MdMailOutline } from 'react-icons/md'
 
-import { above, avenir, grey } from '../utils'
+import { above, avenir, darkTheme } from '../utils'
 import { SocialLink } from '../elements'
 
 
@@ -14,10 +14,10 @@ const Footer = () => (
 
 		<FooterLinksWrapper>
 			<SocialLink href="https://github.com/eneax" aria-label="github">
-				<FaCodeBranch />
+				<MdCode />
 			</SocialLink>
 			<SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
-				<FaEnvelope />
+				<MdMailOutline />
 			</SocialLink>
 		</FooterLinksWrapper>
 	</FooterWrapper>
@@ -35,7 +35,7 @@ const FooterTextWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	${avenir};
-	color: ${grey};
+	color: ${darkTheme.textLighter};
 	${above.tablet`
 		padding-left: 4rem;
 		padding-right: 4rem;

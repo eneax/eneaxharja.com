@@ -1,34 +1,29 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { purple, mineShaft } from '../utils'
+import { darkTheme } from '../utils'
+
+export const styledLink = `
+  text-decoration: underline;
+  text-decoration-color: ${darkTheme.primary};
+  color: ${darkTheme.text};
+  &:hover {
+    transition: color .05s easeIn;
+  }
+  &:hover,
+  &:focus {
+    color: ${darkTheme.primary};
+  }
+`
 
 export const ExternalLink = styled.a.attrs({
   target: '_blank',
   rel: 'noopener'
 })`
-  text-decoration: underline;
-  color: #000;
-  &:hover {
-    text-decoration: none;
-    transition: color .05s ease-in;
-  }
-  &:hover,
-  &:focus {
-    color: ${purple};
-  }
+  ${styledLink}
 `
 
 export const InternalLink = styled(Link)`
-  text-decoration: underline;
-  color: #000;
-  &:hover {
-    text-decoration: none;
-    transition: color .05s ease-in;
-  }
-  &:hover,
-  &:focus {
-    color: ${purple};
-  }
+  ${styledLink}
 `
 
 export const SocialLink = styled.a.attrs({
@@ -51,8 +46,36 @@ export const SocialLink = styled.a.attrs({
   vertical-align: middle;
   padding: .5rem .5rem;
 	margin-bottom: 1rem;
-  color: ${mineShaft};
+  border-color: ${darkTheme.primary};
 	svg {
 		font-size: 2em;
+    color: ${darkTheme.text};
 	}
+`
+
+export const HoverUnderlineLink = styled(Link)`
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: ${darkTheme.primary};
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    background-color: ${darkTheme.primary};
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover {
+    cursor: pointer;
+
+    &::after {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+  }
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCloudDownloadAlt } from 'react-icons/fa'
+import { MdCloudDownload } from 'react-icons/md'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -19,7 +19,7 @@ const Resume = () => (
           style={{marginTop: '1rem'}}
           href='https://drive.google.com/open?id=1gIoe1TdJHsEGCV07QAmBgRlRxMNeTF9t'
         >
-          <FaCloudDownloadAlt />
+          <MdCloudDownload />
       </SocialLink>
     </Title>
 

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { purple } from '../utils'
+import { darkTheme } from '../utils'
 
 export const UnOrderedList = styled.ul`
   list-style: none;
   li::before {
     content: '\\2022';
-    color: ${purple};
+    color: ${darkTheme.primary};
     font-weight: 900;
     display: inline-block;
     width: 1em;

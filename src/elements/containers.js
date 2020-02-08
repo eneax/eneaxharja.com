@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { above, avenir, purple } from '../utils'
+import { above, avenir, darkTheme } from '../utils'
+import { styledLink } from '../elements'
 
 
 export const MainWrapper = styled.div`
@@ -10,10 +11,11 @@ export const MainWrapper = styled.div`
 `
 
 export const Container = styled.div`
-  background-color: #fff;
+  background-color: ${darkTheme.body};
+  color: ${darkTheme.text};
   ${avenir};
   font-size: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 4rem;
   ${above.tablet`
 		font-size: 1.5rem;
@@ -21,6 +23,8 @@ export const Container = styled.div`
   
   p {
     margin-bottom: 0;
+    font-weight: 400;
+    line-height: 2rem;
   }
 `
 
@@ -40,32 +44,41 @@ export const BlogPostContent = styled(Container)`
   }
 
   a {
-    margin-bottom: 1.45rem;
-    text-decoration: underline;
-    color: #000;
-    &:hover {
-      text-decoration: none;
-      transition: color .05s ease-in;
-    }
-    &:hover,
-    &:focus {
-      color: ${purple};
-    }
+    ${styledLink};
   }
 
   hr {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    border: 0; 
-    height: 1px; 
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+    width: 30%;
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    margin: 4rem auto;
+
+    &:after {
+      content: "§";
+      display: inline-block;
+      position: relative;
+      top: -2em;
+      font-size: .5em;
+      padding: 0 0.25em;
+      color: ${darkTheme.textLighter};
+    }
   }
 
-  blockquote {
-    margin-bottom: 3.5rem;
+  blockquote, pre {
+    background-color: ${darkTheme.bodyLighter};
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 4px inset;
+    padding: 1rem;
+    margin: 2rem 0 3.5rem 0;
+
+    p {
+      padding: 1rem;
+      margin-bottom: 0;
+    }
   }
 
   .gatsby-resp-image-wrapper {
@@ -75,17 +88,12 @@ export const BlogPostContent = styled(Container)`
       }
     }
   }
-
-  /* Specific Post styles */
-  .fundamentals-quote {
-    margin-top: 3rem;
-  }
 `
 
 export const ImageWrapper = styled.div`
 	margin-bottom: .75rem;
 	img {
-		border: 1px solid #e7e7e7;
+		border: 1px solid rgba(255, 255, 255, 0.2);
 		border-radius: .25rem !important;
 	}
 `

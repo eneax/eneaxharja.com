@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { osloGrey } from '../utils'
+import { darkTheme } from '../utils'
 
 
 export const DateTime = styled.p`
@@ -7,7 +7,7 @@ export const DateTime = styled.p`
   font-style: italic;
   font-weight: 500;
   margin-top: .25rem;
-  color: ${osloGrey};
+  color: ${darkTheme.textLighter};
 `
 
 export function formatReadingTime(minutes) {

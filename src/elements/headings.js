@@ -1,8 +1,9 @@
 import styled from 'styled-components'
-import { avenir } from '../utils'
+import { avenir, darkTheme } from '../utils'
 
 
 export const Title = styled.h1`
+  color: ${darkTheme.text};
   ${avenir};
   font-weight: 900;
   margin-bottom: 2rem;
@@ -10,7 +11,9 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   ${avenir};
-	font-weight: 500;
+  letter-spacing: -.0625rem;
+  line-height: 2rem;
+  font-weight: 700;
 	margin-top: 2rem;
   margin-bottom: .5rem;
 `

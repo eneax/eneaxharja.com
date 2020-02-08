@@ -1,10 +1,28 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import logo from '../images/logo.svg'
-import { above, avenir, purple } from '../utils'
+
+import logo from '../images/logoDark.svg'
+import { above, avenir, darkTheme } from '../utils'
 
 
+const Header = () => (
+  <Navbar>
+		<Link className="logo" to='/' title='Home'>
+			<img src={logo} alt='Enea Xharja Logo'/>
+		</Link>
+		<NavLinkWrapper>
+			<Link to='/about' title='About'>About</Link>
+			<Link to='/posts' title='Blog'>Blog</Link>
+			<Link to='/projects' title='Projects'>Projects</Link>
+		</NavLinkWrapper>
+	</Navbar>	
+)
+
+export default Header
+
+
+// styles
 const Navbar = styled.nav`
   display: table;
   width: 100%;
@@ -14,10 +32,10 @@ const Navbar = styled.nav`
   padding: 2.625rem 1.3125rem .625rem 1.3125rem;
   box-sizing: border-box;
 	${avenir};
-	background-color: #fff;
+	background-color: ${darkTheme.body};
 
   a {
-		color: #000;
+		color: ${darkTheme.text};
 		font-weight: 900;
 		display: table-cell;
 		vertical-align: middle;
@@ -28,7 +46,7 @@ const Navbar = styled.nav`
 		}
 		&:hover,
 		&:focus {
-			color: ${purple};
+			color: ${darkTheme.text};
 		}
 
 		img {
@@ -36,7 +54,7 @@ const Navbar = styled.nav`
 			width: 2rem;
 			height: 2rem;
 			border-radius: 100%;
-			border: 1px solid black;
+			border: 1px solid ${darkTheme.text};
 			margin-top: -0.2rem;
 			transition: transform .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			&:hover { 
@@ -62,19 +80,3 @@ const NavLinkWrapper = styled.div`
     margin-right: 1rem;
   }
 `
-
-
-const Header = () => (
-  <Navbar>
-		<Link className="logo" to='/' title='Home'>
-			<img src={logo} alt='Enea Xharja Logo'/>
-		</Link>
-		<NavLinkWrapper>
-			<Link to='/about' title='About'>About</Link>
-			<Link to='/posts' title='Blog'>Blog</Link>
-			<Link to='/projects' title='Projects'>Projects</Link>
-		</NavLinkWrapper>
-	</Navbar>	
-)
-
-export default Header

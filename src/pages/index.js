@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaCodeBranch, FaEnvelope } from 'react-icons/fa'
+import { MdCode, MdMailOutline } from 'react-icons/md'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import { SocialLink } from '../elements'
-import { above, avenir } from '../utils'
+import { above, avenir, darkTheme } from '../utils'
 
 
 const IndexPage = () => (
@@ -16,11 +16,12 @@ const IndexPage = () => (
     <HeaderWrapper>
       <Header>Hi, I'm Enea!</Header>
       <SubHeader>Web Developer</SubHeader>
+      
       <SocialLink href="https://github.com/eneax" aria-label="github" >
-        <FaCodeBranch />
+        <MdCode />
       </SocialLink>
       <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
-        <FaEnvelope />
+        <MdMailOutline />
       </SocialLink>
     </HeaderWrapper>
   </Layout>
@@ -31,7 +32,8 @@ export default IndexPage
 
 // styles
 const HeaderWrapper = styled.header`
-  background-color: #fff;
+  background-color: ${darkTheme.body};
+  color: ${darkTheme.text};
 	text-align: center;
 	margin: 6rem auto 2rem auto;
   padding-top: 2rem;

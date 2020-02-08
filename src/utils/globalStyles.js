@@ -1,7 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
+import { darkTheme } from './colors'
 
 const GlobalStyles = createGlobalStyle`
-  ::selection { background: #ab98d0; }
+  ::selection { 
+    background: ${darkTheme.primaryLighter}; 
+  }
 
   /* Fade-In Animation */
   .fade-in-section {
@@ -26,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
   }
   body {
+    background-color: ${darkTheme.body};
+    color: ${darkTheme.text};
     margin: 0;
   }
   article,

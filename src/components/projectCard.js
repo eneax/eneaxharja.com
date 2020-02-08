@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
 
 import { ImageWrapper, SubTitle, ExternalLink } from '../elements'
-import { grey } from '../utils'
 import FadeInSection from '../utils/fadeInSection'
 
 
@@ -28,7 +27,7 @@ const ProjectCard = ({ project }) => {
           </ExternalLink>
         </ImageWrapper>
 
-        <p style={{color: `${grey}`}}>{desc}</p>
+        <p>{desc}</p>
       </FadeInSection>
     </Fragment>
   )
