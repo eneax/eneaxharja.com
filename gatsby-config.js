@@ -62,8 +62,8 @@ module.exports = {
         name: 'Enea Xharja - Web Developer',
         short_name: 'Enea Xharja',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#3ddc84',
+        theme_color: '#3ddc84',
         display: 'minimal-ui',
         icon: 'src/images/logo.svg', // This path is relative to the root of the site.
       },
@@ -80,6 +80,5 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    `gatsby-plugin-page-progress`,
   ],
 }
