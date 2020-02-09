@@ -80,6 +80,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
+    // Enables RSS Feed
     {
       resolve: `gatsby-plugin-feed-mdx`,
       options: {
@@ -102,8 +103,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + "/blog" + edge.node.frontmatter.slug,
-                  guid: site.siteMetadata.siteUrl + "/blog" + edge.node.frontmatter.slug,
+                  url: site.siteMetadata.siteUrl + "/posts" + edge.node.frontmatter.slug,
+                  guid: site.siteMetadata.siteUrl + "/posts" + edge.node.frontmatter.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }]
                 });
               });
@@ -134,7 +135,7 @@ module.exports = {
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            match: "^/blog/"
+            match: "^/posts/"
           }
         ]
       }
