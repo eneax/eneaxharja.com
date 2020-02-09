@@ -9,7 +9,6 @@
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.16",
     "gatsby-image": "^2.2.24",
-    "gatsby-plugin-feed-mdx": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.20",
     "gatsby-plugin-mdx": "^1.0.64",
     "gatsby-plugin-offline": "^2.2.10",
