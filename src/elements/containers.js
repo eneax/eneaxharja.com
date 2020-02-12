@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { above, avenir, darkTheme } from '../utils'
-import { styledLink } from '../elements'
+import { styledLink, customHr } from '../elements'
 
 
 export const MainWrapper = styled.div`
@@ -48,24 +48,7 @@ export const BlogPostContent = styled(Container)`
   }
 
   hr {
-    width: 30%;
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-    margin: 4rem auto;
-
-    &:after {
-      content: "§";
-      display: inline-block;
-      position: relative;
-      top: -2em;
-      font-size: .5em;
-      padding: 0 0.25em;
-      color: ${darkTheme.textLighter};
-    }
+    ${customHr};
   }
 
   blockquote, pre {

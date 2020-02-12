@@ -32,6 +32,7 @@ export default class PostLayout extends Component {
   }
 }
 
+// graphql query
 export const query = graphql`
   query PostQuery($slug: String!) {
     mdx(frontmatter: {
