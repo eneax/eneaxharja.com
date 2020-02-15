@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MdCode, MdMailOutline } from 'react-icons/md'
+import { MdCode, MdMailOutline, MdRssFeed } from 'react-icons/md'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -22,6 +22,9 @@ const IndexPage = () => (
       </SocialLink>
       <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
         <MdMailOutline />
+      </SocialLink>
+      <SocialLink href="https://eneaxharja.com/rss.xml" aria-label="rss" >
+        <MdRssFeed />
       </SocialLink>
     </HeaderWrapper>
   </Layout>
