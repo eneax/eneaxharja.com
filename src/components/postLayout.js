@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from './layout'
+import SEO from './seo'
 import Footer from './footer'
 import { Title, BlogPostContent } from '../elements'
 import { DateTime, formatReadingTime } from '../utils'
@@ -14,6 +15,8 @@ export default class PostLayout extends Component {
 
     return (
 			<Layout>
+        <SEO title={mdx.frontmatter.title} />
+
 				<Title style={{marginBottom: '0'}}>
 					{mdx.frontmatter.title}
         </Title>
