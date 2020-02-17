@@ -26,6 +26,24 @@ export const InternalLink = styled(Link)`
   ${styledLink}
 `
 
+export const TagsLink = styled(Link)`
+  background-color: ${darkTheme.primaryDarker};
+  color: ${darkTheme.text};
+  text-decoration: none;
+  border-radius: 5px;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+  transition: background-color .3s;
+  &:nth-child(odd) {
+    margin-left: .5rem;
+  }
+  &:hover,
+  &:focus {
+    color: ${darkTheme.text};
+    background-color: ${darkTheme.primaryDarkerHover};
+  }
+`
+
 export const SocialLink = styled.a.attrs({
   target: '_blank',
   rel: 'noopener'
