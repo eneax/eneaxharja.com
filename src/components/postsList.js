@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
-import { Title, Container, SubTitle, InternalLink } from '../elements'
+import { Title, Container, SubTitle, InternalLink, TagsLink } from '../elements'
 import { DateTime, formatReadingTime } from '../utils'
 import FadeInSection from '../utils/fadeInSection'
 
@@ -23,12 +23,21 @@ const PostList = () => (
                   </SubTitle>
                 </InternalLink>
 
-                <p>{node.excerpt}</p>
-                
                 <DateTime>
                   {node.frontmatter.date}
                     {` • ${formatReadingTime(node.timeToRead)}`}
                 </DateTime>
+
+                <p>{node.excerpt}</p>
+
+                {node.frontmatter.tags.map(tag => (
+                  <TagsLink 
+                    key={tag}
+                    to={`/tags/${tag}`}>
+                      {tag}
+                  </TagsLink> 
+                ))}
+
               </FadeInSection>
             </Container>
           </Fragment>
@@ -56,6 +65,7 @@ const POST_LIST_QUERY = graphql`
             title
             slug
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
         }
       }
