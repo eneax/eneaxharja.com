@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import { Title, Container, SubTitle, InternalLink, TagsLink } from '../elements'
 import { DateTime, formatReadingTime } from '../utils'
-import FadeInSection from '../utils/fadeInSection'
 
 
 const PostList = () => (
@@ -16,29 +15,27 @@ const PostList = () => (
         allMdx.edges.map(({ node }) => (
           <Fragment key={node.frontmatter.slug}>
             <Container>
-              <FadeInSection>
-                <InternalLink to={`/posts${node.frontmatter.slug}`}>
-                  <SubTitle>
-                    {node.frontmatter.title}
-                  </SubTitle>
-                </InternalLink>
+              <InternalLink to={`/posts${node.frontmatter.slug}`}>
+                <SubTitle>
+                  {node.frontmatter.title}
+                </SubTitle>
+              </InternalLink>
 
-                <DateTime>
-                  {node.frontmatter.date}
-                    {` • ${formatReadingTime(node.timeToRead)}`}
-                </DateTime>
+              <DateTime>
+                {node.frontmatter.date}
+                  {` • ${formatReadingTime(node.timeToRead)}`}
+              </DateTime>
 
-                <p>{node.excerpt}</p>
+              <p>{node.excerpt}</p>
 
-                {node.frontmatter.tags.map(tag => (
-                  <TagsLink 
-                    key={tag}
-                    to={`/tags/${tag}`}>
-                      {tag}
-                  </TagsLink> 
-                ))}
+              {node.frontmatter.tags.map(tag => (
+                <TagsLink 
+                  key={tag}
+                  to={`/tags/${tag}`}>
+                    {tag}
+                </TagsLink> 
+              ))}
 
-              </FadeInSection>
             </Container>
           </Fragment>
         ))

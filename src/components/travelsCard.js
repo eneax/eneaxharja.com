@@ -3,7 +3,6 @@ import Img from 'gatsby-image'
 
 import { ImageWrapper } from '../elements'
 import { DateTime } from '../utils'
-import FadeInSection from '../utils/fadeInSection'
 
 
 const TravelsCard = ({ item }) => {
@@ -12,15 +11,13 @@ const TravelsCard = ({ item }) => {
 
   return (
     <Fragment>
-      <FadeInSection>
-        <ImageWrapper>
-          <Img 
-            fluid={img}
-            alt={`Image of ${title}`}
-          />
-        </ImageWrapper>
-        <DateTime style={{marginBottom: '3rem'}}>{title}</DateTime>
-      </FadeInSection>
+      <ImageWrapper>
+        <Img 
+          fluid={img}
+          alt={`Image of ${title}`}
+        />
+      </ImageWrapper>
+      <DateTime style={{marginBottom: '3rem'}}>{title}</DateTime>
     </Fragment>
   )
 }

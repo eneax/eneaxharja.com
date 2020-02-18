@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
 
 import { ImageWrapper, SubTitle, ExternalLink } from '../elements'
-import FadeInSection from '../utils/fadeInSection'
 
 
 const ProjectCard = ({ project }) => {
@@ -11,24 +10,22 @@ const ProjectCard = ({ project }) => {
 
   return (
     <Fragment>
-      <FadeInSection>
+      <ExternalLink href={link}>
+        <SubTitle>
+          {title}
+        </SubTitle>
+      </ExternalLink>
+
+      <ImageWrapper>
         <ExternalLink href={link}>
-          <SubTitle>
-            {title}
-          </SubTitle>
+          <Img 
+            fluid={img}
+            alt={`Image of '${title}' project`}
+          />
         </ExternalLink>
+      </ImageWrapper>
 
-        <ImageWrapper>
-          <ExternalLink href={link}>
-            <Img 
-              fluid={img}
-              alt={`Image of '${title}' project`}
-            />
-          </ExternalLink>
-        </ImageWrapper>
-
-        <p>{desc}</p>
-      </FadeInSection>
+      <p>{desc}</p>
     </Fragment>
   )
 }
