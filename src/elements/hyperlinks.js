@@ -27,6 +27,8 @@ export const InternalLink = styled(Link)`
 `
 
 export const TagsLink = styled(Link)`
+  display: inline-flex;
+  align-items: center;
   background-color: ${darkTheme.primaryDarker};
   color: ${darkTheme.text};
   text-decoration: none;
@@ -41,6 +43,10 @@ export const TagsLink = styled(Link)`
   &:focus {
     color: ${darkTheme.text};
     background-color: ${darkTheme.primaryDarkerHover};
+  }
+
+  > svg {
+    margin-right: .25rem;
   }
 `
 
