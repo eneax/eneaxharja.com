@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { MdLoyalty } from 'react-icons/md'
 
 import { Title, Container, SubTitle, InternalLink, TagsLink } from '../elements'
 import { DateTime, formatReadingTime } from '../utils'
@@ -32,6 +33,7 @@ const PostList = () => (
                 <TagsLink 
                   key={tag}
                   to={`/tags/${tag}`}>
+                    <MdLoyalty />
                     {tag}
                 </TagsLink> 
               ))}

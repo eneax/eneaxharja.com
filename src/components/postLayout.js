@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { MdLoyalty } from 'react-icons/md'
 
 import Layout from './layout'
 import SEO from './seo'
 import Footer from './footer'
-import { Title, BlogPostContent } from '../elements'
+import { Title, BlogPostContent, TagsLink } from '../elements'
 import { DateTime, formatReadingTime } from '../utils'
 
 
@@ -29,6 +30,18 @@ export default class PostLayout extends Component {
 
           <MDXRenderer>{mdx.body}</MDXRenderer>
 				</BlogPostContent>
+
+        {mdx.frontmatter.tags.map(tag => (
+          <TagsLink 
+          style={{marginBottom: '1rem', marginRight: '.5rem'}}
+            key={tag}
+            to={`/tags/${tag}`}
+          >
+            <MdLoyalty />
+            {tag}
+          </TagsLink> 
+        ))}
+
 				<Footer />
 			</Layout>
     )
@@ -49,6 +62,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         slug
+        tags
       }
     }
   }
