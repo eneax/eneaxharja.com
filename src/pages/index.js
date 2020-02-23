@@ -23,7 +23,7 @@ const IndexPage = () => (
       <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail" >
         <MdMailOutline />
       </SocialLink>
-      <SocialLink href="https://eneaxharja.com/rss.xml" aria-label="rss" >
+      <SocialLink href="https://eneaxharja.com/rss-feed.xml" aria-label="rss feed" >
         <MdRssFeed />
       </SocialLink>
     </HeaderWrapper>
