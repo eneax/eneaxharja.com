@@ -14,4 +14,4 @@ export const darkTheme = {
 export const whiteTheme = {
   body: '#fff',
   text: '#000',
-}  
+}

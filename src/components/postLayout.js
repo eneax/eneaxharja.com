@@ -9,41 +9,38 @@ import Footer from './footer'
 import { Title, BlogPostContent, TagsLink } from '../elements'
 import { DateTime, formatReadingTime } from '../utils'
 
-
 export default class PostLayout extends Component {
   render() {
     const { mdx } = this.props.data
 
     return (
-			<Layout>
+      <Layout>
         <SEO title={mdx.frontmatter.title} />
 
-				<Title style={{marginBottom: '0'}}>
-					{mdx.frontmatter.title}
-        </Title>
+        <Title style={{ marginBottom: '0' }}>{mdx.frontmatter.title}</Title>
 
-				<BlogPostContent>
+        <BlogPostContent>
           <DateTime>
             {mdx.frontmatter.date}
-              {` • ${formatReadingTime(mdx.timeToRead)}`}
+            {` • ${formatReadingTime(mdx.timeToRead)}`}
           </DateTime>
 
           <MDXRenderer>{mdx.body}</MDXRenderer>
-				</BlogPostContent>
+        </BlogPostContent>
 
         {mdx.frontmatter.tags.map(tag => (
-          <TagsLink 
-          style={{marginBottom: '1rem', marginRight: '.5rem'}}
+          <TagsLink
+            style={{ marginBottom: '1rem', marginRight: '.5rem' }}
             key={tag}
             to={`/tags/${tag}`}
           >
             <MdLoyalty />
             {tag}
-          </TagsLink> 
+          </TagsLink>
         ))}
 
-				<Footer />
-			</Layout>
+        <Footer />
+      </Layout>
     )
   }
 }
@@ -51,11 +48,7 @@ export default class PostLayout extends Component {
 // graphql query
 export const query = graphql`
   query PostQuery($slug: String!) {
-    mdx(frontmatter: {
-      slug: {
-        eq: $slug
-      }
-    }) {
+    mdx(frontmatter: { slug: { eq: $slug } }) {
       body
       timeToRead
       frontmatter {

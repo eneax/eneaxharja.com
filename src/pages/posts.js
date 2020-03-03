@@ -5,10 +5,9 @@ import SEO from '../components/seo'
 import PostsList from '../components/postsList'
 import Footer from '../components/footer'
 
-
 const Posts = () => (
   <Layout>
-    <SEO title='Blog Posts' />
+    <SEO title="Blog Posts" />
 
     <PostsList />
     <Footer />

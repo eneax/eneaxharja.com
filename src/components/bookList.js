@@ -3,22 +3,17 @@ import styled from 'styled-components'
 
 import BookCard from './bookCard'
 
-
 const BookList = ({ books }) => {
   return (
     <Row>
       {books.map(({ node }, index) => (
-        <BookCard 
-          key={index}
-          book={node}
-        />
+        <BookCard key={index} book={node} />
       ))}
     </Row>
   )
 }
 
 export default BookList
-
 
 // styles
 const Row = styled.div`

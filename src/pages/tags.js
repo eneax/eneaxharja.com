@@ -1,6 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
-import kebabCase from "lodash/kebabCase"
+import React from 'react'
+import { graphql } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -8,6 +8,17 @@ import Footer from '../components/footer'
 
 import { Title, Container, InternalLink, UnOrderedList } from '../elements'
 
+// query
+export const query = graphql`
+  query {
+    allMdx(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
+  }
+`
 
 const TagsPage = ({
   data: {
@@ -15,8 +26,8 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <SEO title='Tags' />
-    
+    <SEO title="Tags" />
+
     <Container>
       <Title>Tags</Title>
       <UnOrderedList>
@@ -35,15 +46,3 @@ const TagsPage = ({
 )
 
 export default TagsPage
-
-// query
-export const query = graphql`
-  query {
-    allMdx(limit: 2000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-  }
-`

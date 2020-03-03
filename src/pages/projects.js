@@ -8,30 +8,6 @@ import ProjectsList from '../components/projectsList'
 
 import { Title, Container } from '../elements'
 
-
-const Projects = () => {
-  const response = useStaticQuery(getProjectsData)
-  const projects = response.allProjectsDataJson.edges
-
-  return (
-    <Layout>
-      <SEO title='Projects' />
-
-      <Title>Projects</Title>
-
-      <Container>
-        <p>Explore some of my favorite open-source projects I've worked on over the last few months.</p>
-        <ProjectsList projects={projects} />
-      </Container>
-
-      <Footer />
-    </Layout>
-  )
-}
-
-export default Projects
-
-
 // query
 const getProjectsData = graphql`
   {
@@ -53,3 +29,28 @@ const getProjectsData = graphql`
     }
   }
 `
+
+const Projects = () => {
+  const response = useStaticQuery(getProjectsData)
+  const projects = response.allProjectsDataJson.edges
+
+  return (
+    <Layout>
+      <SEO title="Projects" />
+
+      <Title>Projects</Title>
+
+      <Container>
+        <p>
+          Explore some of my favorite open-source projects I've worked on over
+          the last few months.
+        </p>
+        <ProjectsList projects={projects} />
+      </Container>
+
+      <Footer />
+    </Layout>
+  )
+}
+
+export default Projects

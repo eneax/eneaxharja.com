@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import favicon from '../images/favicon.ico'
 
-
 const SEO = ({ description, lang, meta, keywords, title }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -25,9 +24,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
 
   return (
     <Helmet
-      link={[
-        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
-      ]}
+      link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
       htmlAttributes={{
         lang,
       }}

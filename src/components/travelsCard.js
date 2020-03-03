@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import { ImageWrapper } from '../elements'
 import { DateTime } from '../utils'
 
-
 const TravelsCard = ({ item }) => {
   const { title } = item
   const img = item.img.childImageSharp.fluid
@@ -12,12 +11,9 @@ const TravelsCard = ({ item }) => {
   return (
     <Fragment>
       <ImageWrapper>
-        <Img 
-          fluid={img}
-          alt={`Image of ${title}`}
-        />
+        <Img fluid={img} alt={`Image of ${title}`} />
       </ImageWrapper>
-      <DateTime style={{marginBottom: '3rem'}}>{title}</DateTime>
+      <DateTime style={{ marginBottom: '3rem' }}>{title}</DateTime>
     </Fragment>
   )
 }

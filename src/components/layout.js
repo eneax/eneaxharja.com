@@ -8,21 +8,15 @@ import GlobalStyles from '../utils/globalStyles'
 import { MainWrapper } from '../elements/containers'
 import { particlesStyles, particlesConfig } from '../utils'
 
-
 const Layout = ({ children }) => (
   <>
     <GlobalStyles />
 
-    <Particles
-      style={particlesStyles}
-      params={particlesConfig}
-    />
+    <Particles style={particlesStyles} params={particlesConfig} />
 
     <Header />
-    
-    <MainWrapper>
-      {children}
-    </MainWrapper>
+
+    <MainWrapper>{children}</MainWrapper>
   </>
 )
 

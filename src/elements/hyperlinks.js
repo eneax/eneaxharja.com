@@ -17,7 +17,7 @@ export const styledLink = `
 
 export const ExternalLink = styled.a.attrs({
   target: '_blank',
-  rel: 'noopener'
+  rel: 'noopener',
 })`
   ${styledLink}
 `
@@ -33,11 +33,11 @@ export const TagsLink = styled(Link)`
   color: ${darkTheme.text};
   text-decoration: none;
   border-radius: 5px;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 1rem;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
   &:nth-child(odd) {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   &:hover,
   &:focus {
@@ -46,35 +46,35 @@ export const TagsLink = styled(Link)`
   }
 
   > svg {
-    margin-right: .25rem;
+    margin-right: 0.25rem;
   }
 `
 
 export const SocialLink = styled.a.attrs({
   target: '_blank',
-  rel: 'noopener'
+  rel: 'noopener',
 })`
-	font-size: .875rem;
-	-moz-osx-font-smoothing: grayscale;
-	backface-visibility: hidden;
-	transform: translateZ(0);
-	transition: transform .25s ease-out;
-	&:hover,
-	&:focus {
-		transform: scale(1.05);
-	}
-	&:active {
-		transform: scale(.9);
-	}
-	display: inline-block;
+  font-size: 0.875rem;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+  display: inline-block;
   vertical-align: middle;
-  padding: .5rem .5rem;
-	margin-bottom: 1rem;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
   border-color: ${darkTheme.primary};
-	svg {
-		font-size: 2em;
+  svg {
+    font-size: 2em;
     color: ${darkTheme.text};
-	}
+  }
 `
 
 export const HoverUnderlineLink = styled(Link)`

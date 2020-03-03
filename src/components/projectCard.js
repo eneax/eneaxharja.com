@@ -3,7 +3,6 @@ import Img from 'gatsby-image'
 
 import { ImageWrapper, SubTitle, ExternalLink } from '../elements'
 
-
 const ProjectCard = ({ project }) => {
   const { link, title, desc } = project
   const img = project.img.childImageSharp.fluid
@@ -11,17 +10,12 @@ const ProjectCard = ({ project }) => {
   return (
     <Fragment>
       <ExternalLink href={link}>
-        <SubTitle>
-          {title}
-        </SubTitle>
+        <SubTitle>{title}</SubTitle>
       </ExternalLink>
 
       <ImageWrapper>
         <ExternalLink href={link}>
-          <Img 
-            fluid={img}
-            alt={`Image of '${title}' project`}
-          />
+          <Img fluid={img} alt={`Image of '${title}' project`} />
         </ExternalLink>
       </ImageWrapper>
 

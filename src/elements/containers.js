@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { above, avenir, darkTheme } from '../utils'
 import { styledLink, customHr } from '../elements'
 
-
 export const MainWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +19,7 @@ export const Container = styled.div`
   ${above.tablet`
 		font-size: 1.5rem;
 	`}
-  
+
   p {
     margin-bottom: 0;
     font-weight: 400;
@@ -51,10 +50,12 @@ export const BlogPostContent = styled(Container)`
     ${customHr};
   }
 
-  blockquote, pre {
+  blockquote,
+  pre {
     background-color: ${darkTheme.bodyLighter};
     border-radius: 8px;
-    box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 4px inset;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.04) 0px 1px 4px inset;
     padding: 1rem;
     margin: 2rem 0 3.5rem 0;
 
@@ -74,9 +75,9 @@ export const BlogPostContent = styled(Container)`
 `
 
 export const ImageWrapper = styled.div`
-	margin-bottom: .75rem;
-	img {
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		border-radius: .25rem !important;
-	}
+  margin-bottom: 0.75rem;
+  img {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem !important;
+  }
 `

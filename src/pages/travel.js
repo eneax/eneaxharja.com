@@ -8,33 +8,6 @@ import TravelsList from '../components/travelsList'
 
 import { Title, Container } from '../elements'
 
-
-const Travel = () => {
-  const response = useStaticQuery(getTravelData)
-  const travelsResources = response.allTravelsDataJson.edges
-
-  return (
-    <Layout>
-      <SEO title='️Travel' />
-
-      <Title>
-        <span role="img" aria-label="landscape emoji">🏞 </span>Travel
-      </Title>
-
-      <Container>
-        <p style={{marginBottom: '3rem'}}>This page contains some of the photos I took during my trips over the years.</p>
-        
-        <TravelsList travelsResources={travelsResources} />
-      </Container>
-
-      <Footer />
-    </Layout>
-  )
-}
-
-export default Travel
-
-
 // query
 const getTravelData = graphql`
   {
@@ -54,3 +27,34 @@ const getTravelData = graphql`
     }
   }
 `
+
+const Travel = () => {
+  const response = useStaticQuery(getTravelData)
+  const travelsResources = response.allTravelsDataJson.edges
+
+  return (
+    <Layout>
+      <SEO title="️Travel" />
+
+      <Title>
+        <span role="img" aria-label="landscape emoji">
+          🏞{' '}
+        </span>
+        Travel
+      </Title>
+
+      <Container>
+        <p style={{ marginBottom: '3rem' }}>
+          This page contains some of the photos I took during my trips over the
+          years.
+        </p>
+
+        <TravelsList travelsResources={travelsResources} />
+      </Container>
+
+      <Footer />
+    </Layout>
+  )
+}
+
+export default Travel
