@@ -1,12 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { MdLoyalty } from 'react-icons/md'
+import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Footer from '../components/footer'
 
-import { Title, Container, InternalLink, UnOrderedList } from '../elements'
+import { Title, Container, TagsLink } from '../elements'
 
 // query
 export const query = graphql`
@@ -16,29 +18,47 @@ export const query = graphql`
         fieldValue
         totalCount
       }
+      totalCount
     }
   }
 `
 
+// styles
+const Paragraph = styled.p`
+  margin-top: 1rem;
+  margin-bottom: 2rem !important;
+`
+
+const TagsLinkWrapper = styled(TagsLink)`
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0 !important;
+`
+
 const TagsPage = ({
   data: {
-    allMdx: { group },
+    allMdx: { group, totalCount },
   },
 }) => (
   <Layout>
     <SEO title="Tags" />
 
-    <Container>
+    <Container style={{ minHeight: '68vh' }}>
       <Title>Tags</Title>
-      <UnOrderedList>
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <InternalLink to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </InternalLink>
-          </li>
-        ))}
-      </UnOrderedList>
+
+      <Paragraph>
+        {totalCount} posts are listed in {group.length} categories
+      </Paragraph>
+
+      {group.map(({ fieldValue, totalCount }) => (
+        <TagsLinkWrapper
+          key={fieldValue}
+          to={`/tags/${kebabCase(fieldValue)}/`}
+        >
+          <MdLoyalty />
+          {fieldValue} ({totalCount})
+        </TagsLinkWrapper>
+      ))}
     </Container>
 
     <Footer />
