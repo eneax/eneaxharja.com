@@ -1,11 +1,18 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from './layout'
 import SEO from './seo'
 import Footer from './footer'
 
 import { Title, Container, InternalLink, UnOrderedList } from '../elements'
+
+const PostLinks = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 0.25rem;
+`
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -20,18 +27,19 @@ const Tags = ({ pageContext, data }) => {
 
       <Title>{tagHeader}</Title>
 
-      <Container>
+      <Container style={{ minHeight: '60vh' }}>
         <InternalLink to="/tags">All tags</InternalLink>
-        <UnOrderedList>
+
+        <PostLinks>
           {edges.map(({ node }) => {
             const { title, slug } = node.frontmatter
             return (
-              <li key={slug}>
-                <InternalLink to={`/posts/${slug}`}>{title}</InternalLink>
-              </li>
+              <InternalLink key={slug} to={`/posts/${slug}`}>
+                {title}
+              </InternalLink>
             )
           })}
-        </UnOrderedList>
+        </PostLinks>
       </Container>
 
       <Footer />
