@@ -45,7 +45,10 @@ export default PostList
 // graphql query
 const POST_LIST_QUERY = graphql`
   query BlogPostListing {
-    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
       edges {
         node {
           excerpt

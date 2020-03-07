@@ -6,7 +6,7 @@ import Layout from './layout'
 import SEO from './seo'
 import Footer from './footer'
 
-import { Title, Container, InternalLink, UnOrderedList } from '../elements'
+import { Title, Container, InternalLink } from '../elements'
 
 const PostLinks = styled.div`
   margin-top: 2rem;
@@ -55,7 +55,7 @@ export const query = graphql`
     allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { tags: { in: [$tag] }, published: { eq: true } } }
     ) {
       totalCount
       edges {
