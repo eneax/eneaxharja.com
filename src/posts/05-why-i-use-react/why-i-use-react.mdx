@@ -19,19 +19,19 @@ Building a React app is all about components.
 In Javascript, we have the ability to take individual functions and compose them together to get some value.
 This is what is called function composition.
 
-```
-function getProfilePic (username) {
+```js
+function getProfilePic(username) {
   return `https://pic.github.com/ + ${username}`
 }
 
-function getProfileUrl (username) {
+function getProfileUrl(username) {
   return `https://www.github.com/ + ${username}`
 }
 
-function getAvatar (username) {
+function getAvatar(username) {
   return {
     pic: getProfilePic(username),
-    url: getProfileUrl(username)
+    url: getProfileUrl(username),
   }
 }
 
@@ -40,7 +40,7 @@ getAvatar('eneax')
 
 In React, we can use the same approach, but instead of getting a value in return, we can get a UI component.
 
-```
+```js
 function ProfilePic (props) {
   return (
     <img src={`https://pic.github.com/ + ${props.username}`} />
@@ -84,18 +84,18 @@ Declarative UI means that React allows you to describe what the UI should look l
 
 An example of the declarative approach is the `.map()` method:
 
-```
-function double (arr) {
-  return arr.map((item) => item * 2)
+```js
+function double(arr) {
+  return arr.map(item => item * 2)
 }
 ```
 
 The imperative approach, instead, consists in writing:
 
-```
-function double (arr) {
+```js
+function double(arr) {
   let results = []
-  for (let i = 0; i < arr.length; i++){
+  for (let i = 0; i < arr.length; i++) {
     results.push(arr[i] * 2)
   }
   return results
@@ -109,7 +109,7 @@ Plus, the React team doesn't want to recreate functionalities that you can alrea
 
 For instance, if you want to loop over an array of cars, with React, you’d use JavaScript’s `.map()` method:
 
-```
+```js
 const cars = ['Mercedes', 'BMW', 'Tesla']
 
 <ul>
@@ -152,7 +152,7 @@ Webpack is a module bundler. Instead of importing the scripts in the index.html,
 Even if React doesn’t have a build-in router, the most popular one is React Router.
 The job of a router is to render specific components based on the current Url.
 
-```
+```jsx
 <Router>
   <div>
     <ul>
@@ -164,8 +164,8 @@ The job of a router is to render specific components based on the current Url.
       </li>
     </ul>
 
-    <Route exact path="/" component={Home}/>
-    <Route path="/about" component={About}/>
+    <Route exact path="/" component={Home} />
+    <Route path="/about" component={About} />
   </div>
 </Router>
 ```
@@ -181,7 +181,7 @@ However, if we want to fully embrace the whole component model idea, we could wr
 
 One of the most popular libraries for writing CSS in JS is Styled Components and below you can see how to style a button with it:
 
-```
+```jsx
 import React from 'react'
 import styled from 'styled-components'
 
