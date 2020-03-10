@@ -66,6 +66,9 @@ const LineNumber = styled.span`
   width: 2em;
   user-select: none;
   opacity: 0.3;
+  text-align: right;
+  margin-right: 1rem;
+  margin-left: -1rem;
 `
 
 const CopyCode = styled.button`
