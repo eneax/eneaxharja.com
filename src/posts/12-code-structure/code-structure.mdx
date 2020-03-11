@@ -18,16 +18,16 @@ In a programming language, we call 'statements' the list of 'instruction' that w
 
 A statement example is the `alert()` method, which shows the message "Hello, world!".
 
-```
-alert('Hello, world!');
+```js
+alert('Hello, world!')
 ```
 
 In our code, we can have as many statements as we want, but it's important to write them on separate lines,
 in order to make the code more readable:
 
-```
-alert('Hello, world!');
-alert('🖐️ 🌐');
+```js
+alert('Hello, world!')
+alert('🖐️ 🌐')
 ```
 
 As you can see from the example above, statements are usually separated with semicolon.
@@ -40,7 +40,7 @@ However, if you want to write JS code without semicolons, you need to use line b
 
 The code below, for instance, works perfectly fine:
 
-```
+```js
 alert('Hi')
 alert('there')
 ```
@@ -50,9 +50,10 @@ In this example, the line break is considered as an 'implicit' semicolon, which 
 There are also cases where a new line does not mean a semicolon:
 
 ```
-alert(1 +
-1
-+ 1);
+alert(1
++ 1
++
+1)
 ```
 
 This code will run without issues and it will output 3, since JavaScript sees that the line ends with a plus "+" operator,
@@ -80,15 +81,16 @@ It can occupy an entire line of its own, or follow a statement.
 
 Here are few examples on this type of comment:
 
-```
+```js
 // This comment occupies an entire line
-alert('Example where comment occupies an entire line!');
+alert('Example where comment occupies an entire line!')
 ```
 
 or
 
-```
-alert('Example where the comment follows the statement'); // This comment follows the statement
+```js
+// This comment follows the statement
+alert('Example where the comment follows the statement')
 ```
 
 ### Multiline comments
@@ -96,19 +98,19 @@ alert('Example where the comment follows the statement'); // This comment follow
 This type of comment starts with a forward slash and an asterisk `/*` and ends with an asterisk and a forward slash `*/`.
 Anything that you include inside the two asterisks will be ignored when the code will run.
 
-```
+```js
 /*
 This is a multiline comment.
 It spans on two different lines.
 */
 
-alert('Hi');
-alert('There');
+alert('Hi')
+alert('There')
 ```
 
 Keep in mind that you cannot have multiline comment inside another multiline comment.
 
-```
+```js
 /*
   /* This is a nested comment! */
 */
