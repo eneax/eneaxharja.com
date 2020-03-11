@@ -17,18 +17,13 @@ As a result, the only way for the user to open the link in a new tab is to right
 
 To fix this issue, you can create a `handleCLick` function and place it on top of your click handlers:
 
-```
+```js
 const handleClick = e => {
-  const hasModifiers = (
-      e.metaKey ||
-      e.shiftKey ||
-      e.altKey ||
-      e.ctrlKey
-  );
+  const hasModifiers = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey
 
-  if(hasModifiers || e.button !== 1) return;
+  if (hasModifiers || e.button !== 1) return
 
-  e.preventDefault();
+  e.preventDefault()
 }
 ```
 
