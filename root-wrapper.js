@@ -1,13 +1,12 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import Code from './src/components/code'
-import { darkTheme } from './src/utils'
+import { InlineCodeWrapper } from './src/elements'
 
 const components = { 
   'p.inlineCode': props => (
-    <code 
-      {...props} 
-      style={{backgroundColor: `${darkTheme.primaryLighter}`}} 
+    <InlineCodeWrapper 
+      {...props}
     />
   ),
   pre: ({children: {props}}) => {
