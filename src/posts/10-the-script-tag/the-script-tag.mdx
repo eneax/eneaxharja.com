@@ -9,7 +9,7 @@ tags: ['javascript']
 A JavaScript program needs a working environment to run.
 The easiest way to add JavaScript code to a page is to link a script file to an HTML file (like displayed below) and open the HTML file into your favorite browser.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +22,7 @@ The easiest way to add JavaScript code to a page is to link a script file to an 
     <p>A random paragraph before the script tag</p>
 
     <script>
-      alert("Hi!!!");
+      alert('Hi!!!')
     </script>
   </body>
 </html>
@@ -49,11 +49,11 @@ Since JavaScript is the default language of a `<script>` tag, there is no need t
 
 ### Comments inside scripts
 
-```
+```html
 <script type="text/javascript">
   <!--
     ...
-  //-->
+  -->
 </script>
 ```
 
@@ -69,26 +69,26 @@ If you notice that the code inside your script file becomes very long, that is t
 
 You can attach script file to HTML using the `src` attribute and providing an absolute or relative path to the script that you want to import, in addition to a full URL:
 
-- absolute path
+- absolute path:
 
-  ```
+  ```html
   <script src="/path/to/your/script.js"></script>
   ```
 
-- relative path (here, it means that the script is in the current folder)
+- relative path (here, it means that the script is in the current folder):
 
-  ```
+  ```html
   <script src="script.js"></script>
   ```
 
-- URL
-  ```
+- URL:
+  ```html
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   ```
 
 Finally, if you want to attach several scripts, use multiple tags:
 
-```
+```html
 <script src="/js/script1.js"></script>
 <script src="/js/script2.js"></script>
 ...
@@ -107,17 +107,18 @@ We must choose either an external `<script src='...'>` or a regular `<script>` w
 
 Instead of:
 
-```
+```html
 <script src="file.js">
-  alert('You can't see me 🙈'); // this content will be ignored, since you specified the src attribute
+  // this content will be ignored, since you specified the src attribute
+  alert('You can't see me 🙈');
 </script>
 ```
 
 Do like this:
 
-```
+```html
 <script src="script.js"></script>
 <script>
-  alert('Now you see me 😃');
+  alert('Now you see me 😃')
 </script>
 ```
