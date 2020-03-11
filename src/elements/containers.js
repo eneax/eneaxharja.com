@@ -81,10 +81,3 @@ export const ImageWrapper = styled.div`
     border-radius: 0.25rem !important;
   }
 `
-
-export const InlineCodeWrapper = styled.code`
-  background-color: ${darkTheme.primaryLighter};
-  &:after {
-    content: none;
-  }
-`
