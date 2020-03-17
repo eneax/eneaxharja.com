@@ -3,12 +3,7 @@ import Highlight, { defaultProps } from 'prism-react-renderer'
 import theme from 'prism-react-renderer/themes/nightOwl'
 import styled from 'styled-components'
 import { copyToClipboard, darkTheme } from '../utils'
-import {
-  LiveProvider,
-  LiveEditor,
-  LiveError,
-  LivePreview
-} from 'react-live'
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
 const Code = ({ code, language, ...props }) => {
   if (props['react-live']) {

@@ -6,6 +6,10 @@ const GlobalStyles = createGlobalStyle`
     background: ${darkTheme.primaryLighter}; 
   }
 
+  code:after {
+    content: none !important;
+  }
+
   /* General */
   html {
     font-family: sans-serif;

@@ -5,9 +5,9 @@ import { darkTheme } from './src/utils'
 
 const components = { 
   'p.inlineCode': props => (
-    <code 	    
+    <code
       {...props}
-      style={{backgroundColor: `${darkTheme.primaryLighter}`}} 	
+      style={{backgroundColor: `${darkTheme.primaryLighter}`}}
     />
   ),
   pre: ({children: {props}}) => {
