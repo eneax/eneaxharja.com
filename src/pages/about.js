@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
 
-import { Title, Container, ExternalLink, InternalLink } from '../elements'
+import { Title, Container, ExternalLink, InternalLink } from '../elements';
 
 const About = () => (
   <Layout>
@@ -59,6 +59,6 @@ const About = () => (
 
     <Footer />
   </Layout>
-)
+);
 
-export default About
+export default About;

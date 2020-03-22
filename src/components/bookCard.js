@@ -1,13 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
 
-import { ExternalLink } from '../elements'
-import { above } from '../utils'
+import { ExternalLink } from '../elements';
+import { above, fluidObject } from '../utils';
 
 const BookCard = ({ book }) => {
-  const { link, title } = book
-  const img = book.img.childImageSharp.fluid
+  const { link, title } = book;
+  const img = book.img.childImageSharp.fluid;
 
   return (
     <Col6Medium4>
@@ -17,10 +18,19 @@ const BookCard = ({ book }) => {
         </ExternalLink>
       </Thumbnail>
     </Col6Medium4>
-  )
-}
+  );
+};
 
-export default BookCard
+BookCard.propTypes = {
+  book: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    img: fluidObject.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default BookCard;
 
 // styles
 const Col6Medium4 = styled.div`
@@ -36,7 +46,7 @@ const Col6Medium4 = styled.div`
 		flex: 0 0 33.333333%;
     max-width: 33.333333%;
 	`}
-`
+`;
 
 const Thumbnail = styled.div`
   background-color: #fff;
@@ -59,4 +69,4 @@ const Thumbnail = styled.div`
     font-style: italic;
     margin-top: 0.5rem;
   }
-`
+`;

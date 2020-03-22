@@ -5,7 +5,7 @@ export const particlesStyles = {
   bottom: 0,
   left: 0,
   zIndex: -1,
-}
+};
 
 export const particlesConfig = {
   particles: {
@@ -116,4 +116,4 @@ export const particlesConfig = {
     },
   },
   retina_detect: true,
-}
+};

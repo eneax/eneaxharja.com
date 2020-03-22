@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
-import { darkTheme } from './colors'
+import { createGlobalStyle } from 'styled-components';
+import { darkTheme } from './colors';
 
 const GlobalStyles = createGlobalStyle`
   ::selection { 
@@ -637,6 +637,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: 100%;
     }
   }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

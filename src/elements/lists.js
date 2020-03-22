@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { darkTheme } from '../utils'
+import styled from 'styled-components';
+import { darkTheme } from '../utils';
 
 export const UnOrderedList = styled.ul`
   list-style: none;
@@ -11,4 +11,4 @@ export const UnOrderedList = styled.ul`
     width: 1em;
     margin-left: -1em;
   }
-`
+`;

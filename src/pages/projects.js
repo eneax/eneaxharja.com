@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
-import ProjectsList from '../components/projectsList'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
+import ProjectsList from '../components/projectsList';
 
-import { Title, Container } from '../elements'
+import { Title, Container } from '../elements';
 
 // query
 const getProjectsData = graphql`
@@ -28,11 +28,11 @@ const getProjectsData = graphql`
       }
     }
   }
-`
+`;
 
 const Projects = () => {
-  const response = useStaticQuery(getProjectsData)
-  const projects = response.allProjectsDataJson.edges
+  const response = useStaticQuery(getProjectsData);
+  const projects = response.allProjectsDataJson.edges;
 
   return (
     <Layout>
@@ -50,7 +50,7 @@ const Projects = () => {
 
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
-import FunList from '../components/funList'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
+import FunList from '../components/funList';
 
-import { Title, Container, InternalLink } from '../elements'
+import { Title, Container, InternalLink } from '../elements';
 
 // query
 const getFunData = graphql`
@@ -28,11 +28,11 @@ const getFunData = graphql`
       }
     }
   }
-`
+`;
 
 const Fun = () => {
-  const response = useStaticQuery(getFunData)
-  const funResources = response.allFunResourcesDataJson.edges
+  const response = useStaticQuery(getFunData);
+  const funResources = response.allFunResourcesDataJson.edges;
 
   return (
     <Layout>
@@ -56,7 +56,7 @@ const Fun = () => {
 
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export default Fun
+export default Fun;

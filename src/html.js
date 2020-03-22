@@ -1,10 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+/* eslint-disable react/no-danger */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class HTML extends React.Component {
   render() {
     return (
-      <html {...this.props.htmlAttributes}>
+      <html lang="en" {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -18,14 +21,14 @@ export default class HTML extends React.Component {
           {this.props.preBodyComponents}
           <noscript>This website requires JavaScript.</noscript>
           <div
-            key={`body`}
+            key="body"
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
         </body>
       </html>
-    )
+    );
   }
 }
 
@@ -36,4 +39,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};

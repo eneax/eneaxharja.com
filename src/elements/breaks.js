@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { darkTheme } from '../utils'
+import styled from 'styled-components';
+import { darkTheme } from '../utils';
 
 export const classicHr = `
   border: 0;
@@ -8,7 +8,7 @@ export const classicHr = `
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
-`
+`;
 
 export const customHr = `
   width: 30%;
@@ -29,8 +29,8 @@ export const customHr = `
     padding: 0 0.25em;
     color: ${darkTheme.textLighter};
   }
-`
+`;
 
 export const HR = styled.hr`
   ${classicHr}
-`
+`;

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { darkTheme } from '../utils'
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import { darkTheme } from '../utils';
 
 export const styledLink = `
   text-decoration: underline;
@@ -13,18 +13,18 @@ export const styledLink = `
   &:focus {
     color: ${darkTheme.primary};
   }
-`
+`;
 
 export const ExternalLink = styled.a.attrs({
   target: '_blank',
   rel: 'noopener',
 })`
   ${styledLink}
-`
+`;
 
 export const InternalLink = styled(Link)`
   ${styledLink}
-`
+`;
 
 export const TagsLink = styled(Link)`
   display: inline-flex;
@@ -48,7 +48,7 @@ export const TagsLink = styled(Link)`
   > svg {
     margin-right: 0.25rem;
   }
-`
+`;
 
 export const SocialLink = styled.a.attrs({
   target: '_blank',
@@ -75,7 +75,7 @@ export const SocialLink = styled.a.attrs({
     font-size: 2em;
     color: ${darkTheme.text};
   }
-`
+`;
 
 export const HoverUnderlineLink = styled(Link)`
   text-decoration: none;
@@ -102,4 +102,4 @@ export const HoverUnderlineLink = styled(Link)`
       transform-origin: bottom right;
     }
   }
-`
+`;

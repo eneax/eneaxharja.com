@@ -1,26 +1,40 @@
-import React from 'react'
-import { MDXProvider } from '@mdx-js/react'
-import Code from './src/components/code'
-import { darkTheme } from './src/utils'
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/display-name */
+import React from 'react';
+import PropTypes from 'prop-types';
+import { MDXProvider } from '@mdx-js/react';
+import Code from './src/components/code';
+import { darkTheme } from './src/utils';
 
-const components = { 
+const components = {
   'p.inlineCode': props => (
     <code
       {...props}
-      style={{backgroundColor: `${darkTheme.primaryLighter}`}}
+      style={{ backgroundColor: `${darkTheme.primaryLighter}` }}
     />
   ),
-  pre: ({children: {props}}) => {
-    if (props.mdxType === 'code') {
+  pre: ({
+    children: {
+      props,
+      props: { mdxType, children, className },
+    },
+  }) => {
+    if (mdxType === 'code') {
       return (
-        <Code 
-          code={props.children.trim()}
-          language={props.className && props.className.replace('language-', '')}
+        <Code
+          code={children.trim()}
+          language={className && className.replace('language-', '')}
           {...props}
         />
-      )
+      );
     }
-  }
-}
+  },
+};
 
-export const wrapRootElement = ({element}) => (<MDXProvider components={components}>{element}</MDXProvider>)
+export const wrapRootElement = ({ element }) => (
+  <MDXProvider components={components}>{element}</MDXProvider>
+);
+
+wrapRootElement.propTypes = {
+  element: PropTypes.object.isRequired,
+};

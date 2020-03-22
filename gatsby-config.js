@@ -12,8 +12,8 @@ module.exports = {
       // parses Json files
       resolve: `gatsby-transformer-json`,
       option: {
-        typeName: `Json`
-      }
+        typeName: `Json`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,7 +39,7 @@ module.exports = {
     },
     // exposes several image processing functions built on the Sharp image processing library
     `gatsby-plugin-sharp`,
-    // creates ImageSharp nodes from image types 
+    // creates ImageSharp nodes from image types
     `gatsby-transformer-sharp`,
     {
       // parses Markdown files using MDX
@@ -77,8 +77,8 @@ module.exports = {
       options: {
         host: 'https://eneaxharja.com',
         sitemap: 'https://eneaxharja.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       // Enables RSS Feed
@@ -98,17 +98,15 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + "/posts" + edge.node.frontmatter.slug,
-                  guid: site.siteMetadata.siteUrl + "/posts" + edge.node.frontmatter.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }]
-                });
-              });
-            },
+            serialize: ({ query: { site, allMdx } }) =>
+              allMdx.edges.map(edge => ({
+                ...edge.node.frontmatter,
+                description: edge.node.excerpt,
+                date: edge.node.frontmatter.date,
+                url: `${site.siteMetadata.siteUrl}/posts${edge.node.frontmatter.slug}`,
+                guid: `${site.siteMetadata.siteUrl}/posts${edge.node.frontmatter.slug}`,
+                custom_elements: [{ 'content:encoded': edge.node.html }],
+              })),
             query: `
               {
                 allMdx(
@@ -130,16 +128,16 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss-feed.xml",
+            output: '/rss-feed.xml',
             title: "Enea's RSS Feed",
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            match: "^/posts/"
-          }
-        ]
-      }
-    }
+            match: '^/posts/',
+          },
+        ],
+      },
+    },
   ],
-}
+};

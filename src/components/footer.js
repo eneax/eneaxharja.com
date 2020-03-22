@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import { MdCode, MdMailOutline, MdRssFeed } from 'react-icons/md'
+import React from 'react';
+import styled from 'styled-components';
+import { MdCode, MdMailOutline, MdRssFeed } from 'react-icons/md';
 
-import { above, avenir, darkTheme } from '../utils'
-import { SocialLink } from '../elements'
+import { above, avenir, darkTheme } from '../utils';
+import { SocialLink } from '../elements';
 
 const Footer = () => (
   <FooterWrapper>
@@ -28,14 +28,14 @@ const Footer = () => (
       </SocialLink>
     </FooterLinksWrapper>
   </FooterWrapper>
-)
+);
 
-export default Footer
+export default Footer;
 
 // styles
 const FooterWrapper = styled.footer`
   margin: 1rem auto 0;
-`
+`;
 
 const FooterTextWrapper = styled.div`
   display: flex;
@@ -53,7 +53,7 @@ const FooterTextWrapper = styled.div`
 	small {
     font-size: 0.75rem;
   }
-`
+`;
 
 const FooterLinksWrapper = styled.div`
   margin: 0 auto;
@@ -63,4 +63,4 @@ const FooterLinksWrapper = styled.div`
     font-size: 0.5rem;
     margin-bottom: 0;
   }
-`
+`;

@@ -1,14 +1,16 @@
-import React, { Fragment } from 'react'
-import Img from 'gatsby-image'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 
-import { ImageWrapper, SubTitle, ExternalLink } from '../elements'
+import { ImageWrapper, SubTitle, ExternalLink } from '../elements';
+import { fluidObject } from '../utils';
 
 const ProjectCard = ({ project }) => {
-  const { link, title, desc } = project
-  const img = project.img.childImageSharp.fluid
+  const { link, title, desc } = project;
+  const img = project.img.childImageSharp.fluid;
 
   return (
-    <Fragment>
+    <>
       <ExternalLink href={link}>
         <SubTitle>{title}</SubTitle>
       </ExternalLink>
@@ -20,8 +22,17 @@ const ProjectCard = ({ project }) => {
       </ImageWrapper>
 
       <p>{desc}</p>
-    </Fragment>
-  )
-}
+    </>
+  );
+};
 
-export default ProjectCard
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    img: fluidObject.isRequired,
+    title: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default ProjectCard;

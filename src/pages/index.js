@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { MdCode, MdMailOutline, MdRssFeed } from 'react-icons/md'
+import React from 'react';
+import styled from 'styled-components';
+import { MdCode, MdMailOutline, MdRssFeed } from 'react-icons/md';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-import { SocialLink } from '../elements'
-import { above, avenir, darkTheme } from '../utils'
+import { SocialLink } from '../elements';
+import { above, avenir, darkTheme } from '../utils';
 
 const IndexPage = () => (
   <Layout>
@@ -29,9 +29,9 @@ const IndexPage = () => (
       </SocialLink>
     </HeaderWrapper>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 // styles
 const HeaderWrapper = styled.header`
@@ -48,7 +48,7 @@ const HeaderWrapper = styled.header`
   ${above.mobileS`
 		margin-top: 3rem;
 	`}
-`
+`;
 
 const Header = styled.h1`
   ${avenir};
@@ -57,7 +57,7 @@ const Header = styled.h1`
   ${above.mobileL`
 		font-size: 1.5rem;
 	`}
-`
+`;
 
 const SubHeader = styled.h2`
   ${avenir};
@@ -67,4 +67,4 @@ const SubHeader = styled.h2`
   letter-spacing: 0.1em;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
-`
+`;

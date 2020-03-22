@@ -9,9 +9,9 @@ export const darkTheme = {
   primaryDarkerHover: 'rgba(61, 220, 132, .6)',
   secondary: '#4285f4',
   secondaryLighter: '#8ab4f8',
-}
+};
 
 export const whiteTheme = {
   body: '#fff',
   text: '#000',
-}
+};

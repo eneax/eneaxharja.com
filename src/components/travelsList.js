@@ -1,15 +1,26 @@
-import React, { Fragment } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import TravelsCard from './travelsCard'
+import TravelsCard from './travelsCard';
+import { fluidObject } from '../utils';
 
-const TravelsList = ({ travelsResources }) => {
-  return (
-    <Fragment>
-      {travelsResources.map(({ node }, index) => (
-        <TravelsCard key={index} item={node} />
-      ))}
-    </Fragment>
-  )
-}
+const TravelsList = ({ travelsResources }) => (
+  <>
+    {travelsResources.map(({ node }, index) => (
+      <TravelsCard key={index} item={node} />
+    ))}
+  </>
+);
 
-export default TravelsList
+TravelsList.propTypes = {
+  travelsResources: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        img: fluidObject.isRequired,
+      }).isRequired,
+    }).isRequired
+  ).isRequired,
+};
+
+export default TravelsList;

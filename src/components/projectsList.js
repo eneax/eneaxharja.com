@@ -1,15 +1,28 @@
-import React, { Fragment } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import ProjectCard from './projectCard'
+import ProjectCard from './projectCard';
+import { fluidObject } from '../utils';
 
-const ProjectList = ({ projects }) => {
-  return (
-    <Fragment>
-      {projects.map(({ node }, index) => (
-        <ProjectCard key={index} project={node} />
-      ))}
-    </Fragment>
-  )
-}
+const ProjectList = ({ projects }) => (
+  <>
+    {projects.map(({ node }, index) => (
+      <ProjectCard key={index} project={node} />
+    ))}
+  </>
+);
 
-export default ProjectList
+ProjectList.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        link: PropTypes.string.isRequired,
+        img: fluidObject.isRequired,
+        title: PropTypes.string.isRequired,
+        desc: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired
+  ).isRequired,
+};
+
+export default ProjectList;

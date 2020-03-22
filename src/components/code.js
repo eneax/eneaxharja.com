@@ -1,24 +1,26 @@
-import React from 'react'
-import Highlight, { defaultProps } from 'prism-react-renderer'
-import theme from 'prism-react-renderer/themes/nightOwl'
-import styled from 'styled-components'
-import { copyToClipboard, darkTheme } from '../utils'
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
+/* eslint-disable react/destructuring-assignment */
+import React from 'react';
+import PropTypes from 'prop-types';
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import theme from 'prism-react-renderer/themes/nightOwl';
+import styled from 'styled-components';
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
+import { copyToClipboard, darkTheme } from '../utils';
 
 const Code = ({ code, language, ...props }) => {
   if (props['react-live']) {
     return (
-      <LiveProvider code={code} noInline={true} theme={theme}>
+      <LiveProvider code={code} noInline theme={theme}>
         <LiveEditor />
         <LiveError />
         <LivePreview />
       </LiveProvider>
-    )
+    );
   }
 
   const handleClick = () => {
-    copyToClipboard(code)
-  }
+    copyToClipboard(code);
+  };
 
   return (
     <Highlight {...defaultProps} code={code} language={language} theme={theme}>
@@ -36,10 +38,16 @@ const Code = ({ code, language, ...props }) => {
         </Pre>
       )}
     </Highlight>
-  )
-}
+  );
+};
 
-export default Code
+Code.propTypes = {
+  code: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
+  'react-live': PropTypes.bool,
+};
+
+export default Code;
 
 // styles
 const Pre = styled.pre`
@@ -54,7 +62,7 @@ const Pre = styled.pre`
     line-height: 1.3em;
     height: 1.3em;
   }
-`
+`;
 
 const LineNumber = styled.span`
   display: inline-block;
@@ -64,7 +72,7 @@ const LineNumber = styled.span`
   text-align: right;
   margin-right: 1rem;
   margin-left: -1rem;
-`
+`;
 
 const CopyCode = styled.button`
   background-color: ${darkTheme.primaryDarker};
@@ -83,4 +91,4 @@ const CopyCode = styled.button`
     opacity: 1;
     background-color: ${darkTheme.primaryDarkerHover};
   }
-`
+`;

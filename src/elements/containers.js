@@ -1,13 +1,14 @@
-import styled from 'styled-components'
-import { above, avenir, darkTheme } from '../utils'
-import { styledLink, customHr } from '../elements'
+import styled from 'styled-components';
+import { above, avenir, darkTheme } from '../utils';
+import { styledLink } from './hyperlinks';
+import { customHr } from './breaks';
 
 export const MainWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 42rem;
   padding: 1rem 1.3125rem;
-`
+`;
 
 export const Container = styled.div`
   background-color: ${darkTheme.body};
@@ -25,7 +26,7 @@ export const Container = styled.div`
     font-weight: 400;
     line-height: 2rem;
   }
-`
+`;
 
 export const BlogPostContent = styled(Container)`
   h2 {
@@ -72,7 +73,7 @@ export const BlogPostContent = styled(Container)`
       }
     }
   }
-`
+`;
 
 export const ImageWrapper = styled.div`
   margin-bottom: 0.75rem;
@@ -80,4 +81,4 @@ export const ImageWrapper = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.25rem !important;
   }
-`
+`;

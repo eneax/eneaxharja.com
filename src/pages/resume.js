@@ -1,9 +1,9 @@
-import React from 'react'
-import { MdCloudDownload } from 'react-icons/md'
+import React from 'react';
+import { MdCloudDownload } from 'react-icons/md';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
 
 import {
   Title,
@@ -14,8 +14,8 @@ import {
   UnOrderedList,
   SocialLink,
   HR,
-} from '../elements'
-import { DateTime } from '../utils'
+} from '../elements';
+import { DateTime } from '../utils';
 
 const Resume = () => (
   <Layout>
@@ -179,6 +179,6 @@ const Resume = () => (
 
     <Footer />
   </Layout>
-)
+);
 
-export default Resume
+export default Resume;

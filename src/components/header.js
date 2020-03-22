@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import logo from '../images/logoDark.svg'
-import { above, avenir, darkTheme } from '../utils'
+import logo from '../images/logoDark.svg';
+import { above, avenir, darkTheme } from '../utils';
 
 const Header = () => (
   <Navbar>
@@ -22,9 +22,9 @@ const Header = () => (
       </Link>
     </NavLinkWrapper>
   </Navbar>
-)
+);
 
-export default Header
+export default Header;
 
 // styles
 const Navbar = styled.nav`
@@ -66,7 +66,7 @@ const Navbar = styled.nav`
       }
     }
   }
-`
+`;
 
 const NavLinkWrapper = styled.div`
   display: table-cell;
@@ -83,4 +83,4 @@ const NavLinkWrapper = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
   }
-`
+`;

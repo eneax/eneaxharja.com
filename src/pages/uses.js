@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
 
 import {
   Title,
@@ -10,7 +10,7 @@ import {
   SubTitle,
   UnOrderedList,
   ExternalLink,
-} from '../elements'
+} from '../elements';
 
 const Uses = () => (
   <Layout>
@@ -95,6 +95,6 @@ const Uses = () => (
 
     <Footer />
   </Layout>
-)
+);
 
-export default Uses
+export default Uses;

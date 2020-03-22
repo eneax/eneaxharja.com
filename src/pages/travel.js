@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
-import TravelsList from '../components/travelsList'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
+import TravelsList from '../components/travelsList';
 
-import { Title, Container } from '../elements'
+import { Title, Container } from '../elements';
 
 // query
 const getTravelData = graphql`
@@ -26,11 +26,11 @@ const getTravelData = graphql`
       }
     }
   }
-`
+`;
 
 const Travel = () => {
-  const response = useStaticQuery(getTravelData)
-  const travelsResources = response.allTravelsDataJson.edges
+  const response = useStaticQuery(getTravelData);
+  const travelsResources = response.allTravelsDataJson.edges;
 
   return (
     <Layout>
@@ -54,7 +54,7 @@ const Travel = () => {
 
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export default Travel
+export default Travel;

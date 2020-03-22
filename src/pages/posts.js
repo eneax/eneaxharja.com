@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import PostsList from '../components/postsList'
-import Footer from '../components/footer'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import PostsList from '../components/postsList';
+import Footer from '../components/footer';
 
 const Posts = () => (
   <Layout>
@@ -12,6 +12,6 @@ const Posts = () => (
     <PostsList />
     <Footer />
   </Layout>
-)
+);
 
-export default Posts
+export default Posts;

@@ -1,9 +1,16 @@
-import React, { Fragment } from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import { MdLoyalty } from 'react-icons/md'
+/* eslint-disable no-use-before-define */
+import React, { Fragment } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import { MdLoyalty } from 'react-icons/md';
 
-import { Title, Container, SubTitle, InternalLink, TagsLink } from '../elements'
-import { DateTime, formatReadingTime } from '../utils'
+import {
+  Title,
+  Container,
+  SubTitle,
+  InternalLink,
+  TagsLink,
+} from '../elements';
+import { DateTime, formatReadingTime } from '../utils';
 
 const PostList = () => (
   <div>
@@ -38,11 +45,11 @@ const PostList = () => (
       }
     />
   </div>
-)
+);
 
-export default PostList
+export default PostList;
 
-// graphql query
+// query
 const POST_LIST_QUERY = graphql`
   query BlogPostListing {
     allMdx(
@@ -63,4 +70,4 @@ const POST_LIST_QUERY = graphql`
       }
     }
   }
-`
+`;

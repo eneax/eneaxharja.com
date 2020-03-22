@@ -1,49 +1,69 @@
-import React, { Component } from 'react'
-import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MdLoyalty } from 'react-icons/md'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MdLoyalty } from 'react-icons/md';
 
-import Layout from './layout'
-import SEO from './seo'
-import Footer from './footer'
-import { Title, BlogPostContent, TagsLink } from '../elements'
-import { DateTime, formatReadingTime } from '../utils'
+import Layout from './layout';
+import SEO from './seo';
+import Footer from './footer';
+import { Title, BlogPostContent, TagsLink } from '../elements';
+import { DateTime, formatReadingTime } from '../utils';
 
-export default class PostLayout extends Component {
-  render() {
-    const { mdx } = this.props.data
+const PostLayout = ({
+  data: {
+    mdx: {
+      frontmatter: { title, date, tags },
+      timeToRead,
+      body,
+    },
+  },
+}) => (
+  <Layout>
+    <SEO title={title} />
 
-    return (
-      <Layout>
-        <SEO title={mdx.frontmatter.title} />
+    <Title style={{ marginBottom: '0' }}>{title}</Title>
 
-        <Title style={{ marginBottom: '0' }}>{mdx.frontmatter.title}</Title>
+    <BlogPostContent>
+      <DateTime>
+        {date}
+        {` • ${formatReadingTime(timeToRead)}`}
+      </DateTime>
 
-        <BlogPostContent>
-          <DateTime>
-            {mdx.frontmatter.date}
-            {` • ${formatReadingTime(mdx.timeToRead)}`}
-          </DateTime>
+      <MDXRenderer>{body}</MDXRenderer>
+    </BlogPostContent>
 
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </BlogPostContent>
+    {tags.map(tag => (
+      <TagsLink
+        style={{ marginBottom: '1rem', marginRight: '.5rem' }}
+        key={tag}
+        to={`/tags/${tag}`}
+      >
+        <MdLoyalty />
+        {tag}
+      </TagsLink>
+    ))}
 
-        {mdx.frontmatter.tags.map(tag => (
-          <TagsLink
-            style={{ marginBottom: '1rem', marginRight: '.5rem' }}
-            key={tag}
-            to={`/tags/${tag}`}
-          >
-            <MdLoyalty />
-            {tag}
-          </TagsLink>
-        ))}
+    <Footer />
+  </Layout>
+);
 
-        <Footer />
-      </Layout>
-    )
-  }
-}
+export default PostLayout;
+
+PostLayout.propTypes = {
+  data: PropTypes.shape({
+    mdx: PropTypes.shape({
+      body: PropTypes.string.isRequired,
+      timeToRead: PropTypes.number.isRequired,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        slug: PropTypes.string.isRequired,
+        tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+};
 
 // graphql query
 export const query = graphql`
@@ -59,4 +79,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

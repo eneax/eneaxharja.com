@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Footer from '../components/footer'
-import BookList from '../components/bookList'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Footer from '../components/footer';
+import BookList from '../components/bookList';
 
-import { Title, Container } from '../elements'
+import { Title, Container } from '../elements';
 
 // query
 const getLibraryData = graphql`
@@ -28,11 +28,11 @@ const getLibraryData = graphql`
       }
     }
   }
-`
+`;
 
 const Library = () => {
-  const response = useStaticQuery(getLibraryData)
-  const books = response.allBookLibraryDataJson.edges
+  const response = useStaticQuery(getLibraryData);
+  const books = response.allBookLibraryDataJson.edges;
 
   return (
     <Layout>
@@ -61,7 +61,7 @@ const Library = () => {
 
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export default Library
+export default Library;

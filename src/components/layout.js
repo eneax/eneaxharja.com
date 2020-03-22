@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Particles from 'react-particles-js'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Particles from 'react-particles-js';
 
-import Header from './header'
+import Header from './header';
 
-import GlobalStyles from '../utils/globalStyles'
-import { MainWrapper } from '../elements/containers'
-import { particlesStyles, particlesConfig } from '../utils'
+import GlobalStyles from '../utils/globalStyles';
+import { MainWrapper } from '../elements/containers';
+import { particlesStyles, particlesConfig } from '../utils';
 
 const Layout = ({ children }) => (
   <>
@@ -18,10 +18,10 @@ const Layout = ({ children }) => (
 
     <MainWrapper>{children}</MainWrapper>
   </>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
