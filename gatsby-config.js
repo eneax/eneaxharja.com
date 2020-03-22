@@ -59,8 +59,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Enea Xharja - Web Developer',
-        short_name: 'Enea Xharja',
+        name: 'Enea Xharja',
+        short_name: 'Enea',
         start_url: '/',
         background_color: '#3ddc84',
         theme_color: '#3ddc84',
