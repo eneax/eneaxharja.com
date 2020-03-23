@@ -1,0 +1,36 @@
+---
+slug: '/remove-line-breaks-with-javascript'
+date: '2020-03-23'
+published: true
+title: '🔥 Remove Line Breaks with Javascript'
+tags: ['hot-tip', 'javascript']
+---
+
+This hot tip is all about using plain JavaScript code to remove line breaks from a string.
+
+In order to remove line breaks, we have to take into consideration three different types of line breaks, depending on the three operating system: `(\r\n)` for Windows, `(\n)` for Linux and `(\r)` for macOS.
+
+Let's first define the string variable with some <a href='https://hipsum.co' target='_blank'>Hipster Ipsum</a> text that we need to format:
+
+```js
+const randomString =
+  'Kinfolk tumeric hell of meggings.\n Man braid leggings thundercats, glossier palo santo farm-to-table letterpress kale chips gastropub chartreuse selfies stumptown 8-bit small batch.\r Paleo letterpress la croix DIY poke. Echo park next level hoodie hella. Semiotics taxidermy hexagon banjo chillwave subway tile portland crucifix kogi squid pabst mixtape single-origin coffee.\r\n Cliche kinfolk air plant, echo park mixtape franzen 8-bit affogato messenger bag vape jean shorts yuccie beard. Food truck copper mug coloring book portland aesthetic.'
+```
+
+Now, using `.replace()` method with a regular expression we can remove all the above types of line breaks:
+
+```js
+randomString = randomString.replace(/(\r\n|\n|\r)/gm, '')
+```
+
+If we want to replace all 3 types of line breaks with a space:
+
+```js
+randomString = randomString.replace(/(\r\n|\n|\r)/gm, ' ')
+```
+
+Finally, in case you want to replace line breaks with a non breaking space:
+
+```js
+randomString = randomString.replace(/(\r\n|\n|\r)/gm, '\u00A0')
+```
