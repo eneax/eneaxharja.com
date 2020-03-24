@@ -1,0 +1,6 @@
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+[context.production]
+  environment = { 
+    NODE_VERSION = "13.7.0" 
+  }
