@@ -57,7 +57,7 @@ export const BlogPostContent = styled(Container)`
     border-radius: 8px;
     box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 0px 1px,
       rgba(0, 0, 0, 0.04) 0px 1px 4px inset;
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin: 2rem 0 3.5rem 0;
 
     p {

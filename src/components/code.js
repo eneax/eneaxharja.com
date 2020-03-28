@@ -5,6 +5,7 @@ import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
+import { MdContentCopy } from 'react-icons/md';
 import { copyToClipboard, darkTheme } from '../utils';
 
 const Code = ({ code, language, ...props }) => {
@@ -25,17 +26,21 @@ const Code = ({ code, language, ...props }) => {
   return (
     <Highlight {...defaultProps} code={code} language={language} theme={theme}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={style}>
-          <CopyCode onClick={handleClick}>Copy</CopyCode>
-          {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })}>
-              <LineNumber>{i + 1}</LineNumber>
-              {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
-        </Pre>
+        <CodeWrapper>
+          <pre className={className} style={style}>
+            {tokens.map((line, i) => (
+              <div {...getLineProps({ line, key: i })}>
+                <LineNumber>{i + 1}</LineNumber>
+                {line.map((token, key) => (
+                  <span {...getTokenProps({ token, key })} />
+                ))}
+              </div>
+            ))}
+          </pre>
+          <CopyCode onClick={handleClick}>
+            <MdContentCopy />
+          </CopyCode>
+        </CodeWrapper>
       )}
     </Highlight>
   );
@@ -50,17 +55,35 @@ Code.propTypes = {
 export default Code;
 
 // styles
-const Pre = styled.pre`
+const CodeWrapper = styled.div`
   position: relative;
-  text-align: left;
-  margin: 1em 0;
-  padding: 0.5em;
-  overflow-x: auto;
-  border-radius: 3px;
 
-  & .token-line {
-    line-height: 1.3em;
-    height: 1.3em;
+  pre {
+    text-align: left;
+    overflow-x: auto;
+
+    & .token-line {
+      line-height: 1.3em;
+      height: 1.3em;
+    }
+  }
+`;
+
+const CopyCode = styled.button`
+  background-color: transparent;
+  color: ${darkTheme.text};
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.2rem;
+  border: 0;
+  border-radius: 3px;
+  opacity: 1;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  svg {
+    font-size: 1rem;
   }
 `;
 
@@ -72,23 +95,4 @@ const LineNumber = styled.span`
   text-align: right;
   margin-right: 1rem;
   margin-left: -1rem;
-`;
-
-const CopyCode = styled.button`
-  background-color: ${darkTheme.primaryDarker};
-  color: ${darkTheme.text};
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  border: 0;
-  border-radius: 3px;
-  margin: 0.25rem;
-  opacity: 0.4;
-  transition: all 0.2s;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 1;
-    background-color: ${darkTheme.primaryDarkerHover};
-  }
 `;
