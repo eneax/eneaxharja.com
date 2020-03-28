@@ -6,7 +6,7 @@ import theme from 'prism-react-renderer/themes/nightOwl';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MdContentCopy } from 'react-icons/md';
-import { copyToClipboard, darkTheme } from '../utils';
+import { copyToClipboard, handleLanguageColor, darkTheme } from '../utils';
 
 const Code = ({ code, language, ...props }) => {
   if (props['react-live']) {
@@ -27,6 +27,7 @@ const Code = ({ code, language, ...props }) => {
     <Highlight {...defaultProps} code={code} language={language} theme={theme}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <CodeWrapper>
+          <Language language={language}>{language}</Language>
           <pre className={className} style={style}>
             {tokens.map((line, i) => (
               <div {...getLineProps({ line, key: i })}>
@@ -67,6 +68,20 @@ const CodeWrapper = styled.div`
       height: 1.3em;
     }
   }
+`;
+
+const Language = styled.span`
+  ${({ language }) => handleLanguageColor(language)};
+  position: absolute;
+  top: 0px;
+  left: 1.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: default;
 `;
 
 const CopyCode = styled.button`
