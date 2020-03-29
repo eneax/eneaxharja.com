@@ -19,12 +19,12 @@ To fix this issue, you can create a `handleCLick` function and place it on top o
 
 ```js
 const handleClick = e => {
-  const hasModifiers = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey
+  const hasModifiers = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey;
 
-  if (hasModifiers || e.button !== 1) return
+  if (hasModifiers || e.button !== 1) return;
 
-  e.preventDefault()
-}
+  e.preventDefault();
+};
 ```
 
 Since a right click doesn't trigger a normal click event, we handle only the left click.

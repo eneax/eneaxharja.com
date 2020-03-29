@@ -21,21 +21,21 @@ This is what is called function composition.
 
 ```js
 function getProfilePic(username) {
-  return `https://pic.github.com/ + ${username}`
+  return `https://pic.github.com/ + ${username}`;
 }
 
 function getProfileUrl(username) {
-  return `https://www.github.com/ + ${username}`
+  return `https://www.github.com/ + ${username}`;
 }
 
 function getAvatar(username) {
   return {
     pic: getProfilePic(username),
     url: getProfileUrl(username),
-  }
+  };
 }
 
-getAvatar('eneax')
+getAvatar('eneax');
 ```
 
 In React, we can use the same approach, but instead of getting a value in return, we can get a UI component.
@@ -86,7 +86,7 @@ An example of the declarative approach is the `.map()` method:
 
 ```js
 function double(arr) {
-  return arr.map(item => item * 2)
+  return arr.map(item => item * 2);
 }
 ```
 
@@ -94,11 +94,11 @@ The imperative approach, instead, consists in writing:
 
 ```js
 function double(arr) {
-  let results = []
+  let results = [];
   for (let i = 0; i < arr.length; i++) {
-    results.push(arr[i] * 2)
+    results.push(arr[i] * 2);
   }
-  return results
+  return results;
 }
 ```
 
@@ -182,8 +182,8 @@ However, if we want to fully embrace the whole component model idea, we could wr
 One of the most popular libraries for writing CSS in JS is Styled Components and below you can see how to style a button with it:
 
 ```jsx
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Button = styled.a`
   border-radius: 3px;
@@ -193,7 +193,7 @@ const Button = styled.a`
   background: black;
   color: white;
   border: 2px solid white;
-`
+`;
 render(
   <div>
     <Button
@@ -204,7 +204,7 @@ render(
       GitHub
     </Button>
   </div>
-)
+);
 ```
 
 ### Redux
