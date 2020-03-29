@@ -36,9 +36,8 @@ export const TagsLink = styled(Link)`
   padding: 0.2rem 0.5rem;
   font-size: 1rem;
   transition: background-color 0.3s;
-  &:nth-child(odd) {
-    margin-left: 0.5rem;
-  }
+  margin-right: 0.5rem;
+
   &:hover,
   &:focus {
     color: ${darkTheme.text};
