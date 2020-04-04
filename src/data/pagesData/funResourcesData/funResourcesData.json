@@ -46,5 +46,11 @@
     "title": "React Status Newsletter",
     "img": "./images/reactStatuscode.png",
     "desc": "A weekly roundup of the latest React and React Native links and tutorials."
+  },
+  {
+    "link": "https://jamstack.email",
+    "title": "JAMstacked Newsletter",
+    "img": "./images/jamstacked.png",
+    "desc": "An email update on the evolving JAMstack ecosystem."
   }
 ]
