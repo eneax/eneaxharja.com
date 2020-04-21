@@ -24,11 +24,10 @@ const About = () => (
       <p>
         Most of my time is spent writing{' '}
         <ExternalLink href="https://github.com/eneax">code</ExternalLink> for
-        the web. I use the{' '}
-        <ExternalLink href="https://jamstack.org">JAMstack</ExternalLink> to
-        create fast, highly performing and accessible websites that are
-        responsive and can adapt the layout to a variety of devices and screen
-        sizes.
+        the web. I create fast, highly performing and accessible{' '}
+        <ExternalLink href="https://jamstack.org">Jamstack</ExternalLink>{' '}
+        websites that are responsive and can adapt the layout to a variety of
+        devices and screen sizes.
       </p>
       <p>
         When I’m not coding, I read{' '}
@@ -47,8 +46,8 @@ const About = () => (
         I can contribute.
       </p>
       <p>
-        At the moment, I am focusing exclusively on the JAMstack architecture,
-        and I will not be considering projects that use a traditional CMS or a
+        At the moment, I am focusing exclusively on the Jamstack approach, and I
+        will not be considering projects that use a traditional CMS or a
         server-side monolith.
       </p>
       <p>
