@@ -2,7 +2,7 @@
 slug: '/jamstack-best-practices'
 date: '2019-09-08'
 published: true
-title: '🍯 JAMstack Best Practices'
+title: '🍯 Jamstack Best Practices'
 tags: ['javascript', 'jamstack']
 ---
 
@@ -10,18 +10,18 @@ import jamstackBestPractices from './images/jamstack-best-practices.png';
 
 For years, developers have spent huge amount of time and resources in order to launch a website or a web app and deploy complex server environments.
 
-Before illustrating the some best practices that characterize JAMstack projects, it's important to identify non-JAMstack projects.
-In general, if a project relies on a client-server relationship, it it not built with the JAMstack. This includes:
+Before illustrating the some best practices that characterize Jamstack projects, it's important to identify non-Jamstack projects.
+In general, if a project relies on a client-server relationship, it it not built with the Jamstack. This includes:
 
 - sites build with a server-side content management system (WordPress, Drupal, etc.);
 - a server-side monolith that relies on backend languages like PHP, Ruby or Node;
 - an Isomorphic JavaScript project, where pages are rendered on both the server and client side.
 
-The JAMstack aims at separating the client code from the server one. If you want to leverage the best out of the stack, here are some tips.
+The Jamstack aims at separating the client code from the server one. If you want to leverage the best out of the stack, here are some tips.
 
 ## Entire Project on a CDN
 
-Since a JAMstack project doesn't rely on server-side code, there is no need for it to live on a single server, when it can be easily distributed and accessed directly from a Content Delivery Network (CDN).
+Since a Jamstack project doesn't rely on server-side code, there is no need for it to live on a single server, when it can be easily distributed and accessed directly from a Content Delivery Network (CDN).
 
 A CDN refers to a geographically distributed group of servers which work together to provide quick transfer of assets needed for loading Internet content like HTML pages, stylesheets and JavaScript files, images, and videos.
 
@@ -47,11 +47,11 @@ gatsby develop
 
 ## Modern Build Tools
 
-The JAMstack gives at your disposal modern build tools like Webpack and Babel, so you can experiment today with modern JavaScript features, without having to wait for browsers to update.
+The Jamstack gives at your disposal modern build tools like Webpack and Babel, so you can experiment today with modern JavaScript features, without having to wait for browsers to update.
 
 ## Automated Builds
 
-Since JAMstack markup is prebuilt, you need to run a build command for the changes to go live.
+Since Jamstack markup is prebuilt, you need to run a build command for the changes to go live.
 This process can be automated using webhooks or relying on a publishing platform that includes this feature by default.
 Once the server has built the project, the CDNs will be updated and the site will be live.
 
@@ -69,7 +69,7 @@ Atomic deployments is extremely useful when:
 
 ## Instant Cache Invalidation
 
-A JAMstack project can simply be distributed in Local Caches everywhere.
+A Jamstack project can simply be distributed in Local Caches everywhere.
 This is one of the reasons why it is blazing fast and on average the Time to First Byte (the time it takes to start loading) is way less than that of a fully optimized dynamic site.
 
 However, this incredible speed takes us to the cache invalidation issue.
@@ -77,15 +77,15 @@ When you make a change to your site, you are telling the CDN to invalidate its c
 
 Basically, when a deploy goes live, it really goes live!
 
-## Typical JAMstack workflow
+## Typical Jamstack workflow
 
-Here is an ideal JAMstack workflow following all the best practices described above.
+Here is an ideal Jamstack workflow following all the best practices described above.
 
 <img src={jamstackBestPractices} alt="jamstack-best-practices" />
 
 ## Conclusion
 
-Get inspired by some great examples of projects built with <a href='https://jamstack.org/examples' target='_blank'>JAMstack</a> and keep building stuff!
+Get inspired by some great examples of projects built with <a href='https://jamstack.org/examples' target='_blank'>Jamstack</a> and keep building stuff!
 
 ## References
 
