@@ -47,8 +47,8 @@ const Resume = () => (
         </li>
       </UnOrderedList>
 
-      <HeadingThree>Web Developer, Freelance</HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>10/2017 – 10/2019</DateTime>
+      <HeadingThree>Open Source Web Developer, Freelance - Remote</HeadingThree>
+      <DateTime style={{ marginBottom: '1.45rem' }}>10/2017 – Present</DateTime>
       <UnOrderedList>
         <li>
           Designed and developed a responsive{' '}
@@ -143,7 +143,10 @@ const Resume = () => (
 
       <HeadingThree>
         Self-Education on Online Coding Schools <br />(
-        <ExternalLink href="https://www.udemy.com/">Udemy</ExternalLink>,{' '}
+        <ExternalLink href="https://www.freecodecamp.org/">
+          freeCodeCamp
+        </ExternalLink>
+        , <ExternalLink href="https://www.udemy.com/">Udemy</ExternalLink>,{' '}
         <ExternalLink href="https://tylermcginnis.com/">
           tylermcginnis
         </ExternalLink>
