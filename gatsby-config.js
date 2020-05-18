@@ -65,7 +65,7 @@ module.exports = {
         background_color: '#3ddc84',
         theme_color: '#3ddc84',
         display: 'standalone',
-        icon: 'src/images/logoDark.svg',
+        icon: 'src/images/logo.svg',
       },
     },
     // Enables Progressive Web App + Offline functionality
