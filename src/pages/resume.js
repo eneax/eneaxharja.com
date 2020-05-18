@@ -1,55 +1,57 @@
 import React from 'react';
+import styled from 'styled-components';
 import { MdCloudDownload } from 'react-icons/md';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Footer from '../components/footer';
 
-import {
-  Title,
-  SubTitle,
-  HeadingThree,
-  Container,
-  ExternalLink,
-  UnOrderedList,
-  SocialLink,
-  HR,
-} from '../elements';
-import { DateTime } from '../utils';
+import { ExternalLink, SocialIconLink } from '../utils/hyperLinks';
+import { darkTheme } from '../utils/colors';
+
+// styles
+const DownloadIconLink = styled(SocialIconLink)`
+  svg {
+    margin-bottom: -0.35rem;
+  }
+`;
+
+const Subtitle = styled.h2`
+  margin-top: '4rem';
+  text-transform: uppercase;
+`;
+
+const DateTime = styled.p`
+  color: ${darkTheme.textLighter};
+  margin-top: -1rem;
+`;
 
 const Resume = () => (
   <Layout>
     <SEO title="Resume" />
 
-    <Title>
+    <h1>
       Resume
-      <SocialLink
-        style={{ marginTop: '1rem' }}
-        href="https://drive.google.com/open?id=1gIoe1TdJHsEGCV07QAmBgRlRxMNeTF9t"
-      >
+      <DownloadIconLink href="https://drive.google.com/open?id=1gIoe1TdJHsEGCV07QAmBgRlRxMNeTF9t">
         <MdCloudDownload />
-      </SocialLink>
-    </Title>
+      </DownloadIconLink>
+    </h1>
 
-    <Container>
-      <SubTitle style={{ marginTop: '4rem' }}>WORK EXPERIENCE</SubTitle>
-      <HR />
+    <div>
+      <Subtitle>Work Experience</Subtitle>
 
-      <HeadingThree>
-        Junior JavaScript Engineer, blogfoster - Berlin (Germany)
-      </HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>11/2019 – Present</DateTime>
-      <UnOrderedList>
+      <h3>Junior JavaScript Engineer, blogfoster - Berlin (Germany)</h3>
+      <DateTime>11/2019 – Present</DateTime>
+      <ul>
         <li>
           Using JavaScript and the React ecosystem to build technology that
           helps professional bloggers and social media influencers analyse,
           manage and effectively monetize their reach.
         </li>
-      </UnOrderedList>
+      </ul>
 
-      <HeadingThree>Open Source Web Developer, Freelance - Remote</HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>10/2017 – Present</DateTime>
-      <UnOrderedList>
+      <h3>Open Source Web Developer, Freelance - Remote</h3>
+      <DateTime>10/2017 – Present</DateTime>
+      <ul>
         <li>
           Designed and developed a responsive{' '}
           <ExternalLink href="https://gatsby-landing-page-arty.netlify.com">
@@ -97,13 +99,11 @@ const Resume = () => (
           <ExternalLink href="https://github.com/eneax">Github</ExternalLink>{' '}
           profile
         </li>
-      </UnOrderedList>
+      </ul>
 
-      <HeadingThree>
-        Front-End Developer, Fornace - San Pietro in Cariano (Italy)
-      </HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>03/2019 – 09/2019</DateTime>
-      <UnOrderedList>
+      <h3>Front-End Developer, Fornace - San Pietro in Cariano (Italy)</h3>
+      <DateTime>03/2019 – 09/2019</DateTime>
+      <ul>
         <li>
           Used React Native, while working on a team of developers, to build an
           iOS and Android app for an Italian large-scale retailer with over 100
@@ -117,13 +117,11 @@ const Resume = () => (
           Maintained existing websites and built new ones from the ground up
           using Wordpress and company's custom Content Management System
         </li>
-      </UnOrderedList>
+      </ul>
 
-      <HeadingThree>
-        Social Media Marketing, Trattoria Porsenna - Chiusi (Italy)
-      </HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>06/2013 – 09/2017</DateTime>
-      <UnOrderedList>
+      <h3>Social Media Marketing, Trattoria Porsenna - Chiusi (Italy)</h3>
+      <DateTime>06/2013 – 09/2017</DateTime>
+      <ul>
         <li>
           Analyzed market, competitors and customer perception of the brand
           Trattoria Porsenna
@@ -136,12 +134,11 @@ const Resume = () => (
           Successfully built and boosted the company's social media presence on
           4 different mediums: Facebook, Instagram, Tripadvisor and Google Maps
         </li>
-      </UnOrderedList>
+      </ul>
 
-      <SubTitle style={{ marginTop: '5rem' }}>EDUCATION</SubTitle>
-      <HR />
+      <Subtitle>Education</Subtitle>
 
-      <HeadingThree>
+      <h3>
         Self-Education on Online Coding Schools <br />(
         <ExternalLink href="https://www.freecodecamp.org/">
           freeCodeCamp
@@ -155,9 +152,9 @@ const Resume = () => (
           leveluptutorials
         </ExternalLink>
         )
-      </HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>05/2017 – Present</DateTime>
-      <UnOrderedList>
+      </h3>
+      <DateTime>05/2017 – Present</DateTime>
+      <ul>
         <li>HTML - CSS</li>
         <li>Bootstrap</li>
         <li>JavaScript</li>
@@ -166,21 +163,19 @@ const Resume = () => (
         <li>Gatsby.js</li>
         <li>GraphQL</li>
         <li>Git</li>
-      </UnOrderedList>
+      </ul>
 
-      <HeadingThree>
+      <h3>
         MSc with Summa Cum Laude in Accounting and Management - Siena (Italy)
-      </HeadingThree>
-      <DateTime style={{ marginBottom: '1.45rem' }}>11/2014 – 02/2017</DateTime>
-      <UnOrderedList>
+      </h3>
+      <DateTime>11/2014 – 02/2017</DateTime>
+      <ul>
         <li>International Management</li>
         <li>Corporate Valuation</li>
         <li>Statistics for Business Decision Making</li>
         <li>Consumer Behavior</li>
-      </UnOrderedList>
-    </Container>
-
-    <Footer />
+      </ul>
+    </div>
   </Layout>
 );
 

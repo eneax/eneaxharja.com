@@ -1,16 +1,52 @@
-/* eslint-disable no-shadow */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { MdLoyalty } from 'react-icons/md';
 import styled from 'styled-components';
 import kebabCase from 'lodash/kebabCase';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Footer from '../components/footer';
 
-import { Title, Container, TagsLink } from '../elements';
+import { darkTheme } from '../utils/colors';
+
+// styles
+const TagLink = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  background-color: ${darkTheme.primaryDarker};
+  color: ${darkTheme.text};
+  text-decoration: none;
+  background-image: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  transition: background-color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: ${darkTheme.text};
+    background-color: ${darkTheme.primaryDarkerHover};
+  }
+
+  > svg {
+    margin-right: 0.25rem;
+  }
+`;
+
+// query
+export const query = graphql`
+  query {
+    allMdx(limit: 2000, filter: { frontmatter: { published: { eq: true } } }) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+      totalCount
+    }
+  }
+`;
 
 const TagsPage = ({
   data: {
@@ -20,25 +56,20 @@ const TagsPage = ({
   <Layout>
     <SEO title="Tags" />
 
-    <Container style={{ minHeight: '68vh' }}>
-      <Title>Tags</Title>
+    <div>
+      <h1>Tags</h1>
 
-      <Paragraph>
+      <p>
         {totalCount} posts are listed in {group.length} categories
-      </Paragraph>
+      </p>
 
       {group.map(({ fieldValue, totalCount }) => (
-        <TagsLinkWrapper
-          key={fieldValue}
-          to={`/tags/${kebabCase(fieldValue)}/`}
-        >
+        <TagLink key={fieldValue} to={`/tags/${kebabCase(fieldValue)}`}>
           <MdLoyalty />
           {fieldValue} ({totalCount})
-        </TagsLinkWrapper>
+        </TagLink>
       ))}
-    </Container>
-
-    <Footer />
+    </div>
   </Layout>
 );
 
@@ -57,28 +88,3 @@ TagsPage.propTypes = {
 };
 
 export default TagsPage;
-
-// query
-export const query = graphql`
-  query {
-    allMdx(limit: 2000, filter: { frontmatter: { published: { eq: true } } }) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-      totalCount
-    }
-  }
-`;
-
-// styles
-const Paragraph = styled.p`
-  margin-top: 1rem;
-  margin-bottom: 2rem !important;
-`;
-
-const TagsLinkWrapper = styled(TagsLink)`
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  margin-left: 0 !important;
-`;

@@ -4,8 +4,11 @@ const _ = require('lodash');
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve('./src/components/postLayout.js');
-  const tagTemplate = path.resolve('src/components/tags.js');
+  const blogPostTemplate = path.resolve('./src/templates/postTemplate.js');
+  const tagTemplate = path.resolve('src/templates/tagTemplate.js');
+  const bookTemplate = path.resolve('src/templates/bookTemplate.js');
+  const travelTemplate = path.resolve('src/templates/travelTemplate.js');
+  const projectTemplate = path.resolve('src/templates/projectTemplate.js');
 
   const result = await graphql(`
     {
@@ -26,6 +29,47 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           fieldValue
         }
       }
+      allBookLibraryDataJson {
+        edges {
+          node {
+            link
+            title
+            desc
+            author
+          }
+        }
+      }
+      allTravelsDataJson {
+        edges {
+          node {
+            title
+            img {
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
+            desc
+          }
+        }
+      }
+      allProjectsDataJson {
+        edges {
+          node {
+            link
+            title
+            img {
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
+            desc
+          }
+        }
+      }
     }
   `);
 
@@ -40,7 +84,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create post detail pages
   posts.forEach(({ node }) => {
     createPage({
-      path: `/posts${node.frontmatter.slug}`,
+      path: `/blog${node.frontmatter.slug}`,
       component: blogPostTemplate,
       context: {
         slug: node.frontmatter.slug,
@@ -60,4 +104,27 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     });
   });
+
+  // Pagination feature
+  function paginate(typeOfPage, itemsPerPage, path, component) {
+    const type = result.data[typeOfPage].edges;
+    const numPages = Math.ceil(type.length / itemsPerPage);
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/${path}` : `/${path}/${i + 1}`,
+        component,
+        context: {
+          limit: itemsPerPage,
+          skip: i * itemsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      });
+    });
+  }
+
+  paginate('allBookLibraryDataJson', 10, 'library', bookTemplate);
+  paginate('allTravelsDataJson', 6, 'travel', travelTemplate);
+  paginate('allProjectsDataJson', 6, 'projects', projectTemplate);
 };

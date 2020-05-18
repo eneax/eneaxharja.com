@@ -1,0 +1,402 @@
+[
+  {
+    "title": "🌟 Potsdamer Platz",
+    "img": "./images/potsdamer-platz.jpg",
+    "desc": "Berlin (Germany) - February 2020"
+  },
+  {
+    "title": "🏛️ Charlottenburg Palace",
+    "img": "./images/charlottenburg-palace.jpg",
+    "desc": "Berlin (Germany) - January 2020"
+  },
+  {
+    "title": "🎄 Gendarmenmarkt Christmas Market",
+    "img": "./images/gendarmenmarkt-xmas-market.jpg",
+    "desc": "Berlin (Germany) - December 2019"
+  },
+  {
+    "title": "🎡 Neptunbrunnen Christmas Market",
+    "img": "./images/neptunbrunnen-xmas-market.jpg",
+    "desc": "Berlin (Germany) - December 2019"
+  },
+  {
+    "title": "🏛 Brandenburg Gate",
+    "img": "./images/brandenburg-gate.jpg",
+    "desc": "Berlin (Germany) - November 2019"
+  },
+  {
+    "title": "🦦 Zurich",
+    "img": "./images/zurich.jpg",
+    "desc": "October 2019"
+  },
+  {
+    "title": "🏡 Perugia",
+    "img": "./images/perugia.jpg",
+    "desc": "October 2019"
+  },
+  {
+    "title": "👨‍💼 The Sphere, EXPO 2017 Astana",
+    "img": "./images/astana-expo.jpg",
+    "desc": "August 2019"
+  },
+  {
+    "title": "📚 Monteleone d'Orvieto⁩, ⁨Umbria⁩ (⁨Italy⁩)",
+    "img": "./images/monteleone-books.jpg",
+    "desc": "August 2019"
+  },
+  {
+    "title": "☂️ Monteleone d'Orvieto⁩, ⁨Umbria⁩ (⁨Italy⁩)",
+    "img": "./images/monteleone-umbrella.jpg",
+    "desc": "August 2019"
+  },
+  {
+    "title": "🌃 Chioggia (⁨Italy⁩)",
+    "img": "./images/chioggia.jpg",
+    "desc": "July 2019"
+  },
+  {
+    "title": "🏊‍♂️ North shore of Lake Garda",
+    "img": "./images/garda-torbole.jpg",
+    "desc": "Torbole (⁨Italy⁩) - July 2019"
+  },
+  {
+    "title": "🍇 Bure",
+    "img": "./images/bure.jpg",
+    "desc": "Valpolicella (⁨Italy⁩) - July 2019"
+  },
+  {
+    "title": "🛍️ Galleria Vittorio Emanuele II",
+    "img": "./images/milan-galleria.JPG",
+    "desc": "Milan (⁨Italy⁩) - June 2019"
+  },
+  {
+    "title": "⛪ Milan Cathedral",
+    "img": "./images/milan-duomo.JPG",
+    "desc": "Milan (⁨Italy⁩) - June 2019"
+  },
+  {
+    "title": "🌳 Basilica of St. Anastasia",
+    "img": "./images/verona-campanile-santa-anastasia.JPG",
+    "desc": "Verona (⁨Italy⁩) - May 2019"
+  },
+  {
+    "title": "🌉 From Ponte Pietra",
+    "img": "./images/verona-ponte-pietra.JPG",
+    "desc": "Verona (⁨Italy⁩) - May 2019"
+  },
+  {
+    "title": "🍃 San Pietro in Cariano",
+    "img": "./images/san-pietro-in-cariano.JPG",
+    "desc": "Valpolicella (⁨Italy⁩) - April 2019"
+  },
+  {
+    "title": "⛵ Darsena",
+    "img": "./images/sirmione-darsena.JPG",
+    "desc": "Sirmione (⁨Italy⁩) - March 2019"
+  },
+  {
+    "title": "🏰 Scaligero Castel",
+    "img": "./images/sirmione-rocca-scaligera.JPG",
+    "desc": "Sirmione (⁨Italy⁩) - March 2019"
+  },
+  {
+    "title": "🚣‍♂️ Arno River from Ponte Vecchio⁩",
+    "img": "./images/firenze-ponte-vecchio.JPG",
+    "desc": "⁨Florence⁩ (⁨Italy⁩) - February 2019"
+  },
+  {
+    "title": "🎄 Piazza Grande in Montepulciano⁩",
+    "img": "./images/piazza-grande-montepulciano.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - December 2018"
+  },
+  {
+    "title": "🐴 Montepulciano⁩",
+    "img": "./images/horse-⁨montepulciano⁩.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - October 2018"
+  },
+  {
+    "title": "🌲 Cortona⁩",
+    "img": "./images/cortona.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - October 2018"
+  },
+  {
+    "title": "🎋 Radda in Chianti⁩",
+    "img": "./images/radda.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - September 2018"
+  },
+  {
+    "title": "🦌 Forest in Semipalatinsk",
+    "img": "./images/forest-semipalatinsk⁩.jpeg",
+    "desc": "⁨Kazakhstan⁩ - September 2018"
+  },
+  {
+    "title": "🦆 Lake of Chiusi⁩",
+    "img": "./images/lake-chiusi-two.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - July 2017"
+  },
+  {
+    "title": "🍃 Montepulciano⁩",
+    "img": "./images/⁨montepulciano⁩.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - April 2017"
+  },
+  {
+    "title": "✝️ ⁨Siena Cathedral⁩",
+    "img": "./images/siena-cathedral⁩.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - January 2017"
+  },
+  {
+    "title": "🏞 Arno⁩ River",
+    "img": "./images/arno.jpeg",
+    "desc": "Florence⁩ (⁨Italy⁩) - November 2016"
+  },
+  {
+    "title": "🏦 Palazzo Vecchio⁩",
+    "img": "./images/⁨palazzo-vecchio⁩.jpeg",
+    "desc": "Florence⁩ (⁨Italy⁩) - November 2016"
+  },
+  {
+    "title": "⌒ Siena",
+    "img": "./images/siena.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - October 2016"
+  },
+  {
+    "title": "🌆 Florence⁩",
+    "img": "./images/florence.jpeg",
+    "desc": "⁨Tuscany⁩ (⁨Italy⁩) - May 2016"
+  },
+  {
+    "title": "🏠 Civita di Bagnoregio⁩",
+    "img": "./images/civita.jpeg",
+    "desc": "Lazio⁩ (⁨Italy⁩) - March 2016"
+  },
+  {
+    "title": "👨‍🎨 La Scarzuola",
+    "img": "./images/scarzuola.jpeg",
+    "desc": "Montegabbione⁩ (⁨Italy⁩) - January 2016"
+  },
+  {
+    "title": "🗼 Giotto's Campanile⁩",
+    "img": "./images/giotto.jpeg",
+    "desc": "⁨Florence⁩ (⁨Italy⁩) - October 2015"
+  },
+  {
+    "title": "🏟 Colosseum⁩",
+    "img": "./images/colosseo.jpeg",
+    "desc": "⁨Rome⁩ (⁨Italy⁩) - September 2015"
+  },
+  {
+    "title": "🙏 Saint Peter's Square⁩",
+    "img": "./images/peterTwo.jpeg",
+    "desc": "Vatican City⁩ (⁨Italy⁩) - September 2015"
+  },
+  {
+    "title": "🧑‍🤝‍🧑 Saint Peter's Square⁩",
+    "img": "./images/peterOne.jpeg",
+    "desc": "Vatican City⁩ (⁨Italy⁩) - September 2015"
+  },
+  {
+    "title": "👨‍🎨 Sistine Chapel⁩",
+    "img": "./images/sistine.jpeg",
+    "desc": "Vatican City⁩ (⁨Italy⁩) - September 2015"
+  },
+  {
+    "title": "🚤 Castiglione del Lago⁩",
+    "img": "./images/lake-castiglione.jpeg",
+    "desc": "Umbria⁩ (⁨Italy⁩) - August 2015"
+  },
+  {
+    "title": "🌳 Monteleone d'Orvieto⁩",
+    "img": "./images/monteleone-two.jpeg",
+    "desc": "Umbria⁩ (⁨Italy⁩) - July 2015"
+  },
+  {
+    "title": "🧱 Monteleone d'Orvieto⁩",
+    "img": "./images/monteleone-one.jpeg",
+    "desc": "Umbria⁩ (⁨Italy⁩) - July 2015"
+  },
+  {
+    "title": "🇮🇹 Altar of the Fatherland⁩",
+    "img": "./images/altar-rome.jpeg",
+    "desc": "⁨Rome⁩ (⁨Italy⁩) - January 2015"
+  },
+  {
+    "title": "🗼 Leaning Tower of Pisa⁩",
+    "img": "./images/pisa-tower.jpeg",
+    "desc": "⁨Pisa⁩ (⁨Italy⁩) - January 2015"
+  },
+  {
+    "title": "🎄 Piazza Salimbeni",
+    "img": "./images/salimbeni.jpeg",
+    "desc": "Siena⁩ (⁨Italy⁩) - December 2014"
+  },
+  {
+    "title": "🌉 Charles Bridge⁩",
+    "img": "./images/charles-bridge⁩.jpeg",
+    "desc": "⁨Prague⁩ (⁨Czech Republic⁩) - September 2014"
+  },
+  {
+    "title": "⁨🌤️ Prague⁩",
+    "img": "./images/prague⁩.jpeg",
+    "desc": "⁨Czech Republic⁩ - September 2014"
+  },
+  {
+    "title": "⛪ St. Vito Cathedral",
+    "img": "./images/vito-cathedral.jpeg",
+    "desc": "⁨Prague⁩ (⁨Czech Republic⁩) - September 2014"
+  },
+  {
+    "title": "🎵 John Lennon Wall",
+    "img": "./images/lennon-wall.jpeg",
+    "desc": "⁨Prague⁩ (⁨Czech Republic⁩) - September 2014"
+  },
+  {
+    "title": "⏰ The Prague Astronomical Clock",
+    "img": "./images/astronomical-clock.jpeg",
+    "desc": "⁨Prague⁩ (⁨Czech Republic⁩) - September 2014"
+  },
+  {
+    "title": "🎠 Old Town Square⁩",
+    "img": "./images/old-town-square⁩.jpeg",
+    "desc": "⁨Prague⁩ (⁨Czech Republic⁩) - September 2014"
+  },
+  {
+    "title": "⛪ Cathedral of Barcelona⁩",
+    "img": "./images/barcelona-cathedral.jpeg",
+    "desc": "Barcelona⁩ ⁨(Spain⁩) - August 2014"
+  },
+  {
+    "title": "🏞 Park Güell⁩",
+    "img": "./images/guell⁩.jpeg",
+    "desc": "Barcelona⁩ ⁨(Spain⁩) - August 2014"
+  },
+  {
+    "title": "🍬 Mercat de la Boqueria⁩",
+    "img": "./images/boqueria⁩.jpeg",
+    "desc": "Barcelona⁩ ⁨(Spain⁩) - August 2014"
+  },
+  {
+    "title": "🎨 Sagrada Familia⁩ (inside)",
+    "img": "./images/sagrada-familia⁩-in.jpeg",
+    "desc": "⁨Barcelona⁩ (⁨Spain⁩) - August 2014"
+  },
+  {
+    "title": "🏗️ Sagrada Familia⁩ (outside)",
+    "img": "./images/sagrada-familia⁩-out.jpeg",
+    "desc": "Barcelona⁩ ⁨(Spain⁩) - August 2014"
+  },
+  {
+    "title": "⛵ Port Olimpic",
+    "img": "./images/port-olimpic.jpeg",
+    "desc": "⁨Barcelona⁩ (Spain⁩) - August 2014"
+  },
+  {
+    "title": "⛲ Park De La Ciutadella⁩",
+    "img": "./images/ciutadella⁩.jpeg",
+    "desc": "⁨Barcelona⁩ (Spain⁩) - August 2014"
+  },
+  {
+    "title": "🎖️ Arc De Triomf⁩",
+    "img": "./images/arc-de-triomf.jpeg",
+    "desc": "⁨Barcelona⁩ (Spain⁩) - August 2014"
+  },
+  {
+    "title": "🦦 Lake of Chiusi⁩",
+    "img": "./images/lake-chiusi.jpeg",
+    "desc": "⁨Tuscany⁩ (Italy) - July 2014"
+  },
+  {
+    "title": "🧑‍🤝‍🧑 Piazza Del Campo⁩",
+    "img": "./images/piazza-campo.jpeg",
+    "desc": "Siena⁩ (Italy) - July 2014"
+  },
+  {
+    "title": "⛪ San Domenico",
+    "img": "./images/san-domenico.jpeg",
+    "desc": "Siena (Italy) - December 2013"
+  },
+  {
+    "title": "🏟 Arena di Verona",
+    "img": "./images/arena-verona.jpeg",
+    "desc": "Italy - August 2013"
+  },
+  {
+    "title": "🏰 Neuschwanstein Castle",
+    "img": "./images/neuschwanstein-Two.jpeg",
+    "desc": "Bavaria (Germany) - August 2013"
+  },
+  {
+    "title": "👸 Neuschwanstein Castle",
+    "img": "./images/neuschwanstein⁩.jpeg",
+    "desc": "Bavaria (Germany) - August 2013"
+  },
+  {
+    "title": "🏛️ Innsbruck⁩, ⁨Tyrol⁩",
+    "img": "./images/iInnsbruck⁩.jpeg",
+    "desc": "⁨Austria⁩ - August 2013"
+  },
+  {
+    "title": "🏇 Salzburg⁩",
+    "img": "./images/salzburg.jpeg",
+    "desc": "⁨Austria⁩ - August 2013"
+  },
+  {
+    "title": "🏹 Historic Centre of the City of Salzburg⁩",
+    "img": "./images/center-salzburg.jpeg",
+    "desc": "⁨Austria⁩ - August 2013"
+  },
+  {
+    "title": "🎡 Prater",
+    "img": "./images/prater.jpeg",
+    "desc": "Vienna⁩ ⁨(Austria⁩) - August 2013"
+  },
+  {
+    "title": "🐉 Klagenfurt",
+    "img": "./images/klagenfurt.jpeg",
+    "desc": "⁨Carinthia⁩ ⁨(Austria⁩) - August 2013"
+  },
+  {
+    "title": "🌤️ Temple of Poseidon⁩",
+    "img": "./images/poseidon⁩.jpeg",
+    "desc": "Lavrio⁩ ⁨(Greece⁩) - April 2011"
+  },
+  {
+    "title": "⁨🏟 Mycenae⁩",
+    "img": "./images/mMycenae⁩.jpeg",
+    "desc": "Greece⁩ - April 2011"
+  },
+  {
+    "title": "🏛 Parthenon⁩",
+    "img": "./images/parthenon.jpg",
+    "desc": "⁨Athens⁩ (Greece⁩) - April 2011"
+  },
+  {
+    "title": "🕍 Temple of Apollo⁩",
+    "img": "./images/apollo.jpg",
+    "desc": "⁨Delfoi⁩ (⁨Greece⁩) - April 2011"
+  },
+  {
+    "title": "🏠 Meteora",
+    "img": "./images/meteora.jpg",
+    "desc": "Greece - April 2011"
+  },
+  {
+    "title": "🐙 Adriatic Sea",
+    "img": "./images/adriatic.jpg",
+    "desc": "April 2011"
+  },
+  {
+    "title": "🗼 Eiffel Tower",
+    "img": "./images/eiffel.jpeg",
+    "desc": "Paris (France) - August 2007"
+  },
+  {
+    "title": "🌹 Moulin Rouge",
+    "img": "./images/moulin.jpeg",
+    "desc": "Paris (France) - August 2007"
+  },
+  {
+    "title": "🏥 Sacré-Cœur",
+    "img": "./images/sacre.jpeg",
+    "desc": "Paris (France) - August 2006"
+  }
+]

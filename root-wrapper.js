@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { MDXProvider } from '@mdx-js/react';
 import Code from './src/components/code';
-import { darkTheme } from './src/utils';
+import { darkTheme } from './src/utils/colors';
 
 const components = {
   'p.inlineCode': props => (

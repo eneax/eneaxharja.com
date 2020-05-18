@@ -65,12 +65,18 @@ module.exports = {
         background_color: '#3ddc84',
         theme_color: '#3ddc84',
         display: 'standalone',
-        icon: 'src/images/logo.svg', // This path is relative to the root of the site.
+        icon: 'src/images/logoDark.svg',
       },
     },
     // Enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -103,8 +109,8 @@ module.exports = {
                 ...edge.node.frontmatter,
                 description: edge.node.excerpt,
                 date: edge.node.frontmatter.date,
-                url: `${site.siteMetadata.siteUrl}/posts${edge.node.frontmatter.slug}`,
-                guid: `${site.siteMetadata.siteUrl}/posts${edge.node.frontmatter.slug}`,
+                url: `${site.siteMetadata.siteUrl}/blog${edge.node.frontmatter.slug}`,
+                guid: `${site.siteMetadata.siteUrl}/blog${edge.node.frontmatter.slug}`,
                 custom_elements: [{ 'content:encoded': edge.node.html }],
               })),
             query: `

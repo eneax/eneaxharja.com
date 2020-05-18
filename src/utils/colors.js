@@ -1,5 +1,5 @@
 export const darkTheme = {
-  body: '#121212',
+  body: '#1c1c1c',
   bodyLighter: 'rgb(25, 26, 27)',
   text: '#fff',
   textLighter: '#868e96',

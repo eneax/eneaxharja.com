@@ -1,19 +1,31 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
-import { Title, Container } from '../elements';
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
 
-    <Title>NOT FOUND</Title>
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
 
-    <Container>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Container>
+    <p>Here is a list of pages that might be interesting to you:</p>
+    <ul>
+      <li>
+        <Link to="/library">Library</Link>
+      </li>
+      <li>
+        <Link to="/travel">Travel</Link>
+      </li>
+      <li>
+        <Link to="/fun">Fun</Link>
+      </li>
+      <li>
+        <Link to="/resume">Resume</Link>
+      </li>
+    </ul>
   </Layout>
 );
 

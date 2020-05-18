@@ -2,43 +2,41 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Footer from '../components/footer';
 
-import {
-  Title,
-  Container,
-  SubTitle,
-  UnOrderedList,
-  ExternalLink,
-} from '../elements';
+import { ExternalLink } from '../utils/hyperLinks';
 
 const Uses = () => (
   <Layout>
     <SEO title="Uses" />
 
-    <Title>
-      <span role="img" aria-label="gears emoji">
-        ⚙️{' '}
-      </span>
-      Uses
-    </Title>
+    <h1>Uses</h1>
 
-    <Container>
+    <div>
       <p>
         Ever wonder about what gear I use? Here is a complete list of my
         favorite hardware and software.
       </p>
 
-      <SubTitle>Hardware</SubTitle>
-      <UnOrderedList>
+      <h2>
+        <span role="img" aria-label="gears emoji">
+          ⚙️
+        </span>{' '}
+        Hardware
+      </h2>
+      <ul>
         <li>MacBook Pro (15-inch, 2016)</li>
         <li>Google Pixel 3a</li>
         <li>Google Stadia</li>
         <li>Kindle (10th Generation)</li>
-      </UnOrderedList>
+      </ul>
 
-      <SubTitle>Desktop Apps</SubTitle>
-      <UnOrderedList>
+      <h2>
+        <span role="img" aria-label="laptop emoji">
+          💻
+        </span>{' '}
+        Apps
+      </h2>
+      <ul>
         <li>
           <ExternalLink href="https://www.google.com/chrome/">
             Google Chrome
@@ -65,10 +63,15 @@ const Uses = () => (
             Alfred App
           </ExternalLink>
         </li>
-      </UnOrderedList>
+      </ul>
 
-      <SubTitle>Chrome Extensions</SubTitle>
-      <UnOrderedList>
+      <h2>
+        <span role="img" aria-label="coder emoji">
+          👨‍💻
+        </span>{' '}
+        Chrome Extensions
+      </h2>
+      <ul>
         <li>
           <ExternalLink href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc">
             VisBug
@@ -85,48 +88,12 @@ const Uses = () => (
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?utm_source=chrome-ntp-icon">
-            JSONView
-          </ExternalLink>
-        </li>
-        <li>
           <ExternalLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?utm_source=chrome-ntp-icon">
             uBlock Origin
           </ExternalLink>
         </li>
-      </UnOrderedList>
-
-      <SubTitle>Progressive Web Apps</SubTitle>
-      <UnOrderedList>
-        <li>
-          <ExternalLink href="https://duo.google.com">Duo</ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://messages.google.com">
-            Messages
-          </ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://maps.google.com">Maps</ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://photos.google.com">Photos</ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://drive.google.com">Drive</ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://stadia.google.com">Stadia</ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://music.youtube.com">
-            YouTube Music
-          </ExternalLink>
-        </li>
-      </UnOrderedList>
-    </Container>
-
-    <Footer />
+      </ul>
+    </div>
   </Layout>
 );
 

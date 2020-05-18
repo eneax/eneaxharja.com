@@ -1,23 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Particles from 'react-particles-js';
+import styled from 'styled-components';
+
+import GlobalStyle from '../utils/globalStyles';
 
 import Header from './header';
+import Footer from './footer';
 
-import GlobalStyles from '../utils/globalStyles';
-import { MainWrapper } from '../elements/containers';
-import { particlesStyles, particlesConfig } from '../utils';
+// styles
+const PageContainer = styled.div`
+  position: relative;
+  min-height: 100vh;
+`;
+
+const MainContainer = styled.main`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 42rem;
+  padding: 1rem 1.3125rem 3rem;
+`;
 
 const Layout = ({ children }) => (
-  <>
-    <GlobalStyles />
-
-    <Particles style={particlesStyles} params={particlesConfig} />
-
+  <PageContainer>
+    <GlobalStyle />
     <Header />
-
-    <MainWrapper>{children}</MainWrapper>
-  </>
+    <MainContainer>{children}</MainContainer>
+    <Footer />
+  </PageContainer>
 );
 
 Layout.propTypes = {

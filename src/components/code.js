@@ -6,7 +6,8 @@ import theme from 'prism-react-renderer/themes/nightOwl';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MdContentCopy } from 'react-icons/md';
-import { copyToClipboard, handleLanguageColor, darkTheme } from '../utils';
+import { copyToClipboard } from '../utils/copyToClipboard';
+import { handleLanguageColor, darkTheme } from '../utils/colors';
 
 const Code = ({ code, language, ...props }) => {
   if (props['react-live']) {

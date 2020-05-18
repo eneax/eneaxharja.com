@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import favicon from '../images/favicon.ico';
-
-const SEO = ({ description, lang, meta, keywords, title }) => {
+function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -24,7 +22,6 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
 
   return (
     <Helmet
-      link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
       htmlAttributes={{
         lang,
       }}
@@ -63,24 +60,14 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
+      ].concat(meta)}
     />
   );
-};
+}
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  keywords: [],
   description: ``,
 };
 
@@ -88,7 +75,6 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 };
 

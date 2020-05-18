@@ -1,66 +1,77 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdCode, MdMailOutline, MdRssFeed } from 'react-icons/md';
+import { MdRssFeed } from 'react-icons/md';
+import {
+  AiFillGithub,
+  AiOutlineMail,
+  AiFillYoutube,
+  AiOutlineCoffee,
+} from 'react-icons/ai';
 
-import { above, avenir, darkTheme } from '../utils';
-import { SocialLink } from '../elements';
-
-const Footer = () => (
-  <FooterWrapper>
-    <FooterTextWrapper>
-      <small>
-        © {new Date().getFullYear()} <b>Enea Xharja</b>, All Rights Reserved
-      </small>
-    </FooterTextWrapper>
-
-    <FooterLinksWrapper>
-      <SocialLink href="https://github.com/eneax" aria-label="github">
-        <MdCode />
-      </SocialLink>
-      <SocialLink href="mailto:eneaxharja@gmail.com" aria-label="mail">
-        <MdMailOutline />
-      </SocialLink>
-      <SocialLink
-        href="https://eneaxharja.com/rss-feed.xml"
-        aria-label="rss feed"
-      >
-        <MdRssFeed />
-      </SocialLink>
-    </FooterLinksWrapper>
-  </FooterWrapper>
-);
-
-export default Footer;
+import { SocialIconLink } from '../utils/hyperLinks';
 
 // styles
-const FooterWrapper = styled.footer`
-  margin: 1rem auto 0;
+const FooterContainer = styled.footer`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  margin: 2rem auto 0;
+  text-align: center;
 `;
 
-const FooterTextWrapper = styled.div`
+const FooterText = styled.div`
   display: flex;
   justify-content: center;
-  ${avenir};
-  color: ${darkTheme.textLighter};
-  ${above.tablet`
-		padding-left: 4rem;
-		padding-right: 4rem;
-	`}
-  ${above.laptop`
-		padding-left: 8rem;
-  	padding-right: 8rem;
-	`}
-	small {
+
+  small {
     font-size: 0.75rem;
   }
 `;
 
-const FooterLinksWrapper = styled.div`
-  margin: 0 auto;
-  text-align: center;
+// data
+const footerLinksData = [
+  {
+    link: 'https://github.com/eneax',
+    title: 'GitHub',
+    icon: <AiFillGithub />,
+  },
+  {
+    link: 'https://www.youtube.com/c/EneaXharja17',
+    title: 'YouTube',
+    icon: <AiFillYoutube />,
+  },
+  {
+    link: 'https://www.buymeacoffee.com/eneaxharja',
+    title: 'Buy me a Coffee',
+    icon: <AiOutlineCoffee />,
+  },
+  {
+    link: 'mailto:eneaxharja@gmail.com',
+    title: 'Mail',
+    icon: <AiOutlineMail />,
+  },
+  {
+    link: 'https://eneaxharja.com/rss-feed.xml',
+    title: 'RSS Feed',
+    icon: <MdRssFeed />,
+  },
+];
 
-  a {
-    font-size: 0.5rem;
-    margin-bottom: 0;
-  }
-`;
+const Footer = () => (
+  <FooterContainer>
+    <FooterText>
+      <small>© {new Date().getFullYear()} Enea Xharja</small>
+    </FooterText>
+
+    <div>
+      {footerLinksData.map(({ link, title, icon }) => (
+        <SocialIconLink key={title} href={link} aria-label={title}>
+          {icon}
+        </SocialIconLink>
+      ))}
+    </div>
+  </FooterContainer>
+);
+
+export default Footer;

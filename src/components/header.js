@@ -1,86 +1,106 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-
 import logo from '../images/logoDark.svg';
-import { above, avenir, darkTheme } from '../utils';
+
+import { above } from '../utils/breakpoints';
+import { darkTheme } from '../utils/colors';
+
+// styles
+const NavLink = styled(Link)`
+  transition: color 0.3s;
+
+  &:hover {
+    color: ${darkTheme.text};
+  }
+`;
+
+const MainHeader = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 42rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  ${above.laptop`
+    justify-content: space-between;
+  `}
+
+  a {
+    background-image: none;
+    color: ${darkTheme.textLighter};
+    align-self: flex-end;
+  }
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 1px solid ${darkTheme.text};
+    margin-bottom: 0;
+
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    &:hover {
+      transform: rotate(-5deg) scale(1.1);
+    }
+  }
+`;
+
+const MainNav = styled.div`
+  ul {
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 0.5rem;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+`;
+
+// data
+const navItems = [
+  { link: '/about', text: 'About' },
+  { link: '/blog', text: 'Blog' },
+  { link: '/projects', text: 'Projects' },
+];
 
 const Header = () => (
-  <Navbar>
-    <Link className="logo" to="/" title="Home">
+  <MainHeader>
+    <Link to="/" title="Home">
       <img src={logo} alt="Enea Xharja Logo" />
     </Link>
-    <NavLinkWrapper>
-      <Link to="/about" title="About">
-        About
-      </Link>
-      <Link to="/posts" title="Blog">
-        Blog
-      </Link>
-      <Link to="/projects" title="Projects">
-        Projects
-      </Link>
-    </NavLinkWrapper>
-  </Navbar>
+    <MainNav>
+      <ul>
+        {navItems.map(({ link, text }) => (
+          <li key={link}>
+            <NavLink
+              to={link}
+              title={text}
+              activeStyle={{
+                color: `${darkTheme.text}`,
+                textDecoration: `${darkTheme.primary} double underline`,
+              }}
+              partiallyActive
+            >
+              {text}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </MainNav>
+  </MainHeader>
 );
 
 export default Header;
-
-// styles
-const Navbar = styled.nav`
-  display: table;
-  width: 100%;
-  max-width: 42rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 2.625rem 1.3125rem 0.625rem 1.3125rem;
-  box-sizing: border-box;
-  ${avenir};
-  background-color: ${darkTheme.body};
-
-  a {
-    color: ${darkTheme.text};
-    font-weight: 900;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-      transition: color 0.03s ease-in;
-    }
-    &:hover,
-    &:focus {
-      color: ${darkTheme.text};
-    }
-
-    img {
-      display: inline-block;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 100%;
-      border: 1px solid ${darkTheme.text};
-      margin-top: -0.2rem;
-      transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      &:hover {
-        transform: rotate(-5deg) scale(1.1);
-      }
-    }
-  }
-`;
-
-const NavLinkWrapper = styled.div`
-  display: table-cell;
-  width: 75%;
-  text-align: right;
-  a {
-    font-size: 0.875rem;
-    display: inline-block;
-    ${above.mobileL`
-			font-size: 1rem;
-		`}
-  }
-  a:nth-child(2) {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-`;
