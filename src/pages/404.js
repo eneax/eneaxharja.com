@@ -20,9 +20,6 @@ const NotFoundPage = () => (
         <Link to="/travel">Travel</Link>
       </li>
       <li>
-        <Link to="/fun">Fun</Link>
-      </li>
-      <li>
         <Link to="/resume">Resume</Link>
       </li>
     </ul>
