@@ -50,13 +50,13 @@ const Pagination = ({ page, pageContext }) => {
 
   return (
     <PaginationStyles>
-      {!isFirst && <Link to={prevPage}>← Prev 10</Link>}
+      {!isFirst && <Link to={prevPage}>← Prev</Link>}
 
       <p>
         Page {currentPage} of {numPages}
       </p>
 
-      {!isLast && <Link to={nextPage}>10 More →</Link>}
+      {!isLast && <Link to={nextPage}>Next →</Link>}
     </PaginationStyles>
   );
 };
