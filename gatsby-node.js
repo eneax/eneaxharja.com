@@ -4,7 +4,8 @@ const _ = require('lodash');
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve('./src/templates/postTemplate.js');
+  const postTemplate = path.resolve('./src/templates/postTemplate.js');
+  const postListTemplate = path.resolve('./src/templates/postListTemplate.js');
   const tagTemplate = path.resolve('src/templates/tagTemplate.js');
   const bookTemplate = path.resolve('src/templates/bookTemplate.js');
   const travelTemplate = path.resolve('src/templates/travelTemplate.js');
@@ -70,6 +71,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      allMdx {
+        edges {
+          node {
+            excerpt
+            timeToRead
+            frontmatter {
+              title
+              slug
+              date(formatString: "MMMM DD, YYYY")
+              tags
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -85,7 +100,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   posts.forEach(({ node }) => {
     createPage({
       path: `/blog${node.frontmatter.slug}`,
-      component: blogPostTemplate,
+      component: postTemplate,
       context: {
         slug: node.frontmatter.slug,
       },
@@ -127,4 +142,5 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   paginate('allBooksDataJson', 10, 'bookshelf', bookTemplate);
   paginate('allTravelsDataJson', 6, 'travel', travelTemplate);
   paginate('allProjectsDataJson', 6, 'projects', projectTemplate);
+  paginate('allMdx', 10, 'blog', postListTemplate);
 };
