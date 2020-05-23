@@ -59,7 +59,7 @@ const About = () => (
       screen sizes.
     </p>
     <p>
-      When I’m not coding, I read <Link to="/library">books</Link>, play{' '}
+      When I’m not coding, I read <Link to="/bookshelf">books</Link>, play{' '}
       <ExternalLink href="https://www.youtube.com/c/EneaXharja17">
         video games
       </ExternalLink>{' '}

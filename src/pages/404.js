@@ -14,7 +14,7 @@ const NotFoundPage = () => (
     <p>Here is a list of pages that might be interesting to you:</p>
     <ul>
       <li>
-        <Link to="/library">Library</Link>
+        <Link to="/bookshelf">Bookshelf</Link>
       </li>
       <li>
         <Link to="/travel">Travel</Link>

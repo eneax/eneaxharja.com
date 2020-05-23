@@ -9,15 +9,15 @@ import Card from '../components/card';
 import Pagination from '../components/pagination';
 
 // styles
-const Bookshelf = styled.div`
+const BooksContainer = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
 `;
 
 // query
-export const getLibraryData = graphql`
-  query getLibraryData($skip: Int!, $limit: Int!) {
-    allBookLibraryDataJson(limit: $limit, skip: $skip) {
+export const getBooksData = graphql`
+  query getBooksData($skip: Int!, $limit: Int!) {
+    allBooksDataJson(limit: $limit, skip: $skip) {
       edges {
         node {
           link
@@ -31,27 +31,27 @@ export const getLibraryData = graphql`
 `;
 
 const BookTemplate = ({ data, pageContext }) => {
-  const books = data.allBookLibraryDataJson.edges;
+  const books = data.allBooksDataJson.edges;
 
   return (
     <Layout>
-      <SEO title="Library" />
+      <SEO title="Bookshelf" />
 
-      <h1>Library</h1>
+      <h1>Bookshelf</h1>
 
       <div>
         <p>
-          Check out my reading list below and maybe you will meet your next
-          favorite book!
+          Check out my past and present reading collection and maybe you will
+          meet your next favorite book!
         </p>
 
-        <Bookshelf>
+        <BooksContainer>
           {books.map(({ node }, index) => (
             <Card key={index} item={node} />
           ))}
-        </Bookshelf>
+        </BooksContainer>
 
-        <Pagination page="library" pageContext={pageContext} />
+        <Pagination page="bookshelf" pageContext={pageContext} />
       </div>
     </Layout>
   );
@@ -59,7 +59,7 @@ const BookTemplate = ({ data, pageContext }) => {
 
 BookTemplate.propTypes = {
   data: PropTypes.shape({
-    allBookLibraryDataJson: PropTypes.shape({
+    allBooksDataJson: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({

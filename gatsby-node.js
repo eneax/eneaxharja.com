@@ -29,7 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           fieldValue
         }
       }
-      allBookLibraryDataJson {
+      allBooksDataJson {
         edges {
           node {
             link
@@ -124,7 +124,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   }
 
-  paginate('allBookLibraryDataJson', 10, 'library', bookTemplate);
+  paginate('allBooksDataJson', 10, 'bookshelf', bookTemplate);
   paginate('allTravelsDataJson', 6, 'travel', travelTemplate);
   paginate('allProjectsDataJson', 6, 'projects', projectTemplate);
 };
