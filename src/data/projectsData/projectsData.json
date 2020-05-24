@@ -48,6 +48,12 @@
     "desc": "A functioning Weather app built with React and Open Weather API."
   },
   {
+    "link": "https://github.com/eneax/github-battle",
+    "title": "⚔️  GitHub Battle",
+    "img": "./images/githubBattle.png",
+    "desc": "Discover popular repos and battle your GitHub friends."
+  },
+  {
     "link": "https://github.com/eneax/resume-theme",
     "title": "🔖 Resume Theme",
     "img": "./images/resume-theme.png",

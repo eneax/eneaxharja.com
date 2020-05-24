@@ -96,7 +96,7 @@ const Resume = () => (
         </li>
         <li>
           Created open-source side projects listed on my{' '}
-          <ExternalLink href="https://github.com/eneax">Github</ExternalLink>{' '}
+          <ExternalLink href="https://github.com/eneax">GitHub</ExternalLink>{' '}
           profile
         </li>
       </ul>
