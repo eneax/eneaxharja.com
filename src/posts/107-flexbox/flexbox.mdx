@@ -1,0 +1,136 @@
+---
+slug: '/flexbox'
+date: '2020-05-04'
+published: false
+title: '🔥 Flexbox'
+tags: ['css', 'flexbox']
+---
+
+# Why I use Flexbox
+
+One of the things I most envy about designers is their ability to just drag things around Figma or Sketch and build a layout in no-time.
+
+Trying out a layout idea can be very frustrating and I think Flexbox is an invaluable tool for developers who want to prototype something quickly and with the minimum effort.
+
+Moreover, you can use Flexbox to build responsive layouts not only for the web, but also for other platforms like native app for mobile and desktop, in addition to virtual reality.
+
+## Let's begin
+
+In order to activate Flexbox (or power up the crossbow), you need to give to the parent container: `display: flex;`.
+
+## flex-direction
+
+Display ‘flex’ comes with `flex-direction: row;` by default, so there is no need to specify it.
+
+flex-direction: row --> crossbow pointing east or right (default)
+flex-direction: row-reverse --> crossbow pointing west or left
+flex-direction: column --> crossbow aims to the south or down
+flex-direction: column-reverse --> crossbow aims to the north or up
+
+## justify-content
+
+The default setting is `justify-content: flex-start`. So, there is no need to specify it.
+As soon as you set: `display: flex;`, it will automatically imply:
+
+```
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+```
+
+When the item you want to target is far away from you, at the end of the container, you need to specify: `justify-content: flex-end`.
+
+If the item is lined up at the center of the container, use `justify-content: center;`.
+
+If you have more than one item and you want them to be positioned with an even amount of space between themselves, use `justify-content: space-between;`.
+
+However, if you want not only the items to have space between themselves, but also an even amount of space around (including the outer), use `justify-content: space-around;`.
+Here the trick is to look at the outer two items. If you want them to have space on both sides, it's better to use `space-around`.
+
+## align-items
+
+To understand `align-items`, you need to think about how you read a page. When you read a page, you start from the top.
+So `align-items: flex-start;` means aligned to the top when you're aiming right or left.
+
+But when aiming to the top, `align-items: flex-start;` means align left. Just like when reading a paper,
+when you read a line, you start on the left and end on the right.
+
+The important thing to remember is that align-items is always _perpendicular_ to the direction you're aiming: start and end go in the direction you read.
+
+Remember when you read, when you get to the bottom you've reached the end. So set it to `align-items: flex-end;`.
+
+We're aiming down, so the perpendicular direction is left to right. When you read you start on the left and end on the right. These ones are on the right, so take them out with `align-items: flex-end;`.
+
+They've managed to stretch themselves out completely along our Alignment Lasers! Luckily we have a stretch setting!
+Use `align-items: stretch`; when they do this.
+
+And of course they'd try centering. This time notice that they're centered along our blue Alignment Lasers.
+Change your setting to `align-items: center`;
+
+If you leave off align-items it will be exactly the same as setting it to `align-items: stretch;`.
+
+So, when you use: `display: flex;`, it automatically implies:
+
+```
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items; stretch;
+}
+```
+
+or if you prefer to shot with a crossbow:
+
+1. Turn on the crossbow,
+2. Aim it,
+3. Line the items up along the red Justify Laser,
+4. Align them along the blue Alignment Lasers.
+
+## align-self
+
+Unlike other properties that we were setting on the parent container, align-self is related to the individual targets only. Its job is to override the value of `align-items` that we specified for the parent container.
+To use align-self, first select the specific item:
+
+```
+.target:nth-of-type(x){ }
+```
+
+and then define the value.
+
+`align-self` will take the same values of `align-items`, so if you want to align an item on the top-right, you need to set `align-self: flex-start;`.
+
+If you want the item to stretch all over the container, use `align-self: stretch;`.
+To center an item, use `align-self: center;`.
+To align the single item at the end of the row, use `align-self: flex-end;`
+
+If you start getting confused about when to use align-items and align-self, keep in mind that the align property always starts and ends based on the reading direction. That's why it's important to identify the container alignment first, and then look for any deviations from it, so you can target any specific item individually.
+
+## flex-grow
+
+The flex-grow setting is all about _ratios_. Setting both goo zombies to `flex-grow: 1;` made them both grow to fill the available space at the same rate. When there's extra space available the goo zombie grows to fill it. Even though the free space is vertical this time, the same flex-grow setting will do the trick.
+
+Make your target grow to fill the available space using `flex-grow: 1;`.
+Now remember that `flex-grow` makes things grow in the same way as you're aiming. Aiming north or south and targets with flex-grow will grow vertically. Aiming east and west and they'll grow horizontally.
+
+They don't always grow at the same speed now do they! That second zombie appears to be growing twice as fast as the first to fill up any free space! Set your first target to grow at a rate of 1 (`flex-grow: 1;`), and your second target to grow twice as quickly with a flex-grow rate of 2 (`flex-grow: 2;`).
+
+**Important**: the second target did NOT grow twice as large as the first. But rather, whenever free space was available it grew at twice the speed.
+For every 3 pixels of free space beyond the zombies' default size, 1 pixel went to the first zombie and 2 pixels went to the second. In other words they grew at a ratio of 2 to 1.
+
+Very good. Keep in mind, our targets' flex-grow setting is set to 0 by default, meaning they won't grow unless you tell them to.
+
+Good. Even though `flex-grow: 0;` is the default, we had to specify it in this case to override the flex-grow: 1 we applied to all the targets.
+
+You even noticed that flex-grow always has to be applied directly to the targets, not to the container itself.
+
+flex-grow is all about the ratios. Things grow along your justify laser. Which reminds me: When zombies are growing, they fill all the available space in the direction you're aiming. This means there's not any extra space left to deal with so our justify-content setting doesn't do anything when there's growing going on. Unless of course zombies start doing something crazy liking wrapping to new lines... but that would be...hmm yeah I'd better add something to the crossbow tonight for that just in case. If I thought of it I'm sure zombie Dave will too.
+
+If anything is growing you don't need to worry about justify-content.
+
+## flex-shrink
+
+### Single Layout for All Browsers
+
+It’s funny, often when talking to devs about Flexbox they bring up concerns about cross-browser issues that they heard someone encountered once. I’ve built a bunch of production projects in Flexbox now and haven’t encountered a single issue. There are some rare bugs that exist, mainly in older versions of IE and older Safari. But for the most part you can build using flexbox and things just work™ everywhere. I don’t mess with fallbacks or any of that craziness. Flexbox works great.
+check caniuse.com

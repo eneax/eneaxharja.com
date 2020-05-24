@@ -1,0 +1,85 @@
+---
+slug: '/the-switch-statement'
+date: '2020-06-02'
+published: false
+title: 'The switch statement'
+tags: [javascript']
+---
+
+<a href="https://javascript.info/switch">switch</a>
+
+## Selecting from Many Options with Switch Statements
+
+The `if/else` statement is very useful to deal with more than two options.
+However, when we have many options to choose from, a `switch statement` is the ideal solution.
+
+Example:
+
+```js
+function caseInSwitch(x) {
+  var answer = '';
+
+  switch (x) {
+    case 1:
+      return (answer = 'alpha');
+      break;
+    case 2:
+      return (answer = 'beta');
+      break;
+    case 3:
+      return (answer = 'gamma');
+      break;
+    case 4:
+      return (answer = 'delta');
+      break;
+  }
+
+  return answer;
+}
+
+caseInSwitch(1);
+```
+
+The value of `x` is checked for a strict equality (`===`) to the value from the first case (`1`), then to the second (`2`) and so on.
+If the equality is found, `switch` starts to execute the code starting from the corresponding case, until the nearest break (or until the end of switch). If no case is matched then the `default` code is executed (if it exists).
+
+In a `switch` statement, if we have many cases to deal with and we cannot specify all of them, we can add a `default`
+statement. This statement will be executed only if no matching case statements are found.
+
+We can think of `default` as the final `else` statement in an `if/else` scenario, since both the statements are the last case.
+
+## Multiple Identical Options in Switch Statements
+
+If we omit the `break` statement from a switch statement's case, the `case`s will execute until a `break` is encountered.
+
+This can be a handy solution if we have multiple identical options that we might prefer to group together.
+
+Example:
+
+```js
+function sequentialSizes(val) {
+  var answer = '';
+
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = 'Low';
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = 'Mid';
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = 'High';
+      break;
+  }
+
+  return answer;
+}
+
+sequentialSizes(1);
+```

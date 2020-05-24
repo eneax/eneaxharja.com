@@ -71,7 +71,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-      allMdx {
+      allMdx(filter: { frontmatter: { published: { eq: true } } }) {
         edges {
           node {
             excerpt
