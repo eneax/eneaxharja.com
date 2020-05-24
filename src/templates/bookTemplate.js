@@ -17,7 +17,11 @@ const BooksContainer = styled.div`
 // query
 export const getBooksData = graphql`
   query getBooksData($skip: Int!, $limit: Int!) {
-    allBooksDataJson(limit: $limit, skip: $skip) {
+    allBooksDataJson(
+      limit: $limit
+      skip: $skip
+      sort: { order: ASC, fields: author }
+    ) {
       edges {
         node {
           link
