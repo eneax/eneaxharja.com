@@ -1,0 +1,3 @@
+# deploy contexts will inherit these settings.
+[context.production]
+  environment = { NODE_VERSION = "13.7.0" }
