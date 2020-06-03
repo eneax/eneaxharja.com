@@ -1,14 +1,14 @@
 ---
 slug: '/javascript-operators'
-date: '2020-04-27'
-published: false
+date: '2020-05-10'
+published: true
 title: '🧮 JavaScript Operators'
 tags: ['javascript']
 ---
 
 Numeric data in JavaScript is represented by the `Number` data type.
 
-## Add Two Numbers with JavaScript
+## Add Two Numbers
 
 In JavaScript, like in mathematics, the `+` symbol is used as an addition operator when in between two number.
 
@@ -18,7 +18,7 @@ Example:
 var randomNumber = 7 + 10; // 17
 ```
 
-## Subtract One Number from Another with JavaScript
+## Subtract One Number from Another
 
 JavaScript uses the `-` symbol for subtraction, in order to subtract one number from another:
 
@@ -26,7 +26,7 @@ JavaScript uses the `-` symbol for subtraction, in order to subtract one number 
 var randomNumber = 10 - 5; // 5
 ```
 
-## Multiply Two Numbers with JavaScript
+## Multiply Two Numbers
 
 JavaScript uses the `*` symbol for multiplication of two numbers:
 
@@ -34,7 +34,7 @@ JavaScript uses the `*` symbol for multiplication of two numbers:
 var randomNumber = 10 * 10; // 100
 ```
 
-## Divide One Number by Another with JavaScript
+## Divide One Number by Another
 
 JavaScript uses the `/` symbol in order to divide one number by another:
 
@@ -42,7 +42,7 @@ JavaScript uses the `/` symbol in order to divide one number by another:
 var randomNumber = 100 / 10; // 10
 ```
 
-## Increment a Number with JavaScript
+## Increment a Number
 
 In JavaScript, we can use the `++` operator to increment or add one to a variable:
 
@@ -56,7 +56,7 @@ is the equivalent of
 i = i + 1;
 ```
 
-## Decrement a Number with JavaScript
+## Decrement a Number
 
 In JavaScript, we can use the `--` operator to decrement or decrease a variable value by one:
 
@@ -70,7 +70,7 @@ is the equivalent of
 i = i - 1;
 ```
 
-## Create Decimal Numbers with JavaScript
+## Create Decimal Numbers
 
 Variables can store also decimal number, which are referred to also as `floating point numbers` or simply `floats`.
 
@@ -78,7 +78,7 @@ Variables can store also decimal number, which are referred to also as `floating
 var myDecimal = 9.9;
 ```
 
-## Multiply Two Decimals with JavaScript
+## Multiply Two Decimals
 
 Just like with whole numbers, in JavaScript, we can perform calculations also with decimal numbers:
 
@@ -86,7 +86,7 @@ Just like with whole numbers, in JavaScript, we can perform calculations also wi
 var product = 2.0 * 2.5; // 5
 ```
 
-## Divide One Decimal by Another with JavaScript
+## Divide One Decimal by Another
 
 Now let's divide one decimal by another:
 
@@ -94,7 +94,7 @@ Now let's divide one decimal by another:
 var quotient = 6.6 / 2.0; // 3.3
 ```
 
-## Finding a Remainder in JavaScript
+## Finding a Remainder
 
 In programming, it's common to check if a number is `even` (divisible by 2) or `odd` (not divisible by 2).
 
@@ -123,7 +123,7 @@ In JavaScript, we can combine a mathematical operator and the assignment operato
 ```js
 var myFavoriteNumber = 1;
 myFavoriteNumber += 16;
-console.log(myVar); // 17
+console.log(myFavoriteNumber); // 17
 ```
 
 ## Compound Assignment With Augmented Subtraction
@@ -133,7 +133,17 @@ Just like the `+=` operator we saw before, `-=` subtracts a number from a variab
 ```js
 var myFavoriteNumber = 4;
 myFavoriteNumber -= 1;
-console.log(myVar); // 3
+console.log(myFavoriteNumber); // 3
+```
+
+## Compound Assignment With Augmented Multiplication
+
+Using the `*=` operator, we can multiply a variable by a number:
+
+```js
+var myFavoriteNumber = 5;
+myFavoriteNumber *= 6;
+console.log(myFavoriteNumber); // 30
 ```
 
 ## Compound Assignment With Augmented Division
@@ -143,5 +153,5 @@ Using the `/=` operator, we can divide a variable by another number:
 ```js
 var myFavoriteNumber = 10;
 myFavoriteNumber /= 2;
-console.log(myVar); // 5
+console.log(myFavoriteNumber); // 5
 ```
