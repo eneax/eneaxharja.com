@@ -52,7 +52,7 @@ const footerLinksData = [
     icon: <AiOutlineMail />,
   },
   {
-    link: 'https://eneaxharja.com/rss-feed.xml',
+    link: 'https://eneaxharja.com/rss.xml',
     title: 'RSS Feed',
     icon: <MdRssFeed />,
   },
