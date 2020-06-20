@@ -26,8 +26,8 @@ const Uses = () => (
       <ul>
         <li>MacBook Pro (15-inch, 2016)</li>
         <li>Google Pixel 3a</li>
-        <li>Google Stadia</li>
-        <li>Kindle (10th Generation)</li>
+        <li>Google Stadia Controller</li>
+        <li>Sony Noise Cancelling Headphones (WH1000XM3)</li>
       </ul>
 
       <h2>
@@ -72,6 +72,11 @@ const Uses = () => (
         Chrome Extensions
       </h2>
       <ul>
+        <li>
+          <ExternalLink href="https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg">
+            Link to Text Fragment
+          </ExternalLink>
+        </li>
         <li>
           <ExternalLink href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc">
             VisBug
