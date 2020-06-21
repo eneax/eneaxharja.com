@@ -26,7 +26,6 @@ export const getBooksData = graphql`
         node {
           link
           title
-          desc
           author
         }
       }
@@ -69,7 +68,6 @@ BookTemplate.propTypes = {
           node: PropTypes.shape({
             link: PropTypes.string.isRequired,
             title: PropTypes.string.isRequired,
-            desc: PropTypes.string.isRequired,
             author: PropTypes.string.isRequired,
           }).isRequired,
         }).isRequired

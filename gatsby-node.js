@@ -35,7 +35,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             link
             title
-            desc
             author
           }
         }
@@ -138,7 +137,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   }
 
-  paginate('allBooksDataJson', 10, 'bookshelf', bookTemplate);
+  paginate('allBooksDataJson', 20, 'bookshelf', bookTemplate);
   paginate('allTravelsDataJson', 6, 'travel', travelTemplate);
   paginate('allProjectsDataJson', 6, 'projects', projectTemplate);
   paginate('allMdx', 10, 'blog', postListTemplate);
