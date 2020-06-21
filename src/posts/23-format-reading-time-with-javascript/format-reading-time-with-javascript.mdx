@@ -1,0 +1,22 @@
+---
+slug: '/format-reading-time-with-javascript'
+date: '2020-06-28'
+published: false
+title: '🌶 Format Reading Time with JavaScript'
+tags: ['javascript']
+---
+
+```js
+function formatReadingTime(timeToRead) {
+  const minutes = `${timeToRead > 1 ? `minutes` : `minute`}`;
+  const cups = Math.round(timeToRead / 5);
+
+  return `${new Array(cups || 1)
+    .fill('☕️')
+    .join('')} ${timeToRead} ${minutes} read`;
+}
+
+formatReadingTime(1); // "☕️ 1 minute read"
+formatReadingTime(9); // "☕️☕️ 9 minutes read"
+formatReadingTime(30); // "☕️☕️☕️☕️☕️☕️ 30 minutes read"
+```
