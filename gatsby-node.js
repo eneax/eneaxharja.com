@@ -75,7 +75,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             excerpt
-            timeToRead
             frontmatter {
               title
               slug

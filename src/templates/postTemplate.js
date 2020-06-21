@@ -43,7 +43,6 @@ export const query = graphql`
   query PostQuery($slug: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
       body
-      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -58,7 +57,6 @@ const PostTemplate = ({
   data: {
     mdx: {
       frontmatter: { title, date, tags },
-      timeToRead,
       body,
     },
   },
@@ -67,7 +65,7 @@ const PostTemplate = ({
     <SEO title={title} />
 
     <h1>{title}</h1>
-    <PostMeta date={date} tags={tags} timeToRead={timeToRead} />
+    <PostMeta date={date} tags={tags} />
 
     <PostContent>
       <MDXRenderer>{body}</MDXRenderer>
@@ -81,7 +79,6 @@ PostTemplate.propTypes = {
   data: PropTypes.shape({
     mdx: PropTypes.shape({
       body: PropTypes.string.isRequired,
-      timeToRead: PropTypes.number.isRequired,
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,

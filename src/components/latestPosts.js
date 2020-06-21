@@ -20,7 +20,6 @@ const getLatestPosts = graphql`
       edges {
         node {
           excerpt
-          timeToRead
           frontmatter {
             title
             slug
@@ -42,7 +41,7 @@ const LatestPosts = () => {
       <h2>Latest Posts</h2>
 
       {posts.map(({ node }) => {
-        const { timeToRead, excerpt } = node;
+        const { excerpt } = node;
         const { slug, title, date, tags } = node.frontmatter;
 
         return (
@@ -51,7 +50,7 @@ const LatestPosts = () => {
               <h3>{title}</h3>
             </Link>
 
-            <PostMeta date={date} tags={tags} timeToRead={timeToRead} />
+            <PostMeta date={date} tags={tags} />
 
             <p>{excerpt}</p>
           </Posts>

@@ -25,7 +25,6 @@ export const getPosts = graphql`
       edges {
         node {
           excerpt
-          timeToRead
           frontmatter {
             title
             slug
@@ -47,7 +46,7 @@ const PostListTemplate = ({ data, pageContext }) => {
       <h1>Blog</h1>
 
       {posts.map(({ node }) => {
-        const { timeToRead, excerpt } = node;
+        const { excerpt } = node;
         const { slug, title, date, tags } = node.frontmatter;
 
         return (
@@ -56,7 +55,7 @@ const PostListTemplate = ({ data, pageContext }) => {
               <h2>{title}</h2>
             </Link>
 
-            <PostMeta date={date} tags={tags} timeToRead={timeToRead} />
+            <PostMeta date={date} tags={tags} />
 
             <p>{excerpt}</p>
           </PostsContainer>
@@ -75,7 +74,6 @@ PostListTemplate.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             excerpt: PropTypes.string.isRequired,
-            timeToRead: PropTypes.number.isRequired,
             frontmatter: PropTypes.shape({
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,

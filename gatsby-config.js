@@ -121,7 +121,6 @@ module.exports = {
                 ) {
                   edges {
                     node {
-                      timeToRead
                       excerpt
                       html
                       frontmatter {

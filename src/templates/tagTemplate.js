@@ -24,7 +24,6 @@ export const query = graphql`
       edges {
         node {
           excerpt
-          timeToRead
           frontmatter {
             title
             slug
@@ -54,7 +53,7 @@ const Tags = ({ pageContext, data }) => {
         <Link to="/tags">View all tags</Link>
 
         {edges.map(({ node }) => {
-          const { timeToRead, excerpt } = node;
+          const { excerpt } = node;
           const { slug, title, date, tags } = node.frontmatter;
 
           return (
@@ -63,7 +62,7 @@ const Tags = ({ pageContext, data }) => {
                 <h3>{title}</h3>
               </Link>
 
-              <PostMeta date={date} tags={tags} timeToRead={timeToRead} />
+              <PostMeta date={date} tags={tags} />
 
               <p>{excerpt}</p>
             </Posts>
