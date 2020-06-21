@@ -21,7 +21,6 @@ export const getTravelData = graphql`
               }
             }
           }
-          desc
         }
       }
     }
@@ -59,8 +58,8 @@ TravelTemplate.propTypes = {
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
+            title: PropTypes.string.isRequired,
             img: PropTypes.object.isRequired,
-            desc: PropTypes.string.isRequired,
           }),
         }).isRequired
       ).isRequired,
