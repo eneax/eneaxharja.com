@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { MdCloudDownload } from 'react-icons/md';
 
 import Layout from '../components/layout';
@@ -31,7 +32,7 @@ const Resume = () => (
 
     <h1>
       Resume
-      <DownloadIconLink href="https://drive.google.com/open?id=1gIoe1TdJHsEGCV07QAmBgRlRxMNeTF9t">
+      <DownloadIconLink href="/downloads/eneaxharja-resume.pdf">
         <MdCloudDownload />
       </DownloadIconLink>
     </h1>
