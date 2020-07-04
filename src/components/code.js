@@ -62,7 +62,10 @@ const CodeWrapper = styled.div`
 
   pre {
     text-align: left;
-    overflow-x: auto;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    overflow: auto;
 
     & .token-line {
       line-height: 1.3em;
