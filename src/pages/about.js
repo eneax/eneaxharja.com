@@ -75,10 +75,15 @@ const About = () => (
       <Link to="/resume">resume</Link>.
     </p>
     <p>
-      One more thing! This site is ad-free and doesn’t use trackers. If you find
-      my projects useful to you, please consider supporting my work by{' '}
+      One more thing! This site is ad-free and doesn’t use trackers. If you
+      enjoy reading my blog or find my projects helpful to you, please consider
+      supporting my work by becoming a GitHub{' '}
+      <ExternalLink href="https://github.com/sponsors/eneax">
+        sponsor
+      </ExternalLink>{' '}
+      or buying me a{' '}
       <ExternalLink href="https://www.buymeacoffee.com/eneaxharja">
-        buying me a coffee
+        coffee
       </ExternalLink>
       .
     </p>
