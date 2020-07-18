@@ -28,6 +28,7 @@ const Uses = () => (
         <li>Google Pixel 3a</li>
         <li>Google Stadia Controller</li>
         <li>Sony Noise Cancelling Headphones (WH1000XM3)</li>
+        <li>Kindle Paperwhite (10th Generation)</li>
       </ul>
 
       <h2>
