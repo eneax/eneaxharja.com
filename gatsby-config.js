@@ -66,27 +66,6 @@ module.exports = {
         theme_color: '#3ddc84',
         display: 'standalone',
         icon: 'src/images/logo.svg',
-        shortcuts: [
-          {
-            name: 'Read the blog',
-            short_name: 'Blog',
-            description: 'View the list of post',
-            url: '/blog',
-          },
-          {
-            name: 'My Bookshelf',
-            short_name: 'Bookshelf',
-            description: 'View my past and present reading collection',
-            url: '/bookshelf',
-          },
-          {
-            name: 'My trips',
-            short_name: 'Trips',
-            description:
-              'View the photos I took during my trips over the years',
-            url: '/travel',
-          },
-        ],
       },
     },
     // Enables Progressive Web App + Offline functionality
