@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import { darkTheme } from '../utils/colors';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PostMeta from '../components/postMeta';
@@ -11,6 +13,14 @@ import Pagination from '../components/pagination';
 // styles
 const PostsContainer = styled.div`
   margin-bottom: 2rem;
+
+  h2 {
+    transition: color 0.2s;
+
+    &:hover {
+      color: ${darkTheme.primaryDarkerHover};
+    }
+  }
 `;
 
 // query
