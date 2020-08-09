@@ -1,5 +1,5 @@
 /* eslint-disable react/destructuring-assignment */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
@@ -10,6 +10,8 @@ import { copyToClipboard } from '../utils/copyToClipboard';
 import { handleLanguageColor, darkTheme } from '../utils/colors';
 
 const Code = ({ code, language, ...props }) => {
+  const [copied, setCopied] = useState(false);
+
   if (props['react-live']) {
     return (
       <LiveProvider code={code} noInline theme={theme}>
@@ -20,8 +22,15 @@ const Code = ({ code, language, ...props }) => {
     );
   }
 
-  const handleClick = () => {
+  const delay = duration =>
+    new Promise(resolve => setTimeout(resolve, duration));
+
+  const handleCopyCodeClick = async () => {
     copyToClipboard(code);
+
+    setCopied(true);
+    await delay(5000);
+    setCopied(false);
   };
 
   return (
@@ -39,8 +48,8 @@ const Code = ({ code, language, ...props }) => {
               </div>
             ))}
           </pre>
-          <CopyCode onClick={handleClick}>
-            <MdContentCopy />
+          <CopyCode onClick={handleCopyCodeClick}>
+            {copied ? `Copied!` : <MdContentCopy />}
           </CopyCode>
         </CodeWrapper>
       )}
@@ -100,6 +109,11 @@ const CopyCode = styled.button`
   opacity: 1;
   transition: all 0.2s;
   cursor: pointer;
+
+  /* copied text */
+  font-size: 0.75rem;
+  letter-spacing: 0.075em;
+  line-height: 1;
 
   svg {
     font-size: 1rem;
