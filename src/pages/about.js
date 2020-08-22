@@ -49,7 +49,6 @@ const About = () => (
       JavaScript Engineer at{' '}
       <ExternalLink href="https://www.blogfoster.com">blogfoster</ExternalLink>.
     </p>
-
     <p>
       Most of my time is spent writing{' '}
       <ExternalLink href="https://github.com/eneax">code</ExternalLink> for the
@@ -57,6 +56,11 @@ const About = () => (
       <ExternalLink href="https://jamstack.org">Jamstack</ExternalLink> websites
       that are responsive and can adapt the layout to a variety of devices and
       screen sizes.
+    </p>
+    <p>
+      With my content I try to help people learn about more web development,
+      enable them to start their own personal projects, and hopefully also
+      inspire someone to do the same and contribute to open source.
     </p>
     <p>
       When I’m not coding, I read <Link to="/bookshelf">books</Link>, play{' '}
