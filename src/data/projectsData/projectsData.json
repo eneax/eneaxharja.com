@@ -24,13 +24,7 @@
     "desc": "Clean and minimal portfolio website built with Gatsby and styled with styled-components."
   },
   {
-    "link": "https://github.com/eneax/minimal-blog",
-    "title": "🖋 Minimal Blog",
-    "img": "./images/minimalBlog.png",
-    "desc": "A minimal blog built with Gatsby, Netlify CMS, GraphQL and Web Animations API."
-  },
-  {
-    "link": "https://github.com/eneax/eneax.github.io",
+    "link": "https://github.com/eneax/eneaxharja.com",
     "title": "🏡 eneaxharja[dot]com",
     "img": "./images/me.png",
     "desc": "My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code."
