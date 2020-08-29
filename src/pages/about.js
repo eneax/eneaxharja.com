@@ -84,10 +84,6 @@ const About = () => (
       supporting my work by becoming a GitHub{' '}
       <ExternalLink href="https://github.com/sponsors/eneax">
         sponsor
-      </ExternalLink>{' '}
-      or buying me a{' '}
-      <ExternalLink href="https://www.buymeacoffee.com/eneaxharja">
-        coffee
       </ExternalLink>
       .
     </p>

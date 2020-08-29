@@ -1,12 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MdRssFeed } from 'react-icons/md';
-import {
-  AiFillGithub,
-  AiOutlineMail,
-  AiFillYoutube,
-  AiOutlineCoffee,
-} from 'react-icons/ai';
+import { AiFillGithub, AiOutlineMail, AiFillYoutube } from 'react-icons/ai';
 
 import { SocialIconLink } from '../utils/hyperLinks';
 
@@ -40,11 +35,6 @@ const footerLinksData = [
     link: 'https://www.youtube.com/c/EneaXharja17',
     title: 'YouTube',
     icon: <AiFillYoutube />,
-  },
-  {
-    link: 'https://www.buymeacoffee.com/eneaxharja',
-    title: 'Buy me a Coffee',
-    icon: <AiOutlineCoffee />,
   },
   {
     link: 'mailto:eneaxharja@gmail.com',
