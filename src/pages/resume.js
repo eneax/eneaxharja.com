@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import { MdCloudDownload } from 'react-icons/md';
 
 import Layout from '../components/layout';
