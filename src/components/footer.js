@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdRssFeed } from 'react-icons/md';
 import { AiFillGithub, AiOutlineMail, AiFillYoutube } from 'react-icons/ai';
 
 import { SocialIconLink } from '../utils/hyperLinks';
@@ -40,11 +39,6 @@ const footerLinksData = [
     link: 'mailto:eneaxharja@gmail.com',
     title: 'Mail',
     icon: <AiOutlineMail />,
-  },
-  {
-    link: 'https://eneaxharja.com/rss-feed.xml',
-    title: 'RSS Feed',
-    icon: <MdRssFeed />,
   },
 ];
 
