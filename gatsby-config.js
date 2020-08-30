@@ -87,6 +87,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://eneaxharja.com`,
+      },
+    },
+    {
       // Enables RSS Feed
       resolve: `gatsby-plugin-feed-mdx`,
       options: {
