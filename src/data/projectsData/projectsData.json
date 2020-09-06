@@ -1,5 +1,11 @@
 [
   {
+    "link": "https://github.com/eneax/gatsby-dev-portfolio",
+    "title": "👨‍💻 gatsby-dev-portfolio",
+    "img": "./images/dev-portfolio.png",
+    "desc": "A developer portfolio built with Gatsby, styled-components, GraphQL and Strapi Headless CMS."
+  },
+  {
     "link": "https://github.com/eneax/gatsby-landing-page-arty",
     "title": "🖼 Arty",
     "img": "./images/arty.png",
