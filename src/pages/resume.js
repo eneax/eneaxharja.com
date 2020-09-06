@@ -53,6 +53,13 @@ const Resume = () => (
       <DateTime>10/2017 – Present</DateTime>
       <ul>
         <li>
+          Created a simple starter to get your{' '}
+          <ExternalLink href="https://github.com/eneax/gatsby-dev-portfolio">
+            developer portfolio
+          </ExternalLink>{' '}
+          up and running quickly with Gatsby and Strapi Headless CMS
+        </li>
+        <li>
           Designed and developed a responsive{' '}
           <ExternalLink href="https://github.com/eneax/gatsby-landing-page-arty">
             landing page
