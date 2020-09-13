@@ -53,6 +53,13 @@ const Resume = () => (
       <DateTime>10/2017 – Present</DateTime>
       <ul>
         <li>
+          Responsive{' '}
+          <ExternalLink href="https://github.com/eneax/coffee-shop">
+            coffee shop
+          </ExternalLink>{' '}
+          website built with Gatsby, Tailwind CSS, Contentful and Snipcart
+        </li>
+        <li>
           Created a simple starter to get your{' '}
           <ExternalLink href="https://github.com/eneax/gatsby-dev-portfolio">
             developer portfolio
@@ -79,13 +86,6 @@ const Resume = () => (
             travel agency
           </ExternalLink>{' '}
           website using Gatsby, Markdown, GraphQL and styled-components
-        </li>
-        <li>
-          Created a clean and minimal{' '}
-          <ExternalLink href="https://github.com/eneax/krix-portfolio">
-            portfolio
-          </ExternalLink>{' '}
-          website using Gatsby and GraphQL and styled it with styled-components
         </li>
         <li>
           More open-source projects listed on my{' '}
