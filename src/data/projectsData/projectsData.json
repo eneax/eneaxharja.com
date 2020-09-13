@@ -1,5 +1,11 @@
 [
   {
+    "link": "https://github.com/eneax/coffee-shop",
+    "title": "☕️ coffee-shop",
+    "img": "./images/coffee-shop.png",
+    "desc": "Responsive coffee shop website built with Gatsby, Tailwind CSS, Contentful and Snipcart."
+  },
+  {
     "link": "https://github.com/eneax/gatsby-dev-portfolio",
     "title": "👨‍💻 gatsby-dev-portfolio",
     "img": "./images/dev-portfolio.png",
@@ -28,12 +34,6 @@
     "title": "🏛 Portfolio Website",
     "img": "./images/kri-portfolio-website.png",
     "desc": "Clean and minimal portfolio website built with Gatsby and styled with styled-components."
-  },
-  {
-    "link": "https://github.com/eneax/eneaxharja.com",
-    "title": "🏡 eneaxharja[dot]com",
-    "img": "./images/me.png",
-    "desc": "My Own Little Corner of the Web. Designed on a MacBook Pro in Tuscany (Italy). Built on Gatsby, the blazing-fast static site generator for React, and coded with VS Code."
   },
   {
     "link": "https://github.com/eneax/thriving-cities",
