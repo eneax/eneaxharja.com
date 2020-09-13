@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineMail, AiFillYoutube } from 'react-icons/ai';
 
 import { SocialIconLink } from '../utils/hyperLinks';
 
@@ -29,6 +29,11 @@ const footerLinksData = [
     link: 'https://github.com/eneax',
     title: 'GitHub',
     icon: <AiFillGithub />,
+  },
+  {
+    link: 'https://www.youtube.com/c/EneaXharja17',
+    title: 'YouTube',
+    icon: <AiFillYoutube />,
   },
   {
     link: 'mailto:eneaxharja@gmail.com',
