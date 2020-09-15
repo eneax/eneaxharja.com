@@ -17,12 +17,7 @@ const Uses = () => (
         favorite hardware and software.
       </p>
 
-      <h2>
-        <span role="img" aria-label="gears emoji">
-          ⚙️
-        </span>{' '}
-        Hardware
-      </h2>
+      <h2>Hardware</h2>
       <ul>
         <li>MacBook Pro (15-inch, 2016)</li>
         <li>Google Pixel 3a</li>
@@ -31,12 +26,7 @@ const Uses = () => (
         <li>Kindle Paperwhite (10th Generation)</li>
       </ul>
 
-      <h2>
-        <span role="img" aria-label="laptop emoji">
-          💻
-        </span>{' '}
-        Apps
-      </h2>
+      <h2>Apps</h2>
       <ul>
         <li>
           <ExternalLink href="https://www.google.com/chrome/">
@@ -66,12 +56,7 @@ const Uses = () => (
         </li>
       </ul>
 
-      <h2>
-        <span role="img" aria-label="coder emoji">
-          👨‍💻
-        </span>{' '}
-        Chrome Extensions
-      </h2>
+      <h2>Chrome Extensions</h2>
       <ul>
         <li>
           <ExternalLink href="https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg">
