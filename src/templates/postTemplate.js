@@ -11,6 +11,10 @@ import PostMeta from '../components/postMeta';
 import { darkTheme } from '../utils/colors';
 
 // styles
+const PostTitle = styled.h1`
+  margin-bottom: 1rem;
+`;
+
 const PostContent = styled.div`
   margin-top: 3rem;
 
@@ -64,7 +68,7 @@ const PostTemplate = ({
   <Layout>
     <SEO title={title} />
 
-    <h1>{title}</h1>
+    <PostTitle>{title}</PostTitle>
     <PostMeta date={date} tags={tags} />
 
     <PostContent>

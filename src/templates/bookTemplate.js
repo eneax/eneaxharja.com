@@ -3,15 +3,29 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import { ExternalLink } from '../utils/hyperLinks';
+import { darkTheme } from '../utils/colors';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Card from '../components/card';
 import Pagination from '../components/pagination';
 
 // styles
 const BooksContainer = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
+
+  h3 {
+    transition: color 0.2s;
+    &:hover {
+      color: ${darkTheme.primaryDarkerHover};
+    }
+  }
+  h6 {
+    color: ${darkTheme.textLighter};
+    margin-top: -1.35rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 // query
@@ -49,8 +63,13 @@ const BookTemplate = ({ data, pageContext }) => {
         </p>
 
         <BooksContainer>
-          {books.map(({ node }, index) => (
-            <Card key={index} item={node} />
+          {books.map(({ node: { link, title, author } }, index) => (
+            <div key={index}>
+              <ExternalLink href={link}>
+                <h3>{title}</h3>
+                <h6>by {author}</h6>
+              </ExternalLink>
+            </div>
           ))}
         </BooksContainer>
 

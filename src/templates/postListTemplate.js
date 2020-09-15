@@ -15,8 +15,8 @@ const PostsContainer = styled.div`
   margin-bottom: 2rem;
 
   h2 {
+    margin-bottom: 0.75rem;
     transition: color 0.2s;
-
     &:hover {
       color: ${darkTheme.primaryDarkerHover};
     }

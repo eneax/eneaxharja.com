@@ -3,13 +3,27 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import { darkTheme } from '../utils/colors';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PostMeta from '../components/postMeta';
 
 // styles
+const TagHeader = styled.h1`
+  margin-bottom: 1rem;
+`;
+
 const Posts = styled.div`
   margin-bottom: 2rem;
+`;
+
+const PostTitle = styled.h3`
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+  &:hover {
+    color: ${darkTheme.primaryDarkerHover};
+  }
 `;
 
 // query
@@ -47,7 +61,7 @@ const Tags = ({ pageContext, data }) => {
     <Layout>
       <SEO title={`"${tag}" tag`} />
 
-      <h1>{tagHeader}</h1>
+      <TagHeader>{tagHeader}</TagHeader>
 
       <div>
         <Link to="/tags">View all tags</Link>
@@ -59,7 +73,7 @@ const Tags = ({ pageContext, data }) => {
           return (
             <Posts key={slug}>
               <Link to={`/blog${slug}`}>
-                <h3>{title}</h3>
+                <PostTitle>{title}</PostTitle>
               </Link>
 
               <PostMeta date={date} tags={tags} />
