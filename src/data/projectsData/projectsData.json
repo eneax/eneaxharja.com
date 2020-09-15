@@ -1,169 +1,169 @@
 [
   {
     "link": "https://github.com/eneax/coffee-shop",
-    "title": "☕️ coffee-shop",
+    "title": "coffee-shop",
     "img": "./images/coffee-shop.png",
     "desc": "Responsive coffee shop website built with Gatsby, Tailwind CSS, Contentful and Snipcart."
   },
   {
     "link": "https://github.com/eneax/gatsby-dev-portfolio",
-    "title": "👨‍💻 gatsby-dev-portfolio",
+    "title": "gatsby-dev-portfolio",
     "img": "./images/dev-portfolio.png",
     "desc": "A developer portfolio built with Gatsby, styled-components, GraphQL and Strapi Headless CMS."
   },
   {
     "link": "https://github.com/eneax/gatsby-landing-page-arty",
-    "title": "🖼 Arty",
+    "title": "Arty",
     "img": "./images/arty.png",
     "desc": "Landing Page built with Gatsby, CSS Grid, styled-components, GraphQL and Contentful."
   },
   {
     "link": "https://github.com/eneax/gatsby-restaurant",
-    "title": "🍔 Delicious",
+    "title": "Delicious",
     "img": "./images/delicious.png",
     "desc": "Responsive restaurant website built with Gatsby, Contentful, GraphQL and styled-components."
   },
   {
     "link": "https://github.com/eneax/globetrotter",
-    "title": "🌎 Globetrotter",
+    "title": "Globetrotter",
     "img": "./images/globetrotter.png",
     "desc": "Responsive travel agency website built using Gatsby, Markdown, GraphQL and styled-components."
   },
   {
     "link": "https://github.com/eneax/krix-portfolio",
-    "title": "🏛 Portfolio Website",
+    "title": "Portfolio Website",
     "img": "./images/kri-portfolio-website.png",
     "desc": "Clean and minimal portfolio website built with Gatsby and styled with styled-components."
   },
   {
     "link": "https://github.com/eneax/thriving-cities",
-    "title": "🌃 Thriving Cities",
+    "title": "Thriving Cities",
     "img": "./images/thrivingCities.png",
     "desc": "This project represents a responsive single page company website built with React and Bootstrap."
   },
   {
     "link": "https://github.com/eneax/weather-app",
-    "title": "🌞 Weather App",
+    "title": "Weather App",
     "img": "./images/weatherApp.png",
     "desc": "A functioning Weather app built with React and Open Weather API."
   },
   {
     "link": "https://github.com/eneax/github-battle",
-    "title": "⚔️  GitHub Battle",
+    "title": "GitHub Battle",
     "img": "./images/githubBattle.png",
     "desc": "Discover popular repos and battle your GitHub friends."
   },
   {
     "link": "https://github.com/eneax/resume-theme",
-    "title": "🔖 Resume Theme",
+    "title": "Resume Theme",
     "img": "./images/resume-theme.png",
     "desc": "Clean and simple resume theme built with Bootstrap 4."
   },
   {
     "link": "https://github.com/eneax/roboheads",
-    "title": "🤖 RoboHeads",
+    "title": "RoboHeads",
     "img": "./images/robotHeads.png",
     "desc": "A fast and responsive React app where you can search robots by name or email."
   },
   {
     "link": "https://github.com/eneax/portfolio-theme",
-    "title": "📜 Portfolio Theme",
+    "title": "Portfolio Theme",
     "img": "./images/portfolio-theme.png",
     "desc": "Bootstrap portfolio theme with smooth scrolling and off-canvas navigation."
   },
   {
     "link": "https://github.com/eneax/restaurant-theme",
-    "title": "🍴Restaurant Theme",
+    "title": "Restaurant Theme",
     "img": "./images/restaurant-theme.png",
     "desc": "A responsive restaurant theme built with Bootstrap 4."
   },
   {
     "link": "https://github.com/eneax/budgetApp",
-    "title": "📓 Budget App",
+    "title": "Budget App",
     "img": "./images/budgetApp.png",
     "desc": "Responsive Budget App built with Bootstrap 4 and Javascript."
   },
   {
     "link": "https://github.com/eneax/confettiDJ",
-    "title": "🎉 confettiDJ",
+    "title": "confettiDJ",
     "img": "./images/confetti.png",
     "desc": "Animation and Sound Game with Paper.js and howler.js."
   },
   {
     "link": "https://github.com/eneax/toDoList",
-    "title": "📌 ToDo List",
+    "title": "ToDo List",
     "img": "./images/todo.png",
     "desc": "Simple jQuery ToDo List."
   },
   {
     "link": "https://github.com/eneax/rgbGame",
-    "title": "🖍 rgbGame",
+    "title": "rgbGame",
     "img": "./images/rgbGame.png",
     "desc": "Guess the RGB - A JavaScript Color Guessing Game."
   },
   {
     "link": "https://github.com/eneax/Trattoria_Porsenna_v3",
-    "title": "🍽 Trattoria Porsenna v3",
+    "title": "Trattoria Porsenna v3",
     "img": "./images/porsenna3.png",
     "desc": "Responsive website of Trattoria Porsenna - Version 3."
   },
   {
     "link": "https://github.com/eneax/CheckList",
-    "title": "📝 CheckList",
+    "title": "CheckList",
     "img": "./images/checklist.png",
     "desc": "A basic checklist built with CSS and Javascript."
   },
   {
     "link": "https://github.com/eneax/Pig_Game",
-    "title": "🐷 Pig (dice game)",
+    "title": "Pig (dice game)",
     "img": "./images/pig-game.png",
     "desc": "Pig is a simple game you can play with a single 6-sided die."
   },
   {
     "link": "https://github.com/eneax/scoreKeeper",
-    "title": "🏆 scoreKeeper",
+    "title": "scoreKeeper",
     "img": "./images/scoreKeeper.png",
     "desc": "Clean and Minimal Score Keeping App."
   },
   {
     "link": "https://github.com/eneax/doosan-baseball",
-    "title": "⚾ Doosan Baseball",
+    "title": "Doosan Baseball",
     "img": "./images/doosan.png",
     "desc": "Responsive website built with Bootstrap 4 - Doosan Baseball."
   },
   {
     "link": "https://github.com/eneax/Bootstrap_Landing_Page_Slider",
-    "title": "📸 Landing Page Slider",
+    "title": "Landing Page Slider",
     "img": "./images/landing-slider.png",
     "desc": "Landing Page Slider built with Bootstrap."
   },
   {
     "link": "https://github.com/eneax/Bootstrap_Image_Gallery",
-    "title": "📷 Bootstrap Image Gallery",
+    "title": "Bootstrap Image Gallery",
     "img": "./images/img-gallery.png",
     "desc": "Responsive Image Gallery built with Bootstrap."
   },
   {
     "link": "https://github.com/eneax/3D_Rotating_Cube",
-    "title": "🛸 3D Rotating Cube",
+    "title": "3D Rotating Cube",
     "img": "./images/rotating-cube.png",
     "desc": "Rotating Cube with CSS 3D Transforms - Star Wars Theme."
   },
   {
     "link": "https://github.com/eneax/3D_Menu_Gallery",
-    "title": "🥘 3D Menu Gallery",
+    "title": "3D Menu Gallery",
     "img": "./images/3DMenu.png",
     "desc": "3D Menu Gallery with CSS Transition and Transform."
   },
   {
     "link": "https://github.com/eneax/Menu_Gallery",
-    "title": "🍝 Menu Gallery",
+    "title": "Menu Gallery",
     "img": "./images/menu.png",
     "desc": "Menu Gallery with CSS Transition and Transform."
   },
   {
     "link": "https://github.com/eneax/Wild_And_Beautiful",
-    "title": "🎨 Wild And Beautiful",
+    "title": "Wild And Beautiful",
     "img": "./images/wild.png",
     "desc": "Creating an SVG Animated Line Drawing."
   }
