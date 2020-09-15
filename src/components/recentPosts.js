@@ -2,15 +2,24 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
+import { darkTheme } from '../utils/colors';
 import PostMeta from './postMeta';
 
 // styles
 const Posts = styled.div`
   margin-bottom: 2rem;
+
+  h3 {
+    margin-bottom: 0.75rem;
+    transition: color 0.2s;
+    &:hover {
+      color: ${darkTheme.primaryDarkerHover};
+    }
+  }
 `;
 
 // query
-const getLatestPosts = graphql`
+const getRecentPosts = graphql`
   {
     allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -32,13 +41,13 @@ const getLatestPosts = graphql`
   }
 `;
 
-const LatestPosts = () => {
-  const response = useStaticQuery(getLatestPosts);
+const RecentPosts = () => {
+  const response = useStaticQuery(getRecentPosts);
   const posts = response.allMdx.edges;
 
   return (
     <div>
-      <h2>Latest Posts</h2>
+      <h2>Recent Posts</h2>
 
       {posts.map(({ node }) => {
         const { excerpt } = node;
@@ -62,4 +71,4 @@ const LatestPosts = () => {
   );
 };
 
-export default LatestPosts;
+export default RecentPosts;

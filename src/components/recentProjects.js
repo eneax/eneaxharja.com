@@ -11,7 +11,7 @@ const ProjectsContainer = styled.div`
 `;
 
 // query
-const getLatestProjects = graphql`
+const getRecentProjects = graphql`
   {
     allProjectsDataJson(limit: 3) {
       edges {
@@ -32,13 +32,13 @@ const getLatestProjects = graphql`
   }
 `;
 
-const LatestProjects = () => {
-  const response = useStaticQuery(getLatestProjects);
+const RecentProjects = () => {
+  const response = useStaticQuery(getRecentProjects);
   const projects = response.allProjectsDataJson.edges;
 
   return (
     <ProjectsContainer>
-      <h2>Latest Projects</h2>
+      <h2>Recent Projects</h2>
       <p>
         I am passionate about open source software and giving back to others.
       </p>
@@ -51,4 +51,4 @@ const LatestProjects = () => {
     </ProjectsContainer>
   );
 };
-export default LatestProjects;
+export default RecentProjects;
