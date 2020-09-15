@@ -16,7 +16,7 @@ const HeroContainer = styled.div`
 const Hero = () => (
   <HeroContainer>
     <h1>
-      Hi 🖖🏻, I am Enea,
+      Hi there, I am Enea,
       <br /> web developer based in Berlin
     </h1>
   </HeroContainer>

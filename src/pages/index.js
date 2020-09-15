@@ -3,16 +3,16 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
-import LatestProjects from '../components/latestProjects';
-import LatestPosts from '../components/latestPosts';
+import RecentPosts from '../components/recentPosts';
+import RecentProjects from '../components/recentProjects';
 
 const HomePage = () => (
   <Layout>
     <SEO title="Home" />
 
     <Hero />
-    <LatestPosts />
-    <LatestProjects />
+    <RecentPosts />
+    <RecentProjects />
   </Layout>
 );
 

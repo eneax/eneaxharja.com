@@ -8,8 +8,8 @@ import { darkTheme } from '../utils/colors';
 // styles
 const PostMetaContainer = styled.p`
   color: ${darkTheme.textLighter};
-  margin-top: -0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
 `;
 
 const PostMeta = ({ date, tags }) => (
