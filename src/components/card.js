@@ -3,16 +3,23 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
-import { fluidObject } from '../utils/proptypes';
 import { darkTheme } from '../utils/colors';
+import { fluidObject } from '../utils/proptypes';
 import { ExternalLink } from '../utils/hyperLinks';
 
 // styles
 const CardWrapper = styled.div`
-  h6 {
-    color: ${darkTheme.textLighter};
-    margin-top: -1.35rem;
-    margin-bottom: 1rem;
+  h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  a {
+    h3 {
+      transition: color 0.2s;
+      &:hover {
+        color: ${darkTheme.primaryDarkerHover};
+      }
+    }
   }
 `;
 
@@ -31,39 +38,35 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Card = ({ item }) => {
-  const { link, title, desc, author } = item;
-
-  return (
-    <CardWrapper>
+const Card = ({ item: { link, title, img, desc } }) => (
+  <CardWrapper>
+    {link ? (
       <ExternalLink href={link}>
         <h3>{title}</h3>
-        {author && <h6>by {author}</h6>}
       </ExternalLink>
+    ) : (
+      <h3>{title}</h3>
+    )}
 
-      {item.img && (
-        <ImageContainer>
-          <ExternalLink href={link}>
-            <Img
-              fluid={item.img.childImageSharp.fluid}
-              alt={`Image of '${title}' project`}
-            />
-          </ExternalLink>
-        </ImageContainer>
-      )}
+    <ImageContainer>
+      <ExternalLink href={link}>
+        <Img
+          fluid={img.childImageSharp.fluid}
+          alt={`Image of '${title}' project`}
+        />
+      </ExternalLink>
+    </ImageContainer>
 
-      <p>{desc}</p>
-    </CardWrapper>
-  );
-};
+    <p>{desc}</p>
+  </CardWrapper>
+);
 
 Card.propTypes = {
   item: PropTypes.shape({
     link: PropTypes.string,
-    img: fluidObject,
     title: PropTypes.string,
+    img: fluidObject,
     desc: PropTypes.string,
-    author: PropTypes.string,
   }).isRequired,
 };
 
