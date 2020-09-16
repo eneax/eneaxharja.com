@@ -1,0 +1,83 @@
+---
+slug: '/tailwind-styled-components'
+date: '2020-10-31'
+published: false
+title: 'How to use Tailwind CSS with styled-components'
+tags: ['react']
+---
+
+Tailwind is a utility-first CSS framework for building custom designs. It's highly customizable and provides you all the necessary building blocks you need to build a design.
+
+## Installation
+
+```bash
+npm install tailwind.macro@next --save
+npm install styled-components --save
+```
+
+## Configuration
+
+`babel-plugin-macros.config.js`
+
+```js
+module.exports = {
+  tailwind: {
+    config: './src/tailwind.config.js',
+    styled: 'styled-components/macro',
+  },
+};
+```
+
+`src/tailwind.config.js`
+
+```js
+module.exports = {
+  purge: [],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+};
+```
+
+## Test
+
+`src/pages/test.js`
+
+```js
+import React from 'react';
+import styled from 'styled-components/macro';
+import tw from 'tailwind.macro';
+
+// use tailwind classes the styled way
+const Header = styled.header`
+  ${tw`bg-black min-h-screen flex flex-col items-center justify-center text-xl text-white`};
+`;
+
+const Test = () => (
+  <div css={tw`text-center`}>
+    <Header>
+      <p css={tw`text-blue-300`}>
+        Using <code>tailwind</code> and <code>styled-components</code> together.
+      </p>
+    </Header>
+  </div>
+);
+
+export default Test;
+```
+
+For more information, you can have a look at <a href="https://tailwindcss.com/">Tailwind</a> and <a href="https://styled-components.com/">styled-components</a> offical documentation.
+
+---
+
+<a
+  href="https://wetainment.com/articles/tailwind-css-in-js/#:~:text=Tailwind%20is%20a%20utility%20css,editing%20a%20config%20JavaScipt%20file.
+"
+>
+  article
+</a>
+<a href="https://github.com/eneax/coffee-shop/commit/0ba4bc8bb26eb9a96088b62f969c5b8317371cf3">
+  Commit
+</a>
