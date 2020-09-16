@@ -13,11 +13,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      posts: allMdx {
+      posts: allMdx(filter: { frontmatter: { published: { eq: true } } }) {
         edges {
           node {
             frontmatter {
+              title
               slug
+              date(formatString: "MMMM DD, YYYY")
+              tags
+              published
             }
           }
         }
@@ -66,19 +70,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               }
             }
             desc
-          }
-        }
-      }
-      allMdx(filter: { frontmatter: { published: { eq: true } } }) {
-        edges {
-          node {
-            excerpt
-            frontmatter {
-              title
-              slug
-              date(formatString: "MMMM DD, YYYY")
-              tags
-            }
           }
         }
       }
@@ -139,5 +130,5 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   paginate('allBooksDataJson', 20, 'bookshelf', bookTemplate);
   paginate('allTravelsDataJson', 6, 'travel', travelTemplate);
   paginate('allProjectsDataJson', 6, 'projects', projectTemplate);
-  paginate('allMdx', 10, 'blog', postListTemplate);
+  paginate('posts', 10, 'blog', postListTemplate);
 };
