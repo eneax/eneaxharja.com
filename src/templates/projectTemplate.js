@@ -18,7 +18,7 @@ export const getProjectsData = graphql`
           img {
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }
