@@ -1,57 +1,57 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdCloudDownload } from 'react-icons/md';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import { ExternalLink, SocialIconLink } from '../utils/hyperLinks';
+import { ExternalLink } from '../utils/hyperLinks';
 import { darkTheme } from '../utils/colors';
 
 // styles
-const DownloadIconLink = styled(SocialIconLink)`
-  svg {
-    margin-bottom: -0.35rem;
+const ResumeContainer = styled.div`
+  h2 {
+    margin-top: 4rem;
+    text-decoration: underline;
   }
-`;
 
-const Subtitle = styled.h2`
-  margin-top: '4rem';
-  text-transform: uppercase;
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
 `;
 
 const DateTime = styled.p`
   color: ${darkTheme.textLighter};
-  margin-top: -1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+`;
+
+const Tasks = styled.ul`
+  margin-top: 0.5rem;
 `;
 
 const Resume = () => (
   <Layout>
     <SEO title="Resume" />
 
-    <h1>
-      Resume
-      <DownloadIconLink href="/downloads/eneaxharja-resume.pdf">
-        <MdCloudDownload />
-      </DownloadIconLink>
-    </h1>
+    <h1>Resume</h1>
 
-    <div>
-      <Subtitle>Work Experience</Subtitle>
+    <ResumeContainer>
+      <h2>Work Experience</h2>
 
       <h3>Junior JavaScript Engineer, blogfoster - Berlin (Germany)</h3>
       <DateTime>11/2019 – Present</DateTime>
-      <ul>
+      <Tasks>
         <li>
           Using JavaScript and the React ecosystem to build technology that
           helps professional bloggers and social media influencers analyse,
           manage and effectively monetize their reach.
         </li>
-      </ul>
+      </Tasks>
 
       <h3>Open Source Developer - Remote</h3>
       <DateTime>10/2017 – Present</DateTime>
-      <ul>
+      <Tasks>
         <li>
           Responsive{' '}
           <ExternalLink href="https://github.com/eneax/coffee-shop">
@@ -92,11 +92,11 @@ const Resume = () => (
           <ExternalLink href="https://github.com/eneax">GitHub</ExternalLink>{' '}
           profile
         </li>
-      </ul>
+      </Tasks>
 
       <h3>Front-End Developer, Fornace - Verona (Italy)</h3>
       <DateTime>03/2019 – 09/2019</DateTime>
-      <ul>
+      <Tasks>
         <li>
           Used React Native, while working on a team of developers, to build an
           iOS and Android app for an Italian large-scale retailer with over 100
@@ -110,9 +110,9 @@ const Resume = () => (
           Maintained existing websites and built new ones from the ground up
           using Wordpress and company's custom Content Management System
         </li>
-      </ul>
+      </Tasks>
 
-      <Subtitle>Education</Subtitle>
+      <h2>Education</h2>
 
       <h3>
         Self-Education on Online Coding Schools <br />(
@@ -128,7 +128,7 @@ const Resume = () => (
         )
       </h3>
       <DateTime>05/2017 – Present</DateTime>
-      <ul>
+      <Tasks>
         <li>HTML - CSS</li>
         <li>Bootstrap</li>
         <li>JavaScript</li>
@@ -137,19 +137,19 @@ const Resume = () => (
         <li>GraphQL</li>
         <li>styled-components</li>
         <li>Git</li>
-      </ul>
+      </Tasks>
 
       <h3>
         MSc with Summa Cum Laude in Accounting and Management - Siena (Italy)
       </h3>
       <DateTime>11/2014 – 02/2017</DateTime>
-      <ul>
+      <Tasks>
         <li>International Management</li>
         <li>Corporate Valuation</li>
         <li>Statistics for Business Decision Making</li>
         <li>Consumer Behavior</li>
-      </ul>
-    </div>
+      </Tasks>
+    </ResumeContainer>
   </Layout>
 );
 
