@@ -9,6 +9,8 @@ import { darkTheme } from '../utils/colors';
 
 // styles
 const ResumeContainer = styled.div`
+  margin-bottom: 3rem;
+
   h2 {
     margin-top: 4rem;
     text-decoration: underline;

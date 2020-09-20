@@ -15,7 +15,7 @@ const PostMetaContainer = styled.p`
 const PostMeta = ({ date, tags }) => (
   <PostMetaContainer>
     {date}
-    <span> ● Tag: </span>
+    <span> - Tag: </span>
     {tags.map(tag => (
       <Link key={tag.toLowerCase()} to={`/tags/${tag.toLowerCase()}`}>
         {tag}

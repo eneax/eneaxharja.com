@@ -6,6 +6,13 @@ import { darkTheme } from '../utils/colors';
 import PostMeta from './postMeta';
 
 // styles
+const RecentPostsContainer = styled.div`
+  h2 {
+    text-decoration: underline;
+    margin-bottom: -1rem;
+  }
+`;
+
 const Posts = styled.div`
   margin-bottom: 2rem;
 
@@ -46,7 +53,7 @@ const RecentPosts = () => {
   const posts = response.allMdx.edges;
 
   return (
-    <div>
+    <RecentPostsContainer>
       <h2>Recent Posts</h2>
 
       {posts.map(({ node }) => {
@@ -67,7 +74,7 @@ const RecentPosts = () => {
       })}
 
       <Link to="/blog">View all posts</Link>
-    </div>
+    </RecentPostsContainer>
   );
 };
 

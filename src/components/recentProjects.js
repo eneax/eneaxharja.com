@@ -5,9 +5,14 @@ import styled from 'styled-components';
 import Card from './card';
 
 // styles
-const ProjectsContainer = styled.div`
+const RecentProjectsContainer = styled.div`
   margin-top: 5rem;
   margin-bottom: 2rem;
+
+  h2 {
+    text-decoration: underline;
+    margin-bottom: -1rem;
+  }
 `;
 
 // query
@@ -37,18 +42,15 @@ const RecentProjects = () => {
   const projects = response.allProjectsDataJson.edges;
 
   return (
-    <ProjectsContainer>
+    <RecentProjectsContainer>
       <h2>Recent Projects</h2>
-      <p>
-        I am passionate about open source software and giving back to others.
-      </p>
 
       {projects.map(({ node }, index) => (
         <Card key={index} item={node} />
       ))}
 
       <Link to="/projects">View all projects</Link>
-    </ProjectsContainer>
+    </RecentProjectsContainer>
   );
 };
 export default RecentProjects;

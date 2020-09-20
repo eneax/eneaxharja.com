@@ -38,11 +38,6 @@ const ProjectTemplate = ({ data, pageContext }) => {
 
       <h1>Projects</h1>
 
-      <p>
-        Explore some of my favorite open-source projects I've worked on over the
-        last few months.
-      </p>
-
       {projects.map(({ node }, index) => (
         <Card key={index} item={node} />
       ))}

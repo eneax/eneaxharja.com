@@ -36,16 +36,9 @@ const TravelTemplate = ({ data, pageContext }) => {
 
       <h1>Travel</h1>
 
-      <div>
-        <p>
-          This page contains some of the photos I took during my trips over the
-          years.
-        </p>
-
-        {travels.map(({ node }, index) => (
-          <Card key={index} item={node} />
-        ))}
-      </div>
+      {travels.map(({ node }, index) => (
+        <Card key={index} item={node} />
+      ))}
 
       <Pagination page="travel" pageContext={pageContext} />
     </Layout>

@@ -1,9 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import { ExternalLink } from '../utils/hyperLinks';
+
+// styles
+const UsesContainer = styled.div`
+  margin-bottom: 3rem;
+`;
 
 const Uses = () => (
   <Layout>
@@ -11,12 +17,7 @@ const Uses = () => (
 
     <h1>Uses</h1>
 
-    <div>
-      <p>
-        Ever wonder about what gear I use? Here is a complete list of my
-        favorite hardware and software.
-      </p>
-
+    <UsesContainer>
       <h2>Hardware</h2>
       <ul>
         <li>MacBook Pro (15-inch, 2016)</li>
@@ -69,13 +70,13 @@ const Uses = () => (
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?utm_source=chrome-ntp-icon">
-            React Developer Tools
+          <ExternalLink href="https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl">
+            GoFullPage
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon">
-            Redux DevTools
+          <ExternalLink href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?utm_source=chrome-ntp-icon">
+            React Developer Tools
           </ExternalLink>
         </li>
         <li>
@@ -84,7 +85,7 @@ const Uses = () => (
           </ExternalLink>
         </li>
       </ul>
-    </div>
+    </UsesContainer>
   </Layout>
 );
 
