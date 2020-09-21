@@ -41,7 +41,7 @@ const Resume = () => (
     <ResumeContainer>
       <h2>Work Experience</h2>
 
-      <h3>Junior JavaScript Engineer, blogfoster - Berlin (Germany)</h3>
+      <h3>Junior JavaScript Engineer, eqolot - Berlin (Germany)</h3>
       <DateTime>11/2019 – Present</DateTime>
       <Tasks>
         <li>

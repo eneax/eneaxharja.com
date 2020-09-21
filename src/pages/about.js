@@ -52,10 +52,7 @@ const About = () => (
       <p>
         I’m currently living in Berlin (Germany) and working as a Junior
         JavaScript Engineer at{' '}
-        <ExternalLink href="https://www.blogfoster.com">
-          blogfoster
-        </ExternalLink>
-        .
+        <ExternalLink href="https://eqolot.com">eqolot</ExternalLink>.
       </p>
       <p>
         Most of my time is spent writing{' '}
