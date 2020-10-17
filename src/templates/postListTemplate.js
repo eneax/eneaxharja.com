@@ -29,8 +29,8 @@ export const getPosts = graphql`
     allMdx(
       limit: $limit
       skip: $skip
-      sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { published: { eq: true } } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {

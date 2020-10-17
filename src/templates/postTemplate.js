@@ -7,6 +7,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PostMeta from '../components/postMeta';
+import ContentNav from '../components/contentNav';
 
 import { darkTheme } from '../utils/colors';
 
@@ -64,6 +65,7 @@ const PostTemplate = ({
       body,
     },
   },
+  pageContext: { prev, next, pathPrefix },
 }) => (
   <Layout>
     <SEO title={title} />
@@ -74,6 +76,8 @@ const PostTemplate = ({
     <PostContent>
       <MDXRenderer>{body}</MDXRenderer>
     </PostContent>
+
+    <ContentNav prev={prev} next={next} pathPrefix={pathPrefix} />
   </Layout>
 );
 
@@ -90,5 +94,10 @@ PostTemplate.propTypes = {
         tags: PropTypes.arrayOf(PropTypes.string).isRequired,
       }).isRequired,
     }).isRequired,
+  }).isRequired,
+  pageContext: PropTypes.shape({
+    prev: PropTypes.object.isRequired,
+    next: PropTypes.object.isRequired,
+    pathPrefix: PropTypes.string.isRequired,
   }).isRequired,
 };
