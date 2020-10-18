@@ -96,8 +96,8 @@ PostTemplate.propTypes = {
     }).isRequired,
   }).isRequired,
   pageContext: PropTypes.shape({
-    prev: PropTypes.object.isRequired,
-    next: PropTypes.object.isRequired,
+    prev: PropTypes.object,
+    next: PropTypes.object,
     pathPrefix: PropTypes.string.isRequired,
   }).isRequired,
 };
