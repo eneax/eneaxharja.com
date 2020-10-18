@@ -6,19 +6,22 @@ import { Link } from 'gatsby';
 import { darkTheme } from '../utils/colors';
 
 // styles
-const PostMetaContainer = styled.p`
+const PostMetaContainer = styled.div`
   color: ${darkTheme.textLighter};
   margin-top: -0.25rem;
   margin-bottom: 0.25rem;
+
+  a {
+    margin-left: 0.25rem;
+  }
 `;
 
 const PostMeta = ({ date, tags }) => (
   <PostMetaContainer>
-    {date}
-    <span> - Tag: </span>
+    {date}{' '}
     {tags.map(tag => (
       <Link key={tag.toLowerCase()} to={`/tags/${tag.toLowerCase()}`}>
-        {tag}
+        #{tag}
       </Link>
     ))}
   </PostMetaContainer>
