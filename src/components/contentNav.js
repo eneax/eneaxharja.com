@@ -57,7 +57,7 @@ const ContentNav = ({ prev, next, pathPrefix }) => (
       <Link to={`${pathPrefix}${prev.node.frontmatter.slug}`}>
         <p>
           <strong>
-            <MdArrowBack size={12} /> Prev
+            <MdArrowBack size={10} /> Prev
           </strong>
           {prev.node.frontmatter.title}
         </p>
@@ -67,7 +67,7 @@ const ContentNav = ({ prev, next, pathPrefix }) => (
       <Link to={`${pathPrefix}${next.node.frontmatter.slug}`}>
         <p>
           <strong>
-            Next <MdArrowForward size={12} />
+            Next <MdArrowForward size={10} />
           </strong>
           {next.node.frontmatter.title}
         </p>

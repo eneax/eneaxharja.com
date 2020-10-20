@@ -75,7 +75,7 @@ const RecentPosts = () => {
       })}
 
       <Link to="/blog">
-        View all posts <MdArrowForward size={15} />
+        View all posts <MdArrowForward size={13} />
       </Link>
     </RecentPostsContainer>
   );

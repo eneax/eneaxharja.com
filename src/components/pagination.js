@@ -53,7 +53,7 @@ const Pagination = ({ page, pageContext }) => {
     <PaginationStyles>
       {!isFirst && (
         <Link to={prevPage}>
-          <MdArrowBack size={15} /> Prev
+          <MdArrowBack size={13} /> Prev
         </Link>
       )}
 
@@ -63,7 +63,7 @@ const Pagination = ({ page, pageContext }) => {
 
       {!isLast && (
         <Link to={nextPage}>
-          Next <MdArrowForward size={15} />
+          Next <MdArrowForward size={13} />
         </Link>
       )}
     </PaginationStyles>

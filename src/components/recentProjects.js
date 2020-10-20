@@ -51,7 +51,7 @@ const RecentProjects = () => {
       ))}
 
       <Link to="/projects">
-        View all projects <MdArrowForward size={15} />
+        View all projects <MdArrowForward size={13} />
       </Link>
     </RecentProjectsContainer>
   );
