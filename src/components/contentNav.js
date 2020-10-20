@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { MdArrowBack, MdArrowForward } from 'react-icons/md';
 
 import { darkTheme } from '../utils/colors';
 import { below } from '../utils/breakpoints';
@@ -55,7 +56,9 @@ const ContentNav = ({ prev, next, pathPrefix }) => (
     {prev && (
       <Link to={`${pathPrefix}${prev.node.frontmatter.slug}`}>
         <p>
-          <strong>&#8592; Prev</strong>
+          <strong>
+            <MdArrowBack size={12} /> Prev
+          </strong>
           {prev.node.frontmatter.title}
         </p>
       </Link>
@@ -63,7 +66,9 @@ const ContentNav = ({ prev, next, pathPrefix }) => (
     {next && (
       <Link to={`${pathPrefix}${next.node.frontmatter.slug}`}>
         <p>
-          <strong>Next &#8594;</strong>
+          <strong>
+            Next <MdArrowForward size={12} />
+          </strong>
           {next.node.frontmatter.title}
         </p>
       </Link>

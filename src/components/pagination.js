@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { MdArrowBack, MdArrowForward } from 'react-icons/md';
 
 import { darkTheme } from '../utils/colors';
 import { above, below } from '../utils/breakpoints';
@@ -50,13 +51,21 @@ const Pagination = ({ page, pageContext }) => {
 
   return (
     <PaginationStyles>
-      {!isFirst && <Link to={prevPage}>&#8592; Prev</Link>}
+      {!isFirst && (
+        <Link to={prevPage}>
+          <MdArrowBack size={15} /> Prev
+        </Link>
+      )}
 
       <p>
         Page {currentPage} of {numPages}
       </p>
 
-      {!isLast && <Link to={nextPage}>Next &#8594;</Link>}
+      {!isLast && (
+        <Link to={nextPage}>
+          Next <MdArrowForward size={15} />
+        </Link>
+      )}
     </PaginationStyles>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import { MdArrowForward } from 'react-icons/md';
 
 import Card from './card';
 
@@ -49,7 +50,9 @@ const RecentProjects = () => {
         <Card key={index} item={node} />
       ))}
 
-      <Link to="/projects">View all projects &#8594;</Link>
+      <Link to="/projects">
+        View all projects <MdArrowForward size={15} />
+      </Link>
     </RecentProjectsContainer>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import { MdArrowForward } from 'react-icons/md';
 
 import { darkTheme } from '../utils/colors';
 import PostMeta from './postMeta';
@@ -73,7 +74,9 @@ const RecentPosts = () => {
         );
       })}
 
-      <Link to="/blog">View all posts &#8594;</Link>
+      <Link to="/blog">
+        View all posts <MdArrowForward size={15} />
+      </Link>
     </RecentPostsContainer>
   );
 };
