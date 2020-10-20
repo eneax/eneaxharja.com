@@ -141,9 +141,7 @@ const Resume = () => (
         <li>Git</li>
       </Tasks>
 
-      <h3>
-        MSc with Summa Cum Laude in Accounting and Management - Siena (Italy)
-      </h3>
+      <h3>MSc with Honors in Accounting and Management - Siena (Italy)</h3>
       <DateTime>11/2014 – 02/2017</DateTime>
       <Tasks>
         <li>International Management</li>

@@ -12,7 +12,7 @@ const PaginationStyles = styled.section`
   justify-content: center;
   padding: 1rem;
   border: 1px solid ${darkTheme.textLighter};
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   margin-bottom: 3rem;
 
   ${below.mobileS`
