@@ -55,7 +55,7 @@ const ContentNav = ({ prev, next, pathPrefix }) => (
     {prev && (
       <Link to={`${pathPrefix}${prev.node.frontmatter.slug}`}>
         <p>
-          <strong>← Prev</strong>
+          <strong>&#8592; Prev</strong>
           {prev.node.frontmatter.title}
         </p>
       </Link>
@@ -63,7 +63,7 @@ const ContentNav = ({ prev, next, pathPrefix }) => (
     {next && (
       <Link to={`${pathPrefix}${next.node.frontmatter.slug}`}>
         <p>
-          <strong>Next →</strong>
+          <strong>Next &#8594;</strong>
           {next.node.frontmatter.title}
         </p>
       </Link>

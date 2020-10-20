@@ -49,7 +49,7 @@ const RecentProjects = () => {
         <Card key={index} item={node} />
       ))}
 
-      <Link to="/projects">View all projects →</Link>
+      <Link to="/projects">View all projects &#8594;</Link>
     </RecentProjectsContainer>
   );
 };
