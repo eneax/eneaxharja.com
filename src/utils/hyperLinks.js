@@ -6,7 +6,7 @@ export const ExternalLink = styled.a.attrs({
   rel: 'noopener',
 })``;
 
-export const SocialIconLink = styled(ExternalLink)`
+export const IconLink = styled(ExternalLink)`
   padding: 1rem 0.5rem;
   background-image: none;
 
