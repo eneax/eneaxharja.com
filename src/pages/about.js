@@ -9,10 +9,6 @@ import SEO from '../components/seo';
 import { ExternalLink } from '../utils/hyperLinks';
 
 // styles
-const AboutContainer = styled.div`
-  margin-bottom: 3rem;
-`;
-
 const Image = styled(Img)`
   margin-bottom: 1.58rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -46,16 +42,14 @@ const About = () => (
 
     <h1>About</h1>
 
-    <AboutContainer>
+    <div>
       <ProfileImage />
 
       <p>
         I’m currently living in Berlin (Germany) and working as a Junior
         JavaScript Engineer at{' '}
-        <ExternalLink href="https://eqolot.com">eqolot</ExternalLink>.
-      </p>
-      <p>
-        Most of my time is spent writing{' '}
+        <ExternalLink href="https://eqolot.com">eqolot</ExternalLink>. Most of
+        my time is spent writing{' '}
         <ExternalLink href="https://github.com/eneax">code</ExternalLink> for
         the web. I create fast, highly performing and accessible{' '}
         <ExternalLink href="https://jamstack.org">Jamstack</ExternalLink>{' '}
@@ -74,14 +68,17 @@ const About = () => (
         </ExternalLink>{' '}
         or just <Link to="/travel">travel</Link> and walk around in nature. For
         those of you who have been asking me about the software or hardware I
-        use, here is my <Link to="/uses">list</Link>.
+        use, <Link to="/uses">here</Link> is my list.
       </p>
       <p>
         I'm open to new opportunities and always looking for new projects where
         I can contribute. At the moment, I am focusing exclusively on the
         Jamstack approach, and I will not be considering projects that use a
         traditional CMS or a server-side monolith. Feel free to take a look at
-        my <Link to="/resume">resume</Link>.
+        my <Link to="/resume">resume</Link>, and if you want to reach me out,
+        the best way is via{' '}
+        <ExternalLink href="mailto:eneaxharja@gmail.com">email</ExternalLink>.
+        It just might take a few days (or weeks) for me to get back to you.
       </p>
       <p>
         One more thing! This site is ad-free and doesn’t use trackers. If you
@@ -92,7 +89,7 @@ const About = () => (
         </ExternalLink>
         .
       </p>
-    </AboutContainer>
+    </div>
   </Layout>
 );
 
