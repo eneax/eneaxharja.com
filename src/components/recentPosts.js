@@ -73,7 +73,7 @@ const RecentPosts = () => {
         );
       })}
 
-      <Link to="/blog">View all posts</Link>
+      <Link to="/blog">View all posts →</Link>
     </RecentPostsContainer>
   );
 };
