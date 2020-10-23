@@ -1,11 +1,17 @@
 ---
 slug: '/how-to-add-3rd-party-script-in-your-gatsby-website'
-date: '2020-08-01'
+date: '2020-11-10'
 published: false
 title: 'Add 3rd party script in your Gatsby website'
 tags: ['gatsby']
 ---
 
+The easiest way to add external scripts to your Gatsby website is modifying the `html.js` file.
+
 <a href="https://isamrish.com/how-to-add-3rd-party-script-in-your-gatsby-website/">
   article
 </a>
+
+Gatsby uses a React component to server render the `<head>` and other parts of the HTML outside of the core Gatsby application.
+
+Most sites should use the default html.js shipped with Gatsby. But if you need to customize your site’s html.js, copy the default one into your source tree by running:
