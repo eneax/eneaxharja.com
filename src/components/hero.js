@@ -1,24 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { darkTheme } from '../utils/colors';
+
 // styles
-const HeroContainer = styled.div`
+const HeroContainer = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 35vh;
+  text-align: center;
 
   h1 {
-    text-align: center;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: ${darkTheme.textLighter};
   }
 `;
 
 const Hero = () => (
   <HeroContainer>
-    <h1>
-      Hi there, I am Enea,
-      <br /> web developer based in Berlin
-    </h1>
+    <h1>Hi, I'm Enea!</h1>
+    <h2>Welcome to my own little corner of the web.</h2>
   </HeroContainer>
 );
 
