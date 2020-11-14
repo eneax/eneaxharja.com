@@ -20,6 +20,7 @@ const PostContent = styled.div`
   margin-top: 3rem;
 
   blockquote {
+    border-left-width: 5px;
     border-left-color: ${darkTheme.primary};
     color: ${darkTheme.text};
   }
