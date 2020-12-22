@@ -41,12 +41,8 @@ const NoteContent = styled.section`
     margin: 2rem 0 3.5rem 0;
   }
 
-  .gatsby-resp-image-wrapper {
-    a.gatsby-resp-image-link {
-      span.gatsby-resp-image-background-image {
-        display: none !important;
-      }
-    }
+  a.gatsby-resp-image-link {
+    background-image: none;
   }
 
   img {
