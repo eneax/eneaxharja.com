@@ -9,14 +9,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         filter: { frontmatter: { published: { eq: true } } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              slug
-              date(formatString: "MMMM DD, YYYY")
-              published
-            }
+        nodes {
+          frontmatter {
+            title
+            slug
+            date(formatString: "MMMM DD, YYYY")
+            published
           }
         }
       }
@@ -34,23 +32,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  // Extract notes data from query
-  const notes = result.data.notes.edges;
   // Create note detail pages
-  notes.forEach(({ node }) => {
+  result.data.notes.nodes.forEach(({ frontmatter: { slug } }) => {
     createPage({
-      path: `/${node.frontmatter.slug}`,
+      path: `/${slug}`,
       component: path.resolve('./src/templates/notesTemplate.js'),
       context: {
-        slug: node.frontmatter.slug,
+        slug,
       },
     });
   });
 
-  // Extract categories data from query
-  const categories = result.data.categories.group;
-  // Make tag pages
-  categories.forEach(category => {
+  // Make category pages
+  result.data.categories.group.forEach(category => {
     createPage({
       path: `/${category.fieldValue}`,
       component: path.resolve('src/templates/categoryTemplate.js'),
