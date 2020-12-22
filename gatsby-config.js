@@ -29,14 +29,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      // makes posts available
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
-      },
-    },
     // exposes several image processing functions built on the Sharp image processing library
     `gatsby-plugin-sharp`,
     // creates ImageSharp nodes from image types
@@ -90,64 +82,6 @@ module.exports = {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://eneaxharja.com`,
-      },
-    },
-    {
-      // Enables RSS Feed
-      resolve: `gatsby-plugin-feed-mdx`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) =>
-              allMdx.edges.map(edge => ({
-                ...edge.node.frontmatter,
-                description: edge.node.excerpt,
-                date: edge.node.frontmatter.date,
-                url: `${site.siteMetadata.siteUrl}/blog${edge.node.frontmatter.slug}`,
-                guid: `${site.siteMetadata.siteUrl}/blog${edge.node.frontmatter.slug}`,
-                custom_elements: [{ 'content:encoded': edge.node.html }],
-              })),
-            query: `
-              {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { published: { eq: true } } }
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      frontmatter {
-                        title
-                        slug
-                        date(formatString: "MMMM DD, YYYY")
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss-feed.xml',
-            title: "Enea's RSS Feed",
-            // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
-            match: '^/posts/',
-          },
-        ],
       },
     },
   ],
