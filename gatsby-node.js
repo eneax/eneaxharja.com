@@ -1,19 +1,11 @@
 const path = require('path');
-const _ = require('lodash');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const postTemplate = path.resolve('./src/templates/postTemplate.js');
-  const postListTemplate = path.resolve('./src/templates/postListTemplate.js');
-  const tagTemplate = path.resolve('src/templates/tagTemplate.js');
-  const bookTemplate = path.resolve('src/templates/bookTemplate.js');
-  const travelTemplate = path.resolve('src/templates/travelTemplate.js');
-  const projectTemplate = path.resolve('src/templates/projectTemplate.js');
-
   const result = await graphql(`
     {
-      posts: allMdx(
+      notes: allMdx(
         filter: { frontmatter: { published: { eq: true } } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
@@ -23,57 +15,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               title
               slug
               date(formatString: "MMMM DD, YYYY")
-              tags
               published
             }
           }
         }
       }
-      tagsGroup: allMdx(
-        filter: { frontmatter: { published: { eq: true } } }
-        limit: 2000
-      ) {
-        group(field: frontmatter___tags) {
+      categories: allMdx(filter: { frontmatter: { published: { eq: true } } }) {
+        group(field: frontmatter___category) {
           fieldValue
-        }
-      }
-      allBooksDataJson {
-        edges {
-          node {
-            link
-            title
-            author
-          }
-        }
-      }
-      allTravelsDataJson {
-        edges {
-          node {
-            title
-            img {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
-          }
-        }
-      }
-      allProjectsDataJson {
-        edges {
-          node {
-            link
-            title
-            img {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
-            desc
-          }
         }
       }
     }
@@ -85,59 +34,29 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  // Extract posts data from query
-  const posts = result.data.posts.edges;
-  // Create post detail pages
-  posts.forEach(({ node }, i) => {
-    const prev = posts[i - 1];
-    const next = posts[i + 1];
-
+  // Extract notes data from query
+  const notes = result.data.notes.edges;
+  // Create note detail pages
+  notes.forEach(({ node }) => {
     createPage({
-      path: `/blog${node.frontmatter.slug}`,
-      component: postTemplate,
+      path: `/${node.frontmatter.slug}`,
+      component: path.resolve('./src/templates/notesTemplate.js'),
       context: {
         slug: node.frontmatter.slug,
-        prev,
-        next,
-        pathPrefix: '/blog',
       },
     });
   });
 
-  // Extract tag data from query
-  const tags = result.data.tagsGroup.group;
+  // Extract categories data from query
+  const categories = result.data.categories.group;
   // Make tag pages
-  tags.forEach(tag => {
+  categories.forEach(category => {
     createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
+      path: `/${category.fieldValue}`,
+      component: path.resolve('src/templates/categoryTemplate.js'),
       context: {
-        tag: tag.fieldValue,
+        category: category.fieldValue,
       },
     });
   });
-
-  // Pagination feature
-  function paginate(typeOfPage, itemsPerPage, path, component) {
-    const type = result.data[typeOfPage].edges;
-    const numPages = Math.ceil(type.length / itemsPerPage);
-
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? `/${path}` : `/${path}/${i + 1}`,
-        component,
-        context: {
-          limit: itemsPerPage,
-          skip: i * itemsPerPage,
-          numPages,
-          currentPage: i + 1,
-        },
-      });
-    });
-  }
-
-  paginate('allBooksDataJson', 20, 'bookshelf', bookTemplate);
-  paginate('allTravelsDataJson', 6, 'travel', travelTemplate);
-  paginate('allProjectsDataJson', 6, 'projects', projectTemplate);
-  paginate('posts', 10, 'blog', postListTemplate);
 };
