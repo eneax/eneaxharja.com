@@ -31,7 +31,7 @@ const CardContainer = styled.div`
   }
 `;
 
-const Grid = () => (
+const Directory = () => (
   <GridContainer>
     <CardContainer>
       <h3>Notes</h3>
@@ -100,4 +100,4 @@ const Grid = () => (
   </GridContainer>
 );
 
-export default Grid;
+export default Directory;

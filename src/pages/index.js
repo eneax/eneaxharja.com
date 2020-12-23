@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Grid from '../components/grid';
+import Directory from '../components/directory';
 
 import { darkTheme } from '../utils/colors';
 import { ExternalLink } from '../utils/hyperLinks';
@@ -47,7 +47,7 @@ const HomePage = () => (
       screen sizes.
     </p>
 
-    <Grid />
+    <Directory />
 
     <p>
       I'm open to new opportunities and always looking for new projects where I
