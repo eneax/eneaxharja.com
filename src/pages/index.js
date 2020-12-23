@@ -1,16 +1,42 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Hero from '../components/hero';
 import Grid from '../components/grid';
 
+import { darkTheme } from '../utils/colors';
 import { ExternalLink } from '../utils/hyperLinks';
 
+// styles
+const HeroContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: ${darkTheme.textLighter};
+  }
+`;
+
+// ui
 const HomePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
+
+    <HeroContainer>
+      <h1>Hi, I'm Enea!</h1>
+      <h2>Welcome to my own little corner of the web.</h2>
+    </HeroContainer>
+
     <p>
       I work at <ExternalLink href="https://eqolot.com">eqolot</ExternalLink>{' '}
       during the day and spend most of my time writing{' '}
