@@ -18,7 +18,7 @@ const GridContainer = styled.section`
 const CardContainer = styled.div`
   padding: 1rem;
   border: 1px solid ${darkTheme.textLighter};
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
 
   h3 {
     margin-top: 0;
