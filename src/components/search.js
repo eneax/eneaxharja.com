@@ -20,19 +20,18 @@ const SearchBox = styled.div`
     left: 0.75rem;
     top: 0.2rem;
     transform: translateY(50%);
-    color: rgba(156, 163, 175, 1);
+    color: rgba(107, 114, 128, 1);
   }
 
   input {
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: rgba(0, 0, 0, 1);
-    border: 1px solid rgba(229, 231, 235, 1);
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
     border-radius: 0.375rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2.5rem;
+    background-color: ${darkTheme.body};
+    color: ${darkTheme.text};
+    border: 1px solid ${darkTheme.primaryLighter};
 
     &::placeholder {
       color: rgba(107, 114, 128, 1);
@@ -92,7 +91,7 @@ const Search = () => {
     `
   );
 
-  const allPosts = data.allMdx.edges;
+  const allNotes = data.allMdx.edges;
   const emptyQuery = '';
 
   const [state, setState] = React.useState({
@@ -109,17 +108,13 @@ const Search = () => {
   });
 
   const handleInputChange = event => {
-    console.log(event.target.value);
-
     const query = event.target.value;
-    const posts = data.allMdx.edges || [];
-    const filteredData = posts.filter(post => {
-      const { title, category } = post.node.frontmatter;
-      return (
+    const notes = data.allMdx.edges || [];
+    const filteredData = notes.filter(
+      ({ frontmatter: { title, category } }) =>
         title.toLowerCase().includes(query.toLowerCase()) ||
         (category && category.toLowerCase().includes(query.toLowerCase()))
-      );
-    });
+    );
 
     setState({
       query,
@@ -129,7 +124,7 @@ const Search = () => {
 
   const { filteredData, query } = state;
   const hasSearchResults = filteredData && query !== emptyQuery;
-  const posts = hasSearchResults ? filteredData : allPosts;
+  const notes = hasSearchResults ? filteredData : allNotes;
 
   return (
     <SearchContainer>
@@ -148,11 +143,15 @@ const Search = () => {
 
       {focused && (
         <SearchResult ref={result}>
-          {posts.map(({ node: { frontmatter: { title, slug } } }) => (
-            <p key={slug}>
-              <Link to={`/${slug}`}>{title}</Link>
-            </p>
-          ))}
+          {notes.length ? (
+            notes.map(({ node: { frontmatter: { title, slug } } }) => (
+              <p key={slug}>
+                <Link to={`/${slug}`}>{title}</Link>
+              </p>
+            ))
+          ) : (
+            <p>No notes found</p>
+          )}
         </SearchResult>
       )}
     </SearchContainer>
