@@ -5,22 +5,23 @@ import logo from '../images/logoDark.svg';
 
 import { darkTheme } from '../utils/colors';
 
+import Search from './search';
+
 // styles
 const MainHeader = styled.header`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   width: 42rem;
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
+`;
 
-  a {
-    background-image: none;
-    color: ${darkTheme.textLighter};
-    align-self: flex-end;
-  }
+const Logo = styled(Link)`
+  background-image: none;
+  display: flex;
 
   img {
     width: 2rem;
@@ -38,9 +39,11 @@ const MainHeader = styled.header`
 
 const Header = () => (
   <MainHeader>
-    <Link to="/" title="Home">
+    <Logo to="/" title="Home">
       <img src={logo} alt="Enea Xharja Logo" />
-    </Link>
+    </Logo>
+
+    <Search />
   </MainHeader>
 );
 
