@@ -9,25 +9,17 @@ import useOnClickOutside from '../utils/useOnClickOutside';
 // styles
 const SearchContainer = styled.div`
   position: relative;
+  width: 10rem;
 `;
 
 const SearchBox = styled.div`
   position: relative;
-  width: 10rem;
-
-  svg {
-    position: absolute;
-    left: 0.75rem;
-    top: 0.2rem;
-    transform: translateY(50%);
-    color: rgba(107, 114, 128, 1);
-  }
 
   input {
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
     border-radius: 0.375rem;
     background-color: ${darkTheme.body};
     color: ${darkTheme.text};
@@ -43,12 +35,20 @@ const SearchBox = styled.div`
       outline-offset: 2px;
     }
   }
+
+  svg {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.2rem;
+    transform: translateY(50%);
+    color: rgba(107, 114, 128, 1);
+  }
 `;
 
 const SearchResult = styled.div`
   position: absolute;
   left: 0;
-  top: 2.5rem;
+  top: 2.4rem;
   height: 10rem;
   width: 10rem;
   overflow-y: scroll;
@@ -110,11 +110,15 @@ const Search = () => {
   const handleInputChange = event => {
     const query = event.target.value;
     const notes = data.allMdx.edges || [];
-    const filteredData = notes.filter(
-      ({ frontmatter: { title, category } }) =>
+
+    const filteredData = notes.filter(note => {
+      const { title, category } = note.node.frontmatter;
+
+      return (
         title.toLowerCase().includes(query.toLowerCase()) ||
         (category && category.toLowerCase().includes(query.toLowerCase()))
-    );
+      );
+    });
 
     setState({
       query,
@@ -150,7 +154,7 @@ const Search = () => {
               </p>
             ))
           ) : (
-            <p>No notes found</p>
+            <p>Your search did not match any documents.</p>
           )}
         </SearchResult>
       )}
