@@ -17,7 +17,6 @@ const SearchBox = styled.div`
   input {
     width: 100%;
     font-size: 2rem;
-    line-height: 1.5rem;
     padding: 1rem 5rem 1rem 1rem;
     border-radius: var(--radius);
     background-color: var(--body);
