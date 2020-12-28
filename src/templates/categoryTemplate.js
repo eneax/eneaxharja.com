@@ -3,32 +3,37 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import { darkTheme } from '../utils/colors';
+import { gradientText } from '../utils/globalStyles';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 // styles
+const CategoryContainer = styled.article`
+  margin-top: 5rem;
+`;
+
 const CategoryHeader = styled.h1`
-  font-size: 1.75rem;
+  font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 5rem;
 
   span {
-    color: ${darkTheme.primary};
+    ${gradientText}
   }
 `;
 
-const Notes = styled.div`
-  margin-bottom: 2rem;
-`;
+const CategoryContent = styled.section`
+  margin-top: 7rem;
 
-const NoteTitle = styled.h3`
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
-  transition: color 0.2s;
+  h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
 
-  &:hover {
-    color: ${darkTheme.primaryDarkerHover};
+    &:hover {
+      color: var(--primaryDarkerHover);
+    }
   }
 `;
 
@@ -68,17 +73,16 @@ const CategoryTemplate = ({ pageContext, data }) => {
     <Layout>
       <SEO title={`"${category}" category`} />
 
-      <CategoryHeader dangerouslySetInnerHTML={{ __html: categoryHeader }} />
-
-      <section>
-        {categories.map(({ frontmatter: { slug, title } }) => (
-          <Notes key={slug}>
-            <Link to={`/${slug}`}>
-              <NoteTitle>{title}</NoteTitle>
-            </Link>
-          </Notes>
-        ))}
-      </section>
+      <CategoryContainer>
+        <CategoryHeader dangerouslySetInnerHTML={{ __html: categoryHeader }} />
+        <CategoryContent>
+          {categories.map(({ frontmatter: { slug, title } }) => (
+            <h3 key={slug}>
+              <Link to={`/${slug}`}>{title}</Link>
+            </h3>
+          ))}
+        </CategoryContent>
+      </CategoryContainer>
     </Layout>
   );
 };

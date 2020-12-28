@@ -37,9 +37,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        fonts: [`Roboto:300,300i,400,400i,700`],
+        display: 'swap',
       },
     },
     `gatsby-plugin-styled-components`,

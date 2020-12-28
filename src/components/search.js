@@ -3,13 +3,12 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/md';
 
-import { darkTheme } from '../utils/colors';
 import useOnClickOutside from '../utils/useOnClickOutside';
 
 // styles
 const SearchContainer = styled.div`
   position: relative;
-  width: 10rem;
+  width: 20rem;
 `;
 
 const SearchBox = styled.div`
@@ -17,19 +16,19 @@ const SearchBox = styled.div`
 
   input {
     width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
-    border-radius: 0.375rem;
-    background-color: ${darkTheme.body};
-    color: ${darkTheme.text};
-    border: 1px solid ${darkTheme.primaryLighter};
+    font-size: 2rem;
+    line-height: 1.5rem;
+    padding: 1rem 5rem 1rem 1rem;
+    border-radius: var(--radius);
+    background-color: var(--body);
+    color: var(--text);
+    border: 1px solid var(--primaryLighter);
 
     &::placeholder {
-      color: rgba(107, 114, 128, 1);
+      color: var(--textLighter);
     }
     &:focus {
-      border: 1px solid ${darkTheme.primary};
+      border: 1px solid var(--primary);
       box-shadow: inset 0 0 0 1px transparent;
       outline: 2px solid transparent;
       outline-offset: 2px;
@@ -41,27 +40,25 @@ const SearchBox = styled.div`
     right: 0.75rem;
     top: 0.2rem;
     transform: translateY(50%);
-    color: rgba(107, 114, 128, 1);
+    color: var(--textLighter);
   }
 `;
 
 const SearchResult = styled.div`
   position: absolute;
   left: 0;
-  top: 2.4rem;
-  height: 10rem;
-  width: 10rem;
+  top: 4.75rem;
+  height: 20rem;
+  width: 20rem;
   overflow-y: scroll;
-
   backdrop-filter: blur(10px);
-  background-color: rgba(61, 220, 132, 0.5);
-  border: 1px solid ${darkTheme.primary};
-  border-radius: 0.375rem;
-  padding: 1rem;
+  background-color: var(--bodyLighter);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 2rem;
 
   a {
-    color: ${darkTheme.text};
-    background-image: none;
+    color: var(--text);
   }
 `;
 

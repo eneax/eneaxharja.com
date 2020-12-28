@@ -2,37 +2,33 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import { ExternalLink } from '../utils/hyperLinks';
-import { darkTheme } from '../utils/colors';
-
 // styles
-const GridContainer = styled.section`
+const DirectoryContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
 
 const CardContainer = styled.div`
-  padding: 1rem;
-  border: 1px solid ${darkTheme.textLighter};
-  border-radius: 0.375rem;
+  padding: 2rem;
+  border: 1px solid var(--textLighter);
+  border-radius: var(--radius);
 
   h3 {
     margin-top: 0;
-    color: ${darkTheme.textLighter};
+    color: var(--textLighter);
   }
 
   ul {
     list-style-type: none;
-    margin-left: 0;
+    padding-left: 0;
   }
 `;
 
-const Directory = () => (
-  <GridContainer>
+const HomeDirectory = () => (
+  <DirectoryContainer>
     <CardContainer>
       <h3>Notes</h3>
       <ul>
@@ -57,9 +53,6 @@ const Directory = () => (
         <li>
           <Link to="/coffee-shop">coffee-shop</Link>
         </li>
-        {/* <li>gatsby-dev-portfolio</li>
-        <li>gatsby-restaurant</li>
-        <li>globetrotter</li> */}
         <li>
           <Link to="/projects">More projects</Link>
         </li>
@@ -73,9 +66,13 @@ const Directory = () => (
           <Link to="/books">Books</Link>
         </li>
         <li>
-          <ExternalLink href="https://www.youtube.com/c/EneaXharja17">
+          <a
+            href="https://www.youtube.com/c/EneaXharja17"
+            target="_blank"
+            rel="noreferrer"
+          >
             Video Games
-          </ExternalLink>
+          </a>
         </li>
         <li>
           <Link to="/travel">Travel</Link>
@@ -97,7 +94,7 @@ const Directory = () => (
         </li>
       </ul>
     </CardContainer>
-  </GridContainer>
+  </DirectoryContainer>
 );
 
-export default Directory;
+export default HomeDirectory;

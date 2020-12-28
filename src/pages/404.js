@@ -6,11 +6,16 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const NotFoundSection = styled.section`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 `;
 
 const NotFoundHeader = styled.h1`
-  font-size: 1.75rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 `;
 
 const NotFoundPage = () => (
@@ -18,7 +23,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
 
     <NotFoundSection>
-      <NotFoundHeader>NOT FOUND</NotFoundHeader>
+      <NotFoundHeader>Page Not found</NotFoundHeader>
       <Link to="/">Back Home</Link>
     </NotFoundSection>
   </Layout>

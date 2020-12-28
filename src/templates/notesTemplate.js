@@ -7,38 +7,59 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import { darkTheme } from '../utils/colors';
-
 // styles
+const NoteContainer = styled.article`
+  margin-top: 5rem;
+`;
+
 const NoteTitle = styled.h1`
-  font-size: 1.75rem;
+  font-size: 3.5rem;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 `;
 
 const NoteDate = styled.p`
-  font-size: 0.8rem;
+  font-size: 1.6rem;
   text-align: center;
-  color: ${darkTheme.textLighter};
+  color: var(--textLighter);
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 `;
 
 const NoteContent = styled.section`
-  margin-top: 3rem;
+  margin-top: 7rem;
 
-  blockquote {
-    border-left-width: 5px;
-    border-left-color: ${darkTheme.primary};
-    color: ${darkTheme.text};
+  h1,
+  h2 {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+  }
+
+  h3 {
+    margin-top: 5rem;
+  }
+
+  h4 {
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    & + p {
+      margin-top: 0;
+    }
   }
 
   blockquote,
   pre {
-    background-color: ${darkTheme.bodyLighter};
-    border-radius: 8px;
+    background-color: var(--bodyLighter);
+    border-radius: var(--radius);
     box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 0px 1px,
       rgba(0, 0, 0, 0.04) 0px 1px 4px inset;
-    padding: 2rem 1rem;
-    margin: 2rem 0 3.5rem 0;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+  }
+
+  blockquote {
+    border-left: 5px solid var(--primary);
+    color: var(--text);
   }
 
   a.gatsby-resp-image-link {
@@ -47,7 +68,7 @@ const NoteContent = styled.section`
 
   img {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 0.25rem !important;
+    border-radius: var(--radius) !important;
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
       0 1px 2px rgba(255, 255, 255, 0.24);
   }
@@ -79,14 +100,14 @@ const NotesTemplate = ({
   <Layout>
     <SEO title={title} />
 
-    <section>
+    <NoteContainer>
       <NoteTitle>{title}</NoteTitle>
       <NoteDate>Updated on {date}</NoteDate>
 
       <NoteContent>
         <MDXRenderer>{body}</MDXRenderer>
       </NoteContent>
-    </section>
+    </NoteContainer>
   </Layout>
 );
 

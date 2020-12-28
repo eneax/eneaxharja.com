@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import logo from '../images/logoDark.svg';
 
-import { darkTheme } from '../utils/colors';
+import logo from '../images/logoDark.svg';
 
 import Search from './search';
 
@@ -12,11 +11,7 @@ const MainHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  width: 42rem;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 `;
 
 const Logo = styled(Link)`
@@ -24,10 +19,10 @@ const Logo = styled(Link)`
   display: flex;
 
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
-    border: 1px solid ${darkTheme.text};
+    border: 1px solid var(--text);
     margin-bottom: 0;
 
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);

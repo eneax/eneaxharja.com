@@ -3,10 +3,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Directory from '../components/directory';
-
-import { darkTheme } from '../utils/colors';
-import { ExternalLink } from '../utils/hyperLinks';
+import HomeDirectory from '../components/homeDirectory';
 
 // styles
 const HeroContainer = styled.section`
@@ -14,8 +11,8 @@ const HeroContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 35vh;
   text-align: center;
+  height: 40rem;
 
   h1 {
     margin-bottom: 0;
@@ -23,7 +20,7 @@ const HeroContainer = styled.section`
 
   h2 {
     margin-top: 0;
-    color: ${darkTheme.textLighter};
+    color: var(--textLighter);
   }
 `;
 
@@ -38,23 +35,32 @@ const HomePage = () => (
     </HeroContainer>
 
     <p>
-      I work at <ExternalLink href="https://eqolot.com">eqolot</ExternalLink>{' '}
+      I work at{' '}
+      <a href="https://eqolot.com" target="_blank" rel="noreferrer">
+        eqolot
+      </a>{' '}
       during the day and spend most of my time writing{' '}
-      <ExternalLink href="https://github.com/eneax">code</ExternalLink> for the
-      web. I create fast, highly performing and accessible{' '}
-      <ExternalLink href="https://jamstack.org">Jamstack</ExternalLink> websites
-      that are responsive and can adapt the layout to a variety of devices and
-      screen sizes.
+      <a href="https://github.com/eneax" target="_blank" rel="noreferrer">
+        code
+      </a>{' '}
+      for the web. I create fast, highly performing and accessible{' '}
+      <a href="https://jamstack.org" target="_blank" rel="noreferrer">
+        Jamstack
+      </a>{' '}
+      websites that are responsive and can adapt the layout to a variety of
+      devices and screen sizes.
     </p>
 
-    <Directory />
+    <HomeDirectory />
 
     <p>
       I'm open to new opportunities and always looking for new projects where I
       can contribute (anything built on Jamstack). You can find me on the good
       old-fashioned{' '}
-      <ExternalLink href="mailto:eneaxharja@gmail.com">email</ExternalLink>. It
-      just might take a few days for me to get back to you.
+      <a href="mailto:eneaxharja@gmail.com" target="_blank" rel="noreferrer">
+        email
+      </a>
+      . It just might take a few days for me to get back to you.
     </p>
   </Layout>
 );

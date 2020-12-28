@@ -29,7 +29,7 @@ title: 'The best post ever'
 
 Once we have added the boolean value to all our post, we need to update the GraphQL queries in order to filter out any post where `published` is set to false.
 
-Inside your `gatsby-node.js` file, update the queries that fetch your MDX posts and the one for your tags (if you have this feature implemented on your website, if not check out <a href='https://eneaxharja.com/blog/add-tags-and-categories-to-gatsby-mdx-blog' target="_blank" rel="noopener">my post</a> for more info):
+Inside your `gatsby-node.js` file, update the queries that fetch your MDX posts and the one for your tags (if you have this feature implemented on your website, if not check out <a href='https://eneaxharja.com/blog/add-tags-and-categories-to-gatsby-mdx-blog' target="_blank" rel="noreferrer">my post</a> for more info):
 
 ```js
 {
@@ -88,7 +88,7 @@ feeds: [
 ],
 ```
 
-In case you need some help with adding an RSS Feed to your Gatsby MDX blog, I wrote about it <a href='https://eneaxharja.com/blog/add-rss-feed-to-gatsby-mdx-blog' target="_blank" rel="noopener">here</a>.
+In case you need some help with adding an RSS Feed to your Gatsby MDX blog, I wrote about it <a href='https://eneaxharja.com/blog/add-rss-feed-to-gatsby-mdx-blog' target="_blank" rel="noreferrer">here</a>.
 
 Once we have updated the GraphQL queries contained into the Gatsby configuration files, it's time to update the query that fetches for our posts inside the `postTemplate` file:
 
@@ -117,6 +117,6 @@ export const getPosts = graphql`
 `;
 ```
 
-For reference, have a look at my `postListTemplate.js` on <a href='https://github.com/eneax/eneax.github.io/blob/master/src/templates/postListTemplate.js' target="_blank" rel="noopener">GitHub</a>.
+For reference, have a look at my `postListTemplate.js` on <a href='https://github.com/eneax/eneax.github.io/blob/master/src/templates/postListTemplate.js' target="_blank" rel="noreferrer">GitHub</a>.
 
-Finally, for those of you who have integrated tags and categories into your website, remember to update also the GraphQL queries inside your <a href='https://github.com/eneax/eneax.github.io/blob/master/src/pages/tags.js' target="_blank" rel="noopener">tags</a> page and <a href='https://github.com/eneax/eneax.github.io/blob/master/src/templates/tagTemplate.js' target="_blank" rel="noopener">tagTemplate</a> component.
+Finally, for those of you who have integrated tags and categories into your website, remember to update also the GraphQL queries inside your <a href='https://github.com/eneax/eneax.github.io/blob/master/src/pages/tags.js' target="_blank" rel="noreferrer">tags</a> page and <a href='https://github.com/eneax/eneax.github.io/blob/master/src/templates/tagTemplate.js' target="_blank" rel="noreferrer">tagTemplate</a> component.
