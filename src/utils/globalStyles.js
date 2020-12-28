@@ -94,7 +94,7 @@ const GlobalStyle = createGlobalStyle`
   code {
     font-size: 1.75rem;
     font-family: 'Roboto', sans-serif;
-    padding: 0.45rem;
+    padding: 0.35rem;
     border-radius: var(--radius);
     background-color: var(--primaryLighter);
 
