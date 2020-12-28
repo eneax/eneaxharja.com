@@ -51,6 +51,11 @@ const HomePage = () => (
       devices and screen sizes.
     </p>
 
+    <p>
+      Here is an open collection of notes, code snippets and resources about
+      things that I am interested in.
+    </p>
+
     <HomeDirectory />
 
     <p>

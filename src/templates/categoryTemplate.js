@@ -28,7 +28,7 @@ const CategoryContent = styled.section`
 
   h3 {
     font-size: 2.4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     transition: color 0.2s;
 
     &:hover {
