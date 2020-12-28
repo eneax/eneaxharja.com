@@ -29,7 +29,7 @@ title: 'The best post ever'
 
 Once we have added the boolean value to all our post, we need to update the GraphQL queries in order to filter out any post where `published` is set to false.
 
-Inside your `gatsby-node.js` file, update the queries that fetch your MDX posts and the one for your tags (if you have this feature implemented on your website, if not check out <a href='https://eneaxharja.com/blog/add-tags-and-categories-to-gatsby-mdx-blog' target="_blank" rel="noreferrer">my post</a> for more info):
+Inside your `gatsby-node.js` file, update the queries that fetch your MDX posts and the one for your tags (if you have this feature implemented on your website, if not check out <a href='https://eneaxharja.com/add-tags-and-categories-to-gatsby-mdx-blog' target="_blank" rel="noreferrer">my post</a> for more info):
 
 ```js
 {
@@ -88,7 +88,7 @@ feeds: [
 ],
 ```
 
-In case you need some help with adding an RSS Feed to your Gatsby MDX blog, I wrote about it <a href='https://eneaxharja.com/blog/add-rss-feed-to-gatsby-mdx-blog' target="_blank" rel="noreferrer">here</a>.
+In case you need some help with adding an RSS Feed to your Gatsby MDX blog, I wrote about it <a href='https://eneaxharja.com/add-rss-feed-to-gatsby-mdx-blog' target="_blank" rel="noreferrer">here</a>.
 
 Once we have updated the GraphQL queries contained into the Gatsby configuration files, it's time to update the query that fetches for our posts inside the `postTemplate` file:
 
