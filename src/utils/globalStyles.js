@@ -33,6 +33,7 @@ export const gradientText = `
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 `;
 
 const GlobalStyle = createGlobalStyle`
