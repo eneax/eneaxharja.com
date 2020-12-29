@@ -106,24 +106,6 @@ const GlobalStyle = createGlobalStyle`
   ::selection { 
     background: var(--primaryDarkerHover);
   }
-
-  /* Scrollbar Styles */ 
-  body::-webkit-scrollbar {
-    width: 10px;
-  }
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary) var(--body);
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--body);
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
-    background: -webkit-linear-gradient(45deg,var(--primary),var(--secondary));
-    border-radius: 6px;
-    border: 3px solid var(--body);
-  }
 `;
 
 export default GlobalStyle;
