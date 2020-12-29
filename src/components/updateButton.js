@@ -1,7 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { MdRefresh } from 'react-icons/md';
 
 // styles
+const roll = keyframes`
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
 const BtnContainer = styled.div`
   position: sticky;
   top: 1rem;
@@ -33,17 +43,25 @@ const Btn = styled.button`
       var(--secondary) 0%,
       var(--primary) 100%
     );
+
+    svg {
+      animation: ${roll} 1s infinite;
+    }
   }
 
   &:focus,
   &:active {
-    color: var(--text);
     outline: none;
     box-shadow: 0 0 0 1px var(--primaryDarker);
   }
+
+  svg {
+    margin-left: 0.5rem;
+  }
 `;
 
-const UPDATE_CHECKING_INTERVAL = 30 * 60 * 1000; // Check for updates every 30 minutes
+// Check for updates every 30 minutes
+const UPDATE_CHECKING_INTERVAL = 30 * 60 * 1000;
 
 const UpdateButton = () => {
   const [state, setState] = React.useState({
@@ -123,7 +141,7 @@ const UpdateButton = () => {
       {state.showButton && (
         <BtnContainer>
           <Btn type="submit" onClick={handleUpdate}>
-            Update App
+            Update <MdRefresh />
           </Btn>
         </BtnContainer>
       )}
