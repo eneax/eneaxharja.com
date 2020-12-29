@@ -1,3 +1,32 @@
+const workboxConfig = {
+  runtimeCaching: [
+    {
+      // Use cacheFirst since these don't need to be revalidated (same RegExp
+      // and same reason as above)
+      urlPattern: /(\.js$|\.css$|static\/)/,
+      handler: `CacheFirst`,
+    },
+    {
+      // page-data.json files are not content hashed
+      urlPattern: /^https?:.*\page-data\/.*\/page-data\.json/,
+      handler: `NetworkFirst`,
+    },
+    {
+      // Add runtime caching of various other page resources
+      urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
+      handler: `StaleWhileRevalidate`,
+    },
+    {
+      // Google Fonts CSS (doesn't end in .css so we need to specify it)
+      urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
+      handler: `StaleWhileRevalidate`,
+    },
+  ],
+  // Set skipWaiting to false. That's the only change in config.
+  skipWaiting: false,
+  clientsClaim: true,
+};
+
 module.exports = {
   siteMetadata: {
     title: 'Enea Xharja',
@@ -6,77 +35,44 @@ module.exports = {
     siteUrl: `https://eneaxharja.com`,
   },
   plugins: [
-    // custom metadata for each page
     'gatsby-plugin-react-helmet',
-    {
-      // parses Json files
-      resolve: `gatsby-transformer-json`,
-      option: {
-        typeName: `Json`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
-      // makes images available
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      // makes posts available
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
-      },
-    },
-    // exposes several image processing functions built on the Sharp image processing library
     `gatsby-plugin-sharp`,
-    // creates ImageSharp nodes from image types
+    `gatsby-remark-images`,
     `gatsby-transformer-sharp`,
     {
-      // parses Markdown files using MDX
       resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
           {
-            // parses Markdown images using Remark
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1200,
+              maxWidth: 1035,
             },
           },
         ],
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        name: 'Enea Xharja',
-        short_name: 'Enea',
-        start_url: '/',
-        background_color: '#3ddc84',
-        theme_color: '#3ddc84',
-        display: 'standalone',
-        icon: 'src/images/logo.svg',
+        fonts: [`Roboto:300,300i,400,400i,700`],
+        display: 'swap',
       },
     },
-    // Enables Progressive Web App + Offline functionality
-    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -93,61 +89,22 @@ module.exports = {
       },
     },
     {
-      // Enables RSS Feed
-      resolve: `gatsby-plugin-feed-mdx`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) =>
-              allMdx.edges.map(edge => ({
-                ...edge.node.frontmatter,
-                description: edge.node.excerpt,
-                date: edge.node.frontmatter.date,
-                url: `${site.siteMetadata.siteUrl}/blog${edge.node.frontmatter.slug}`,
-                guid: `${site.siteMetadata.siteUrl}/blog${edge.node.frontmatter.slug}`,
-                custom_elements: [{ 'content:encoded': edge.node.html }],
-              })),
-            query: `
-              {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { published: { eq: true } } }
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      frontmatter {
-                        title
-                        slug
-                        date(formatString: "MMMM DD, YYYY")
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss-feed.xml',
-            title: "Enea's RSS Feed",
-            // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
-            match: '^/posts/',
-          },
-        ],
+        name: 'Enea Xharja',
+        short_name: 'Enea',
+        start_url: '/',
+        background_color: '#3ddc84',
+        theme_color: '#3ddc84',
+        display: 'standalone',
+        icon: 'src/images/logo.svg',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        appendScript: require.resolve(`./src/sw.js`),
+        workboxConfig,
       },
     },
   ],

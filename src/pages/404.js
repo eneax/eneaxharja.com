@@ -1,27 +1,31 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+const NotFoundSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+`;
+
+const NotFoundHeader = styled.h1`
+  font-size: 3.5rem;
+  text-transform: uppercase;
+`;
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
 
-    <h1>NOT FOUND</h1>
-
-    <p>Here is a list of pages that might be interesting to you:</p>
-    <ul>
-      <li>
-        <Link to="/bookshelf">Bookshelf</Link>
-      </li>
-      <li>
-        <Link to="/travel">Travel</Link>
-      </li>
-      <li>
-        <Link to="/resume">Resume</Link>
-      </li>
-    </ul>
+    <NotFoundSection>
+      <NotFoundHeader>Page Not found</NotFoundHeader>
+      <Link to="/">Back Home</Link>
+    </NotFoundSection>
   </Layout>
 );
 

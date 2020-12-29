@@ -6,9 +6,77 @@ import theme from 'prism-react-renderer/themes/nightOwl';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MdContentCopy } from 'react-icons/md';
-import { copyToClipboard } from '../utils/copyToClipboard';
-import { handleLanguageColor, darkTheme } from '../utils/colors';
 
+import { copyToClipboard } from '../utils/copyToClipboard';
+import { handleLanguageColor } from '../utils/colors';
+
+// styles
+const CodeWrapper = styled.div`
+  position: relative;
+  font-size: 1.5rem;
+
+  pre {
+    text-align: left;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    overflow: auto;
+
+    & .token-line {
+      line-height: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+`;
+
+const Language = styled.span`
+  ${({ language }) => handleLanguageColor(language)};
+  position: absolute;
+  top: 0px;
+  left: 3rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  line-height: 1;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0.5rem 1rem;
+  cursor: default;
+`;
+
+const CopyCode = styled.button`
+  background-color: transparent;
+  color: var(--text);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.4rem;
+  border: 0;
+  border-radius: 3px;
+  opacity: 1;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  /* copied text */
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  line-height: 1;
+
+  svg {
+    font-size: 2rem;
+  }
+`;
+
+const LineNumber = styled.span`
+  display: inline-block;
+  width: 4rem;
+  user-select: none;
+  opacity: 0.3;
+  text-align: right;
+  margin-right: 2rem;
+  margin-left: -2rem;
+`;
+
+// ui
 const Code = ({ code, language, ...props }) => {
   const [copied, setCopied] = useState(false);
 
@@ -64,68 +132,3 @@ Code.propTypes = {
 };
 
 export default Code;
-
-// styles
-const CodeWrapper = styled.div`
-  position: relative;
-
-  pre {
-    text-align: left;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    overflow: auto;
-
-    & .token-line {
-      line-height: 1.3em;
-      height: 1.3em;
-    }
-  }
-`;
-
-const Language = styled.span`
-  ${({ language }) => handleLanguageColor(language)};
-  position: absolute;
-  top: 0px;
-  left: 1.5rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.075em;
-  line-height: 1;
-  border-radius: 0px 0px 4px 4px;
-  padding: 0.25rem 0.5rem;
-  cursor: default;
-`;
-
-const CopyCode = styled.button`
-  background-color: transparent;
-  color: ${darkTheme.text};
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0.2rem;
-  border: 0;
-  border-radius: 3px;
-  opacity: 1;
-  transition: all 0.2s;
-  cursor: pointer;
-
-  /* copied text */
-  font-size: 0.75rem;
-  letter-spacing: 0.075em;
-  line-height: 1;
-
-  svg {
-    font-size: 1rem;
-  }
-`;
-
-const LineNumber = styled.span`
-  display: inline-block;
-  width: 2em;
-  user-select: none;
-  opacity: 0.3;
-  text-align: right;
-  margin-right: 1rem;
-  margin-left: -1rem;
-`;
