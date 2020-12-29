@@ -15,6 +15,7 @@ const roll = keyframes`
 const BtnContainer = styled.div`
   position: sticky;
   top: 1rem;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
