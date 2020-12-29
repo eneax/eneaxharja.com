@@ -1,11 +1,23 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { MdSearch } from 'react-icons/md';
 
 import useOnClickOutside from '../utils/useOnClickOutside';
 
 // styles
+const animatedGradient = keyframes`
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+  }
+  `;
+
 const SearchContainer = styled.div`
   position: relative;
   width: 20rem;
@@ -14,6 +26,20 @@ const SearchContainer = styled.div`
 const SearchBox = styled.div`
   position: relative;
 
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 2px);
+    left: calc(-1 * 2px);
+    height: calc(100% + 2px * 2);
+    width: calc(100% + 2px * 2);
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border-radius: 0.55rem;
+    z-index: -1;
+    animation: ${animatedGradient} 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
   input {
     width: 100%;
     font-size: 2rem;
@@ -21,13 +47,13 @@ const SearchBox = styled.div`
     border-radius: var(--radius);
     background-color: var(--body);
     color: var(--text);
-    border: 1px solid var(--primaryLighter);
+    border: 1px solid transparent;
 
     &::placeholder {
       color: var(--textLighter);
     }
     &:focus {
-      border: 1px solid var(--primary);
+      border: 1px solid transparent;
       box-shadow: inset 0 0 0 1px transparent;
       outline: 2px solid transparent;
       outline-offset: 2px;
