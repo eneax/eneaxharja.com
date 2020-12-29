@@ -25,14 +25,11 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── src
         ├── components
         ├── data
-        ├── drafts
         ├── images
         ├── pages
-        ├── posts
         ├── templates
-        └── utils
-    ├── static
-        └── downloads
+        ├── utils
+        └── sw.js
     ├── .eslint
     ├── .gitignore
     ├── .prettierrc
