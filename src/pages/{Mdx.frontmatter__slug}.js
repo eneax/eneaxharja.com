@@ -76,14 +76,13 @@ const NoteContent = styled.section`
 
 // query
 export const query = graphql`
-  query PostQuery($slug: String!) {
-    mdx(frontmatter: { slug: { eq: $slug } }) {
-      body
+  query($id: String!) {
+    mdx(id: { eq: $id }) {
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        slug
       }
+      body
     }
   }
 `;
