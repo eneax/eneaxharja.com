@@ -5,19 +5,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      notes: allMdx(
-        filter: { frontmatter: { published: { eq: true } } }
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
-        nodes {
-          frontmatter {
-            title
-            slug
-            date(formatString: "MMMM DD, YYYY")
-            published
-          }
-        }
-      }
       categories: allMdx(filter: { frontmatter: { published: { eq: true } } }) {
         group(field: frontmatter___category) {
           fieldValue
@@ -31,17 +18,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
-
-  // Create note detail pages
-  result.data.notes.nodes.forEach(({ frontmatter: { slug } }) => {
-    createPage({
-      path: `/${slug}`,
-      component: path.resolve('./src/templates/notesTemplate.js'),
-      context: {
-        slug,
-      },
-    });
-  });
 
   // Make category pages
   result.data.categories.group.forEach(category => {

@@ -76,14 +76,13 @@ const NoteContent = styled.section`
 
 // query
 export const query = graphql`
-  query PostQuery($slug: String!) {
-    mdx(frontmatter: { slug: { eq: $slug } }) {
-      body
+  query($id: String!) {
+    mdx(id: { eq: $id }) {
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        slug
       }
+      body
     }
   }
 `;
@@ -116,12 +115,11 @@ export default NotesTemplate;
 NotesTemplate.propTypes = {
   data: PropTypes.shape({
     mdx: PropTypes.shape({
-      body: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
-        slug: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
       }).isRequired,
+      body: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };
