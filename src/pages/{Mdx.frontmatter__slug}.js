@@ -47,6 +47,12 @@ const NoteContent = styled.section`
     }
   }
 
+  h5 {
+    font-size: 1.5rem;
+    color: var(--textLighter);
+    margin-top: -1.75rem;
+  }
+
   blockquote,
   pre {
     background-color: var(--bodyLighter);
