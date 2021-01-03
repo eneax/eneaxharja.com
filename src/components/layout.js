@@ -6,7 +6,6 @@ import styled from 'styled-components';
 import GlobalStyle from '../utils/globalStyles';
 
 import Header from './header';
-import UpdateButton from './updateButton';
 import Footer from './footer';
 
 // styles
@@ -32,7 +31,6 @@ const Layout = ({ children }) => (
     <GlobalStyle />
     <MainContainer>
       <Header />
-      <UpdateButton />
       <MainContent>{children}</MainContent>
       <Footer />
     </MainContainer>
