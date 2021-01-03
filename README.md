@@ -28,18 +28,19 @@ A quick look at the top-level files and directories you'll see in the project.
         ├── images
         ├── pages
         ├── templates
-        ├── utils
-        └── sw.js
+        └── utils
     ├── .eslint
     ├── .gitignore
     ├── .prettierrc
+    ├── CODE_OF_CONDUCT.md
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
     ├── gatsby-ssr.js
+    ├── LICENSE
     ├── netlify.toml
-    ├── package.json
     ├── package-lock.json
+    ├── package.json
     ├── README.md
     └── root-wrapper.js
 
