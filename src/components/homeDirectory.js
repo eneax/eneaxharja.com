@@ -54,6 +54,15 @@ const HomeDirectory = () => (
           <Link to="/coffee-shop">coffee-shop</Link>
         </li>
         <li>
+          <Link to="/gatsby-landing-page-arty">Arty</Link>
+        </li>
+        <li>
+          <Link to="/gatsby-dev-portfolio">gatsby-dev-portfolio</Link>
+        </li>
+        <li>
+          <Link to="/globetrotter">Globetrotter</Link>
+        </li>
+        <li>
           <Link to="/projects">More projects</Link>
         </li>
       </ul>
