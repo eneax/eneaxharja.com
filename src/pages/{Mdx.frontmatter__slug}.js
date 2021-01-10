@@ -18,7 +18,7 @@ const NoteTitle = styled.h1`
   margin-bottom: 0rem;
 `;
 
-const NoteDate = styled.p`
+const NoteInfo = styled.p`
   font-size: 1.6rem;
   text-align: center;
   color: var(--textLighter);
@@ -85,8 +85,9 @@ export const query = graphql`
   query($id: String!) {
     mdx(id: { eq: $id }) {
       frontmatter {
+        category
         title
-        date(formatString: "MMMM DD, YYYY")
+        author
       }
       body
     }
@@ -97,7 +98,7 @@ export const query = graphql`
 const NotesTemplate = ({
   data: {
     mdx: {
-      frontmatter: { title, date },
+      frontmatter: { category, title, author },
       body,
     },
   },
@@ -107,7 +108,7 @@ const NotesTemplate = ({
 
     <NoteContainer>
       <NoteTitle>{title}</NoteTitle>
-      <NoteDate>Updated on {date}</NoteDate>
+      <NoteInfo>{category === 'books' ? `by ${author}` : ''}</NoteInfo>
 
       <NoteContent>
         <MDXRenderer>{body}</MDXRenderer>
@@ -122,8 +123,9 @@ NotesTemplate.propTypes = {
   data: PropTypes.shape({
     mdx: PropTypes.shape({
       frontmatter: PropTypes.shape({
+        category: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
+        author: PropTypes.string,
       }).isRequired,
       body: PropTypes.string.isRequired,
     }).isRequired,
