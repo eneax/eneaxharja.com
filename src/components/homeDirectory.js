@@ -33,6 +33,9 @@ const HomeDirectory = () => (
       <h3>Notes</h3>
       <ul>
         <li>
+          <Link to="/css">CSS</Link>
+        </li>
+        <li>
           <Link to="/javascript">JavaScript</Link>
         </li>
         <li>

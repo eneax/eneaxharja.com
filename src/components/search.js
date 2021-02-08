@@ -16,7 +16,7 @@ const animatedGradient = keyframes`
 	100% {
 		background-position: 0% 50%;
   }
-  `;
+`;
 
 const SearchContainer = styled.div`
   position: relative;
