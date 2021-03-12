@@ -78,13 +78,7 @@ const HomeDirectory = () => (
           <Link to="/books">Books</Link>
         </li>
         <li>
-          <a
-            href="https://www.youtube.com/c/EneaXharja17"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Video Games
-          </a>
+          <Link to="/games">Video Games</Link>
         </li>
         <li>
           <Link to="/travel">Travel</Link>
