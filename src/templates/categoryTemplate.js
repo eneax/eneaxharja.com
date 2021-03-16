@@ -7,6 +7,7 @@ import { gradientText } from '../utils/globalStyles';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Tooltip from '../components/tooltip';
 
 // styles
 const CategoryContainer = styled.article`
@@ -32,7 +33,9 @@ const CategoryContent = styled.section`
     transition: color 0.2s;
 
     &:hover {
-      color: var(--primaryDarkerHover);
+      h3 {
+        color: var(--primaryDarkerHover);
+      }
     }
   }
 `;
@@ -53,6 +56,7 @@ export const query = graphql`
           title
           slug
           date(formatString: "MMMM DD, YYYY")
+          info
         }
       }
     }
@@ -76,9 +80,10 @@ const CategoryTemplate = ({ pageContext, data }) => {
       <CategoryContainer>
         <CategoryHeader dangerouslySetInnerHTML={{ __html: categoryHeader }} />
         <CategoryContent>
-          {categories.map(({ frontmatter: { slug, title } }) => (
+          {categories.map(({ frontmatter: { slug, title, info } }) => (
             <h3 key={slug}>
-              <Link to={`/${slug}`}>{title}</Link>
+              <Link to={`/${slug}`}>{title}</Link>{' '}
+              {info && <Tooltip info={info} />}
             </h3>
           ))}
         </CategoryContent>
@@ -99,6 +104,7 @@ CategoryTemplate.propTypes = {
           frontmatter: PropTypes.shape({
             title: PropTypes.string.isRequired,
             slug: PropTypes.string.isRequired,
+            info: PropTypes.string,
           }),
         }).isRequired
       ).isRequired,
