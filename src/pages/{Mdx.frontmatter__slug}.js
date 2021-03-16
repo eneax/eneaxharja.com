@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import { MDXProvider } from '@mdx-js/react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Tooltip from '../components/tooltip';
 
 // styles
 const NoteContainer = styled.article`
@@ -78,6 +80,10 @@ const NoteContent = styled.section`
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
       0 1px 2px rgba(255, 255, 255, 0.24);
   }
+
+  ul {
+    padding-left: 2.5rem;
+  }
 `;
 
 // query
@@ -88,6 +94,7 @@ export const query = graphql`
         category
         title
         author
+        info
       }
       body
     }
@@ -95,10 +102,14 @@ export const query = graphql`
 `;
 
 // ui
+const components = {
+  Tooltip,
+};
+
 const NotesTemplate = ({
   data: {
     mdx: {
-      frontmatter: { category, title, author },
+      frontmatter: { category, title, author, info },
       body,
     },
   },
@@ -111,7 +122,9 @@ const NotesTemplate = ({
       <NoteInfo>{category === 'books' ? `by ${author}` : ''}</NoteInfo>
 
       <NoteContent>
-        <MDXRenderer>{body}</MDXRenderer>
+        <MDXProvider components={components}>
+          <MDXRenderer info={info}>{body}</MDXRenderer>
+        </MDXProvider>
       </NoteContent>
     </NoteContainer>
   </Layout>
@@ -126,6 +139,7 @@ NotesTemplate.propTypes = {
         category: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         author: PropTypes.string,
+        info: PropTypes.string,
       }).isRequired,
       body: PropTypes.string.isRequired,
     }).isRequired,
