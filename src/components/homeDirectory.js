@@ -47,6 +47,9 @@ const HomeDirectory = () => (
         <li>
           <Link to="/jamstack">Jamstack</Link>
         </li>
+        <li>
+          <Link to="/dev">Dev</Link>
+        </li>
       </ul>
     </CardContainer>
 
