@@ -1,0 +1,22 @@
+---
+category: 'javascript'
+slug: 'remove-property-from-object'
+title: 'Remove a property from an object'
+date: '2021-03-18'
+published: true
+---
+
+Remove a property from an object using the `rest operator` (ES6):
+
+```js
+const user = {
+  name: 'Enea',
+  age: 99,
+  jsMaster: true,
+};
+
+const { jsMaster, ...updatedUser } = user;
+
+console.log(updatedUser); // {name: "Enea", age: 99}
+console.log(user); // {name: "Enea", age: 99, jsMaster: true}
+```
