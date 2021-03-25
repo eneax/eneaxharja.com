@@ -1,0 +1,117 @@
+---
+title: How to add custom JavaScript to a Gatsby site
+date: "2020-11-15"
+description: ""
+tags: ["gatsby"]
+---
+
+While working on a side project recently, I found myself in the need to add some custom JavaScript to a Gatsby site. Gatsby doesn't use an `index.html` file. Instead, it uses an `html.js` file, which is hidden by default.
+
+If you need to add an external script (or 3rd party script) in your Gatsby website, without using any plugin, the best approach would be to use [Gatsby SSR API](https://www.gatsbyjs.com/docs/ssr-apis).
+
+However, some APIs might not be available in `gatsby-ssr.js`. In that case, you will need to customize your site’s `html.js` file.
+
+First, you need to copy the default one into your source tree by running:
+
+```shell
+cp .cache/default-html.js src/html.js
+```
+
+Your default `html.js` will look like this:
+
+```js
+import React from "react"
+import PropTypes from "prop-types"
+
+export default function HTML(props) {
+  return (
+    <html {...props.htmlAttributes}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        {props.headComponents}
+      </head>
+      <body {...props.bodyAttributes}>
+        {props.preBodyComponents}
+        <div
+          key={`body`}
+          id="___gatsby"
+          dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+        {props.postBodyComponents}
+      </body>
+    </html>
+  )
+}
+
+HTML.propTypes = {
+  htmlAttributes: PropTypes.object,
+  headComponents: PropTypes.array,
+  bodyAttributes: PropTypes.object,
+  preBodyComponents: PropTypes.array,
+  body: PropTypes.string,
+  postBodyComponents: PropTypes.array,
+}
+```
+
+Now, just before the closing `</body>` tag, you can add the external script or even some custom JavaScript:
+
+```js
+import React from "react"
+import PropTypes from "prop-types"
+
+export default function HTML(props) {
+  return (
+    <html {...props.htmlAttributes}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        {props.headComponents}
+      </head>
+      <body {...props.bodyAttributes}>
+        {props.preBodyComponents}
+        <div
+          key={`body`}
+          id="___gatsby"
+          dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+        {props.postBodyComponents}
+        {/* External Script */}
+        <script
+          src="https://cdnjs.cloudflare.com/some-cookie-or-other-tracker.js"
+          type="text/javascript"
+          aysnc
+        />
+        {/* Custom JavaScript */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            var name = 'world';
+            console.log('Hello ' + name);
+        `,
+          }}
+        />
+      </body>
+    </html>
+  )
+}
+
+HTML.propTypes = {
+  htmlAttributes: PropTypes.object,
+  headComponents: PropTypes.array,
+  bodyAttributes: PropTypes.object,
+  preBodyComponents: PropTypes.array,
+  body: PropTypes.string,
+  postBodyComponents: PropTypes.array,
+}
+```
+
+If you want to learn more about Gatsby and its ecosystem, head over to the [official website](https://www.gatsbyjs.com/docs).

@@ -1,0 +1,81 @@
+---
+title: How to Hide The Address Bar in a PWA
+date: "2020-03-16"
+description: ""
+tags: ["gatsby"]
+---
+
+Gatsby is a blazing fast static site generator for React. Despite this tagline, Gatsby is much more than that.
+It is a PWA (Progressive Web App) Framework designed to provide amazing performance out of the box.
+
+Creating a PWA with Gatsby is as easy as enabling one plugin:
+
+```js
+// gatsby-config.js
+module.exports = {
+  siteMetadata: {},
+  plugins: [
+    ...
+    // Enables Progressive Web App + Offline functionality
+    `gatsby-plugin-offline`
+    ...
+  ]
+}
+```
+
+There are multiple options that can change the way the UI is displayed, including:
+
+- Standalone
+- FullScreen
+- Minimal-UI
+- Browser
+
+Let’s have a look at each of these modes, starting with the one that hides the address bar.
+
+### FullScreen Display Mode
+
+As the name says, this mode is used for the app to go full screen.
+
+```json
+"display": "fullscreen",
+```
+
+Now, the app will use the entire display available on the device.
+Browsers elements like the back and forward buttons and the address bars are hidden.
+If you use the PWA in an Android device, then the status bar will also be hidden.
+
+### Standalone Display Mode
+
+In stand alone mode, the PWA will feel more like a native app.
+
+```json
+"display": "standalone",
+```
+
+It can have its own custom icon so you can open it from the app launcher and the user device will exclude UI elements for controlling the navigation.
+
+### Minimal UI
+
+In this mode, the PWA will have a similar look to the standalone application, with the difference that it will implement a minimal set of UI elements for controlling the navigation:
+
+```json
+"display": "minimal-ui",
+```
+
+On mobile devices, the PWA will run in its own window which is separated from the browser.
+However, the elements that are hidden from the display area will vary based on the browser you use.
+For instance, the address bar is displayed, but only to show the route you are currently; so you cannot type into it.
+
+### Browser
+
+The browser mode represents the standard browser experience.
+
+```json
+"display": "browser",
+```
+
+Here, the default browser navigation UI elements will be displayed on the screen (e.g. address bar and navigation).
+
+### Conclusion
+
+Make sure to try out all these modes on your PWA until you find the one that better represents the experience that you want to transmit to your users.

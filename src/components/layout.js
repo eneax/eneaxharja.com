@@ -1,44 +1,97 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import 'normalize.css';
+import * as React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import GlobalStyle from '../utils/globalStyles';
 
-import Header from './header';
-import Footer from './footer';
+const GlobalWrapper = styled.div`
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-10) var(--spacing-5) var(--spacing-5);
 
-// styles
-const MainContainer = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--maxWidth);
-  padding: 2rem 2.5rem;
+  &[data-is-root-path='true'] {
+    .bio {
+      margin-bottom: var(--spacing-20);
+    }
+  }
 
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
+  /* sticky footer */
+  main {
+    min-height: calc(100vh - 200px);
+  }
 `;
 
-const MainContent = styled.main`
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+const Header = styled.div`
+  margin-bottom: var(--spacing-12);
 `;
 
-const Layout = ({ children }) => (
-  <>
-    <GlobalStyle />
-    <MainContainer>
-      <Header />
-      <MainContent>{children}</MainContent>
-      <Footer />
-    </MainContainer>
-  </>
-);
+const MainHeading = styled.h1`
+  font-size: var(--fontSize-6);
+  margin: 0;
+`;
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+const HeaderLinkHome = styled(Link)`
+  font-weight: var(--fontWeight-bold);
+  font-family: var(--font-heading);
+  text-decoration: none;
+  font-size: var(--fontSize-2);
+`;
+
+const Footer = styled.footer`
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: var(--fontSize-0);
+
+  p {
+    margin-bottom: var(--spacing-0);
+  }
+`;
+
+const Layout = ({ location, title, children }) => {
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const isRootPath = location.pathname === rootPath;
+  let header;
+
+  if (isRootPath) {
+    header = (
+      <MainHeading>
+        <Link to="/">{title}</Link>
+      </MainHeading>
+    );
+  } else {
+    header = <HeaderLinkHome to="/">{title}</HeaderLinkHome>;
+  }
+
+  return (
+    <>
+      <GlobalStyle />
+      <GlobalWrapper data-is-root-path={isRootPath}>
+        <Header>{header}</Header>
+        <main>{children}</main>
+        <Footer>
+          <p>
+            <Link to="/about">About</Link>
+            <span> • </span>
+            <Link to="/uses">Uses</Link>
+            <span> • </span>
+            <Link to="/bookshelf">Bookshelf</Link>
+            <span> • </span>
+            <Link to="/games">Video Games</Link>
+          </p>
+          <p>
+            <small>©</small> {new Date().getFullYear()}{' '}
+            <a
+              href="mailto:eneaxharja@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Enea Xharja
+            </a>
+          </p>
+        </Footer>
+      </GlobalWrapper>
+    </>
+  );
 };
 
 export default Layout;
