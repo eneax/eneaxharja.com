@@ -116,7 +116,7 @@ module.exports = {
         background_color: `rgba(255, 255, 255, 1)`,
         theme_color: `rgba(252, 163, 17, 1)`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/profile-pic.jpg`,
       },
     },
     `gatsby-plugin-styled-components`,

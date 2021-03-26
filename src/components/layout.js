@@ -70,15 +70,6 @@ const Layout = ({ location, title, children }) => {
         <main>{children}</main>
         <Footer>
           <p>
-            <Link to="/about">About</Link>
-            <span> • </span>
-            <Link to="/uses">Uses</Link>
-            <span> • </span>
-            <Link to="/bookshelf">Bookshelf</Link>
-            <span> • </span>
-            <Link to="/games">Video Games</Link>
-          </p>
-          <p>
             <small>©</small> {new Date().getFullYear()}{' '}
             <a
               href="mailto:eneaxharja@gmail.com"
