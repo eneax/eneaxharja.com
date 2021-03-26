@@ -1,9 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
-import kebabCase from 'lodash/kebabCase';
-import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
+import kebabCase from 'lodash/kebabCase';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -34,7 +33,6 @@ const TagsPage = ({
   },
 }) => (
   <Layout location={location} title={title}>
-    <Helmet title={title} />
     <SEO title="All tags" />
 
     <div>
@@ -53,6 +51,9 @@ const TagsPage = ({
 );
 
 TagsPage.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       group: PropTypes.arrayOf(
@@ -79,7 +80,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 1000) {
+    allMarkdownRemark {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
