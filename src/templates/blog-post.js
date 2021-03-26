@@ -1,11 +1,10 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import styled from "styled-components"
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const BlogPost = styled.article``
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const BlogPostMeta = styled.section`
   margin-top: var(--spacing-12);
@@ -13,7 +12,7 @@ const BlogPostMeta = styled.section`
   p {
     margin-bottom: var(--spacing-0);
   }
-`
+`;
 
 const BlogPostNav = styled.nav`
   margin-top: var(--spacing-12);
@@ -55,12 +54,12 @@ const BlogPostNav = styled.nav`
       margin-bottom: var(--spacing-1);
     }
   }
-`
+`;
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata.title;
+  const { previous, next } = data;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -68,7 +67,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <BlogPost itemScope itemType="http://schema.org/Article">
+      <article itemScope itemType="http://schema.org/Article">
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
         </header>
@@ -86,7 +85,7 @@ const BlogPostTemplate = ({ data, location }) => {
               Tagged with:
               {post.frontmatter.tags.map((tag, i) => (
                 <span key={tag}>
-                  <span>{i === 0 ? " " : ", "}</span>
+                  <span>{i === 0 ? ' ' : ', '}</span>
                   <Link to={`/tags/${tag}`}>{tag}</Link>
                 </span>
               ))}
@@ -94,7 +93,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </p>
         </BlogPostMeta>
         <hr />
-      </BlogPost>
+      </article>
 
       <BlogPostNav>
         <ul>
@@ -117,10 +116,50 @@ const BlogPostTemplate = ({ data, location }) => {
         </ul>
       </BlogPostNav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+BlogPostTemplate.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    markdownRemark: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        description: PropTypes.string,
+        tags: PropTypes.arrayOf(PropTypes.string),
+      }).isRequired,
+      excerpt: PropTypes.string.isRequired,
+      html: PropTypes.string.isRequired,
+    }).isRequired,
+    previous: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+      fields: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    next: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+      fields: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -161,4 +200,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
