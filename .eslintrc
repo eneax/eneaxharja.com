@@ -3,5 +3,8 @@
   "parser": "babel-eslint",
   "rules": {
     "no-shadow": "off"
+  },
+  "globals": {
+    "__PATH_PREFIX__": "readonly"
   }
 }

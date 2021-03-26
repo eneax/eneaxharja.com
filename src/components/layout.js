@@ -1,40 +1,34 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import GlobalStyle from '../utils/globalStyles';
 
 const GlobalWrapper = styled.div`
-  margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
+  margin: var(--spacing-0) auto;
   padding: var(--spacing-10) var(--spacing-5) var(--spacing-5);
 
-  &[data-is-root-path='true'] {
-    .bio {
-      margin-bottom: var(--spacing-20);
-    }
-  }
-
-  /* sticky footer */
   main {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px); /* sticky footer */
   }
 `;
 
-const Header = styled.div`
+const Header = styled.header`
   margin-bottom: var(--spacing-12);
-`;
 
-const MainHeading = styled.h1`
-  font-size: var(--fontSize-6);
-  margin: 0;
-`;
+  h1 {
+    font-size: var(--fontSize-6);
+    margin: 0;
+  }
 
-const HeaderLinkHome = styled(Link)`
-  font-weight: var(--fontWeight-bold);
-  font-family: var(--font-heading);
-  text-decoration: none;
-  font-size: var(--fontSize-2);
+  .header-link-home {
+    text-decoration: none;
+    font-weight: var(--fontWeight-bold);
+    font-family: var(--font-heading);
+    font-size: var(--fontSize-2);
+  }
 `;
 
 const Footer = styled.footer`
@@ -54,12 +48,16 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <MainHeading>
+      <h1>
         <Link to="/">{title}</Link>
-      </MainHeading>
+      </h1>
     );
   } else {
-    header = <HeaderLinkHome to="/">{title}</HeaderLinkHome>;
+    header = (
+      <Link to="/" className="header-link-home">
+        {title}
+      </Link>
+    );
   }
 
   return (
@@ -72,7 +70,7 @@ const Layout = ({ location, title, children }) => {
           <p>
             <small>©</small> {new Date().getFullYear()}{' '}
             <a
-              href="mailto:eneaxharja@gmail.com"
+              href="mailto:enea.xharja@icloud.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -83,6 +81,14 @@ const Layout = ({ location, title, children }) => {
       </GlobalWrapper>
     </>
   );
+};
+
+Layout.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired,
 };
 
 export default Layout;
