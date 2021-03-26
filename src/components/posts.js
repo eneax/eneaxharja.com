@@ -26,7 +26,7 @@ const Post = styled.article`
 `;
 
 const Posts = ({ posts }) => (
-  <>
+  <section>
     {posts.map((post) => {
       const title = post.frontmatter.title || post.fields.slug;
 
@@ -58,7 +58,7 @@ const Posts = ({ posts }) => (
         </Post>
       );
     })}
-  </>
+  </section>
 );
 
 Posts.propTypes = {
