@@ -11,7 +11,7 @@ const GlobalWrapper = styled.div`
   padding: var(--spacing-10) var(--spacing-5) var(--spacing-5);
 
   main {
-    min-height: calc(100vh - 200px); /* sticky footer */
+    min-height: calc(100vh - 220px); /* sticky footer */
   }
 `;
 
@@ -35,6 +35,7 @@ const Footer = styled.footer`
   text-align: center;
   color: var(--color-text-light);
   font-size: var(--fontSize-0);
+  margin-top: var(--spacing-4);
 
   p {
     margin-bottom: var(--spacing-0);

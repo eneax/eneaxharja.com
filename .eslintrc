@@ -2,7 +2,8 @@
   "extends": ["eneax"],
   "parser": "babel-eslint",
   "rules": {
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "react/no-danger": "off"
   },
   "globals": {
     "__PATH_PREFIX__": "readonly"
