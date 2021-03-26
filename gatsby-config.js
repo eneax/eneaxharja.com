@@ -1,10 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: `Enea Xharja`,
-    author: {
-      name: `Enea Xharja`,
-      summary: `who lives and works in Berlin building useful things.`,
-    },
     description: `My Own Little Corner of the Web!`,
     siteUrl: `https://eneaxharja.com`,
     social: {

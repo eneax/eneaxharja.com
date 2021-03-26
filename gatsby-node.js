@@ -6,7 +6,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Define templates
-  const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const blogPost = path.resolve(`./src/templates/blogPost.js`);
   const tagTemplate = path.resolve('src/templates/tags.js');
 
   // Get all markdown blog posts sorted by date
@@ -108,14 +108,8 @@ exports.createSchemaCustomization = ({ actions }) => {
   // blog posts are stored inside "data/blog" instead of returning an error
   createTypes(`
     type SiteSiteMetadata {
-      author: Author
       siteUrl: String
       social: Social
-    }
-
-    type Author {
-      name: String
-      summary: String
     }
 
     type Social {
