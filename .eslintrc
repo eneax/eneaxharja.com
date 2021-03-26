@@ -1,5 +1,6 @@
 {
   "extends": ["eneax"],
+  "parser": "babel-eslint",
   "rules": {
     "no-shadow": "off"
   }
