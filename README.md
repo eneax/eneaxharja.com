@@ -29,20 +29,19 @@ A quick look at the top-level files and directories you'll see in the project.
         ├── pages
         ├── templates
         └── utils
-    ├── .eslint
+    ├── static
+    ├── .eslintrc
     ├── .gitignore
+    ├── .prettierignore
     ├── .prettierrc
-    ├── CODE_OF_CONDUCT.md
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
-    ├── gatsby-ssr.js
     ├── LICENSE
     ├── netlify.toml
     ├── package-lock.json
     ├── package.json
-    ├── README.md
-    └── root-wrapper.js
+    └── README.md
 
 ## 🎓 Learning Gatsby
 

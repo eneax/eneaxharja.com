@@ -144,7 +144,7 @@ BlogPostTemplate.propTypes = {
       fields: PropTypes.shape({
         slug: PropTypes.string.isRequired,
       }).isRequired,
-    }).isRequired,
+    }),
     next: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
@@ -152,7 +152,7 @@ BlogPostTemplate.propTypes = {
       fields: PropTypes.shape({
         slug: PropTypes.string.isRequired,
       }).isRequired,
-    }).isRequired,
+    }),
   }).isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,

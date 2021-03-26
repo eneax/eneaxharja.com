@@ -47,7 +47,6 @@ const GlobalStyle = createGlobalStyle`
     --lineHeight-normal: 1.5;
     --lineHeight-relaxed: 1.625;
     --radius: 4px;
-    /* 1.200 Minor Third Type Scale */
     --fontSize-0: 0.833rem;
     --fontSize-1: 1rem;
     --fontSize-2: 1.2rem;
@@ -56,7 +55,6 @@ const GlobalStyle = createGlobalStyle`
     --fontSize-5: 2.074rem;
     --fontSize-6: 2.488rem;
     --fontSize-7: 2.986rem;
-
     --color-primary: rgba(252, 163, 17, 1);
     --color-text: rgba(229, 229, 229, 1);
     --color-text-light: rgba(255, 255, 255, 1);
@@ -66,7 +64,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* HTML elements */
-
   *,
   :after,
   :before {
@@ -102,7 +99,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Heading */
-
   h1,
   h2,
   h3,
@@ -166,7 +162,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Prose */
-
   p {
     line-height: var(--lineHeight-relaxed);
     --baseline-multiplier: 0.179;
@@ -236,7 +231,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Link */
-
   a {
     color: var(--color-primary);
   }
@@ -254,7 +248,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Media queries */
-
   @media (max-width: 42rem) {
     blockquote {
       padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
