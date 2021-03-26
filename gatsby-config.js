@@ -115,8 +115,19 @@ module.exports = {
         start_url: `/`,
         background_color: `rgba(255, 255, 255, 1)`,
         theme_color: `rgba(252, 163, 17, 1)`,
-        display: `minimal-ui`,
-        icon: `src/images/profile-pic.jpg`,
+        display: 'standalone',
+        icons: [
+          {
+            src: '/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
       },
     },
     `gatsby-plugin-styled-components`,
