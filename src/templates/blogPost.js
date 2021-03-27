@@ -6,6 +6,15 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+const BlogPost = styled.article`
+  p code {
+    border-radius: 0.3em;
+    padding: 0.15em 0.2em;
+    white-space: normal;
+    background: #2d2d2d;
+  }
+`;
+
 const BlogPostMeta = styled.section`
   margin-top: var(--spacing-12);
 
@@ -67,7 +76,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article itemScope itemType="http://schema.org/Article">
+      <BlogPost itemScope itemType="http://schema.org/Article">
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
         </header>
@@ -93,7 +102,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </p>
         </BlogPostMeta>
         <hr />
-      </article>
+      </BlogPost>
 
       <BlogPostNav>
         <ul>
