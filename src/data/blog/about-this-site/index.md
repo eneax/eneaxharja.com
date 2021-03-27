@@ -1,6 +1,6 @@
 ---
 title: 'About this site'
-date: '2018-12-24T22:12:03.284Z'
+date: '2018-01-01T22:12:03.284Z'
 description: 'Starting a blog in the Age of Social Media.'
 tags: ['writing']
 ---
