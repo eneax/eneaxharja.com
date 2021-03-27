@@ -1,9 +1,11 @@
 ---
-title: Wavy Underline
-date: "2021-02-09"
-description: ""
-tags: ["css"]
+title: 'Wavy Underline'
+date: '2021-02-09'
+description: 'Add a wavy underline to your text with CSS.'
+tags: ['css', 'snippets']
 ---
+
+Add a wavy underline to your text with CSS:
 
 ```html
 <p>

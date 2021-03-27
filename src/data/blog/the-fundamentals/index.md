@@ -1,15 +1,11 @@
 ---
-title: It's all about the fundamentals
-date: "2019-12-31"
-description: ""
-tags: ["javascript"]
+title: "It's all about the fundamentals"
+date: '2019-12-31'
+description: 'Change is the only constant.'
+tags: ['javascript']
 ---
 
-<blockquote>
-  <p className="fundamentals-quote">
-    "Change is the only constant." ― Heraclitus
-  </p>
-</blockquote>
+> "Change is the only constant." ― Heraclitus
 
 Frameworks and libraries are great.
 They are built to solve challenging problems that emerge in building modern web applications.

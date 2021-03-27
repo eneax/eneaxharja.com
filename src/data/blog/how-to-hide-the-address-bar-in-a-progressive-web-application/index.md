@@ -1,8 +1,8 @@
 ---
-title: How to Hide The Address Bar in a PWA
-date: "2020-03-16"
-description: ""
-tags: ["gatsby"]
+title: 'How to Hide The Address Bar in a PWA'
+date: '2020-03-16'
+description: ''
+tags: ['gatsby', 'snippets']
 ---
 
 Gatsby is a blazing fast static site generator for React. Despite this tagline, Gatsby is much more than that.

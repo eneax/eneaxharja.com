@@ -1,8 +1,8 @@
 ---
-title: How to add custom JavaScript to a Gatsby site
-date: "2020-11-15"
-description: ""
-tags: ["gatsby"]
+title: 'How to add custom JavaScript to a Gatsby site'
+date: '2020-11-15'
+description: ''
+tags: ['gatsby']
 ---
 
 While working on a side project recently, I found myself in the need to add some custom JavaScript to a Gatsby site. Gatsby doesn't use an `index.html` file. Instead, it uses an `html.js` file, which is hidden by default.
@@ -19,9 +19,9 @@ cp .cache/default-html.js src/html.js
 
 Your default `html.js` will look like this:
 
-```js
-import React from "react"
-import PropTypes from "prop-types"
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function HTML(props) {
   return (
@@ -45,7 +45,7 @@ export default function HTML(props) {
         {props.postBodyComponents}
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -55,14 +55,14 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};
 ```
 
 Now, just before the closing `</body>` tag, you can add the external script or even some custom JavaScript:
 
-```js
-import React from "react"
-import PropTypes from "prop-types"
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function HTML(props) {
   return (
@@ -101,7 +101,7 @@ export default function HTML(props) {
         />
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -111,7 +111,7 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};
 ```
 
 If you want to learn more about Gatsby and its ecosystem, head over to the [official website](https://www.gatsbyjs.com/docs).

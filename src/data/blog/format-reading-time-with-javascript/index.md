@@ -1,8 +1,8 @@
 ---
-title: Format Reading Time with JavaScript
-date: "2020-07-04"
-description: ""
-tags: ["javascript"]
+title: 'Format Reading Time with JavaScript'
+date: '2020-07-04'
+description: ''
+tags: ['javascript', 'snippets']
 ---
 
 Reading time is a pretty common functionality in blogs.
@@ -11,15 +11,15 @@ The `formatReadingTime()` function below displays cups of coffee as indicators o
 
 ```js
 function formatReadingTime(timeToRead) {
-  const minutes = `${timeToRead > 1 ? `minutes` : `minute`}`
-  const cups = Math.round(timeToRead / 5)
+  const minutes = `${timeToRead > 1 ? `minutes` : `minute`}`;
+  const cups = Math.round(timeToRead / 5);
 
   return `${new Array(cups || 1)
-    .fill("☕️")
-    .join("")} ${timeToRead} ${minutes} read`
+    .fill('☕️')
+    .join('')} ${timeToRead} ${minutes} read`;
 }
 
-formatReadingTime(1) // "☕️ 1 minute read"
-formatReadingTime(9) // "☕️☕️ 9 minutes read"
-formatReadingTime(30) // "☕️☕️☕️☕️☕️☕️ 30 minutes read"
+formatReadingTime(1); // "☕️ 1 minute read"
+formatReadingTime(9); // "☕️☕️ 9 minutes read"
+formatReadingTime(30); // "☕️☕️☕️☕️☕️☕️ 30 minutes read"
 ```

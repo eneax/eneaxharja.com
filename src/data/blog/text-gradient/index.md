@@ -1,9 +1,11 @@
 ---
 title: Text Gradient
-date: "2021-02-06"
-description: ""
-tags: ["css"]
+date: '2021-02-06'
+description: 'Add gradient color to your text with CSS.'
+tags: ['css', 'snippets']
 ---
+
+Add gradient color to your text with CSS:
 
 ```html
 <p>Text <span>gradient</span> is amazing!</p>

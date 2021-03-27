@@ -1,8 +1,8 @@
 ---
-title: Intro to Variables in JavaScript
-date: "2020-04-30"
-description: ""
-tags: ["javascript"]
+title: 'Intro to Variables in JavaScript'
+date: '2020-04-30'
+description: ''
+tags: ['javascript']
 ---
 
 Variables allow computers to store and manipulate data.
@@ -18,8 +18,8 @@ Any of the above seven data types can be stored in a variable.
 In JavaScript, we can create or `declare` a variable by using the magical keyword `var` in front of it:
 
 ```js
-var myName
-var myPhoneNumber
+var myName;
+var myPhoneNumber;
 ```
 
 The code above creates two variables: `myName` and `myPhoneNumber`.
@@ -33,7 +33,7 @@ To declare a variable, you can use `numbers`, `letters`, and `$` or `_`, but not
 Once we have declared a variable, we can store a value in it thanks to the assignment operator `=`.
 
 ```js
-myPhoneNumber = 17
+myPhoneNumber = 17;
 ```
 
 Here, the `Number` value 17 is assigned to the variable `myPhoneNumber`.
@@ -42,8 +42,8 @@ Always keep in mind that assignment goes `from right to left`.
 Everything standing on the right of the `=` operator is resolved before the value is assigned to the variable on the left of the operator.
 
 ```js
-myVar = 17
-myNum = myVar
+myVar = 17;
+myNum = myVar;
 ```
 
 The code above assigns the `Number` 17 to `myVar`, then resolves `myVar` to 17, and finally assigns the same value to `myNum`.
@@ -53,7 +53,7 @@ The code above assigns the `Number` 17 to `myVar`, then resolves `myVar` to 17, 
 Although you can declare a variable and subsequently assign a value to it, it is common to initialize a variable to an initial value at the moment when it is declared.
 
 ```js
-var myNumber = 0
+var myNumber = 0;
 ```
 
 The code above creates a new variable called `myNumber` and assigns it an initial value of `0`.
@@ -65,14 +65,14 @@ When working with variables, it's important to keep in mind that, when JavaScrip
 For this reason, if we try to perform any mathematical operation with an `undefined` variable, we will get as a result `NaN` ("Not a Number").
 
 ```js
-var a = 16
-var b = "My name is "
+var a = 16;
+var b = 'My name is ';
 
-a = a + 1
-b = b + " Enea!"
+a = a + 1;
+b = b + ' Enea!';
 
-console.log(a) // 17
-console.log(b) // "My name is Enea!"
+console.log(a); // 17
+console.log(b); // "My name is Enea!"
 ```
 
 ## Understanding Case Sensitivity in Variables
@@ -85,7 +85,7 @@ Even if the three name above are all valid names for a variable in JavaScript, i
 Examples:
 
 ```js
-var myPhone
-var myPhoneNumber
-var myPersonalPhoneNumber
+var myPhone;
+var myPhoneNumber;
+var myPersonalPhoneNumber;
 ```

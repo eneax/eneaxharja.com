@@ -1,5 +1,5 @@
 ---
-title: Add Tags & Categories to Gatsby MDX blog
+title: 'Add Tags & Categories to Gatsby MDX blog'
 date: '2020-09-10'
 description: ''
 tags: ['gatsby']
@@ -85,7 +85,7 @@ As you can see on the `gatsby-node.js` file, we need a tag page template in orde
 
 Let's create a tag template for `/tags/{tag}`:
 
-```js
+```jsx
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
@@ -171,7 +171,7 @@ export default Tags;
 Finally, once we've generated pages for every tag, it's time to create a tags index page.
 This page will render a list of all tags (`src/pages/tags.js`), followed by the number of posts with that particular tag.
 
-```js
+```jsx
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';

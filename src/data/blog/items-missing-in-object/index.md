@@ -1,41 +1,45 @@
 ---
-title: Check if there is a missing item in an object
-date: "2021-03-18"
-description: ""
-tags: ["javascript"]
+title: 'Check if there is a missing item in an object'
+date: '2021-01-20'
+description: 'Given an object, we want to check if there is any missing item in it using JavaScript.'
+tags: ['javascript', 'snippets']
 ---
+
+Given an object, we want to check if there is any missing item in it:
 
 ```js
 var footballTeam = {
   goalkeepers: {
-    url: "string",
+    url: 'string',
     updatedAt: new Date(),
     createdAt: new Date(),
   },
   defenders: {
-    url: "string",
+    url: 'string',
     updatedAt: new Date(),
     createdAt: new Date(),
   },
   midfielders: {
-    url: "string",
+    url: 'string',
     updatedAt: new Date(),
     createdAt: new Date(),
   },
   attackers: {
-    url: "string",
+    url: 'string',
     updatedAt: new Date(),
     createdAt: new Date(),
   },
-}
+};
 
-var positions = ["goalkeepers", "defenders", "midfielders", "attackers"]
+var positions = ['goalkeepers', 'defenders', 'midfielders', 'attackers'];
 
-var isAnyPositionMissing = positions.some(position => !footballTeam[position])
+var isAnyPositionMissing = positions.some(
+  (position) => !footballTeam[position]
+);
 
 if (isAnyPositionMissing) {
-  console.log("at least one position is missing")
+  console.log('at least one position is missing');
 } else {
-  console.log("it's all good")
+  console.log("it's all good");
 }
 ```

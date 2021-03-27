@@ -1,11 +1,11 @@
 ---
-title: Smooth Scrolling in Gatsby
-date: "2021-01-29"
-description: ""
-tags: ["gatsby"]
+title: 'Smooth Scrolling in Gatsby'
+date: '2021-01-29'
+description: ''
+tags: ['gatsby', 'snippets']
 ---
 
-The following guide describes how to implement smooth scrolling in Gatsby using the [smooth-scroll](https://www.npmjs.com/package/smooth-scroll).
+The following guide describes how to implement smooth scrolling in Gatsby using the [smooth-scroll](https://www.npmjs.com/package/smooth-scroll) package.
 
 ### Instructions
 
@@ -18,20 +18,20 @@ npm install --save smooth-scroll
 2. in your `layout.js` component, import the `smooth-scroll` package after the import statements but just before the component is rendered:
 
 ```js
-if (typeof window !== "undefined") {
-  require("smooth-scroll")('a[href*="#"]')
+if (typeof window !== 'undefined') {
+  require('smooth-scroll')('a[href*="#"]');
 }
 ```
 
 3. add the `id` property to the element on the page you want to navigate to:
 
-```js
+```jsx
 <InfoSection id="info" />
 ```
 
 4. use `Gatsby Link` to navigate to the desired section of the page:
 
-```js
+```jsx
 <Link to="#info">More Info</Link>
 ```
 

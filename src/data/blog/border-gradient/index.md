@@ -1,9 +1,11 @@
 ---
-title: Border Gradient
-date: "2021-02-08"
-description: ""
-tags: ["css"]
+title: 'Border Gradient'
+date: '2021-02-08'
+description: 'Wrap your text with an animated border.'
+tags: ['css', 'snippets']
 ---
+
+Wrap your text with an animated border:
 
 ```html
 <div>
@@ -33,7 +35,7 @@ div {
   position: relative;
 }
 div:after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(-1 * 2px);
   left: calc(-1 * 2px);

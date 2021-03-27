@@ -1,5 +1,5 @@
 ---
-title: Add a Published Filter To Your Gatsby MDX Posts
+title: 'Add a Published Filter To Your Gatsby MDX Posts'
 date: '2020-10-03'
 description: ''
 tags: ['gatsby']

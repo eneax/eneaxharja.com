@@ -1,8 +1,8 @@
 ---
-title: My Eslint and Prettier Config
-date: "2020-03-29"
-description: ""
-tags: ["javascript"]
+title: 'My Eslint and Prettier Config'
+date: '2020-03-29'
+description: 'Setup Eslint and Prettier with VS Code.'
+tags: ['javascript', 'eslint', 'prettier']
 ---
 
 I finally took some time to setup Eslint and Prettier with VS Code and made the [eslint-config-eneax](https://www.npmjs.com/package/eslint-config-eneax) package.
@@ -17,7 +17,7 @@ I prefer to install it locally per single project, so I can have project specifi
 
 Create a `package.json` file with `npm init` and install everything needed by the config:
 
-```bash
+```shell
 npx install-peerdeps --dev eslint-config-eneax
 ```
 

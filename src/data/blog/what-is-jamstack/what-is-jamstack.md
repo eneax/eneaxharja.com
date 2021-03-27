@@ -1,8 +1,8 @@
 ---
-title: What is Jamstack
-date: "2019-07-09T22:12:03.284Z"
-description: "What is Jamstack"
-tags: ["jamstack"]
+title: 'What is Jamstack'
+date: '2019-07-09T22:12:03.284Z'
+description: 'The Jamstack is a new approach of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience.'
+tags: ['jamstack']
 ---
 
 I started teaching myself to code, because I wanted to have a unique place where I could share my thoughts, some side projects and pictures of my vacations. Having a blog sounded like a wonderful idea!
@@ -61,8 +61,8 @@ It will reduce your infrastructure costs, since you don't have to pay unnecessar
 
 Moreover, if you want to add any new functionality to your site, there will be an enormous selection of specialized APIs that focus on that specific feature that you want to implement and so you don't have to build it from scratch.
 
-Join the <a href='https://jamstack.org/community' target='_blank'>Jamstack community</a> to learn more and keep building stuff!
+Join the [Jamstack community](https://jamstack.org/community) to learn more and keep building stuff!
 
 ## References
 
-Make sure to check out also these links: <a href='https://github.com/automata/awesome-jamstack' target='_blank'>awesome-jamstack</a>, <a href='https://jamstack.org' target='_blank'>jamstack.org</a>, <a href='https://jamstack.wtf' target='_blank'>jamstack.wtf</a>, <a href='https://www.staticgen.com' target='_blank'>static site generators</a>, <a href='https://headlesscms.org' target='_blank'>headless cms</a>, <a href='https://www.gatsbyjs.org' target='_blank'>Gatsby.js</a> and <a href='https://www.netlify.com' target='_blank'>Netlify</a>.
+Make sure to check out also these links: [awesome-jamstack](https://github.com/automata/awesome-jamstack), [jamstack.org](https://jamstack.org), [jamstack.wtf](https://jamstack.wtf), [static site generators](https://www.staticgen.com), [headless cms](https://headlesscms.org), [Gatsby.js](https://www.gatsbyjs.org) and [Netlify](https://www.netlify.com).

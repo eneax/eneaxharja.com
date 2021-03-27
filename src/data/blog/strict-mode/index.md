@@ -1,8 +1,8 @@
 ---
-title: Strict Mode in JavaScript
-date: "2020-03-17"
-description: ""
-tags: ["javascript"]
+title: 'Strict Mode in JavaScript'
+date: '2020-03-17'
+description: ''
+tags: ['javascript']
 ---
 
 For many years, JavaScript evolved without compatibility issues.
@@ -25,12 +25,12 @@ Enabling strict mode is as simple as adding "use strict" string (you can also us
 ```js
 // Non-strict code...
 
-;(function () {
-  "use strict"
+(function () {
+  'use strict';
 
   // code running in strict mode...
 
-})()
+})();
 
 // Non-strict code...
 ```

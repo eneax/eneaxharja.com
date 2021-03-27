@@ -1,9 +1,11 @@
 ---
-title: Animated Gradient
-date: "2021-02-07"
-description: ""
-tags: ["css"]
+title: 'Animated Gradient'
+date: '2021-02-07'
+description: 'Animate your gradient color with CSS.'
+tags: ['css', 'snippets']
 ---
+
+Animate your gradient color with CSS:
 
 ```html
 <p>Text <span>gradient</span> is amazing!</p>

@@ -1,8 +1,8 @@
 ---
-title: Add an RSS Feed to your Gatsby MDX blog
-date: "2020-08-09"
-description: ""
-tags: ["gatsby"]
+title: 'Add an RSS Feed to your Gatsby MDX blog'
+date: '2020-08-09'
+description: ''
+tags: ['gatsby']
 ---
 
 An [RSS Feed](https://en.wikipedia.org/wiki/RSS) is a standard XML file with the purpose of listing the content of a website in a subscribable format.
@@ -118,7 +118,7 @@ feeds: [
   {
     // talks feed
   },
-]
+];
 ```
 
 Since we are working with an MDX Blog, we need to transform our MDX pages into HTML objects that can be read by RSS Feed readers. For this purpose, we need to use a `serializer`:

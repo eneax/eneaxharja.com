@@ -1,8 +1,8 @@
 ---
-title: A brief history of JavaScript
-date: "2020-01-21"
-description: "The story of the language that made the Web"
-tags: ["javascript"]
+title: 'A brief history of JavaScript'
+date: '2020-01-21'
+description: 'The story of the language that made the Web.'
+tags: ['javascript']
 ---
 
 Once upon a time in California, a talented computer scientist named Brendan Eich wrote a brand new programming language.

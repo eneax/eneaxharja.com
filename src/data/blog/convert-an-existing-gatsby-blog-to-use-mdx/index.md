@@ -1,8 +1,8 @@
 ---
-title: Convert an existing Gatsby Markdown blog to use MDX
-date: "2020-08-04"
-description: ""
-tags: ["gatsby"]
+title: 'Convert an existing Gatsby Markdown blog to use MDX'
+date: '2020-08-04'
+description: ''
+tags: ['gatsby']
 ---
 
 I've recently released a new version of my personal website and I decided to convert my posts from an existing Gatsby Markdown format to MDX.
@@ -113,18 +113,18 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 and the template component:
 
-```js
-import React from "react"
-import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+```jsx
+import React from 'react';
+import { graphql } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const PostTemplate = ({
   data: {
@@ -139,9 +139,9 @@ const PostTemplate = ({
     <h1>{title}</h1>
     <MDXRenderer>{body}</MDXRenderer>
   </Layout>
-)
+);
 
-export default PostTemplate
+export default PostTemplate;
 ```
 
 This is it! From now on, anytime you want to create a blog post, remember to use the `.mdx` extension.

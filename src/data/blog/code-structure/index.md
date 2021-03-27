@@ -1,8 +1,8 @@
 ---
-title: Code Structure
-date: "2020-02-21"
-description: ""
-tags: ["javascript"]
+title: 'Code Structure'
+date: '2020-02-21'
+description: ''
+tags: ['javascript']
 ---
 
 When writing blocks of code, we need to consider how to best leverage the features of a programming language to create clean and structured code.
@@ -18,15 +18,15 @@ In a programming language, we call 'statements' the list of 'instruction' that w
 A statement example is the `alert()` method, which shows the message "Hello, world!".
 
 ```js
-alert("Hello, world!")
+alert('Hello, world!');
 ```
 
 In our code, we can have as many statements as we want, but it's important to write them on separate lines,
 in order to make the code more readable:
 
 ```js
-alert("Hello, world!")
-alert("🖐️ 🌐")
+alert('Hello, world!');
+alert('🖐️ 🌐');
 ```
 
 As you can see from the example above, statements are usually separated with semicolon.
@@ -40,8 +40,8 @@ However, if you want to write JS code without semicolons, you need to use line b
 The code below, for instance, works perfectly fine:
 
 ```js
-alert("Hi")
-alert("there")
+alert('Hi');
+alert('there');
 ```
 
 In this example, the line break is considered as an 'implicit' semicolon, which will be inserted automatically.
@@ -56,8 +56,7 @@ alert(1
 1);
 ```
 
-This code will run without issues and it will output 3, since JavaScript sees that the line ends with a plus "+" operator,
-so it interprets the expression as incomplete and does not insert any semicolon here.
+This code will run without issues and it will output 3, since JavaScript sees that the line ends with a plus `+` operator, so it interprets the expression as incomplete and does not insert any semicolon here.
 
 Although in this case, JavaScript made the right call, there might be other cases where we might not get the desired result.
 For this reason, if you are a beginner in JavaScript, use the semicolons while you get more familiar with the language.
@@ -68,8 +67,7 @@ Comments represent code that the JavaScript engine ignores completely.
 You can write comments in any place of your code block, since they do not affect the execution of the script.
 
 They represent a great way to describe what the code does to give more insights on the complex areas of your codebase.
-You can leave comments also to remind yourself or other developers to refactor some particular functions in the near future,
-or simply to temporarily disable a part of code.
+You can leave comments also to remind yourself or other developers to refactor some particular functions in the near future, or simply to temporarily disable a part of code.
 
 Let's have a look now at how you can leave comments into your JavaScript file.
 
@@ -83,14 +81,14 @@ Here are few examples on this type of comment:
 
 ```js
 // This comment occupies an entire line
-alert("Example where comment occupies an entire line!")
+alert('Example where comment occupies an entire line!');
 ```
 
 or
 
 ```js
 // This comment follows the statement
-alert("Example where the comment follows the statement")
+alert('Example where the comment follows the statement');
 ```
 
 ### Multiline comments
@@ -104,8 +102,8 @@ This is a multiline comment.
 It spans on two different lines.
 */
 
-alert("Hi")
-alert("There")
+alert('Hi');
+alert('There');
 ```
 
 Keep in mind that you cannot have multiline comment inside another multiline comment.

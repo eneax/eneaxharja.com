@@ -1,8 +1,8 @@
 ---
-title: Jamstack Best Practices
-date: "2019-09-08T22:12:03.284Z"
-description: "Jamstack Best Practices"
-tags: ["jamstack"]
+title: 'Jamstack Best Practices'
+date: '2019-09-08T22:12:03.284Z'
+description: ''
+tags: ['jamstack']
 ---
 
 For years, developers have spent huge amount of time and resources in order to launch a website or a web app and deploy complex server environments.
@@ -78,12 +78,12 @@ Basically, when a deploy goes live, it really goes live!
 
 Here is an ideal Jamstack workflow following all the best practices described above.
 
-![jamstack-best-practices](./images/jamstack-best-practices.png)
+![jamstack-best-practices](./jamstack-best-practices.png)
 
 ## Conclusion
 
-Get inspired by some great examples of projects built with <a href='https://jamstack.org/examples' target='_blank'>Jamstack</a> and keep building stuff!
+Get inspired by some great examples of projects built with [Jamstack](https://jamstack.org/examples) and keep building stuff!
 
 ## References
 
-Make sure to check out also these links: <a href='https://jamstack.org' target='_blank'>jamstack.org</a>, <a href='https://jamstack.wtf' target='_blank'>jamstack.wtf</a>, <a href='https://www.staticgen.com' target='_blank'>static site generators</a>, <a href='https://headlesscms.org' target='_blank'>headless cms</a>, <a href='https://www.gatsbyjs.org' target='_blank'>Gatsby.js</a> and <a href='https://www.netlify.com' target='_blank'>Netlify</a>.
+Make sure to check out also these links: [jamstack.org](https://jamstack.org), [jamstack.wtf](https://jamstack.wtf), [static site generators](https://www.staticgen.com), [headless cms](https://headlesscms.org), [Gatsby.js](https://www.gatsbyjs.org) and [Netlify](https://www.netlify.com).

@@ -1,8 +1,8 @@
 ---
-title: About this site
-date: "2018-12-24T22:12:03.284Z"
-description: "Starting a blog in the Age of Social Media"
-tags: ["writing"]
+title: 'About this site'
+date: '2018-12-24T22:12:03.284Z'
+description: 'Starting a blog in the Age of Social Media.'
+tags: ['writing']
 ---
 
 I’ve been reading blogs for quite some time now, and thought about starting one many times. But who starts a blog in the Age of Social Media?

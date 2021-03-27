@@ -1,8 +1,8 @@
 ---
-title: Command-click or Control+click not working
-date: "2020-01-25"
-description: ""
-tags: ["javascript"]
+title: 'Command-click or Control+click not working'
+date: '2020-01-25'
+description: ''
+tags: ['javascript', 'snippets']
 ---
 
 Being a web developer gives you the ability to override some of the default browser functionalities.
@@ -17,13 +17,13 @@ As a result, the only way for the user to open the link in a new tab is to right
 To fix this issue, you can create a `handleCLick` function and place it on top of your click handlers:
 
 ```js
-const handleClick = e => {
-  const hasModifiers = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey
+const handleClick = (e) => {
+  const hasModifiers = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey;
 
-  if (hasModifiers || e.button !== 1) return
+  if (hasModifiers || e.button !== 1) return;
 
-  e.preventDefault()
-}
+  e.preventDefault();
+};
 ```
 
 Since a right click doesn't trigger a normal click event, we handle only the left click.

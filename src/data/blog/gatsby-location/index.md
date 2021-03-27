@@ -1,8 +1,8 @@
 ---
-title: How to Get the Current Page URL in Gatsby
-date: "2021-02-05"
-description: ""
-tags: ["gatsby"]
+title: 'How to Get the Current Page URL in Gatsby'
+date: '2021-02-05'
+description: ''
+tags: ['gatsby', 'snippets']
 ---
 
 Gatsby uses [Reach Router](https://reach.tech/router) under the hood to handle routing.
@@ -10,34 +10,34 @@ If you want to provide `location` anywhere in your app, you need to use the Reac
 
 Create a page inside the `src/pages` folder:
 
-```js
-import React from "react"
-import { Location } from "@reach/router"
+```jsx
+import React from 'react';
+import { Location } from '@reach/router';
 
-import Layout from "../components/layout"
-import RandomComponent from "../components/randomComponent"
+import Layout from '../components/layout';
+import RandomComponent from '../components/randomComponent';
 
 const RandomPage = () => (
   <Layout>
     <Location>
-      {locationProps => <RandomComponent {...locationProps} />}
+      {(locationProps) => <RandomComponent {...locationProps} />}
     </Location>
   </Layout>
-)
+);
 
-export default RandomPage
+export default RandomPage;
 ```
 
 Create a component inside the `src/components` folder:
 
-```js
-import React from "react"
+```jsx
+import React from 'react';
 
 const RandomComponent = ({ location }) => (
   <div>
     <p>{location}</p>
   </div>
-)
+);
 
-export default RandomComponent
+export default RandomComponent;
 ```

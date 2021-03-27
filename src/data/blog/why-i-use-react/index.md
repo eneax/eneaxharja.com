@@ -1,11 +1,11 @@
 ---
-title: Why I use React
-date: "2019-10-11T22:12:03.284Z"
-description: "Why I use React"
-tags: ["react"]
+title: 'Why I use React'
+date: '2019-10-11T22:12:03.284Z'
+description: 'React is my tool of choice for building modern websites.'
+tags: ['react']
 ---
 
-React is my tool of choice for building modern web apps.
+React is my tool of choice for building modern websites.
 Before exploring a couple of reasons why to use React, let's talk about what actually is React.
 
 ## What is React?
@@ -20,21 +20,21 @@ This is what is called function composition.
 
 ```js
 function getProfilePic(username) {
-  return `https://pic.github.com/ + ${username}`
+  return `https://pic.github.com/ + ${username}`;
 }
 
 function getProfileUrl(username) {
-  return `https://www.github.com/ + ${username}`
+  return `https://www.github.com/ + ${username}`;
 }
 
 function getAvatar(username) {
   return {
     pic: getProfilePic(username),
     url: getProfileUrl(username),
-  }
+  };
 }
 
-getAvatar("eneax")
+getAvatar('eneax');
 ```
 
 In React, we can use the same approach, but instead of getting a value in return, we can get a UI component.
@@ -85,7 +85,7 @@ An example of the declarative approach is the `.map()` method:
 
 ```js
 function double(arr) {
-  return arr.map(item => item * 2)
+  return arr.map((item) => item * 2);
 }
 ```
 
@@ -93,11 +93,11 @@ The imperative approach, instead, consists in writing:
 
 ```js
 function double(arr) {
-  let results = []
+  let results = [];
   for (let i = 0; i < arr.length; i++) {
-    results.push(arr[i] * 2)
+    results.push(arr[i] * 2);
   }
-  return results
+  return results;
 }
 ```
 
@@ -169,7 +169,7 @@ The job of a router is to render specific components based on the current Url.
 </Router>
 ```
 
-If the user is in the home page ('/'), the router will render the Home component. When the user visits the '/about', the router will render the About component.
+If the user is in the home page (`/`), the router will render the Home component. When the user visits the `/about`, the router will render the About component.
 
 ### Styling
 
@@ -181,8 +181,8 @@ However, if we want to fully embrace the whole component model idea, we could wr
 One of the most popular libraries for writing CSS in JS is Styled Components and below you can see how to style a button with it:
 
 ```jsx
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
 const Button = styled.a`
   border-radius: 3px;
@@ -192,7 +192,7 @@ const Button = styled.a`
   background: black;
   color: white;
   border: 2px solid white;
-`
+`;
 render(
   <div>
     <Button
@@ -203,7 +203,7 @@ render(
       GitHub
     </Button>
   </div>
-)
+);
 ```
 
 ### Redux
@@ -221,4 +221,4 @@ Many applications and tools have been built using React or on top of React. For 
 Facebook has invested and is investing heavily in React’s development, while focusing and solving the right problems.
 Moreover, the React community is always welcoming newcomers and ready to help. I guarantee you that any time you will encounter a problem in one of your projects, there will always be someone else who faced and solved the same problem before you.
 
-If you are interested in getting started with React or simply want to keep up with the ecosystem, check the following links: <a href='https://reactjs.org' target='_blank'>React.js Official Documentation</a>, <a href='http://reactjsnewsletter.com' target='_blank'>React.js Newsletter</a>, <a href='https://www.reddit.com/r/reactjs' target='_blank'>React.js Subreddit</a> and <a href='https://spectrum.chat/react?tab=posts' target='_blank'>React.js Spectrum Community</a>.
+If you are interested in getting started with React or simply want to keep up with the ecosystem, check the following links: [React.js Official Documentation](https://reactjs.org), [React.js Newsletter](http://reactjsnewsletter.com) and [React.js Subreddit](https://www.reddit.com/r/reactjs).

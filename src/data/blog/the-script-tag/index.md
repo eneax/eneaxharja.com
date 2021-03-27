@@ -1,8 +1,8 @@
 ---
-title: The script tag
-date: "2020-02-01"
-description: ""
-tags: ["javascript"]
+title: 'The script tag'
+date: '2020-02-01'
+description: ''
+tags: ['javascript']
 ---
 
 A JavaScript program needs a working environment to run.
@@ -21,7 +21,7 @@ The easiest way to add JavaScript code to a page is to link a script file to an 
     <p>A random paragraph before the script tag</p>
 
     <script>
-      alert("Hi!!!")
+      alert('Hi!!!');
     </script>
   </body>
 </html>
@@ -30,20 +30,20 @@ The easiest way to add JavaScript code to a page is to link a script file to an 
 As you can see on the code snippet above, JavaScript scripts can be inserted into any part of an HTML document using the `<script>` tag.
 This tag contains JS code that is automatically executed when the browser processes it.
 
-## The modern `<script>` tag
+## The modern script tag
 
 JavaScript, like any other programming language, is constantly evolving and you will probably encounter JS syntax that is not used anymore.
 
 Three common examples of old way of writing JS code are the `type` and `language` attributes, in addition to the practice of using comments inside scripts.
 
-### The type attribute: `<script type='...'>`
+### The type attribute
 
 Back in the old days, HTML4 required a script to include a type, usually `type="text/javascript"`.
 With the release of HTML5, this attribute is no longer required.
 
-### The language attribute: `<script language='...'>`
+### The language attribute
 
-As the name of the attribute specifies, this attribute was meant to show the language of the script.
+As the name of the attribute specifies (`<script language='...'>`), this attribute was meant to show the language of the script.
 Since JavaScript is the default language of a `<script>` tag, there is no need to use it.
 
 ### Comments inside scripts
@@ -118,6 +118,6 @@ Do like this:
 ```html
 <script src="script.js"></script>
 <script>
-  alert("Now you see me 😃")
+  alert('Now you see me 😃');
 </script>
 ```

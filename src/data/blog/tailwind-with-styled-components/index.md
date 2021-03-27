@@ -1,8 +1,8 @@
 ---
-title: How to use Tailwind CSS with styled-components
-date: "2020-10-23T22:12:03.284Z"
-description: "How to use Tailwind CSS with styled-components"
-tags: ["react", "tailwind", "styled-components"]
+title: 'How to use Tailwind CSS with styled-components'
+date: '2020-10-23T22:12:03.284Z'
+description: 'How to use Tailwind CSS with styled-components.'
+tags: ['react', 'tailwind', 'css-in-js', 'styled-components']
 ---
 
 Tailwind is a utility-first CSS framework for building custom designs. It's highly customizable and provides you all the necessary building blocks you need to build a design.
@@ -26,10 +26,10 @@ Once `tailwind macro` is installed, we need to add a `babel-plugin-macros.config
 // babel-plugin-macros.config.js
 module.exports = {
   tailwind: {
-    config: "./src/tailwind.config.js",
-    styled: "styled-components/macro",
+    config: './src/tailwind.config.js',
+    styled: 'styled-components/macro',
   },
-}
+};
 ```
 
 This is all we need in order to write Tailwind classes inside a styled component. However, if you want to add additional Tailwind features, you can create an optional JavaScript configuration file:
@@ -43,7 +43,7 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-}
+};
 ```
 
 ## Implementation
@@ -74,4 +74,4 @@ const Test = () => (
 export default Test
 ```
 
-For more information, you can have a look at <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind</a> and <a href='https://styled-components.com' target='_blank' rel='noreferrer'>styled-components</a> offical documentation.
+For more information, you can have a look at [Tailwind](https://tailwindcss.com) and [styled-components](https://styled-components.com) official documentation.

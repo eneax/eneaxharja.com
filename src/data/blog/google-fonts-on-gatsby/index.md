@@ -1,8 +1,8 @@
 ---
-title: Using Google Fonts in Gatsby
-date: "2020-12-06"
-description: ""
-tags: ["gatsby"]
+title: 'Using Google Fonts in Gatsby'
+date: '2020-12-06'
+description: ''
+tags: ['gatsby', 'snippets']
 ---
 
 Google Fonts is a great resource for adding beautiful fonts to your website.
@@ -24,11 +24,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Roboto:300,300i,400,400i,700`],
-        display: "swap",
+        display: 'swap',
       },
     },
   ],
-}
+};
 ```
 
 In the example above, I am using `display: swap`. The `font-display` property defines how font files are loaded and displayed by the browser. `swap` tells the browser to use the fallback font to display the text, until the custom font has fully downloaded (aka "flash of unstyled text").
