@@ -91,6 +91,9 @@ const BlogPostTemplate = ({ data, location }) => {
               ))}
             </small>
           </p>
+          <Link to="/tags">
+            <small>Browse all tags</small>
+          </Link>
         </BlogPostMeta>
         <hr />
       </article>
