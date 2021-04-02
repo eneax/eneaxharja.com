@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
@@ -52,7 +52,7 @@ const BlogIndex = ({ data, location }) => {
           Hey there! I'm Enea, a web developer currently working at{' '}
           <a href="https://eqolot.com">eqolot</a>. Welcome to my little corner
           of the web, where I share my open collection of notes, code snippets,
-          and resources on things that interest me.
+          and resources on <Link to="/tags">things</Link> that interest me.
         </p>
       </Bio>
 

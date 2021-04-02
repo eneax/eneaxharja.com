@@ -1,0 +1,14 @@
+---
+title: 'Outliers'
+date: '2018-10-01'
+description: ''
+tags: ['books']
+---
+
+Malcolm Gladwell answers the question: what makes high-achievers different?
+
+Favorite quotes from the [book](http://a.co/9TbJE1a):
+
+> “Practice isn't the thing you do once you're good. It's the thing you do that makes you good.”
+
+> “Who we are cannot be separated from where we're from.”

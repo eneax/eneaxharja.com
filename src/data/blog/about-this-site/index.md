@@ -17,4 +17,4 @@ So instead of spending my time mindlessly browsing the Internet, I decided to te
 
 I want to use this place to share not only my thoughts, my favorite books and travel photos, but also my learnings in web development and some code snippets I consider to be useful to others.
 
-Welcome to my own little corner of the web!
+Welcome to my own little corner of the web (build with [Gatsby](https://www.gatsbyjs.com) and hosted on [Netlify](https://www.netlify.com))!
