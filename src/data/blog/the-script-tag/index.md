@@ -1,0 +1,123 @@
+---
+title: 'The script tag'
+date: '2020-02-01'
+description: ''
+tags: ['javascript']
+---
+
+A JavaScript program needs a working environment to run.
+The easiest way to add JavaScript code to a page is to link a script file to an HTML file (like displayed below) and open the HTML file into your favorite browser.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The script tag</title>
+  </head>
+  <body>
+    <p>A random paragraph before the script tag</p>
+
+    <script>
+      alert('Hi!!!');
+    </script>
+  </body>
+</html>
+```
+
+As you can see on the code snippet above, JavaScript scripts can be inserted into any part of an HTML document using the `<script>` tag.
+This tag contains JS code that is automatically executed when the browser processes it.
+
+## The modern script tag
+
+JavaScript, like any other programming language, is constantly evolving and you will probably encounter JS syntax that is not used anymore.
+
+Three common examples of old way of writing JS code are the `type` and `language` attributes, in addition to the practice of using comments inside scripts.
+
+### The type attribute
+
+Back in the old days, HTML4 required a script to include a type, usually `type="text/javascript"`.
+With the release of HTML5, this attribute is no longer required.
+
+### The language attribute
+
+As the name of the attribute specifies (`<script language='...'>`), this attribute was meant to show the language of the script.
+Since JavaScript is the default language of a `<script>` tag, there is no need to use it.
+
+### Comments inside scripts
+
+```html
+<script type="text/javascript">
+  <!--
+    ...
+  -->
+</script>
+```
+
+The purpose of this trick was to hide JavaScript code from old browsers that didn’t know how to process the `<script>` tag.
+Modern browsers are fully equipped to process JS code and this trick has become obsolete.
+
+## External scripts
+
+When you write code, it is important to keep in mind clean code principles like **DRY** (don't repeat yourself)
+and organizing the file structure of a codebase is fundamental.
+
+If you notice that the code inside your script file becomes very long, that is the sign that it can be broken up into separate scripts.
+
+You can attach script file to HTML using the `src` attribute and providing an absolute or relative path to the script that you want to import, in addition to a full URL:
+
+- absolute path:
+
+  ```html
+  <script src="/path/to/your/script.js"></script>
+  ```
+
+- relative path (here, it means that the script is in the current folder):
+
+  ```html
+  <script src="script.js"></script>
+  ```
+
+- URL:
+  ```html
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  ```
+
+Finally, if you want to attach several scripts, use multiple tags:
+
+```html
+<script src="/js/script1.js"></script>
+<script src="/js/script2.js"></script>
+...
+```
+
+## Recommendations on script tags
+
+A common practice when importing script files into HTML is to put into HTML only the simple scripts and organize the complex ones into separate files.
+Organizing your scripts into separate files can be extremely beneficial, since the browser will download it only once and store it in its cache.
+Then other pages can reference the same script from the browser's cache instead of downloading it again.
+That reduces traffic and makes pages faster.
+
+Always keep in mind that, if a script contains a `src` attribute, the content of that script is ignored.
+Basically, a single `<script>` tag can’t have both the `src` attribute and code inside of it.
+We must choose either an external `<script src='...'>` or a regular `<script>` with code.
+
+Instead of:
+
+```html
+<script src="file.js">
+  // this content will be ignored, since you specified the src attribute
+  alert('You can't see me 🙈');
+</script>
+```
+
+Do like this:
+
+```html
+<script src="script.js"></script>
+<script>
+  alert('Now you see me 😃');
+</script>
+```

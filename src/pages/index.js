@@ -1,73 +1,102 @@
-import React from 'react';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import { graphql, Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HomeDirectory from '../components/homeDirectory';
+import Posts from '../components/posts';
 
-// styles
-const HeroContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 40rem;
+const Bio = styled.section`
+  display: block;
+  margin-bottom: var(--spacing-16);
 
-  h1 {
-    margin-bottom: 0;
+  .bio-avatar,
+  .gatsby-image-wrapper img {
+    min-width: 50px;
+    border-radius: 50%;
+    margin-right: var(--spacing-4);
+    margin-bottom: var(--spacing-0);
+    float: left;
+    clip-path: circle();
+    shape-outside: circle();
   }
 
-  h2 {
-    margin-top: 0;
-    color: var(--textLighter);
+  p {
+    margin-bottom: var(--spacing-0);
   }
 `;
 
-// ui
-const HomePage = () => (
-  <Layout>
-    <SEO title="Home" />
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.nodes;
 
-    <HeroContainer>
-      <h1>Hi, I'm Enea!</h1>
-      <h2>Welcome to my own little corner of the web.</h2>
-    </HeroContainer>
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Home" />
 
-    <p>
-      I work at{' '}
-      <a href="https://eqolot.com" target="_blank" rel="noreferrer">
-        eqolot
-      </a>{' '}
-      during the day and spend most of my time writing{' '}
-      <a href="https://github.com/eneax" target="_blank" rel="noreferrer">
-        code
-      </a>{' '}
-      for the web. I create fast, highly performing and accessible{' '}
-      <a href="https://jamstack.org" target="_blank" rel="noreferrer">
-        Jamstack
-      </a>{' '}
-      websites that are responsive and can adapt the layout to a variety of
-      devices and screen sizes.
-    </p>
+      <Bio>
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={['AUTO', 'WEBP', 'AVIF']}
+          src="../images/profile-pic.png"
+          width={100}
+          height={100}
+          quality={95}
+          placeholder="blurred"
+          alt="Profile picture"
+        />
+        <p>
+          Hey there! I'm Enea, a web developer currently working at{' '}
+          <a href="https://eqolot.com">eqolot</a>. Welcome to my little corner
+          of the web, where I share my open collection of notes, code snippets,
+          and resources on <Link to="/tags">topics</Link> that interest me.
+        </p>
+      </Bio>
 
-    <p>
-      Here is an open collection of notes, code snippets and resources about
-      things that I am interested in.
-    </p>
+      <Posts posts={posts} />
+    </Layout>
+  );
+};
 
-    <HomeDirectory />
+BlogIndex.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    allMarkdownRemark: PropTypes.object.isRequired,
+  }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
-    <p>
-      I'm open to new opportunities and always looking for new projects where I
-      can contribute (anything built on Jamstack). You can find me on the good
-      old-fashioned{' '}
-      <a href="mailto:eneaxharja@gmail.com" target="_blank" rel="noreferrer">
-        email
-      </a>
-      . It just might take a few days for me to get back to you.
-    </p>
-  </Layout>
-);
+export default BlogIndex;
 
-export default HomePage;
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          description
+          date(formatString: "MMMM DD, YYYY")
+        }
+        timeToRead
+        excerpt
+      }
+    }
+  }
+`;

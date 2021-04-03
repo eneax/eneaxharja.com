@@ -1,32 +1,43 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const NotFoundSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-`;
+const NotFoundPage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title;
 
-const NotFoundHeader = styled.h1`
-  font-size: 3.5rem;
-  text-transform: uppercase;
-`;
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="404: Not Found" />
+      <h1>404: Not Found</h1>
+      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    </Layout>
+  );
+};
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-
-    <NotFoundSection>
-      <NotFoundHeader>Page Not found</NotFoundHeader>
-      <Link to="/">Back Home</Link>
-    </NotFoundSection>
-  </Layout>
-);
+NotFoundPage.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default NotFoundPage;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;

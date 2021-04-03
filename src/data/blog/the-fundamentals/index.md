@@ -1,0 +1,35 @@
+---
+title: "It's all about the fundamentals"
+date: '2019-12-31'
+description: 'Change is the only constant.'
+tags: ['javascript']
+---
+
+> "Change is the only constant." ― Heraclitus
+
+Frameworks and libraries are great.
+They are built to solve challenging problems that emerge in building modern web applications.
+They can be relatively quick to learn and can help you get productive and get the job done in a very short time.
+
+However, it's important to keep in mind that frameworks are also fragile and one day will disappear.
+
+No matter what frameworks and libraries you use and how popular they are today,
+they will not last forever.
+
+JavaScript, the language itself, is always changing and depending on who you ask,
+it is becoming a more mature and reliable language or unnecessarily complex.
+
+A good understanding of JavaScript is necessary to react quickly to changes in the industry and
+pick up new frameworks easily.
+
+JavaScript is very hard to learn, but I believe that investing the time in getting a solid knowledge of the fundamentals will pay off in the future.
+Especially, when it comes to using the language in fields that go beyond the web,
+like machine learning and virtual reality.
+
+For this reason, I decided to dive deeper into the fundamentals of the language,
+from learning how the main concepts work to adopting the best practices recommended by the community.
+
+At the end it's all 'just' JavaScript!
+
+So there you have it, my New Year resolution, if you like this kind of traditions.
+Brace yourself for some new posts on JavaScript, from the origins of the language, to the basics and most recent features.
