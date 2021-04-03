@@ -114,6 +114,9 @@ module.exports = {
         theme_color: `#FCA311`,
         display: 'standalone',
         icon: `src/images/profile-pic.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-styled-components`,
