@@ -2,12 +2,12 @@
 title: 'Range'
 date: '2021-02-14'
 description: ''
-tags: ['books']
+tags: ['reading', 'education']
 ---
 
 David Epstein makes an interesting argument for how to succeed in any field by developing broad interests and skills, instead of following the crowd around you and rushing to specialize.
 
-Favorite quotes from the [book](https://amzn.eu/5YtjW7A):
+Favorite quotes from the book:
 
 > I dove into work showing that highly credentialed experts can be come so narrow-minded that they actually get worse with experience, even while becoming more confident - a dangerous combination. And I was stunned when cognitive psychologists I spoke with led me to an enormous and too often ignored body of work demonstrating that learning itself is best done slowly to accumulate lasting knowledge, even when that means performing poorly on tests of immediate progress. That is, the most effective learning looks inefficient; it looks like falling behind.
 

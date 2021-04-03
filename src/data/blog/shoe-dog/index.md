@@ -2,12 +2,12 @@
 title: 'Shoe Dog'
 date: '2020-08-16'
 description: 'Phil Knight tells an honest story of his journey, struggles and sacrifices that led him to become founder and CEO of NIKE.'
-tags: ['books']
+tags: ['reading', 'business']
 ---
 
 Phil Knight tells an honest story of his journey, struggles and sacrifices that led him to become founder and CEO of NIKE.
 
-Favorite quotes from the [book](https://amzn.eu/e79u9O8):
+Favorite quotes from the book:
 
 > Like it or not, life is a game. Whoever denies that truth, whoever simply refuses to play, gets left on the sidelines, and I didn’t want that. More than anything, that was the thing I did not want.
 

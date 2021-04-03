@@ -1,13 +1,13 @@
 ---
 title: 'The Art of War'
-date: '2018-12-01'
+date: '2018-12-04'
 description: ''
-tags: ['books']
+tags: ['reading', 'strategy']
 ---
 
 Twenty-Five Hundred years ago, Sun Tzu wrote this classic book of military strategy based on Chinese warfare and military thought.
 
-Favorite quotes from the [book](https://amzn.eu/1eXHOf2):
+Favorite quotes from the book:
 
 > “The supreme art of war is to subdue the enemy without fighting.”
 

@@ -2,12 +2,12 @@
 title: 'The Inevitable'
 date: '2020-11-30'
 description: ''
-tags: ['books']
+tags: ['reading', 'technology']
 ---
 
 Kevin Kelly's optimistic and hopeful guide through the twelve technological realities that will shape the next thirty years and transform our lives.
 
-Favorite quotes from the [book](https://amzn.eu/9qVDRzt):
+Favorite quotes from the book:
 
 > We are morphing so fast that our ability to invent new things outpaces the rate we can civilize them.
 

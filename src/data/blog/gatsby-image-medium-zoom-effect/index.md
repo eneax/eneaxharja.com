@@ -1,7 +1,7 @@
 ---
 title: 'Medium zoom-effect in Gatsby'
 date: '2020-09-02'
-description: 'Create a Medium style zoom-effect using gatsby-image'
+description: 'Create a Medium style zoom-effect using gatsby-image.'
 tags: ['gatsby', 'snippets']
 ---
 

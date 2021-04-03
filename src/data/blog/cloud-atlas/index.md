@@ -1,13 +1,13 @@
 ---
 title: 'Cloud Atlas'
 date: '2020-11-08'
-description: ''
-tags: ['books']
+description: 'David Mitchell explores in brilliantly original fiction the fundamental questions of reality and identity.'
+tags: ['reading']
 ---
 
 David Mitchell explores in brilliantly original fiction the fundamental questions of reality and identity.
 
-Favorite quotes from the [book](https://amzn.eu/47PPyik):
+Favorite quotes from the book:
 
 > Peace, though beloved of our Lord, is a cardinal virtue only if your neighbours share your conscience.
 

@@ -2,12 +2,12 @@
 title: 'Drunk Tank Pink'
 date: '2018-06-01'
 description: 'Adam Alter writes about how our environment unconsciously shapes the judgments and decisions we make every day.'
-tags: ['books']
+tags: ['reading', 'psychology']
 ---
 
 Adam Alter writes about how our environment unconsciously shapes the judgments and decisions we make every day.
 
-Favorite quotes from the [book](https://amzn.eu/gSx6ZNq):
+Favorite quotes from the book:
 
 > “Each of us is an ongoing product of the world within us, the world between us, and the world around us—and their hidden capacity to shape our every thought, feeling, and behavior.”
 

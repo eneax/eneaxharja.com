@@ -2,12 +2,12 @@
 title: 'The Prince'
 date: '2018-05-15'
 description: "Machiavelli's thoughts on the qualities a ruler should possess."
-tags: ['books', 'strategy']
+tags: ['reading', 'strategy']
 ---
 
 Machiavelli's thoughts on the qualities a ruler should possess.
 
-Favorite quotes from the [book](https://amzn.eu/4Kp1EXJ):
+Favorite quotes from the book:
 
 > “Everyone sees what you appear to be, few experience what you really are.”
 

@@ -1,13 +1,13 @@
 ---
 title: 'Upheaval'
-date: '2021-04-06'
+date: '2021-04-03'
 description: ''
-tags: ['books']
+tags: ['reading', 'history']
 ---
 
 Jared Diamond reveals how successful nations recover from crises while adopting selective changes, a coping mechanism more commonly associated with individuals recovering from personal crises.
 
-Favorite quotes from the [book](https://amzn.eu/5CnyFie):
+Favorite quotes from the book:
 
 > It’s neither possible nor desirable for individuals or nations to change completely, and to discard everything of their former identities. The challenge, for nations as for individuals in crisis, is to figure out which parts of their identities are already functioning well and don’t need changing, and which parts are no longer working and do need changing.
 

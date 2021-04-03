@@ -2,12 +2,12 @@
 title: 'Reclaiming Conversation'
 date: '2020-12-04'
 description: ''
-tags: ['books']
+tags: ['reading']
 ---
 
 Sherry Turkle investigates the problems that arise in our society when we sacrifice conversation for simple connection, and why reclaiming face-to-face conversation can help us regain lost ground.
 
-Favorite quotes from the [book](https://amzn.eu/3E3T4Up):
+Favorite quotes from the book:
 
 > We say we turn to our phones when we’re “bored.” And we often find ourselves bored because we have become accustomed to a constant feed of connection, information, and entertainment. We are forever elsewhere.
 

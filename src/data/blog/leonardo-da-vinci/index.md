@@ -2,12 +2,12 @@
 title: 'Leonardo Da Vinci'
 date: '2021-01-28'
 description: ''
-tags: ['books']
+tags: ['reading', 'biography']
 ---
 
 Walter Isaacson shows how Leonardo’s "genius" was built on skills that anyone can develop, such as curiosity, careful observation and a powerful imagination.
 
-Favorite quotes from the [book](https://amzn.eu/bRsxYQy):
+Favorite quotes from the book:
 
 > "In fact, Leonardo's genius was a human one, wrought by his own will and ambition. It did not come from being the divine recipient, like Newton or Einstein, of a mind with so much processing power that we mere mortals cannot fathom it. Leonardo had almost no schooling and could barely read Latin or do long division. His genius was of the type we can understand, even take lessons from. It was based on skills we can aspire to improve in ourselves, such as curiosity and intense observation."
 

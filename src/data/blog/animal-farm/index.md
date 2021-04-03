@@ -2,12 +2,12 @@
 title: 'Animal Farm'
 date: '2019-06-01'
 description: "George Orwell's allegorical novel describes a scathing satire of an oppressed society's blind march toward totalitarianism."
-tags: ['books']
+tags: ['reading']
 ---
 
 George Orwell's allegorical novel describes a scathing satire of an oppressed society's blind march toward totalitarianism.
 
-Favorite quotes from the [book](https://amzn.eu/8EGAU4M):
+Favorite quotes from the book:
 
 > “All animals are equal, but some animals are more equal than others.”
 

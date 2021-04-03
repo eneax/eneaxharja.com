@@ -2,12 +2,12 @@
 title: 'The Tipping Point'
 date: '2018-10-11'
 description: ''
-tags: ['books']
+tags: ['reading']
 ---
 
 Malcolm Gladwell analyzes fashion trends, smoking, children's television, direct mail, and the early days of the American Revolution for clues on how to make ideas infectious.
 
-Favorite quotes from the [book](http://a.co/bQVfDQf):
+Favorite quotes from the book:
 
 > “The tipping point is that magic moment when an idea, trend, or social behavior crosses a threshold, tips, and spreads like wildfire.”
 

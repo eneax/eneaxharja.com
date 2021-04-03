@@ -2,12 +2,12 @@
 title: 'Sam Walton: Made in America'
 date: '2021-01-06'
 description: ''
-tags: ['books']
+tags: ['reading', 'business']
 ---
 
 Sam Walton, the merchant king of the late 20th century, shares his thoughts and decision-making process that took him from opening a small local store to dominating retail in the United States.
 
-Favorite quotes from the [book](https://amzn.eu/e60t46I):
+Favorite quotes from the book:
 
 > If I had to single out one element in my life that has made a difference for me, it would be a passion to compete.
 

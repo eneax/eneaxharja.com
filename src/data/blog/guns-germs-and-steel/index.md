@@ -2,12 +2,12 @@
 title: 'Guns, Germs, and Steel'
 date: '2019-01-20'
 description: ''
-tags: ['books']
+tags: ['reading', 'history']
 ---
 
 Jared Diamond wonderfully describes how societies, which initially had an advantage in food production, were able to advance beyond the hunter-gatherer stage, and then developed writing, technology, government, and organized religion and ventured by sea and land to conquer and decimate the pre-literate cultures.
 
-Favorite quotes from the [book](https://amzn.eu/7s7Uj6C):
+Favorite quotes from the book:
 
 > “History followed different courses for different peoples because of differences among peoples' environments, not because of biological differences among peoples themselves”
 

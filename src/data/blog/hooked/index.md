@@ -2,12 +2,12 @@
 title: 'Hooked: How to Build Habit-Forming Products'
 date: '2019-04-28'
 description: "Nir Eyal's guide on how successful companies create products people can’t put down."
-tags: ['books']
+tags: ['reading', 'business', 'design']
 ---
 
 Nir Eyal's guide on how successful companies create products people can’t put down.
 
-Favorite quotes from the [book](http://a.co/7PegxJR):
+Favorite quotes from the book:
 
 > “all humans are motivated to seek pleasure and avoid pain, to seek hope and avoid fear, and finally, to seek social acceptance and avoid rejection.”
 

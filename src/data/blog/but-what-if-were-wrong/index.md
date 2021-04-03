@@ -2,12 +2,12 @@
 title: "But What If We're Wrong?"
 date: '2020-11-29'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Chuck Klosterman visualizes our contemporary world as it will appear to those who will perceive it as the distant past.
 
-Favorite quotes from the [book](https://amzn.eu/9VqZ0a4):
+Favorite quotes from the book:
 
 > The practical reality is that any present-tense version of the world is unstable. What we currently consider to be true — both objectively and subjectively — is habitually provisional.
 

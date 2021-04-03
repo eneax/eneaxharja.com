@@ -2,12 +2,12 @@
 title: 'The Meditations'
 date: '2018-07-25'
 description: ''
-tags: ['books', 'stoic', 'life']
+tags: ['reading', 'philosophy']
 ---
 
 Written by the Roman emperor Marcus Aurelius, the Meditations offer a remarkable series of challenging spiritual reflections and exercises developed as the emperor struggled to understand himself and make sense of the universe.
 
-Favorite quotes from the [book](https://amzn.eu/bPTulyr):
+Favorite quotes from the book:
 
 > “You have power over your mind - not outside events. Realize this, and you will find strength.”
 

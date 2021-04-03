@@ -2,12 +2,12 @@
 title: "Man's Search for Meaning"
 date: '2019-09-01'
 description: ''
-tags: ['books']
+tags: ['reading', 'psychology']
 ---
 
 Psychiatrist Viktor Frankl's memoir is a description of life in Nazi death camps and its lessons for spiritual survival. The author argues that we cannot avoid suffering but we can choose how to cope with it, find meaning in it, and move forward with our lives with a renewed purpose.
 
-Favorite quotes from the [book](https://amzn.eu/bwpgE1a):
+Favorite quotes from the book:
 
 > “When we are no longer able to change a situation, we are challenged to change ourselves.”
 

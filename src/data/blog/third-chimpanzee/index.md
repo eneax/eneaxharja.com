@@ -2,12 +2,12 @@
 title: 'The Third Chimpanzee'
 date: '2019-02-05'
 description: 'Jared Diamond explores concepts relating to the animal origins of human behavior.'
-tags: ['books']
+tags: ['reading', 'history']
 ---
 
 Jared Diamond explores concepts relating to the animal origins of human behavior.
 
-Favorite quotes from the [book](https://amzn.eu/7SJzASz):
+Favorite quotes from the book:
 
 > “The past was still a Golden Age, of ignorance, while the present is an Iron Age of willful bliss.”
 

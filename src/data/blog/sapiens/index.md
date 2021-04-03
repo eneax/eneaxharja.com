@@ -2,12 +2,12 @@
 title: 'Sapiens: A Brief History of Humankind'
 date: '2019-11-05'
 description: ''
-tags: ['books']
+tags: ['reading', 'history', 'philosophy']
 ---
 
 Yuval Noah Harari traverses the entire human history, from the six human species that inhabited the earth to the only one today. Us. Homo sapiens.
 
-Favorite quotes from the [book](https://amzn.eu/5R32Hnk):
+Favorite quotes from the book:
 
 > “You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven.”
 

@@ -2,12 +2,12 @@
 title: 'The Lean Startup'
 date: '2019-04-10'
 description: "Eric Ries provides a scientific approach to continually testing ideas and adapting and adjusting before it's too late."
-tags: ['books', 'business']
+tags: ['reading', 'business']
 ---
 
 Eric Ries provides a scientific approach to continually testing ideas and adapting and adjusting before it's too late.
 
-Favorite quotes from the [book](https://amzn.eu/28Ihlas):
+Favorite quotes from the book:
 
 > “The only way to win is to learn faster than anyone else.”
 

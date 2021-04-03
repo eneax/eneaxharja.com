@@ -2,12 +2,12 @@
 title: 'Bad Blood'
 date: '2020-05-25'
 description: ''
-tags: ['books']
+tags: ['reading', 'business']
 ---
 
 John Carreyrou tells the story of the rise and collapse of Theranos, the multibillion-dollar biotech startup founded by Elizabeth Holmes.
 
-Favorite quotes from the [book](https://amzn.eu/3S0xVP2):
+Favorite quotes from the book:
 
 > VCs even had a term for it: the hockey-stick forecast. It showed revenue stagnating for a few years and then magically shooting up in a straight line.
 

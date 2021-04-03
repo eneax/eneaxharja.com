@@ -2,12 +2,12 @@
 title: 'Amusing Ourselves to Death'
 date: '2020-09-20'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Neil Postman beautifully describes what happens when politics, journalism, education, and even religion become subject to the demands of entertainment.
 
-Favorite quotes from the [book](https://amzn.eu/jbtJbrh):
+Favorite quotes from the book:
 
 > Silence has been replaced by background noise. It’s a different world.
 

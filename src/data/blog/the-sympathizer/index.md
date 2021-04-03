@@ -2,12 +2,12 @@
 title: 'The Sympathizer'
 date: '2020-02-09'
 description: ''
-tags: ['books']
+tags: ['reading', 'history']
 ---
 
 Viet Thanh Nguyen tells the story of a communist double agent (half-French, half-Vietnamese) who comes to America after the Fall of Saigon, and while building a new life with other Vietnamese refugees in Los Angeles, is secretly reporting back to his communist superiors in Vietnam.
 
-Favorite quotes from the [book](http://amzn.eu/e5IIey0):
+Favorite quotes from the book:
 
 > "Nothing, the General muttered, is ever so expensive as what is offered for free."
 

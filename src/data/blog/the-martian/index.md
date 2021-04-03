@@ -2,12 +2,12 @@
 title: 'The Martian'
 date: '2019-05-18'
 description: 'Andy Weir novel tells the story astronaut Mark Watney, one of the first people to walk on Mars.'
-tags: ['books', 'sci-fi']
+tags: ['reading', 'sci-fi']
 ---
 
 Andy Weir novel tells the story astronaut Mark Watney, one of the first people to walk on Mars.
 
-Favorite quotes from the [book](https://amzn.eu/4yY0GI8):
+Favorite quotes from the book:
 
 > “Yes, of course duct tape works in a near-vacuum. Duct tape works anywhere. Duct tape is magic and should be worshiped.”
 

@@ -2,12 +2,12 @@
 title: 'Elon Musk'
 date: '2019-03-25'
 description: 'Ashlee Vance tells the story of Elon Musk, the entrepreneur and innovator behind SpaceX, Tesla, and SolarCity and PayPal.'
-tags: ['books', 'business']
+tags: ['reading', 'business']
 ---
 
 Ashlee Vance tells the story of Elon Musk, the entrepreneur and innovator behind SpaceX, Tesla, and SolarCity and PayPal.
 
-Favorite quotes from the [book](https://amzn.eu/3NC1pSE):
+Favorite quotes from the book:
 
 > “Good ideas are always crazy until they’re not.”
 

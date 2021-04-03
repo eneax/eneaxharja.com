@@ -2,12 +2,12 @@
 title: 'Deep Work'
 date: '2019-07-21'
 description: ''
-tags: ['books']
+tags: ['reading', 'education']
 ---
 
 Deep Work is Cal Newport's guide to anyone seeking focused success in a distracted world.
 
-Favorite quotes from the [book](http://a.co/5RVoazx):
+Favorite quotes from the book:
 
 > “If you don’t produce, you won’t thrive—no matter how skilled or talented you are.”
 

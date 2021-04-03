@@ -2,12 +2,12 @@
 title: 'Turtles All the Way Down'
 date: '2019-06-10'
 description: 'John Green tells the story of Aza Holmes, a young woman navigating daily existence within the ever-tightening spiral of her own thoughts.'
-tags: ['books']
+tags: ['reading', 'psychology']
 ---
 
 John Green tells the story of Aza Holmes, a young woman navigating daily existence within the ever-tightening spiral of her own thoughts.
 
-Favorite quotes from the [book](http://a.co/d/2bMyK8P):
+Favorite quotes from the book:
 
 > “Your now is not your forever.”
 

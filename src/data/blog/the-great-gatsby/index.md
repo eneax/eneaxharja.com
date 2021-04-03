@@ -2,12 +2,12 @@
 title: 'The Great Gatsby'
 date: '2019-07-10'
 description: ''
-tags: ['books']
+tags: ['reading']
 ---
 
 F. Scott Fitzgerald's novel of the Jazz Age is the story of the wealthy Jay Gatsby and his new love for the beautiful Daisy Buchanan.
 
-Favorite quotes from the [book](http://a.co/8V0TIqt):
+Favorite quotes from the book:
 
 > “So we beat on, boats against the current, borne back ceaselessly into the past.”
 

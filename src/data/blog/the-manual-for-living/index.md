@@ -2,12 +2,12 @@
 title: 'The Manual For Living'
 date: '2020-02-24'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Epictetus' Manual for Living is a short manual of stoic ethical advice on how to live a full life.
 
-Favorite quotes from this [timeless piece of classic literature](http://amzn.eu/4wGNBT7):
+Favorite quotes from this timeless piece of classic literature:
 
 > "Of all existing things some are in our power, and others are not in our power. In our power are thought, impulse, will to get and will to avoid, and, in a word, everything which is our own doing. Things not in our power include the body, property, reputation, office, and, in a word, everything which is not our own doing."
 

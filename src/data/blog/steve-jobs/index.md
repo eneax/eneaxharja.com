@@ -1,13 +1,13 @@
 ---
 title: 'Steve Jobs'
-date: '2018-08-20'
+date: '2018-03-17'
 description: "Walter Isaacson's biography of Apple cofounder Steve Jobs."
-tags: ['books']
+tags: ['reading', 'biography']
 ---
 
 Walter Isaacson's biography of Apple cofounder Steve Jobs.
 
-Favorite quotes from the [book](https://amzn.eu/dyaZ031):
+Favorite quotes from the book:
 
 > “If you want to live your life in a creative way, as an artist, you have to not look back too much. You have to be willing to take whatever you’ve done and whoever you were and throw them away. The more the outside world tries to reinforce an image of you, the harder it is to continue to be an artist, which is why a lot of times, artists have to say, “Bye. I have to go. I’m going crazy and I’m getting out of here.” And they go and hibernate somewhere. Maybe later they re-emerge a little differently. (Steve Jobs)”
 

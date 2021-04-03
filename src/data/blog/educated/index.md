@@ -2,12 +2,12 @@
 title: 'Educated'
 date: '2018-07-20'
 description: ''
-tags: ['books', 'education']
+tags: ['reading', 'education']
 ---
 
 Tara Westover's story is the perfect example of what an education is and what it offers: the perspective to see one's life through new eyes and the will to change it.
 
-Favorite quotes from the [book](https://amzn.eu/frCEeLg):
+Favorite quotes from the book:
 
 > “You can love someone and still choose to say goodbye to them,” she says now. “You can miss a person every day, and still be glad that they are no longer in your life.”
 

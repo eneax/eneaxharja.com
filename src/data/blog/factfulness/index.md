@@ -2,12 +2,12 @@
 title: 'Factfulness'
 date: '2019-07-01'
 description: 'Hans Rosling proofs with facts how the world, for all its imperfections, is in a much better state than we might think.'
-tags: ['books']
+tags: ['reading', 'science']
 ---
 
 Hans Rosling proofs with facts how the world, for all its imperfections, is in a much better state than we might think.
 
-Favorite quotes from the [book](https://amzn.eu/8IgHJXv):
+Favorite quotes from the book:
 
 > “There’s no room for facts when our minds are occupied by fear.”
 

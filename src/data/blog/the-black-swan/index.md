@@ -2,7 +2,7 @@
 title: 'The Black Swan'
 date: '2018-09-05'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Nassim Nicholas Taleb describes a black swan as a highly improbable event with three principal characteristics:
@@ -11,7 +11,7 @@ Nassim Nicholas Taleb describes a black swan as a highly improbable event with t
 - it carries a massive impact
 - after the fact, we try to explain what makes it appear less random, and more predictable, than it actually was.
 
-Favorite quotes from the [book](https://amzn.eu/58QhcMY):
+Favorite quotes from the book:
 
 > “Missing a train is only painful if you run after it! Likewise, not matching the idea of success others expect from you is only painful if that’s what you are seeking.”
 

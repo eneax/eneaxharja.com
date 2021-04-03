@@ -2,12 +2,12 @@
 title: 'Hillbilly Elegy'
 date: '2018-07-10'
 description: "Vance's memoir is the story of how upward mobility really feels."
-tags: ['books', 'education']
+tags: ['reading', 'education']
 ---
 
 Vance's memoir is the story of how upward mobility really feels.
 
-Favorite quotes from the [book](https://amzn.eu/iAYgElQ):
+Favorite quotes from the book:
 
 > “What separates the successful from the unsuccessful are the expectations that they had for their own lives. Yet the message of the right is increasingly: It’s not your fault that you’re a loser; it’s the government’s fault.”
 

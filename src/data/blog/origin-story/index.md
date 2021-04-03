@@ -2,12 +2,12 @@
 title: 'Origin Story: A Big History of Everything'
 date: '2019-01-01'
 description: ''
-tags: ['books', 'history']
+tags: ['reading', 'history']
 ---
 
 While most historians study the smallest fragments of time, David Christian likes to study the whole of history, from the big bang through the present day - and even into the remote future.
 
-Favorite quotes from the [book](http://a.co/d/e0hqkHu):
+Favorite quotes from the book:
 
 > “Knowledge is like a sphere; the greater its volume, the larger its contact with the unknown.”
 

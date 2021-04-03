@@ -2,12 +2,12 @@
 title: 'Fooled by Randomness'
 date: '2018-09-21'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Nassim Nicholas Taleb investigates of opacity, luck, uncertainty, probability, human error, risk, and decision-making in a world we don’t understand.
 
-Favorite quotes from the [book](https://amzn.eu/aV3w57P):
+Favorite quotes from the book:
 
 > “Heroes are heroes because they are heroic in behavior, not because they won or lost.”
 

@@ -1,7 +1,7 @@
 ---
 title: 'Bootstrap Image Gallery'
 date: '2018-02-09T22:10:05.284Z'
-description: 'Experimenting with Bootstrap 3.3.7'
+description: 'Experimenting with Bootstrap 3.3.7.'
 tags: ['projects']
 ---
 

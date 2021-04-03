@@ -1,7 +1,7 @@
 ---
 title: 'Doosan Baseball'
 date: '2018-02-09T22:10:04.284Z'
-description: 'Responsive website built with Bootstrap 4'
+description: 'Responsive website built with Bootstrap 4.'
 tags: ['projects']
 ---
 

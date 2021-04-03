@@ -2,12 +2,12 @@
 title: 'The Attention Merchants'
 date: '2020-01-28'
 description: 'Tim Wu writes how in every moment of our waking lives, we face enormous efforts to harvest our attention.'
-tags: ['books']
+tags: ['reading', 'technology']
 ---
 
 Tim Wu writes how in every moment of our waking lives, we face enormous efforts to harvest our attention.
 
-Favorite quotes from the [book](https://amzn.eu/33e130U):
+Favorite quotes from the book:
 
 > "As William James observed, we must reflect that, when we reach the end of our days, our life experience will equal what we have paid attention to, whether by choice or default. We are at risk, without quite fully realizing it, of living lives that are less our own than we imagine."
 

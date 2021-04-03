@@ -2,14 +2,14 @@
 title: 'How Google Works'
 date: '2020-11-26'
 description: ''
-tags: ['books']
+tags: ['reading', 'business']
 ---
 
 Eric Schmidt and Jonathan Rosenberg helped grow Google from a young start-up to a global icon, while relearning everything they knew about management.
 
 This book is the collection of their experiences on corporate culture, strategy, talent, decision-making and dealing with disruption.
 
-Favorite quotes from the [book](https://amzn.eu/36DQX1o):
+Favorite quotes from the book:
 
 > “Go out there and have huge dreams, then show up to work the next morning and relentlessly incrementally achieve them.”
 

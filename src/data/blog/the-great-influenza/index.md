@@ -2,12 +2,12 @@
 title: 'The Great Influenza'
 date: '2020-10-10'
 description: ''
-tags: ['books']
+tags: ['reading', 'history', 'science']
 ---
 
 1918 marked the first collision between science and epidemic disease. John Barry describes how the deadliest flu virus in history broke out in an army camp in Kansas, moved east with American troops, and then exploded, killing up to 100 million people worldwide.
 
-Favorite quotes from the [book](https://amzn.eu/fBjGHkS):
+Favorite quotes from the book:
 
 > Influenza killed more people in a year than the Black Death of the Middle Ages killed in a century; it killed more people in twenty-four weeks than AIDS has killed in twenty-four years.
 

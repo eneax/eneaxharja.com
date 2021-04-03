@@ -2,12 +2,12 @@
 title: 'Digital Minimalism'
 date: '2019-08-01'
 description: 'Cal Newport shows how to use technology in order to support your goals and values, rather than letting it use you.'
-tags: ['books']
+tags: ['reading', 'technology']
 ---
 
 Cal Newport shows how to use technology in order to support your goals and values, rather than letting it use you.
 
-Favorite quotes from the [book](https://amzn.eu/clhjDRX):
+Favorite quotes from the book:
 
 > “The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in T-shirts selling an addictive product to children. Because, let’s face it, checking your “likes” is the new smoking.”
 

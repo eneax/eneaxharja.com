@@ -2,12 +2,12 @@
 title: 'When Breath Becomes Air'
 date: '2021-03-07'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Dr. Paul Kalanithi describes his transformation from a medical student into a neurosurgeon at Stanford working in the brain, and finally into a patient and new father confronting his own mortality.
 
-Favorite quotes from the [book](https://amzn.eu/79YLjFI):
+Favorite quotes from the book:
 
 > You can’t ever reach perfection, but you can believe in an asymptote toward which you are ceaselessly striving.
 

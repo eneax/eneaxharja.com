@@ -1,7 +1,7 @@
 ---
 title: 'Bootstrap Landing Page Slider'
 date: '2018-02-09T22:10:07.284Z'
-description: 'Experimenting with Bootstrap 4'
+description: 'Experimenting with Bootstrap 4.'
 tags: ['projects']
 ---
 

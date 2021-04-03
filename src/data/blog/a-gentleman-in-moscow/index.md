@@ -2,14 +2,14 @@
 title: 'A Gentleman in Moscow'
 date: '2020-10-29'
 description: ''
-tags: ['books']
+tags: ['reading', 'history', 'philosophy']
 ---
 
 On June 21, 1922, Count Alexander Rostov is escorted out of the Kremlin, through Red Square and the elegant revolving doors of the Hotel Metropol, after being sentenced to indefinite house arrest. But instead of his usual suite, he must now live in an attic as Russia undergoes decades of tumultuous upheaval.
 
 With this book, Amor Towles asks a fundamental question: Can a life without luxury be the richest of all?
 
-Favorite quotes from the [book](https://amzn.eu/dhT9aSn):
+Favorite quotes from the book:
 
 > "A king fortifies himself with a castle," observed the Count, "a gentleman with a desk."
 

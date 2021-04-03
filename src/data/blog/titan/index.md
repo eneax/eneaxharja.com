@@ -2,26 +2,22 @@
 title: 'Titan: The Life of John D. Rockefeller, Sr.'
 date: '2020-04-20'
 description: 'Ron Chernow tells the story of John D. Rockefeller, the Jekyll-and-Hyde of American capitalism.'
-tags: ['books']
+tags: ['reading', 'biography']
 ---
 
 Ron Chernow tells the story of John D. Rockefeller, the Jekyll-and-Hyde of American capitalism.
 
-Favorite quotes from the [book](https://amzn.eu/9Yw96aq):
+Favorite quotes from the book:
 
 > Rockefeller trained himself to reveal as little as possible, even in private letters, which he wrote as if they might someday fall into the hands of a prosecuting attorney. With his instinctive secrecy, he excelled at employing strange euphemisms and elliptical phrasing.
 
 > And once John D. Rockefeller, Sr., set his mind to something, he brought awesome powers of concentration to bear.
-
-> “All of those in the business today are doing business along the modern lines, following the plans which we were the first to propose,” he said with pride.
 
 > "And I rejoice also that we are charitable and sweet-spirited to these jealous, small men who made it the business of their lives to try to pull us down because their vision did not extend beyond the ends of their noses."
 
 > One notes that Rockefeller’s earliest memory was associated with caution and that he edited out the absentee father and inebriated grandfather while retaining the strong, enduring mother and grandmother. He always possessed an unusual, self-protective capacity to suppress unpleasant memories and keep alive those things that fortified his resolve.
 
 > In contrast to his father’s disdain for manual labor, John - always a self-styled son of the common people - gloried in the rigors of country life, which, he came to believe, toughened him for later industrial struggle. His frugal boyhood hardened an already stoic nature and made him proof against later adversity.
-
-> He was a slow learner but patient and persistent and, like J. P. Morgan and Jay Gould, exhibited a terrific head for math.
 
 > "I was not an easy student, and I had to apply myself diligently to prepare my lessons, said Rockefeller, who described himself accurately as "reliable" but not "brilliant".
 
@@ -32,8 +28,6 @@ Favorite quotes from the [book](https://amzn.eu/9Yw96aq):
 > Growing up as a miniature adult, burdened with duties, he developed an exaggerated sense of responsibility that would be evident throughout his life. He learned to see himself as a reluctant savior, taking charge of troubled situations that needed to be remedied.
 
 > John D. Rockefeller drew strength by simplifying reality and strongly believed that excessive reflection upon unpleasant but unalterable events only weakened one’s resolve in the face of enemies.
-
-> In the towns of John’s boyhood, Bill was an engaging but notorious character who prompted interminable speculation about his travels and sources of income. A boy with such a father needed to screen out malicious gossip and cultivate a brazen indifference to community opinion. This bred in him a reflexive habit of secrecy, a fear of the crowd, a deep contempt for idle chatter and loose tongues that lasted a lifetime. He learned to cultivate a secretive style and a defiant attitude toward strangers. Perhaps out of a self-protective instinct, Bill taught his children to be wary of strangers and even of himself.
 
 > When John was a child, Bill would urge him to leap from his high chair into his waiting arms. One day, he dropped his arms, letting his astonished son crash to the floor. "Remember," Bill lectured him, "never trust anyone completely, not even me."
 
@@ -64,8 +58,6 @@ Favorite quotes from the [book](https://amzn.eu/9Yw96aq):
 > Thus, by the end of the Civil War, John D. Rockefeller had established the foundations of his personal and professional life and was set to capitalize on the extraordinary opportunities beckoning him in postwar America. From this point forward, there would be no zigzags or squandered energy, only a single-minded focus on objectives that would make him both the wonder and terror of American business.
 
 > Unlike Europe, America had no tradition of political absolutism or ecclesiastic privilege to quench entrepreneurial spirits, and the weak, fragmented political system gave businessmen room to flourish.
-
-> Moving into the vacuum, kerosene emerged as an economic staple and was primed for a furious postwar boom. This burning fluid extended the day in cities and removed much of the lonely darkness from rural life.
 
 > Like Rockefeller, he advocated self-discipline and deferred gratification. As he said of his first threadbare days in Cleveland: “I wore a thin overcoat and thought how comfortable I should be when I could afford a long, thick Ulster. I carried a lunch in my pocket until I was a rich man. I trained myself in the school of self-control and self-denial. It was hard on me, but I would rather be my own tyrant than have some one else tyrannize me.”
 

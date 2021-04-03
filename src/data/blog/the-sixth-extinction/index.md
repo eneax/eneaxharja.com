@@ -2,12 +2,12 @@
 title: 'The Sixth Extinction'
 date: '2020-11-22'
 description: ''
-tags: ['books']
+tags: ['reading', 'history', 'science']
 ---
 
 Elizabeth Kolbert's book urgently forces us to rethink the fundamental question of what it means to be human as we go through the most devastating extinction event since the asteroid impact that wiped out the dinosaurs.
 
-Favorite quotes from the [book](https://amzn.eu/i9E6SXx):
+Favorite quotes from the book:
 
 > In times of extreme stress, the whole concept of fitness, at least in a Darwinian sense, loses its meaning: how could a creature be adapted, either well or ill, for conditions it has never before encountered in its entire evolutionary history?
 

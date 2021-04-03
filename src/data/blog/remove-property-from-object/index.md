@@ -1,7 +1,7 @@
 ---
 title: 'Remove a property from an object'
 date: '2021-01-06'
-description: 'Remove a property from an object using the ES6 rest operator'
+description: 'Remove a property from an object using the ES6 rest operator.'
 tags: ['javascript', 'snippets']
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: 'Lord of the Flies'
 date: '2018-06-10'
-description: "William Golding's Lord of the Flies is perhaps our most memorable novel about 'the end of innocence, the darkness of man's heart.'"
-tags: ['books']
+description: "William Golding's Lord of the Flies is perhaps our most memorable novel about 'the end of innocence, the darkness of man's heart'."
+tags: ['reading']
 ---
 
-William Golding's Lord of the Flies is perhaps our most memorable novel about “the end of innocence, the darkness of man’s heart.”
+William Golding's Lord of the Flies is perhaps our most memorable novel about “the end of innocence, the darkness of man’s heart”.
 
-Favorite quotes from the [book](https://amzn.eu/hCqSE84):
+Favorite quotes from the book:
 
 > “Maybe there is a beast… maybe it's only us.”
 

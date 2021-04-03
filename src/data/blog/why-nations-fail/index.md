@@ -2,12 +2,12 @@
 title: 'Why Nations Fail'
 date: '2020-12-24'
 description: ''
-tags: ['books']
+tags: ['reading', 'history']
 ---
 
 In this book, Acemoglu and Robinson answer the question, Why are some nations rich and others poor? The authors show that it is man-made political and economic institutions that underlie economic success (or lack thereof) with fascinating and well-documented examples.
 
-Favorite quotes from the [book](https://amzn.eu/6qaPR4b):
+Favorite quotes from the book:
 
 > Egypt is poor precisely because it has been ruled by a narrow elite that have organized society for their own benefit at the expense of the vast mass of people.
 

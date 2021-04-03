@@ -2,12 +2,12 @@
 title: 'On the Shortness of Life'
 date: '2019-08-10'
 description: 'The Stoic writings of the philosopher Seneca offer powerful insights into the art of living.'
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 The Stoic writings of the philosopher Seneca offer powerful insights into the art of living.
 
-Favorite quotes from the [book](https://amzn.eu/hzNSAsA):
+Favorite quotes from the book:
 
 > “You act like mortals in all that you fear, and like immortals in all that you desire”
 

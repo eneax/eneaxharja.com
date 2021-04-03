@@ -2,12 +2,12 @@
 title: 'The Spy and the Traitor'
 date: '2021-02-28'
 description: "Ben MacIntyre's thrilling Cold War story about a KGB double agent."
-tags: ['books']
+tags: ['reading']
 ---
 
 Ben MacIntyre's thrilling Cold War story about a KGB double agent.
 
-Favorite quotes from the [book](https://amzn.eu/55qF82l):
+Favorite quotes from the book:
 
 > From boyhood, Oleg saw that it was possible to live a double life, to love those around while concealing your true inner self, to appear to be one person to the external world and quite another inside.
 

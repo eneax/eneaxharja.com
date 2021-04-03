@@ -1,11 +1,13 @@
 ---
 title: 'I, Robot'
-date: '2020-09-04'
-description: 'by Isaac Asimov'
-tags: ['books']
+date: '2020-08-24'
+description: ''
+tags: ['reading', 'sci-fi']
 ---
 
-Favorite quotes from the [book](https://amzn.eu/5zHBX9N):
+Isaac Asimov takes readers on an adventure into the not-so-distant future where man and machine struggle to redefine life, love, and consciousness.
+
+Favorite quotes from the book:
 
 > There was a time when humanity faced the universe alone and without a friend. Now he has creatures to help him; stronger creatures than himself, more faithful, more useful, and absolutely devoted to him. Mankind is no longer alone.
 

@@ -2,12 +2,12 @@
 title: '21 Lessons for the 21st Century'
 date: '2019-11-28'
 description: ''
-tags: ['books']
+tags: ['reading', 'history', 'philosophy']
 ---
 
 Yuval Noah Harari addresses the challenge of navigating life in the face of constant and disorienting change and raises the important questions we need to ask ourselves in order to survive.
 
-Favorite quotes from the [book](http://a.co/d/6rDeQnQ):
+Favorite quotes from the book:
 
 > “In a world deluged by irrelevant information, clarity is power.”
 

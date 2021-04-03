@@ -2,12 +2,12 @@
 title: 'Antifragile'
 date: '2018-08-20'
 description: ''
-tags: ['books']
+tags: ['reading', 'philosophy']
 ---
 
 Nassim Nicholas Taleb offers advice on how to gain from chaos while being protected from frailty and adverse events.
 
-Favorite quotes from the [book](https://amzn.eu/9LyfdBA):
+Favorite quotes from the book:
 
 > “The psychologist Gerd Gigerenzer has a simple heuristic. Never ask the doctor what you should do. Ask him what he would do if he were in your place. You would be surprised at the difference”
 

@@ -2,12 +2,12 @@
 title: 'Tribe: On Homecoming and Belonging'
 date: '2019-02-25'
 description: 'Sebastian Junger takes a look at post-traumatic stress disorder and the many challenges today’s veterans face in modern society.'
-tags: ['books', 'life']
+tags: ['reading']
 ---
 
 Sebastian Junger takes a look at post-traumatic stress disorder and the many challenges today’s veterans face in modern society.
 
-Favorite quotes from the [book](http://a.co/gRlWmPi):
+Favorite quotes from the book:
 
 > “Humans don’t mind hardship, in fact they thrive on it; what they mind is not feeling necessary. Modern society has perfected the art of making people not feel necessary. It's time for that to end.”
 

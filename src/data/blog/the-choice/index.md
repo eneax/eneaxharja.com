@@ -2,12 +2,12 @@
 title: 'The Choice'
 date: '2020-10-17'
 description: ''
-tags: ['books']
+tags: ['reading', 'psychology']
 ---
 
 The horrors of the Holocaust didn't break Edith Eger. On the contrary, they helped her learn to live again and tell her unforgettable story.
 
-Favorite quotes from the [book](https://amzn.eu/bREBHdT):
+Favorite quotes from the book:
 
 > "Why now?" I asked. This was my secret weapon. The question I always ask my patients on a first visit. I need to know why they are motivated to change. Why today, of all days, do they want to start working with me? Why is today different from yesterday, or last week, or last year? Why is today different from tomorrow? Sometimes our pain pushes us, and sometimes our hope pulls us. Asking "Why now?" isn't just asking a question - it's asking everything.
 
