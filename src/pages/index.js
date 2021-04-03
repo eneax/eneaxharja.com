@@ -45,14 +45,14 @@ const BlogIndex = ({ data, location }) => {
           width={100}
           height={100}
           quality={95}
-          placeholder="tracedSVG"
+          placeholder="blurred"
           alt="Profile picture"
         />
         <p>
           Hey there! I'm Enea, a web developer currently working at{' '}
           <a href="https://eqolot.com">eqolot</a>. Welcome to my little corner
           of the web, where I share my open collection of notes, code snippets,
-          and resources on <Link to="/tags">things</Link> that interest me.
+          and resources on <Link to="/tags">topics</Link> that interest me.
         </p>
       </Bio>
 
