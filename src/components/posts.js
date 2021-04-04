@@ -3,14 +3,23 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import { formatReadingTime } from '../utils/helpers';
-
 const Post = styled.article`
   margin-bottom: var(--spacing-10);
   margin-top: var(--spacing-10);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  transition: all 0.25s ease;
+  &:hover {
+    background: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   header {
     margin-bottom: var(--spacing-2);
+    padding: var(--spacing-6) var(--spacing-6) var(--spacing-0);
   }
 
   h2 {
@@ -22,6 +31,8 @@ const Post = styled.article`
 
   p {
     margin-bottom: var(--spacing-0);
+    color: var(--color-text);
+    padding: var(--spacing-0) var(--spacing-6) var(--spacing-6);
   }
 `;
 
@@ -36,25 +47,21 @@ const Posts = ({ posts }) => (
           itemType="http://schema.org/Article"
           key={post.fields.slug}
         >
-          <header>
-            <h2>
-              <Link to={post.fields.slug} itemProp="url">
+          <Link to={post.fields.slug} itemProp="url">
+            <header>
+              <h2>
                 <span itemProp="headline">{title}</span>
-              </Link>
-            </h2>
-            <small>
-              {post.frontmatter.date}
-              {` • ${formatReadingTime(post.timeToRead)}`}
-            </small>
-          </header>
-          <section>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: post.frontmatter.description || post.excerpt,
-              }}
-              itemProp="description"
-            />
-          </section>
+              </h2>
+            </header>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: post.frontmatter.description || post.excerpt,
+                }}
+                itemProp="description"
+              />
+            </section>
+          </Link>
         </Post>
       );
     })}
@@ -64,15 +71,13 @@ const Posts = ({ posts }) => (
 Posts.propTypes = {
   posts: PropTypes.arrayOf(
     PropTypes.shape({
-      frontmatter: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-        description: PropTypes.string,
-      }).isRequired,
       fields: PropTypes.shape({
         slug: PropTypes.string.isRequired,
       }).isRequired,
-      timeToRead: PropTypes.number.isRequired,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string,
+      }).isRequired,
       excerpt: PropTypes.string,
     }).isRequired
   ).isRequired,
