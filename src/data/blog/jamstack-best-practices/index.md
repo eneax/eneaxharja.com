@@ -1,7 +1,7 @@
 ---
 title: 'Jamstack Best Practices'
 date: '2019-09-08T22:12:03.284Z'
-description: ''
+description: 'The Jamstack aims at separating the client code from the server one. If you want to leverage the best out of the stack, here are some tips.'
 tags: ['jamstack']
 ---
 

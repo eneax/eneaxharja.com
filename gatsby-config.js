@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Enea Xharja`,
-    description: `My Own Little Corner of the Web!`,
+    description: `My Own Little Corner of the Web`,
     siteUrl: `https://eneaxharja.com`,
     social: {
       github: `eneax`,
