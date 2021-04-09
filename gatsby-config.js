@@ -108,7 +108,7 @@ module.exports = {
       options: {
         name: `Enea Xharja`,
         short_name: `Enea`,
-        description: `My Own Little Corner of the Web!`,
+        description: `My Own Little Corner of the Web`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#FCA311`,
