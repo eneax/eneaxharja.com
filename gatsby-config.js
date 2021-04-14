@@ -119,6 +119,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-serviceworker`,
