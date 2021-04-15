@@ -10,13 +10,14 @@ import Pagination from '../components/pagination';
 const Archive = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
+  const totalPosts = data.allMarkdownRemark.totalCount;
   const { humanPageNumber, numberOfPages } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={`Archive - Page ${humanPageNumber} of ${numberOfPages}`} />
 
-      <h1>Archive</h1>
+      <h1>Archive: {totalPosts} posts</h1>
       <Posts posts={posts} />
       <Pagination pageContext={pageContext} />
     </Layout>
@@ -52,6 +53,7 @@ export const archiveQuery = graphql`
       limit: $limit
       skip: $skip
     ) {
+      totalCount
       nodes {
         fields {
           slug

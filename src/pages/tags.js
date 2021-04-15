@@ -17,7 +17,7 @@ const TagsPage = ({
   },
 }) => (
   <Layout location={location} title={title}>
-    <SEO title="All tags" />
+    <SEO title="All Tags" />
 
     <section>
       <h1>All Tags</h1>
