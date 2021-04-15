@@ -33,7 +33,7 @@ const Header = styled.header`
 
 const Footer = styled.footer`
   text-align: center;
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-size: var(--fontSize-0);
   margin-top: var(--spacing-4);
 
@@ -69,14 +69,7 @@ const Layout = ({ location, title, children }) => {
         <main>{children}</main>
         <Footer>
           <p>
-            <small>©</small> {new Date().getFullYear()}{' '}
-            <a
-              href="mailto:enea.xharja@icloud.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Enea Xharja
-            </a>
+            <small>©</small> {new Date().getFullYear()} Enea Xharja
           </p>
         </Footer>
       </GlobalWrapper>
