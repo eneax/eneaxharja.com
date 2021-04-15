@@ -51,7 +51,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create blog posts pages
   // But only if there's at least one markdown file found at "data/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
-
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id;
@@ -70,25 +69,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     });
   }
 
-  // Extract tag data from query
+  // Create tag pages
   const tags = result.data.tagsGroup.group;
-
-  // Make tag pages
   tags.forEach((tag) => {
-    createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    });
+    // Filter out the posts that belong to the current category
+    const filteredPosts = posts.filter(({ frontmatter }) =>
+      frontmatter.tags.some((el) => el === tag.fieldValue)
+    );
+    // Handle empty categories
+    if (filteredPosts.length > 0) {
+      paginate({
+        createPage,
+        items: filteredPosts,
+        itemsPerPage: 30,
+        pathPrefix: ({ pageNumber }) =>
+          pageNumber === 0
+            ? `/tags/${_.kebabCase(tag.fieldValue)}`
+            : `/tags/${_.kebabCase(tag.fieldValue)}/page`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+        },
+      });
+    }
   });
 
   // Create archive pages
   paginate({
     createPage,
     items: posts,
-    itemsPerPage: 45,
+    itemsPerPage: 30,
     pathPrefix: ({ pageNumber }) =>
       pageNumber === 0 ? `/archive` : `/archive/page`,
     component: archiveTemplate,

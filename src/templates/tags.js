@@ -1,15 +1,15 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Posts from '../components/posts';
+import Pagination from '../components/pagination';
 import CustomLink from '../components/customLink';
 
 const Tags = ({ pageContext, data, location }) => {
-  const { tag } = pageContext;
+  const { tag, humanPageNumber, numberOfPages } = pageContext;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
   const { totalCount } = data.allMarkdownRemark;
@@ -17,13 +17,15 @@ const Tags = ({ pageContext, data, location }) => {
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
+  const title = `"${tag}" tag - Page ${humanPageNumber} of ${numberOfPages}`;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={tagHeader} />
+      <SEO title={title} />
 
       <h1>{tagHeader}</h1>
       <Posts posts={posts} />
+      <Pagination pageContext={pageContext} />
       <CustomLink path="/tags">Browse all tags</CustomLink>
     </Layout>
   );
@@ -32,6 +34,8 @@ const Tags = ({ pageContext, data, location }) => {
 Tags.propTypes = {
   pageContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,
+    humanPageNumber: PropTypes.number.isRequired,
+    numberOfPages: PropTypes.number.isRequired,
   }),
   data: PropTypes.shape({
     site: PropTypes.shape({
@@ -48,8 +52,8 @@ Tags.propTypes = {
 
 export default Tags;
 
-export const pageQuery = graphql`
-  query($tag: String) {
+export const tagsQuery = graphql`
+  query tagsQuery($tag: String, $skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
@@ -58,6 +62,8 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
+      limit: $limit
+      skip: $skip
     ) {
       totalCount
       nodes {
@@ -67,9 +73,7 @@ export const pageQuery = graphql`
         frontmatter {
           title
           description
-          date(formatString: "MMMM DD, YYYY")
         }
-        timeToRead
         excerpt
       }
     }
