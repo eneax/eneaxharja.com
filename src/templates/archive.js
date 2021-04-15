@@ -1,46 +1,29 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Posts from '../components/posts';
-import CustomLink from '../components/customLink';
+import Pagination from '../components/pagination';
 
-const LinkContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const Tags = ({ pageContext, data, location }) => {
-  const { tag } = pageContext;
+const Archive = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
-  const { totalCount } = data.allMarkdownRemark;
-
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
+  const { humanPageNumber, numberOfPages } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={tagHeader} />
+      <SEO title={`Archive - Page ${humanPageNumber} of ${numberOfPages}`} />
 
-      <h1>{tagHeader}</h1>
+      <h1>Archive</h1>
       <Posts posts={posts} />
-
-      <LinkContainer>
-        <CustomLink path="/tags">Browse all tags</CustomLink>
-      </LinkContainer>
+      <Pagination pageContext={pageContext} />
     </Layout>
   );
 };
 
-Tags.propTypes = {
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-  }),
+Archive.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
@@ -49,15 +32,16 @@ Tags.propTypes = {
     }).isRequired,
     allMarkdownRemark: PropTypes.object.isRequired,
   }).isRequired,
+  pageContext: PropTypes.object.isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default Tags;
+export default Archive;
 
-export const pageQuery = graphql`
-  query($tag: String) {
+export const archiveQuery = graphql`
+  query archiveQuery($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
@@ -65,9 +49,9 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      limit: $limit
+      skip: $skip
     ) {
-      totalCount
       nodes {
         fields {
           slug
@@ -75,9 +59,7 @@ export const pageQuery = graphql`
         frontmatter {
           title
           description
-          date(formatString: "MMMM DD, YYYY")
         }
-        timeToRead
         excerpt
       }
     }
