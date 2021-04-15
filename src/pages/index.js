@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Posts from '../components/posts';
+import CustomLink from '../components/customLink';
 
 const Bio = styled.section`
   display: block;
@@ -28,7 +29,7 @@ const Bio = styled.section`
   }
 `;
 
-const BlogIndex = ({ data, location }) => {
+const Homepage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
 
@@ -57,11 +58,13 @@ const BlogIndex = ({ data, location }) => {
       </Bio>
 
       <Posts posts={posts} />
+
+      <CustomLink path="/archive">Browse the archive</CustomLink>
     </Layout>
   );
 };
 
-BlogIndex.propTypes = {
+Homepage.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
@@ -75,16 +78,19 @@ BlogIndex.propTypes = {
   }).isRequired,
 };
 
-export default BlogIndex;
+export default Homepage;
 
-export const pageQuery = graphql`
+export const homepageQuery = graphql`
   query {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 15
+    ) {
       nodes {
         fields {
           slug

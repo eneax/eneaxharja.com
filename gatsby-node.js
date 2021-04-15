@@ -1,6 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const _ = require('lodash');
+const { paginate } = require('gatsby-awesome-pagination');
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -8,6 +9,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define templates
   const blogPost = path.resolve(`./src/templates/blogPost.js`);
   const tagTemplate = path.resolve('src/templates/tags.js');
+  const archiveTemplate = path.resolve('src/templates/archive.js');
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -80,6 +82,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         tag: tag.fieldValue,
       },
     });
+  });
+
+  // Create archive pages
+  paginate({
+    createPage,
+    items: posts,
+    itemsPerPage: 45,
+    pathPrefix: ({ pageNumber }) =>
+      pageNumber === 0 ? `/archive` : `/archive/page`,
+    component: archiveTemplate,
   });
 };
 
