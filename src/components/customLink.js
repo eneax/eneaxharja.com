@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+const Wrapper = styled.div`
+  display: var(--display, flex);
+  justify-content: center;
+`;
+
 const StyledLink = styled(Link)`
   text-decoration: none;
-  display: ${(props) => (props.$inline ? 'inline-flex' : 'flex')};
-  justify-content: center;
   color: var(--color-text);
   border-radius: var(--radius);
   margin-top: var(--spacing-2);
@@ -20,15 +23,19 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const CustomLink = ({ path, inline, children }) => (
-  <StyledLink to={path} $inline={inline}>
-    {children}
-  </StyledLink>
+const CustomLink = ({ display, path, children }) => (
+  <Wrapper
+    style={{
+      '--display': display,
+    }}
+  >
+    <StyledLink to={path}>{children}</StyledLink>
+  </Wrapper>
 );
 
 CustomLink.propTypes = {
+  display: PropTypes.string,
   path: PropTypes.string.isRequired,
-  inline: PropTypes.bool,
   children: PropTypes.any.isRequired,
 };
 

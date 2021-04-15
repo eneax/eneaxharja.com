@@ -29,11 +29,6 @@ const Bio = styled.section`
   }
 `;
 
-const LinkContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 const Homepage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
@@ -64,9 +59,7 @@ const Homepage = ({ data, location }) => {
 
       <Posts posts={posts} />
 
-      <LinkContainer>
-        <CustomLink path="/archive">Browse the archive</CustomLink>
-      </LinkContainer>
+      <CustomLink path="/archive">Browse the archive</CustomLink>
     </Layout>
   );
 };

@@ -25,8 +25,8 @@ const TagsPage = ({
       {group.map((tag) => (
         <CustomLink
           key={tag.fieldValue}
+          display="inline-flex"
           path={`/tags/${kebabCase(tag.fieldValue)}/`}
-          inline
         >
           {tag.fieldValue} ({tag.totalCount})
         </CustomLink>

@@ -8,11 +8,6 @@ import SEO from '../components/seo';
 import Posts from '../components/posts';
 import CustomLink from '../components/customLink';
 
-const LinkContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext;
   const siteTitle = data.site.siteMetadata.title;
@@ -29,10 +24,7 @@ const Tags = ({ pageContext, data, location }) => {
 
       <h1>{tagHeader}</h1>
       <Posts posts={posts} />
-
-      <LinkContainer>
-        <CustomLink path="/tags">Browse all tags</CustomLink>
-      </LinkContainer>
+      <CustomLink path="/tags">Browse all tags</CustomLink>
     </Layout>
   );
 };
