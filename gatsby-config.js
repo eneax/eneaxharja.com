@@ -3,6 +3,7 @@ module.exports = {
     title: `Enea Xharja`,
     description: `My Own Little Corner of the Web`,
     siteUrl: `https://eneaxharja.com`,
+    logo: `https://eneaxharja.com/images/profile-pic.png`,
     social: {
       github: `eneax`,
     },
