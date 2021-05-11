@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, title, schemaMarkup }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -11,6 +11,8 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            siteUrl
+            logo
             social {
               github
             }
@@ -22,6 +24,19 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+
+  const baseSchema = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      name: site.siteMetadata.title,
+      description: site.siteMetadata.description,
+      url: site.siteMetadata.siteUrl,
+      logo: site.siteMetadata.logo,
+    },
+  ];
+
+  const schema = schemaMarkup ? [...baseSchema, schemaMarkup] : baseSchema;
 
   return (
     <Helmet
@@ -64,7 +79,9 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
   );
 };
 
@@ -79,6 +96,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  schemaMarkup: PropTypes.object,
 };
 
 export default SEO;
