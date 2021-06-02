@@ -2,7 +2,7 @@
 title: 'Pure Functions in JavaScript'
 date: '2021-05-17'
 description: 'Pure functions are essential to understanding functional programming and writing clean code. But what does it mean for a function to be pure?'
-tags: ['javascript', 'functional programming']
+tags: ['javascript', 'functional-programming']
 ---
 
 Pure functions are essential to understanding functional programming and writing clean code.
