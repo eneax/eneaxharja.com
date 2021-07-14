@@ -11,8 +11,7 @@ kind of like the `x` and `y` in mathematics.
 
 Computer variables, however, can store not only numbers, but different values at different times.
 JavaScript has eight different data types: `undefined`, `null`, `boolean`, `string`, `symbol`, `bigint`, `number` and `object`.
-
-Any of the above seven data types can be stored in a variable.
+Any of the above eight data types can be stored in a variable.
 
 ## Declare JavaScript Variables
 
