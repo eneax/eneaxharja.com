@@ -54,7 +54,7 @@ const Bio = () => (
     <p>
       Hey there! I'm Enea, a web developer currently working at{' '}
       <a href="https://eqolot.com">eqolot</a>. Welcome to my little corner of
-      the web, where I share my open collection of notes, code snippets, and
+      the web, where I share my personal collection of notes, code snippets, and
       resources on <Link to="/tags">topics</Link> that interest me.
     </p>
   </BioWrapper>
