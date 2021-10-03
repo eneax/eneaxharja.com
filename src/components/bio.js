@@ -35,7 +35,7 @@ const BioWrapper = styled.section`
 const Bio = () => (
   <BioWrapper>
     <a
-      href="mailto:enea.xharja@icloud.com"
+      href="mailto:tasters_00zillion@icloud.com"
       target="_blank"
       rel="noopener noreferrer"
     >
