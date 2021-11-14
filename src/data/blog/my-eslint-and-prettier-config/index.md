@@ -2,7 +2,7 @@
 title: 'My Eslint and Prettier Config'
 date: '2020-03-29'
 description: 'Setup Eslint and Prettier with VS Code.'
-tags: ['javascript', 'eslint', 'prettier']
+tags: ['config']
 ---
 
 I finally took some time to setup Eslint and Prettier with VS Code and made the [eslint-config-eneax](https://www.npmjs.com/package/eslint-config-eneax) package.
