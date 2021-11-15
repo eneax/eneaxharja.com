@@ -2,7 +2,7 @@
 title: 'Uses'
 date: '2020-12-24'
 description: 'My favorite tools and software.'
-tags: ['tools', 'lists']
+tags: ['lists']
 ---
 
 A curated list of my favorite tools and software.
@@ -10,7 +10,6 @@ A curated list of my favorite tools and software.
 ## Hardware
 
 - MacBook Pro (15-inch, 2016)
-- Sony `WH1000XM3` Headphones
 
 ## Apps
 
