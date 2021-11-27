@@ -394,6 +394,12 @@ const GlobalStyle = createGlobalStyle`
     color: #232129;
   }
 
+  .gatsby-highlight pre[class='language-markdown']::before {
+    content: 'mdx';
+    background: rgb(249, 172, 0);
+    color: #232129;
+  }
+
   .gatsby-highlight pre[class='language-html']::before {
     content: 'html';
     background: rgb(0, 90, 156);
