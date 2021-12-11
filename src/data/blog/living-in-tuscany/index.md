@@ -9,7 +9,7 @@ A collection of photos from my life in Tuscany.
 
 #### Arno River from Ponte Vecchio⁩ (Florence⁩) - February 2019
 
-![Arno River from Ponte Vecchio⁩ (Florence⁩) - February 2019](./firenze-ponte-vecchio.JPG)
+![Arno River from Ponte Vecchio⁩ (Florence⁩) - February 2019](./firenze-ponte-vecchio-arno.jpg)
 
 #### Piazza Grande in Montepulciano⁩ - December 2018
 
