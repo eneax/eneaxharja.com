@@ -19,7 +19,7 @@ A collection of photos from my stay in Veneto in 2019.
 
 ![Bure - July 2019](./bure.jpg)
 
-<!-- #### Basilica of St. Anastasia (Verona) - May 2019
+#### Basilica of St. Anastasia (Verona) - May 2019
 
 ![Basilica of St. Anastasia (Verona) - May 2019](./verona-campanile-santa-anastasia.jpg)
 
@@ -37,4 +37,4 @@ A collection of photos from my stay in Veneto in 2019.
 
 #### Scaligero Castel (Sirmione) - March 2019
 
-![Scaligero Castel (Sirmione) - March 2019](./sirmione-rocca-scaligera.jpg) -->
+![Scaligero Castel (Sirmione) - March 2019](./sirmione-rocca-scaligera.jpg)
