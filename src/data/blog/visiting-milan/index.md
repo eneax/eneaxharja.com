@@ -9,8 +9,8 @@ A collection of photos from my trip to Milan in 2019.
 
 #### Galleria Vittorio Emanuele II - June 2019
 
-![Galleria Vittorio Emanuele II - June 2019](./milan-galleria.JPG)
+![Galleria Vittorio Emanuele II - June 2019](./milan-galleria-vittorio-emanuele.jpg)
 
 #### Milan Cathedral - June 2019
 
-![Milan Cathedral - June 2019](./milan-duomo.JPG)
+![Milan Cathedral - June 2019](./milan-cathedral.jpg)
