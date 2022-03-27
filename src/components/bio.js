@@ -11,7 +11,7 @@ const BioWrapper = styled.section`
   .gatsby-image-wrapper img {
     min-width: 50px;
     border-radius: 50%;
-    margin-right: var(--spacing-4);
+    margin-right: var(--spacing-8);
     margin-bottom: var(--spacing-0);
     float: left;
     clip-path: circle();
@@ -52,10 +52,11 @@ const Bio = () => (
       />
     </a>
     <p>
-      Hey there! I'm Enea, a web developer currently working at{' '}
-      <a href="https://eqolot.com">eqolot</a>. Welcome to my little corner of
-      the web, where I share my personal collection of notes, code snippets, and
-      resources on <Link to="/tags">topics</Link> that interest me.
+      Hey there! I'm Enea, a Web Developer at{' '}
+      <a href="https://eqolot.com">EQOLOT</a> in Berlin. Welcome to my little
+      corner of the web, where I share my personal collection of notes, code
+      snippets, and resources on <Link to="/tags">topics</Link> that interest
+      me.
     </p>
   </BioWrapper>
 );
