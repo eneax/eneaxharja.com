@@ -3,6 +3,10 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
+const TWITTER_LINK =
+  'https://twitter.com/messages/compose?recipient_id=1198292145947467776&text=Hey';
+const TWITTER_HANDLE = '@eneaxharja';
+
 const BioWrapper = styled.section`
   display: block;
   margin-bottom: var(--spacing-16);
@@ -34,11 +38,7 @@ const BioWrapper = styled.section`
 
 const Bio = () => (
   <BioWrapper>
-    <a
-      href="mailto:tasters_00zillion@icloud.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={TWITTER_LINK} data-screen-name={TWITTER_HANDLE}>
       <StaticImage
         className="bio-avatar"
         layout="fixed"
