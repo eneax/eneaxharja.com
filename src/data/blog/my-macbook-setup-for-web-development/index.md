@@ -83,22 +83,21 @@ Make it the default theme for `Oh My Zsh`:
 echo 'eval "$(af-magic init zsh)"' >> ~/.zshrc
 ```
 
-As a font we will be using `Inconsolata for Powerline` in Hyper and VS Code. Install it via:
+As a font we will be using `Inconsolata for Powerline` in Hyper and VS Code.
+
+First install the Casks fonts for the Homebrew Cask project:
 
 ```shell
 brew tap homebrew/cask-fonts
+```
+
+Then, install the desired font:
+
+```shell
 brew install --cask font-inconsolata-for-powerline
 ```
 
-Use the new font in Hyper:
-
-```js
-module.exports = {
-  config: {
-    fontFamily: 'Inconsolata for Powerline',
-  },
-};
-```
+Use the new font in Hyper by adding to the `config` object in `.hyper.js`: `fontFamily: 'Inconsolata for Powerline'`.
 
 If the theme and font changes do not apply, reload your Zsh configuration (`.zshrc`) or close/open Hyper.
 
@@ -137,7 +136,11 @@ The [Node Version Manager](https://github.com/nvm-sh/nvm) (NVM) is used to insta
 
 ```shell
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
+```
 
+Restart Zsh config:
+
+```shell
 source ~/.zshrc
 ```
 
