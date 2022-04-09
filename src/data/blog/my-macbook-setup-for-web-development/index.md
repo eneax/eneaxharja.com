@@ -12,7 +12,6 @@ My MacBook setup for web development includes tools like: [Homebrew](https://bre
 Install Homebrew as a package manager for macOS:
 
 ```shell
-# paste in terminal and follow the instructions
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
