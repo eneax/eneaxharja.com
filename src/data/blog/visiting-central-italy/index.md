@@ -2,7 +2,7 @@
 title: 'Visiting Central Italy'
 date: '2019-10-21'
 description: 'A collection of photos of my travels in central Italy.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos of my travels in central Italy.

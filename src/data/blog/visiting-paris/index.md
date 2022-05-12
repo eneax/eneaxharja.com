@@ -2,7 +2,7 @@
 title: 'Visiting Paris'
 date: '2018-01-10'
 description: 'A collection of photos from my trip to Paris in 2007.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos from my trip to Paris in 2007.

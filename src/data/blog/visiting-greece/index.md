@@ -2,7 +2,7 @@
 title: 'Visiting Greece'
 date: '2018-01-12'
 description: 'A collection of photos from my trip to Greece in 2011.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos from my trip to Greece in 2011.

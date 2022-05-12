@@ -2,7 +2,7 @@
 title: 'Visiting Prague'
 date: '2018-01-20'
 description: 'A collection of photos from my trip to Prague in 2014.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos from my trip to Prague in 2014.

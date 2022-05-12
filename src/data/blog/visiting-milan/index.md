@@ -2,7 +2,7 @@
 title: 'Visiting Milan'
 date: '2019-06-02'
 description: 'A collection of photos from my trip to Milan in 2019.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos from my trip to Milan in 2019.
