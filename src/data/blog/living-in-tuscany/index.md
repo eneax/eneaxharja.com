@@ -2,7 +2,7 @@
 title: 'Living in Tuscany'
 date: '2019-02-21'
 description: 'A collection of photos from my life in Tuscany.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos from my life in Tuscany.

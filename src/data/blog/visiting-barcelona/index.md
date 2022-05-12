@@ -2,7 +2,7 @@
 title: 'Visiting Barcelona'
 date: '2018-01-18'
 description: 'A collection of photos from my trip to Barcelona in 2014.'
-tags: ['travel', 'photos']
+tags: ['travel']
 ---
 
 A collection of photos from my trip to Barcelona in 2014.

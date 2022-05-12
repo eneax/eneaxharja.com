@@ -2,7 +2,7 @@
 title: 'How to use Tailwind CSS with styled-components'
 date: '2020-10-23T22:12:03.284Z'
 description: 'How to use Tailwind CSS with styled-components.'
-tags: ['react', 'tailwind', 'css-in-js', 'styled-components']
+tags: ['react', 'css']
 ---
 
 Tailwind is a utility-first CSS framework for building custom designs. It's highly customizable and provides you all the necessary building blocks you need to build a design.
