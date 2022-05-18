@@ -1,11 +1,11 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 const BioWrapper = styled.section`
   display: block;
-  margin-bottom: var(--spacing-16);
 
   .bio-avatar,
   .gatsby-image-wrapper img {
@@ -26,31 +26,25 @@ const BioWrapper = styled.section`
       transform: scale(1.05);
     }
   }
-
-  p {
-    margin-bottom: var(--spacing-0);
-  }
 `;
 
-const Bio = () => (
+const Bio = ({ showAvatar }) => (
   <BioWrapper>
-    <a
-      href="mailto:tasters_00zillion@icloud.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={['AUTO', 'WEBP', 'AVIF']}
-        src="../images/profile-pic.png"
-        width={100}
-        height={100}
-        quality={95}
-        placeholder="blurred"
-        alt="Profile picture"
-      />
-    </a>
+    <Link to="/about">
+      {showAvatar && (
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={['AUTO', 'WEBP', 'AVIF']}
+          src="../images/profile-pic.png"
+          width={100}
+          height={100}
+          quality={95}
+          placeholder="blurred"
+          alt="Profile picture"
+        />
+      )}
+    </Link>
     <p>
       Hey there! I'm Enea, a Web Developer at{' '}
       <a href="https://eqolot.com">EQOLOT</a> in Berlin. Welcome to my little
@@ -60,5 +54,9 @@ const Bio = () => (
     </p>
   </BioWrapper>
 );
+
+Bio.propTypes = {
+  showAvatar: PropTypes.bool,
+};
 
 export default Bio;

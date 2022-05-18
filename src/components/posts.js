@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+const PostsWrapper = styled.section`
+  margin-top: var(--spacing-16);
+`;
+
 const Post = styled.article`
   margin-bottom: var(--spacing-10);
   margin-top: var(--spacing-10);
@@ -37,7 +41,7 @@ const Post = styled.article`
 `;
 
 const Posts = ({ posts }) => (
-  <section>
+  <PostsWrapper>
     {posts.map((post) => {
       const title = post.frontmatter.title || post.fields.slug;
 
@@ -65,7 +69,7 @@ const Posts = ({ posts }) => (
         </Post>
       );
     })}
-  </section>
+  </PostsWrapper>
 );
 
 Posts.propTypes = {

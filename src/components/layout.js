@@ -2,11 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { FaGithub } from 'react-icons/fa';
 
 import GlobalStyle from '../utils/globalStyles';
-
-const GITHUB_URL = 'https://github.com/eneax';
 
 const GlobalWrapper = styled.div`
   max-width: var(--maxWidth-wrapper);
@@ -41,21 +38,7 @@ const Footer = styled.footer`
   margin-top: var(--spacing-4);
 
   p {
-    margin-bottom: var(--spacing-1);
-  }
-
-  a {
-    &:hover {
-      svg {
-        color: var(--color-primary);
-        transform: scale(1.05);
-      }
-    }
-
-    svg {
-      color: var(--color-text);
-      transition: all 0.25s ease;
-    }
+    margin-bottom: var(--spacing-0);
   }
 `;
 
@@ -88,10 +71,6 @@ const Layout = ({ location, title, children }) => {
           <p>
             <small>©</small> {new Date().getFullYear()} Enea Xharja
           </p>
-
-          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
         </Footer>
       </GlobalWrapper>
     </>

@@ -15,7 +15,7 @@ const Homepage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <Bio />
+      <Bio showAvatar />
       <Posts posts={posts} />
       <CustomLink path="/archive">Browse the archive</CustomLink>
     </Layout>

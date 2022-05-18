@@ -60,7 +60,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
       </BlogPostArticle>
 
-      <Bio />
+      <Bio showAvatar />
     </Layout>
   );
 };
