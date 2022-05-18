@@ -11,10 +11,10 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="About Me" />
+      <SEO title="About" />
 
       <section>
-        <h1>About me</h1>
+        <h1>About</h1>
 
         <Bio />
 
