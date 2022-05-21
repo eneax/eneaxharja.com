@@ -26,17 +26,18 @@ const AboutPage = ({ data, location }) => {
         </p>
 
         <p>
-          Most of my projects focus on helping people learn more about
-          programming, enabling them to start their own personal projects, and
-          hopefully also inspire someone to do the same and contribute to open
-          source. Check out the <Link to="/tags/projects">projects</Link> page
-          and my <a href="https://github.com/eneax">GitHub</a> profile to see
+          Most of my open source projects focus on helping people learn more
+          about programming, enabling them to start their own personal projects,
+          and hopefully also inspire someone to do the same and contribute to
+          open source communities. Check out the{' '}
+          <Link to="/tags/projects">projects</Link> page and my{' '}
+          <a href="https://github.com/eneax">GitHub</a> profile to see
           everything I have build so far.
         </p>
 
         <h3>What I'm doing now</h3>
         <small>
-          <i>Updated on May 18, 2022</i>
+          <i>Updated on May 21, 2022</i>
         </small>
 
         <ul>
@@ -53,7 +54,7 @@ const AboutPage = ({ data, location }) => {
           </li>
           <li>
             Focusing on improving my skills and knowledge in{' '}
-            <a href="https://ui.dev/react-hooks">React</a>
+            <a href="https://ui.dev/typescript">TypeScript</a>
           </li>
           <li>
             Reading{' '}
