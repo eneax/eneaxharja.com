@@ -1,12 +1,14 @@
 ---
-title: 'GitHub Battle'
-date: '2020-05-24'
+title: 'React App - GitHub Battle'
+date: '2022-05-21'
 description: 'Discover popular repos and battle your GitHub friends.'
 tags: ['projects']
 ---
 
-![github battle project](./githubBattle.png)
+![GitHub Battle project](./github-battle.png)
 
-Discover popular repos and battle your GitHub friends.
+React app built using [React](https://reactjs.org), [Webpack](https://webpack.js.org), [Babel](https://babeljs.io), and [Netlify](https://www.netlify.com).
+
+You'll be able to discover the most popular repos for a variety of languages, as well as battle two GitHub users to see who has a better profile.
 
 Code available on [GitHub](https://github.com/eneax/github-battle).
