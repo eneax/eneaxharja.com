@@ -37,7 +37,7 @@ const AboutPage = ({ data, location }) => {
 
         <h3>What I'm doing now</h3>
         <small>
-          <i>Updated on May 21, 2022</i>
+          <i>Updated on May 26, 2022</i>
         </small>
 
         <ul>
@@ -58,10 +58,17 @@ const AboutPage = ({ data, location }) => {
           </li>
           <li>
             Reading{' '}
-            <a href="https://claytonchristensen.com/books/how-will-you-measure-your-life">
-              How Will You Measure Your Life?
+            <a href="https://a16z.com/book/the-hard-thing-about-hard-things">
+              The Hard Thing About Hard Things
             </a>{' '}
-            by Clayton Christensen
+            by Ben Horowitz
+          </li>
+          <li>
+            Listening to the{' '}
+            <a href="https://www.ridehome.info/show/techmeme-ride-home">
+              Techmeme Ride Home
+            </a>{' '}
+            podcast
           </li>
         </ul>
 
