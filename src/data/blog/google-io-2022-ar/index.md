@@ -1,7 +1,7 @@
 ---
 title: 'Google I/O 2022 - AR'
 date: '2022-05-15'
-description: 'Breaking Down Language Barriers With Augmented Reality'
+description: 'Breaking Down Language Barriers With Augmented Reality.'
 tags: ['augmented-reality']
 ---
 
