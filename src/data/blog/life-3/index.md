@@ -2,7 +2,7 @@
 title: 'Life 3.0'
 date: '2022-01-02'
 description: 'Welcome to the most important conversation of our time!'
-tags: ['reading', 'ai']
+tags: ['reading', 'artificial-intelligence']
 ---
 
 Will we be able to develop AI that will help us thrive like never before, or will AI lead us to self-destruction?

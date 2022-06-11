@@ -2,7 +2,7 @@
 title: 'Our Final Invention'
 date: '2019-10-05'
 description: "James Barrat's book explores the dangers of heedless research in AI."
-tags: ['reading', 'technology', 'ai']
+tags: ['reading', 'artificial-intelligence']
 ---
 
 James Barrat's book explores the dangers of heedless research in AI.
