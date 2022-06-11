@@ -2,7 +2,7 @@
 title: 'Steve Jobs'
 date: '2018-03-17'
 description: "Walter Isaacson's biography of Apple cofounder Steve Jobs."
-tags: ['reading', 'biography']
+tags: ['reading', 'biographies']
 ---
 
 Walter Isaacson's biography of Apple cofounder Steve Jobs.
