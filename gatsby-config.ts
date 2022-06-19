@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby';
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Enea Xharja`,
     description: `My Own Little Corner of the Web`,
@@ -8,6 +10,7 @@ module.exports = {
       github: `eneax`,
     },
   },
+  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -75,3 +78,5 @@ module.exports = {
     `gatsby-plugin-remove-serviceworker`,
   ],
 };
+
+export default config;
