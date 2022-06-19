@@ -2,7 +2,7 @@
 title: 'The Moon is a Harsh Mistress'
 date: '2019-06-20'
 description: 'Robert Heinlein tells a tale of revolution, of the rebellion of a former penal colony on the Moon against its masters on the Earth.'
-tags: ['reading', 'sci-fi']
+tags: ['reading', 'science-fiction']
 ---
 
 Robert Heinlein tells a tale of revolution, of the rebellion of a former penal colony on the Moon against its masters on the Earth.

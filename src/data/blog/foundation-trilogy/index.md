@@ -2,7 +2,7 @@
 title: 'Foundation Trilogy'
 date: '2019-10-15'
 description: ''
-tags: ['reading', 'sci-fi']
+tags: ['reading', 'science-fiction']
 ---
 
 Isaac Asimov’s masterpiece Foundation Trilogy is the collection of three books: Foundation, Foundation and Empire and Second Foundation.
