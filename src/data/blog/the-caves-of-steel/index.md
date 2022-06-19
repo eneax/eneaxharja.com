@@ -2,7 +2,7 @@
 title: 'The Caves of Steel'
 date: '2020-09-04'
 description: ''
-tags: ['reading', 'sci-fi']
+tags: ['reading', 'science-fiction']
 ---
 
 Isaac Asimov's novel chronicles the collaboration between a New York City detective and a humanoid robot who must learn to work together.
