@@ -30,6 +30,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@parcel/namer-default": "^2.5.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.16.0",
     "gatsby-awesome-pagination": "^0.3.8",
