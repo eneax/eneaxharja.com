@@ -3,7 +3,14 @@
   "parser": "babel-eslint",
   "rules": {
     "no-shadow": "off",
-    "react/no-danger": "off"
+    "react/no-danger": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".mdx"]
+      }
+    ]
   },
   "globals": {
     "__PATH_PREFIX__": "readonly"
