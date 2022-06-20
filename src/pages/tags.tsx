@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import styled from 'styled-components';
 
@@ -13,6 +13,22 @@ const LinkWrapper = styled.div`
   justify-content: center;
 `;
 
+interface Group {
+  fieldValue: string;
+  totalCount: number;
+}
+
+interface TagsPageProps {
+  allMarkdownRemark: {
+    group: Group[];
+  };
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+}
+
 const TagsPage = ({
   location,
   data: {
@@ -21,7 +37,7 @@ const TagsPage = ({
       siteMetadata: { title },
     },
   },
-}) => (
+}: PageProps<TagsPageProps>) => (
   <Layout location={location} title={title}>
     <SEO title="All Tags" />
 
