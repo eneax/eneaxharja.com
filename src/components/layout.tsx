@@ -42,12 +42,17 @@ const Footer = styled.footer`
   }
 `;
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`;
-  const isRootPath = location.pathname === rootPath;
+interface LayoutProps {
+  location: Location;
+  title: string;
+  children: React.ReactNode;
+}
+
+const Layout = ({ location, title, children }: LayoutProps) => {
+  const isHome = location?.pathname === `/`;
   let header;
 
-  if (isRootPath) {
+  if (isHome) {
     header = (
       <h1>
         <Link to="/">{title}</Link>
@@ -64,7 +69,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <>
       <GlobalStyle />
-      <GlobalWrapper data-is-root-path={isRootPath}>
+      <GlobalWrapper data-is-root-path={isHome}>
         <Header>{header}</Header>
         <main>{children}</main>
         <Footer>

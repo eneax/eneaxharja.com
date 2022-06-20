@@ -3,16 +3,39 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title, schemaMarkup }) => {
-  const { site } = useStaticQuery(
+interface SEOProps {
+  description?: string;
+  lang?: string;
+  meta?: [];
+  title: string;
+}
+
+interface SEOQuery {
+  site: {
+    siteMetadata: {
+      title: string;
+      description: string;
+      social: {
+        github: string;
+      };
+    };
+  };
+}
+
+interface Meta {
+  property?: string;
+  name?: string;
+  content: string;
+}
+
+const Seo = ({ description, lang, meta, title }: SEOProps) => {
+  const { site }: SEOQuery = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            siteUrl
-            logo
             social {
               github
             }
@@ -25,18 +48,12 @@ const SEO = ({ description, lang, meta, title, schemaMarkup }) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
 
-  const baseSchema = [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      name: site.siteMetadata.title,
-      description: site.siteMetadata.description,
-      url: site.siteMetadata.siteUrl,
-      logo: site.siteMetadata.logo,
-    },
-  ];
-
-  const schema = schemaMarkup ? [...baseSchema, schemaMarkup] : baseSchema;
+  let typeSafeMeta: Array<Meta>;
+  if (meta instanceof Array) {
+    typeSafeMeta = meta;
+  } else {
+    typeSafeMeta = [];
+  }
 
   return (
     <Helmet
@@ -44,7 +61,7 @@ const SEO = ({ description, lang, meta, title, schemaMarkup }) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
       meta={[
         {
           name: `description`,
@@ -78,25 +95,23 @@ const SEO = ({ description, lang, meta, title, schemaMarkup }) => {
           name: `github:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
-    >
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
+        ...typeSafeMeta,
+      ]}
+    />
   );
 };
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 };
 
-SEO.propTypes = {
+Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  schemaMarkup: PropTypes.object,
 };
 
-export default SEO;
+export default Seo;
