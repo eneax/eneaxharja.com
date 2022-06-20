@@ -9,16 +9,27 @@ const PaginationContainer = styled.section`
   justify-content: center;
 `;
 
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const Pagination = ({ pageContext }) => {
   const { previousPagePath, nextPagePath } = pageContext;
 
   return (
     <PaginationContainer>
       {previousPagePath && (
-        <CustomLink path={previousPagePath}>Newer Posts</CustomLink>
+        <LinkWrapper>
+          <CustomLink path={previousPagePath}>Newer Posts</CustomLink>
+        </LinkWrapper>
       )}
 
-      {nextPagePath && <CustomLink path={nextPagePath}>Older Posts</CustomLink>}
+      {nextPagePath && (
+        <LinkWrapper>
+          <CustomLink path={nextPagePath}>Older Posts</CustomLink>
+        </LinkWrapper>
+      )}
     </PaginationContainer>
   );
 };

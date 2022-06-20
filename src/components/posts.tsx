@@ -40,9 +40,22 @@ const Post = styled.article`
   }
 `;
 
-const Posts = ({ posts }) => (
+export interface PostType {
+  frontmatter: {
+    title: string;
+    date: string;
+    description: string;
+    tags: string[];
+  };
+  fields: {
+    slug: string;
+  };
+  excerpt: string;
+}
+
+const Posts = ({ posts }: { posts: PostType[] }) => (
   <PostsWrapper>
-    {posts.map((post) => {
+    {posts.map((post: PostType) => {
       const title = post.frontmatter.title || post.fields.slug;
 
       return (
