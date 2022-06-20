@@ -1,14 +1,31 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Bio from '../components/bio';
-import Posts from '../components/posts';
+import Posts, { PostType } from '../components/posts';
 import CustomLink from '../components/customLink';
 
-const Homepage = ({ data, location }) => {
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+interface HomepageProps {
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+  allMarkdownRemark: {
+    nodes: PostType[];
+  };
+}
+
+const Homepage = ({ data, location }: PageProps<HomepageProps>) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
 
@@ -17,7 +34,10 @@ const Homepage = ({ data, location }) => {
       <SEO title="Home" />
       <Bio showAvatar />
       <Posts posts={posts} />
-      <CustomLink path="/archive">Browse the archive</CustomLink>
+
+      <LinkWrapper>
+        <CustomLink path="/archive">Browse the archive</CustomLink>
+      </LinkWrapper>
     </Layout>
   );
 };

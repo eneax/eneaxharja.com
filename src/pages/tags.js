@@ -2,10 +2,16 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CustomLink from '../components/customLink';
+
+const LinkWrapper = styled.div`
+  display: inline-flex;
+  justify-content: center;
+`;
 
 const TagsPage = ({
   location,
@@ -23,13 +29,14 @@ const TagsPage = ({
       <h1>All Tags</h1>
 
       {group.map((tag) => (
-        <CustomLink
-          key={tag.fieldValue}
-          display="inline-flex"
-          path={`/tags/${kebabCase(tag.fieldValue)}/`}
-        >
-          {tag.fieldValue} ({tag.totalCount})
-        </CustomLink>
+        <LinkWrapper>
+          <CustomLink
+            key={tag.fieldValue}
+            path={`/tags/${kebabCase(tag.fieldValue)}/`}
+          >
+            {tag.fieldValue} ({tag.totalCount})
+          </CustomLink>
+        </LinkWrapper>
       ))}
     </section>
   </Layout>

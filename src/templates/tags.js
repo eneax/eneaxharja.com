@@ -1,12 +1,18 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Posts from '../components/posts';
 import Pagination from '../components/pagination';
 import CustomLink from '../components/customLink';
+
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const Tags = ({ pageContext, data, location }) => {
   const { tag, humanPageNumber, numberOfPages } = pageContext;
@@ -26,7 +32,9 @@ const Tags = ({ pageContext, data, location }) => {
       <h1>{tagHeader}</h1>
       <Posts posts={posts} />
       <Pagination pageContext={pageContext} />
-      <CustomLink path="/tags">Browse all tags</CustomLink>
+      <LinkWrapper>
+        <CustomLink path="/tags">Browse all tags</CustomLink>
+      </LinkWrapper>
     </Layout>
   );
 };

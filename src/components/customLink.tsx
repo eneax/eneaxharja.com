@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  display: var(--display, flex);
-  justify-content: center;
-`;
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: var(--color-text);
@@ -23,18 +18,17 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const CustomLink = ({ display, path, children }) => (
-  <Wrapper
-    style={{
-      '--display': display,
-    }}
-  >
-    <StyledLink to={path}>{children}</StyledLink>
-  </Wrapper>
+interface CustomLinkProps {
+  display?: string;
+  path: string;
+  children: React.ReactNode;
+}
+
+const CustomLink = ({ path, children }: CustomLinkProps) => (
+  <StyledLink to={path}>{children}</StyledLink>
 );
 
 CustomLink.propTypes = {
-  display: PropTypes.string,
   path: PropTypes.string.isRequired,
   children: PropTypes.any.isRequired,
 };
