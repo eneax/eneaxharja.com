@@ -1,12 +1,20 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { graphql, Link } from 'gatsby';
+import { graphql, Link, PageProps } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Bio from '../components/bio';
 
-const AboutPage = ({ data, location }) => {
+interface AboutPageProps {
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+}
+
+const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
@@ -58,10 +66,10 @@ const AboutPage = ({ data, location }) => {
           </li>
           <li>
             Reading{' '}
-            <a href="https://a16z.com/book/the-hard-thing-about-hard-things">
-              The Hard Thing About Hard Things
+            <a href="https://www.annieduke.com/thinking-in-bets">
+              Thinking in Bets
             </a>{' '}
-            by Ben Horowitz
+            by Annie Duke
           </li>
           <li>
             Listening to the{' '}
