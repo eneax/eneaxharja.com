@@ -51,6 +51,7 @@ export interface PostType {
     slug: string;
   };
   excerpt: string;
+  html: string;
 }
 
 const Posts = ({ posts }: { posts: PostType[] }) => (
