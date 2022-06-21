@@ -1,13 +1,25 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Posts from '../components/posts';
+import Posts, { PostType } from '../components/posts';
 import Pagination from '../components/pagination';
 
-const Archive = ({ data, pageContext, location }) => {
+interface ArchiveProps {
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+  allMarkdownRemark: {
+    nodes: PostType[];
+    totalCount: number;
+  };
+}
+
+const Archive = ({ data, pageContext, location }: PageProps<ArchiveProps>) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
   const totalPosts = data.allMarkdownRemark.totalCount;
@@ -41,8 +53,8 @@ Archive.propTypes = {
 
 export default Archive;
 
-export const archiveQuery = graphql`
-  query archiveQuery($skip: Int!, $limit: Int!) {
+export const query = graphql`
+  query Archive($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
