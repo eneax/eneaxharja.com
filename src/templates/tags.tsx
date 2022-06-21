@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Posts from '../components/posts';
+import Posts, { PostType } from '../components/posts';
 import Pagination from '../components/pagination';
 import CustomLink from '../components/customLink';
 
@@ -14,7 +14,27 @@ const LinkWrapper = styled.div`
   justify-content: center;
 `;
 
-const Tags = ({ pageContext, data, location }) => {
+interface TagsProps {
+  pageContext: {
+    tag: string;
+    currentPage: number;
+    numPages: number;
+  };
+  data: {
+    site: {
+      siteMetadata: {
+        title: string;
+      };
+    };
+    allMarkdownRemark: {
+      totalCount: number;
+      nodes: PostType[];
+    };
+  };
+  location: Location;
+}
+
+const Tags = ({ pageContext, data, location }: TagsProps) => {
   const { tag, humanPageNumber, numberOfPages } = pageContext;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
