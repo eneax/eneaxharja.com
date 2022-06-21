@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Define templates
-  const blogPost = path.resolve(`./src/templates/blogPost.js`);
+  const blogPost = path.resolve(`./src/templates/blogPost.tsx`);
   const tagTemplate = path.resolve('src/templates/tags.js');
   const archiveTemplate = path.resolve('src/templates/archive.tsx');
 

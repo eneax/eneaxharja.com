@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Bio from '../components/bio';
+import { PostType } from '../components/posts';
 
 const BlogPostArticle = styled.article`
   hr {
@@ -22,7 +23,19 @@ const BlogPostMeta = styled.section`
   }
 `;
 
-const BlogPostTemplate = ({ data, location }) => {
+interface BlogPostProps {
+  data: {
+    site: {
+      siteMetadata: {
+        title: string;
+      };
+    };
+    markdownRemark: PostType;
+  };
+  location: Location;
+}
+
+const BlogPostTemplate = ({ data, location }: BlogPostProps) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
 
