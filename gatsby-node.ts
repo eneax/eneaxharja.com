@@ -1,7 +1,9 @@
+import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 import { createFilePath } from 'gatsby-source-filesystem';
 import _ from 'lodash';
 import { paginate } from 'gatsby-awesome-pagination';
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -154,4 +156,14 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `);
+};
+
+export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    resolve: {
+      plugins: [new TsconfigPathsPlugin()],
+    },
+  });
 };

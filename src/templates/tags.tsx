@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Posts, { PostType } from '../components/posts';
-import Pagination from '../components/pagination';
-import CustomLink from '../components/customLink';
+import Layout from '@/components/layout';
+import SEO from '@/components/seo';
+import Posts, { PostType } from '@/components/posts';
+import Pagination from '@/components/pagination';
+import CustomLink from '@/components/customLink';
 
 const LinkWrapper = styled.div`
   display: flex;

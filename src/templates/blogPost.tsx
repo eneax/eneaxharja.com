@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Bio from '../components/bio';
-import { PostType } from '../components/posts';
+import Layout from '@/components/layout';
+import SEO from '@/components/seo';
+import Bio from '@/components/bio';
+import { PostType } from '@/components/posts';
 
 const BlogPostArticle = styled.article`
   hr {
