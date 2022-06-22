@@ -5,7 +5,11 @@ import _ from 'lodash';
 import { paginate } from 'gatsby-awesome-pagination';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+export const createPages: GatsbyNode['createPages'] = async ({
+  graphql,
+  actions,
+  reporter,
+}) => {
   const { createPage } = actions;
 
   // Define templates
@@ -107,7 +111,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: GatsbyNode['onCreateNode'] = ({
+  node,
+  actions,
+  getNode,
+}) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
@@ -121,16 +129,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] =
+  ({ actions }) => {
+    const { createTypes } = actions;
 
-  // Explicitly define the siteMetadata {} object
-  // This way those will always be defined even if removed from gatsby-config.js
+    // Explicitly define the siteMetadata {} object
+    // This way those will always be defined even if removed from gatsby-config.js
 
-  // Also explicitly define the Markdown frontmatter
-  // This way the "MarkdownRemark" queries will return `null` even when no
-  // blog posts are stored inside "data/blog" instead of returning an error
-  createTypes(`
+    // Also explicitly define the Markdown frontmatter
+    // This way the "MarkdownRemark" queries will return `null` even when no
+    // blog posts are stored inside "data/blog" instead of returning an error
+    createTypes(`
     type SiteSiteMetadata {
       siteUrl: String
       social: Social
@@ -156,7 +165,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `);
-};
+  };
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({
   actions,
