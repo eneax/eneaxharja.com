@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import GlobalStyle from '../utils/globalStyles';
+import GlobalStyle from '@/utils/globalStyles';
 
 const GlobalWrapper = styled.div`
   max-width: var(--maxWidth-wrapper);
