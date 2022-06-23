@@ -6,6 +6,16 @@
 
 🏡 Welcome to my own little corner of the Web!
 
+## 🦄 Features
+
+- ⚡️ Gatsby 4
+- ⚛️ React 18
+- ⛑ TypeScript
+- 💅 styled-components
+- 📏 ESLint
+- 💖 Prettier
+- 🗂 Path Mapping
+
 ## 🚀 Quick start
 
 To run this project locally:
@@ -34,14 +44,16 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── .gitignore
     ├── .prettierignore
     ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
+    ├── gatsby-browser.tsx
+    ├── gatsby-config.ts
+    ├── gatsby-node.ts
     ├── LICENSE
     ├── netlify.toml
     ├── package-lock.json
     ├── package.json
-    └── README.md
+    ├── PULL_REQUEST_TEMPLATE.md
+    ├── README.md
+    └── tsconfig.json
 
 ## 🎓 Learning Gatsby
 
