@@ -2,9 +2,9 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link, PageProps } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Bio from '../components/bio';
+import Layout from '@/components/layout';
+import SEO from '@/components/seo';
+import Bio from '@/components/bio';
 
 interface AboutPageProps {
   site: {

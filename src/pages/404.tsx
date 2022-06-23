@@ -2,8 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '@/components/layout';
+import SEO from '@/components/seo';
 
 interface NotFoundPageProps {
   site: {

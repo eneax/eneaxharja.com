@@ -4,9 +4,9 @@ import { graphql, PageProps } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import styled from 'styled-components';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import CustomLink from '../components/customLink';
+import Layout from '@/components/layout';
+import SEO from '@/components/seo';
+import CustomLink from '@/components/customLink';
 
 const LinkWrapper = styled.div`
   display: inline-flex;

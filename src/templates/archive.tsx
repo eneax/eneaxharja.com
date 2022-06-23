@@ -2,10 +2,10 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Posts, { PostType } from '../components/posts';
-import Pagination from '../components/pagination';
+import Layout from '@/components/layout';
+import SEO from '@/components/seo';
+import Posts, { PostType } from '@/components/posts';
+import Pagination from '@/components/pagination';
 
 interface ArchiveProps {
   site: {
