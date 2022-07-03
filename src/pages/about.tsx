@@ -45,7 +45,7 @@ const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
 
         <h3>What I'm doing now</h3>
         <small>
-          <i>Updated on May 26, 2022</i>
+          <i>Updated on July 03, 2022</i>
         </small>
 
         <ul>
@@ -66,10 +66,10 @@ const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
           </li>
           <li>
             Reading{' '}
-            <a href="https://www.annieduke.com/thinking-in-bets">
-              Thinking in Bets
+            <a href="https://jilljonnes.com/empires-of-light">
+              Empires of Light
             </a>{' '}
-            by Annie Duke
+            by Jill Jonnes
           </li>
           <li>
             Listening to the{' '}
