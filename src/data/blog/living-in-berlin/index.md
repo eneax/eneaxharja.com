@@ -2,7 +2,7 @@
 title: 'Living in Berlin'
 date: '2020-10-24'
 description: 'A collection of photos from my life in Berlin.'
-tags: ['travel']
+tags: ['photography']
 ---
 
 A collection of photos from my life in Berlin.
