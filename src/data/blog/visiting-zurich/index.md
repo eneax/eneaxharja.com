@@ -2,7 +2,7 @@
 title: 'Visiting Zurich'
 date: '2019-10-15'
 description: 'Walking around Zurich.'
-tags: ['travel']
+tags: ['photography']
 ---
 
 Walking around Zurich in Autumn 2019.
