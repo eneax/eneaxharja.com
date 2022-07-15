@@ -45,21 +45,10 @@ const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
 
         <h3>What I'm doing now</h3>
         <small>
-          <i>Updated on July 03, 2022</i>
+          <i>Updated on July 15, 2022</i>
         </small>
 
         <ul>
-          <li>
-            Leading the development and maintenance of{' '}
-            <a href="https://eqolot.com">eqolot.com</a>
-          </li>
-          <li>
-            Building the EQOLOT mobile app for{' '}
-            <a href="https://testflight.apple.com/join/522e096B">iOS</a> and{' '}
-            <a href="https://expo.dev/@eqolot/mobile-app?release-channel=prod">
-              Android
-            </a>
-          </li>
           <li>
             Focusing on improving my skills and knowledge in{' '}
             <a href="https://ui.dev/typescript">TypeScript</a>

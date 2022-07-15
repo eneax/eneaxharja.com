@@ -47,10 +47,10 @@ const Bio = ({ showAvatar }: { showAvatar?: boolean }) => (
     </Link>
     <p>
       Hey there! I'm Enea, a Web Developer at{' '}
-      <a href="https://eqolot.com">EQOLOT</a> in Berlin. Welcome to my little
-      corner of the web, where I share my personal collection of notes, code
-      snippets, and resources on <Link to="/tags">topics</Link> that interest
-      me.
+      <a href="https://wohnvoll.com">wohnvoll</a> in Berlin. Welcome to my
+      little corner of the web, where I share my personal collection of notes,
+      code snippets, and resources on <Link to="/tags">topics</Link> that
+      interest me.
     </p>
   </BioWrapper>
 );
