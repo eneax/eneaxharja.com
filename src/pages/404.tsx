@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 
 interface NotFoundPageProps {
   site: {
@@ -18,7 +18,6 @@ const NotFoundPage = ({ data, location }: PageProps<NotFoundPageProps>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
       <h1>404: Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
@@ -37,6 +36,8 @@ NotFoundPage.propTypes = {
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export const Head = () => <Seo title="404: Not Found" />;
 
 export default NotFoundPage;
 

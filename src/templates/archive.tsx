@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 import Posts, { PostType } from '@/components/posts';
 import Pagination from '@/components/pagination';
 
@@ -23,12 +23,9 @@ const Archive = ({ data, pageContext, location }: PageProps<ArchiveProps>) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
   const totalPosts = data.allMarkdownRemark.totalCount;
-  const { humanPageNumber, numberOfPages } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={`Archive - Page ${humanPageNumber} of ${numberOfPages}`} />
-
       <h1>Archive: {totalPosts} posts</h1>
       <Posts posts={posts} />
       <Pagination pageContext={pageContext} />
@@ -50,6 +47,10 @@ Archive.propTypes = {
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export const Head = ({ pageContext: { humanPageNumber, numberOfPages } }) => (
+  <Seo title={`Archive - Page ${humanPageNumber} of ${numberOfPages}`} />
+);
 
 export default Archive;
 

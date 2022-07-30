@@ -5,7 +5,7 @@ import kebabCase from 'lodash/kebabCase';
 import styled from 'styled-components';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 import CustomLink from '@/components/customLink';
 
 const LinkWrapper = styled.div`
@@ -39,8 +39,6 @@ const TagsPage = ({
   },
 }: PageProps<TagsPageProps>) => (
   <Layout location={location} title={title}>
-    <SEO title="All Tags" />
-
     <section>
       <h1>All Tags</h1>
 
@@ -78,6 +76,8 @@ TagsPage.propTypes = {
     }),
   }),
 };
+
+export const Head = () => <Seo title="All Tags" />;
 
 export default TagsPage;
 

@@ -4,7 +4,7 @@ import { graphql, PageProps } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 import Bio from '@/components/bio';
 import Posts, { PostType } from '@/components/posts';
 import CustomLink from '@/components/customLink';
@@ -31,7 +31,6 @@ const Homepage = ({ data, location }: PageProps<HomepageProps>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Home" />
       <Bio showAvatar />
       <Posts posts={posts} />
 
@@ -55,6 +54,8 @@ Homepage.propTypes = {
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export const Head = () => <Seo title="Home" />;
 
 export default Homepage;
 

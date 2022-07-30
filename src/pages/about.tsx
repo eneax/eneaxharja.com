@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql, Link, PageProps } from 'gatsby';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 import Bio from '@/components/bio';
 
 interface AboutPageProps {
@@ -19,8 +19,6 @@ const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="About" />
-
       <section>
         <h1>About</h1>
 
@@ -101,6 +99,8 @@ AboutPage.propTypes = {
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export const Head = () => <Seo title="About" />;
 
 export default AboutPage;
 
