@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 import Posts, { PostType } from '@/components/posts';
 import Pagination from '@/components/pagination';
 import CustomLink from '@/components/customLink';
@@ -35,20 +35,16 @@ interface TagsProps {
 }
 
 const Tags = ({ pageContext, data, location }: TagsProps) => {
-  const { tag, humanPageNumber, numberOfPages } = pageContext;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.nodes;
   const { totalCount } = data.allMarkdownRemark;
 
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
-  const title = `"${tag}" tag - Page ${humanPageNumber} of ${numberOfPages}`;
+  } tagged with "${pageContext.tag}"`;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={title} />
-
       <h1>{tagHeader}</h1>
       <Posts posts={posts} />
       <Pagination pageContext={pageContext} />
@@ -76,6 +72,13 @@ Tags.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
+};
+
+export const Head = ({ pageContext }) => {
+  const { tag, humanPageNumber, numberOfPages } = pageContext;
+  const title = `"${tag}" tag - Page ${humanPageNumber} of ${numberOfPages}`;
+
+  return <Seo title={title} />;
 };
 
 export default Tags;

@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '@/components/layout';
-import SEO from '@/components/seo';
+import Seo from '@/components/seo';
 import Bio from '@/components/bio';
 import { PostType } from '@/components/posts';
 
@@ -41,10 +41,6 @@ const BlogPostTemplate = ({ data, location }: BlogPostProps) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <BlogPostArticle itemScope itemType="http://schema.org/Article">
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
@@ -101,6 +97,13 @@ BlogPostTemplate.propTypes = {
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export const Head = ({ data: { markdownRemark: post } }) => (
+  <Seo
+    title={post.frontmatter.title}
+    description={post.frontmatter.description || post.excerpt}
+  />
+);
 
 export default BlogPostTemplate;
 
