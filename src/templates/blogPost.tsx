@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
@@ -72,30 +71,6 @@ const BlogPostTemplate = ({ data, location }: BlogPostProps) => {
       <Bio showAvatar />
     </Layout>
   );
-};
-
-BlogPostTemplate.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-    markdownRemark: PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      frontmatter: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-        description: PropTypes.string,
-        tags: PropTypes.arrayOf(PropTypes.string),
-      }).isRequired,
-      excerpt: PropTypes.string.isRequired,
-      html: PropTypes.string.isRequired,
-    }).isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export const Head = ({ data: { markdownRemark: post } }) => (

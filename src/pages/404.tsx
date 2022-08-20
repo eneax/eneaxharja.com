@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 
 import Layout from '@/components/layout';
@@ -22,19 +21,6 @@ const NotFoundPage = ({ data, location }: PageProps<NotFoundPageProps>) => {
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
   );
-};
-
-NotFoundPage.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export const Head = () => <Seo title="404: Not Found" />;

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 
 import Layout from '@/components/layout';
@@ -31,21 +30,6 @@ const Archive = ({ data, pageContext, location }: PageProps<ArchiveProps>) => {
       <Pagination pageContext={pageContext} />
     </Layout>
   );
-};
-
-Archive.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-    allMarkdownRemark: PropTypes.object.isRequired,
-  }).isRequired,
-  pageContext: PropTypes.object.isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export const Head = ({ pageContext: { humanPageNumber, numberOfPages } }) => (

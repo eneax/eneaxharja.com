@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql, Link, PageProps } from 'gatsby';
 
 import Layout from '@/components/layout';
@@ -85,19 +84,6 @@ const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
       </section>
     </Layout>
   );
-};
-
-AboutPage.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export const Head = () => <Seo title="About" />;

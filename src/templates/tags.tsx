@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
@@ -53,25 +52,6 @@ const Tags = ({ pageContext, data, location }: TagsProps) => {
       </LinkWrapper>
     </Layout>
   );
-};
-
-Tags.propTypes = {
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-    humanPageNumber: PropTypes.number.isRequired,
-    numberOfPages: PropTypes.number.isRequired,
-  }),
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-    allMarkdownRemark: PropTypes.object.isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export const Head = ({ pageContext }) => {
