@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 interface SEOProps {
@@ -20,7 +19,7 @@ interface SEOQuery {
   };
 }
 
-const Seo = ({ description, title, children }: SEOProps) => {
+const Seo = ({ description = '', title, children }: SEOProps) => {
   const { site }: SEOQuery = useStaticQuery(
     graphql`
       query {
@@ -57,15 +56,6 @@ const Seo = ({ description, title, children }: SEOProps) => {
       {children}
     </>
   );
-};
-
-Seo.defaultProps = {
-  description: ``,
-};
-
-Seo.propTypes = {
-  description: PropTypes.string,
-  title: PropTypes.string.isRequired,
 };
 
 export default Seo;
