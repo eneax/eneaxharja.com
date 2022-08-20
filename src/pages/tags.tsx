@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import styled from 'styled-components';
@@ -55,27 +54,6 @@ const TagsPage = ({
     </section>
   </Layout>
 );
-
-TagsPage.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(
-        PropTypes.shape({
-          fieldValue: PropTypes.string.isRequired,
-          totalCount: PropTypes.number.isRequired,
-        }).isRequired
-      ),
-    }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }),
-    }),
-  }),
-};
 
 export const Head = () => <Seo title="All Tags" />;
 

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -54,9 +53,5 @@ const Bio = ({ showAvatar }: { showAvatar?: boolean }) => (
     </p>
   </BioWrapper>
 );
-
-Bio.propTypes = {
-  showAvatar: PropTypes.bool,
-};
 
 export default Bio;

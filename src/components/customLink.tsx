@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -27,10 +26,5 @@ interface CustomLinkProps {
 const CustomLink = ({ path, children }: CustomLinkProps) => (
   <StyledLink to={path}>{children}</StyledLink>
 );
-
-CustomLink.propTypes = {
-  path: PropTypes.string.isRequired,
-  children: PropTypes.any.isRequired,
-};
 
 export default CustomLink;

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -80,14 +79,6 @@ const Layout = ({ location, title, children }: LayoutProps) => {
       </GlobalWrapper>
     </>
   );
-};
-
-Layout.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
-  title: PropTypes.string.isRequired,
-  children: PropTypes.array.isRequired,
 };
 
 export default Layout;

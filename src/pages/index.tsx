@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql, PageProps } from 'gatsby';
 import styled from 'styled-components';
 
@@ -39,20 +38,6 @@ const Homepage = ({ data, location }: PageProps<HomepageProps>) => {
       </LinkWrapper>
     </Layout>
   );
-};
-
-Homepage.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-    allMarkdownRemark: PropTypes.object.isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export const Head = () => <Seo title="Home" />;
