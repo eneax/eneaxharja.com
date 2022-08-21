@@ -42,13 +42,16 @@ const AboutPage = ({ data, location }: PageProps<AboutPageProps>) => {
 
         <h3>What I'm doing now</h3>
         <small>
-          <i>Updated on July 15, 2022</i>
+          <i>Updated on August 21, 2022</i>
         </small>
 
         <ul>
           <li>
             Focusing on improving my skills and knowledge in{' '}
             <a href="https://ui.dev/typescript">TypeScript</a>
+          </li>
+          <li>
+            Rebuilding this website with Next.js, MDX, Tailwind and Vercel
           </li>
           <li>
             Reading{' '}
