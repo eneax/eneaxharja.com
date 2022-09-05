@@ -8,7 +8,7 @@ const StyledLink = styled(Link)`
   border-radius: var(--radius);
   margin-top: var(--spacing-2);
   margin-right: var(--spacing-2);
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-2);
   border: 1px dashed var(--color-primary);
 
   &:hover,
