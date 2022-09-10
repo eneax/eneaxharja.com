@@ -12,6 +12,10 @@ const BlogPostArticle = styled.article`
     margin-top: var(--spacing-12);
     margin-bottom: var(--spacing-12);
   }
+
+  img {
+    border-radius: var(--radius);
+  }
 `;
 
 const BlogPostMeta = styled.section`

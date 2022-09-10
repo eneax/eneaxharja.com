@@ -13,7 +13,7 @@ const Post = styled.article`
   border-radius: var(--radius);
   transition: all 0.25s ease;
   &:hover {
-    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
   }
 
   a {

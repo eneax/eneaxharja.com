@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     --lineHeight-tight: 1.1;
     --lineHeight-normal: 1.5;
     --lineHeight-relaxed: 1.625;
-    --radius: 4px;
+    --radius: 0.75rem;
     --fontSize-0: 0.833rem;
     --fontSize-1: 1rem;
     --fontSize-2: 1.2rem;
@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: var(--fontSize-1);
     color: var(--color-text);
     background-color: rgba(0, 0, 0, 1);
