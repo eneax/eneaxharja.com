@@ -1,6 +1,6 @@
 ---
 title: 'Prepared'
-date: '2022-15-05'
+date: '2022-05-15'
 description: 'What skills does someone need in a rapidly changing economy? What does it mean to engage in work that feels purposeful?'
 tags: ['reading', 'education']
 ---
