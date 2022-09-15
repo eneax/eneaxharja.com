@@ -53,7 +53,7 @@ The `onPreBootstrap` API is called once Gatsby is ready to bootstrap the site an
 
 This API can be used to customize Gatsby’s GraphQL schema by creating type definitions or adding third-party schemas.
 
-If you are using a CMS, such as [GraphCMS](https://graphcms.com), as the backend for a website, this is where Gatsby starts looking for the schemas we have created, such as `Post`, as a template for building blog posts, and `Category` for adding categories or tags to each post.
+If you are using a CMS, such as [Hygraph](https://hygraph.com/), as the backend for a website, this is where Gatsby starts looking for the schemas we have created, such as `Post`, as a template for building blog posts, and `Category` for adding categories or tags to each post.
 
 #### "source and transform nodes"
 
