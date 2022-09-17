@@ -1,0 +1,62 @@
+---
+title: "Animated Gradient"
+date: "2021-02-07"
+description: "Animate your gradient color with CSS."
+---
+
+Animate your gradient color with CSS:
+
+```html title="animate-gradient.html"
+<p>Text <span>gradient</span> is amazing!</p>
+```
+
+```css title="animate-gradient.css"
+/* create animation */
+@keyframes rainbowLoad {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes rainbowHover {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+
+/* select element you want to animate */
+span {
+  font-size: 40px;
+
+  /* gradient effect */
+  background-color: #3ddc84;
+  background: linear-gradient(45deg, #3ddc84, #4285f4);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+
+  /* animate element when page loads */
+  animation: rainbowLoad 0.75s ease forwards;
+}
+
+/* animate element on hover */
+span:hover {
+  cursor: pointer;
+  animation: rainbowHover 0.5s ease-in forwards;
+}
+```

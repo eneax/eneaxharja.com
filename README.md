@@ -1,66 +1,54 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/80a5864b-98d5-4d52-b007-43fd74c05ac9/deploy-status)](https://app.netlify.com/sites/eneaxharja/deploys)
-
-<h1 align="center">
-  eneaxharja [dot] com
-</h1>
+# eneaxharja [dot] com
 
 🏡 Welcome to my own little corner of the Web!
 
 ## 🦄 Features
 
-- ⚡️ Gatsby 4
-- ⚛️ React 18
-- ⛑ TypeScript
-- 💅 styled-components
-- 📏 ESLint
-- 💖 Prettier
-- 🗂 Path Mapping
+- Next.js 12
+- React 18
+- TypeScript 4.8
+- Tailwind CSS 3
+- Path Mapping (for absolute imports)
 
 ## 🚀 Quick start
 
 To run this project locally:
 
 ```shell
-  npm i
-  gatsby develop
+npm i
+npm run dev
 ```
 
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in the project.
 
-    .
-    ├── .github
-    ├── node_modules
-    ├── src
-        ├── components
-        ├── data
-        ├── images
-        ├── pages
-        ├── templates
-        └── utils
-    ├── static
-    ├── .eslintrc
-    ├── .gitignore
-    ├── .prettierignore
-    ├── .prettierrc
-    ├── gatsby-browser.tsx
-    ├── gatsby-config.ts
-    ├── gatsby-node.ts
-    ├── LICENSE
-    ├── netlify.toml
-    ├── package-lock.json
-    ├── package.json
-    ├── PULL_REQUEST_TEMPLATE.md
-    ├── README.md
-    └── tsconfig.json
+<!-- prettier-ignore -->
+```markdown
+.
+├── components
+├── data
+├── lib
+├── pages
+├── public
+├── styles
+├── .gitignore
+├── contentlayer.config.ts
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── PULL_REQUEST_TEMPLATE.md
+├── README.md
+├── tailwind.config.js
+└── tsconfig.json
+```
 
-## 🎓 Learning Gatsby
+## 🎓 Learning Next.js
 
-Looking for more guidance? Full documentation available on the official [Gatsby website](https://www.gatsbyjs.com/).
+Looking for more guidance? Full documentation available on the official [Next.js website](https://nextjs.org).
 
 ## 💫 Deploy
 
 This project is deployed to _[Netlify](https://www.netlify.com/)_.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
