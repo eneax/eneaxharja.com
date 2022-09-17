@@ -1,12 +1,12 @@
 # eneaxharja [dot] com
 
-🏡 Welcome to my own little corner of the Web!
+Welcome to my own little corner of the Web!
 
 ## 🦄 Features
 
 - Next.js 12
 - React 18
-- TypeScript 4.8
+- TypeScript 4
 - Tailwind CSS 3
 - Path Mapping (for absolute imports)
 
@@ -51,4 +51,4 @@ Looking for more guidance? Full documentation available on the official [Next.js
 
 ## 💫 Deploy
 
-This project is deployed to _[Netlify](https://www.netlify.com/)_.
+This project is deployed to _[Vercel](https://vercel.com)_.

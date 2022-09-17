@@ -11,7 +11,8 @@
     "javascript",
     "typescript",
     "react",
-    "nextjs",
+    "next.js",
+    "vercel",
     "tailwindcss"
   ],
   "license": "MIT",
