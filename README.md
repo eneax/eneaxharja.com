@@ -6,7 +6,7 @@ Welcome to my own little corner of the Web!
 
 - Next.js 12
 - React 18
-- TypeScript 4.8
+- TypeScript 4
 - Tailwind CSS 3
 - Path Mapping (for absolute imports)
 
