@@ -1,6 +1,6 @@
 # eneaxharja [dot] com
 
-🏡 Welcome to my own little corner of the Web!
+Welcome to my own little corner of the Web!
 
 ## 🦄 Features
 
@@ -51,4 +51,4 @@ Looking for more guidance? Full documentation available on the official [Next.js
 
 ## 💫 Deploy
 
-This project is deployed to _[Netlify](https://www.netlify.com/)_.
+This project is deployed to _[Vercel](https://vercel.com)_.
