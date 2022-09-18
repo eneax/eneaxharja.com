@@ -1,6 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Image, { type ImageProps } from "next/image";
+import { type ImageProps } from "next/image";
+
+import ImageBlur from "components/ImageBlur";
 
 const MdxComponents = {
   h2: (props: any) => <h2 className="mt-8" {...props} />,
@@ -26,9 +28,7 @@ const MdxComponents = {
   } & ImageProps) => {
     return (
       <div className="mb-8">
-        <div className="relative flex overflow-hidden rounded-xl">
-          <Image {...props} />
-        </div>
+        <ImageBlur {...props} />
 
         {caption && (
           <div className="mt-2">
