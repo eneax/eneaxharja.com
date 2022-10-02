@@ -1,4 +1,3 @@
-import * as React from "react";
 import Link from "next/link";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { allPosts } from "contentlayer/generated";
@@ -56,7 +55,7 @@ const AllTagsPage = ({
       <div className="flex flex-wrap">
         {tags.map(({ tag, count }) => (
           <Link href={`/tags/${tag}`} key={tag}>
-            <a className="no-underline rounded-2xl p-4 mb-6 mr-4 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 bg-glass">
+            <a className="no-underline rounded-2xl px-4 py-2.5 mb-6 mr-4 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 bg-glass">
               <span className="text-primary-50">
                 {tag} (<span className="text-primary-400">{count}</span>)
               </span>
