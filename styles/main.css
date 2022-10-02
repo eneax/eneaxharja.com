@@ -47,11 +47,11 @@ a {
 }
 
 ul {
-  @apply list-disc my-4;
+  @apply list-disc my-4 ml-4;
 }
 
 ol {
-  @apply list-decimal my-4;
+  @apply list-decimal my-4 ml-4;
 }
 
 li {
