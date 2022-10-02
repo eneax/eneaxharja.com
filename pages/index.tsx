@@ -1,9 +1,9 @@
-import Link from "next/link";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { allPosts, type Post } from "contentlayer/generated";
 
 import Container from "components/Container";
 import PostCard from "components/PostCard";
+import Button from "components/Button";
 
 export const getStaticProps: GetStaticProps<{ posts: Post[] }> = () => {
   const posts = allPosts
@@ -50,11 +50,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
     </div>
 
     <div className="flex flex-col justify-center items-center border-gray-700 mx-auto pb-16">
-      <Link href="/archives">
-        <a className="no-underline font-semibold p-4 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300">
-          Browse the archives
-        </a>
-      </Link>
+      <Button btnLink="archives" btnText="Browse the archives" />
     </div>
   </Container>
 );

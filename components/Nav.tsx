@@ -19,7 +19,7 @@ const ProfileImage = () => (
 const Nav = () => (
   <nav className="antialiased">
     <div className="max-w-2xl mx-auto p-8 md:px-0">
-      <div className="rounded-2xl bg-gray-900/90 px-4 py-2.5 bg-glass">
+      <div className="rounded-2xl bg-gray-900/90 px-6 py-2.5 bg-glass">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <Link href="/">

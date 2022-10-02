@@ -1,10 +1,10 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { allPosts, type Post } from "contentlayer/generated";
 
 import Container from "components/Container";
 import PostCard from "components/PostCard";
+import Button from "components/Button";
 
 export const getStaticPaths = () => {
   const posts = allPosts.map(({ _id, tags }) => ({
@@ -73,11 +73,7 @@ const TagDetailsPage = ({
           </div>
 
           <div className="flex flex-col justify-center items-center border-gray-700 mx-auto pb-16">
-            <Link href="/tags">
-              <a className="no-underline font-semibold p-4 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300">
-                Browse all tags
-              </a>
-            </Link>
+            <Button btnLink="tags" btnText="Browse all tags" />
           </div>
         </div>
       </div>
