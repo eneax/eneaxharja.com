@@ -16,32 +16,13 @@ const About: NextPage = () => (
           Most of my open source projects focus on helping people learn more
           about programming, enabling them to start their own personal projects,
           and hopefully also inspire someone to do the same and contribute to
-          open source communities. Check out my{" "}
-          <a href="https://github.com/eneax">GitHub</a> profile to see
-          everything I have build so far.
+          open source communities.
         </p>
-        <h2 className="mt-8">What I'm doing now</h2>
-        <small>Updated on September 17, 2022</small>
-        <ul className="my-4 list-disc">
-          <li>
-            Getting started with{" "}
-            <a href="https://aws.amazon.com/getting-started">AWS</a>
-          </li>
-          <li>
-            Reading{" "}
-            <a href="https://www.hosanagar.com/book">
-              A Human's Guide to Machine Intelligence
-            </a>{" "}
-            by Kartik Hosanagar
-          </li>
-          <li>
-            Listening to the{" "}
-            <a href="https://www.ridehome.info/show/techmeme-ride-home">
-              Techmeme Ride Home
-            </a>{" "}
-            podcast
-          </li>
-        </ul>
+        <p>
+          Check out my <a href="https://github.com/eneax">GitHub</a> profile to
+          see everything I have build so far.
+        </p>
+
         <h2 className="mt-8">Connect</h2>
         <p>
           I love hearing from readers - praise, criticism, suggestions, feedback
