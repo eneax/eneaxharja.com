@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { type GetStaticProps, type InferGetStaticPropsType } from "next";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { allPosts, type Post } from "contentlayer/generated";
@@ -39,7 +40,20 @@ const SinglePostPage = ({
     >
       <div className="flex flex-col justify-center border-gray-700 pt-16 mb-8">
         <h1 className="mb-2">{post.title}</h1>
-        <small>Updated on {formatDate(post.date)}</small>
+        <small>Updated: {formatDate(post.date)}</small>
+
+        {post?.tags && (
+          <div className="flex flex-wrap mt-1">
+            <small>
+              Tags:
+              {post?.tags?.map((tag) => (
+                <Link href={`/tags/${tag}`} key={tag}>
+                  <a className="mx-1 text-sm">{tag}</a>
+                </Link>
+              ))}
+            </small>
+          </div>
+        )}
       </div>
 
       <div className="min-h-[calc(100vh-25rem)]">
