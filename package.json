@@ -29,22 +29,22 @@
   "dependencies": {
     "contentlayer": "^0.2.8",
     "date-fns": "^2.29.3",
-    "next": "12.3.0",
+    "next": "13.0.0",
     "next-contentlayer": "^0.2.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rehype-pretty-code": "^0.3.2",
+    "rehype-pretty-code": "^0.4.0",
     "shiki": "^0.11.1"
   },
   "devDependencies": {
-    "@types/node": "18.7.18",
-    "@types/react": "18.0.20",
-    "@types/react-dom": "18.0.6",
-    "autoprefixer": "^10.4.11",
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8",
-    "typescript": "4.8.3"
+    "@types/node": "18.11.7",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.0",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1",
+    "typescript": "4.8.4"
   }
 }
