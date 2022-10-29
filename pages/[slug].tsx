@@ -47,8 +47,8 @@ const SinglePostPage = ({
             <small>
               Tags:
               {post?.tags?.map((tag) => (
-                <Link href={`/tags/${tag}`} key={tag}>
-                  <a className="mx-1 text-sm">{tag}</a>
+                <Link href={`/tags/${tag}`} key={tag} className="mx-1 text-sm">
+                  {tag}
                 </Link>
               ))}
             </small>

@@ -22,20 +22,18 @@ const Nav = () => (
       <div className="rounded-2xl bg-gray-900/90 px-6 py-2.5 bg-glass">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-6">
-            <Link href="/">
-              <a title="Enea Xharja" className="rounded-full">
-                <ProfileImage />
-              </a>
+            <Link href="/" title="Enea Xharja" className="rounded-full">
+              <ProfileImage />
             </Link>
           </div>
 
           <div className="flex items-center space-x-6 font-semibold">
-            <Link href="/about">
-              <a className="text-primary-50 no-underline">About</a>
+            <Link href="/about" className="text-primary-50 no-underline">
+              About
             </Link>
 
-            <Link href="/archives">
-              <a className="text-primary-50 no-underline">Archives</a>
+            <Link href="/archives" className="text-primary-50 no-underline">
+              Archives
             </Link>
           </div>
         </div>

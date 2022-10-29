@@ -54,12 +54,14 @@ const AllTagsPage = ({
     <div className="flex flex-col min-h-[calc(100vh-22rem)]">
       <div className="flex flex-wrap">
         {tags.map(({ tag, count }) => (
-          <Link href={`/tags/${tag}`} key={tag}>
-            <a className="no-underline rounded-2xl px-4 py-2.5 mb-6 mr-4 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 bg-glass">
-              <span className="text-primary-50">
-                {tag} (<span className="text-primary-400">{count}</span>)
-              </span>
-            </a>
+          <Link
+            href={`/tags/${tag}`}
+            key={tag}
+            className="no-underline rounded-2xl px-4 py-2.5 mb-6 mr-4 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 bg-glass"
+          >
+            <span className="text-primary-50">
+              {tag} (<span className="text-primary-400">{count}</span>)
+            </span>
           </Link>
         ))}
       </div>

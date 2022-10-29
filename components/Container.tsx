@@ -56,10 +56,11 @@ const Container = ({
         <footer className="flex flex-col justify-center w-full my-8">
           <hr className="border-1 border-gray-800 mb-8" />
           <div className="flex flex-col">
-            <Link href="/">
-              <a className="text-sm text-center no-underline text-primary-50/50 hover:text-primary-50/70 transition">
-                © {new Date().getFullYear()} Enea Xharja
-              </a>
+            <Link
+              href="/"
+              className="text-sm text-center no-underline text-primary-50/50 hover:text-primary-50/70 transition"
+            >
+              © {new Date().getFullYear()} Enea Xharja
             </Link>
           </div>
         </footer>
