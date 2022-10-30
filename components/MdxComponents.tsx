@@ -12,11 +12,7 @@ const MdxComponents = {
       return <a href={href} target="_blank" rel="noopener" {...props} />;
     }
 
-    return (
-      <Link href={href} passHref>
-        <a {...props} />
-      </Link>
-    );
+    return <Link href={href} {...props} />;
   },
   Img: ({
     children,

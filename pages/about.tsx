@@ -11,11 +11,8 @@ const About: NextPage = () => (
         <p>
           Hey, my name is Enea and I'm a web developer. Welcome to my little
           corner of the web, where I share my personal collection of notes, code
-          snippets, and resources on{" "}
-          <Link href="/tags">
-            <a>topics</a>
-          </Link>{" "}
-          that interest me.
+          snippets, and resources on <Link href="/tags">topics</Link> that
+          interest me.
         </p>
         <p>
           Most of my open source projects focus on helping people learn more
