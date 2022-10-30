@@ -103,9 +103,9 @@ If the theme and font changes do not apply, reload your Zsh configuration (`.zsh
 
 Use the new font in Visual Studio Code:
 
-- open `settings.json` in VS Code by pressing `⌘ + ,`
-- look to the right for a button to `Open Settings (JSON)`
-- paste these `key/value` pairs:
+- open `settings.json{:js}` in VS Code by pressing `⌘ + ,{:js}`
+- look to the right for a button to `Open Settings (JSON){:js}`
+- paste these `key/value{:js}` pairs:
 
 ```json
 "terminal.external.osxExec": "Hyper.app",
@@ -117,11 +117,17 @@ Zsh configuration file (`.zshrc`): copy and paste from [the local file](https://
 
 ### GIT
 
-From the terminal, set the global `name` and `email`:
+From the terminal, set the global `name{:js}` and `email{:js}`:
 
 ```shell title="Terminal"
 git config --global user.name "Your Name"
 git config --global email "you@your-domain.com"
+```
+
+Configure Git to use VS Code as default editor:
+
+```shell title="Terminal"
+git config --global core.editor "code --wait"
 ```
 
 Print global git configuration:
