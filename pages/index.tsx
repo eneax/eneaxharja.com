@@ -1,9 +1,9 @@
+import Link from "next/link";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { allPosts, type Post } from "contentlayer/generated";
 
 import Container from "components/Container";
 import PostCard from "components/PostCard";
-import Button from "components/Button";
 
 export const getStaticProps: GetStaticProps<{ posts: Post[] }> = () => {
   const posts = allPosts
@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps<{ posts: Post[] }> = () => {
 
       return bDate.getTime() - aDate.getTime();
     })
-    .slice(0, 10);
+    .slice(0, 5);
 
   return {
     props: {
@@ -26,19 +26,22 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <Container>
     <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
       <div className="flex flex-col">
-        <h1 className="mb-1">Enea Xharja</h1>
+        <h1 className="mb-4">Hello, my name is Enea.</h1>
         <p>
-          Web Developer at <span className="font-semibold">wohnvoll</span>
+          I am a Software Engineer based in Berlin, DE. Currently I am working{" "}
+          at <span className="font-semibold">wohnvoll</span> building digital
+          products that set new standards for the senior living of the future.
         </p>
         <p>
-          Welcome to my little corner of the web, where I share my personal
-          collection of notes, code snippets, and resources on topics that
-          interest me.
+          Welcome to my little corner of the web, where I share my personal{" "}
+          <Link href="/archives">collection</Link> of notes, code snippets, and
+          resources on <Link href="/tags">topics</Link> that interest me.
         </p>
       </div>
     </div>
 
     <div className="flex flex-col justify-center border-gray-700 mx-auto w-full pb-16">
+      <h2 className="mb-4">Recent Notes</h2>
       {posts.map((post) => (
         <PostCard
           key={post._id}
@@ -49,9 +52,14 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
       ))}
     </div>
 
-    <div className="flex flex-col justify-center items-center border-gray-700 mx-auto pb-16">
-      <Button btnLink="archives" btnText="Browse the archives" />
-    </div>
+    <h2 className="mb-4">Connect</h2>
+    <p>
+      I love hearing from readers - praise, criticism, suggestions, feedback or
+      thoughts on any of my notes. Emails are always welcome. I really do read
+      all my emails, but if I don't respond, or do so only after an unreasonable
+      amount of time has passed, don't take it personally. Here's how to reach
+      me: eneaxharja [at] gmail [dot] com.
+    </p>
   </Container>
 );
 
