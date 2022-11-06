@@ -4,7 +4,7 @@ Welcome to my own little corner of the Web!
 
 ## 🦄 Features
 
-- Next.js 12
+- Next.js 13
 - React 18
 - TypeScript 4
 - Tailwind CSS 3
