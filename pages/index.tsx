@@ -33,7 +33,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
           products that set new standards for the senior living of the future.
         </p>
         <p>
-          Welcome to my little corner of the web, where I share my personal{" "}
+          Welcome to my own little corner of the web, where I share my personal{" "}
           <Link href="/archives">collection</Link> of notes, code snippets, and
           resources on <Link href="/tags">topics</Link> that interest me.
         </p>
