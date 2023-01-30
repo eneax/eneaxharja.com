@@ -1,0 +1,172 @@
+---
+title: "Git Commands"
+date: "2023-01-30"
+description: "A list of useful Git commands for everyday use."
+tags: ["git"]
+---
+
+A list of useful Git commands for everyday use.
+
+### Stash
+
+Stash is a way to save your work without committing it. It is useful when you want to change branches or pull the latest changes from a remote repository.
+
+```bash title="Save a specific file"
+git stash push <file>
+```
+
+```bash title="Save all changes"
+git stash
+```
+
+```bash title="List all stashes"
+git stash list
+```
+
+```bash title="Delete a specific stash"
+git stash drop stash@{<number>}
+```
+
+```bash title="Delete all stashes"
+git stash drop
+```
+
+```bash title="Apply a stash and delete it"
+git stash pop
+```
+
+```bash title="Apply the most recent stash"
+git stash apply
+```
+
+```bash title="Apply a specific stash"
+git stash apply stash@{<number>}
+```
+
+### Branch
+
+It is useful when you want to work on a new feature and test it without affecting the main branch.
+
+```bash title="List all branches"
+git branch
+```
+
+```bash title="Create a new branch and switch to it"
+git checkout -b <name>
+```
+
+```bash title="Switch back to the previous local branch you have been working on"
+git checkout -
+```
+
+```bash title="Rename a branch"
+git branch -m <oldName> <newName>
+```
+
+```bash title="Delete a branch"
+git branch -d <name>
+```
+
+```bash title="Add a branch to upstream repository"
+git push --set-upstream origin <name>
+```
+
+### Stage and commit
+
+Stage is a way to prepare your work for a commit. It allows you to commit your work in smaller parts.
+
+```bash title="Stage all changes"
+git add .
+```
+
+```bash title="Stage a specific file"
+git add <file>
+```
+
+```bash title="Unstage all changes"
+git reset .
+```
+
+```bash title="Commit your work"
+git commit -m "your commit message"
+```
+
+### Overrides
+
+Overrides are useful when you want to undo your work.
+
+```bash title="Amend a commit message"
+git commit --amend
+```
+
+```bash title="If you want to keep your work and undo just the last commit"
+git reset HEAD~
+```
+
+```bash title="If you want to override a file in your local repo with the version in the remote repo"
+git reset --hard origin/<current-branch>
+```
+
+### Restore previous work
+
+Restore your work if you accidentally deleted it.
+
+```bash title="Undo all uncommitted changes"
+git checkout .
+```
+
+```bash title="Restore a deleted file"
+git checkout HEAD <file>
+```
+
+```bash title="Remove last commit by keeping all changes staged"
+git reset --soft HEAD~1
+```
+
+### Squash commits
+
+First, check the number of commits you want to squash. Then, use that number to tell git how many commits to squash into one:
+
+```bash title="Terminal"
+git rev-list HEAD --count
+git rebase -i HEAD~<number-of-commits>
+```
+
+### Rebase
+
+Bring the changes from the "main" branch to the "staging" branch. Then, push the changes to the existing repository:
+
+```bash title="Terminal"
+git checkout staging
+git rebase main
+git push
+```
+
+### Sync feature branch with main branch
+
+If you are in the "feature-branch" and need to pull in the latest changes from the remote main branch:
+
+```bash title="Terminal"
+git checkout main
+git pull
+git checkout feature-branch
+git pull --all
+git merge main
+```
+
+### Rename master branch to main in GitHub
+
+First, make sure to change the name of the branch on GitHub:
+
+```bash title="Go to your GitHub repository"
+https://github.com/:username/:repo-name/branches
+```
+
+Then, change the name of the branch locally:
+
+```bash title="Terminal"
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
