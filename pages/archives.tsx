@@ -40,6 +40,7 @@ const ArchivesPage = ({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [searchValue, setSearchValue] = React.useState("");
+  const [limit, setLimit] = React.useState(20);
 
   const filteredPosts = posts
     .filter((post) => {
@@ -52,7 +53,11 @@ const ArchivesPage = ({
         descriptionLower.includes(searchValueLower)
       );
     })
-    .slice(0, 20);
+    .slice(0, limit);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <Container
@@ -111,6 +116,22 @@ const ArchivesPage = ({
             />
           ))}
         </div>
+
+        {searchValue === "" && limit < posts.length && (
+          <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
+            <button onClick={() => setLimit(limit + 20)} className="btn">
+              Load more
+            </button>
+          </div>
+        )}
+
+        {searchValue === "" && limit >= posts.length && (
+          <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
+            <button onClick={scrollToTop} className="btn">
+              Back to top
+            </button>
+          </div>
+        )}
       </React.Suspense>
     </Container>
   );
