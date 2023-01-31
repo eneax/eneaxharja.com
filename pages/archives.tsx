@@ -125,7 +125,7 @@ const ArchivesPage = ({
           </div>
         )}
 
-        {limit >= posts.length && (
+        {searchValue === "" && limit >= posts.length && (
           <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
             <button onClick={scrollToTop} className="btn">
               Back to top
