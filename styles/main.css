@@ -66,6 +66,10 @@ small {
   @apply backdrop-blur will-change-transform [@supports(backdrop-filter:blur(0px))]:bg-white/[3%];
 }
 
+.btn {
+  @apply no-underline font-semibold px-4 py-2.5 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300;
+}
+
 /* Code Blocks */
 span[data-rehype-pretty-code-fragment] {
   @apply bg-white/10 rounded-lg py-0.5 px-1;

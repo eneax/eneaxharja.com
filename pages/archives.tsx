@@ -119,10 +119,7 @@ const ArchivesPage = ({
 
         {searchValue === "" && limit < posts.length && (
           <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
-            <button
-              onClick={() => setLimit(limit + 20)}
-              className="no-underline font-semibold px-4 py-2.5 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300"
-            >
+            <button onClick={() => setLimit(limit + 20)} className="btn">
               Load more
             </button>
           </div>
@@ -130,10 +127,7 @@ const ArchivesPage = ({
 
         {limit >= posts.length && (
           <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
-            <button
-              onClick={scrollToTop}
-              className="no-underline font-semibold px-4 py-2.5 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300"
-            >
+            <button onClick={scrollToTop} className="btn">
               Back to top
             </button>
           </div>
