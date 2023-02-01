@@ -35,7 +35,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
         <p>
           Welcome to my own little corner of the web, where I share my personal{" "}
           <Link href="/archives">collection</Link> of notes, code snippets, and
-          resources on <Link href="/tags">topics</Link> that interest me.
+          resources on topics that interest me.
         </p>
       </div>
     </div>
