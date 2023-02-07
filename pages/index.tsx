@@ -28,8 +28,8 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
       <div className="flex flex-col">
         <h1 className="mb-4">Hello, my name is Enea.</h1>
         <p>
-          I am a Software Engineer based in Berlin, DE. Currently I am working{" "}
-          at <span className="font-semibold">wohnvoll</span> building digital
+          I am a programmer based in Berlin, DE. Currently I am working at{" "}
+          <span className="font-semibold">wohnvoll</span> building digital
           products that set new standards for the senior living of the future.
         </p>
         <p>
