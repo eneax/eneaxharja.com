@@ -70,6 +70,14 @@ small {
   @apply no-underline font-semibold px-4 py-2.5 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300;
 }
 
+.info-bar {
+  @apply bg-glass bg-gray-900/90 border border-gray-800 rounded-2xl p-4 mb-6;
+}
+
+.info-bar p {
+  @apply mb-0;
+}
+
 /* Code Blocks */
 span[data-rehype-pretty-code-fragment] {
   @apply bg-white/10 rounded-lg py-0.5 px-1;
