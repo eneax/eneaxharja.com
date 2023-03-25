@@ -11,15 +11,13 @@ export const getStaticProps: GetStaticProps<{
     slug: Post["slug"];
     title: Post["title"];
     date: Post["date"];
-    description: Post["description"];
   }[];
 }> = () => {
-  const posts = allPosts.map(({ _id, slug, title, date, description }) => ({
+  const posts = allPosts.map(({ _id, slug, title, date }) => ({
     _id,
     slug,
     title,
     date,
-    description,
   }));
 
   const sortedPosts = posts.sort((a, b) => {
@@ -46,12 +44,8 @@ const ArchivesPage = ({
     .filter((post) => {
       const searchValueLower = searchValue.toLowerCase();
       const titleLower = post.title.toLowerCase();
-      const descriptionLower = post.description.toLowerCase();
 
-      return (
-        titleLower.includes(searchValueLower) ||
-        descriptionLower.includes(searchValueLower)
-      );
+      return titleLower.includes(searchValueLower);
     })
     .slice(0, limit);
 
@@ -112,7 +106,7 @@ const ArchivesPage = ({
               key={post._id}
               slug={post.slug}
               title={post.title}
-              description={post.description}
+              date={post.date}
             />
           ))}
         </div>
