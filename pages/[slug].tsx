@@ -33,7 +33,6 @@ const SinglePostPage = ({
   return (
     <Container
       title={`${post.title} - Enea Xharja`}
-      description={post.description || ""}
       date={formatDate(post.date)}
       type="article"
     >

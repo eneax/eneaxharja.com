@@ -63,7 +63,7 @@ const ArchivesPage = ({
           <h1 className="mb-8">Archives</h1>
           <p>
             In total, I've written {posts.length} notes. Use the search below to
-            filter by title or description.
+            filter by title.
           </p>
         </div>
       </div>
