@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { Post } from "contentlayer/generated";
 
-const PostCard = ({
-  slug,
-  title,
-  description,
-}: {
+import { formatDate } from "lib/dates";
+
+type PostCardProps = {
   slug: Post["slug"];
   title: Post["title"];
-  description: Post["description"];
-}) => (
+  date: Post["date"];
+};
+
+const PostCard = ({ slug, title, date }: PostCardProps) => (
   <Link href={`/${slug}`} className="no-underline">
-    <div className="rounded-2xl p-6 mb-6 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 bg-glass">
-      <h3>{title}</h3>
-      {description && <p className="text-primary-50 mb-0">{description}</p>}
-    </div>
+    <p className="flex flex-col md:flex-row md:items-center justify-between rounded-2xl p-3 mb-0 transition duration-300 hover:bg-gray-800/90 text-primary-50">
+      <span>{title}</span>
+      <small>{formatDate(date)}</small>
+    </p>
   </Link>
 );
 

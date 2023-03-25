@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps<{ posts: Post[] }> = () => {
 
       return bDate.getTime() - aDate.getTime();
     })
-    .slice(0, 5);
+    .slice(0, 10);
 
   return {
     props: {
@@ -47,7 +47,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
           key={post._id}
           slug={post.slug}
           title={post.title}
-          description={post.description}
+          date={post.date}
         />
       ))}
     </div>
