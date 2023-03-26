@@ -36,18 +36,20 @@ const SinglePostPage = ({
       date={formatDate(post.date)}
       type="article"
     >
-      <div className="flex flex-col justify-center border-gray-700 pt-16 pb-10">
-        <h1 className="mb-2">{post.title}</h1>
-        <small>Updated: {formatDate(post.date)}</small>
-      </div>
+      <article className="flex flex-col my-16">
+        <section className="mb-10">
+          <h1 className="mb-2">{post.title}</h1>
+          <small>Updated: {formatDate(post.date)}</small>
+        </section>
 
-      <div className="min-h-[calc(100vh-25rem)]">
-        <MDXContent
-          components={{
-            ...MdxComponents,
-          }}
-        />
-      </div>
+        <section className="min-h-[calc(100vh-25rem)]">
+          <MDXContent
+            components={{
+              ...MdxComponents,
+            }}
+          />
+        </section>
+      </article>
     </Container>
   );
 };
