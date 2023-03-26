@@ -37,18 +37,6 @@ export const getStaticProps: GetStaticProps<{
 const ArchivesPage = ({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const [searchValue, setSearchValue] = React.useState("");
-  const [limit, setLimit] = React.useState(20);
-
-  const filteredPosts = posts
-    .filter((post) => {
-      const searchValueLower = searchValue.toLowerCase();
-      const titleLower = post.title.toLowerCase();
-
-      return titleLower.includes(searchValueLower);
-    })
-    .slice(0, limit);
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -58,75 +46,22 @@ const ArchivesPage = ({
       title="Archives - Enea Xharja"
       description="My personal collection of notes, code snippets, and resources on topics that interest me."
     >
-      <div className="flex flex-col justify-center border-gray-700 mx-auto w-full pt-16">
-        <div className="flex flex-col">
-          <h1 className="mb-8">Archives</h1>
-          <p>
-            In total, I've written {posts.length} notes. Use the search below to
-            filter by title.
-          </p>
-        </div>
-      </div>
+      <article className="flex flex-col my-16">
+        <h1 className="mb-8">Archives</h1>
 
-      <div className="relative w-full mb-8">
-        <svg
-          className="absolute w-4 h-4 left-3 top-3 text-primary-50"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        {posts.map((post) => (
+          <PostCard
+            key={post._id}
+            slug={post.slug}
+            title={post.title}
+            date={post.date}
           />
-        </svg>
-        <input
-          aria-label="Search archives"
-          type="text"
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-          placeholder="Search archives"
-          className="block w-full px-4 py-2 pl-10 bg-gray-800 text-primary-50 border rounded-2xl border-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-100 focus:border-transparent"
-        />
-      </div>
+        ))}
 
-      <React.Suspense fallback={null}>
-        {!filteredPosts.length && (
-          <div className="min-h-[calc(100vh-20rem)]">
-            <p>No posts found.</p>
-          </div>
-        )}
-
-        <div className="min-h-[calc(100vh-20rem)]">
-          {filteredPosts.map((post) => (
-            <PostCard
-              key={post._id}
-              slug={post.slug}
-              title={post.title}
-              date={post.date}
-            />
-          ))}
-        </div>
-
-        {searchValue === "" && limit < posts.length && (
-          <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
-            <button onClick={() => setLimit(limit + 20)} className="btn">
-              Load more
-            </button>
-          </div>
-        )}
-
-        {searchValue === "" && limit >= posts.length && (
-          <div className="flex flex-col justify-center items-center border-gray-700 mx-auto py-16">
-            <button onClick={scrollToTop} className="btn">
-              Back to top
-            </button>
-          </div>
-        )}
-      </React.Suspense>
+        <button onClick={scrollToTop} className="btn mt-4">
+          Back to top
+        </button>
+      </article>
     </Container>
   );
 };
