@@ -67,7 +67,7 @@ small {
 }
 
 .btn {
-  @apply no-underline font-semibold px-4 py-2.5 rounded-2xl text-black bg-primary-400 hover:bg-primary-400/95 transition duration-300;
+  @apply no-underline text-center text-primary-400 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 border border-gray-700 rounded-2xl p-3;
 }
 
 .info-bar {
