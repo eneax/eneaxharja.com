@@ -2,13 +2,6 @@
 
 Welcome to my own little corner of the Web!
 
-## 🦄 Features
-
-- Next.js 13
-- React 18
-- TypeScript 4
-- Tailwind CSS 3
-
 ## 🚀 Quick start
 
 To run this project locally:
