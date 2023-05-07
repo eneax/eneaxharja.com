@@ -1,0 +1,129 @@
+---
+title: "Mutation in JavaScript"
+date: "2023-05-07"
+---
+
+<div className="info-bar">
+  My notes from: [Just JavaScript](https://justjavascript.com)
+</div>
+
+The word mutation is used when you want to indicate that you are changing the properties of an object and you are very intentional about it (mutation = change).
+
+You can think of properties as wires that originate from an object and point to a value.
+
+```js
+let mario = {
+  name: "Mario",
+  address: {
+    city: "Mushroom Kingdom",
+  },
+};
+```
+
+There is a variable `mario{:js}` that points to an object that has two properties:
+
+- The `name{:js}` property points to the string value `"Mario"{:js}`.
+- The `address{:js}` property points to another object.
+  - This other object has only one property called `city{:js}`, which points to the string value `"Mushroom Kingdom"{:js}`.
+
+Note that here you have two completely separate objects. In fact, two pairs of curly braces `{}{:js}` mean two objects. Although objects appear to be nested in the code, a JavaScript object cannot be inside another object.
+
+Now, let's declare another variable:
+
+```js
+let luigi = {
+  name: "Luigi",
+  address: mario.address,
+};
+```
+
+There is a new variable `luigi{:js}` that points to an object with two properties:
+
+- The `name{:js}` property points to the string value `"Luigi"{:js}`.
+- The `address{:js}` property points to the same object that `mario.address{:js}` already points to.
+
+Keep in mind that a property always points to a value. When you see `address: mario.address{:js}`, you need to figure out the value of `mario.address{:js}` and point Luigi's `address{:js}` property wire to that value. It is the value itself that matters during assignment, not how you found it.
+
+As a result, there are now two different `address{:js}` properties pointing to the same object.
+
+## Mutating an Object
+
+But what if you decide that Luigi should have a different name and address? You can do this by changing the properties of the object to which `luigi{:js}` points:
+
+```js
+luigi.name = "Luigi (Player 2)";
+luigi.address.city = "Lake Kingdom";
+```
+
+The first line mutates the object to which `luigi{:js}` points. However, the second line mutates a completely different object, the one we can reach via `luigi.address{:js}`. However, the same object can be reached also via `mario.address{:js}`:
+
+```js
+console.log(mario.name); // "Mario"
+console.log(mario.address.city); // "Lake Kingdom"
+console.log(luigi.name); // "Luigi (Player 2)"
+console.log(luigi.address.city); // "Lake Kingdom"
+```
+
+Just like that, you mutated the object that `mario.address{:js}` points to without ever touching `mario{:js}` itself.
+
+## Possible Solution: Mutating Another Object
+
+One way to fix this would be to avoid mutating shared data:
+
+```js
+luigi.name = "Luigi (Player 2)";
+luigi.address = { city: "Lake Kingdom" };
+```
+
+With `luigi.address.city = "Lake Kingdom"{:js}`, you are mutating the `city{:js}` property of the object that `luigi.address{:js}` points to. Because `luigi.address{:js}` and `mario.address{:js}` point to the same object, you unintentionally mutated shared data.
+
+With `luigi.address = { city: "Lake Kingdom" }{:js}`, you are mutating the `address{:js}` property of the object that `luigi{:js}` points to. In other words, you are only mutating the object representing Luigi's data. This is why `mario.address.city{:js}` remains unchanged.
+
+## Alternative Solution: No Object Mutation
+
+There is another way to make `luigi.address.city{:js}` return `"Lake Kingdom"{:js}` while `mario.address.city{:js}` keeps saying `"Mushroom Kingdom"{:js}`:
+
+```js
+let luigi = {
+  name: "Luigi (Player 2)",
+  address: { city: "Lake Kingdom" },
+};
+```
+
+In this case, you do not mutate the Luigi object at all. Instead, you reassign the variable `luigi{:js}` to point to a new version of Luigi's data. From now on, `luigi{:js}` points to a different object, whose `address{:js}` also points to a completely new object.
+
+```js
+console.log(mario.name); // "Mario"
+console.log(mario.address.city); // "Mushroom Kingdom"
+console.log(luigi.name); // "Luigi (Player 2)"
+console.log(luigi.address.city); // "Lake Kingdom"
+```
+
+You might notice that there is now an old version of the Luigi object. JavaScript will automatically remove it from memory if there are no wires pointing to it (garbage collection).
+
+## let, const and mutation
+
+In modern JavaScript, you can use the `let{:js}` and `const{:js}` keywords to declare variables:
+
+```js
+const mario = {
+  name: "Mario",
+};
+```
+
+The `const{:js}` keyword allows you to create a constant (read-only variable). Once a constant is declared, it cannot point it to a different value:
+
+```js
+mario = luigi; // TypeError
+```
+
+Although `const{:js}` prevents variable reassignment, it does not prevent object mutation:
+
+```js
+mario.name = "Mario (Player 1)";
+console.log(mario.name); // "Mario (Player 1)"
+```
+
+Only the variable wire `mario{:js}` is read-only (`const{:js}`). Since it points to an object, the properties of that object can be mutated.
+
+Therefore, it is important to be very careful about what you are mutating to avoid accidental mutation of shared data that can lead to bugs.
