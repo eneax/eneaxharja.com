@@ -28,9 +28,8 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
       <section className="mb-16">
         <h1 className="mb-4">Hello, my name is Enea.</h1>
         <p>
-          I am a programmer based in Berlin, DE. Currently I am working at{" "}
-          <span className="font-semibold">wohnvoll</span> building digital
-          products that set new standards for the senior living of the future.
+          I am a software engineer who enjoys helping others, learning new
+          things and sharing them with the community.
         </p>
         <p>
           Welcome to my own little corner of the web, where I share my personal

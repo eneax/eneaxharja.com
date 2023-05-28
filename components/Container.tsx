@@ -29,7 +29,7 @@ const Container = ({
   const router = useRouter();
 
   const meta = {
-    title: "Enea Xharja - Programmer",
+    title: "Enea Xharja - Software Engineer",
     description: `Welcome to my own little corner of the web, where I share my personal collection of notes, code snippets, and resources on topics that interest me.`,
     image: "https://eneaxharja.com/images/avatar.png",
     type: "website",
