@@ -1,0 +1,47 @@
+---
+title: "Strict Mode in JavaScript"
+date: "2020-03-17"
+---
+
+For many years, JavaScript evolved without compatibility issues.
+New features were being added to the language while maintaining old functionality.
+
+In 2009, ECMAScript 5 (ES5) was released. It added new powerful features to the language, but it also modified some of the existing ones.
+
+To keep the old code working, most of this modifications are off by default.
+You need to explicitly enable them using a specific command: `"use strict"`.
+
+Strict Mode is a new feature introduced in ECMAScript 5 that allows you to place code in a "strict" context.
+
+This can be extremely useful, since it prevents certain actions from being taken or throws errors when an 'unsafe' action is taken (like accessing the global object).
+Basically, it's a JavaScript feature that helps you make fewer errors, by detecting potential errors in advance that could lead to major problems in the future.
+
+You can apply `"strict mode"` to the entire file you are working on, by placing it at the top of a script or using it inside a specific function.
+This is great because you can now define complete JavaScript libraries in a strict mode without affecting outside code.
+Enabling strict mode is as simple as adding `"use strict"` string (you can also use single quotes), like in the code block below:
+
+```js
+// Non-strict code...
+
+(function () {
+  "use strict";
+
+  // code running in strict mode...
+})();
+
+// Non-strict code...
+```
+
+That's it! No new syntax is introduced in order to enable strict mode.
+
+Now that we have given an introduction to strict mode, let's see what actually changes when you put a script into strict mode.
+
+A great example is using it for variables. Previously, an attempt to assign `dog = 'Rex'`, where dog hasn't been defined, would have assigned the value to the dog property of the global object (e.g. window.dog).
+
+In strict mode, if the variable hasn't been defined will fail.
+
+Keep in mind that once you enter the strict mode, there is no way of going back.
+There's no way to cancel "use strict" and there is no command like "disable use strict".
+
+If you are writing 'modern' JavaScript, with import and export statements and ES6 classes, then strict mode enabled by default and it cannot be disabled.
+Strict mode is now supported by all major browsers, so there are no excuses not use it and save yourself from potential future headaches.

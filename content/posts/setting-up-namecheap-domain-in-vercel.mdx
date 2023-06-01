@@ -1,0 +1,36 @@
+---
+title: "Namecheap domain in Vercel"
+date: "2022-09-17"
+---
+
+Vercel provides a nice user interface to manage everything about a web application and makes it very easy to replace the automatically assigned domain with a custom one.
+
+Here are all the steps required to configure a [Namecheap](https://www.namecheap.com) domain in [Vercel](https://vercel.com):
+
+## Vercel
+
+1. Select your project
+
+On the main [dashboard](https://vercel.com/dashboard), select the project to which you want to assign the custom domain. Then, go to `Settings` and select the `Domains` menu item.
+
+2. Enter your domain
+
+From the `Domains` page, enter the domain and press `Add`. Once you have added a valid domain, you will see it displayed with an error indicating `Invalid Configuration`. This means that we need to configure the domain so that it points to Vercel.
+
+3. Copy Vercel nameservers
+
+Underneath the `Invalid Configuration` error, you will also see a `Nameservers` tab. If you click on it, you will see the Vercel nameservers that we will need to add to our domain in Namecheap.
+
+## Namecheap
+
+1. Select your domain
+
+Now that we have added our domain in Vercel, we just need to add the nameservers in Namecheap to complete the configuration. Once you are logged into your Namecheap account, go to `Domain List` in the sidebar, select the domain you want to configure, and click `Manage`.
+
+2. Add Vercel nameservers
+
+On the `Details` page, select the `Domain` tab and scroll down to `Nameservers`. Then, select `Custom DNS` in the dropdown menu and add the Vercel nameservers.
+
+3. Wait for the changes to propagate
+
+After adding the nameservers, you will need to wait for the changes to propagate. This can take up to 48 hours, but usually takes less than 10 minutes. Once the changes are propagated, the `Invalid Configuration` error will disappear and the domain will be ready for use.
