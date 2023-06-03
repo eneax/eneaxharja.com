@@ -1,13 +1,32 @@
-import { makeSource } from "contentlayer/source-files";
-import rehypePrettyCode from "rehype-pretty-code";
+import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
-import { Post } from "./data/types/Post";
-import { rehypePrettyCodeOptions } from "./lib/rehypePrettyCode";
+export const Post = defineDocumentType(() => ({
+  name: "Post",
+  filePathPattern: `posts/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    date: {
+      type: "date",
+      required: true,
+    },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) => `/${doc._raw.sourceFileName.replace(/\.mdx$/, "")}`,
+    },
+    slugAsParams: {
+      type: "string",
+      resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+    },
+  },
+}));
 
 export default makeSource({
-  contentDirPath: "data",
+  contentDirPath: "./content",
   documentTypes: [Post],
-  mdx: {
-    rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOptions]],
-  },
 });

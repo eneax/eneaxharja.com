@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./content/**/*.{md,mdx}",
   ],
   theme: {
     extend: {
@@ -34,10 +33,7 @@ module.exports = {
           900: "#111111",
         },
       },
-      fontFamily: {
-        sans: ["IBM Plex Sans", ...fontFamily.sans],
-      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -1,0 +1,71 @@
+---
+title: "Values in JavaScript"
+date: "2023-03-04"
+---
+
+<div className="info-bar">
+  My notes from: [Just JavaScript](https://justjavascript.com)
+</div>
+
+The most fundamental concept in JavaScript is the value. The JavaScript universe contains several values, and when I write code, I refer to these values and interact with them. However, they do not exist inside my code.
+
+There are nine distinct types of values in JavaScript and they are grouped into two categories, with values of the same type behaving similarly: primitive values and objects and functions.
+
+## Primitive Values
+
+Primitive values are the building blocks of JavaScript:
+
+- `String`, used to represent text
+- `Number`, used for math calculations
+- `BigInt` represent numeric values which are too large to be represented by the `Number` primitive type
+- `Boolean`, used for logical operations (`true` and `false`)
+- `undefined`, used for unintentionally missing values
+- `null`, used for intentionally missing values
+- `Symbol`, used to create unique identifiers
+
+I can't create, destroy, or modify primitive values. I can only point to them.
+To see the primitive values in action, open the browser console and log them:
+
+```js
+console.log(42);
+console.log("hi");
+console.log(undefined);
+```
+
+## Objects and Functions
+
+Objects and functions are values that are not part of my code, but that I can manipulate with my code.
+
+- Objects (`{}`), used to group related data and code together
+- Functions (`(x, y) => x + y`), used to refer to code
+
+To see objects and functions in action, open the browser console and log them:
+
+```js
+console.log({});
+console.log([]);
+console.log((x, y) => x + y);
+```
+
+## Checking a Type
+
+The value types listed above are all that there is in JavaScript. There are no other types. Anything else is an `object`.
+
+But what if I have a value and I want to know what type it is? I can ask JavaScript a question and it will answer with a single value. This question that you can ask JavaScript is called an expression, which is a fancy way of saying that it is a piece of code that expresses a value.
+
+It is important to note that expressions are not values, but actually exist in our code.
+
+In fact, if I wanted to know the type of a value, I could ask JavaScript a question with the `typeof` operator. JavaScript will answer with a string value indicating the type of that particular value:
+
+```js
+console.log(typeof 42); // "number"
+console.log(typeof "hi"); // "string"
+console.log(typeof undefined); // "undefined"
+
+console.log(typeof []); // "object"
+console.log(typeof new Date()); // "object"
+console.log(typeof /(hi|there)/); // "object"
+
+console.log(typeof null); // "object" -> this is a bug in JavaScript
+console.log(typeof typeof value); // "string"
+```

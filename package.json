@@ -1,7 +1,7 @@
 {
   "name": "eneaxharja.com",
   "description": "My Own Little Corner of the Web",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "author": "Enea Xharja",
   "bugs": {
     "url": "https://github.com/eneax/eneaxharja.com/issues"
@@ -23,28 +23,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "preview": "next build && next start",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "contentlayer": "^0.3.0",
-    "date-fns": "^2.29.3",
-    "next": "13.1.6",
-    "next-contentlayer": "^0.3.0",
+    "bright": "^0.8.2",
+    "contentlayer": "^0.3.2",
+    "date-fns": "^2.30.0",
+    "next-contentlayer": "^0.3.2",
+    "next": "13.4.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "rehype-pretty-code": "^0.9.3",
-    "shiki": "^0.14.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.13.0",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "autoprefixer": "^10.4.13",
-    "eslint": "8.33.0",
-    "eslint-config-next": "13.1.6",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6",
-    "typescript": "4.9.5"
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "18.16.1",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "autoprefixer": "10.4.14",
+    "eslint-config-next": "13.3.1",
+    "eslint": "8.39.0",
+    "postcss": "8.4.23",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
   }
 }
