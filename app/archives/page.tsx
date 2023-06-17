@@ -1,6 +1,12 @@
+import { Metadata } from "next";
 import { allPosts } from "@/.contentlayer/generated";
 
 import PostCard from "@/components/post-card";
+
+export const metadata: Metadata = {
+  title: "Archives",
+  description: "A list of all posts.",
+};
 
 export default function Archives() {
   const sortedPosts = allPosts.sort((a, b) => {

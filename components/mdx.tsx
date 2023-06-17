@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image, { ImageProps } from "next/image";
+import { ImageProps } from "next/image";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { Code } from "bright";
 
@@ -8,8 +8,7 @@ import ImageBlur from "@/components/image-blur";
 Code.theme = "material-darker";
 
 const components = {
-  Image,
-  pre: Code,
+  pre: Code as any,
   h2: (props: any) => <h2 className="mt-8" {...props} />,
   h3: (props: any) => <h3 className="mt-8" {...props} />,
   a: ({ href = "", ...props }) => {
