@@ -54,14 +54,6 @@ small {
   @apply no-underline text-center text-primary-400 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 border border-gray-700 rounded-2xl p-3;
 }
 
-.info-bar {
-  @apply bg-white/10 rounded-lg py-2 px-4 mb-6;
-}
-
-.info-bar p {
-  @apply mb-0;
-}
-
 code:not([style]) {
   @apply bg-white/10 rounded-lg py-0.5 px-1 text-base text-primary-50 !important;
 }
