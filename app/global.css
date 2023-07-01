@@ -51,7 +51,7 @@ small {
 }
 
 .btn {
-  @apply no-underline text-center text-primary-400 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 border border-gray-700 rounded-2xl p-3;
+  @apply no-underline text-center text-primary-50 bg-gray-900/90 transition duration-300 hover:bg-gray-800/90 border border-gray-700 rounded-2xl p-3;
 }
 
 code:not([style]) {
