@@ -1,0 +1,52 @@
+---
+title: "React Components vs Elements"
+date: "2023-07-17"
+---
+
+Building a React application means composing components. A React component is a function that accepts optional input via `props` and returns as output a value that is called a React element.
+
+React elements are the real building blocks of React. They are object representations of DOM nodes.
+
+> Note that an element is not a DOM node, but an object representation of it.
+
+DOM nodes are created using HTML:
+
+```html
+<p class="greetings">It's a Me, Mario!</p>
+```
+
+Here is what the object representation of the DOM node above looks like:
+
+```js
+{
+  type: "p",
+  props: {
+    children: "It's a Me, Mario!",
+    className: "greetings"
+  }
+}
+```
+
+React uses this virtual DOM approach because it facilitates the process of keeping track of current and previously rendered elements. In this way, React can update only those DOM nodes that have changed.
+
+Browsers can only understand JavaScript, so React needs to convert the JSX code into JavaScript. In modern React applications, this can be done using the `jsx` function from the `react/jsx-runtime` module.
+
+```js
+import { jsx } from "react/jsx-runtime";
+
+export default function Component() {
+  const element = jsx("p", {
+    className: "greetings",
+    children: "It's a Me, Mario!",
+  });
+
+  return element;
+}
+```
+
+The `jsx` function accepts two arguments:
+
+- the type of the element (`tag`), which can be a string or a function (another React component);
+- the `props` of the element, which is an object of attributes you want the element to have.
+
+During the build process, the `jsx()` function is invoked, which compiles all JSX code into JavaScript that browsers can understand and finally returns a React element.
