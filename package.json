@@ -32,20 +32,20 @@
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
     "next-contentlayer": "^0.3.4",
-    "next": "13.5.4",
+    "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "20.8.2",
-    "@types/react": "18.2.24",
-    "@types/react-dom": "18.2.8",
+    "@types/node": "20.10.4",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
     "autoprefixer": "10.4.16",
-    "eslint-config-next": "13.5.4",
-    "eslint": "8.50.0",
-    "postcss": "8.4.31",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "eslint-config-next": "14.0.4",
+    "eslint": "8.56.0",
+    "postcss": "8.4.32",
+    "tailwindcss": "3.3.6",
+    "typescript": "5.3.3"
   }
 }
