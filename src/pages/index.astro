@@ -1,0 +1,70 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+import NoteItem from "../components/NoteItem.astro";
+
+const notes = (await getCollection("notes"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 10);
+---
+
+<Layout title="Home">
+  <section>
+    <h1>Hello, my name is Enea.</h1>
+    <p>
+      I am a software engineer who enjoys helping others, learning new things
+      and sharing them with the community.
+    </p>
+    <p>
+      Welcome to my own little corner of the web, where I share my personal
+      collection of notes, code snippets, and resources on topics that interest
+      me.
+    </p>
+  </section>
+
+  <section>
+    <h2>Recent Notes</h2>
+    <div>
+      {
+        notes.map((post) => (
+          <NoteItem
+            slug={post.slug}
+            title={post.data.title}
+            date={post.data.date}
+          />
+        ))
+      }
+    </div>
+    <a href="/archives" class="btn">Browse more</a>
+  </section>
+
+  <section>
+    <h2>Connect</h2>
+    <p>
+      Emails are always welcome. I really do read all my emails, but if I do not
+      respond, or do so only after an unreasonable amount of time has passed, do
+      not take it personally.
+    </p>
+    <p>Here is how to reach me: eneaxharja [at] gmail [dot] com.</p>
+  </section>
+</Layout>
+
+<style>
+  section {
+    margin-bottom: var(--space-xl);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  section h2 {
+    margin-bottom: var(--space-xs);
+  }
+
+  section a {
+    display: block;
+    margin-top: var(--space-xs);
+  }
+</style>
