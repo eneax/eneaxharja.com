@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+import NoteItem from "../components/NoteItem.astro";
+
+const notes = (await getCollection("notes")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Layout title="Archives">
+  <section>
+    <h1>Archives</h1>
+  </section>
+
+  <section>
+    {
+      notes.map((post) => (
+        <NoteItem
+          slug={post.slug}
+          title={post.data.title}
+          date={post.data.date}
+        />
+      ))
+    }
+  </section>
+</Layout>
+
+<style>
+  section h1 {
+    margin-bottom: var(--space-xs);
+  }
+</style>

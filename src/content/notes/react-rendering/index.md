@@ -1,0 +1,128 @@
+---
+title: "React Rendering"
+date: "2023-08-05"
+---
+
+React is a library for building user interfaces. It was created with the intent of making the process of updating the DOM as simple and predictable as possible. In fact, you can sum up the entire purpose of React with the formula: `ui = function(state)`.
+
+> Rendering is the process that React uses to call a function or component with the intent of updating the UI.
+
+The rendering process involves two steps:
+
+1. React creates a snapshot of a component by capturing everything it needs to update the user interface at that particular time. This includes `props`, `state`, `event handlers`, and a `description of the UI` (based on the props and state);
+2. React takes that `description of the UI` and uses it to update the UI.
+
+To get the initial UI of the application, React performs an initial rendering, starting at the root of the application.
+
+```js
+import { createRoot } from "react-dom/client";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(<App />);
+```
+
+Once the initial render is complete, React needs to be able to render the UI again whenever the state of a component changes. To do this, it is necessary to look at the snapshot again.
+
+React examines the event handler and sees if it contains an invocation of the `useState` updater function. It then compares the new state with the state in the snapshot. If the state is different, the component is rendered again, creating a new snapshot and updating the UI.
+
+This process can be seen in action with the following example:
+
+```js
+import * as React from "react";
+
+export default function App() {
+  const [index, setIndex] = React.useState(0);
+
+  const greetings = ["Hello", "Ciao"];
+
+  const handleClick = () => {
+    const nextIndex = index === greetings.length - 1 ? 0 : index + 1;
+
+    setIndex(nextIndex);
+    alert(greetings[index]);
+  };
+
+  return <button onClick={handleClick}>{greetings[index]}</button>;
+}
+```
+
+Each time the button is clicked, the `handleClick` event handler function is executed. It has access to the props and state as they were at the time the snapshot was created. Therefore, when you alert `greetings[index]`, you get the value of the first item in the array, which is `Hello`.
+
+Meanwhile, the `index` state within the `handleClick` function will be the same as the state in the most recent snapshot. Then, React sees that there is a call to `setIndex` and that the value passed to it is different from the state in the snapshot. This triggers a re-render of the component, creating a new snapshot with the value of `index` as `1` and updating the view with the new value of `greetings[index]`, which is `Ciao`.
+
+Now let's click the button again. You will notice that because the previous click on the button triggered a re-render and created a new snapshot with the value of `index` as `1`, the `handleClick` function will alert `Ciao` and the value displayed on the button will be `Hello`.
+
+## Batching state updates
+
+React does not immediately update the state when an updater function is called. Instead, it creates a queue of state changes (`batching`) and then re-renders the component only after taking into account all the updater functions that were called during the event handler. Even if the event handler contains updates for multiple pieces of state, React re-renders only once per event handler.
+
+```js
+import * as React from "react";
+
+export default function Counter() {
+  const [count, setCount] = React.useState(0);
+
+  const handleClick = () => {
+    console.count("click");
+
+    setCount(count + 1);
+    setCount(count + 1);
+    setCount(count + 1);
+  };
+
+  return <button onClick={handleClick}>{count}</button>;
+}
+```
+
+React will keep track of each of the multiple invocations of the same updater function (`setCount`), but only the result of the last invocation will be used as the new state. Thus, in this example, React will only re-render once per click and not three times.
+
+> Note that if you really want to use the value of the previous invocation of the updater function, instead of replacing it, you can pass the updater function a function itself that will take the value of the most recent invocation as an argument.
+
+```js
+const handleClick = () => {
+  setCount(1);
+  setCount(2);
+  setCount((c) => c + 3);
+};
+```
+
+React ignores the previous value of `c` unless you use it explicitly. In this example, `c` will be `2`, since it is the value passed to the last invocation of `setCount` before the callback function is executed. Therefore, the final state will be `2 + 3`, or `5`.
+
+## React.memo()
+
+The default behavior of React is to re-render a component whenever its state changes. This means that if a component has a child component, the child component will also be re-rendered whenever the state of the parent component changes, even if the child component does not use the state of the parent component as props.
+
+However, if you have an expensive component and you want it to not have this default behavior and only re-render when its props change, you can use the higher-order component `React.memo`.
+
+This is a function that takes a React component as an argument and returns a new component that will only re-render if its props change.
+
+```js
+function MapComponent() {}
+
+export default React.memo(MapComponent);
+```
+
+The above example shows how to use `React.memo` to wrap a component so that it is rendered only once, at the time of initial rendering.
+
+## StrictMode in React
+
+`StrictMode` is useful for highlighting potential problems in an application, like the use of deprecated APIs. It does this by making your component re-render once more.
+
+```js
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+```
+
+It can be enabled by wrapping the application in a `StrictMode` higher-order component.

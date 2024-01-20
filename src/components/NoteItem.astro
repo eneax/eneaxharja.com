@@ -1,0 +1,40 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+interface Props {
+  slug: string;
+  title: string;
+  date: Date;
+}
+
+const { slug, title, date } = Astro.props;
+---
+
+<a href={slug}>
+  <span>{title}</span>
+  <small>
+    <FormattedDate date={date} />
+  </small>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--border-radius);
+    padding: var(--space-xs) 0;
+    margin-bottom: 0;
+    color: var(--color-yellow-light);
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  span {
+    font-size: var(--step-0);
+  }
+</style>

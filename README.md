@@ -11,10 +11,10 @@ npm i
 npm run dev
 ```
 
-## 🎓 Learning Next.js
+## 🎓 Want to learn more?
 
-Looking for more guidance? Full documentation available on the official [Next.js website](https://nextjs.org).
+Feel free to check [the documentation](https://docs.astro.build).
 
 ## 💫 Deploy
 
-This project is deployed to _[Vercel](https://vercel.com)_.
+This project is deployed to [Vercel](https://vercel.com).
