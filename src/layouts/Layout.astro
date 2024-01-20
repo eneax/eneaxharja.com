@@ -16,6 +16,7 @@ const metaData = {
   siteName: "Enea Xharja",
   description:
     "Welcome to my own little corner of the web, where I share my personal collection of notes, code snippets, and resources on topics that interest me.",
+  author: "Enea Xharja",
   type: "website",
   keywords: "HTML, CSS, JavaScript, Astro",
   imageType: "image/svg+xml",
@@ -23,7 +24,7 @@ const metaData = {
   imageHeight: "882",
 };
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.url.origin);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL("/og-image.svg", Astro.url);
 ---
 
@@ -35,7 +36,8 @@ const socialImageURL = new URL("/og-image.svg", Astro.url);
     <meta name="generator" content={Astro.generator} />
     <meta name="keywords" content={metaData.keywords} />
     <meta name="description" content={metaData.description} />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="author" content={metaData.author} />
+    <link rel="icon" href="/favicon.png" />
     <link rel="canonical" href={canonicalURL} />
     <title>{title} | Enea Xharja</title>
     <meta property="og:url" content={canonicalURL} />
@@ -48,6 +50,24 @@ const socialImageURL = new URL("/og-image.svg", Astro.url);
     <meta property="og:image:alt" content={title} />
     <meta property="og:image:width" content={metaData.imageWidth} />
     <meta property="og:image:height" content={metaData.imageHeight} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@eneaxharja" />
+    <meta name="twitter:creator" content="@eneaxharja" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaData.description} />
+    <meta name="twitter:image" content={socialImageURL} />
+    <link
+      rel="preload"
+      href="/fonts/atkinson-400.woff"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/atkinson-700.woff"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <Header />
