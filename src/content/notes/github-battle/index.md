@@ -3,7 +3,7 @@ title: "React App - GitHub Battle"
 date: "2022-05-21"
 ---
 
-![GitHub Battle project](./1.png)
+![GitHub Battle project](1.png)
 _GitHub Battle project_
 
 React app built using [React](https://reactjs.org), [Webpack](https://webpack.js.org), [Babel](https://babeljs.io), and [Netlify](https://www.netlify.com).

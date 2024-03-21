@@ -5,7 +5,7 @@ date: "2023-06-25"
 
 A full stack application built with [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), [NextAuth](https://next-auth.js.org), [Prisma](https://www.prisma.io), [MongoDB](https://www.mongodb.com/atlas/database) and deployed on [Vercel](https://vercel.com/home).
 
-![Home Rentals - Next.js full stack application](./1.png)
+![Home Rentals - Next.js full stack application](1.png)
 _Home Rentals - Next.js full stack application_
 
 ## Environment Variables

@@ -3,7 +3,7 @@ title: "CheckList"
 date: "2018-02-09T22:10:06.284Z"
 ---
 
-![CheckList project](./1.png)
+![CheckList project](1.png)
 _CheckList project_
 
 A basic checklist built with CSS and Javascript.

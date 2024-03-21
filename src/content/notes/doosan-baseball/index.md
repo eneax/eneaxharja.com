@@ -3,7 +3,7 @@ title: "Doosan Baseball"
 date: "2018-02-09T22:10:04.284Z"
 ---
 
-![Doosan Baseball project](./1.png)
+![Doosan Baseball project](1.png)
 _Doosan Baseball project_
 
 Doosan is the global leader in the Infrastructure Support Business and also partner of Major League Baseball.

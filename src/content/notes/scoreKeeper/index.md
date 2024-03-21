@@ -3,7 +3,7 @@ title: "scoreKeeper"
 date: "2018-02-09T22:10:08.284Z"
 ---
 
-![scoreKeeper project](./1.png)
+![scoreKeeper project](1.png)
 _scoreKeeper project_
 
 Clean and Minimal Score Keeping App.
