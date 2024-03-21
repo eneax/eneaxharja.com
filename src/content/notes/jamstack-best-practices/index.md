@@ -76,7 +76,7 @@ Basically, when a deploy goes live, it really goes live!
 
 Here is an ideal Jamstack workflow following all the best practices described above.
 
-![Jamstack workflow](./1.png)
+![Jamstack workflow](1.png)
 _Jamstack workflow_
 
 ## Conclusion

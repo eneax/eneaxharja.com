@@ -3,7 +3,7 @@ title: "Pig (dice game)"
 date: "2018-02-09T22:10:10.284Z"
 ---
 
-![Pig Game](./1.png)
+![Pig Game](1.png)
 _Pig Game_
 
 The dice game Pig is considered a "jeopardy game", where you risk all your points to see if you can win more. The numbers on the die, except for "1", represent points that the player can accumulate.

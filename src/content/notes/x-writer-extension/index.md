@@ -5,7 +5,7 @@ date: "2022-12-18"
 
 X-Writer Extension is a Chrome extension that takes some text as input and generates a full post or article for you.
 
-![AI writing assistant Chrome extension built with GPT-3 and OpenAI](./1.png)
+![AI writing assistant Chrome extension built with GPT-3 and OpenAI](1.png)
 _AI writing assistant Chrome extension built with GPT-3 and OpenAI_
 
 ## Installation

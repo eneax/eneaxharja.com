@@ -3,7 +3,7 @@ title: "confettiDJ"
 date: "2018-02-09T22:10:18.284Z"
 ---
 
-![confettiDJ project](./1.png)
+![confettiDJ project](1.png)
 _confettiDJ project_
 
 confettiDJ is an animation and sound game, created using Paper.js, howler.js and the sounds from the open source project Neuronal Synchrony.

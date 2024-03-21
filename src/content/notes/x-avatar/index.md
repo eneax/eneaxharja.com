@@ -5,7 +5,7 @@ date: "2023-01-21"
 
 X-Avatar is your own AI avatar generator that uses Stable Diffusion to generate avatars based on your input.
 
-![AI avatar generator built with Stable Diffusion](./1.png)
+![AI avatar generator built with Stable Diffusion](1.png)
 _AI avatar generator built with Stable Diffusion_
 
 ## Features

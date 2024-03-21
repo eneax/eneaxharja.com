@@ -5,7 +5,7 @@ date: "2022-12-17"
 
 X-Writer is your own AI writing assistant that takes a title as input and generates a full blog post for you.
 
-![AI writing assistant built with GPT-3 and OpenAI](./1.png)
+![AI writing assistant built with GPT-3 and OpenAI](1.png)
 _AI writing assistant built with GPT-3 and OpenAI_
 
 ## Features

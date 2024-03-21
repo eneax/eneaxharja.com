@@ -3,7 +3,7 @@ title: "Thriving Cities"
 date: "2018-05-30"
 ---
 
-![thriving cities project](./1.png)
+![thriving cities project](1.png)
 _thriving cities project_
 
 This project represents a responsive single page company website built with React and Bootstrap.

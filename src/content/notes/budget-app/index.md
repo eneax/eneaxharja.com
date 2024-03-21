@@ -3,7 +3,7 @@ title: "Budget App"
 date: "2018-02-12T22:10:20.284Z"
 ---
 
-![budget app project](./1.png)
+![budget app project](1.png)
 _budget app project_
 
 Responsive Budget App built with Bootstrap 4 and Javascript.

@@ -3,7 +3,7 @@ title: "blog project"
 date: "2022-09-13"
 ---
 
-![A starter blog built with Gatsby](./1.png)
+![A starter blog built with Gatsby](1.png)
 _A starter blog built with Gatsby_
 
 ## Features

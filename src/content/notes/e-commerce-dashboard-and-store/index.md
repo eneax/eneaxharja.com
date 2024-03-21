@@ -5,7 +5,7 @@ date: "2023-08-22"
 
 The e-commerce dashboard is a full stack application built using [Next.js](https://nextjs.org) with [React Server Components](https://vercel.com/blog/understanding-react-server-components), [Tailwind CSS](https://tailwindcss.com), [shadcn/ui](https://ui.shadcn.com), [Clerk](https://clerk.com), [Prisma](https://www.prisma.io), [PlanetScale](https://planetscale.com), [Cloudinary](https://cloudinary.com) and [Stripe](https://stripe.com).
 
-![E-commerce Admin Dashboard built with Next.js](./1.png)
+![E-commerce Admin Dashboard built with Next.js](1.png)
 _E-commerce Admin Dashboard built with Next.js_
 
 ## Environment Variables
@@ -53,7 +53,7 @@ The code for the dashboard project is available on the [ecommerce-dashboard](htt
 
 The e-commerce store is a full stack application built using [Next.js](https://nextjs.org) with [React Server Components](https://vercel.com/blog/understanding-react-server-components) and [Tailwind CSS](https://tailwindcss.com).
 
-![E-commerce Store built with Next.js](./2.png)
+![E-commerce Store built with Next.js](2.png)
 _E-commerce Store built with Next.js_
 
 To run this project locally, you must first run the [ecommerce-dashboard](https://github.com/eneax/ecommerce-dashboard) project.
