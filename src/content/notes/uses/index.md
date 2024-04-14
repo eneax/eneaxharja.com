@@ -1,6 +1,6 @@
 ---
 title: "Uses"
-date: "2023-07-15"
+date: "2024-03-17"
 ---
 
 A curated list of my favorite tools and software.
@@ -14,7 +14,7 @@ A curated list of my favorite tools and software.
 - [Safari](https://www.apple.com/safari) as daily browser
 - [Brave](https://brave.com) when I need to test something on Chromium
 - [Visual Studio Code](https://code.visualstudio.com)
-- [Hyper.js](https://hyper.is) with "[Oh My ZSH!](https://ohmyz.sh)"
+- [Terminal (macOS)](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) with "[Oh My ZSH!](https://ohmyz.sh)"
 - You can see my config files over at my [Dot Files](https://github.com/eneax/dotfiles) repo
 
 ## Chromium Extensions
