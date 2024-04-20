@@ -11,6 +11,10 @@ npm i
 npm run dev
 ```
 
+## 🤝 Contributing
+
+Did you find a typo? Please feel free to open an issue or submit a pull request.
+
 ## 🎓 Want to learn more?
 
 Feel free to check [the documentation](https://docs.astro.build).
