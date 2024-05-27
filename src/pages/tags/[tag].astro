@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import NoteItem from "../../components/NoteItem.astro";
+
+export async function getStaticPaths() {
+  const allNotes = (await getCollection("notes")).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+  const uniqueTags = [
+    ...new Set(allNotes.map((note) => note.data.tags).flat()),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredNotes = allNotes.filter((note) =>
+      note.data.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { notes: filteredNotes },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { notes } = Astro.props;
+
+const title = `"${tag}" tag`;
+const notesNumber = notes.length;
+const description = `${notesNumber} ${notesNumber > 1 ? "notes" : "note"} tagged "${tag}"`;
+---
+
+<Layout title={title}>
+  <section>
+    <h1>{description}</h1>
+  </section>
+
+  <section>
+    {
+      notes.map((note) => (
+        <NoteItem
+          slug={`/${note.slug}`}
+          title={note.data.title}
+          date={note.data.date}
+        />
+      ))
+    }
+
+    <a href="/tags" class="btn">Browse all tags</a>
+  </section>
+</Layout>
+
+<style>
+  section h1 {
+    margin-bottom: var(--space-xs);
+  }
+
+  section a.btn {
+    display: block;
+    margin-top: var(--space-xs);
+  }
+</style>

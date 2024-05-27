@@ -7,6 +7,7 @@ const notes = defineCollection({
     title: z.string(),
     // Transform string to Date object
     date: z.coerce.date(),
+    tags: z.array(z.string()),
   }),
 });
 

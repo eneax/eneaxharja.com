@@ -137,6 +137,10 @@ small {
   border: 1px solid var(--color-grey);
   padding: var(--space-xs);
   border-radius: var(--border-radius);
+
+  &:hover {
+    border: 1px solid var(--color-yellow-light);
+  }
 }
 
 p:has(> img) {
@@ -155,4 +159,15 @@ p > img {
 p > em {
   color: var(--color-grey-dark);
   font-size: var(--step-0);
+}
+
+.tags {
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-m);
+}
+
+.tag-item {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  text-transform: uppercase;
 }

@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+
+const notes = (await getCollection("notes")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+const tags = [...new Set(notes.map((post) => post.data.tags).flat())].sort(
+  (a, b) => a.localeCompare(b)
+);
+---
+
+<Layout title="Tags">
+  <section>
+    <h1>Tags</h1>
+  </section>
+
+  <section class="tags">
+    {
+      tags.map((tag) => (
+        <a class="tag-item btn" href={`/tags/${tag}`}>
+          {tag}
+        </a>
+      ))
+    }
+  </section>
+</Layout>
+
+<style>
+  section h1 {
+    margin-bottom: var(--space-xs);
+  }
+</style>
