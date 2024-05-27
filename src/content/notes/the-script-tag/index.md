@@ -1,6 +1,7 @@
 ---
 title: "The script tag"
 date: "2020-02-01"
+tags: ["javascript"]
 ---
 
 A JavaScript program needs a working environment to run.

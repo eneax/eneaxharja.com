@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useMemo and useCallback"
 date: "2023-10-15"
+tags: ["react"]
 ---
 
 Whenever the state of your application changes, React re-renders the component that owns that piece of state and all of its child components, regardless of whether they accept props or not.

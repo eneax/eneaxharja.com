@@ -1,6 +1,7 @@
 ---
 title: "Apple previews innovative accessibility features"
 date: "2022-05-18"
+tags: ["apple"]
 ---
 
 Apple previewed innovative software features that introduce new ways for users with disabilities to navigate the world.

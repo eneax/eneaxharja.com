@@ -1,6 +1,7 @@
 ---
 title: "Educated"
 date: "2018-07-20"
+tags: ["books"]
 ---
 
 Tara Westover's story is the perfect example of what education is and what it offers: the perspective to see one's life through new eyes and the will to change it.

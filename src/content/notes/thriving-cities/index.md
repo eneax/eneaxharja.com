@@ -1,6 +1,7 @@
 ---
 title: "Thriving Cities"
 date: "2018-05-30"
+tags: ["projects"]
 ---
 
 ![thriving cities project](1.png)

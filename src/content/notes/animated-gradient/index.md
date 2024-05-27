@@ -1,6 +1,7 @@
 ---
 title: "Animated Gradient"
 date: "2021-02-07"
+tags: ["css"]
 ---
 
 Animate your gradient color with CSS.

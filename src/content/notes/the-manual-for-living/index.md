@@ -1,6 +1,7 @@
 ---
 title: "The Manual For Living"
 date: "2020-02-24"
+tags: ["books"]
 ---
 
 Epictetus' Manual for Living is a short manual of stoic ethical advice on how to live a full life.

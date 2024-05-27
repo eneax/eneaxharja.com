@@ -1,6 +1,7 @@
 ---
 title: "Uses"
 date: "2024-03-17"
+tags: ["tools"]
 ---
 
 A curated list of my favorite tools and software.

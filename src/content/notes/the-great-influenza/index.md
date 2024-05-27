@@ -1,6 +1,7 @@
 ---
 title: "The Great Influenza"
 date: "2020-10-10"
+tags: ["books"]
 ---
 
 1918 marked the first collision between science and epidemic disease. John Barry describes how the deadliest flu virus in history broke out in an army camp in Kansas, moved east with American troops, and then exploded, killing up to 100 million people worldwide.

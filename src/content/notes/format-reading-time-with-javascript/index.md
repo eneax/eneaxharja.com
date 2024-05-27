@@ -1,6 +1,7 @@
 ---
 title: "Format Reading Time with JavaScript"
 date: "2020-07-04"
+tags: ["javascript"]
 ---
 
 Reading time is a pretty common functionality in blogs.

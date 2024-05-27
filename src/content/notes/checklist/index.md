@@ -1,6 +1,7 @@
 ---
 title: "CheckList"
 date: "2018-02-09T22:10:06.284Z"
+tags: ["projects"]
 ---
 
 ![CheckList project](1.png)

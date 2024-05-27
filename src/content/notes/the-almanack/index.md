@@ -1,6 +1,7 @@
 ---
 title: "The Almanack of Naval Ravikant"
 date: "2022-08-27"
+tags: ["books"]
 ---
 
 The Almanack is a collection of Naval's wisdom and experience from the last decade, curated by Eric Jorgenson and shared as a compilation of his most insightful interviews and reflections.

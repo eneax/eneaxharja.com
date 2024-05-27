@@ -1,6 +1,7 @@
 ---
 title: "Animal Farm"
 date: "2019-06-01"
+tags: ["books"]
 ---
 
 George Orwell's allegorical novel describes a scathing satire of an oppressed society's blind march toward totalitarianism.

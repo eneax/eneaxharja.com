@@ -1,6 +1,7 @@
 ---
 title: "Hit Refresh"
 date: "2023-10-31"
+tags: ["books"]
 ---
 
 Satya Nadella tells the inside story of Microsoft's transformation, tracing his personal journey from childhood in India to leading some of the most significant technological changes of the digital age.

@@ -1,6 +1,7 @@
 ---
 title: "So You've Been Publicly Shamed"
 date: "2018-11-11"
+tags: ["books"]
 ---
 
 Jon Ronson focuses of one of our world's most underappreciated forces: shame.

@@ -1,6 +1,7 @@
 ---
 title: "Lord of the Flies"
 date: "2018-06-10"
+tags: ["books"]
 ---
 
 William Golding's Lord of the Flies is perhaps our most memorable novel about “the end of innocence, the darkness of man's heart”.

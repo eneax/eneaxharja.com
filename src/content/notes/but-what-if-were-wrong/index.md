@@ -1,6 +1,7 @@
 ---
 title: "But What If We're Wrong?"
 date: "2020-11-29"
+tags: ["books"]
 ---
 
 Chuck Klosterman visualizes our contemporary world as it will appear to those who will perceive it as the distant past.

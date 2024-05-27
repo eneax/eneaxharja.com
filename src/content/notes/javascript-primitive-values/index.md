@@ -1,6 +1,7 @@
 ---
 title: "Primitive Values in JavaScript"
 date: "2023-03-27"
+tags: ["javascript"]
 ---
 
 JavaScript has seven primitive values: `undefined`, `null`, `boolean`, `number`, `bigint`, `string` and `symbol`. Knowing how to distinguish between them is critical to understanding equality in JavaScript.

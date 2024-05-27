@@ -1,6 +1,7 @@
 ---
 title: "Mindset"
 date: "2021-10-07"
+tags: ["books"]
 ---
 
 After decades of research and experiments, Carol S. Dweck shows how our genes influence our intelligence and talents, but these qualities are not fixed at birth. We can improve our mindset through deliberate practice and perseverance.

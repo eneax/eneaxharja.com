@@ -1,6 +1,7 @@
 ---
 title: "The Martian"
 date: "2019-05-18"
+tags: ["books"]
 ---
 
 Andy Weir novel tells the story astronaut Mark Watney, one of the first people to walk on Mars.

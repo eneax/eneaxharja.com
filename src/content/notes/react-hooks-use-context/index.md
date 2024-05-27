@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useContext"
 date: "2023-09-13"
+tags: ["react"]
 ---
 
 In React, you encapsulate UI and state inside of components and compose them together to create an application. Whenever you have state that multiple components depend on, you use callback functions to pass that state up to the nearest parent component and then pass it down via props.

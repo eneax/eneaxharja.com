@@ -1,6 +1,7 @@
 ---
 title: "Interesting AI & ML projects"
 date: "2023-01-08"
+tags: ["ai"]
 ---
 
 A curated list of some of the most exciting AI & ML projects out there.

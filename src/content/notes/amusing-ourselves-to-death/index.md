@@ -1,6 +1,7 @@
 ---
 title: "Amusing Ourselves to Death"
 date: "2020-09-20"
+tags: ["books"]
 ---
 
 Neil Postman beautifully describes what happens when politics, journalism, education, and even religion become subject to the demands of entertainment.

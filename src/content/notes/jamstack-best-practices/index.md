@@ -1,6 +1,7 @@
 ---
 title: "Jamstack Best Practices"
 date: "2019-09-08T22:12:03.284Z"
+tags: ["jamstack"]
 ---
 
 For years, developers have spent huge amount of time and resources in order to launch a website or a web app and deploy complex server environments.

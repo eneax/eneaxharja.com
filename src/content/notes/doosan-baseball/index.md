@@ -1,6 +1,7 @@
 ---
 title: "Doosan Baseball"
 date: "2018-02-09T22:10:04.284Z"
+tags: ["projects"]
 ---
 
 ![Doosan Baseball project](1.png)

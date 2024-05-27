@@ -1,6 +1,7 @@
 ---
 title: "The Dark Forest"
 date: "2022-03-15"
+tags: ["books"]
 ---
 
 In The Dark Forest, Earth is shaken by the revelation of an alien invasion - expected to happen four centuries in the future.

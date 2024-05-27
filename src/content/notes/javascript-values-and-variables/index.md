@@ -1,6 +1,7 @@
 ---
 title: "Values and Variables in JavaScript"
 date: "2023-03-17"
+tags: ["javascript"]
 ---
 
 ## Primitive Values Are Immutable

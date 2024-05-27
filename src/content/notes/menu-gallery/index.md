@@ -1,6 +1,7 @@
 ---
 title: "Menu Gallery"
 date: "2018-02-09T22:10:01.284Z"
+tags: ["projects"]
 ---
 
 ![Menu Gallery project](1.png)

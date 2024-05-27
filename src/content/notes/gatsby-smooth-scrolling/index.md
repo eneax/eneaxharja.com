@@ -1,6 +1,7 @@
 ---
 title: "Smooth Scrolling in Gatsby"
 date: "2021-01-29"
+tags: ["gatsby"]
 ---
 
 The following guide describes how to implement smooth scrolling in Gatsby using the [smooth-scroll](https://www.npmjs.com/package/smooth-scroll) package.

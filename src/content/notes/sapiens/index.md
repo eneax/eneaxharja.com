@@ -1,6 +1,7 @@
 ---
 title: "Sapiens"
 date: "2019-11-05"
+tags: ["books"]
 ---
 
 Yuval Noah Harari traverses the entire human history, from the six human species that inhabited the earth to the only one today. Us. Homo sapiens.

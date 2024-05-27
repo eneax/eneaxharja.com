@@ -1,6 +1,7 @@
 ---
 title: "Mutation in JavaScript"
 date: "2023-05-07"
+tags: ["javascript"]
 ---
 
 The word mutation is used when you want to indicate that you are changing the properties of an object and you are very intentional about it (mutation = change).

@@ -1,6 +1,7 @@
 ---
 title: "Bad Blood"
 date: "2020-05-25"
+tags: ["books"]
 ---
 
 John Carreyrou tells the story of the rise and collapse of Theranos, the multibillion-dollar biotech startup founded by Elizabeth Holmes.

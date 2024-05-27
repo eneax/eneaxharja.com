@@ -1,6 +1,7 @@
 ---
 title: "The Ride Of A Lifetime"
 date: "2021-07-18"
+tags: ["books"]
 ---
 
 Robert Iger became CEO of The Walt Disney Company in 2005, during a difficult time.

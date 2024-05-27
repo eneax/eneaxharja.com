@@ -1,6 +1,7 @@
 ---
 title: "The Hard Thing About Hard Things"
 date: "2022-06-14"
+tags: ["books"]
 ---
 
 While many people talk about how great it is to start a business, Ben Horowitz (co-founder of a16z) offers advice on how to build and run a startup during difficult times.

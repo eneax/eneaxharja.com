@@ -1,6 +1,7 @@
 ---
 title: "React Events"
 date: "2023-07-20"
+tags: ["react"]
 ---
 
 Event handling is a necessary process for any interactive application, and in React it involves dealing with props and functions.

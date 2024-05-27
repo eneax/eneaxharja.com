@@ -1,6 +1,7 @@
 ---
 title: "The Future We Choose"
 date: "2023-05-18"
+tags: ["books"]
 ---
 
 Christiana Figueres and Tom Rivett-Carnac's book is a compelling and urgent call to action on climate change, highlighting the existential threat it poses. They present two possible futures: one with dire consequences due to inaction and another in which collective action can lead to a sustainable future.

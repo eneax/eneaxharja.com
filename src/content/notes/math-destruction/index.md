@@ -1,6 +1,7 @@
 ---
 title: "Weapons of Math Destruction"
 date: "2018-12-14"
+tags: ["books"]
 ---
 
 The mathematician and data scientist Cathy O'Neil reveals how the mathematical models being used today are unregulated and uncontestable, even when they're wrong.

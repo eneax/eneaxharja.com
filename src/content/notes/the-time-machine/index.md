@@ -1,6 +1,7 @@
 ---
 title: "The Time Machine"
 date: "2023-01-03"
+tags: ["books"]
 ---
 
 The Time Machine is a science fiction novel by H. G. Wells, published in 1895. It is considered one of the first stories to detail the concept of time travel in the science fiction genre and has had a significant impact in literature and popular culture.

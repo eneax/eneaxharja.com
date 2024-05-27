@@ -1,6 +1,7 @@
 ---
 title: "Pig (dice game)"
 date: "2018-02-09T22:10:10.284Z"
+tags: ["projects"]
 ---
 
 ![Pig Game](1.png)

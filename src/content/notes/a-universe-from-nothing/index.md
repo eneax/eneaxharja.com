@@ -1,6 +1,7 @@
 ---
 title: "A Universe from Nothing"
 date: "2019-03-01"
+tags: ["books"]
 ---
 
 Lawrence Krauss elaborates on deep philosophical questions: “Where did the universe come from? What was there before it? What will the future bring? And finally, why is there something rather than nothing?”

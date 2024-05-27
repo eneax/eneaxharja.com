@@ -1,6 +1,7 @@
 ---
 title: "Leonardo Da Vinci"
 date: "2021-01-28"
+tags: ["books"]
 ---
 
 Walter Isaacson shows how Leonardo's "genius" was built on skills that anyone can develop, such as curiosity, careful observation and a powerful imagination.

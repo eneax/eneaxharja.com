@@ -1,6 +1,7 @@
 ---
 title: "Range"
 date: "2021-02-14"
+tags: ["books"]
 ---
 
 David Epstein makes an interesting argument for how to succeed in any field by developing broad interests and skills, instead of following the crowd around you and rushing to specialize.

@@ -1,6 +1,7 @@
 ---
 title: "The Alchemist"
 date: "2018-12-20"
+tags: ["books"]
 ---
 
 Paulo Coelho's masterpiece tells the story of Santiago, an Andalusian shepherd boy who travels in search of a world treasure. His search will lead him to riches very different from those he had imagined.

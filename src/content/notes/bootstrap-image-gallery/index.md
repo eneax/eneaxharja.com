@@ -1,6 +1,7 @@
 ---
 title: "Bootstrap Image Gallery"
 date: "2018-02-09T22:10:05.284Z"
+tags: ["projects"]
 ---
 
 ![Bootstrap Image Gallery project](1.png)

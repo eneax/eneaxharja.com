@@ -1,6 +1,7 @@
 ---
 title: "The Shallows"
 date: "2021-07-25"
+tags: ["books"]
 ---
 
 Nicholas Carr describes how human thought has been shaped through the centuries by different technologies, from the alphabet to maps, to the printing press, the clock, and the computer.

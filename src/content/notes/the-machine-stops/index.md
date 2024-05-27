@@ -1,6 +1,7 @@
 ---
 title: "The Machine Stops"
 date: "2019-09-05"
+tags: ["books"]
 ---
 
 The Machine Stops (Nov 1909) is a science fiction short story, where Forster predicts new technologies such as instant messaging and the internet.

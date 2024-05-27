@@ -1,6 +1,7 @@
 ---
 title: "React Rendering"
 date: "2023-08-05"
+tags: ["react"]
 ---
 
 React is a library for building user interfaces. It was created with the intent of making the process of updating the DOM as simple and predictable as possible. In fact, you can sum up the entire purpose of React with the formula: `ui = function(state)`.

@@ -1,6 +1,7 @@
 ---
 title: "confettiDJ"
 date: "2018-02-09T22:10:18.284Z"
+tags: ["projects"]
 ---
 
 ![confettiDJ project](1.png)

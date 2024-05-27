@@ -1,6 +1,7 @@
 ---
 title: "Values in JavaScript"
 date: "2023-03-04"
+tags: ["javascript"]
 ---
 
 The most fundamental concept in JavaScript is the value. The JavaScript universe contains several values, and when I write code, I refer to these values and interact with them. However, they do not exist inside my code.

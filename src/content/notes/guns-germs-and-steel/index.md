@@ -1,6 +1,7 @@
 ---
 title: "Guns, Germs, and Steel"
 date: "2019-01-20"
+tags: ["books"]
 ---
 
 Jared Diamond wonderfully describes how societies, which initially had an advantage in food production, were able to advance beyond the hunter-gatherer stage, and then developed writing, technology, government, and organized religion and ventured by sea and land to conquer and decimate the pre-literate cultures.

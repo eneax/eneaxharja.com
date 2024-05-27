@@ -1,6 +1,7 @@
 ---
 title: "Cloud Atlas"
 date: "2020-11-08"
+tags: ["books"]
 ---
 
 David Mitchell explores in brilliantly original fiction the fundamental questions of reality and identity.

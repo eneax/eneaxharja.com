@@ -1,6 +1,7 @@
 ---
 title: "Remove Line Breaks with Javascript"
 date: "2020-03-23"
+tags: ["javascript"]
 ---
 
 This hot tip is all about using plain JavaScript code to remove line breaks from a string.

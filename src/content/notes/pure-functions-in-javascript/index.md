@@ -1,6 +1,7 @@
 ---
 title: "Pure Functions in JavaScript"
 date: "2021-05-17"
+tags: ["javascript"]
 ---
 
 Pure functions are essential to understanding functional programming and writing clean code.

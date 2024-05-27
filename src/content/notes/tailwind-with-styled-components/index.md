@@ -1,6 +1,7 @@
 ---
 title: "How to use Tailwind CSS with styled-components"
 date: "2020-10-23T22:12:03.284Z"
+tags: ["css"]
 ---
 
 Tailwind is a utility-first CSS framework for building custom designs. It's highly customizable and provides you all the necessary building blocks you need to build a design.

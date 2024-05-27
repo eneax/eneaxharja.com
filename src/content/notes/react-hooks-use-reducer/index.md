@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useReducer"
 date: "2023-10-01"
+tags: ["react"]
 ---
 
 The hook `useReducer` is a great tool for managing state in React applications. It is based on the reducer pattern, which is a functional programming pattern that takes a collection as input and returns a single value as output. The way you get to this single value is by invoking a reducer function for each element in the collection.

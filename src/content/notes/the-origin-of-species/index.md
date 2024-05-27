@@ -1,6 +1,7 @@
 ---
 title: "The Origin Of Species"
 date: "2018-06-20"
+tags: ["books"]
 ---
 
 Charles Darwin's classic that revolutionized the course of science and the way we see the world.

@@ -1,6 +1,7 @@
 ---
 title: "The Ministry for the Future"
 date: "2024-04-20"
+tags: ["books"]
 ---
 
 The book is both a warning and a call to action, in which the author, Kim Stanley Robinson, tells the story of how climate change will affect us all.

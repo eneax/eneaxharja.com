@@ -1,6 +1,7 @@
 ---
 title: "Add Tags & Categories to Gatsby MDX blog"
 date: "2020-09-10"
+tags: ["gatsby"]
 ---
 
 Tags and categories are an important section of a website, since they provide an easy way for visitors to browse content on your platform.

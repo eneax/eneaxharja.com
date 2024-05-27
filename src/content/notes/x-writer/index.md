@@ -1,6 +1,7 @@
 ---
 title: "X-Writer"
 date: "2022-12-17"
+tags: ["projects"]
 ---
 
 X-Writer is your own AI writing assistant that takes a title as input and generates a full blog post for you.

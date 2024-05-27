@@ -1,6 +1,7 @@
 ---
 title: "Border Gradient"
 date: "2021-02-08"
+tags: ["css"]
 ---
 
 Wrap your text with an animated border.

@@ -1,6 +1,7 @@
 ---
 title: "Portfolio Website"
 date: "2020-08-28T22:10:19.284Z"
+tags: ["projects"]
 ---
 
 ![krix-portfolio project](1.png)

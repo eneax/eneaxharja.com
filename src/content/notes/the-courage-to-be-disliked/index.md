@@ -1,6 +1,7 @@
 ---
 title: "The Courage to be Disliked"
 date: "2023-11-25"
+tags: ["books"]
 ---
 
 Using the theories of Alfred Adler, authors Ichiro Kishimi and Fumitake Koga explain how we can develop the courage to change by freeing ourselves from past experiences, doubts and the expectations of others.

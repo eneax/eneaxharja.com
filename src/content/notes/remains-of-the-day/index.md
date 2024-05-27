@@ -1,6 +1,7 @@
 ---
 title: "The Remains of the Day"
 date: "2019-08-20"
+tags: ["books"]
 ---
 
 This is Kazuo Ishiguro's portrait of Stevens, the perfect butler, and of his fading, insular world in post-World War II England.

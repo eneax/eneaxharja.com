@@ -1,6 +1,7 @@
 ---
 title: "coffee-shop"
 date: "2020-09-13T22:10:20.284Z"
+tags: ["projects"]
 ---
 
 ![coffee-shop project](1.png)

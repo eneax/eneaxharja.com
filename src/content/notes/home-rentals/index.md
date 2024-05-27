@@ -1,6 +1,7 @@
 ---
 title: "Home Rentals"
 date: "2023-06-25"
+tags: ["projects"]
 ---
 
 A full stack application built with [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), [NextAuth](https://next-auth.js.org), [Prisma](https://www.prisma.io), [MongoDB](https://www.mongodb.com/atlas/database) and deployed on [Vercel](https://vercel.com/home).

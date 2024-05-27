@@ -1,6 +1,7 @@
 ---
 title: "How to add custom JavaScript to a Gatsby site"
 date: "2020-11-15"
+tags: ["gatsby"]
 ---
 
 While working on a side project recently, I found myself in the need to add some custom JavaScript to a Gatsby site. Gatsby doesn't use an `index.html` file. Instead, it uses an `html.js` file, which is hidden by default.

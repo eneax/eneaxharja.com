@@ -1,6 +1,7 @@
 ---
 title: "Deep Work"
 date: "2019-07-21"
+tags: ["books"]
 ---
 
 Deep Work is Cal Newport's guide to anyone seeking focused success in a distracted world.

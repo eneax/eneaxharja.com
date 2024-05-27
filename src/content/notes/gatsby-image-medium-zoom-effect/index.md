@@ -1,6 +1,7 @@
 ---
 title: "Medium zoom-effect in Gatsby"
 date: "2020-09-02"
+tags: ["gatsby"]
 ---
 
 Install the [react-medium-image-zoom](https://www.npmjs.com/package/react-medium-image-zoom) package:

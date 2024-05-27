@@ -1,6 +1,7 @@
 ---
 title: "Weather App"
 date: "2018-06-08"
+tags: ["projects"]
 ---
 
 ![weather app project](1.png)

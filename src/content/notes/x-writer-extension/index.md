@@ -1,6 +1,7 @@
 ---
 title: "X-Writer Extension"
 date: "2022-12-18"
+tags: ["projects"]
 ---
 
 X-Writer Extension is a Chrome extension that takes some text as input and generates a full post or article for you.

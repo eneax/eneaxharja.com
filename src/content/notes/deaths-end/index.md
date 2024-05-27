@@ -1,6 +1,7 @@
 ---
 title: "Death's End"
 date: "2022-05-04"
+tags: ["books"]
 ---
 
 The epic Remembrance of Earth's Past trilogy concludes with Death's End.

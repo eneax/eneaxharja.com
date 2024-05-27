@@ -1,6 +1,7 @@
 ---
 title: "Visiting Central Italy"
 date: "2019-10-21"
+tags: ["photography"]
 ---
 
 A collection of photos of my travels in central Italy.

@@ -1,6 +1,7 @@
 ---
 title: "Arty"
 date: "2020-07-09"
+tags: ["projects"]
 ---
 
 ![Arty](1.png)

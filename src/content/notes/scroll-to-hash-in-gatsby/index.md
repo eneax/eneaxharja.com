@@ -1,6 +1,7 @@
 ---
 title: "Scroll to Hash in Gatsby"
 date: "2020-08-01"
+tags: ["gatsby"]
 ---
 
 The `useScrollToHash` hook uses the `location` prop from a Gatsby page to scroll to a specific element on the page. Then, it adds a hash to the URL.

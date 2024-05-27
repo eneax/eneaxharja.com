@@ -1,6 +1,7 @@
 ---
 title: "The Choice"
 date: "2020-10-17"
+tags: ["books"]
 ---
 
 The horrors of the Holocaust didn't break Edith Eger. On the contrary, they helped her learn to live again and tell her unforgettable story.

@@ -1,6 +1,7 @@
 ---
 title: "The Meditations"
 date: "2023-02-05"
+tags: ["books"]
 ---
 
 Written by the Roman emperor Marcus Aurelius, the Meditations offer a remarkable series of challenging spiritual reflections and exercises developed as the emperor struggled to understand himself and make sense of the universe.

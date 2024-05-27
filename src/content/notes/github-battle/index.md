@@ -1,6 +1,7 @@
 ---
 title: "React App - GitHub Battle"
 date: "2022-05-21"
+tags: ["projects"]
 ---
 
 ![GitHub Battle project](1.png)

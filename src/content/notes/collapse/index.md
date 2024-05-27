@@ -1,6 +1,7 @@
 ---
 title: "Collapse"
 date: "2021-06-20"
+tags: ["books"]
 ---
 
 Jared Diamond examines several traditional societies, such as Easter Island, the Anasazi, the Maya, and the Greenland Vikings, that have collapsed due to abuse of their natural resources, climate change, globalization, rapid population growth, and unwise political choices. The author then compares them to some current cases where warning signs have begun to emerge even in some of the most ecologically robust areas of the planet.

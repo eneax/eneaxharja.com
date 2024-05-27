@@ -1,6 +1,7 @@
 ---
 title: "Antifragile"
 date: "2018-08-20"
+tags: ["books"]
 ---
 
 Nassim Nicholas Taleb offers advice on how to gain from chaos while being protected from frailty and adverse events.

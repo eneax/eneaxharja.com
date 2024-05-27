@@ -1,6 +1,7 @@
 ---
 title: "Tribe: On Homecoming and Belonging"
 date: "2019-02-25"
+tags: ["books"]
 ---
 
 Sebastian Junger takes a look at post-traumatic stress disorder and the many challenges today's veterans face in modern society.

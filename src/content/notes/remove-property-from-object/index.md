@@ -1,6 +1,7 @@
 ---
 title: "Remove a property from an object"
 date: "2021-01-06"
+tags: ["javascript"]
 ---
 
 Remove a property from an object using the `rest operator` (ES6):

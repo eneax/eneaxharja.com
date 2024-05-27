@@ -1,6 +1,7 @@
 ---
 title: "I Am Malala"
 date: "2018-12-10"
+tags: ["books"]
 ---
 
 Malala Yousafzai refused to be silenced and fought for her right to an education, while the Taliban were taking control of the Swat Valley in Pakistan.

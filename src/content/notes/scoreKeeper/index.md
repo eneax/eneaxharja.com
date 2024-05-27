@@ -1,6 +1,7 @@
 ---
 title: "scoreKeeper"
 date: "2018-02-09T22:10:08.284Z"
+tags: ["projects"]
 ---
 
 ![scoreKeeper project](1.png)

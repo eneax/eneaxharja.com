@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useRef"
 date: "2023-08-31"
+tags: ["react"]
 ---
 
 React is a library for building user interfaces, where each component can manage its own state. One can summarize the entire purpose of React with the formula: `ui = function(state)`.

@@ -1,6 +1,7 @@
 ---
 title: "Sea of Tranquility"
 date: "2023-06-22"
+tags: ["books"]
 ---
 
 Written during the COVID-19 pandemic, Sea of Tranquility by Emily St. John Mandel is a science fiction novel that explores pandemics, time travel and the nature of reality.

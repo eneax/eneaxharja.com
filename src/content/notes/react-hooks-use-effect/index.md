@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useEffect"
 date: "2023-08-15"
+tags: ["react"]
 ---
 
 React is a library for building user interfaces. One can summarize the entire purpose of React with the formula: `ui = function(state)`. The function that computes the UI based on the state should be a pure function. That is, when React renders a component, it needs to be able to get a description of the UI without encountering side effects.

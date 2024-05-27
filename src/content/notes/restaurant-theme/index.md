@@ -1,6 +1,7 @@
 ---
 title: "Restaurant Theme"
 date: "2018-03-03"
+tags: ["projects"]
 ---
 
 ![restaurant-theme project](1.png)
