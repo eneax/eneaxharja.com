@@ -1,6 +1,7 @@
 ---
 title: "How Google Works"
 date: "2020-11-26"
+tags: ["books"]
 ---
 
 Eric Schmidt and Jonathan Rosenberg helped grow Google from a young start-up to a global icon, while relearning everything they knew about management.

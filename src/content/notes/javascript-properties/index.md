@@ -1,6 +1,7 @@
 ---
 title: "Properties in JavaScript"
 date: "2023-04-29"
+tags: ["javascript"]
 ---
 
 Objects are JavaScript values that can be used to group related data. You can create an object by writing `{}`:

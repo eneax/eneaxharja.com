@@ -1,6 +1,7 @@
 ---
 title: "Algorithms to Live By"
 date: "2019-09-10"
+tags: ["books"]
 ---
 
 Brian Christian and Tom Griffiths explore how the insights of computer algorithms can be applied to our daily lives to help us solve common decision-making problems.

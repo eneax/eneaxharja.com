@@ -21,7 +21,35 @@ const { Content } = await note.render();
 
 <Layout title={note.data.title}>
   <h1>{note.data.title}</h1>
-  <small>Updated: {(<FormattedDate date={note.data.date} />)}</small>
+
+  <div class="note-meta">
+    <small>Updated: {(<FormattedDate date={note.data.date} />)}</small>
+    <small>
+      Tagged with:
+      {
+        note.data.tags && (
+          <>
+            {note.data.tags.map((tag, index, array) => (
+              <span>
+                <a class="" href={`/tags/${tag}`}>
+                  #{tag}
+                </a>
+                {index !== array.length - 1 && ", "}
+              </span>
+            ))}
+          </>
+        )
+      }
+    </small>
+  </div>
 
   <Content />
 </Layout>
+
+<style>
+  .note-meta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+</style>

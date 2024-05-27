@@ -1,6 +1,7 @@
 ---
 title: "Origin Story"
 date: "2019-01-01"
+tags: ["books"]
 ---
 
 While most historians study the smallest fragments of time, David Christian likes to study the whole of history, from the big bang through the present day - and even into the remote future.

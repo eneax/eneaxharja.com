@@ -1,6 +1,7 @@
 ---
 title: "How The World Really Works"
 date: "2023-06-10"
+tags: ["books"]
 ---
 
 Vaclav Smil explores some of the fundamental areas that govern human survival and prosperity, addressing topics such as food production, energy, and globalization.

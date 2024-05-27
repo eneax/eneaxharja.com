@@ -1,6 +1,7 @@
 ---
 title: "What is Jamstack"
 date: "2019-07-09T22:12:03.284Z"
+tags: ["jamstack"]
 ---
 
 I started teaching myself to code, because I wanted to have a unique place where I could share my thoughts, some side projects and pictures of my vacations. Having a blog sounded like a wonderful idea!

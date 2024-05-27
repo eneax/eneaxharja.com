@@ -1,6 +1,7 @@
 ---
 title: "Zero To One"
 date: "2020-01-01"
+tags: ["books"]
 ---
 
 Peter Thiel describes how progress comes from learning to think for yourself (the most important skill that every leader must master) and it can be achieved in any industry or area of business.

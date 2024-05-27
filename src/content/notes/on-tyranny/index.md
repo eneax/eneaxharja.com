@@ -1,6 +1,7 @@
 ---
 title: "On Tyranny"
 date: "2022-08-13"
+tags: ["books"]
 ---
 
 Timothy Snyder dives into the history of 20th-century Europe to show us what might happen in the future if our political orders are undermined. He shows how the rise of authoritarianism is a choice we make and how we can defend ourselves against it.

@@ -1,6 +1,7 @@
 ---
 title: "How to Win Friends and Influence People"
 date: "2023-03-02"
+tags: ["books"]
 ---
 
 Dale Carnegie offers valuable insights for building meaningful relationships and improving interactions with anyone in life. The author encourages readers to show empathy, avoid criticism and focus instead on understanding others' perspectives.

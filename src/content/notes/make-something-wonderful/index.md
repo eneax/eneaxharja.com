@@ -1,6 +1,7 @@
 ---
 title: "Make Something Wonderful"
 date: "2023-11-04"
+tags: ["books"]
 ---
 
 Make Something Wonderful is a curated collection of Steve Jobs' speeches, interviews, and correspondence. It offers a window into how Steve approached his life and work.

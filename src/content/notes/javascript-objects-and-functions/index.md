@@ -1,6 +1,7 @@
 ---
 title: "Objects and Functions in JavaScript"
 date: "2023-04-04"
+tags: ["javascript"]
 ---
 
 In JavaScript, you will encounter two non-primitive types: objects and functions. These types allow you to create your own values.

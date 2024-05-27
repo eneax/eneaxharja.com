@@ -1,6 +1,7 @@
 ---
 title: "Brave New World"
 date: "2018-08-01"
+tags: ["books"]
 ---
 
 In this dystopian novel, Aldous Huxley writes about a futuristic World State, inhabited by genetically modified citizens and an intelligence-based social hierarchy, which is challenged by only a single individual.

@@ -1,6 +1,7 @@
 ---
 title: "React Components vs Elements"
 date: "2023-07-17"
+tags: ["react"]
 ---
 
 Building a React application means composing components. A React component is a function that accepts optional input via `props` and returns as output a value that is called a React element.

@@ -1,6 +1,7 @@
 ---
 title: "Visiting Kazakhstan"
 date: "2019-08-15"
+tags: ["photography"]
 ---
 
 A collection of photos from my trips to Kazakhstan.

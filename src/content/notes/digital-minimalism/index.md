@@ -1,6 +1,7 @@
 ---
 title: "Digital Minimalism"
 date: "2019-08-01"
+tags: ["books"]
 ---
 
 Cal Newport shows how to use technology in order to support your goals and values, rather than letting it use you.

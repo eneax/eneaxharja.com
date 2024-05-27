@@ -1,6 +1,7 @@
 ---
 title: "Manna"
 date: "2022-08-16"
+tags: ["books"]
 ---
 
 Marshall Brain takes you on a step-by-step walk through the robotic transition, the resulting collapse of the human job market, and a surprising look at the future of humanity in a post-robotic world.

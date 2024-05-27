@@ -1,6 +1,7 @@
 ---
 title: "Visiting Paris"
 date: "2018-01-10"
+tags: ["photography"]
 ---
 
 A collection of photos from my trip to Paris in 2007.

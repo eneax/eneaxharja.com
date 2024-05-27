@@ -1,6 +1,7 @@
 ---
 title: "Globetrotter"
 date: "2020-08-28T22:10:20.284Z"
+tags: ["projects"]
 ---
 
 ![globetrotter project](1.png)

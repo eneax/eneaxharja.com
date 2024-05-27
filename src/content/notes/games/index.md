@@ -1,6 +1,7 @@
 ---
 title: "Video Games"
 date: "2024-01-01"
+tags: ["games"]
 ---
 
 A curated list of video games that I have enjoyed playing over the years on various gaming platforms.

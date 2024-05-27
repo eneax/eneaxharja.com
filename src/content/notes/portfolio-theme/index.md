@@ -1,6 +1,7 @@
 ---
 title: "Portfolio Theme"
 date: "2018-03-26"
+tags: ["projects"]
 ---
 
 ![portfolio theme project](1.png)

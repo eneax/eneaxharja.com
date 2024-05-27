@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useEffectEvent"
 date: "2023-12-14"
+tags: ["react"]
 ---
 
 > Note: the `useEffectEvent` hook is currently in alpha.

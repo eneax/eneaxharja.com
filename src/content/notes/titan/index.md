@@ -1,6 +1,7 @@
 ---
 title: "Titan: The Life of John D. Rockefeller, Sr."
 date: "2020-04-20"
+tags: ["books"]
 ---
 
 Ron Chernow tells the story of John D. Rockefeller, the Jekyll-and-Hyde of American capitalism.

@@ -1,6 +1,7 @@
 ---
 title: "Resume Theme"
 date: "2018-05-06"
+tags: ["projects"]
 ---
 
 ![resume-theme project](1.png)

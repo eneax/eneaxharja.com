@@ -1,6 +1,7 @@
 ---
 title: "Everything Happens for a Reason: And Other Lies I've Loved"
 date: "2019-06-05"
+tags: ["books"]
 ---
 
 In her memoir, Kate Bowler boldly articulates the pain she feels as she contemplates her own mortality.

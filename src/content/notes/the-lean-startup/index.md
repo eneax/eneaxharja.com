@@ -1,6 +1,7 @@
 ---
 title: "The Lean Startup"
 date: "2019-04-10"
+tags: ["books"]
 ---
 
 Eric Ries provides a scientific approach to continually testing ideas and adapting and adjusting before it's too late.

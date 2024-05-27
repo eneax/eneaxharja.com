@@ -1,6 +1,7 @@
 ---
 title: "Factfulness"
 date: "2019-07-01"
+tags: ["books"]
 ---
 
 Hans Rosling proofs with facts how the world, for all its imperfections, is in a much better state than we might think.

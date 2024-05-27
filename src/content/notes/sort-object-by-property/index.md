@@ -1,6 +1,7 @@
 ---
 title: "Sort Object by property"
 date: "2021-03-19"
+tags: ["javascript"]
 ---
 
 Sort Object by property using JavaScript:

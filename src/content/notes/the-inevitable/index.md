@@ -1,6 +1,7 @@
 ---
 title: "The Inevitable"
 date: "2020-11-30"
+tags: ["books"]
 ---
 
 Kevin Kelly's optimistic and hopeful guide through the twelve technological realities that will shape the next thirty years and transform our lives.

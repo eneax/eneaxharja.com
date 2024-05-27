@@ -1,6 +1,7 @@
 ---
 title: "Wavy Underline"
 date: "2021-02-09"
+tags: ["css"]
 ---
 
 Add a wavy underline to your text with CSS:

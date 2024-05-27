@@ -1,6 +1,7 @@
 ---
 title: "This Is How They Tell Me the World Ends"
 date: "2023-12-31"
+tags: ["books"]
 ---
 
 Filled with spies, hackers and arms dealers, this book is a surprising and compelling journalistic achievement by Nicole Perlroth.

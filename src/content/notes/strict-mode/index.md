@@ -1,6 +1,7 @@
 ---
 title: "Strict Mode in JavaScript"
 date: "2020-03-17"
+tags: ["javascript"]
 ---
 
 For many years, JavaScript evolved without compatibility issues.

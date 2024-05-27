@@ -1,6 +1,7 @@
 ---
 title: "Prepared"
 date: "2022-05-15"
+tags: ["books"]
 ---
 
 Diane Tavenner founded the first Summit school in 2003, developing a personalized, project-based curriculum that puts students in charge of their own learning.

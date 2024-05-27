@@ -1,6 +1,7 @@
 ---
 title: "On the Road"
 date: "2018-01-15"
+tags: ["photography"]
 ---
 
 A collection of photos of my on the road trip from Italy to Austria in 2013.

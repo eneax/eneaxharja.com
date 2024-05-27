@@ -1,6 +1,7 @@
 ---
 title: "Convert an existing Gatsby Markdown blog to use MDX"
 date: "2020-08-04"
+tags: ["gatsby", "mdx"]
 ---
 
 I've recently released a new version of my personal website and I decided to convert my posts from an existing Gatsby Markdown format to MDX.

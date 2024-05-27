@@ -1,6 +1,7 @@
 ---
 title: "A Human's Guide to Machine Intelligence"
 date: "2022-10-06"
+tags: ["books"]
 ---
 
 Hosanagar examines how algorithms and artificial intelligence are beginning to manage every aspect of our lives, from what products we buy, to where we decide to eat, to what news we consume, and to how we find a job or a date.

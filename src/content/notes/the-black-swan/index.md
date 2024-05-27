@@ -1,6 +1,7 @@
 ---
 title: "The Black Swan"
 date: "2018-09-05"
+tags: ["books"]
 ---
 
 Nassim Nicholas Taleb describes a black swan as a highly improbable event with three principal characteristics:

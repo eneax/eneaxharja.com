@@ -1,6 +1,7 @@
 ---
 title: "About this site"
 date: "2018-01-01T22:12:03.284Z"
+tags: ["personal"]
 ---
 
 I've been reading blogs for quite some time now, and thought about starting one many times. But who starts a blog in the Age of Social Media?

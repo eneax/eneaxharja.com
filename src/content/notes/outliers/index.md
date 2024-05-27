@@ -1,6 +1,7 @@
 ---
 title: "Outliers"
 date: "2018-10-01"
+tags: ["books"]
 ---
 
 Malcolm Gladwell answers the question: what makes high-achievers different?

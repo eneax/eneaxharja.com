@@ -1,6 +1,7 @@
 ---
 title: "The Sixth Extinction"
 date: "2020-11-22"
+tags: ["books"]
 ---
 
 Elizabeth Kolbert's book urgently forces us to rethink the fundamental question of what it means to be human as we go through the most devastating extinction event since the asteroid impact that wiped out the dinosaurs.

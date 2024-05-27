@@ -1,6 +1,7 @@
 ---
 title: "Kindred"
 date: "2022-12-09"
+tags: ["books"]
 ---
 
 Rebecca Wragg Sykes explores the lives of Neanderthals, their relationships, and their place in our shared history. The author uses the latest findings in Palaeolithic research to share our new understanding of these ancient humans.

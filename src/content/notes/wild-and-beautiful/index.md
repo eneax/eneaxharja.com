@@ -1,6 +1,7 @@
 ---
 title: "Wild And Beautiful"
 date: "2018-02-09T22:10:00.284Z"
+tags: ["projects"]
 ---
 
 ![Wild And Beautiful project](1.png)

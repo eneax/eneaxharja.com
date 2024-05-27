@@ -1,6 +1,7 @@
 ---
 title: "Superintelligence"
 date: "2019-09-25"
+tags: ["books"]
 ---
 
 Nick Bostrom lays the foundation for understanding the future of humanity and intelligent life and reflects on what will happen when machines surpass humans in general intelligence.

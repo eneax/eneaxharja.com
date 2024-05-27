@@ -1,6 +1,7 @@
 ---
 title: "Fooled by Randomness"
 date: "2018-09-21"
+tags: ["books"]
 ---
 
 Nassim Nicholas Taleb investigates of opacity, luck, uncertainty, probability, human error, risk, and decision-making in a world we don't understand.

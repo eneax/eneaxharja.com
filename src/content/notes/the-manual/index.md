@@ -1,6 +1,7 @@
 ---
 title: "The Manual"
 date: "2018-07-20"
+tags: ["books"]
 ---
 
 Epictetus (c. 50-135 CE) was brought as a slave to Rome, where he became a great teacher, deeply influencing the future emperor Marcus Aurelius. The Manual is a collection of his essential teachings compiled by his closest student.

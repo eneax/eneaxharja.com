@@ -1,6 +1,7 @@
 ---
 title: "Visiting Milan"
 date: "2019-06-02"
+tags: ["photography"]
 ---
 
 A collection of photos from my trip to Milan in 2019.

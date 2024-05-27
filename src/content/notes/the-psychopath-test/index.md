@@ -1,6 +1,7 @@
 ---
 title: "The Psychopath Test"
 date: "2018-11-21"
+tags: ["books"]
 ---
 
 Jon Ronson investigates psychopaths and the industry of doctors, scientists, and everyone else who studies them.

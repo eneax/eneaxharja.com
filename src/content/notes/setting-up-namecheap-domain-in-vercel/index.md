@@ -1,6 +1,7 @@
 ---
 title: "Namecheap domain in Vercel"
 date: "2022-09-17"
+tags: ["config"]
 ---
 
 Vercel provides a nice user interface to manage everything about a web application and makes it very easy to replace the automatically assigned domain with a custom one.

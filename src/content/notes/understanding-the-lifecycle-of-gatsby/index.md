@@ -1,6 +1,7 @@
 ---
 title: "Understanding the lifecycle of Gatsby"
 date: "2021-05-07"
+tags: ["gatsby"]
 ---
 
 Gatsby is a static site generator built with React at its core that allows you to build modern websites and applications that come with speed and great performance out of the box.

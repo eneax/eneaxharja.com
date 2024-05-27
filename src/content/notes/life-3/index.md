@@ -1,6 +1,7 @@
 ---
 title: "Life 3.0"
 date: "2022-01-02"
+tags: ["books"]
 ---
 
 Will we be able to develop AI that will help us thrive like never before, or will AI lead us to self-destruction?

@@ -1,6 +1,7 @@
 ---
 title: "Living in Veneto"
 date: "2019-07-01"
+tags: ["photography"]
 ---
 
 A collection of photos from my stay in Veneto in 2019.

@@ -1,6 +1,7 @@
 ---
 title: "Budget App"
 date: "2018-02-12T22:10:20.284Z"
+tags: ["projects"]
 ---
 
 ![budget app project](1.png)

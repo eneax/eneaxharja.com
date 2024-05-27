@@ -1,6 +1,7 @@
 ---
 title: "The Three-Body Problem"
 date: "2022-01-26"
+tags: ["books"]
 ---
 
 Cixin Liu's The Three-Body Problem begins during the Chinese Cultural Revolution with a secret military project that sends signals into space to make contact with aliens.

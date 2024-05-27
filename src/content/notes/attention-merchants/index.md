@@ -1,6 +1,7 @@
 ---
 title: "The Attention Merchants"
 date: "2020-01-28"
+tags: ["books"]
 ---
 
 Tim Wu writes how in every moment of our waking lives, we face enormous efforts to harvest our attention.

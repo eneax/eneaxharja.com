@@ -1,6 +1,7 @@
 ---
 title: "Thinking in Bets"
 date: "2022-06-27"
+tags: ["books"]
 ---
 
 Annie Duke is a poker champion who turned business consultant. In this book, she shares her insights on how to make better decisions when you don't have all the facts.

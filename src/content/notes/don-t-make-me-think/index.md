@@ -1,6 +1,7 @@
 ---
 title: "Don't Make Me Think"
 date: "2019-04-20"
+tags: ["books"]
 ---
 
 Steve Krug's guide to help designers and developers understand the principles of intuitive navigation and information design.

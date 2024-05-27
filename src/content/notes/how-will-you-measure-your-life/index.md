@@ -1,6 +1,7 @@
 ---
 title: "How Will You Measure Your Life?"
 date: "2022-05-24"
+tags: ["books"]
 ---
 
 Clayton M. Christensen presents a set of personal guidelines that have helped him find meaning and happiness in his life.

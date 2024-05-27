@@ -1,6 +1,7 @@
 ---
 title: "Hillbilly Elegy"
 date: "2018-07-10"
+tags: ["books"]
 ---
 
 Vance's memoir is the story of how upward mobility really feels.

@@ -1,6 +1,7 @@
 ---
 title: "How to Get the Current Page URL in Gatsby"
 date: "2021-02-05"
+tags: ["gatsby"]
 ---
 
 Gatsby uses [Reach Router](https://reach.tech/router) under the hood to handle routing.

@@ -1,6 +1,7 @@
 ---
 title: "Visiting Barcelona"
 date: "2018-01-18"
+tags: ["photography"]
 ---
 
 A collection of photos from my trip to Barcelona in 2014.

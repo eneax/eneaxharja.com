@@ -1,6 +1,7 @@
 ---
 title: "Living in Berlin"
 date: "2020-10-24"
+tags: ["photography"]
 ---
 
 A collection of photos from my life in Berlin.

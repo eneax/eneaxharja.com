@@ -1,6 +1,7 @@
 ---
 title: "Homo Deus: A Brief History of Tomorrow"
 date: "2019-11-18"
+tags: ["books"]
 ---
 
 Yuval Noah Harari turns his focus toward humanity's future, and our quest to upgrade humans into gods.

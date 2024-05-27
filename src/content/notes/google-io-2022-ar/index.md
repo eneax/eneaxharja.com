@@ -1,6 +1,7 @@
 ---
 title: "Google I/O 2022 - AR"
 date: "2022-05-15"
+tags: ["google"]
 ---
 
 Google held its annual I/O event, with many announcements bringing together the best of Google's technologies and products to showcase the latest in augmented reality.

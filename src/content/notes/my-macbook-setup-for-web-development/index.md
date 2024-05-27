@@ -1,6 +1,7 @@
 ---
 title: "MacBook setup for web development"
 date: "2024-04-14"
+tags: ["config"]
 ---
 
 My MacBook setup for web development includes tools like: [Homebrew](https://brew.sh), [Brave](https://brave.com), [Visual Studio Code](https://code.visualstudio.com) with [Oh My Zsh](https://ohmyz.sh), and [Git](https://git-scm.com).

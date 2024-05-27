@@ -1,6 +1,7 @@
 ---
 title: "Originals"
 date: "2018-11-01"
+tags: ["books"]
 ---
 
 Adam Grant addresses the challenge of improving the world from the perspective of becoming original and choosing to value ideas that battle conformity and outdated traditions.

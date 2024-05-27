@@ -1,6 +1,7 @@
 ---
 title: "Equality of Values in JavaScript"
 date: "2023-04-19"
+tags: ["javascript"]
 ---
 
 Understanding the equality of values helps prevent bugs. You often need to know when you are dealing with the same value or different values.

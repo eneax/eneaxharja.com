@@ -1,6 +1,7 @@
 ---
 title: "The Spy and the Traitor"
 date: "2021-02-28"
+tags: ["books"]
 ---
 
 Ben MacIntyre's thrilling Cold War story about a KGB double agent.

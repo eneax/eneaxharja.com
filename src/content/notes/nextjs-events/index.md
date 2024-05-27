@@ -1,6 +1,7 @@
 ---
 title: "Next.js Events"
 date: "2022-07-10"
+tags: ["projects"]
 ---
 
 ![Next.js Events project](1.png)

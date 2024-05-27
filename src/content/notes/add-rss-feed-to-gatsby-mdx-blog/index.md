@@ -1,6 +1,7 @@
 ---
 title: "Add an RSS Feed to your Gatsby MDX blog"
 date: "2020-08-09"
+tags: ["gatsby"]
 ---
 
 An [RSS Feed](https://en.wikipedia.org/wiki/RSS) is a standard XML file with the purpose of listing the content of a website in a subscribable format.

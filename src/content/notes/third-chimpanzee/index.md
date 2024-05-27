@@ -1,6 +1,7 @@
 ---
 title: "The Third Chimpanzee"
 date: "2019-02-05"
+tags: ["books"]
 ---
 
 Jared Diamond explores concepts relating to the animal origins of human behavior.

@@ -1,6 +1,7 @@
 ---
 title: "On the Shortness of Life"
 date: "2019-08-10"
+tags: ["books"]
 ---
 
 The Stoic writings of the philosopher Seneca offer powerful insights into the art of living.

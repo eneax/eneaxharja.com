@@ -1,6 +1,7 @@
 ---
 title: "Elon Musk"
 date: "2019-03-25"
+tags: ["books"]
 ---
 
 Ashlee Vance tells the story of Elon Musk, the entrepreneur and innovator behind SpaceX, Tesla, and SolarCity and PayPal.

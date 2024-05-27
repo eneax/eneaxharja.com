@@ -1,6 +1,7 @@
 ---
 title: "Delicious"
 date: "2020-08-28T22:10:18.284Z"
+tags: ["projects"]
 ---
 
 ![delicious project](1.png)

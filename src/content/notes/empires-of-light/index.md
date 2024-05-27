@@ -1,6 +1,7 @@
 ---
 title: "Empires of Light"
 date: "2022-08-10"
+tags: ["books"]
 ---
 
 Historian Jill Jonnes portrays the last decades of the 19th century, when three visionary titans of America's Gilded Age - Thomas Edison, Nikola Tesla, and George Westinghouse - collided with the intent of creating a vast and powerful electrical empire.

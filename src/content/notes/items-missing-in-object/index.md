@@ -1,6 +1,7 @@
 ---
 title: "Check if there is a missing item in an object"
 date: "2021-01-20"
+tags: ["javascript"]
 ---
 
 Given an object, we want to check if there is any missing item in it:

@@ -1,6 +1,7 @@
 ---
 title: "The Everything Store"
 date: "2019-04-01"
+tags: ["books"]
 ---
 
 Brad Stone tells the story of Amazon.com, one of the most successful companies in the world, and of its brilliant founder, Jeff Bezos.

@@ -1,6 +1,7 @@
 ---
 title: "Visiting Greece"
 date: "2018-01-12"
+tags: ["photography"]
 ---
 
 A collection of photos from my trip to Greece in 2011.

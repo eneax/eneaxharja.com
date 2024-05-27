@@ -1,6 +1,7 @@
 ---
 title: "Trillion Dollar Coach"
 date: "2023-01-18"
+tags: ["books"]
 ---
 
 "Trillion Dollar Coach" is the memoir of Bill Campbell, a former college football player and coach who worked with some of Silicon Valley's most successful companies, including Google and Apple.

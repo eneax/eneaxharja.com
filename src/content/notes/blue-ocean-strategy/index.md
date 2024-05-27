@@ -1,6 +1,7 @@
 ---
 title: "Blue Ocean Strategy"
 date: "2018-03-01"
+tags: ["books"]
 ---
 
 W. Chan Kim presents a systematic approach to making the competition irrelevant by overturning traditional thinking about strategy.

@@ -1,6 +1,7 @@
 ---
 title: "A Gentleman in Moscow"
 date: "2020-10-29"
+tags: ["books"]
 ---
 
 On June 21, 1922, Count Alexander Rostov is escorted out of the Kremlin, through Red Square and the elegant revolving doors of the Hotel Metropol, after being sentenced to indefinite house arrest. But instead of his usual suite, he must now live in an attic as Russia undergoes decades of tumultuous upheaval.

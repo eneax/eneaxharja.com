@@ -1,6 +1,7 @@
 ---
 title: "RoboHeads"
 date: "2018-04-08"
+tags: ["projects"]
 ---
 
 ![robo-heads project](1.png)

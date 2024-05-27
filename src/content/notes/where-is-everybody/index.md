@@ -1,6 +1,7 @@
 ---
 title: "Where is Everybody?"
 date: "2019-03-10"
+tags: ["books"]
 ---
 
 There are perhaps 400 billion stars in our Galaxy alone, and perhaps 400 billion galaxies in the Universe, it stands to reason that somewhere out there, in the 14-billion-year-old cosmos, there is or once was a civilization at least as advanced as our own.

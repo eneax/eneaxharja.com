@@ -1,6 +1,7 @@
 ---
 title: "blog project"
 date: "2022-09-13"
+tags: ["projects"]
 ---
 
 ![A starter blog built with Gatsby](1.png)

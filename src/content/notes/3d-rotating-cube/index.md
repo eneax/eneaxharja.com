@@ -1,6 +1,7 @@
 ---
 title: "3D Rotating Cube"
 date: "2018-02-09T22:10:03.284Z"
+tags: ["projects"]
 ---
 
 ![3D Rotating Cube project](1.png)

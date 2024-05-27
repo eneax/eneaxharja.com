@@ -1,6 +1,7 @@
 ---
 title: "Combine JSX components and MDX documents"
 date: "2021-07-01"
+tags: ["gatsby", "mdx"]
 ---
 
 By default, the `gatsby-plugin-mdx` plugin supports frontmatter, so you can define values like `slug`, `date` and `title` at the beginning of your MDX document:

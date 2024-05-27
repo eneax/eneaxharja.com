@@ -1,6 +1,7 @@
 ---
 title: "Bootstrap Landing Page Slider"
 date: "2018-02-09T22:10:07.284Z"
+tags: ["projects"]
 ---
 
 ![Bootstrap landing page slider project](1.png)

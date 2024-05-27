@@ -1,6 +1,7 @@
 ---
 title: "Format text with JavaScript"
 date: "2021-03-01"
+tags: ["javascript"]
 ---
 
 Remove space characters (`\n`) from string:

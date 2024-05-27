@@ -1,6 +1,7 @@
 ---
 title: "The Prince"
 date: "2018-05-15"
+tags: ["books"]
 ---
 
 Machiavelli's thoughts on the qualities a ruler should possess.

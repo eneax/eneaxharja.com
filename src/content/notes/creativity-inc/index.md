@@ -1,6 +1,7 @@
 ---
 title: "Creativity, Inc."
 date: "2021-11-08"
+tags: ["books"]
 ---
 
 From the dream of making the world's first computer-animated movie, to the creation of Pixar, Ed Catmull reveals the ideals and techniques that have made his company dominate the world of animation.

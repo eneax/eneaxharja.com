@@ -1,6 +1,7 @@
 ---
 title: "JavaScript Strings"
 date: "2020-06-21"
+tags: ["javascript"]
 ---
 
 A string is a series of zero or more characters grouped together inside single or double quotes.

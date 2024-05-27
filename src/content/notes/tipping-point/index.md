@@ -1,6 +1,7 @@
 ---
 title: "The Tipping Point"
 date: "2018-10-11"
+tags: ["books"]
 ---
 
 Malcolm Gladwell analyzes fashion trends, smoking, children's television, direct mail, and the early days of the American Revolution for clues on how to make ideas infectious.

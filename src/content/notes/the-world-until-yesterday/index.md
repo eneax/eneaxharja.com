@@ -1,6 +1,7 @@
 ---
 title: "The World Until Yesterday"
 date: "2021-07-09"
+tags: ["books"]
 ---
 
 Instead of romanticizing the lifestyles of traditional societies, Jared Diamond provides a first-hand experience of the human past while elaborating on the differences between that past and our present and what it means for our lives today.

@@ -1,6 +1,7 @@
 ---
 title: Text Gradient
 date: "2021-02-06"
+tags: ["css"]
 ---
 
 Add gradient color to your text with CSS.

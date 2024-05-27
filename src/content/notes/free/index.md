@@ -1,6 +1,7 @@
 ---
 title: "Free: Coming of Age at the End of History"
 date: "2023-08-09"
+tags: ["books"]
 ---
 
 Lea Ypi grew up in Albania, an isolated country with communist ideals where equality, community and hope thrived. In 1990, the fall of the regime brought new freedoms, but also economic collapse, emigration and conflict. The memoir "Free" explores her childhood during this tumultuous political change while examining the contrast between ideals and reality.

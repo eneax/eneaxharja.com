@@ -1,6 +1,7 @@
 ---
 title: "React hooks for handling advanced effects"
 date: "2023-11-15"
+tags: ["react"]
 ---
 
 React is a library for building user interfaces. One can summarize the entire purpose of React with the formula: `ui = function(state)`.

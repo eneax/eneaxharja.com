@@ -1,6 +1,7 @@
 ---
 title: "All This Could Be Different"
 date: "2023-10-10"
+tags: ["books"]
 ---
 
 A novel by Sarah Thankam Mathews about being young in the twenty-first century. About work, precarity, distant parents, queer love, and hope.

@@ -1,6 +1,7 @@
 ---
 title: "Visiting Prague"
 date: "2018-01-20"
+tags: ["photography"]
 ---
 
 A collection of photos from my trip to Prague in 2014.

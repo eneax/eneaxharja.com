@@ -1,6 +1,7 @@
 ---
 title: "The Age of AI"
 date: "2024-01-23"
+tags: ["books"]
 ---
 
 Three deep thinkers-Henry Kissinger, Eric Schmidt and Daniel Huttenlocher-present a brilliant analysis of the scope of AI and its profound implications for our present and future.

@@ -1,6 +1,7 @@
 ---
 title: "gatsby-dev-portfolio"
 date: "2020-09-13T22:10:19.284Z"
+tags: ["projects"]
 ---
 
 ![gatsby-dev-portfolio project](1.png)

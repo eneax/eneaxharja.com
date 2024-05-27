@@ -1,6 +1,7 @@
 ---
 title: "Moonwalking with Einstein"
 date: "2021-08-11"
+tags: ["books"]
 ---
 
 Joshua Foer makes it clear how memory and understanding are not two different things.

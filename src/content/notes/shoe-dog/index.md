@@ -1,6 +1,7 @@
 ---
 title: "Shoe Dog"
 date: "2020-08-16"
+tags: ["books"]
 ---
 
 Phil Knight tells an honest story of his journey, struggles and sacrifices that led him to become founder and CEO of NIKE.

@@ -1,6 +1,7 @@
 ---
 title: "The Tartar Steppe"
 date: "2018-12-25"
+tags: ["books"]
 ---
 
 Dino Buzzati's critique of military life and a meditation on the human thirst for glory.

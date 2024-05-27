@@ -1,6 +1,7 @@
 ---
 title: "Visiting Zurich"
 date: "2019-10-15"
+tags: ["photography"]
 ---
 
 Walking around Zurich in Autumn 2019.

@@ -1,6 +1,7 @@
 ---
 title: "Blink"
 date: "2018-10-21"
+tags: ["books"]
 ---
 
 Malcolm Gladwell writes about how we think without thinking, about choices that we seem to make in an instant, but actually aren't as simple as they seem.

@@ -1,6 +1,7 @@
 ---
 title: "Drunk Tank Pink"
 date: "2018-06-01"
+tags: ["books"]
 ---
 
 Adam Alter writes about how our environment unconsciously shapes the judgments and decisions we make every day.

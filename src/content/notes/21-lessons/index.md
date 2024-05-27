@@ -1,6 +1,7 @@
 ---
 title: "21 Lessons for the 21st Century"
 date: "2019-11-28"
+tags: ["books"]
 ---
 
 Yuval Noah Harari addresses the challenge of navigating life in the face of constant and disorienting change and raises the important questions we need to ask ourselves in order to survive.

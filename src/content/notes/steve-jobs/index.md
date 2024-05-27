@@ -1,6 +1,7 @@
 ---
 title: "Steve Jobs"
 date: "2018-03-17"
+tags: ["books"]
 ---
 
 Walter Isaacson's biography of Apple cofounder Steve Jobs.

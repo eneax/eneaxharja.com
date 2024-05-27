@@ -1,6 +1,7 @@
 ---
 title: "I, Robot"
 date: "2020-08-24"
+tags: ["books"]
 ---
 
 Isaac Asimov takes readers on an adventure into the not-so-distant future where man and machine struggle to redefine life, love, and consciousness.

@@ -1,6 +1,7 @@
 ---
 title: "E-commerce Dashboard and Store"
 date: "2023-08-22"
+tags: ["projects"]
 ---
 
 The e-commerce dashboard is a full stack application built using [Next.js](https://nextjs.org) with [React Server Components](https://vercel.com/blog/understanding-react-server-components), [Tailwind CSS](https://tailwindcss.com), [shadcn/ui](https://ui.shadcn.com), [Clerk](https://clerk.com), [Prisma](https://www.prisma.io), [PlanetScale](https://planetscale.com), [Cloudinary](https://cloudinary.com) and [Stripe](https://stripe.com).

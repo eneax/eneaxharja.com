@@ -1,6 +1,7 @@
 ---
 title: "Visiting Frankfurt"
 date: "2022-12-15"
+tags: ["photography"]
 ---
 
 Walking around Frankfurt in December 2022.

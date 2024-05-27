@@ -1,6 +1,7 @@
 ---
 title: "Prototypes in JavaScript"
 date: "2023-05-26"
+tags: ["javascript"]
 ---
 
 A prototype is like a relationship. An object can point to another object as its prototype. Consider the following example:

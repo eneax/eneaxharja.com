@@ -1,6 +1,7 @@
 ---
 title: "Command-click or Control+click not working"
 date: "2020-01-25"
+tags: ["javascript"]
 ---
 
 Being a web developer gives you the ability to override some of the default browser functionalities.

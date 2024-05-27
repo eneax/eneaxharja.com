@@ -1,6 +1,7 @@
 ---
 title: "React Hooks: useState"
 date: "2023-07-27"
+tags: ["react"]
 ---
 
 React is a library for building complex user interfaces from individual components, where each component can manage its own state.

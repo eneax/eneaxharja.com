@@ -1,6 +1,7 @@
 ---
 title: "Hooked: How to Build Habit-Forming Products"
 date: "2019-04-28"
+tags: ["books"]
 ---
 
 Nir Eyal's guide on how successful companies create products people can't put down.

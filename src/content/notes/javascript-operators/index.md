@@ -1,6 +1,7 @@
 ---
 title: "JavaScript Operators"
 date: "2020-05-10"
+tags: ["javascript"]
 ---
 
 Numeric data in JavaScript is represented by the `Number` data type.

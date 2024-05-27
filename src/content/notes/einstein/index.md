@@ -1,6 +1,7 @@
 ---
 title: "Einstein: His Life and Universe"
 date: "2023-05-03"
+tags: ["books"]
 ---
 
 Einstein: His Life and Universe is the first comprehensive biography of Albert Einstein since all his papers have become available. Walter Isaacson explains how his mind worked and the mysteries of the universe he discovered.

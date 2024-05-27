@@ -1,6 +1,7 @@
 ---
 title: "rgbGame"
 date: "2018-02-09T22:10:11.284Z"
+tags: ["projects"]
 ---
 
 ![rgbGame project](1.png)

@@ -1,6 +1,7 @@
 ---
 title: "Trattoria Porsenna v3"
 date: "2018-02-09T22:10:09.284Z"
+tags: ["projects"]
 ---
 
 ![Trattoria Porsenna v3 project](1.png)

@@ -1,6 +1,7 @@
 ---
 title: "How to Prevent the Next Pandemic"
 date: "2023-09-08"
+tags: ["books"]
 ---
 
 Bill Gates discusses what we should do to prevent the next pandemic and improve global health.
