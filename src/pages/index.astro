@@ -25,6 +25,16 @@ const notes = (await getCollection("notes"))
 
   <section>
     <h2>Recent Notes</h2>
+
+    <div class="tags">
+      <a class="tag-item btn" href="/tags/books">Books</a>
+      <a class="tag-item btn" href="/tags/photography">Photography</a>
+      <a class="tag-item btn" href="/tags/projects">Projects</a>
+      <a class="tag-item btn" href="/tags/javascript">JavaScript</a>
+      <a class="tag-item btn" href="/tags/react">React</a>
+      <a class="tag-item btn" href="/tags">. . .</a>
+    </div>
+
     <div>
       {
         notes.map((post) => (
@@ -63,7 +73,7 @@ const notes = (await getCollection("notes"))
     margin-bottom: var(--space-xs);
   }
 
-  section a.btn {
+  section a.btn:not([class*=" "]) {
     display: block;
     margin-top: var(--space-xs);
   }
