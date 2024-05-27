@@ -1,11 +1,18 @@
 ---
+import { Image } from "astro:assets";
+
 import avatarImage from "../assets/avatar.png";
 ---
 
 <header>
   <nav>
     <a href="/" class="avatar">
-      <img src={avatarImage.src} alt="Enea Xharja" width={48} height={48} />
+      <Image
+        src={avatarImage}
+        alt="Enea Xharja"
+        class="avatar-img"
+        loading="eager"
+      />
 
       <div class="avatar-text">
         <span>Enea Xharja</span>
@@ -33,9 +40,11 @@ import avatarImage from "../assets/avatar.png";
     gap: var(--space-2xs);
   }
 
-  img {
+  .avatar-img {
     border-radius: 50%;
     border: 1px solid var(--color-grey);
+    width: 48px;
+    height: 48px;
   }
 
   .avatar-text {
