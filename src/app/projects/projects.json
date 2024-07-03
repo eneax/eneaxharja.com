@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "date": "2024-07-01",
+      "title": "eneaxharja.com",
+      "description": "My Own Little Corner of the Web.",
+      "url": "https://github.com/eneax/eneaxharja.com"
+    },
+    {
+      "date": "2023-08-22",
+      "title": "E-commerce Dashboard and Store",
+      "description": "A full stack application built using Next.js with React Server Components and Tailwind CSS.",
+      "url": "https://github.com/eneax/ecommerce-store"
+    },
+    {
+      "date": "2023-06-25",
+      "title": "Home Rentals",
+      "description": "A full stack application built with Next.js, Tailwind CSS, Prisma, NextAuth and MongoDB.",
+      "url": "https://github.com/eneax/home-rentals"
+    },
+    {
+      "date": "2023-01-21",
+      "title": "X-Avatar",
+      "description": "AI avatar generator built with Stable Diffusion.",
+      "url": "https://github.com/eneax/x-avatar"
+    },
+    {
+      "date": "2022-12-18",
+      "title": "X-Writer Extension",
+      "description": "AI writing assistant Chrome extension built with GPT-3 and OpenAI.",
+      "url": "https://github.com/eneax/x-writer-extension"
+    },
+    {
+      "date": "2022-12-17",
+      "title": "X-Writer",
+      "description": "AI writing assistant built with GPT-3 and OpenAI.",
+      "url": "https://github.com/eneax/x-writer"
+    },
+    {
+      "date": "2022-09-13",
+      "title": "blog project",
+      "description": "A starter blog built with Gatsby.",
+      "url": "https://github.com/eneax/blog"
+    },
+    {
+      "date": "2022-07-10",
+      "title": "Next.js Events",
+      "description": "Fullstack application built with Next.js, Tailwind CSS, Firebase and MongoDB.",
+      "url": "https://github.com/eneax/nextjs-events"
+    },
+    {
+      "date": "2022-05-21",
+      "title": "React App - GitHub Battle",
+      "description": "Discover popular repos and battle your GitHub friends.",
+      "url": "https://github.com/eneax/github-battle"
+    },
+    {
+      "date": "2020-09-13",
+      "title": "coffee-shop",
+      "description": "Responsive coffee shop website built with Gatsby, Tailwind CSS, Contentful and Snipcart",
+      "url": "https://github.com/eneax/coffee-shop"
+    },
+    {
+      "date": "2020-09-12",
+      "title": "gatsby-dev-portfolio",
+      "description": "A simple starter to get your dev portfolio up and running quickly with Gatsby and Strapi.",
+      "url": "https://github.com/eneax/gatsby-dev-portfolio"
+    },
+    {
+      "date": "2020-08-28",
+      "title": "Globetrotter",
+      "description": "Responsive travel agency website built with Gatsby.",
+      "url": "https://github.com/eneax/globetrotter"
+    },
+    {
+      "date": "2020-08-26",
+      "title": "Delicious",
+      "description": "Responsive restaurant website built with Gatsby and Contentful.",
+      "url": "https://github.com/eneax/gatsby-restaurant"
+    },
+    {
+      "date": "2020-08-25",
+      "title": "Portfolio Website",
+      "description": "Clean and minimal portfolio website built with Gatsby.",
+      "url": "https://github.com/eneax/krix-portfolio"
+    },
+    {
+      "date": "2020-07-09",
+      "title": "Arty",
+      "description": "Landing Page built with Gatsby, CSS Grid, styled-components, GraphQL and Contentful.",
+      "url": "https://github.com/eneax/gatsby-landing-page-arty"
+    },
+    {
+      "date": "2018-06-08",
+      "title": "Weather App",
+      "description": "Weather app built with React and Open Weather API.",
+      "url": "https://github.com/eneax/weather-app"
+    },
+    {
+      "date": "2018-05-30",
+      "title": "Thriving Cities",
+      "description": "Single page company website built with React and Bootstrap.",
+      "url": "https://github.com/eneax/thriving-cities"
+    },
+    {
+      "date": "2018-05-06",
+      "title": "Resume Theme",
+      "description": "Clean and simple resume theme built with Bootstrap 4.",
+      "url": "https://github.com/eneax/resume-theme"
+    },
+    {
+      "date": "2018-04-08",
+      "title": "RoboHeads",
+      "description": "A fast and responsive React app where you can search robots by name or email",
+      "url": "https://github.com/eneax/roboheads"
+    },
+    {
+      "date": "2018-03-26",
+      "title": "Portfolio Theme",
+      "description": "Bootstrap portfolio theme with smooth scrolling and off-canvas navigation.",
+      "url": "https://github.com/eneax/portfolio-theme"
+    },
+    {
+      "date": "2018-03-03",
+      "title": "Restaurant Theme",
+      "description": "A responsive restaurant theme built with Bootstrap 4.",
+      "url": "https://github.com/eneax/restaurant-theme"
+    },
+    {
+      "date": "2018-02-23",
+      "title": "Budget App",
+      "description": "Responsive Budget App built with Bootstrap 4 and Javascript.",
+      "url": "https://github.com/eneax/budgetApp"
+    },
+    {
+      "date": "2018-02-22",
+      "title": "CheckList",
+      "description": "A basic checklist built with CSS and Javascript.",
+      "url": "https://github.com/eneax/CheckList"
+    },
+    {
+      "date": "2018-02-21",
+      "title": "confettiDJ",
+      "description": "Animation and Sound Game with Paper.js and howler.js.",
+      "url": "https://github.com/eneax/confettiDJ"
+    },
+    {
+      "date": "2018-02-19",
+      "title": "Doosan Baseball",
+      "description": "Responsive website - Doosan Baseball.",
+      "url": "https://github.com/eneax/doosan-baseball"
+    },
+    {
+      "date": "2018-02-18",
+      "title": "Trattoria Porsenna v3",
+      "description": "Responsive website of Trattoria Porsenna - Version 3.",
+      "url": "https://github.com/eneax/Trattoria_Porsenna_v3"
+    },
+    {
+      "date": "2018-02-16",
+      "title": "3D Rotating Cube",
+      "description": "Rotating Cube with CSS 3D Transforms - Star Wars Theme.",
+      "url": "https://github.com/eneax/3D_Rotating_Cube"
+    },
+    {
+      "date": "2018-02-15",
+      "title": "3D Menu Gallery",
+      "description": "3D Menu Gallery with CSS Transition and Transform.",
+      "url": "https://github.com/eneax/3D_Menu_Gallery"
+    },
+    {
+      "date": "2018-02-14",
+      "title": "Menu Gallery",
+      "description": "Menu Gallery with CSS Transition and Transform.",
+      "url": "https://github.com/eneax/Menu_Gallery"
+    },
+    {
+      "date": "2018-02-13",
+      "title": "Pig (dice game)",
+      "description": "Pig is a simple game you can play with a single 6-sided die.",
+      "url": "https://github.com/eneax/Pig_Game"
+    },
+    {
+      "date": "2018-02-12",
+      "title": "rgbGame",
+      "description": "Guess the RGB - A JavaScript Color Guessing Game.",
+      "url": "https://github.com/eneax/rgbGame"
+    },
+    {
+      "date": "2018-02-11",
+      "title": "scoreKeeper",
+      "description": "Clean and Minimal Score Keeping App.",
+      "url": "https://github.com/eneax/scoreKeeper"
+    },
+    {
+      "date": "2018-02-10",
+      "title": "ToDo List",
+      "description": "Simple jQuery ToDo List.",
+      "url": "https://github.com/eneax/toDoList"
+    },
+    {
+      "date": "2018-02-06",
+      "title": "Bootstrap Landing Page Slider",
+      "description": "Landing Page Slider - Bootstrap.",
+      "url": "https://github.com/eneax/Bootstrap_Landing_Page_Slider"
+    },
+    {
+      "date": "2018-02-05",
+      "title": "Bootstrap Image Gallery",
+      "description": "Responsive Image Gallery - Bootstrap.",
+      "url": "https://github.com/eneax/Bootstrap_Image_Gallery"
+    },
+    {
+      "date": "2018-02-01",
+      "title": "Wild And Beautiful",
+      "description": "Creating an SVG Animated Line Drawing.",
+      "url": "https://github.com/eneax/Wild_And_Beautiful"
+    }
+  ]
+}
