@@ -17,7 +17,7 @@ Did you find a typo? Please feel free to open an issue or submit a pull request.
 
 ## 🎓 Want to learn more?
 
-Feel free to check [the documentation](https://docs.astro.build).
+Feel free to check [the documentation](https://nextjs.org/docs).
 
 ## 💫 Deploy
 

@@ -1,0 +1,95 @@
+---
+title: "Equality of Values in JavaScript"
+date: "2023-04-19"
+summary: "Understand the equality of values in JavaScript."
+---
+
+Understanding the equality of values helps prevent bugs. You often need to know when you are dealing with the same value or different values.
+
+There are three kinds of equality in JavaScript:
+
+- **Same Value Equality**: `Object.is(a, b)`
+- **Strict Equality**: `a === b` (triple equals)
+- **Loose Equality**: `a == b` (double equals)
+
+## Same Value Equality
+
+Same value equality tells us whether two values are the same value. You can use `Object.is(a, b)` to compare any two values, primitive or object.
+
+Let's look at an example using primitive values:
+
+```js
+let dwarves = 7;
+let continents = "7";
+let worldWonders = 3 + 4;
+
+console.log(Object.is(dwarves, continents)); // false
+console.log(Object.is(continents, worldWonders)); // false
+console.log(Object.is(worldWonders, dwarves)); // true
+```
+
+Let's look at an example using object values and remember that `{}` creates a new object value. Also, remember that `=` means "point the wire on the left side to the value on the right side".
+
+```js
+let banana = {};
+let cherry = banana;
+let chocolate = cherry;
+cherry = {};
+
+console.log(Object.is(banana, cherry)); // false
+console.log(Object.is(cherry, chocolate)); // false
+console.log(Object.is(chocolate, banana)); // true
+```
+
+## Strict Equality
+
+Strict equality compares two values using the `===` operator and there is also a corresponding opposite `!==` operator.
+
+```js
+console.log(2 === 2); // true
+console.log(2 !== 2); // false
+console.log({} === {}); // false
+```
+
+In the previous examples, `a === b` behaves in the same way as `Object.is(a, b)`. However, there are two rare cases where the behavior of `===` is different:
+
+- `NaN === NaN` is `false`, even though they are the same value
+- `-0 === 0` and `0 === -0` are `true`, even though they are different values.
+
+### Strict Equality with `NaN`
+
+`NaN` is a special value in JavaScript that means "not a number" and appears when performing invalid calculations such as `0 / 0`.
+
+```js
+let width = 0 / 0; // NaN
+let height = width * 2; // NaN
+
+console.log(width === height); // false
+console.log(Object.is(width, height)); // true
+```
+
+Remember that `NaN === NaN` is **always** `false`, even though `NaN` is the same value as `NaN`.
+
+Also, if you want to check if a value is `NaN`, instead of `value === NaN`, here are some ways to check if the value is `NaN`:
+
+```js
+Number.isNaN(value);
+Object.is(value, NaN);
+value !== value;
+```
+
+### Strict Equality with `-0` and `0`
+
+Both `0 === -0` and `-0 === 0` are always **true**, even though `0` is a different value from `-0`:
+
+```js
+let width = 0; // 0
+let height = -width; // -0
+
+console.log(width === height); // true
+console.log(Object.is(width, height)); // false
+```
+
+## Loose Equality
+
+The rules of loose equality (or "abstract equality") are a bit confusing. In fact, it is uncommon in modern codebases, and many coding standards prohibit the use of `==` and `!=` in code.

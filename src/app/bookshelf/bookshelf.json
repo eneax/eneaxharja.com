@@ -1,0 +1,528 @@
+{
+  "items": [
+    {
+      "title": "21 Lessons for the 21st Century",
+      "author": "Yuval Noah Harari"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell"
+    },
+    {
+      "title": "A Brief History Of Time",
+      "author": "Stephen Hawking"
+    },
+    {
+      "title": "A Gentleman in Moscow",
+      "author": "Amor Towles"
+    },
+    {
+      "title": "A Universe from Nothing",
+      "author": "Lawrence Krauss"
+    },
+    {
+      "title": "Algorithms to Live By",
+      "author": "Brian Christian and Tom Griffiths"
+    },
+    {
+      "title": "All This Could Be Different",
+      "author": "Sarah Thankam Mathews"
+    },
+    {
+      "title": "Amusing Ourselves to Death",
+      "author": "Neil Postman"
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell"
+    },
+    {
+      "title": "Antifragile",
+      "author": "Nassim Nicholas Taleb"
+    },
+    {
+      "title": "The Attention Merchants",
+      "author": "Tim Wu"
+    },
+    {
+      "title": "Bad Blood",
+      "author": "John Carreyrou"
+    },
+    {
+      "title": "Blink",
+      "author": "Malcolm Gladwell"
+    },
+    {
+      "title": "Blue Ocean Strategy",
+      "author": "Renée Mauborgne and W. Chan Kim"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley"
+    },
+    {
+      "title": "But What If We're Wrong?",
+      "author": "Chuck Klosterman"
+    },
+    {
+      "title": "Cloud Atlas",
+      "author": "David Mitchell"
+    },
+    {
+      "title": "Collapse",
+      "author": "Jared Diamond"
+    },
+    {
+      "title": "Creativity, Inc.",
+      "author": "Ed Catmull"
+    },
+    {
+      "title": "Death's End",
+      "author": "Liu Cixin"
+    },
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport"
+    },
+    {
+      "title": "Digital Minimalism",
+      "author": "Cal Newport"
+    },
+    {
+      "title": "Don't Make Me Think",
+      "author": "Steve Krug"
+    },
+    {
+      "title": "Drunk Tank Pink",
+      "author": "Adam Alter"
+    },
+    {
+      "title": "Educated",
+      "author": "Tara Westover"
+    },
+    {
+      "title": "Einstein: His Life and Universe",
+      "author": "Walter Isaacson"
+    },
+    {
+      "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+      "author": "Ashlee Vance"
+    },
+    {
+      "title": "Empires of Light",
+      "author": "Jill Jonnes"
+    },
+    {
+      "title": "Everything Happens for a Reason: And Other Lies I've Loved",
+      "author": "Kate Bowler"
+    },
+    {
+      "title": "Factfulness: Ten Reasons We're Wrong About the World",
+      "author": "Hans Rosling"
+    },
+    {
+      "title": "Fooled by Randomness",
+      "author": "Nassim Nicholas Taleb"
+    },
+    {
+      "title": "Foundation Trilogy (Foundation, Foundation and Empire, Second Foundation)",
+      "author": "Isaac Asimov"
+    },
+    {
+      "title": "Free: Coming of Age at the End of History",
+      "author": "Lea Ypi"
+    },
+    {
+      "title": "Get Rich Or Lie Trying",
+      "author": "Symeon Brown"
+    },
+    {
+      "title": "Guns, Germs, and Steel",
+      "author": "Jared Diamond"
+    },
+    {
+      "title": "Hillbilly Elegy",
+      "author": "J.D. Vance"
+    },
+    {
+      "title": "Hit Refresh",
+      "author": "Satya Nadella"
+    },
+    {
+      "title": "Homo Deus: A Brief History of Tomorrow",
+      "author": "Yuval Noah Harari"
+    },
+    {
+      "title": "Hooked: How to Build Habit-Forming Products",
+      "author": "Nir Eyal"
+    },
+    {
+      "title": "How Google Works",
+      "author": "Eric Schmidt and Jonathan Rosenberg"
+    },
+    {
+      "title": "How The World Really Works",
+      "author": "Vaclav Smil"
+    },
+    {
+      "title": "How to Change Your Mind",
+      "author": "Michael Pollan"
+    },
+    {
+      "title": "How to Prevent the Next Pandemic",
+      "author": "Bill Gates"
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie"
+    },
+    {
+      "title": "How Will You Measure Your Life?",
+      "author": "Clayton M. Christensen"
+    },
+    {
+      "title": "I Am Malala",
+      "author": "Malala Yousafzai"
+    },
+    {
+      "title": "I, Robot",
+      "author": "Isaac Asimov"
+    },
+    {
+      "title": "Kindred: Neanderthal Life, Love, Death and Art",
+      "author": "Rebecca Wragg Sykes"
+    },
+    {
+      "title": "Leonardo Da Vinci",
+      "author": "Walter Isaacson"
+    },
+    {
+      "title": "Life 3.0",
+      "author": "Max Tegmark"
+    },
+    {
+      "title": "Lord of the Flies",
+      "author": "William Golding"
+    },
+    {
+      "title": "A Human's Guide to Machine Intelligence",
+      "author": "Kartik Hosanagar"
+    },
+    {
+      "title": "Man's Search for Meaning",
+      "author": "Viktor Frankl"
+    },
+    {
+      "title": "Manna: Two Visions of Humanity's Future",
+      "author": "Marshall Brain"
+    },
+    {
+      "title": "The Master Switch",
+      "author": "Tim Wu"
+    },
+    {
+      "title": "Weapons of Math Destruction",
+      "author": "Cathy O'Neil"
+    },
+    {
+      "title": "Merchants of Doubt",
+      "author": "Naomi Oreskes and Erik M. Conway"
+    },
+    {
+      "title": "Mindset",
+      "author": "Carol S. Dweck"
+    },
+    {
+      "title": "Moonwalking with Einstein",
+      "author": "Joshua Foer"
+    },
+    {
+      "title": "On the Shortness of Life",
+      "author": "Seneca"
+    },
+    {
+      "title": "On Tyranny",
+      "author": "Timothy Snyder"
+    },
+    {
+      "title": "Origin Story",
+      "author": "David Christian"
+    },
+    {
+      "title": "Originals",
+      "author": "Adam Grant"
+    },
+    {
+      "title": "Our Final Invention",
+      "author": "James Barrat"
+    },
+    {
+      "title": "Outliers",
+      "author": "Malcolm Gladwell"
+    },
+    {
+      "title": "Prepared",
+      "author": "Diane Tavenner"
+    },
+    {
+      "title": "Primates and Philosophers: How Morality Evolved",
+      "author": "Frans de Waal"
+    },
+    {
+      "title": "Range: Why Generalists Triumph in a Specialized World",
+      "author": "David Epstein"
+    },
+    {
+      "title": "Reclaiming Conversation",
+      "author": "Sherry Turkle"
+    },
+    {
+      "title": "The Remains of the Day",
+      "author": "Kazuo Ishiguro"
+    },
+    {
+      "title": "Sam Walton: Made in America",
+      "author": "Sam Walton"
+    },
+    {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari"
+    },
+    {
+      "title": "Sea of Tranquility",
+      "author": "Emily St. John Mandel"
+    },
+    {
+      "title": "Shoe Dog",
+      "author": "Phil Knight"
+    },
+    {
+      "title": "So You've Been Publicly Shamed",
+      "author": "Jon Ronson"
+    },
+    {
+      "title": "Steve Jobs",
+      "author": "Walter Isaacson"
+    },
+    {
+      "title": "Stolen Focus",
+      "author": "Johann Hari"
+    },
+    {
+      "title": "Stop Reading the News",
+      "author": "Rolf Dobelli"
+    },
+    {
+      "title": "Superintelligence",
+      "author": "Nick Bostrom"
+    },
+    {
+      "title": "The Age of Surveillance Capitalism",
+      "author": "Shoshana Zuboff"
+    },
+    {
+      "title": "The Tartar Steppe",
+      "author": "Dino Buzzati"
+    },
+    {
+      "title": "The Age of AI",
+      "author": "Henry Kissinger, Eric Schmidt and Daniel Huttenlocher"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho"
+    },
+    {
+      "title": "The Almanack of Naval Ravikant",
+      "author": "Eric Jorgenson"
+    },
+    {
+      "title": "The Art of Peace",
+      "author": "Morihei Ueshiba"
+    },
+    {
+      "title": "The Art of War",
+      "author": "Sun Tzu"
+    },
+    {
+      "title": "The Black Swan",
+      "author": "Nassim Nicholas Taleb"
+    },
+    {
+      "title": "The Caves of Steel",
+      "author": "Isaac Asimov"
+    },
+    {
+      "title": "The Choice",
+      "author": "Edith Eger"
+    },
+    {
+      "title": "The Courage to be Disliked",
+      "author": "Ichiro Kishimi and Fumitake Koga"
+    },
+    {
+      "title": "The Dark Forest",
+      "author": "Liu Cixin"
+    },
+    {
+      "title": "The Everything Store",
+      "author": "Brad Stone"
+    },
+    {
+      "title": "The Future We Choose",
+      "author": "Christian Figueres and Tom Rivett-Carnac"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald"
+    },
+    {
+      "title": "The Great Influenza",
+      "author": "John Barry"
+    },
+    {
+      "title": "The Hard Thing About Hard Things",
+      "author": "Ben Horowitz"
+    },
+    {
+      "title": "The Inevitable",
+      "author": "Kevin Kelly"
+    },
+    {
+      "title": "The Lean Startup",
+      "author": "Eric Ries"
+    },
+    {
+      "title": "The Machine Stops",
+      "author": "E.M. Forster"
+    },
+    {
+      "title": "The Manual",
+      "author": "Epictetus"
+    },
+    {
+      "title": "The Martian",
+      "author": "Andy Weir"
+    },
+    {
+      "title": "The Meditations",
+      "author": "Marcus Aurelius"
+    },
+    {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka"
+    },
+    {
+      "title": "The Ministry for the Future",
+      "author": "Kim Stanley Robinson"
+    },
+    {
+      "title": "The Moon is a Harsh Mistress",
+      "author": "Robert A. Heinlein"
+    },
+    {
+      "title": "The Origin Of Species",
+      "author": "Charles Darwin"
+    },
+    {
+      "title": "The Prince",
+      "author": "Niccolò Machiavelli"
+    },
+    {
+      "title": "The Psychopath Test",
+      "author": "Jon Ronson"
+    },
+    {
+      "title": "The Ride Of A Lifetime",
+      "author": "Robert Iger"
+    },
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr"
+    },
+    {
+      "title": "The Sixth Extinction",
+      "author": "Elizabeth Kolbert"
+    },
+    {
+      "title": "The Spy and the Traitor",
+      "author": "Ben Macintyre"
+    },
+    {
+      "title": "The Sympathizer",
+      "author": "Viet Thanh Nguyen"
+    },
+    {
+      "title": "The Three-Body Problem",
+      "author": "Liu Cixin"
+    },
+    {
+      "title": "The Time Machine",
+      "author": "H.G. Wells"
+    },
+    {
+      "title": "The World Until Yesterday",
+      "author": "Jared Diamond"
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman"
+    },
+    {
+      "title": "Thinking in Bets",
+      "author": "Annie Duke"
+    },
+    {
+      "title": "The Third Chimpanzee",
+      "author": "Jared Diamond"
+    },
+    {
+      "title": "This Is How They Tell Me the World Ends",
+      "author": "Nicole Perlroth"
+    },
+    {
+      "title": "The Tipping Point",
+      "author": "Malcolm Gladwell"
+    },
+    {
+      "title": "Titan: The Life of John D. Rockefeller, Sr.",
+      "author": "Ron Chernow"
+    },
+    {
+      "title": "Tribe: On Homecoming and Belonging",
+      "author": "Sebastian Junger"
+    },
+    {
+      "title": "Trillion Dollar Coach",
+      "author": "Alan Eagle, Eric Schmidt, and Jonathan Rosenberg"
+    },
+    {
+      "title": "Turtles All the Way Down",
+      "author": "John Green"
+    },
+    {
+      "title": "Upheaval",
+      "author": "Jared Diamond"
+    },
+    {
+      "title": "When Breath Becomes Air",
+      "author": "Paul Kalanithi"
+    },
+    {
+      "title": "If the Universe Is Teeming with Aliens ... WHERE IS EVERYBODY?",
+      "author": "Stephen Webb"
+    },
+    {
+      "title": "Why Nations Fail",
+      "author": "Daron Acemoglu and James A. Robinson"
+    },
+    {
+      "title": "Why We Sleep",
+      "author": "Matthew Walker"
+    },
+    {
+      "title": "Zero to One",
+      "author": "Peter Thiel"
+    }
+  ]
+}
