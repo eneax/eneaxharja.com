@@ -22,8 +22,8 @@ export default function UsesPage() {
             <a href="https://www.apple.com/safari">Safari</a> as daily browser
           </li>
           <li>
-            <a href="https://arc.net">Arc</a> when I need to test something on
-            Chromium
+            <a href="https://www.google.com/chrome">Google Chrome</a> when I
+            need to test something on Chromium
           </li>
           <li>
             <a href="https://code.visualstudio.com">Visual Studio Code</a>
