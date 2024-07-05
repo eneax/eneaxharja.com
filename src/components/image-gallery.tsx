@@ -54,7 +54,7 @@ export default function ImageGallery({
           aria-live="polite"
           className="flex items-center justify-center mt-8"
         >
-          <p className="text-gray-500 text-sm italic">Loading...</p>
+          <p className="text-neutral-400 text-sm italic">Loading...</p>
         </div>
       )}
     </>
