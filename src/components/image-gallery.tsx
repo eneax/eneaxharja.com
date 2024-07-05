@@ -3,7 +3,7 @@
 import * as React from "react";
 
 import useInfiniteScroll from "@/lib/useInfiniteScroll";
-import BlurImage from "@/components/blur-image";
+import ImageBlur from "@/components/image-blur";
 
 interface ImageGalleryProps {
   data: {
@@ -29,7 +29,7 @@ export default function ImageGallery({
           key={title}
           className="inline-block relative overflow-hidden h-[480px] md:h-[700px] outline-0"
         >
-          <BlurImage
+          <ImageBlur
             src={url}
             alt={`Image of ${title}`}
             priority
