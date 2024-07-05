@@ -1,5 +1,7 @@
-import photos from "./photos.json";
-import BlurImage from "@/components/blur-image";
+import * as React from "react";
+
+import photos from "@/app/photos/photos.json";
+import ImageGallery from "@/components/image-gallery";
 
 export const metadata = {
   title: "Photos",
@@ -23,23 +25,7 @@ export default function PhotosPage() {
       </div>
 
       <div className="flex flex-col min-h-screen my-0 mx-auto overflow-hidden p-2">
-        <ul className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(440px,1fr))] gap-2">
-          {sortedPhotos.map(({ title, url }) => (
-            <li
-              key={title}
-              className="inline-block relative overflow-hidden h-[480px] md:h-[700px] outline-0"
-            >
-              <BlurImage
-                src={url}
-                alt={title}
-                priority
-                fill
-                sizes="(min-width: 1024px) 440px, 100vw"
-                className="object-cover absolute inset-0 w-full h-auto select-none"
-              />
-            </li>
-          ))}
-        </ul>
+        <ImageGallery data={sortedPhotos} itemsPerPage={6} />
       </div>
     </section>
   );
