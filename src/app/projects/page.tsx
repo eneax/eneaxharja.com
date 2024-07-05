@@ -1,4 +1,4 @@
-import projects from "./projects.json";
+import projects from "@/app/projects/projects.json";
 
 export const metadata = {
   title: "Projects",

@@ -4,7 +4,7 @@ import * as React from "react";
 import type { ImageProps } from "next/image";
 import NextImage from "next/image";
 
-export default function BlurImage(props: ImageProps) {
+export default function ImageBlur(props: ImageProps) {
   const [isLoading, setLoading] = React.useState(true);
 
   return (
