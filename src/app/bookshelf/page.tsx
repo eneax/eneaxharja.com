@@ -1,4 +1,4 @@
-import books from "./bookshelf.json";
+import books from "@/app/bookshelf/bookshelf.json";
 
 export const metadata = {
   title: "Bookshelf",
