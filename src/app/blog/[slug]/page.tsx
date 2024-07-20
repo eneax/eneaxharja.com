@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { CustomMDX } from "@/components/mdx";
-import { formatDate, getBlogPosts } from "@/app/blog/utils";
+import { getBlogPosts } from "@/app/blog/utils";
 import { baseUrl } from "@/app/sitemap";
 
 export async function generateStaticParams() {
@@ -85,12 +85,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           }),
         }}
       />
-      <h1 className="font-semibold text-2xl tracking-tighter text-balance">
+      <h1 className="font-semibold text-2xl tracking-tighter mb-8 text-balance">
         {post.metadata.title}
       </h1>
-      <div className="flex items-center justify-between text-sm mb-8">
-        <p className="text-neutral-400">{formatDate(post.metadata.date)}</p>
-      </div>
+
       <article className="prose">
         <CustomMDX source={post.content} />
       </article>
