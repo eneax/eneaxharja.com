@@ -1,0 +1,208 @@
+---
+title: "Variable Declarations: var, let, const"
+date: "2024-07-20"
+summary: "In JavaScript there are three ways to declare variables: var, let and const. To understand the differences between them, you need to know concepts such as variable declaration and initialization, scope and hoisting."
+---
+
+In JavaScript there are three ways to declare variables: `var`, `let` and `const`. To understand the differences between them, you need to know concepts such as variable declaration and initialization, scope and hoisting.
+
+## TL;DR
+
+`var`
+
+- function scope
+- `undefined` when accessing before declaration
+
+`let`
+
+- block scope
+- `ReferenceError` when accessing before declaration
+
+`const`
+
+- block scope
+- `ReferenceError` when accessing before declaration
+- reassignment is not allowed
+
+## Variable Declarations and Initialization
+
+To understand the concept of variable declaration and initialization, let us first clarify the difference between a variable and a value.
+
+The most fundamental concept in JavaScript is the value. The JavaScript universe contains several values, and when I write code, I refer to these values and interact with them.
+
+A variable is not a value. A variable is like a wire that points to a particular value. We can change the value it points to by using the assignment operator `=`.
+
+For example, when you write `var greeting = "hello"` you create a variable called `greeting` and make it point to the value `"hello"`.
+
+There are two rules to follow when using the `=` assignment operator:
+
+- the left side of the assignment must be a variable (or wire)
+- the right side of the assignment must be an expression (or question you ask to JavaScript) that results in a value.
+
+Variable declaration is the process of creating a variable. Variable initialization is the process of pointing a variable to a value for the first time.
+
+```js
+var greeting; // -> Declaration
+console.log(greeting); // undefined
+greeting = "hello"; // -> Initialization
+console.log(greeting); // hello
+```
+
+In JavaScript, when you declare a variable, it is automatically initialized with the value `undefined`. The previous example can be rewritten as follows:
+
+```js
+var greeting = undefined; // -> Declaration and Initialization
+console.log(greeting); // undefined
+greeting = "hello"; // -> Reassignment
+console.log(greeting); // hello
+```
+
+## Scope
+
+Scope is the context in which variables and functions are accessible inside a program.
+
+Variables declared with `var` inside a function are accessible only inside that function or any nested functions. This is known as function scope.
+
+```js
+function sayHello() {
+  var greeting = "hello";
+  return greeting;
+}
+
+sayHello(); // hello
+console.log(greeting); // ReferenceError: greeting is not defined
+```
+
+In the above example, the variable `greeting` is declared inside the `sayHello` function and is not accessible outside it.
+
+However, the variable `greeting` can be accessed inside the function and any nested functions.
+
+```js
+function sayHello() {
+  var greeting = "hello";
+
+  function formatGreeting() {
+    return greeting.toUpperCase();
+  }
+
+  return formatGreeting();
+}
+
+sayHello(); // HELLO
+console.log(greeting); // ReferenceError: greeting is not defined
+```
+
+## Hoisting
+
+Hoisting refers to the process of initializing variables with the value `undefined` when they are created. This process occurs during the creation phase of the execution context.
+
+Variables declared with `var` are hoisted to the top of their scope. This means that a variable can be accessed before it is declared.
+
+Let's take the previous example and see how hoisting affects it.
+
+```js
+function sayHello() {
+  console.log(greeting); // undefined
+  var greeting = "hello";
+
+  function formatGreeting() {
+    return greeting.toUpperCase();
+  }
+
+  return formatGreeting();
+}
+
+sayHello(); // HELLO
+```
+
+In the above example, the variable `greeting` is accessed before it is declared. This is possible because of hoisting. During the creation phase of the execution context, the variable `greeting` is initialized with the value `undefined` and then assigned the value `"hello"`.
+
+```js
+function sayHello() {
+  var greeting; // -> Hoisting (Declaration and Initialization with undefined)
+  console.log(greeting); // undefined
+  greeting = "hello"; // -> Assignment
+
+  function formatGreeting() {
+    return greeting.toUpperCase();
+  }
+
+  return formatGreeting();
+}
+
+sayHello(); // HELLO
+```
+
+## var and let in Comparison
+
+The main difference between `var` and `let` is that the variables declared with `let` are block-scoped. This means that they are accessible only within the block in which they are declared. A block is anything wrapped in curly braces `{}`, such as a loop or conditional statement.
+
+```js
+if (true) {
+  let greeting = "hello";
+}
+
+console.log(greeting); // ReferenceError: greeting is not defined
+```
+
+In the above example, the variable `greeting` is declared inside the block of the `if` statement and is not accessible outside it.
+
+The other difference between `var` and `let` is that variables declared with `let` are not hoisted. This means that a variable cannot be accessed before it is declared.
+
+If you try to do this, instead of getting `undefined`, you will get a `ReferenceError`.
+
+```js
+function sayHello() {
+  console.log(greeting); // ReferenceError: Cannot access 'greeting' before initialization
+  let greeting = "hello";
+
+  function formatGreeting() {
+    return greeting.toUpperCase();
+  }
+
+  return formatGreeting();
+}
+```
+
+## let and const in Comparison
+
+The main difference between `let` and `const` is that variables declared with `const` cannot be reassigned. This means that once a variable is initialized with a value, it cannot be reassigned to a different value.
+
+```js
+const greeting = "hello";
+greeting = "hi"; // SyntaxError: Identifier 'greeting' has already been declared
+```
+
+In the previous example, the variable `greeting` is initialized with the value `"hello"`. When you try to reassign it to the value `"hi"`, you get a `SyntaxError`.
+
+However, it is important to note that the value of a variable declared using `const` can still be mutated (changed).
+
+```js
+const person = {
+  name: "Mario",
+};
+
+person.name = "Luigi";
+console.log(person); // { name: "Luigi" }
+```
+
+In the previous example, the variable `person` points to an object value. Although we cannot point `person` to a different value (no reassignment), we can still mutate the `name` property of the object.
+
+One last thing to note about `const` is that it must be initialized when it is declared. If you try to declare a `const` variable without initializing it, you will get a `SyntaxError`.
+
+```js
+const greeting = "hello"; // OK
+const greeting; // SyntaxError: Missing initializer in const declaration
+```
+
+## Conclusion
+
+In JavaScript there are three ways to declare variables: `var`, `let`, and `const`. The main differences between them are:
+
+- `var` is function-scoped and hoisted (`undefined` when accessed before declaration)
+- `let` is block-scoped and not hoisted (`ReferenceError` when accessed before declaration)
+- `const` is block-scoped, not hoisted, and cannot be reassigned
+
+ECMAScript 2015 introduced `let` and `const` to address the issues with `var`, while newer versions of ECMAScript have continued to improve the language by introducing new features and syntax.
+
+Personally, I prefer to avoid using `var` altogether because of its hoisting behavior. I choose to use `const` by default and `let` only when I need to reassign a variable.
