@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { getBlogPosts } from "@/app/blog/utils";
+import { getBlogPosts } from "@/lib/mdx";
 
 export const metadata = {
   title: "Blog",
@@ -26,7 +26,7 @@ export default function BlogPage() {
         {sortedBlogs.map((post) => (
           <Link
             key={post.slug}
-            href={`/blog/${post.slug}`}
+            href={`/${post.slug}`}
             className="flex flex-col space-y-1 mb-4"
           >
             <p className="text-neutral-100 tracking-tight">
