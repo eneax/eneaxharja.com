@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { CustomMDX } from "@/components/mdx";
-import { getBlogPosts } from "@/app/blog/utils";
+import { getBlogPosts } from "@/lib/mdx";
 import { baseUrl } from "@/app/sitemap";
 
 export async function generateStaticParams() {
@@ -37,7 +37,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
       description,
       type: "article",
       publishedTime,
-      url: `${baseUrl}/blog/${post.slug}`,
+      url: `${baseUrl}/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -77,7 +77,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `${baseUrl}/blog/${post.slug}`,
+            url: `${baseUrl}/${post.slug}`,
             author: {
               "@type": "Person",
               name: "Enea Xharja",

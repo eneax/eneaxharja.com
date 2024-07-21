@@ -1,10 +1,10 @@
-import { getBlogPosts } from "@/app/blog/utils";
+import { getBlogPosts } from "@/lib/mdx";
 
 export const baseUrl = "https://eneaxharja.com";
 
 export default async function sitemap() {
   const blogs = getBlogPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/${post.slug}`,
     lastModified: post.metadata.date,
   }));
 
