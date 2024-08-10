@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <section className="antialiased md:h-[calc(100vh-340px)] max-w-xl mt-8 mx-4 md:mx-auto">
+    <section className="antialiased max-w-xl mt-8 mx-4 md:mx-auto">
       <p className="mb-4">
         I am a software engineer interested in building polished software and
         crafting delightful interfaces.
