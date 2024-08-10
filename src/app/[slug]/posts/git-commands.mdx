@@ -1,6 +1,6 @@
 ---
 title: "Git Commands"
-date: "2023-01-30"
+date: "2024-07-10"
 summary: "A list of useful Git commands for everyday use."
 ---
 
@@ -217,3 +217,35 @@ git fetch origin
 git branch -u origin/main main
 git remote set-head origin -a
 ```
+
+### Contributing to an open-source project
+
+To contribute to an open-source project, follow the steps below:
+
+- Use the GitHub UI to fork the `original_owner` repo into your account, so that you have a copy of the repository in your account;
+
+- Clone your fork on your local machine:
+
+```bash
+git clone https://github.com/your_username/repo.git
+```
+
+- Create a new branch (`your_feature`) and make changes:
+
+```bash
+git checkout -b <your_feature>
+```
+
+- Commit and push the changes to the remote `your_feature` branch of your fork:
+
+```bash
+git add .
+git commit -m "your commit message"
+git push origin <your_feature>
+```
+
+- Create a pull request to the `main` branch of the `original_owner/repo` from the `your_feature` branch of the `your_username/repo`;
+
+- This allows the original owner to review the changes made;
+
+- If they like them, they can merge the changes directly from your fork to their repository.
