@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-[#202020] text-white ${inter.className}`}>
-        <main className="bg-black p-4 m-2 rounded-lg">
+        <main className="bg-black p-4 m-2 rounded-lg flex flex-col justify-start min-h-screen">
           <Header />
           {children}
           <Footer />
