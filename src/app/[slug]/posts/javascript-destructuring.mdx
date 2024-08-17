@@ -1,0 +1,314 @@
+---
+title: "Destructuring in JavaScript"
+date: "2024-07-27"
+summary: "Destructuring is a powerful feature introduced in ECMAScript 2015 (ES6) that allows data to be extracted from arrays and objects and assigned to variables in a more concise and readable way."
+---
+
+Destructuring is a powerful feature introduced in ECMAScript 2015 (ES6) that allows data to be extracted from arrays and objects and assigned to variables in a more concise and readable way.
+
+Historically, working with arrays and objects in JavaScript was cumbersome. Elements had to be accessed by index or property name, an operation that could be verbose and error-prone.
+
+## Objects
+
+Suppose you want to add a single property to an object. With dot notation, you can add properties to an object only one at a time.
+
+```js
+const character = {};
+character.name = "Mario";
+character.occupation = "Plumber";
+
+console.log(character); // { name: 'Mario', occupation: 'Plumber' }
+```
+
+The same syntax can also be used to extract data one property at a time:
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+};
+
+const name = character.name;
+const occupation = character.occupation;
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+```
+
+If you want to add multiple properties to an object at once, you can use the object literal notation when initializing the object.
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+};
+
+console.log(character); // { name: 'Mario', occupation: 'Plumber' }
+```
+
+Destructuring provides a more concise syntax for extracting multiple values from objects and arrays.
+Unlike array elements, object properties are not ordered, so they can be deconstructed in any order.
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+};
+
+const { occupation, name } = character;
+
+console.log(occupation); // Plumber
+console.log(name); // Mario
+```
+
+Object desctructuring can be combined with computed properties when the property name is dynamic or not known in advance.
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+};
+
+const key = "name";
+const { [key]: value } = character;
+
+console.log(value); // Mario
+```
+
+The value of `[key]` is computed at runtime by looking at the variable `key`. In this case, the value of `key` is `"name"`, so the destructuring assignment is equivalent to `const { name } = character`. The value of `name` is then assigned to the variable `value`.
+
+## Results of function invocations
+
+It is also possible to destructure the results of function invocations. For example, below we have a function called `getCharacter()` that returns the user object.
+
+```js
+function getCharacter() {
+  return {
+    name: "Mario",
+    occupation: "Plumber",
+  };
+}
+
+const { name, occupation } = getCharacter();
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+```
+
+In the above example, we destructure the result of the `getCharacter()` function into the variables `name` and `occupation`.
+
+## Arrays
+
+Destructuring can also be used with arrays. Below we have an array with some data:
+
+```js
+const character = ["Mario", "Plumber", "Mushroom Kingdom"];
+
+// Before destructuring
+const name = character[0];
+const occupation = character[1];
+const location = character[2];
+
+// With destructuring
+const [name, occupation, location] = character;
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+console.log(location); // Mushroom Kingdom
+```
+
+In addition, we can skip array indexes by excluding them completely from the destructuring syntax.
+Here is an example of so-called "sparse array destructuring."
+
+```js
+const character = ["Mario", "Plumber", "Mushroom Kingdom"];
+
+const [, occupation, location] = character;
+
+console.log(occupation); // Plumber
+console.log(location); // Mushroom Kingdom
+```
+
+Arrays are ordered collections of values. They have certain values at certain indexes. This is the structure of an array.
+
+We use the destructuring syntax to "de-structure" the array and access the individual elements.
+
+However, if we try to destructure a value that has no structure, such as `null` or `undefined`, we will get an error.
+
+```js
+const character = null;
+
+const [name, occupation, location] = character; // TypeError: character is not iterable
+```
+
+## Default Values and Renaming
+
+Destructuring makes the code more readable and maintainable, allowing variables to be renamed and default values to be provided for properties that may not exist.
+
+```js
+const character = {
+  n: "Mario",
+  o: "Plumber",
+  l: "Mushroom Kingdom",
+};
+
+const { n: name, o: occupation, l: location = "Unknown" } = character;
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+console.log(location); // Mushroom Kingdom
+```
+
+In the previous example, we destructured the `character` object and renamed the `n` and `o` properties to `name` and `occupation` respectively. We also renamed the `l` property to `location` and provided a default value of `"Unknown"` in case the `location` property is not present in the object.
+
+## Function arguments and parameters
+
+When defining functions, one may be faced with problems such as the need to pass a large number of arguments and the need to provide default values for some of these arguments. Also, if the order of the arguments changes, function calls must be updated accordingly.
+
+Destructuring can help solve these problems by allowing objects to be passed as arguments to functions.
+
+```js
+function printCharacter({
+  name = "",
+  location = "Unknown Location",
+  occupation = "",
+}) {
+  console.log(`${name} is a ${occupation} from ${location}.`);
+}
+
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+  location: "Mushroom Kingdom",
+};
+
+printCharacter(character); // Mario is a Plumber from Mushroom Kingdom.
+```
+
+In this way, the order of the arguments does not matter, and default values can be provided for missing properties.
+
+## Rest Syntax
+
+The rest syntax (`...`) allows the remaining elements of an array or object to be collected into a new array or object.
+
+```js
+const character = ["Mario", "Plumber", "Mushroom Kingdom", "Super Mario Bros"];
+
+const [name, occupation, ...others] = character;
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+console.log(others); // [ 'Mushroom Kingdom', 'Super Mario Bros' ]
+```
+
+In the above example, the `...others` syntax collects the remaining elements of the `character` array into a new array called `others`.
+
+Note that the rest syntax must be the last element of the destructuring assignment. For example, the following code will result in an error:
+
+```js
+const [name, ...others, occupation] = character; // SyntaxError: Rest element must be last element
+```
+
+The rest syntax can also be used with objects.
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+  location: "Mushroom Kingdom",
+  game: "Super Mario Bros",
+};
+
+const { name, occupation, ...others } = character;
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+console.log(others); // { location: 'Mushroom Kingdom', game: 'Super Mario Bros' }
+```
+
+In the above example, the `...others` syntax collects the remaining properties of the `character` object that have not been explicitly matched into a new object called `others`.
+
+## Strings
+
+Destructuring can also be used with strings. When destructuring a string, each character is treated as an element of an array. Rest parameters also work with strings, providing an array of individual characters.
+
+```js
+const character = "Mario";
+const [...characters] = character;
+
+console.log(characters); // [ 'M', 'a', 'r', 'i', 'o' ]
+```
+
+In the above example, the `...characters` syntax collects the individual characters of the `character` string into a new array called `characters` with each character as a separate element.
+
+## Nested Destructuring
+
+We can destructure nested data, as arrays within other arrays or objects within other objects.
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+  location: {
+    name: "Mushroom Kingdom",
+    population: 1000,
+  },
+};
+
+const {
+  name,
+  occupation,
+  location: { name: locationName, population },
+} = character;
+
+console.log(name); // Mario
+console.log(occupation); // Plumber
+console.log(locationName); // Mushroom Kingdom
+console.log(population); // 1000
+```
+
+In the previous example, we destructure the `character` object and extract the properties `name`, `occupation`, `locationName` and `population`.
+
+Let us now look at an example of nested destructuring with arrays.
+
+```js
+const character = ["Mario", "Plumber", ["Mushroom Kingdom", 1000]];
+```
+
+This time, the `character` array contains another array with the location name and population. Here we want to extract only the population value.
+
+```js
+const [, , [, population]] = character;
+console.log(population); // 1000
+```
+
+We destructured the `character` array and extracted the `population` value from the nested array. We used empty commas to skip the first two elements of the `character` array and then destructured the nested array to extract the `population` value.
+
+Destructuring also works on arrays and objects nested within each other.
+
+```js
+const characters = [
+  {
+    name: "Mario",
+    occupation: "Plumber",
+    location: {
+      name: "Mushroom Kingdom",
+      population: 1000,
+    },
+  },
+  {
+    name: "Luigi",
+    occupation: "Plumber",
+    location: {
+      name: "Mushroom Kingdom",
+      population: 1000,
+    },
+  },
+];
+
+const [, { name }] = characters;
+
+console.log(name); // Luigi
+```
+
+In this case, we destructured the `characters` array and extracted the `name` property of the second object in the array.
