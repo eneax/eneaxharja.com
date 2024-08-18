@@ -1,0 +1,55 @@
+---
+title: "Shorthand Properties and Methods in JavaScript"
+date: "2024-08-07"
+summary: "Shorthand properties and methods are a feature introduced in ECMAScript 2015 (ES6) that provides a more concise syntax for defining object literals in JavaScript."
+---
+
+Shorthand properties and methods are a feature introduced in ECMAScript 2015 (ES6) that provides a more concise syntax for defining object literals in JavaScript.
+
+## Shorthand Properties
+
+When the object key (property name) and the variable name are the same, you can omit the property name. Instead of `{ name: name }`, you can simply write `{ name }`.
+
+```js
+function createCharacter(name, occupation) {
+  return {
+    name: name,
+    occupation: occupation,
+    timestamp: Date.now(),
+  };
+}
+
+// With shorthand properties syntax
+function createCharacter(name, occupation) {
+  return {
+    name,
+    occupation,
+    timestamp: Date.now(),
+  };
+}
+```
+
+## Shorthand Methods
+
+A function that is a property on an object is called a method. Methods defined in object literals are called shorthand methods.
+
+Shorthand methods use the `this` keyword to refer to the parent object. When defining a method in an object literal, you can omit the `function` keyword altogether.
+
+```js
+const character = {
+  name: "Mario",
+  greet: function () {
+    return `I am, ${this.name}!`;
+  },
+};
+
+// With shorthand methods syntax
+const character = {
+  name: "Mario",
+  greet() {
+    return `I am, ${this.name}!`;
+  },
+};
+```
+
+Shorthand properties and methods are a great way to make code more readable and concise. They are widely used in modern JavaScript codebases.
