@@ -1,0 +1,36 @@
+---
+title: "Computed Property Names in JavaScript"
+date: "2024-08-17"
+summary: "Computed property names allow you to create object properties with dynamic keys in ES6. Instead of specifying a fixed key name, an expression can be used to compute the property name at runtime."
+---
+
+Computed property names allow you to create object properties with dynamic keys in ES6. Instead of specifying a fixed key name, an expression can be used to compute the property name at runtime.
+
+When creating an object, you can write the keys as strings:
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+};
+```
+
+But what if we want to use a variable as the key name? This is where computed property names come in handy:
+
+```js
+const character = {
+  name: "Mario",
+  occupation: "Plumber",
+};
+
+function getCharacter(character) {
+  return {
+    [character.name]: character.occupation,
+  };
+}
+
+const mario = getCharacter(character);
+console.log(mario); // { Mario: 'Plumber' }
+```
+
+The expression inside `[]` is evaluated and its result is used as the property name. In the example above, we use the `name` property of the `character` object as the key name for the new object. This allows us to create dynamic object properties, based on the values of other properties.
