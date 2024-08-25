@@ -1,0 +1,43 @@
+---
+title: "Template Literals in JavaScript"
+date: "2024-08-25"
+summary: "Create more readable and concise strings in JavaScript with template literals."
+---
+
+JavaScript has always had two syntaxes for strings: single quotes `''` or double quotes `""`. Thanks to the introduction of Template Literals (or Template Strings) in ES6, there is a third type of string written with `backticks`.
+
+{/* prettier-ignore */}
+```js
+const name = 'Mario';
+const occupation = 'plumber';
+
+// Using single quotes
+const sentence1 = 'My name is ' + name + ' and I am a ' + occupation + '.';
+
+// Using double quotes
+const sentence2 = "My name is " + name + " and I am a " + occupation + ".";
+
+// Using backticks
+const sentence = `My name is ${name} and I am a ${occupation}.`;
+```
+
+Backticks allow us to use `${}` to interpolate variables into the string. This is called a template literal. It is a more readable and concise way of concatenating strings.
+
+Template literals can also span multiple lines without the need for escape characters.
+
+```js
+// Without template literals
+function greetTemplate(name) {
+  return "Hello, " + name.toUpperCase() + "!\n" + "How are you today?";
+}
+
+// With template literals
+function greetTemplate(name) {
+  return `
+    Hello, ${name.toUpperCase()}!
+    How are you today?
+  `;
+}
+```
+
+Template literals are a great addition to JavaScript and make working with strings much easier.
