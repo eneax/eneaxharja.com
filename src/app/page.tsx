@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Email from "@/components/email";
 
 const items = {
   "/blog": {
@@ -50,7 +51,9 @@ export default function HomePage() {
         })}
       </div>
 
-      <p className="mb-4">Reach me by email: hi [at] eneaxharja [dot] com.</p>
+      <p className="mb-4">
+        Reach me by email: <Email />.
+      </p>
     </section>
   );
 }
