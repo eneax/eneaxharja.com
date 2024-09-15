@@ -1,4 +1,5 @@
 import books from "@/app/bookshelf/bookshelf.json";
+import Email from "@/components/email";
 
 export const metadata = {
   title: "Bookshelf",
@@ -35,7 +36,7 @@ export default function BookshelfPage() {
       </div>
 
       <p className="mb-4">
-        Got recommendations? Drop me a note: hi [at] eneaxharja [dot] com.
+        Got recommendations? Drop me a note: <Email />.
       </p>
     </section>
   );
