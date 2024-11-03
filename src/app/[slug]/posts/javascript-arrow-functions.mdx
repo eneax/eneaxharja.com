@@ -1,0 +1,163 @@
+---
+title: "Arrow Functions in JavaScript"
+date: "2024-11-03"
+summary: "Arrow functions are a new way of writing functions in JavaScript. They are more concise and easier to read than traditional function expressions and make the `this` keyword easier to handle."
+---
+
+Arrow functions are a new way of writing functions in JavaScript. They are more concise and easier to read than traditional function expressions and make the `this` keyword easier to handle.
+
+## Syntax
+
+In the following example, we have the function `add` that takes two arguments and returns the sum. We will write this function using three different syntaxes: function declaration, function expression, and arrow function.
+
+```js
+// Function declaration
+function add(a, b) {
+  return a + b;
+}
+
+// Function expression
+const add = function (a, b) {
+  return a + b;
+};
+
+// Arrow function
+const add = (a, b) => a + b;
+```
+
+The syntax of the arrow function is shorter and more readable than the other two. At a glance, two main differences can be noticed:
+
+- No `function` keyword: arrow functions are defined using the arrow syntax `=>`.
+- Implicit return: If the arrow function only has an expression, you can omit the curly braces `{}` and the `return` keyword. The expression will be returned automatically.
+
+In addition, if the arrow function has only one argument, it is possible to omit the parentheses around the argument list. For example:
+
+{/* prettier-ignore */}
+```js
+const double = x => x * 2;
+```
+
+Arrow functions are particularly useful when working with anonymous functions and callbacks.
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+// Function expression
+const squared = numbers.map(function (x) {
+  return x * x;
+});
+
+// Arrow function
+const squared = numbers.map((x) => x * x);
+
+console.log(squared); // [1, 4, 9, 16, 25]
+```
+
+## The `this` Keyword
+
+In addition to a more concise syntax, arrow functions have another important feature: their scoping rules are easier to understand than the scoping rules of regular functions.
+
+Regular functions and shorthand methods have a confusing `this` behavior, which depends on how they are called.
+
+```js
+const mario = {
+  username: "Mario",
+  sayHi() {
+    return `Hi, I am ${this.username}!`;
+  },
+};
+
+const marioGreeting = mario.sayHi()
+console.log(marioGreeting); // Hi, I am Mario!
+```
+
+In the above example, `this` refers to the `mario` object because `sayHi` is called as a method of `mario`. However, if `sayHi` returns another function, now the `this` of the inner function is `undefined`.
+
+```js
+const mario = {
+  username: "Mario",
+  sayHi() {
+    return function () {
+      return `Hi, I am ${this.username}!`;
+    };
+  },
+};
+
+const marioGreeting = mario.sayHi();
+console.log(marioGreeting()); // Hi, I am undefined!
+```
+
+It is possible to solve this problem using `.bind()`, but it is not very elegant.
+
+```js
+const mario = {
+  username: "Mario",
+  sayHi() {
+    const fn = function () {
+      return `Hi, I am ${this.username}!`;
+    };
+    return fn.bind(this);
+  },
+};
+
+const marioGreeting = mario.sayHi();
+console.log(marioGreeting()); // Hi, I am Mario!
+```
+
+Arrow functions provide a simpler solution without relying on `.bind()`.
+
+```js
+const mario = {
+  username: "Mario",
+  sayHi() {
+    return () => {
+      return `Hi, I am ${this.username}!`;
+    };
+  },
+};
+
+const marioGreeting = mario.sayHi();
+console.log(marioGreeting()); // Hi, I am Mario!
+```
+
+In the shorthand method `sayHi`, `this` refers to the containing object `mario`. Arrow functions inherit the scope in which they are defined. They do not create a new context. Therefore, the `this` inside the arrow function refers to the containing object `mario`.
+
+To better understand the differences between arrow functions and regular functions, let's look at another example where `sayHi` is an arrow function, rather than a shorthand method.
+
+```js
+const mario = {
+  username: "Mario",
+  sayHi: () => {
+    return () => {
+      return `Hi, I am ${this.username}!`;
+    }
+  },
+};
+
+const marioGreeting = mario.sayHi();
+console.log(marioGreeting()); // Hi, I am undefined!
+```
+
+Since arrow functions inherit the scope in which they are defined, in this case it is the global scope. The `this` inside `sayHi` refers to the global `this`. In a browser, it is `window` and in Node it is the `global` object. Neither of these objects has a `username` property, so `this.username` is `undefined`.
+
+The arrow function `sayHi` does not know it is inside an object. We can see this more clearly by rewriting the code as follows:
+
+```js
+const mario = {
+  username: "Mario",
+};
+
+const sayHi = () => {
+  return () => {
+    return `Hi, I am ${this.username}!`;
+  };
+};
+mario.sayHi = sayHi;
+
+const marioGreeting = mario.sayHi();
+console.log(marioGreeting()); // Hi, I am undefined!
+```
+
+The only difference is that we define the arrow function outside the object and then assign it to `mario.sayHi`. We get the same result, but now it is easier to see that `sayHi` does not know it is inside the `mario` object.
+
+When deciding whether to use arrow functions or regular functions, consider that the `function` keyword creates a new context. It means that `this` inside the function will be different from `this` outside the function. To solve this problem, you can use an arrow function, which inherits the context from the parent scope and does not create its own context.
